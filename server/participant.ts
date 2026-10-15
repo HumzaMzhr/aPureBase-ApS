@@ -1,0 +1,3 @@
+import {createServer} from 'node:http';
+const vite=await(await import('vite')).createServer({server:{middlewareMode:true,hmr:{host:'127.0.0.1'}},appType:'spa'});
+const server=createServer((req,res)=>{if(req.url?.startsWith('/api/')){res.writeHead(403);res.end('Clinic view has no provider API access.');return;}vite.middlewares(req,res);});server.on('error',(e:NodeJS.ErrnoException)=>{console.error(e.code==='EADDRINUSE'?'Port 5173 is in use. Stop the existing local server first.':'Unable to start clinic view.');void vite.close();process.exitCode=1;});server.listen(5173,'127.0.0.1',()=>console.info('Clinic participant: http://localhost:5173/participant'));const stop=()=>{server.close();void vite.close();};process.once('SIGINT',stop);process.once('SIGTERM',stop);

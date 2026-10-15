@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+coverage/
+.DS_Store
+# Generated local benchmark recordings/results and UI screenshots.
+benchmarks/
+/*.png

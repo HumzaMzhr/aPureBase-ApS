@@ -1,0 +1,85 @@
+import { createRoot } from 'react-dom/client';
+import { useEffect, useRef, useState } from 'react';
+import { CallController, latencyParts } from './controller';
+import { BrowserCallIO, isChrome } from './browserAudio';
+import { phrases } from './config/phrases';
+import { StreamingView } from './streaming/View';
+import { LocalTestView } from './streaming/LocalTestView';
+import { stageLatency } from './latency';
+import { scenarios } from './config/scenarios';
+import { statusLabel, type Snapshot, type Turn, type VoiceInfo } from './types';
+import './style.css';
+
+function EmailReview({ turn, confirm }: { turn: Turn; confirm: (value: string) => void }) {
+  const [value, setValue] = useState(turn.email?.value ?? '');
+  if (!turn.email) return null;
+  return <div className="email-review"><strong>Possible email</strong><input aria-label="Possible email" value={value} disabled={turn.email.confirmed} onChange={e => setValue(e.target.value)} placeholder="Confirm the spelling manually"/><button disabled={turn.email.confirmed || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)} onClick={() => confirm(value)}>Confirm email</button><small>{turn.email.confirmed ? 'Spelling confirmed by agent for this session only. Human verification required.' : 'Please confirm email manually. Human verification required.'}</small></div>;
+}
+const labels:Record<string,string>={endDetection:'End-of-turn detection',transcription:'Transcription finalization',firstText:'OpenAI first text',completeText:'OpenAI complete response',handoff:'Text → voice handoff',elevenFirstAudio:'ElevenLabs first audio',playback:'Playback overhead',total:'Total response'};
+function measured(turn?:Turn, timing=turn?.timing){return timing?.stages?Object.entries(stageLatency(timing.stages)).map(([key,value])=>[labels[key],value===undefined?undefined:Math.round(value)]):[];}
+function TurnTiming({turn}:{turn:Turn}){return <div className="turn-timing">{measured(turn).map(([label,value])=><span key={String(label)}>{label}: <strong>{value===undefined?'—':`${value} ms`}</strong></span>)}</div>;}
+function App({legacy=false}:{legacy?:boolean}) {
+  const [snapshot, setSnapshot] = useState<Snapshot>({ state: 'IDLE', turns: [], error: '' });
+  const [mode,setMode]=useState<'controlled'|'streaming'>(legacy?'controlled':'streaming');const [pairedActive,setPairedActive]=useState(false);
+  const [sessionMode,setSessionMode]=useState<'live'|'local'>(legacy?'live':'local');
+  const liveMode=useRef<'controlled'|'streaming'>('controlled');
+  const [demo, setDemo] = useState(true); const [scenario, setScenario] = useState('callback');
+  const [developer, setDeveloper] = useState(false); const [silenceMs, setSilenceMs] = useState(450); const [clinicSilenceMs,setClinicSilenceMs]=useState(1350); const [manual, setManual] = useState(false);
+  const [voiceInfo, setVoiceInfo] = useState<VoiceInfo>();
+  const [devices, setDevices] = useState<MediaDeviceInfo[]>([]);
+  const [agentMic, setAgentMic] = useState(''); const [clinicMic, setClinicMic] = useState('');
+  const [agentOutput, setAgentOutput] = useState(''); const [clinicOutput, setClinicOutput] = useState('');
+  const controller = useRef<CallController | null>(null);
+  const mounted = useRef(true); const conversationEnd = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    mounted.current = true;
+    controller.current = new CallController(new BrowserCallIO(), state => { if (mounted.current) setSnapshot(state); });
+    return () => { mounted.current = false; controller.current?.end(); };
+  }, []);
+  useEffect(() => {
+    const abort = new AbortController();
+    void fetch('/api/health', { signal: abort.signal }).then(r => r.json()).then(data => {setVoiceInfo(data.danishVoice);if(Number.isFinite(data.models?.agentSilenceMs))setSilenceMs(data.models.agentSilenceMs);if(Number.isFinite(data.models?.clinicSilenceMs))setClinicSilenceMs(data.models.clinicSilenceMs);}).catch(() => {});
+    return () => abort.abort();
+  }, []);
+  useEffect(() => { conversationEnd.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }, [snapshot.turns.length]);
+  const active = !['IDLE', 'CALL_COMPLETE', 'ERROR'].includes(snapshot.state);
+  const waiting = snapshot.state === 'WAITING_FOR_AGENT';
+  const speaking = controller.current?.canFinish ?? false;
+  const latency = snapshot.timing ? latencyParts(snapshot.timing) : undefined;
+  const chrome = isChrome();
+  async function start() {
+    const call = controller.current;
+    if (!call) return;
+    const pending = call.start({ demo, scenario, silenceMs, clinicSilenceMs, manual, agentMic, clinicMic, agentOutput, clinicOutput });
+    // Device enumeration never requests permission. Live Start/custom capture does.
+    void navigator.mediaDevices?.enumerateDevices().then(setDevices).catch(() => {});
+    await pending;
+  }
+  const options = (kind: MediaDeviceKind) => devices.filter(d => d.kind === kind).map((d, i) => <option key={`${d.kind}-${d.deviceId}-${i}`} value={d.deviceId}>{d.label || `Device ${i + 1}`}</option>);
+  return <>
+    <div className="site-header"><div className="brand-bar"><img className="brand-logo" src="/apurebase-logo.jpg" alt="aPureBase" width="250" height="59"/><div className="brand-context"><span className="active-label">Call interpreter</span><span className="demo-label">Stage 1.9 · Local evaluation</span></div></div></div>
+    <div className="brand-divider" aria-hidden="true"/>
+    <main>
+      <header className="intro"><span className="eyebrow">{legacy?'Local controlled simulation':sessionMode==='local'?'Local test · Use headphones':'Two-party developer test'}</span><h1>REALTIME INTERPRETER</h1><p className="subtitle">English ↔ Danish</p><div className="accent-rule" aria-hidden="true"/></header>
+      {!chrome && <p className="error" role="alert">For this technical demo, please use Google Chrome.</p>}
+      {!legacy&&developer&&<label className="interpreter-mode">Session mode<select aria-label="Session mode" disabled={active||pairedActive} value={sessionMode} onChange={e=>{const next=e.target.value as 'live'|'local';if(next==='local'){liveMode.current=mode;setMode('streaming');}else setMode(liveMode.current);setSessionMode(next);}}><option value="live">LIVE TWO-PARTY</option><option value="local">LOCAL TEST</option></select></label>}
+      {(legacy||developer)&&<label className="interpreter-mode">Interpretation mode<select aria-label="Interpretation mode" disabled={active||pairedActive} value={mode} onChange={e=>setMode(e.target.value as 'controlled'|'streaming')}><option value="controlled">CONTROLLED · Developer fallback</option><option value="streaming">REALTIME INTERPRETER</option></select></label>}
+      {!legacy||mode==='streaming'?<><label className="toggle"><input type="checkbox" checked={developer} disabled={active||pairedActive} onChange={e=>{setDeveloper(e.target.checked);if(!e.target.checked&&!legacy){setSessionMode('local');setMode('streaming');}}}/> Developer mode</label>{sessionMode==='local'?<LocalTestView key={mode} developer={developer} controlled={mode==='controlled'} onRunningChange={setPairedActive}/>:<StreamingView key={mode} role="agent" developer={developer} controlled={mode==='controlled'} onRunningChange={setPairedActive}/>} {developer&&<p><a href="/controlled-demo">Open the original local Stage 1.5 simulation</a></p>}</>:<>
+      <div className="mode-row"><label className="toggle"><input type="checkbox" checked={demo} disabled={active} onChange={e => setDemo(e.target.checked)}/> Demo mode</label>{demo && <select aria-label="Demo scenario" value={scenario} disabled={active} onChange={e => setScenario(e.target.value)}>{scenarios.map(s => <option key={s.id} value={s.id}>{s.label}</option>)}</select>}<label className="toggle developer-toggle"><input type="checkbox" checked={developer} onChange={e => setDeveloper(e.target.checked)}/> Developer mode</label></div>
+      <div className="controls"><button className="primary" disabled={active || !chrome} onClick={() => void start()}>Start demo call</button><button disabled={!waiting} onClick={() => void controller.current?.custom()}>Speak custom response</button><button disabled={!speaking} onClick={() => controller.current?.finish()}>Finish speaking</button><button className="end-call" disabled={!active && snapshot.state !== 'ERROR'} onClick={() => controller.current?.end()}>End call</button></div>
+      <div className={`call-status ${snapshot.state === 'ERROR' ? 'failed' : ''}`} role="status"><span className="status-dot"/><strong>{statusLabel[snapshot.state]}</strong><span>{snapshot.state === 'PLAYING_OPENING_DANISH' ? 'Playing demo opening…' : snapshot.state === 'LISTENING_DANISH' || snapshot.state === 'DANISH_SPEAKING' ? 'Listening to clinic…' : snapshot.state === 'WAITING_FOR_AGENT' ? 'Choose a demo phrase or speak in English.' : snapshot.state === 'PROCESSING_DANISH' || snapshot.state === 'PROCESSING_ENGLISH' ? 'Finalizing the translation and preparing speech.' : 'One speaker at a time.'}</span></div>
+      {snapshot.error && <div className="error" role="alert">{snapshot.error}{snapshot.retryable && <><button onClick={() => void controller.current?.retryVoice()}>Retry voice</button><small>Plays the full translated response again.</small></>}</div>}
+      <div className="demo-note">Technical call simulation · AI-generated voices · Human verification required.<br/>Pre-generated demo phrases are not legally approved production wording.</div>
+      {developer && <div className="developer-settings"><h2>Developer settings</h2><p>State: <code>{snapshot.state}</code> · Headphones required for live testing.</p><p>Voice provider: <strong>{(snapshot.voice ?? voiceInfo)?.provider ?? '—'}</strong> · Voice: <strong>{(snapshot.voice ?? voiceInfo)?.voiceName ?? '—'}</strong> · Model: <strong>{(snapshot.voice ?? voiceInfo)?.modelName ?? '—'}</strong></p><p>Time to first audio: {snapshot.timing?.provider === 'ElevenLabs' && latency?.voice !== undefined ? `${latency.voice} ms` : '—'} · Total response latency: {latency?.total === undefined ? '—' : `${latency.total} ms`}</p><div className="settings-grid"><label>English silence (ms)<input type="number" min="350" max="3000" step="50" disabled={active} value={silenceMs} onChange={e => setSilenceMs(Math.max(350, Math.min(3000, Number(e.target.value) || 450)))}/></label><label>Danish silence (ms)<input type="number" min="350" max="3000" step="50" disabled={active} value={clinicSilenceMs} onChange={e=>setClinicSilenceMs(Math.max(350,Math.min(3000,Number(e.target.value)||1350)))}/></label><label className="toggle"><input type="checkbox" checked={manual} disabled={active} onChange={e => setManual(e.target.checked)}/> Require Finish Speaking (both live inputs)</label><label>Agent microphone<select disabled={active} value={agentMic} onChange={e => setAgentMic(e.target.value)}><option value="">Default microphone</option>{options('audioinput')}</select></label><label>Clinic microphone<select disabled={active} value={clinicMic} onChange={e => setClinicMic(e.target.value)}><option value="">Default microphone</option>{options('audioinput')}</select></label><label>Agent headphones (English)<select disabled={active} value={agentOutput} onChange={e => setAgentOutput(e.target.value)}><option value="">Default output</option>{options('audiooutput')}</select></label><label>Clinic headphones (Danish)<select disabled={active} value={clinicOutput} onChange={e => setClinicOutput(e.target.value)}><option value="">Default output</option>{options('audiooutput')}</select></label></div><button disabled={active} onClick={() => void navigator.mediaDevices.enumerateDevices().then(setDevices)}>Refresh devices</button><p>Models and voice are configured in the server environment. Changes take effect after server restart.</p></div>}
+      <div className="phrase-bank"><div className="section-title"><h2>Demo phrase bank</h2><small>Pre-generated demo phrase</small></div><div className="phrase-buttons">{phrases.map(p => <button title={`${p.en}\n${p.da}`} key={p.id} disabled={!waiting} onClick={() => void controller.current?.phrase(p.id)}>{p.label}</button>)}</div></div>
+      {waiting && <div className="scripted-action"><button onClick={()=>void controller.current?.suggest()}>Suggest approved response</button>{snapshot.decision && <><p>{snapshot.decision.english_interpretation}</p><p>{snapshot.decision.recommended_response_en || 'Human review required. Choose a phrase or speak your response.'}</p>{snapshot.decision.cached_phrase_id && <button className="primary" onClick={()=>void controller.current?.approveSuggestion()}>Approve & play cached suggestion</button>}{developer && <pre>{JSON.stringify(snapshot.decision,null,2)}</pre>}</>}<small>Suggestions require your approval. Consent is never recorded automatically.{developer && snapshot.recommendationMs!==undefined?` Intent recognition: ${Math.round(snapshot.recommendationMs)} ms.`:''}</small></div>}
+      {developer && snapshot.cachePlaybackMs!==undefined && <p>Cached playback startup: {Math.round(snapshot.cachePlaybackMs)} ms · Human decision time excluded.</p>}
+      {demo && waiting && <div className="scripted-action"><p>{controller.current?.nextScriptedAgent?.text ?? 'Close the demo call with the prerecorded thank-you.'}</p><button className="primary" onClick={() => void controller.current?.scriptedResponse()}>{controller.current?.nextScriptedAgent ? 'Play next scripted response' : 'Play thank you & end call'}</button><small>Scripted source audio → live AI interpretation</small></div>}
+      <div className="interpreter-content"><section className="conversation"><div className="section-title"><h2>Conversation</h2><small>Finalized turns · Session only</small></div><div className="conversation-scroll">{snapshot.turns.length === 0 ? <div className="empty-conversation"><span className="language-icon">EN ↔ DA</span><h3>Ready for a clear conversation</h3><p>Start the call to play the Danish opening.<br/>Each complete turn appears here, in order.</p></div> : snapshot.turns.map(turn => <article className={`turn ${turn.speaker.toLowerCase()}`} key={turn.id}><div className="turn-meta"><strong>{turn.speaker === 'SYSTEM' ? 'SYSTEM / PRERECORDED DANISH' : `${turn.speaker} — ${turn.sourceLanguage === 'da' ? 'DANISH' : 'ENGLISH'}`}</strong><span>{turn.method}</span><time dateTime={turn.timestamp}>{new Date(turn.timestamp).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit',second:'2-digit'})}</time></div><p lang={turn.sourceLanguage}>{turn.original}</p><div className="heard"><h3>{turn.speaker === 'CLINIC' ? 'Agent heard — English' : turn.sourceLanguage === 'en' ? 'Clinic heard — Danish' : 'English reference'}</h3><p lang={turn.sourceLanguage === 'da' ? 'en' : 'da'}>{turn.translated}</p></div><small>{turn.method === 'PRERECORDED' ? 'Pre-generated demo phrase' : turn.simulated ? 'Simulated source recording · Live AI translation' : 'Complete microphone turn · Live AI translation'}{turn.timing && latencyParts(turn.timing)?.total !== undefined ? ` · ${latencyParts(turn.timing)?.total} ms total response` : ''}</small>{developer && <TurnTiming turn={turn}/>}<EmailReview turn={turn} confirm={value => controller.current?.confirmEmail(turn.id, value)}/></article>)}<div ref={conversationEnd}/></div></section><aside className="turn-latency"><h2>Current turn latency</h2><dl>{(developer ? measured(undefined,snapshot.timing) : [['Total response latency', snapshot.timing?.stages?.playback===undefined?latency?.total:Math.round(snapshot.timing.stages.playback-snapshot.timing.stages.speechEnd)]]).map(([label,value]) => <div key={String(label)}><dt>{label}</dt><dd>{value === undefined ? '—' : `${value} ms`}</dd></div>)}</dl><p>From the end of source speech to translated playback. {developer ? 'Measured on one browser clock. — means unavailable or not used; cached audio bypasses ElevenLabs. English voice uses complete buffering, so its first-byte timing is unavailable.' : 'Standard phrases use cached recordings.'}</p></aside></div>
+      </>}
+    </main>
+    <footer className="site-footer"><span className="footer-brand"><i>a</i>PureBase</span><p>AI interprets only. Consent, contact details and authorization remain human decisions.</p><span className="footer-caption">English ↔ Danish · Stage 1.9 local evaluation</span></footer>
+  </>;
+}
+function ClinicPage(){const [developer,setDeveloper]=useState(false);return <><div className="site-header"><div className="brand-bar"><img className="brand-logo" src="/apurebase-logo.jpg" alt="aPureBase"/><span>Stage 1.7 · Danish clinic</span></div></div><main><header className="intro"><h1>English ↔ Danish interpreter</h1><p>You hear only Danish translation. Your Danish microphone is sent only for interpretation.</p></header><label className="toggle"><input type="checkbox" checked={developer} onChange={e=>setDeveloper(e.target.checked)}/> Developer mode</label><StreamingView role="clinic" developer={developer}/></main></>; }
+createRoot(document.getElementById('root')!).render(location.pathname==='/participant'?<ClinicPage/>:<App legacy={location.pathname==='/controlled-demo'}/>);

@@ -1,0 +1,11 @@
+import {fixtureVoice} from './fixtures/voice';
+import {expect,it} from 'vitest';
+import {encodePcm,decodePcm,assertListeningBus} from '../src/streaming/routing';
+import {inputBus,outputBus} from '../src/streaming/types';
+it('routes both languages exclusively to the opposite target listening bus',()=>{expect(inputBus('en')).toBe('AGENT_INPUT_EN');expect(outputBus('en')).toBe('HCP_OUTPUT_DA');expect(inputBus('da')).toBe('HCP_INPUT_DA');expect(outputBus('da')).toBe('AGENT_OUTPUT_EN');});
+it('clinic accepts only Danish target PCM; agent remote input accepts only source Danish PCM for recognition',()=>{const pcm=new Uint8Array([1,2,3,4]);expect(decodePcm('clinic',encodePcm('HCP_OUTPUT_DA',5,pcm,fixtureVoice),fixtureVoice)).toMatchObject({turn:5,bus:'HCP_OUTPUT_DA',bytes:pcm});expect(decodePcm('agent',encodePcm('HCP_INPUT_DA',5,pcm))).toMatchObject({bus:'HCP_INPUT_DA'});for(const bus of ['AGENT_INPUT_EN','AGENT_OUTPUT_EN','HCP_INPUT_DA']as const)expect(()=>decodePcm('clinic',encodePcm(bus,5,pcm),fixtureVoice)).toThrow('isolation');expect(()=>decodePcm('agent',encodePcm('HCP_OUTPUT_DA',5,pcm,fixtureVoice),fixtureVoice)).toThrow('isolation');});
+it('rejects self-monitoring and foreign output buses',()=>{for(const bus of ['AGENT_INPUT_EN','HCP_INPUT_DA','HCP_OUTPUT_DA']as const)expect(()=>assertListeningBus('agent',bus)).toThrow();for(const bus of ['AGENT_INPUT_EN','HCP_INPUT_DA','AGENT_OUTPUT_EN']as const)expect(()=>assertListeningBus('clinic',bus)).toThrow();});
+it('rejects oversized/odd/invalid transport PCM',()=>{expect(()=>encodePcm('HCP_INPUT_DA',1,new Uint8Array(3))).toThrow();expect(()=>decodePcm('clinic',new ArrayBuffer(2))).toThrow();expect(()=>encodePcm('HCP_OUTPUT_DA',-1,new Uint8Array(4))).toThrow();});
+it('blocks unproven/OpenAI Danish PCM at both encode and receive boundaries',()=>{
+ const pcm=new Uint8Array([1,2,3,4]);expect(()=>encodePcm('HCP_OUTPUT_DA',1,pcm)).toThrow('ElevenLabs');expect(()=>encodePcm('HCP_OUTPUT_DA',1,pcm,{...fixtureVoice,provider:'OpenAI'})).toThrow('ElevenLabs');const frame=encodePcm('HCP_OUTPUT_DA',1,pcm,fixtureVoice);expect(()=>decodePcm('clinic',frame)).toThrow('ElevenLabs');expect(()=>decodePcm('clinic',frame,{...fixtureVoice,provider:'OS/system TTS'})).toThrow('ElevenLabs');
+});

@@ -1,0 +1,142 @@
+{
+  "opening": {
+    "hash": "2637d600f761db7a841e1fad6c9768109687e0cdf245698cf159e25e19836561",
+    "provider": "ElevenLabs",
+    "model": "eleven_flash_v2_5",
+    "voice": "gIfqD5jrnhkFu8ENVbXC",
+    "language": "da",
+    "bytes": 559552
+  },
+  "purpose": {
+    "hash": "781e32c93c9928515a12c73c8af7c09c4484012c9f51901759c92f384f4ee2bf",
+    "provider": "ElevenLabs",
+    "model": "eleven_flash_v2_5",
+    "voice": "gIfqD5jrnhkFu8ENVbXC",
+    "language": "da",
+    "bytes": 318808
+  },
+  "request-email": {
+    "hash": "f980615f517a03dbcf003971802a0e1e0fb43deabe31ae7948dd90b78347364c",
+    "provider": "ElevenLabs",
+    "model": "eleven_flash_v2_5",
+    "voice": "gIfqD5jrnhkFu8ENVbXC",
+    "language": "da",
+    "bytes": 138250
+  },
+  "information": {
+    "hash": "5081dbb15bc2833047802334c0de1a4db8ee5812456c7d1734dd0d95d95e4373",
+    "provider": "ElevenLabs",
+    "model": "eleven_flash_v2_5",
+    "voice": "gIfqD5jrnhkFu8ENVbXC",
+    "language": "da",
+    "bytes": 506054
+  },
+  "unsubscribe": {
+    "hash": "bd7fbe829deded214ccb3327a0868282049dc47089605cb8e910f26e2a151b39",
+    "provider": "ElevenLabs",
+    "model": "eleven_flash_v2_5",
+    "voice": "gIfqD5jrnhkFu8ENVbXC",
+    "language": "da",
+    "bytes": 122646
+  },
+  "callback": {
+    "hash": "eac2c8aa34fa1286724e18b71a3c3bf452c7166c4a3ca0a3644dc6abe98afbfa",
+    "provider": "ElevenLabs",
+    "model": "eleven_flash_v2_5",
+    "voice": "gIfqD5jrnhkFu8ENVbXC",
+    "language": "da",
+    "bytes": 111500
+  },
+  "thank-you": {
+    "hash": "e27f5cd960e0955faed4dba9ba0342f0b26bb0b49670c69d11adadaa299f6d1e",
+    "provider": "ElevenLabs",
+    "model": "eleven_flash_v2_5",
+    "voice": "gIfqD5jrnhkFu8ENVbXC",
+    "language": "da",
+    "bytes": 91438
+  },
+  "clinic-greeting": {
+    "hash": "ff1e0830d18bf13db65f59fcccb9411c08a7d1cf3f0a19ac33a83d21a461165e",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "language": "da",
+    "bytes": 184844
+  },
+  "clinic-information": {
+    "hash": "744cb658f34421c34a44460ba8d965c5ddc876d9981f6e7d8328144d41d37be5",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "language": "da",
+    "bytes": 136844
+  },
+  "clinic-request": {
+    "hash": "74a032ad54b87bb0d6804203531f650b6af79ddb094a922f4912451a8ea0e5b4",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "language": "da",
+    "bytes": 115244
+  },
+  "clinic-ask-doctor": {
+    "hash": "135c20764e95b465c76d19495f58be0e005c6f8f01b68f1234cf199ef30ed475",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "language": "da",
+    "bytes": 151244
+  },
+  "clinic-callback": {
+    "hash": "68d9f4145c7f68cbe42a680ad017e1986348a08a46eae0b3870fb83c18717bb8",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "language": "da",
+    "bytes": 165644
+  },
+  "agent-purpose": {
+    "hash": "484d745b216a8251d919c95d271a71ff97f8ecfd091316a4f90763ca0f16d3c7",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "language": "en",
+    "bytes": 321644
+  },
+  "agent-information": {
+    "hash": "8f30543d0a1551cbc34ec6bd621ca39a0de60c0b08c4d551b3a1d4cfb5c12279",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "language": "en",
+    "bytes": 460844
+  },
+  "agent-permission": {
+    "hash": "4e307f5d3d302f6feb1cfb368b55242b953b286d38ef0458ed4fa9e1d16c24f6",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "language": "en",
+    "bytes": 300044
+  },
+  "agent-callback": {
+    "hash": "30124c82b79942e225d2da93e1837902645b99073edc8af5d10db02a0537b396",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "language": "en",
+    "bytes": 180044
+  },
+  "clinic-connect": {
+    "hash": "7c2d18019659c02952e9570c5875c42fd8b6572acfdec6d1d2134979386f5391",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "language": "da",
+    "bytes": 216044
+  },
+  "hcp-information": {
+    "hash": "c5d7dfc2549da37df849f1098e94bdec7b1e45896c1fbaab1231460c076bb331",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "language": "da",
+    "bytes": 206444
+  },
+  "hcp-agreement": {
+    "hash": "8de85188b6ec7829a6ea21ce64e6974fafc3b427fdfad26029b3741645532da5",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "language": "da",
+    "bytes": 727244
+  }
+}

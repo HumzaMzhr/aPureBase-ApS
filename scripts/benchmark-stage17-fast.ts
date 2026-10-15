@@ -1,0 +1,6 @@
+import 'dotenv/config';
+import {writeFile} from 'node:fs/promises';
+import {incrementalTranslation,type UnitRequest} from '../server/incrementalTranslation';
+import {summarize} from '../src/latency';
+const cases=[{language:'en',text:'Hello, my name is Humza,'},{language:'en',text:"I'm calling on behalf of aPureBase."},{language:'da',text:'Hej, du taler med Pernille.'},{language:'da',text:'Lægen er ikke tilgængelig. Du kan ringe igen senere.'}] as const;
+const rows=[];process.env.STREAMING_SERVICE_TIER='fast';for(const item of cases){const input:UnitRequest={...item,sourceHistory:'',targetHistory:'',conversationContext:'Fictional healthcare contact. Interpret only.',speakerRole:item.language==='en'?'agent':'clinic',protectedTerms:[],precision:false};const start=performance.now();let first;let result;for await(const event of incrementalTranslation(input,undefined,'gpt-6-luna')){if(event.type==='partial')first??=performance.now();else result=event.result;}rows.push({...item,result,firstText:(first??performance.now())-start,complete:performance.now()-start});console.info(item.language,Math.round(performance.now()-start));await writeFile('benchmarks/stage17-fast.json',JSON.stringify({model:'gpt-6-luna',requestedTier:'fast',rows,summary:summarize(rows.map(r=>({firstText:r.firstText,complete:r.complete})))},null,2));}

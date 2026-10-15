@@ -1,0 +1,15 @@
+1. Wrong first voice root cause: not reproduced. The actual first PCM in this fresh test is live ElevenLabs Isabella. The original microphone-session acoustic complaint remains unconfirmed without its recording/trace.
+
+2. Voice fix verified: the existing hotfix validates the configured provider, voice and model before first Danish audio, then locks the generation identity. No additional application code was changed in this testing turn.
+
+3. Evidence: 17 PCM packets and 9 completed semantic segments used one ElevenLabs/Isabella/eleven_flash_v2_5 generation (application connection UUID 038967c5-405a-4a65-92fe-e09b8d464527). First sample 0 maps to “Hej, godmorgen,”. All 61 source words were translated and spoken; zero scheduling overlaps. This proves provider routing, not perceived voice naturalness on physical headphones.
+
+4. Gap root cause: the fresh test recorded an 8.570–10.298 second quiet interval after source onset. Translated text was already ready at 8.444 seconds. The dominant measured stage was waiting for ElevenLabs audio, followed by a short provider PCM quiet interval. A separate 13.135–17.056 second gap included protected consent/precision translation and then ElevenLabs waiting. This is a new synthetic test, not a reconstruction of the original human recording.
+
+5. Gap fix status: the existing same-socket starvation flush executed, including while preceding audio played. It prevents text being indefinitely held below the generation threshold, but did not meet the 750 ms acceptance target consistently in this live test. No model, voice, prompt, precision, jitter buffer or playback speed was changed. Further optimization was outside this testing-only request.
+
+6. Longest measured content-ready portion of a transport-related quiet interval: 1,728.7 ms (20 ms RMS/AudioContext instrumentation). Longest overall recorded gap: 3,920.7 ms, mainly precision translation. Provider-generated queued silence also lasted 916.2 ms. Avoidability/naturalness is not automatically certified. First audible translation was approximately 5.895 seconds after source onset. Delay acceptance: NOT PASSED.
+
+7. Regression results: npm test passed 356 tests in 38 files; npm run lint, npm run typecheck and npm run build passed. Exactly one additional approved paid API test was run using the 23.085-second synthetic English fixture. Full delivery passed; single-provider provenance passed; live playback gap target failed. No real microphone, call or Twilio was used. The previous live evidence is preserved under benchmarks/stage19-hotfix-first-run/.
+
+8. Human retest: open http://localhost:5173 in Chrome, use headphones, select LOCAL TEST → English → Danish → Realtime. Turn Developer Mode on, cached opening off, prosody 250 ms and jitter 100 ms. Start and say “Hi, good morning. My name is Humza, and I’m calling on behalf of aPureBase.” Continue speaking for 15 seconds, then finish/drain and STOP. Listen specifically for the first greeting voice; export the trace and record translated output if it still sounds different. Current measured delay is not yet ready to claim a 1–2 second goal or <750 ms gap guarantee.

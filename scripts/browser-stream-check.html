@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Stage 1.4 browser streaming check</title><style>body{font:18px system-ui;padding:36px;max-width:900px}button{padding:12px;margin-right:12px}pre{white-space:pre-wrap}</style><h1>Stage 1.4 browser streaming check</h1><p>Mock PCM transport only. This plays a quiet test tone; it does not call ElevenLabs or test Danish voice quality.</p><button id="start">Start streaming check</button><button id="end">End call</button><pre id="result">Ready</pre><script type="module">
+import { BrowserCallIO } from '/src/browserAudio.ts';
+const realFetch = window.fetch.bind(window); let aborted = false; let calls = 0;
+window.fetch = async (url, init) => {
+  if (url === '/api/health') return new Response(JSON.stringify({ready:true,missingAudio:[],danishVoice:{provider:'Mock ElevenLabs transport',voiceName:'Test tone'}}));
+  if (url !== '/api/speech/stream') return realFetch(url, init);
+  calls++; aborted = false;
+  const sampleRate=24000; let position=0; let timer;
+  const stream=new ReadableStream({start(c){
+    const send=()=>{
+      if(init.signal.aborted){aborted=true;clearInterval(timer);try{c.error(new DOMException('Call ended','AbortError'));}catch{}return;}
+      if(position>=sampleRate*2){clearInterval(timer);c.close();return;}
+      const bytes=new Uint8Array(4800);const view=new DataView(bytes.buffer);
+      for(let i=0;i<2400;i++)view.setInt16(i*2,Math.sin((position+i)*2*Math.PI*440/sampleRate)*1200,true);
+      position+=2400;c.enqueue(bytes);
+    };
+    timer=setInterval(send,80);init.signal.addEventListener('abort',()=>{aborted=true;clearInterval(timer);try{c.error(new DOMException('Call ended','AbortError'));}catch{}},{once:true});send();
+  },cancel(){clearInterval(timer);}});
+  return new Response(stream,{headers:{'Content-Type':'audio/pcm','X-Audio-Sample-Rate':'24000'}});
+};
+const io=new BrowserCallIO();let abort;let began;let times={};const result=document.querySelector('#result');
+const display=()=>{result.textContent=JSON.stringify({...times,requests:calls,networkAborted:aborted},null,2);};
+document.querySelector('#start').onclick=async()=>{
+  abort=new AbortController();times={};began=performance.now();
+  try{await io.prepare({demo:true,scenario:'callback',silenceMs:650,manual:false,agentMic:'',clinicMic:'',agentOutput:'',clinicOutput:''},abort.signal);
+    await io.streamDanish('Mock test tone',abort.signal,{requestStarted(){times.request=Math.round(performance.now()-began);display();},firstAudio(){times.firstAudio=Math.round(performance.now()-began);display();},started(){times.playback=Math.round(performance.now()-began);times.startedBeforeComplete=times.complete===undefined;display();},complete(){times.complete=Math.round(performance.now()-began);display();}});
+    times.finished=true;display();io.cancel();
+  }catch(e){times.error=e.message;display();io.cancel();}
+};
+document.querySelector('#end').onclick=()=>{abort?.abort();io.cancel();times.ended=true;display();};
+</script></html>

@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Stage 1.5 controlled benchmark</title><style>body{font:16px system-ui;padding:30px}button{padding:12px}pre{white-space:pre-wrap}td,th{padding:5px;border-bottom:1px solid #ddd;text-align:left}</style><h1>Stage 1.5 controlled benchmark</h1><p>Paid live API benchmark using ten fixed synthetic English sources. No human microphone or autonomous response is used.</p><button id="run">Run 10 turns</button><button id="stop">Stop</button><p id="progress">Ready</p><pre id="summary"></pre><pre id="json"></pre><script type="module">
+import {BrowserCallIO} from '/src/browserAudio.ts';
+import {summarize} from '/src/latency.ts';
+import {benchmarkCases} from '/scripts/benchmark-cases.ts';
+const io=new BrowserCallIO();let abort;
+const metric=(row)=>{const t=row.t;return {endDetection:t.t1-t.t0,transcription:t.t3-t.t2,firstText:t.t5-t.t4,completeText:t.t6-t.t4,handoff:t.t7-t.t6,elevenFirstAudio:t.t8-t.t7,playback:t.t9-t.t8,total:t.t9-t.t0}};
+document.querySelector('#run').onclick=async()=>{
+  abort=new AbortController();document.querySelector('#run').disabled=true;const rows=new URLSearchParams(location.search).has('resume')?(await(await fetch('/benchmarks/optimized-incomplete.json')).json()).rows:[];const progress=document.querySelector('#progress');
+  try{
+    await io.prepare({demo:true,scenario:'callback',silenceMs:Number(new URLSearchParams(location.search).get('silence')??650),transcriptionMode:new URLSearchParams(location.search).get('mode')??'file',manual:false,agentMic:'',clinicMic:'',agentOutput:'',clinicOutput:''},abort.signal);
+
+    for(const item of benchmarkCases.filter(c=>!rows.some(r=>r.id===c.id))){
+      progress.textContent=`${rows.length+1}/10: ${item.id} — source playback`;
+      const response=await fetch(`/benchmarks/audio/${item.id}-analysis.wav`,{signal:abort.signal});if(!response.ok)throw new Error('Generate benchmark fixtures first.');
+      const audio=new Blob([await response.arrayBuffer()],{type:'audio/wav'});const captured=await io.simulate(audio,'en',abort.signal,()=>{});const t={t0:captured.endedAt,t1:captured.confirmedAt};
+      progress.textContent=`${rows.length+1}/10: ${item.id} — transcription/translation`;
+      t.t2=captured.transcriptionStarted??io.now();const original=captured.transcript??await io.transcribe(audio,'en',abort.signal);t.t3=captured.transcriptReady??io.now();
+      const translated=await io.translate(original,'en',abort.signal,{requestStarted(){t.t4=io.now();},firstText(){t.t5=io.now();}});t.t6=io.now();
+      progress.textContent=`${rows.length+1}/10: ${item.id} — Danish streaming`;
+      await io.streamDanish(translated,abort.signal,{requestStarted(){t.t7=io.now();},firstAudio(){t.t8=io.now();},started(){t.t9=io.now();},complete(){t.audioComplete=io.now();}});
+      const row={id:item.id,length:item.length,source:item.text,original,translated,t};row.metrics=metric(row);rows.push(row);
+      const summary=summarize(rows.map(r=>r.metrics));
+      document.querySelector('#summary').textContent=JSON.stringify(summary,null,2);document.querySelector('#json').textContent=JSON.stringify({label:new URLSearchParams(location.search).get('label')??'baseline',source:'synthetic-fixtures',rows,summary},null,2);
+      await io.pause(180,abort.signal);
+    }
+    progress.textContent='COMPLETE — 10/10';
+  }catch(e){progress.textContent=`FAILED: ${e.message}`;}finally{io.cancel();document.querySelector('#run').disabled=false;}
+};
+document.querySelector('#stop').onclick=()=>{abort?.abort();io.cancel();};
+</script></html>
