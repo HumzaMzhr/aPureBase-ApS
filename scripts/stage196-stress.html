@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Stage 1.9.6 · 50 sustained live stress tests</title>
+<style>body{font:15px system-ui;margin:28px;max-width:1100px;color:#173333;background:#f4f7f6}button{font:inherit;padding:12px;margin-right:12px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;padding:15px}h1{font-size:26px}</style>
+<h1>Stage 1.9.6 · Live automated verification</h1><p>50 serial attempts · 120–160 second English passages · live recognition, translation and Isabella · silent real-time renderer. Production candidate and settings stay frozen. Physical microphone/headphone acceptance remains pending.</p>
+<button id="preflight">Check readiness (no provider requests)</button><button id="start" disabled>Run 50 authorized attempts</button><button id="stop" disabled>Stop batch</button>
+<p id="status">Not started</p><pre id="progress"></pre><h2>Latest evidence</h2><pre id="evidence"></pre>
+<script type="module">
+import {completionAudit} from 'http://localhost:5173/scripts/stage196-stress-support.mjs';
+import {LocalTestSession} from 'http://localhost:5173/src/streaming/localSession.ts';
+import {LocalOutput} from 'http://localhost:5173/src/streaming/localOutput.ts';
+import {lastSessionDiagnostics} from 'http://localhost:5173/src/streaming/sessionDiagnostics.ts';
+const base=location.port==='5174'?location.origin:'http://127.0.0.1:5174';const el=id=>document.getElementById(id);const sleep=ms=>new Promise(r=>setTimeout(r,Math.max(0,ms)));
+let evidenceWriter;const record=(kind,data)=>evidenceWriter?.record(kind,data);
+const transportEvents=[];const NativeWebSocket=window.WebSocket;window.WebSocket=class ObservedWebSocket extends NativeWebSocket{constructor(...args){super(...args);const path=new URL(args[0],location.href).pathname;this.addEventListener('message',event=>{if(path.startsWith('/api/')&&typeof event.data==='string'){try{record('websocket.in',{path,event:JSON.parse(event.data)});}catch{record('websocket.invalid',{path});}}});this.addEventListener('close',event=>transportEvents.push({at:performance.now(),path,type:'close',code:event.code,reason:event.reason,clean:event.wasClean}));this.addEventListener('error',()=>transportEvents.push({at:performance.now(),path,type:'error'}));}};
+function writer(runId){let sequence=0,chunk=0,queue=[],chain=Promise.resolve(),failure;return{record(kind,data){queue.push({sequence:++sequence,at:performance.now(),kind,data});if(queue.length>50000)failure=new Error('Evidence backlog exceeded safe limit');},flush(){if(!queue.length)return chain;const rows=queue;queue=[];const id=++chunk;chain=chain.then(async()=>{const r=await fetch(base+'/run/'+runId+'/evidence/'+id,{method:'POST',headers:{'Content-Type':'application/json'},body:rows.map(x=>JSON.stringify(x)).join('\n')+'\n'});if(!r.ok)throw new Error('Durable evidence save failed '+r.status);}).catch(e=>{failure=e;});return chain;},ensure(){if(failure)throw failure;},summary(){return{events:sequence,chunks:chunk,error:failure?.message??null};}};}
+function snapshotRecorder(){const units=new Map(),recognition=new Map();let last=-Infinity;return state=>{for(const unit of state.lanes?.en.units??[]){const text=JSON.stringify(unit);if(units.get(unit.id)!==text){units.set(unit.id,text);record('semantic.unit',JSON.parse(text));}}for(const item of state.recognition?.audit?.items??[]){const value={...item,partials:undefined};const text=JSON.stringify(value);if(recognition.get(item.generation)!==text){recognition.set(item.generation,text);record('recognition.item',value);}}if(performance.now()-last>=1000){last=performance.now();record('pipeline.snapshot',{state:state.state,error:state.error,warning:state.warning,positions:state.positions,lag:state.lag,backpressure:state.backpressure,counts:state.lanes?.en&&{received:state.lanes.en.receivedWords,committed:state.lanes.en.committedWords,translated:state.lanes.en.translatedWords,spoken:state.lanes.en.spokenWords},acoustic:state.acoustic,trailing:state.trailing,gaps:state.gaps});}};}
+let cfg,stop=false,running=false,session,latest,stagedSourceBuffers=new Map();
+async function request(path,value){const options=value===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(value)};const r=await fetch(base+path,options);if(!r.ok)throw new Error('Evidence collector '+r.status+' '+await r.text());return r.json();}
+async function preflight(){
+ el('status').textContent='Checking local health, silent sink and source files';
+ const h=await(await fetch('/api/health')).json();if(!h.ready||h.missingAudio.length||h.danishVoice.voiceName!=='Isabella'||h.danishVoice.modelId!=='eleven_flash_v2_5')throw new Error('Health or voice configuration mismatch');
+ cfg=await request('/config');const context=new AudioContext({sampleRate:24000});
+ try{await context.resume();if(typeof context.setSinkId!=='function')throw new Error('Silent AudioContext sink unavailable; no live session started');await context.setSinkId({type:'none'});
+ for(const source of cfg.sources){const response=await fetch(base+'/source/'+source.file);if(!response.ok)throw new Error('Source unavailable');const bytes=await response.arrayBuffer();const digest=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(b=>b.toString(16).padStart(2,'0')).join('');if(digest!==source.sha256)throw new Error('Fixture SHA mismatch');const buffer=await context.decodeAudioData(bytes);if(buffer.sampleRate!==24000||buffer.numberOfChannels!==1)throw new Error('Source PCM format');stagedSourceBuffers.set(source.id,buffer.getChannelData(0).slice());}
+ }finally{await context.close();}
+ el('progress').textContent=JSON.stringify({health:'ready',models:h.models,voice:h.danishVoice,batch:cfg.batchId,sources:cfg.sources.map(s=>({id:s.id,durationMs:s.durationMs})),settings:cfg.settings},null,2);el('status').textContent='READY · no provider session initiated';el('start').disabled=false;
+}
+function pcmBytes(samples){const out=new Uint8Array(samples.length*2),view=new DataView(out.buffer);for(let i=0;i<samples.length;i++)view.setInt16(i*2,Math.round(Math.max(-1,Math.min(1,samples[i]))*32767),true);return out;}
+async function perform(run){
+ let inputEnabled=false,consume,ctx,snapshot,heartbeat,deadline,sourceBegin,sourceFinish;const packets=[],feedTiming=[];let status='failed',error=null,preCleanupSnapshot,finalCompletionAudit,evidenceTimer,stallSince,stallSignature;const saveSnapshot=snapshotRecorder();evidenceWriter=writer(run.runId);record('run.begin',{runId:run.runId,profile:run.source.id});
+ const microphone={prepare:async(_device,callback)=>{consume=callback;},enable:enabled=>inputEnabled=enabled,checkpoint:async()=>{},cancel:()=>inputEnabled=false};
+ const source=stagedSourceBuffers.get(run.source.id);if(!source)throw new Error('Unprepared source');const started=performance.now();
+ const ensure=()=>{evidenceWriter.ensure();if(stop)throw new Error('User stopped batch');if(performance.now()-started>run.runTimeoutMs)throw new Error('Harness run time limit');if(snapshot?.state==='ERROR')throw new Error(snapshot.error);if(snapshot?.warning&&/recognition.*review|source.*review/i.test(snapshot.warning))throw new Error('Recognition review: '+snapshot.warning);};
+ try{
+ session=new LocalTestSession({...cfg.settings,microphone:'offline-synthetic-PCM',output:'silent-render-sink',bargeIn:false,warningLagMs:5000,maxLagMs:15000},state=>{snapshot=state;latest=state;saveSnapshot(state);}, {microphone:()=>microphone,output:(language,jitter,hooks)=>new LocalOutput(language,jitter,{...hooks,audit:event=>{record('audio.audit',event);hooks.audit?.(event);},measurement:event=>{if(event.type!=='unit_scheduled')record('audio.measurement',event);hooks.measurement?.(event);}},{quality:true,simultaneous:true,prosodyMs:250,selectOutput:async context=>{ctx=context;await context.setSinkId({type:'none'});},pcm:bytes=>packets.push(bytes.slice())})});
+ evidenceTimer=setInterval(()=>{evidenceWriter.flush();},1000);
+ deadline=setTimeout(()=>{error='Harness run time limit';session?.end();},run.runTimeoutMs);
+ heartbeat=setInterval(()=>{const lane=snapshot?.lanes.en;el('evidence').textContent=JSON.stringify({run:run.index,profile:run.source.id,state:snapshot?.state,source:lane?.source,partial:lane?.partial,target:lane?.target,positions:snapshot?.positions,error:snapshot?.error,warning:snapshot?.warning},null,2);request('/run/'+run.runId+'/heartbeat',{elapsedMs:performance.now()-started,state:snapshot?.state,positions:snapshot?.positions}).catch(()=>{stop=true;session?.end();});},10000);
+ await session.prepare();ensure();sourceBegin=performance.now();
+ for(let at=0;at<source.length;at+=2400){ensure();if(!inputEnabled)throw new Error('Production paused input before source finished');const end=Math.min(source.length,at+2400);const due=sourceBegin+end/24;await sleep(due-performance.now());ensure();const deliveredAt=performance.now();const frame=pcmBytes(source.subarray(at,end));const startAt=deliveredAt-(end-at)/24;consume(frame,{frameStart:at,frameEnd:end,sampleRate:24000,startAt,endAt:deliveredAt,clock:{method:'context-performance-pair',contextTime:at/24000,performanceTime:startAt,renderQuantumMs:128/24,deviceLatencyIncluded:false}});feedTiming.push({frameStart:at,frameEnd:end,dueAt:due,deliveredAt,lateMs:deliveredAt-due});}
+ sourceFinish=performance.now();await request('/run/'+run.runId+'/source-end',{sourceBegin,sourceFinish,snapshot:JSON.parse(JSON.stringify(snapshot)),feedTiming});
+ await session.finish();ensure();
+ for(;;){ensure();const check=completionAudit(snapshot,session.idle);finalCompletionAudit=check;if(check.complete)break;
+  const possibleStall=check.workersDrained&&check.buffersDrained&&check.samplesDrained&&check.acousticComplete&&!check.unitsSpoken;
+  const signature=JSON.stringify({counts:check.counts,units:check.unfinishedUnits,samples:snapshot.positions?.targetSamples});
+  if(possibleStall){if(signature!==stallSignature){stallSignature=signature;stallSince=performance.now();record('completion.stall_started',check);}else if(performance.now()-stallSince>=cfg.completionStallMs){record('completion.stall_timeout',check);throw new Error('Completion accounting stalled after PCM drain; unfinished semantic unit');}}else{stallSince=undefined;stallSignature=undefined;}
+  await sleep(100);}
+ record('completion.verified',finalCompletionAudit);
+ // Test-only gate additionally requires every unit spoken and word/sample equality.
+ if(error)throw new Error(error);status='completed';
+ }catch(e){error=error??e.message;}
+ finally{
+ clearInterval(heartbeat);clearInterval(evidenceTimer);clearTimeout(deadline);preCleanupSnapshot=snapshot?JSON.parse(JSON.stringify(snapshot)):null;finalCompletionAudit=completionAudit(snapshot,session?.idle);record('run.before_cleanup',{status,error,completionAudit:finalCompletionAudit});session?.end();await sleep(0);await evidenceWriter.flush();evidenceWriter.ensure();
+ const diagnostics=lastSessionDiagnostics();if(!diagnostics)throw new Error('Missing diagnostics export');
+ const raw=new Uint8Array(packets.reduce((n,p)=>n+p.length,0));let offset=0;for(const p of packets){raw.set(p,offset);offset+=p.length;}
+ const review={batchId:cfg.batchId,runId:run.runId,index:run.index,profile:run.source.id,status,error,preCleanupSnapshot,completionAudit:finalCompletionAudit,evidence:evidenceWriter.summary(),sourceBegin,sourceFinish,wallDurationMs:performance.now()-started,diagnosticsSessionId:diagnostics.sessionId,sourceReference:run.source,settings:cfg.settings,outputSink:'none',captureKind:'real-time offline synthetic PCM; physical microphone bypassed',physicalAcceptance:false,snapshot:JSON.parse(JSON.stringify(session?.snapshot??snapshot)),feedTiming,providerPcmBytes:raw.length,transportEvents:[...transportEvents],testTransport:location.port==='5174'?'localhost evidence proxy, no Vite HMR':'direct Vite frontend',outputContext:ctx?{sampleRate:ctx.sampleRate,baseLatency:ctx.baseLatency,outputLatency:ctx.outputLatency}:null};
+ await request('/run/'+run.runId+'/diagnostics',diagnostics);
+ const response=await fetch(base+'/run/'+run.runId+'/provider-pcm',{method:'POST',headers:{'Content-Type':'application/octet-stream'},body:raw});if(!response.ok)throw new Error('PCM evidence save failed');
+ const saved=await request('/run/'+run.runId+'/review',review);el('evidence').textContent=JSON.stringify({run:run.index,profile:run.source.id,status,error,firstAudioMs:review.snapshot.acoustic?.firstAudioLatency,tailMs:review.snapshot.acoustic?.tailLatency,positions:review.snapshot.positions},null,2);
+ if(saved.stop)stop=true;session=undefined;
+ }
+}
+async function runBatch(){if(running)return;running=true;stop=false;el('start').disabled=true;el('preflight').disabled=true;el('stop').disabled=false;
+ try{for(;;){if(stop)break;const run=await request('/claim',{});if(run.waitMs){el('status').textContent='SERVICE COOLDOWN · '+Math.ceil(run.waitMs/1000)+'s before next counted attempt';await sleep(Math.min(10000,run.waitMs));continue;}if(run.done)break;el('status').textContent='RUNNING '+run.index+'/50 · '+run.source.id;await perform(run);const progress=await request('/status');el('progress').textContent=JSON.stringify(progress,null,2);if(progress.stopped)break;await sleep(500);}const progress=await request('/status');el('status').textContent=progress.completed===50?'50 ATTEMPTS RECORDED · ANALYSIS REQUIRED':'BATCH STOPPED · '+progress.completed+' attempts recorded';}
+ catch(e){stop=true;session?.end();el('status').textContent='BATCH HALTED: '+e.message;await request('/stop',{}).catch(()=>{});}
+ finally{running=false;el('stop').disabled=true;}
+}
+el('preflight').onclick=()=>preflight().catch(e=>el('status').textContent='PREFLIGHT FAILED: '+e.message);
+el('start').onclick=runBatch;el('stop').onclick=()=>{stop=true;session?.end();request('/stop',{}).catch(()=>{});};
+</script></html>

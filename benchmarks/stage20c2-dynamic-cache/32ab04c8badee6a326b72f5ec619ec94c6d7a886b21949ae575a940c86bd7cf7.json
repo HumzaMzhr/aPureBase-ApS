@@ -1,0 +1,62 @@
+{
+  "phraseId": "intermediary-consent-question",
+  "wordingVersion": "stage-2.0c1-approved-1",
+  "text": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+  "textHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+  "assetHash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+  "path": "http://127.0.0.1:5180/cache/32ab04c8badee6a326b72f5ec619ec94c6d7a886b21949ae575a940c86bd7cf7.wav",
+  "voice": {
+    "provider": "ElevenLabs",
+    "name": "Isabella",
+    "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+    "modelId": "eleven_flash_v2_5",
+    "speed": 0.95
+  },
+  "requestedSpeed": 0.95,
+  "generatedAt": "2026-10-18T12:32:09.021Z",
+  "duration": 5.108375,
+  "samples": 122601,
+  "sampleRate": 24000,
+  "mediaFormat": "wav-pcm-s16le-mono",
+  "provenance": {
+    "verified": true,
+    "method": "authenticated-provider-response-and-content-hash",
+    "providerRequestId": "ygQUsGtdGous3G3FJ1l3",
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+    "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+  },
+  "verification": {
+    "mediaValid": true,
+    "nonSilent": true,
+    "clippingEvents": 0,
+    "rawPeak": 0.182525634765625,
+    "gainApplied": 3.5573605757216837,
+    "peakProtectionEvents": 0,
+    "outputPeak": 0.649309515953064
+  },
+  "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+  "businessWordingApproved": true,
+  "productionApproved": false,
+  "binding": {
+    "slot": {
+      "kind": "NAME",
+      "phraseId": "intermediary-consent-question",
+      "name": {
+        "original": "Jens Hansen",
+        "source": "contact-data",
+        "evidenceId": "synthetic-contact-fixture",
+        "evidenceText": "SYNTHETIC rehearsal target: Jens Hansen",
+        "reviewedBy": "local-rehearsal-fixture",
+        "reviewedAt": "2026-10-18T00:00:00.000Z",
+        "pronunciationConfirmed": true,
+        "recipientRevision": 1
+      }
+    },
+    "renderedValue": "Jens Hansen",
+    "renderedText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+    "textHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "rendererVersion": "stage-2.0c2-deterministic-1",
+    "cacheKey": "32ab04c8badee6a326b72f5ec619ec94c6d7a886b21949ae575a940c86bd7cf7"
+  }
+}

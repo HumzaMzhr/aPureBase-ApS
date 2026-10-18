@@ -1,0 +1,62 @@
+{
+  "phraseId": "wrong-person-close",
+  "wordingVersion": "stage-2.0c1-approved-1",
+  "text": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+  "textHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+  "assetHash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+  "path": "http://127.0.0.1:5180/cache/dd5620b5bf17f06eb00a64c250cb1a3eee0f2874ab9e60dcbeae686667d4ef45.wav",
+  "voice": {
+    "provider": "ElevenLabs",
+    "name": "Isabella",
+    "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+    "modelId": "eleven_flash_v2_5",
+    "speed": 0.95
+  },
+  "requestedSpeed": 0.95,
+  "generatedAt": "2026-10-18T12:32:07.583Z",
+  "duration": 3.9938333333333333,
+  "samples": 95852,
+  "sampleRate": 24000,
+  "mediaFormat": "wav-pcm-s16le-mono",
+  "provenance": {
+    "verified": true,
+    "method": "authenticated-provider-response-and-content-hash",
+    "providerRequestId": "lxkdLiaLSSsIaN7kDOZQ",
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+    "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+  },
+  "verification": {
+    "mediaValid": true,
+    "nonSilent": true,
+    "clippingEvents": 0,
+    "rawPeak": 0.193756103515625,
+    "gainApplied": 3.5573605757216837,
+    "peakProtectionEvents": 0,
+    "outputPeak": 0.6892603039741516
+  },
+  "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+  "businessWordingApproved": true,
+  "productionApproved": false,
+  "binding": {
+    "slot": {
+      "kind": "NAME",
+      "phraseId": "wrong-person-close",
+      "name": {
+        "original": "Anna Jensen",
+        "source": "contact-data",
+        "evidenceId": "synthetic-contact-fixture",
+        "evidenceText": "SYNTHETIC rehearsal target: Anna Jensen",
+        "reviewedBy": "local-rehearsal-fixture",
+        "reviewedAt": "2026-10-18T00:00:00.000Z",
+        "pronunciationConfirmed": true,
+        "recipientRevision": 1
+      }
+    },
+    "renderedValue": "Anna Jensen",
+    "renderedText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+    "textHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "rendererVersion": "stage-2.0c2-deterministic-1",
+    "cacheKey": "dd5620b5bf17f06eb00a64c250cb1a3eee0f2874ab9e60dcbeae686667d4ef45"
+  }
+}

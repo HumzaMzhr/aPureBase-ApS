@@ -5,7 +5,7 @@ let server: Server; let endpoint: string; let source: ReadableStreamDefaultContr
 const realFetch = globalThis.fetch;
 beforeEach(async () => {
   source = undefined!; providerSignal = undefined!;
-  vi.stubEnv('ELEVENLABS_API_KEY', 'private-eleven-key'); vi.stubEnv('ELEVENLABS_VOICE_ID', 'configured-voice'); vi.stubEnv('ELEVENLABS_MODEL_ID', 'eleven_flash_v2_5'); vi.stubEnv('ELEVENLABS_VOICE_SETTINGS', '');
+  vi.stubEnv('ELEVENLABS_API_KEY', 'private-eleven-key'); vi.stubEnv('ELEVENLABS_VOICE_ID', 'gIfqD5jrnhkFu8ENVbXC'); vi.stubEnv('ELEVENLABS_MODEL_ID', 'eleven_flash_v2_5'); vi.stubEnv('ELEVENLABS_VOICE_SETTINGS', '');
   vi.stubGlobal('fetch', vi.fn(async (url: string | URL, options?: RequestInit) => {
     if (!String(url).startsWith('https://api.elevenlabs.io/')) return realFetch(url, options);
     providerSignal = options!.signal!;

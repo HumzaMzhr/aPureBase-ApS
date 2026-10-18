@@ -1,6 +1,30 @@
 import type {UnitRequest,UnitResult} from '../../server/incrementalTranslation';
 import {readSse} from '../sse';
-export async function translateUnit(input:UnitRequest,signal:AbortSignal,partial:(text:string)=>void):Promise<UnitResult>{const response=await fetch('/api/interpret/unit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input),signal});if(!response.ok||!response.body)throw new Error('Unit translation unavailable.');for await(const event of readSse(response.body)){signal.throwIfAborted();if(event.type==='partial'&&typeof event.text==='string')partial(event.text);if(event.type==='done')return event.result as UnitResult;}throw new Error('Unit translation interrupted.');}
+type TranslationTrace=(event:string,data:Record<string,unknown>)=>void;
+/** Retry only a pre-first-text stall, once, after cancelling the original HTTP
+ * request. No parallel hedge, partial speech, model fallback or validation bypass. */
+export async function translateUnit(input:UnitRequest,signal:AbortSignal,partial:(text:string)=>void,trace?:TranslationTrace):Promise<UnitResult>{
+ for(let attempt=0;attempt<2;attempt++){
+  signal.throwIfAborted();const controller=new AbortController(),combined=AbortSignal.any([signal,controller.signal]);let timedOut=false;
+  const timer=attempt===0&&input.uncertaintyRouting&&!input.precision?setTimeout(()=>{timedOut=true;controller.abort(new DOMException('Translation produced no text','TimeoutError'));},3000):undefined;
+  try{
+   trace?.('translation.attempt_started',{attempt:attempt+1});
+   const response=await fetch('/api/interpret/unit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input),signal:combined});
+   if(!response.ok||!response.body)throw new Error('Unit translation unavailable.');
+   for await(const event of readSse(response.body)){
+    combined.throwIfAborted();
+    if(event.type==='partial'&&typeof event.text==='string'){if(event.text.trim())clearTimeout(timer);partial(event.text);}
+    if(event.type==='done'){trace?.('translation.attempt_completed',{attempt:attempt+1});return event.result as UnitResult;}
+   }
+   throw new Error('Unit translation interrupted.');
+  }catch(error){
+   signal.throwIfAborted();
+   if(!timedOut||attempt!==0)throw error;
+   trace?.('translation.first_text_timeout',{attempt:attempt+1,timeoutMs:3000});
+  }finally{clearTimeout(timer);controller.abort();}
+ }
+ throw new Error('Unit translation unavailable.');
+}
 
 /** Whole-turn compatibility path; the original server owns model routing and validation. */
 export async function translateControlledTurn(input:UnitRequest,signal:AbortSignal):Promise<UnitResult>{

@@ -1,0 +1,62 @@
+{
+  "phraseId": "wrong-person-close",
+  "wordingVersion": "stage-2.0c1-approved-1",
+  "text": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+  "textHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+  "assetHash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+  "path": "http://127.0.0.1:5180/cache/a817e97e963f5083cd4e9803c210b4430ae300de611ad38918b843908e33a29c.wav",
+  "voice": {
+    "provider": "ElevenLabs",
+    "name": "Isabella",
+    "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+    "modelId": "eleven_flash_v2_5",
+    "speed": 0.95
+  },
+  "requestedSpeed": 0.95,
+  "generatedAt": "2026-10-18T12:32:09.876Z",
+  "duration": 3.761625,
+  "samples": 90279,
+  "sampleRate": 24000,
+  "mediaFormat": "wav-pcm-s16le-mono",
+  "provenance": {
+    "verified": true,
+    "method": "authenticated-provider-response-and-content-hash",
+    "providerRequestId": "BsTqfMWwsxSNSQxiseS7",
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+    "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+  },
+  "verification": {
+    "mediaValid": true,
+    "nonSilent": true,
+    "clippingEvents": 0,
+    "rawPeak": 0.209381103515625,
+    "gainApplied": 3.5573605757216837,
+    "peakProtectionEvents": 0,
+    "outputPeak": 0.7448440790176392
+  },
+  "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+  "businessWordingApproved": true,
+  "productionApproved": false,
+  "binding": {
+    "slot": {
+      "kind": "NAME",
+      "phraseId": "wrong-person-close",
+      "name": {
+        "original": "Jens Hansen",
+        "source": "contact-data",
+        "evidenceId": "synthetic-contact-fixture",
+        "evidenceText": "SYNTHETIC rehearsal target: Jens Hansen",
+        "reviewedBy": "local-rehearsal-fixture",
+        "reviewedAt": "2026-10-18T00:00:00.000Z",
+        "pronunciationConfirmed": true,
+        "recipientRevision": 1
+      }
+    },
+    "renderedValue": "Jens Hansen",
+    "renderedText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+    "textHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "rendererVersion": "stage-2.0c2-deterministic-1",
+    "cacheKey": "a817e97e963f5083cd4e9803c210b4430ae300de611ad38918b843908e33a29c"
+  }
+}

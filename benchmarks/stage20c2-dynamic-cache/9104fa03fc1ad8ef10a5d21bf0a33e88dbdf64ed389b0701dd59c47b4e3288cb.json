@@ -1,0 +1,56 @@
+{
+  "phraseId": "email-readback-intro",
+  "wordingVersion": "stage-2.0c1-approved-1",
+  "text": "a, en, en, a, to, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+  "textHash": "980bc70513f1df076e0d3f0c0b60ea8583af52ceb38b170acb668995f25a7c48",
+  "assetHash": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+  "path": "http://127.0.0.1:5180/cache/9104fa03fc1ad8ef10a5d21bf0a33e88dbdf64ed389b0701dd59c47b4e3288cb.wav",
+  "voice": {
+    "provider": "ElevenLabs",
+    "name": "Isabella",
+    "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+    "modelId": "eleven_flash_v2_5",
+    "speed": 0.95
+  },
+  "requestedSpeed": 0.95,
+  "generatedAt": "2026-10-18T12:32:11.139Z",
+  "duration": 8.962916666666667,
+  "samples": 215110,
+  "sampleRate": 24000,
+  "mediaFormat": "wav-pcm-s16le-mono",
+  "provenance": {
+    "verified": true,
+    "method": "authenticated-provider-response-and-content-hash",
+    "providerRequestId": "IEjDhwj4YO79bxvOOVB6",
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+    "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+  },
+  "verification": {
+    "mediaValid": true,
+    "nonSilent": true,
+    "clippingEvents": 0,
+    "rawPeak": 0.21453857421875,
+    "gainApplied": 3.5573605757216837,
+    "peakProtectionEvents": 0,
+    "outputPeak": 0.7631910443305969
+  },
+  "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+  "businessWordingApproved": true,
+  "productionApproved": false,
+  "binding": {
+    "slot": {
+      "kind": "EMAIL",
+      "phraseId": "email-readback-intro",
+      "candidate": "anna2.test-7@clinic.dk",
+      "sourceTurnId": "synthetic-email-fixture",
+      "recipientRevision": 1,
+      "normalizationReviewed": true
+    },
+    "renderedValue": "a, en, en, a, to, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+    "renderedText": "a, en, en, a, to, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+    "textHash": "980bc70513f1df076e0d3f0c0b60ea8583af52ceb38b170acb668995f25a7c48",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "rendererVersion": "stage-2.0c2-deterministic-1",
+    "cacheKey": "9104fa03fc1ad8ef10a5d21bf0a33e88dbdf64ed389b0701dd59c47b4e3288cb"
+  }
+}

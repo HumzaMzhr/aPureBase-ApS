@@ -1,0 +1,143 @@
+{
+  "evidence": "MODEL USING VERIFIED MEDIA DURATIONS, NOT PHYSICAL CALL TIMING",
+  "recipientResponseAndTransitionAssumption": "400 ms onset + 600 ms response/transition per manual corpus turn. No additional operator deliberation or network latency. Whole flows include opening.",
+  "eligible": 42,
+  "ordinaryCompleted": 42,
+  "ordinaryCompletionRate": 1,
+  "allScenarioTakeovers": 8,
+  "totalScenarios": 60,
+  "within30To90": 42,
+  "categories": [
+    {
+      "category": "direct-HCP",
+      "count": 12,
+      "passed": 12,
+      "takeovers": 0,
+      "modeledSeconds": {
+        "min": 39.54820833333333,
+        "max": 43.03120833333333
+      }
+    },
+    {
+      "category": "clarification",
+      "count": 8,
+      "passed": 8,
+      "takeovers": 0,
+      "modeledSeconds": {
+        "min": 45.70304166666666,
+        "max": 52.71545833333333
+      }
+    },
+    {
+      "category": "email-correction",
+      "count": 6,
+      "passed": 6,
+      "takeovers": 0,
+      "modeledSeconds": {
+        "min": 68.62270833333334,
+        "max": 68.62270833333334
+      }
+    },
+    {
+      "category": "receptionist-transfer",
+      "count": 6,
+      "passed": 6,
+      "takeovers": 0,
+      "modeledSeconds": {
+        "min": 46.74945833333333,
+        "max": 50.325374999999994
+      }
+    },
+    {
+      "category": "wrong-then-correct-person",
+      "count": 4,
+      "passed": 4,
+      "takeovers": 0,
+      "modeledSeconds": {
+        "min": 45.54204166666666,
+        "max": 48.83925
+      }
+    },
+    {
+      "category": "authorized-intermediary",
+      "count": 6,
+      "passed": 6,
+      "takeovers": 0,
+      "modeledSeconds": {
+        "min": 46.88879166666666,
+        "max": 50.650416666666665
+      }
+    },
+    {
+      "category": "refusal",
+      "count": 4,
+      "passed": 4,
+      "takeovers": 0,
+      "modeledSeconds": {
+        "min": 23.384041666666665,
+        "max": 23.384041666666665
+      }
+    },
+    {
+      "category": "busy-callback",
+      "count": 4,
+      "passed": 4,
+      "takeovers": 0,
+      "modeledSeconds": {
+        "min": 16.62858333333333,
+        "max": 16.62858333333333
+      }
+    },
+    {
+      "category": "safety-trigger",
+      "count": 4,
+      "passed": 4,
+      "takeovers": 4,
+      "modeledSeconds": {
+        "min": 8.198166666666665,
+        "max": 8.198166666666665
+      }
+    },
+    {
+      "category": "unsupported-value",
+      "count": 2,
+      "passed": 2,
+      "takeovers": 2,
+      "modeledSeconds": {
+        "min": 7.198166666666666,
+        "max": 24.384041666666665
+      }
+    },
+    {
+      "category": "provider-failure",
+      "count": 1,
+      "passed": 1,
+      "takeovers": 1,
+      "modeledSeconds": {
+        "min": 27.309749999999998,
+        "max": 27.309749999999998
+      }
+    },
+    {
+      "category": "authority-integrity",
+      "count": 1,
+      "passed": 1,
+      "takeovers": 1,
+      "modeledSeconds": {
+        "min": 14.120791666666666,
+        "max": 14.120791666666666
+      }
+    },
+    {
+      "category": "playback-integrity",
+      "count": 2,
+      "passed": 2,
+      "takeovers": 0,
+      "modeledSeconds": {
+        "min": 16.675,
+        "max": 24.31283333333333
+      }
+    }
+  ],
+  "limitation": "Longer/unsupported values and cold-cache provider delay may exceed this range. No silence is inserted to meet the lower bound."
+}

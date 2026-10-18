@@ -1,0 +1,68 @@
+STAGE 2.0C-2 VALIDATION
+Focused: 30 tests passed
+Controller-driven corpus: 60/60 expected outcomes; 42/42 eligible ordinary completed
+Full regression: 975 tests / 72 files passed
+No physical/telephone acceptance claimed
+
+lint: exit 0
+
+> apurebase-stage1-translator@0.9.0 lint
+> eslint .
+
+
+typecheck: exit 0
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+
+build: exit 0
+
+> apurebase-stage1-translator@0.9.0 build
+> npm run typecheck && vite build
+
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 105 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.37 kB │ gzip:   0.27 kB
+dist/assets/index-COnpGKWz.css   16.73 kB │ gzip:   4.22 kB
+dist/assets/index-Dhrtu4Of.js   609.44 kB │ gzip: 176.35 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 680ms
+
+diff-check: exit 0
+
+ate', status: 400 }
+
+stderr | tests/server.test.ts > validates complete text, language, method and bounded request size
+[interpreter] request failed { path: '/api/translate', status: 400 }
+
+stderr | tests/server.test.ts > validates complete text, language, method and bounded request size
+[interpreter] request failed { path: '/api/translate', status: 400 }
+
+stderr | tests/server.test.ts > validates complete text, language, method and bounded request size
+[interpreter] request failed { path: '/api/translate', status: 413 }
+
+stderr | tests/server.test.ts > reports missing key and sanitized upstream errors
+[interpreter] request failed { path: '/api/translate', status: 503 }
+
+stderr | tests/server.test.ts > reports missing key and sanitized upstream errors
+[interpreter] request failed { path: '/api/translate', status: 502 }
+
+····································································································································································································································································································
+
+ Test Files  72 passed (72)
+      Tests  975 passed (975)
+   Start at  17:54:57
+   Duration  9.73s (transform 2.29s, setup 0ms, import 5.77s, tests 35.54s, environment 5ms)
+

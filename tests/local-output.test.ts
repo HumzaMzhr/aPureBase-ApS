@@ -1,4 +1,4 @@
-import {fixtureVoice,fixtureCachedVoices,fixtureHeaders} from './fixtures/voice';
+import {fixtureVoice,fixtureCachedVoices,fixtureHeaders,fixturePcm} from './fixtures/voice';
 import {afterEach,beforeEach,expect,it,vi} from 'vitest';
 import {LocalOutput} from '../src/streaming/localOutput';
 import type {SemanticUnit} from '../src/streaming/types';
@@ -7,7 +7,8 @@ import type {Alignment} from '../server/continuousVoice';
 const voices=vi.hoisted(()=>({instances:[] as {audio:(bytes:Uint8Array,alignment?:Alignment,voice?:import('../src/streaming/voiceIdentity').VoiceIdentity)=>void;open:ReturnType<typeof vi.fn>;send:ReturnType<typeof vi.fn>;finish:ReturnType<typeof vi.fn>;close:ReturnType<typeof vi.fn>;early:boolean}[]}));
 vi.mock('../src/streaming/voiceClient',()=>({ContinuousVoice:class{
  open=vi.fn(async()=>{});send=vi.fn();finish=vi.fn(async()=>{});close=vi.fn();
- constructor(public audio:(bytes:Uint8Array,alignment?:Alignment,voice?:import('../src/streaming/voiceIdentity').VoiceIdentity)=>void,public early=false){voices.instances.push(this);}
+ constructor(audio:(bytes:Uint8Array,alignment?:Alignment,voice?:import('../src/streaming/voiceIdentity').VoiceIdentity)=>void,public early=false){this.audio=(bytes,alignment,voice)=>audio(fixturePcm(bytes,voice),alignment,voice);voices.instances.push(this);}
+ audio:(bytes:Uint8Array,alignment?:Alignment,voice?:import('../src/streaming/voiceIdentity').VoiceIdentity)=>void;
 }}));
 class Context {
  state='running';sampleRate=24000;destination={};buffers:Float32Array[]=[];
@@ -55,7 +56,7 @@ it('aborting a pending cached decode never schedules late audio',async()=>{
  await expect(pending).rejects.toMatchObject({name:'AbortError'});expect(contexts[0].buffers).toHaveLength(0);expect(vi.getTimerCount()).toBe(0);
 });
 it('preserves the exact cached opening file and forbids it on the English listening bus',async()=>{
- const output=new LocalOutput('en',100,hooks());await output.prepare('',new AbortController().signal);const pending=output.opening(new AbortController().signal);await vi.advanceTimersByTimeAsync(250);await pending;
+ const output=new LocalOutput('en',100,hooks());await output.prepare('',new AbortController().signal);const pending=output.opening(new AbortController().signal);await vi.waitFor(()=>expect(contexts[0].buffers).toHaveLength(1));await vi.advanceTimersByTimeAsync(250);await pending;
  expect(fetcher).toHaveBeenCalledWith('/audio/opening.wav',expect.anything());expect(voices.instances).toHaveLength(0);output.cancel();
  const english=new LocalOutput('da',100,hooks());await english.prepare('',new AbortController().signal);await expect(english.opening(new AbortController().signal)).rejects.toThrow('only available');english.cancel();
 });

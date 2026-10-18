@@ -1,5 +1,6 @@
 import type {Language} from '../types';
 import {campaignSpeechText,exactIdentityRequired} from '../config/campaignSpeech';
+import {completeGreeting} from './completeGreeting';
 export interface Word {text:string;start:number;end:number}
 export const words=(text:string):Word[]=>[...text.matchAll(/[\p{L}\p{N}]+(?:['’.-][\p{L}\p{N}]+)*/gu)].map(m=>({text:m[0],start:m.index!,end:m.index!+m[0].length}));
 const normalized=(text:string)=>text.toLocaleLowerCase().replace(/[’]/g,"'");
@@ -14,6 +15,7 @@ export function precisionTrigger(text:string){
  return '';
 }
 function meaningful(text:string,language:Language,shortGreetings=false){
+ if(completeGreeting(text))return true;
  const remainder=text.replace(/^(?:hi|hello|hej|goddag)[,.!?]\s+/i,'');if(remainder!==text)return meaningful(remainder,language,shortGreetings);
  const clean=text.trim().replace(/[’‘]/g,"'");const w=words(clean);if(!w.length)return false;
  if(/^(?:can|could|would|will|do|does|did|is|are|have|has|had|may|what|where|when|why|how|kan|vil|skal|må|har|er|var|havde|hvad|hvor|hvornår|hvorfor|hvordan)\b/i.test(clean)&&!/[?]$/.test(clean))return false;
@@ -23,18 +25,18 @@ function meaningful(text:string,language:Language,shortGreetings=false){
  if(/\b(?:don't|doesn't|didn't|not|never|ikke|aldrig)\b/i.test(clean))return /[.!?]$/.test(clean)&&w.length>=4;
  if(/^(?:(?:hi|hello|hej|goddag)[,.!]?[ ]*)?(?:good morning|good afternoon|good evening|godmorgen|god eftermiddag|god aften)[,.!?]$/i.test(clean))return true;
  if(w.length===1)return shortGreetings&&/^(?:hello|hi|hej|goddag)[,.!?]$/i.test(clean);
- if(language==='en')return /\b(?:am|is|are|was|were|have|has|calling|contacting|would|can|could|need|want|like|speak|help|work|send|include|does|do|will)\b/i.test(clean)||/\bmy name\b/i.test(clean)||(/\?$/.test(clean)&&w.length>=3);
+ if(language==='en')return /\b(?:am|is|are|was|were|have|has|calling|contacting|would|can|could|need|want|like|speak|help|work|send|include|share|shares|provide|provides|does|do|will)\b/i.test(clean)||/\bmy name\b/i.test(clean)||(/\?$/.test(clean)&&w.length>=3);
  return /\b(?:er|har|ringer|taler|kontakter|kan|vil|skal|ønsker|hjælpe|sende|omfatter|arbejder|hedder|stiller|mangler|kender)\b/i.test(clean)||(/\?$/.test(clean)&&w.length>=3);
 }
 export class SemanticCommitter {
- cursor=0;source='';precision='';private previous:Word[]=[];private committed:Word[]=[];private seen=new Map<number,number>();private updated=0;
- constructor(readonly language:Language,private maxWords=100,private minimumStabilityMs=120,private shortGreetings=false,private spanGuard?: (text:string)=>string,private bufferGreetings=false,private isolatePrecision=false){}
+ cursor=0;source='';precision='';private previous:Word[]=[];private committed:Word[]=[];private seen=new Map<number,number>();private updated=0;private previousText='';
+ constructor(readonly language:Language,private maxWords=100,private minimumStabilityMs=120,private shortGreetings=false,private spanGuard?: (text:string)=>string,private bufferGreetings=false,private isolatePrecision=false,private terminalStable=false){}
  update(text:string,now:number,final=false){
   if(text.length>12000)throw new Error('Source turn exceeded the bounded transcript.');
   const tokens=words(text);this.source=text;const stable=commonWords(this.previous,tokens);this.updated++;
   if(commonWords(this.committed,tokens)<this.cursor){this.precision='ASR revised an already committed span';return{segments:[],precision:this.precision,revision:true};}
   if(!this.spanGuard)this.precision ||= precisionTrigger(text);
-  const segments:{start:number;end:number;text:string;precision?:boolean}[]=[];
+  const segments:{start:number;end:number;text:string;precision?:boolean;stabilityReason?:string}[]=[];
   if(!this.precision&&!final){
    for(let end=this.cursor+1;end<=tokens.length;end++){
     const next=tokens[end]?.start??text.length;const boundary=text.slice(tokens[end-1].end,next);const piece=text.slice(tokens[this.cursor]?.start??0,next).trim();
@@ -42,10 +44,13 @@ export class SemanticCommitter {
     const preceding=text.slice(0,tokens[this.cursor]?.start??0).slice(-350);const listContinuation=/\b(?:include|omfatte|omfatter)\b/i.test(preceding)&&words(piece).length>=4&&/[,.!?]$/.test(piece)&&!precisionTrigger(piece);
     const risk=this.spanGuard?.(piece);
     if(this.bufferGreetings&&this.cursor===0&&/^(?:hi|hello|hej|goddag)[,.!?]$/i.test(piece))continue;
-    if(!(/[.!?,;:]/.test(boundary)||conjunction)||!(meaningful(piece,this.language,this.shortGreetings)||listContinuation||risk))continue;
+    const greeting=this.terminalStable&&end===tokens.length&&completeGreeting(piece);
+    if(!(/[.!?,;:]/.test(boundary)||conjunction||greeting)||!(meaningful(piece,this.language,this.shortGreetings)||listContinuation||risk))continue;
     this.seen.set(end,this.seen.get(end)??now);
-    // A boundary alone is insufficient: require a distinct later ASR update, stable prefix and lookahead.
-    if(end<=stable&&end<tokens.length&&this.updated>=2&&now-this.seen.get(end)!>=this.minimumStabilityMs){if(risk&&!this.isolatePrecision){this.precision=risk;break;}if(risk&&!/[.!?]$/.test(piece))continue;segments.push({start:this.cursor,end,text:piece,...(this.isolatePrecision?{precision:Boolean(risk)}:{})});this.cursor=end;}
+    // Require a distinct later ASR update and a stable prefix. Ordinary complete
+    // declaratives may close without another word; protected/unfinished ranges retain lookahead.
+    const closedStable=this.terminalStable&&end===tokens.length&&(greeting||end-this.cursor>=3&&/[.!]$/.test(piece))&&text.trim()===this.previousText.trim()&&!risk&&!precisionTrigger(piece)&&!/\b(?:not|never|no|cannot|[a-z]+n['’]t|ikke|aldrig|ingen|intet|refuse|refusal|afviser)\b/i.test(piece)&&!/^(?:(?:hi|hello|hej|goddag)[,.!]?\s*)?(?:because|if|unless|although|fordi|hvis|medmindre|selvom|yes|yeah|yep|ja|nej)\b/i.test(piece);
+    if(end<=stable&&(end<tokens.length||closedStable)&&this.updated>=2&&now-this.seen.get(end)!>=this.minimumStabilityMs){if(risk&&!this.isolatePrecision){this.precision=risk;break;}if(risk&&!/[.!?]$/.test(piece))continue;segments.push({start:this.cursor,end,text:piece,...(this.terminalStable?{stabilityReason:closedStable?(greeting?'stable_closed_greeting':'stable_closed_phrase'):'stable_prefix_with_lookahead'}:{}),...(this.isolatePrecision?{precision:Boolean(risk)}:{})});this.cursor=end;}
    }
    if(tokens.length-this.cursor>this.maxWords)this.precision='Long clause needs complete-turn precision';
   }
@@ -56,7 +61,8 @@ export class SemanticCommitter {
    if(this.isolatePrecision)for(let end=start+1;end<=tokens.length;end++){const next=tokens[end]?.start??text.length;if(end===tokens.length||/[.!?]/.test(text.slice(tokens[end-1].end,next))){const piece=text.slice(tokens[from].start,next).trim();parts.push({start:from,end,text:piece,precision:Boolean(this.precision||this.spanGuard?.(piece))});from=end;}}
    if(parts.some(p=>p.precision)&&parts.some(p=>!p.precision))segments.push(...parts);
    else segments.push({start,end:tokens.length,text:remaining,...(this.isolatePrecision?{precision:Boolean(this.precision||this.spanGuard?.(remaining))}:{})});this.cursor=tokens.length;}
-  this.committed=tokens.slice(0,this.cursor);this.previous=tokens;
+  if(this.terminalStable)for(const segment of segments)segment.stabilityReason??='provider_final';
+  this.committed=tokens.slice(0,this.cursor);this.previous=tokens;this.previousText=text;
   return{segments,precision:this.precision,revision:false};
  }
  get received(){return words(this.source).length;}

@@ -5,6 +5,7 @@ import { BrowserCallIO, isChrome } from './browserAudio';
 import { phrases } from './config/phrases';
 import { StreamingView } from './streaming/View';
 import { LocalTestView } from './streaming/LocalTestView';
+import { ConsentWorkspace } from './consent/ConsentWorkspace';
 import { stageLatency } from './latency';
 import { scenarios } from './config/scenarios';
 import { statusLabel, type Snapshot, type Turn, type VoiceInfo } from './types';
@@ -82,4 +83,4 @@ function App({legacy=false}:{legacy?:boolean}) {
   </>;
 }
 function ClinicPage(){const [developer,setDeveloper]=useState(false);return <><div className="site-header"><div className="brand-bar"><img className="brand-logo" src="/apurebase-logo.jpg" alt="aPureBase"/><span>Stage 1.7 · Danish clinic</span></div></div><main><header className="intro"><h1>English ↔ Danish interpreter</h1><p>You hear only Danish translation. Your Danish microphone is sent only for interpretation.</p></header><label className="toggle"><input type="checkbox" checked={developer} onChange={e=>setDeveloper(e.target.checked)}/> Developer mode</label><StreamingView role="clinic" developer={developer}/></main></>; }
-createRoot(document.getElementById('root')!).render(location.pathname==='/participant'?<ClinicPage/>:<App legacy={location.pathname==='/controlled-demo'}/>);
+createRoot(document.getElementById('root')!).render(location.pathname==='/consent-call'?<ConsentWorkspace/>:location.pathname==='/participant'?<ClinicPage/>:<App legacy={location.pathname==='/controlled-demo'}/>);

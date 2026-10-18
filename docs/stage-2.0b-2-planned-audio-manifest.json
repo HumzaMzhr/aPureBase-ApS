@@ -1,0 +1,456 @@
+{
+  "version": 2,
+  "productionApproved": false,
+  "assets": [
+    {
+      "phraseId": "identify",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Jeg ringer på vegne af aPureBase.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Jeg ringer på vegne af aPureBase.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "IDENTIFY_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "greeting",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Hej. Goddag.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Hej. Goddag.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "GREETING_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "ask-target",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Må jeg tale med den relevante sundhedsperson?",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Må jeg tale med den relevante sundhedsperson?",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "ASK_TARGET_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "purpose",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Vi ringer for at spørge, om vi må sende faglig information via e-mail.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Vi ringer for at spørge, om vi må sende faglig information via e-mail.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "PURPOSE_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "about-apurebase",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "aPureBase kontakter sundhedspersoner om faglig information.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "aPureBase kontakter sundhedspersoner om faglig information.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "ABOUT_APUREBASE_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "explanation",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Informationen kan omfatte fagligt og medicinsk materiale.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Informationen kan omfatte fagligt og medicinsk materiale.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "EXPLANATION_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "products-events",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Det kan også omfatte produktopdateringer og invitationer til faglige aktiviteter.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Det kan også omfatte produktopdateringer og invitationer til faglige aktiviteter.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "PRODUCTS_EVENTS_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "transfer-request",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Vil du stille mig om til sundhedspersonen?",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Vil du stille mig om til sundhedspersonen?",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "TRANSFER_REQUEST_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "target-unavailable",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Hvornår vil det passe sundhedspersonen, at vi ringer igen?",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Hvornår vil det passe sundhedspersonen, at vi ringer igen?",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "TARGET_UNAVAILABLE_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "authority-ask",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Har du den nødvendige bemyndigelse til at håndtere denne forespørgsel og oplyse sundhedspersonens e-mailadresse?",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Har du den nødvendige bemyndigelse til at håndtere denne forespørgsel og oplyse sundhedspersonens e-mailadresse?",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "AUTHORITY_ASK_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "authority-denied",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Så vil jeg gerne tale med sundhedspersonen selv.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Så vil jeg gerne tale med sundhedspersonen selv.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "AUTHORITY_DENIED_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "wrong-person-close",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Tak for afklaringen. Vi afslutter samtalen.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Tak for afklaringen. Vi afslutter samtalen.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "WRONG_PERSON_CLOSE_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "consent-question",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Må aPureBase sende faglig information via e-mail til den relevante sundhedsperson?",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Må aPureBase sende faglig information via e-mail til den relevante sundhedsperson?",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": "788f1d0e7056a9410955049268505d04c40631bf1892e8d961d6d1555b5c5ad0",
+        "assetId": "CONSENT_QUESTION_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "clarify",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Undskyld, vil du gentage dit svar?",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Undskyld, vil du gentage dit svar?",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "CLARIFY_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "email-request",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Hvilken e-mailadresse må vi bruge?",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Hvilken e-mailadresse må vi bruge?",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "EMAIL_REQUEST_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "email-correction",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Vil du oplyse den korrekte e-mailadresse?",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Vil du oplyse den korrekte e-mailadresse?",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "EMAIL_CORRECTION_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "email-unavailable",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Det er i orden. Vi afslutter uden at registrere en e-mailadresse.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Det er i orden. Vi afslutter uden at registrere en e-mailadresse.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "EMAIL_UNAVAILABLE_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "callback",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Hvornår vil det passe dig, at vi ringer igen?",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Hvornår vil det passe dig, at vi ringer igen?",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "CALLBACK_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "callback-close",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Tak for din tid. Vi ringer igen en anden gang.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Tak for din tid. Vi ringer igen en anden gang.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "CALLBACK_CLOSE_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "unsubscribe",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Bekræftelsesmailen forklarer, hvordan du kan frabede dig fremtidig information.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Bekræftelsesmailen forklarer, hvordan du kan frabede dig fremtidig information.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "UNSUBSCRIBE_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "confirmation-process",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Bekræftelsesmailen beskriver muligheden for at frabede sig information inden for otte dage.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Bekræftelsesmailen beskriver muligheden for at frabede sig information inden for otte dage.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "CONFIRMATION_PROCESS_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "refusal-close",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Det respekterer vi. Tak for din tid. Hav en god dag.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Det respekterer vi. Tak for din tid. Hav en god dag.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "REFUSAL_CLOSE_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "success-close",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Tak for din tid og din tilladelse. Hav en god dag.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Tak for din tid og din tilladelse. Hav en god dag.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "SUCCESS_CLOSE_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "stop-contact-close",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Jeg har forstået, at du ikke ønsker mere kontakt. Vi afslutter samtalen.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Jeg har forstået, at du ikke ønsker mere kontakt. Vi afslutter samtalen.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "STOP_CONTACT_CLOSE_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    },
+    {
+      "phraseId": "receptionist-close",
+      "wordingVersion": "2.0b2-draft-1",
+      "text": "Tak for hjælpen. Vi kontakter den relevante person en anden gang.",
+      "productionApproval": "NOT_APPROVED",
+      "audio": {
+        "boundText": "Tak for hjælpen. Vi kontakter den relevante person en anden gang.",
+        "phraseVersion": "2.0b2-draft-1",
+        "textHash": null,
+        "assetId": "RECEPTIONIST_CLOSE_V1",
+        "status": "NOT_GENERATED",
+        "provider": "ElevenLabs",
+        "voice": "Isabella",
+        "model": "eleven_flash_v2_5",
+        "version": 1,
+        "sha256": null
+      }
+    }
+  ]
+}

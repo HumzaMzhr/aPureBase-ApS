@@ -1,0 +1,907 @@
+{
+  "stage": "2.0c3",
+  "physicalStatus": "NOT_TESTED",
+  "physicalRuns": [],
+  "scenarios": [
+    {
+      "id": "A",
+      "name": "Direct doctor → YES → email → success",
+      "category": "ordinary",
+      "instructions": "Verify the doctor after opening. Answer an entirely completed consent question; give anna@clinic.dk, then confirm the complete readback.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "B",
+      "name": "Direct doctor → NO",
+      "category": "refusal",
+      "instructions": "Say “Nej tak.” Review NO and play the refusal close.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "C",
+      "name": "Why are you calling?",
+      "category": "ordinary",
+      "instructions": "Ask “Hvorfor ringer I?” The explanation is not a consent question; await the subsequent complete question.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "D",
+      "name": "Explanation request",
+      "category": "ordinary",
+      "instructions": "Ask “Hvilken information?” and assess explanation → complete question.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "E",
+      "name": "Maybe / unclear",
+      "category": "ordinary",
+      "instructions": "Say “Måske.” Listen to a fresh full clarification before a later YES.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "F",
+      "name": "Repeat request",
+      "category": "ordinary",
+      "instructions": "Use the explicit Repeat action; old onset ownership must not migrate.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "G",
+      "name": "Already receiving information",
+      "category": "ordinary",
+      "instructions": "Say “Jeg modtager allerede informationen.” No assumed existing consent.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "H",
+      "name": "Receptionist → transfer to doctor",
+      "category": "ordinary",
+      "instructions": "Identify intermediary, bind supplied synthetic Anna Jensen contact, request transfer, separately verify new doctor.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "I",
+      "name": "Wrong person",
+      "category": "other",
+      "instructions": "Say “Det er den forkerte person.” Bind supplied contact; transfer request cannot establish identity.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "J",
+      "name": "Authorized intermediary",
+      "category": "intermediary",
+      "instructions": "Say “Jeg kan hjælpe med det.” After the authority question give an explicit existing claim; separately attest it, rebind name revision, complete named consent.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "K",
+      "name": "Busy / callback",
+      "category": "busy",
+      "instructions": "Say “Jeg har travlt.” then “Ring i morgen.” No padding.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "L",
+      "name": "Email correction",
+      "category": "correction",
+      "instructions": "Give anna2.test-7@clinic.dk. After full readback say “Adressen er forkert.” Give anna3.test-7@clinic.dk and newly confirm.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "M",
+      "name": "Interrupt Isabella",
+      "category": "interrupted",
+      "instructions": "Begin microphone speech during a dynamic named question. Output must stop immediately and YES remain blocked.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "N",
+      "name": "Speech before question finishes",
+      "category": "interrupted",
+      "instructions": "Start “Ja” before the question ends, with a delayed final. It cannot attach to a repeat.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "O",
+      "name": "Unsupported question",
+      "category": "takeover",
+      "instructions": "Ask “Hvad koster det?” Automation stops; interpreter remains manual-start.",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "P",
+      "name": "Privacy / legal / medical",
+      "category": "takeover",
+      "instructions": "Ask “Hvordan behandler I mine persondata?” or “Kan du give medicinsk rådgivning?”",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "Q",
+      "name": "Explicit human request",
+      "category": "takeover",
+      "instructions": "Say “Jeg vil tale med et menneske.”",
+      "status": "NOT_TESTED"
+    },
+    {
+      "id": "R",
+      "name": "ASR uncertainty",
+      "category": "takeover",
+      "instructions": "Say “Jeg kunne ikke høre dig.” or stop recognition to exercise failure takeover.",
+      "status": "NOT_TESTED"
+    }
+  ],
+  "humanListening": {
+    "outputs": [
+      {
+        "key": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3:247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+        "event": {
+          "playbackId": "8b7d9e5d-a758-4064-b5f8-94b51dadf04f",
+          "callId": "c3-listening",
+          "phraseId": "opening",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+          "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "recipientRevision": 0,
+          "action": "start",
+          "gain": {
+            "gainPolicy": "isabella-calibrated-headroom-v2",
+            "samples": 345512,
+            "preGainPeak": 0.18988382816314697,
+            "preGainRms": 0.023458517306749808,
+            "requestedGain": 3.5573605757216837,
+            "effectiveGain": 3.5573605757216837,
+            "gainApplied": 3.5573605757216837,
+            "postGainPeak": 0.6754852533340454,
+            "postGainRms": 0.08345040462523586,
+            "clippingEvents": 0,
+            "peakProtectionEvents": 0
+          }
+        },
+        "at": 14675.099999999627
+      },
+      {
+        "key": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3:247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+        "event": {
+          "playbackId": "8b7d9e5d-a758-4064-b5f8-94b51dadf04f",
+          "callId": "c3-listening",
+          "phraseId": "opening",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+          "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "recipientRevision": 0,
+          "action": "complete",
+          "outputProof": "web-audio-source-ended:8b7d9e5d-a758-4064-b5f8-94b51dadf04f:frames=345512:rate=48000:context=7.2",
+          "gain": {
+            "gainPolicy": "isabella-calibrated-headroom-v2",
+            "samples": 345512,
+            "preGainPeak": 0.18988382816314697,
+            "preGainRms": 0.023458517306749808,
+            "requestedGain": 3.5573605757216837,
+            "effectiveGain": 3.5573605757216837,
+            "gainApplied": 3.5573605757216837,
+            "postGainPeak": 0.6754852533340454,
+            "postGainRms": 0.08345040462523586,
+            "clippingEvents": 0,
+            "peakProtectionEvents": 0
+          }
+        },
+        "at": 21898.700000000186
+      },
+      {
+        "key": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3:a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+        "event": {
+          "playbackId": "ae57af1e-99be-429a-8f35-e9cfe4a9caa2",
+          "callId": "c3-listening",
+          "phraseId": "email-readback-intro",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "textHash": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3",
+          "assetHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+          "recipientRevision": 0,
+          "action": "start",
+          "gain": {
+            "gainPolicy": "isabella-calibrated-headroom-v2",
+            "samples": 263036,
+            "preGainPeak": 0.15515495836734772,
+            "preGainRms": 0.021885835294096365,
+            "requestedGain": 3.5573605757216837,
+            "effectiveGain": 3.5573605757216837,
+            "gainApplied": 3.5573605757216837,
+            "postGainPeak": 0.5519421100616455,
+            "postGainRms": 0.07785580767363892,
+            "clippingEvents": 0,
+            "peakProtectionEvents": 0
+          }
+        },
+        "at": 100802.79999999981
+      },
+      {
+        "key": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3:a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+        "event": {
+          "playbackId": "ae57af1e-99be-429a-8f35-e9cfe4a9caa2",
+          "callId": "c3-listening",
+          "phraseId": "email-readback-intro",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "textHash": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3",
+          "assetHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+          "recipientRevision": 0,
+          "action": "complete",
+          "outputProof": "web-audio-source-ended:ae57af1e-99be-429a-8f35-e9cfe4a9caa2:frames=263036:rate=48000:context=5.488",
+          "gain": {
+            "gainPolicy": "isabella-calibrated-headroom-v2",
+            "samples": 263036,
+            "preGainPeak": 0.15515495836734772,
+            "preGainRms": 0.021885835294096365,
+            "requestedGain": 3.5573605757216837,
+            "effectiveGain": 3.5573605757216837,
+            "gainApplied": 3.5573605757216837,
+            "postGainPeak": 0.5519421100616455,
+            "postGainRms": 0.07785580767363892,
+            "clippingEvents": 0,
+            "peakProtectionEvents": 0
+          }
+        },
+        "at": 106286.70000000019
+      },
+      {
+        "key": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3:247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+        "event": {
+          "playbackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1",
+          "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+          "phraseId": "opening",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+          "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "recipientRevision": 0,
+          "action": "start",
+          "gain": {
+            "gainPolicy": "isabella-calibrated-headroom-v2",
+            "samples": 345512,
+            "preGainPeak": 0.18988382816314697,
+            "preGainRms": 0.023458517306749808,
+            "requestedGain": 3.5573605757216837,
+            "effectiveGain": 3.5573605757216837,
+            "gainApplied": 3.5573605757216837,
+            "postGainPeak": 0.6754852533340454,
+            "postGainRms": 0.08345040462523586,
+            "clippingEvents": 0,
+            "peakProtectionEvents": 0
+          }
+        },
+        "at": 165195.2000000002
+      },
+      {
+        "key": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3:247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+        "event": {
+          "playbackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1",
+          "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+          "phraseId": "opening",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+          "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "recipientRevision": 0,
+          "action": "complete",
+          "outputProof": "web-audio-source-ended:aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1:frames=345512:rate=48000:context=7.205333333333333",
+          "gain": {
+            "gainPolicy": "isabella-calibrated-headroom-v2",
+            "samples": 345512,
+            "preGainPeak": 0.18988382816314697,
+            "preGainRms": 0.023458517306749808,
+            "requestedGain": 3.5573605757216837,
+            "effectiveGain": 3.5573605757216837,
+            "gainApplied": 3.5573605757216837,
+            "postGainPeak": 0.6754852533340454,
+            "postGainRms": 0.08345040462523586,
+            "clippingEvents": 0,
+            "peakProtectionEvents": 0
+          }
+        },
+        "at": 172398.2999999998
+      }
+    ],
+    "reviews": [],
+    "productionEnabled": false,
+    "identityAssurance": "LOCAL_SELF_ATTESTATION_NOT_AUTHENTICATED"
+  },
+  "localUISmoke": {
+    "evidence": "LOCAL WEB AUDIO + MANUAL TRANSCRIPT SIMULATION; NOT PHYSICAL ACCEPTANCE",
+    "runs": [
+      {
+        "version": "stage-2.0c3-1",
+        "scenarioId": "O",
+        "category": "takeover",
+        "createdAt": 157508.5,
+        "clock": "browser-performance.now",
+        "session": {
+          "version": 2,
+          "definitionId": "apurebase-consent-stage20c2",
+          "definitionVersion": "stage-2.0c1-approved-1",
+          "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+          "state": "HUMAN_TAKEOVER",
+          "respondent": "unverified",
+          "recipientType": "UNKNOWN",
+          "targetVerified": false,
+          "authorityStatus": "UNVERIFIED",
+          "authorityPolicyVersion": "apurebase-authority-2.0b2-1",
+          "recipientRevision": 0,
+          "playbacks": [
+            {
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "playbackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1",
+              "phraseId": "opening",
+              "phraseVersion": "stage-2.0c1-approved-1",
+              "assetId": "opening",
+              "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+              "state": "COMPLETED",
+              "queuedAt": 165160.40000000037,
+              "startedAt": 165195.2999999998,
+              "completedAt": 172399,
+              "interruptedAt": null,
+              "failedAt": null,
+              "completionSource": "VERIFIED_OUTPUT_ADAPTER",
+              "recipientRevision": 0,
+              "answerConsumed": false,
+              "mode": "local-prerecorded",
+              "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+              "outputProof": "web-audio-source-ended:aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1:frames=345512:rate=48000:context=7.205333333333333",
+              "gain": {
+                "gainPolicy": "isabella-calibrated-headroom-v2",
+                "samples": 345512,
+                "preGainPeak": 0.18988382816314697,
+                "preGainRms": 0.023458517306749808,
+                "requestedGain": 3.5573605757216837,
+                "effectiveGain": 3.5573605757216837,
+                "gainApplied": 3.5573605757216837,
+                "postGainPeak": 0.6754852533340454,
+                "postGainRms": 0.08345040462523586,
+                "clippingEvents": 0,
+                "peakProtectionEvents": 0
+              }
+            }
+          ],
+          "emailStatus": "NOT_REQUESTED",
+          "partial": "",
+          "turns": [
+            {
+              "id": "48adf7be-c59e-450f-882f-e2c870fdf266",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "timestamp": "2026-10-18T13:27:13.164Z",
+              "transcript": {
+                "id": "48adf7be-c59e-450f-882f-e2c870fdf266",
+                "text": "Hvad koster det?",
+                "final": true,
+                "source": "manual-rehearsal",
+                "observedAt": 222826,
+                "speechStartedAt": 215593.2000000002,
+                "answerPlaybackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1"
+              },
+              "classification": {
+                "intent": "QUESTION_UNKNOWN",
+                "confidence": 0,
+                "basis": "Conservative complete-utterance rule; score is not a probability or authority determination.",
+                "classifierVersion": "da-rules-2.0b1-1"
+              },
+              "stateBefore": "RIGHT_PERSON",
+              "stateAfter": "QUESTION_UNKNOWN",
+              "recommendedResponseId": "human-takeover",
+              "selections": [],
+              "consent": {
+                "respondent": "unverified",
+                "recipient": {
+                  "recipientType": "UNKNOWN",
+                  "targetVerified": false,
+                  "recipientRevision": 0,
+                  "authorityPolicyVersion": "apurebase-authority-2.0b2-1",
+                  "authorityStatus": "UNVERIFIED"
+                },
+                "classification": "UNCLEAR",
+                "eligibleYes": false,
+                "reason": "No explicit scoped affirmative from a verified recipient with speech onset after completed question delivery."
+              },
+              "latency": {
+                "classificationMs": 1.7000000001862645,
+                "observationToRecommendationMs": 1.7999999998137355
+              },
+              "fallbackReason": "Unsupported, sensitive, uncertain-authority or complex response; HUMAN_TAKEOVER recommended."
+            }
+          ],
+          "playing": false,
+          "mode": "offline-rehearsal",
+          "activePlaybackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1",
+          "fallbackReason": "Unsupported, sensitive, uncertain-authority or complex response; HUMAN_TAKEOVER recommended.",
+          "dynamicBindings": {},
+          "events": [
+            {
+              "sequence": 1,
+              "at": 157509,
+              "timestamp": "2026-10-18T13:26:07.845Z",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "event": "session.started",
+              "data": {
+                "definitionId": "apurebase-consent-stage20c2",
+                "definitionVersion": "stage-2.0c1-approved-1",
+                "mode": "offline-rehearsal"
+              }
+            },
+            {
+              "sequence": 2,
+              "at": 165160.40000000037,
+              "timestamp": "2026-10-18T13:26:15.497Z",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "event": "mock.playback_queued",
+              "data": {
+                "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+                "playbackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1",
+                "phraseId": "opening",
+                "phraseVersion": "stage-2.0c1-approved-1",
+                "assetId": "opening",
+                "assetHash": null,
+                "state": "QUEUED",
+                "queuedAt": 165160.40000000037,
+                "startedAt": null,
+                "completedAt": null,
+                "interruptedAt": null,
+                "failedAt": null,
+                "completionSource": null,
+                "recipientRevision": 0,
+                "answerConsumed": false,
+                "mode": "mock",
+                "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+                "repeat": false
+              }
+            },
+            {
+              "sequence": 3,
+              "at": 165160.40000000037,
+              "timestamp": "2026-10-18T13:26:15.497Z",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "event": "local.playback_requested",
+              "data": {
+                "playbackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1",
+                "responseId": "opening"
+              }
+            },
+            {
+              "sequence": 4,
+              "at": 165195.40000000037,
+              "timestamp": "2026-10-18T13:26:15.532Z",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "event": "local.playback_start",
+              "data": {
+                "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+                "playbackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1",
+                "phraseId": "opening",
+                "phraseVersion": "stage-2.0c1-approved-1",
+                "assetId": "opening",
+                "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+                "state": "PLAYING",
+                "queuedAt": 165160.40000000037,
+                "startedAt": 165195.2999999998,
+                "completedAt": null,
+                "interruptedAt": null,
+                "failedAt": null,
+                "completionSource": null,
+                "recipientRevision": 0,
+                "answerConsumed": false,
+                "mode": "local-prerecorded",
+                "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+                "gain": {
+                  "gainPolicy": "isabella-calibrated-headroom-v2",
+                  "samples": 345512,
+                  "preGainPeak": 0.18988382816314697,
+                  "preGainRms": 0.023458517306749808,
+                  "requestedGain": 3.5573605757216837,
+                  "effectiveGain": 3.5573605757216837,
+                  "gainApplied": 3.5573605757216837,
+                  "postGainPeak": 0.6754852533340454,
+                  "postGainRms": 0.08345040462523586,
+                  "clippingEvents": 0,
+                  "peakProtectionEvents": 0
+                }
+              }
+            },
+            {
+              "sequence": 5,
+              "at": 172399.09999999963,
+              "timestamp": "2026-10-18T13:26:22.735Z",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "event": "local.playback_complete",
+              "data": {
+                "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+                "playbackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1",
+                "phraseId": "opening",
+                "phraseVersion": "stage-2.0c1-approved-1",
+                "assetId": "opening",
+                "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+                "state": "COMPLETED",
+                "queuedAt": 165160.40000000037,
+                "startedAt": 165195.2999999998,
+                "completedAt": 172399,
+                "interruptedAt": null,
+                "failedAt": null,
+                "completionSource": "VERIFIED_OUTPUT_ADAPTER",
+                "recipientRevision": 0,
+                "answerConsumed": false,
+                "mode": "local-prerecorded",
+                "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+                "outputProof": "web-audio-source-ended:aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1:frames=345512:rate=48000:context=7.205333333333333",
+                "gain": {
+                  "gainPolicy": "isabella-calibrated-headroom-v2",
+                  "samples": 345512,
+                  "preGainPeak": 0.18988382816314697,
+                  "preGainRms": 0.023458517306749808,
+                  "requestedGain": 3.5573605757216837,
+                  "effectiveGain": 3.5573605757216837,
+                  "gainApplied": 3.5573605757216837,
+                  "postGainPeak": 0.6754852533340454,
+                  "postGainRms": 0.08345040462523586,
+                  "clippingEvents": 0,
+                  "peakProtectionEvents": 0
+                }
+              }
+            },
+            {
+              "sequence": 6,
+              "at": 172399.2000000002,
+              "timestamp": "2026-10-18T13:26:22.736Z",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "event": "state.changed",
+              "data": {
+                "before": "ANSWERED",
+                "after": "RIGHT_PERSON",
+                "trigger": "opened"
+              }
+            },
+            {
+              "sequence": 7,
+              "at": 215593.5,
+              "timestamp": "2026-10-18T13:27:05.930Z",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "event": "recognition.partial_observed",
+              "data": {
+                "id": "48adf7be-c59e-450f-882f-e2c870fdf266",
+                "text": "",
+                "final": false,
+                "source": "manual-rehearsal",
+                "observedAt": 215593.2000000002,
+                "speechStartedAt": 215593.2000000002,
+                "answerPlaybackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1"
+              }
+            },
+            {
+              "sequence": 8,
+              "at": 222827.7999999998,
+              "timestamp": "2026-10-18T13:27:13.164Z",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "event": "state.changed",
+              "data": {
+                "before": "RIGHT_PERSON",
+                "after": "QUESTION_UNKNOWN",
+                "trigger": "QUESTION_UNKNOWN"
+              }
+            },
+            {
+              "sequence": 9,
+              "at": 222827.7999999998,
+              "timestamp": "2026-10-18T13:27:13.164Z",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "event": "turn.recommended",
+              "data": {
+                "turnId": "48adf7be-c59e-450f-882f-e2c870fdf266",
+                "intent": "QUESTION_UNKNOWN",
+                "consent": "UNCLEAR",
+                "responseId": "human-takeover",
+                "fallbackReason": "Unsupported, sensitive, uncertain-authority or complex response; HUMAN_TAKEOVER recommended."
+              }
+            },
+            {
+              "sequence": 10,
+              "at": 223092.90000000037,
+              "timestamp": "2026-10-18T13:27:13.429Z",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "event": "state.changed",
+              "data": {
+                "before": "QUESTION_UNKNOWN",
+                "after": "HUMAN_TAKEOVER",
+                "trigger": "takeover"
+              }
+            },
+            {
+              "sequence": 11,
+              "at": 223092.90000000037,
+              "timestamp": "2026-10-18T13:27:13.429Z",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "event": "fallback.requested",
+              "data": {
+                "reason": "Unsupported, sensitive, uncertain-authority or complex response; HUMAN_TAKEOVER recommended.",
+                "transportPreserved": false
+              }
+            }
+          ],
+          "sourceAudioStored": false,
+          "phoneTransport": false,
+          "productionAudio": false,
+          "downstreamConfirmationEmailSent": false,
+          "downstreamBounceMonitoring": false,
+          "note": "Offline rehearsal only. No physical timing, legal authority determination or production consent evidence. Exported text may contain personal data."
+        },
+        "sourceEvidence": [
+          {
+            "event": "manual.partial",
+            "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+            "turnId": "48adf7be-c59e-450f-882f-e2c870fdf266",
+            "at": 215593.2000000002,
+            "data": {
+              "text": "",
+              "source": "MANUAL_SIMULATION",
+              "speechStartedAt": 215593.2000000002,
+              "answerPlaybackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1"
+            }
+          },
+          {
+            "event": "manual.final",
+            "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+            "turnId": "48adf7be-c59e-450f-882f-e2c870fdf266",
+            "at": 222826,
+            "data": {
+              "text": "Hvad koster det?",
+              "source": "MANUAL_SIMULATION",
+              "speechStartedAt": 215593.2000000002,
+              "answerPlaybackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1"
+            }
+          }
+        ],
+        "outputEvidence": [
+          {
+            "asset": {
+              "phraseId": "opening",
+              "wordingVersion": "stage-2.0c1-approved-1",
+              "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+              "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+              "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+              "path": "/audio/consent-stage20c1/7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3.wav",
+              "voice": {
+                "provider": "ElevenLabs",
+                "name": "Isabella",
+                "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+                "modelId": "eleven_flash_v2_5",
+                "speed": 0.95
+              },
+              "requestedSpeed": 0.95,
+              "generatedAt": "2026-10-18T11:49:11.993Z",
+              "duration": 7.198166666666666,
+              "samples": 172756,
+              "sampleRate": 24000,
+              "mediaFormat": "wav-pcm-s16le-mono",
+              "provenance": {
+                "verified": true,
+                "method": "authenticated-provider-response-and-content-hash",
+                "providerRequestId": "sSas6ytpbM27QBAYsPM8",
+                "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+                "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+              },
+              "verification": {
+                "mediaValid": true,
+                "nonSilent": true,
+                "clippingEvents": 0,
+                "rawPeak": 0.191192626953125,
+                "gainApplied": 3.5573605757216837,
+                "peakProtectionEvents": 0,
+                "outputPeak": 0.6801410913467407
+              },
+              "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+              "businessWordingApproved": true,
+              "productionApproved": false
+            },
+            "event": {
+              "playbackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "phraseId": "opening",
+              "phraseVersion": "stage-2.0c1-approved-1",
+              "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+              "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+              "recipientRevision": 0,
+              "action": "start",
+              "gain": {
+                "gainPolicy": "isabella-calibrated-headroom-v2",
+                "samples": 345512,
+                "preGainPeak": 0.18988382816314697,
+                "preGainRms": 0.023458517306749808,
+                "requestedGain": 3.5573605757216837,
+                "effectiveGain": 3.5573605757216837,
+                "gainApplied": 3.5573605757216837,
+                "postGainPeak": 0.6754852533340454,
+                "postGainRms": 0.08345040462523586,
+                "clippingEvents": 0,
+                "peakProtectionEvents": 0
+              }
+            },
+            "at": 165195.2000000002
+          },
+          {
+            "asset": {
+              "phraseId": "opening",
+              "wordingVersion": "stage-2.0c1-approved-1",
+              "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+              "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+              "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+              "path": "/audio/consent-stage20c1/7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3.wav",
+              "voice": {
+                "provider": "ElevenLabs",
+                "name": "Isabella",
+                "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+                "modelId": "eleven_flash_v2_5",
+                "speed": 0.95
+              },
+              "requestedSpeed": 0.95,
+              "generatedAt": "2026-10-18T11:49:11.993Z",
+              "duration": 7.198166666666666,
+              "samples": 172756,
+              "sampleRate": 24000,
+              "mediaFormat": "wav-pcm-s16le-mono",
+              "provenance": {
+                "verified": true,
+                "method": "authenticated-provider-response-and-content-hash",
+                "providerRequestId": "sSas6ytpbM27QBAYsPM8",
+                "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+                "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+              },
+              "verification": {
+                "mediaValid": true,
+                "nonSilent": true,
+                "clippingEvents": 0,
+                "rawPeak": 0.191192626953125,
+                "gainApplied": 3.5573605757216837,
+                "peakProtectionEvents": 0,
+                "outputPeak": 0.6801410913467407
+              },
+              "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+              "businessWordingApproved": true,
+              "productionApproved": false
+            },
+            "event": {
+              "playbackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1",
+              "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+              "phraseId": "opening",
+              "phraseVersion": "stage-2.0c1-approved-1",
+              "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+              "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+              "recipientRevision": 0,
+              "action": "complete",
+              "outputProof": "web-audio-source-ended:aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1:frames=345512:rate=48000:context=7.205333333333333",
+              "gain": {
+                "gainPolicy": "isabella-calibrated-headroom-v2",
+                "samples": 345512,
+                "preGainPeak": 0.18988382816314697,
+                "preGainRms": 0.023458517306749808,
+                "requestedGain": 3.5573605757216837,
+                "effectiveGain": 3.5573605757216837,
+                "gainApplied": 3.5573605757216837,
+                "postGainPeak": 0.6754852533340454,
+                "postGainRms": 0.08345040462523586,
+                "clippingEvents": 0,
+                "peakProtectionEvents": 0
+              }
+            },
+            "at": 172398.5
+          }
+        ],
+        "duration": {
+          "wallClockSeconds": 57.897700000000185,
+          "openingMissing": false,
+          "debugPauseSeconds": 0,
+          "wallLessExplicitDebugPausesSeconds": 57.897700000000185,
+          "isabellaMediaSeconds": 7.198166666666666,
+          "recipientSpeechSeconds": null,
+          "mediaSumSeconds": null,
+          "observedMediaUnionSeconds": null,
+          "recipientEvidence": "MANUAL_SIMULATION",
+          "natural30to90Proven": false,
+          "notes": "Raw wall clock is never reduced for target assessment. Interrupted output duration uses observed start/cancel boundaries, not a fabricated completion."
+        },
+        "completed": true,
+        "microphoneCaptureObserved": false,
+        "asrFinalsObserved": 0,
+        "mixedManualAndMicrophone": false,
+        "sourceAudioStored": false,
+        "telephoneVerified": false,
+        "humanListeningInferred": false,
+        "takeover": {
+          "transportTransferred": false,
+          "operatorMustManuallyStartInterpreter": true
+        }
+      }
+    ],
+    "completedOutputProofs": [
+      {
+        "key": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3:247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+        "event": {
+          "playbackId": "8b7d9e5d-a758-4064-b5f8-94b51dadf04f",
+          "callId": "c3-listening",
+          "phraseId": "opening",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+          "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "recipientRevision": 0,
+          "action": "complete",
+          "outputProof": "web-audio-source-ended:8b7d9e5d-a758-4064-b5f8-94b51dadf04f:frames=345512:rate=48000:context=7.2",
+          "gain": {
+            "gainPolicy": "isabella-calibrated-headroom-v2",
+            "samples": 345512,
+            "preGainPeak": 0.18988382816314697,
+            "preGainRms": 0.023458517306749808,
+            "requestedGain": 3.5573605757216837,
+            "effectiveGain": 3.5573605757216837,
+            "gainApplied": 3.5573605757216837,
+            "postGainPeak": 0.6754852533340454,
+            "postGainRms": 0.08345040462523586,
+            "clippingEvents": 0,
+            "peakProtectionEvents": 0
+          }
+        },
+        "at": 21898.700000000186
+      },
+      {
+        "key": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3:a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+        "event": {
+          "playbackId": "ae57af1e-99be-429a-8f35-e9cfe4a9caa2",
+          "callId": "c3-listening",
+          "phraseId": "email-readback-intro",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "textHash": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3",
+          "assetHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+          "recipientRevision": 0,
+          "action": "complete",
+          "outputProof": "web-audio-source-ended:ae57af1e-99be-429a-8f35-e9cfe4a9caa2:frames=263036:rate=48000:context=5.488",
+          "gain": {
+            "gainPolicy": "isabella-calibrated-headroom-v2",
+            "samples": 263036,
+            "preGainPeak": 0.15515495836734772,
+            "preGainRms": 0.021885835294096365,
+            "requestedGain": 3.5573605757216837,
+            "effectiveGain": 3.5573605757216837,
+            "gainApplied": 3.5573605757216837,
+            "postGainPeak": 0.5519421100616455,
+            "postGainRms": 0.07785580767363892,
+            "clippingEvents": 0,
+            "peakProtectionEvents": 0
+          }
+        },
+        "at": 106286.70000000019
+      },
+      {
+        "key": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3:247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+        "event": {
+          "playbackId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1",
+          "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+          "phraseId": "opening",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+          "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "recipientRevision": 0,
+          "action": "complete",
+          "outputProof": "web-audio-source-ended:aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d:playback-1:frames=345512:rate=48000:context=7.205333333333333",
+          "gain": {
+            "gainPolicy": "isabella-calibrated-headroom-v2",
+            "samples": 345512,
+            "preGainPeak": 0.18988382816314697,
+            "preGainRms": 0.023458517306749808,
+            "requestedGain": 3.5573605757216837,
+            "effectiveGain": 3.5573605757216837,
+            "gainApplied": 3.5573605757216837,
+            "postGainPeak": 0.6754852533340454,
+            "postGainRms": 0.08345040462523586,
+            "clippingEvents": 0,
+            "peakProtectionEvents": 0
+          }
+        },
+        "at": 172398.2999999998
+      }
+    ],
+    "microphoneEvidence": false,
+    "humanApprovals": 0,
+    "interpreterPanelOpened": true,
+    "interpreterStarted": false,
+    "phoneTransportTransferred": false
+  },
+  "sourceAudioStored": false
+}

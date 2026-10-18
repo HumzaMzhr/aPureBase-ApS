@@ -1,9 +1,11 @@
+import {randomUUID} from 'node:crypto';
+import {assertDanishVoice} from '../src/streaming/voiceIdentity';
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import { incrementalTranslation,unitRequest } from './incrementalTranslation';
 import { recommendResponse } from './intelligence';
 import { modelConfig, speechInstructions } from './models';
 import { streamTranslation, selectTranslationConfig } from './translation';
-import { ElevenLabsVoiceProvider, VoiceError, pcmToWav, publicVoiceConfig } from './voice';
+import { ElevenLabsVoiceProvider, VoiceError, pcmToWav, publicVoiceConfig, elevenLabsConfig } from './voice';
 import { compactInterpreterInstructions, campaignGlossary } from '../src/config/campaignGlossary';
 import { protectTokens } from '../src/email';
 
@@ -42,7 +44,7 @@ export async function translate(original: string, source: 'da' | 'en', signal?: 
 export async function speech(text: string, target: 'da' | 'en', signal?: AbortSignal) {
   textField(text); const config = modelConfig();
   if (target === 'da') {
-    const provider = new ElevenLabsVoiceProvider();
+    const config=elevenLabsConfig();const voice={...publicVoiceConfig(config),requestId:randomUUID()};assertDanishVoice(voice);const provider = new ElevenLabsVoiceProvider(config);
     try { return pcmToWav(await provider.generateSpeech(text, signal)); }
     finally { provider.cancel(); }
   }
@@ -87,15 +89,14 @@ export async function handleApi(req: IncomingMessage, res: ServerResponse, path:
     if (path === '/api/translate') return json(res, 200, { text: await translate(text, source, controller.signal) });
     if (path === '/api/speech/stream') {
       if (source !== 'da') throw new ApiError(400, 'Streaming speech is Danish only.');
-      const provider = new ElevenLabsVoiceProvider();
+      const config=elevenLabsConfig();const voice={...publicVoiceConfig(config),requestId:randomUUID()};assertDanishVoice(voice);const provider = new ElevenLabsVoiceProvider(config);
       let reader: ReadableStreamDefaultReader<Uint8Array> | undefined;
       try {
         reader = (await provider.streamSpeech(text, controller.signal)).getReader();
         // Do not send success headers for an empty/failed provider response.
         let part = await reader.read();
         if (part.done) throw new VoiceError('interrupted');
-        const voice=publicVoiceConfig();
-        res.writeHead(200, { 'X-Voice-Provider':voice.provider,'X-Voice-Id':voice.voiceId,'X-Voice-Model':voice.modelId, 'Content-Type': 'audio/pcm', 'X-Audio-Sample-Rate': '24000', 'Cache-Control': 'no-store', 'X-Accel-Buffering': 'no' });
+        res.writeHead(200, { 'X-Voice-Provider':voice.provider,'X-Voice-Id':voice.voiceId,'X-Voice-Model':voice.modelId,'X-Voice-Request-Id':voice.requestId, 'Content-Type': 'audio/pcm', 'X-Audio-Sample-Rate': '24000', 'Cache-Control': 'no-store', 'X-Accel-Buffering': 'no' });
         while (!part.done) {
           controller.signal.throwIfAborted();
           if (!res.write(Buffer.from(part.value))) {

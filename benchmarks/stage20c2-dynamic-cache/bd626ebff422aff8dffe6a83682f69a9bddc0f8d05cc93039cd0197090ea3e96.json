@@ -1,0 +1,62 @@
+{
+  "phraseId": "authority-ask",
+  "wordingVersion": "stage-2.0c1-approved-1",
+  "text": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+  "textHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+  "assetHash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+  "path": "http://127.0.0.1:5180/cache/bd626ebff422aff8dffe6a83682f69a9bddc0f8d05cc93039cd0197090ea3e96.wav",
+  "voice": {
+    "provider": "ElevenLabs",
+    "name": "Isabella",
+    "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+    "modelId": "eleven_flash_v2_5",
+    "speed": 0.95
+  },
+  "requestedSpeed": 0.95,
+  "generatedAt": "2026-10-18T12:32:06.622Z",
+  "duration": 4.922625,
+  "samples": 118143,
+  "sampleRate": 24000,
+  "mediaFormat": "wav-pcm-s16le-mono",
+  "provenance": {
+    "verified": true,
+    "method": "authenticated-provider-response-and-content-hash",
+    "providerRequestId": "UjuqvKHgSOxe4lMdUcHb",
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+    "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+  },
+  "verification": {
+    "mediaValid": true,
+    "nonSilent": true,
+    "clippingEvents": 0,
+    "rawPeak": 0.1839599609375,
+    "gainApplied": 3.5573605757216837,
+    "peakProtectionEvents": 0,
+    "outputPeak": 0.6544119119644165
+  },
+  "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+  "businessWordingApproved": true,
+  "productionApproved": false,
+  "binding": {
+    "slot": {
+      "kind": "NAME",
+      "phraseId": "authority-ask",
+      "name": {
+        "original": "Anna Jensen",
+        "source": "contact-data",
+        "evidenceId": "synthetic-contact-fixture",
+        "evidenceText": "SYNTHETIC rehearsal target: Anna Jensen",
+        "reviewedBy": "local-rehearsal-fixture",
+        "reviewedAt": "2026-10-18T00:00:00.000Z",
+        "pronunciationConfirmed": true,
+        "recipientRevision": 1
+      }
+    },
+    "renderedValue": "Anna Jensen",
+    "renderedText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+    "textHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "rendererVersion": "stage-2.0c2-deterministic-1",
+    "cacheKey": "bd626ebff422aff8dffe6a83682f69a9bddc0f8d05cc93039cd0197090ea3e96"
+  }
+}

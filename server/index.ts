@@ -23,12 +23,12 @@ const server = createServer(async (req, res) => {
     const route = req.url?.split('?')[0];
     if (route === '/api/health') {
       const assets = [opening.id, ...phrases.map(p => p.id), ...allScriptLines.map(l => l.id)];
-      let manifest: Record<string, { hash?: string;provider?:string;voice?:string;model?:string }> = {};
+      let manifest: Record<string, { hash?: string;provider?:string;voice?:string;model?:string;audioSha256?:string }> = {};
       try { manifest = JSON.parse(await readFile(resolve('public/audio/manifest.json'), 'utf8')); } catch { /* missing manifest */ }
       const voiceConfig = elevenLabsConfig();
       const stale = fixedPhrases.filter(p => manifest[p.id]?.hash !== phraseHash(p.id, p.da, voiceConfig)||manifest[p.id]?.provider!=='ElevenLabs'||manifest[p.id]?.voice!==voiceConfig.voiceId||manifest[p.id]?.model!==voiceConfig.modelId).map(p => p.id);
       const absent = (await Promise.all(assets.map(async id => { try { await readFile(resolve('public/audio', `${id}.wav`)); return ''; } catch { return id; } }))).filter(Boolean);
-      return json(res, 200, { ready: Boolean(process.env.OPENAI_API_KEY), directTranslationAvailable: !production, missingAudio: [...new Set([...absent, ...stale])], audioVersion: audioVersion(voiceConfig), cachedVoices:Object.fromEntries(fixedPhrases.map(p=>[`/audio/${p.id}.wav`,{provider:manifest[p.id]?.provider,voiceId:manifest[p.id]?.voice,modelId:manifest[p.id]?.model}])), cachedPhrases: fixedPhrases.map(p => `/audio/${p.id}.wav`), models: modelConfig(), danishVoice: publicVoiceConfig() });
+      return json(res, 200, { ready: Boolean(process.env.OPENAI_API_KEY), directTranslationAvailable: !production, missingAudio: [...new Set([...absent, ...stale])], audioVersion: audioVersion(voiceConfig), cachedVoices:Object.fromEntries(fixedPhrases.map(p=>[`/audio/${p.id}.wav`,{provider:manifest[p.id]?.provider,voiceId:manifest[p.id]?.voice,modelId:manifest[p.id]?.model,audioSha256:manifest[p.id]?.audioSha256}])), cachedPhrases: fixedPhrases.map(p => `/audio/${p.id}.wav`), models: modelConfig(), danishVoice: publicVoiceConfig() });
     }
     if(!production&&route==='/api/developer/stage17-artifact')return await benchmarkArtifacts(req,res);
     if (route?.startsWith('/api/')) {

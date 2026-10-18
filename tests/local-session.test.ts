@@ -1,9 +1,11 @@
+import {RecognitionReviewRequired} from '../src/streaming/continuousRecognition';
 import type {CaptureTiming} from '../src/streaming/acousticTiming';
 import {afterEach,beforeEach,expect,it,vi} from 'vitest';
 import {LocalTestSession,localMetrics,type LocalDependencies,type LocalOptions} from '../src/streaming/localSession';
 import type {StreamingInterpreter} from '../src/streaming/engine';
 import type {PlaybackHooks,ContinuousPcmScheduler} from '../src/streaming/scheduler';
 import type {SemanticUnit} from '../src/streaming/types';
+import {lastSessionDiagnostics,exportLastSessionDiagnostics} from '../src/streaming/sessionDiagnostics';
 
 const options:LocalOptions={source:'en',path:'semantic',cachedOpening:false,microphone:'selected-mic',output:'selected-headphones',jitterMs:100,bargeIn:false,forceControlled:false,protectedTerms:[],warningLagMs:5000,maxLagMs:15000,conversationContext:'Interpret only.'};
 beforeEach(()=>vi.useFakeTimers());afterEach(()=>{vi.useRealTimers();vi.unstubAllGlobals();});
@@ -105,7 +107,7 @@ it('STOP while translation is pending never plays the late result',async()=>{
  expect(s.speech.send).not.toHaveBeenCalled();expect(s.source.cancel).toHaveBeenCalledOnce();expect(s.recognition.cancel).toHaveBeenCalledOnce();
 });
 it.each(['en','da']as const)('selects the persistent primary recognizer for %s with isolated target output',async source=>{
- const s=setup({source,path:'realtime'});await s.session.prepare();s.feed();expect(s.deps.continuousRecognition).toHaveBeenCalledWith(source,expect.anything(),expect.any(AbortSignal),source==='en'?450:1350,expect.any(Function),expect.any(Function));expect(s.deps.recognition).not.toHaveBeenCalled();
+ const s=setup({source,path:'realtime'});await s.session.prepare();s.feed();expect(s.deps.continuousRecognition).toHaveBeenCalledWith(source,expect.anything(),expect.any(AbortSignal),source==='en'?750:1350,expect.any(Function),expect.any(Function));expect(s.deps.recognition).not.toHaveBeenCalled();
  const engine=s.engine();engine.sourceStarted(source,100);engine.finalized(source,'Hej.');await vi.waitFor(()=>expect(s.sent).toHaveLength(1));expect(s.output.open).toHaveBeenCalledWith(source,expect.any(Number),expect.any(AbortSignal));s.session.end();
 });
 it('primary provider failure stops input/output, retains the transcript and allows restart',async()=>{
@@ -136,4 +138,26 @@ it('reports acoustic first-audio and tail from source PCM and target playback, i
  s.hooks().measurement?.({type:'pcm_received',streamId:'test',at:3300,clock});s.hooks().measurement?.({type:'block_scheduled',streamId:'test',block:0,at:3400,clock,startAt:4300,endAt:5300,signalStartAt:4400,signalEndAt:5200});s.at(4000);await vi.advanceTimersByTimeAsync(100);expect(s.session.snapshot.acoustic?.firstAudioLatency).toBeUndefined();
  s.at(4500);s.hooks().measurement?.({type:'block_audible',streamId:'test',block:0,at:4500,clock,startAt:4300,endAt:5300,signalStartAt:4400,signalEndAt:5200});s.hooks().started(id,4300);expect(s.session.snapshot.acoustic).toMatchObject({sourceSpeechOnset:2000,sourceSpeechEnd:2100,firstAudioLatency:2300,firstPCMReceivedAt:3200});expect(s.session.snapshot.acoustic?.tailLatency).toBeUndefined();
  s.at(5500);s.hooks().measurement?.({type:'block_rendered',streamId:'test',block:0,at:5500,clock,startAt:4300,endAt:5300,signalStartAt:4400,signalEndAt:5200});s.hooks().finished(id,5300);await vi.advanceTimersByTimeAsync(100);expect(s.session.snapshot.acoustic).toMatchObject({targetPlaybackEnd:5100,tailLatency:3000,complete:true});const before=s.session.snapshot.acoustic;s.session.end();expect(s.session.snapshot.acoustic).toMatchObject({firstAudioLatency:before!.firstAudioLatency,tailLatency:before!.tailLatency,stopped:true});
+});
+it('archives a real session failure before READY/reset without altering STOP cleanup or replaying audio',async()=>{
+ const s=setup({path:'realtime'});await s.session.prepare();s.feed();const engine=s.engine();engine.sourceStarted('en',100);engine.finalized('en','We are calling the clinic.');await vi.waitFor(()=>expect(s.sent).toHaveLength(1));
+ s.hooks().audit?.({type:'voice.finish_requested',at:400,requestId:'failure-context',text:'private speech',apiKey:'never-store'});
+ s.hooks().audit?.({type:'voice.finalization_timeout_expired',at:30400,requestId:'failure-context',timeoutMs:30000});s.hooks().failed?.(new Error('Voice finalization timed out.'));
+ const failed=lastSessionDiagnostics()!;expect(failed).toMatchObject({outcome:'failed',reason:'voice.finalization_timeout'});expect(failed.events.map(e=>e.event)).toEqual(expect.arrayContaining(['unit.committed','translation.ready','tts.queued','voice.finish_requested','voice.finalization_timeout_expired','session.stop_requested','session.ended']));
+ expect(exportLastSessionDiagnostics()).not.toContain('private speech');expect(exportLastSessionDiagnostics()).not.toContain('never-store');
+ expect(s.source.cancel).toHaveBeenCalledOnce();expect(s.recognition.cancel).toHaveBeenCalledOnce();expect(s.output.cancel).toHaveBeenCalledOnce();expect(vi.getTimerCount()).toBe(0);s.session.end();s.feed();expect(s.source.cancel).toHaveBeenCalledOnce();
+ const next=setup({path:'realtime'});await next.session.prepare();expect(lastSessionDiagnostics()?.sessionId).toBe(failed.sessionId);next.session.end();expect(lastSessionDiagnostics()?.sessionId).not.toBe(failed.sessionId);
+});
+it('persists STOP and playback metadata once while cleanup still cancels every existing source/output',async()=>{
+ const s=setup({path:'realtime'});await s.session.prepare();s.hooks().measurement?.({type:'block_scheduled',streamId:'stream-one',block:0,at:300,clock:{method:'context-performance-pair',contextTime:0,performanceTime:100,renderQuantumMs:128/24,deviceLatencyIncluded:false}});s.session.end();
+ expect(lastSessionDiagnostics()).toMatchObject({reason:'STOP',outcome:'stopped'});expect(lastSessionDiagnostics()?.events.map(e=>e.event)).toContain('playback.block_scheduled');
+ expect(s.source.cancel).toHaveBeenCalledOnce();expect(s.recognition.cancel).toHaveBeenCalledOnce();expect(s.output.cancel).toHaveBeenCalledOnce();const json=exportLastSessionDiagnostics();s.hooks().audit?.({type:'late.event',at:900});expect(exportLastSessionDiagnostics()).toBe(json);expect(vi.getTimerCount()).toBe(0);
+});
+
+it('retains already committed translation and final audio when later unsupported ASR requires review',async()=>{
+ const s=setup({path:'realtime'});let resolve!:(value:{translation:string;confidence:number;needs_precision:boolean})=>void;vi.mocked(s.deps.translate!).mockImplementation(()=>new Promise(r=>{resolve=r;}));await s.session.prepare();s.engine().sourceStarted('en',100);s.engine().finalized('en','Thank you.');await vi.advanceTimersByTimeAsync(1);
+ const review=s.deps.continuousRecognition as ReturnType<typeof vi.fn>;const failed=review.mock.calls[0][4] as (e:Error)=>void;failed(new RecognitionReviewRequired('Unsupported raw source requires human review.'));
+ expect(s.output.cancel).not.toHaveBeenCalled();expect(s.speech.cancel).not.toHaveBeenCalled();expect(s.session.snapshot.active).toBe(true);expect(s.source.enable).toHaveBeenLastCalledWith(false);expect(s.session.snapshot.warning).toContain('human review');
+ resolve({translation:'Tak.',confidence:1,needs_precision:false});await vi.advanceTimersByTimeAsync(10);expect(s.sent).toHaveLength(1);const id=s.sent[0].id;s.hooks().firstAudio(id,1000);s.hooks().started(id,1010);s.hooks().finished(id,1300);
+ expect(s.session.snapshot.lanes.en).toMatchObject({committedWords:2,translatedWords:2,spokenWords:2});expect(s.output.cancel).not.toHaveBeenCalled();s.session.end();expect(s.output.cancel).toHaveBeenCalledOnce();
 });

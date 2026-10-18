@@ -1,9 +1,10 @@
+import {transcriptionContext} from './transcriptionContext';
 import type { Server } from 'node:http';
 import WebSocket, { WebSocketServer } from 'ws';
 import { modelConfig } from './models';
 export function transcriptionSession(language: 'da' | 'en', model = modelConfig().liveTranscription, fast = false) {
   const modern=model==='gpt-live-transcribe'||model==='gpt-transcribe';
-  return {type:'session.update',session:{type:'transcription',audio:{input:{format:{type:'audio/pcm',rate:24000},transcription:{model,...(modern?{languages:[language],keywords:['aPureBase','Example Pharma','Humza','Isabella','Pernille']}:{language}),...(model==='gpt-live-transcribe'?{delay:fast?'minimal':process.env.OPENAI_TRANSCRIBE_DELAY||'low'}:{}),...(model!=='gpt-realtime-whisper'?{prompt:'Transcribe faithfully; do not answer or translate. Healthcare contact call. Expected spellings when spoken: Humza, Pernille, Isabella, aPureBase, Example Pharma. Humza is spelled H-u-m-z-a. Preserve professional information, spelled email addresses, numbers, dates, refusals and callbacks. Do not insert these names if not spoken.'}:{})},turn_detection:null}}}};
+  return {type:'session.update',session:{type:'transcription',audio:{input:{format:{type:'audio/pcm',rate:24000},transcription:{model,...(modern?{languages:[language],keywords:transcriptionContext.keywords}:{language}),...(model==='gpt-live-transcribe'?{delay:fast?'minimal':process.env.OPENAI_TRANSCRIBE_DELAY||'low'}:{}),...(model!=='gpt-realtime-whisper'?{prompt:modern?transcriptionContext.prompt:'Transcribe faithfully; do not answer or translate. Healthcare contact call. Expected spellings when spoken: Humza, Pernille, Isabella, aPureBase, Example Pharma. Humza is spelled H-u-m-z-a. Preserve professional information, spelled email addresses, numbers, dates, refusals and callbacks. Do not insert these names if not spoken.'}:{})},turn_detection:null}}}};
 }
 export function attachLiveTranscription(server: Server, connect = () => new WebSocket('wss://api.openai.com/v1/realtime?intent=transcription',{headers:{Authorization:`Bearer ${process.env.OPENAI_API_KEY}`},maxPayload:2*1024*1024})) {
   const gateway=new WebSocketServer({noServer:true,maxPayload:24000});let active=0;

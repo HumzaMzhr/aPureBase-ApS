@@ -1,0 +1,56 @@
+{
+  "phraseId": "email-readback-intro",
+  "wordingVersion": "stage-2.0c1-approved-1",
+  "text": "a, en, en, a, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+  "textHash": "5b56476b0b1b1102554d705206545a005959b59180afe6e624fa71b79061793f",
+  "assetHash": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+  "path": "http://127.0.0.1:5180/cache/3c1097bebb48f9d3d335b0e317f82bef0127fad623ccec19b7c38130099a6b9b.wav",
+  "voice": {
+    "provider": "ElevenLabs",
+    "name": "Isabella",
+    "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+    "modelId": "eleven_flash_v2_5",
+    "speed": 0.95
+  },
+  "requestedSpeed": 0.95,
+  "generatedAt": "2026-10-18T12:32:10.470Z",
+  "duration": 8.777125,
+  "samples": 210651,
+  "sampleRate": 24000,
+  "mediaFormat": "wav-pcm-s16le-mono",
+  "provenance": {
+    "verified": true,
+    "method": "authenticated-provider-response-and-content-hash",
+    "providerRequestId": "yWC1VIlMeYQW00WqP0tj",
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+    "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+  },
+  "verification": {
+    "mediaValid": true,
+    "nonSilent": true,
+    "clippingEvents": 0,
+    "rawPeak": 0.328277587890625,
+    "gainApplied": 2.9852784233522356,
+    "peakProtectionEvents": 1,
+    "outputPeak": 0.9800000190734863
+  },
+  "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+  "businessWordingApproved": true,
+  "productionApproved": false,
+  "binding": {
+    "slot": {
+      "kind": "EMAIL",
+      "phraseId": "email-readback-intro",
+      "candidate": "anna@clinic.dk",
+      "sourceTurnId": "synthetic-email-fixture",
+      "recipientRevision": 1,
+      "normalizationReviewed": true
+    },
+    "renderedValue": "a, en, en, a, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+    "renderedText": "a, en, en, a, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+    "textHash": "5b56476b0b1b1102554d705206545a005959b59180afe6e624fa71b79061793f",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "rendererVersion": "stage-2.0c2-deterministic-1",
+    "cacheKey": "3c1097bebb48f9d3d335b0e317f82bef0127fad623ccec19b7c38130099a6b9b"
+  }
+}

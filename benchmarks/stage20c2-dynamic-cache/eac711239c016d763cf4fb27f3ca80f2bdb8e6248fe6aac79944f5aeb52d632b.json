@@ -1,0 +1,62 @@
+{
+  "phraseId": "intermediary-consent-question",
+  "wordingVersion": "stage-2.0c1-approved-1",
+  "text": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+  "textHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+  "assetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+  "path": "http://127.0.0.1:5180/cache/eac711239c016d763cf4fb27f3ca80f2bdb8e6248fe6aac79944f5aeb52d632b.wav",
+  "voice": {
+    "provider": "ElevenLabs",
+    "name": "Isabella",
+    "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+    "modelId": "eleven_flash_v2_5",
+    "speed": 0.95
+  },
+  "requestedSpeed": 0.95,
+  "generatedAt": "2026-10-18T12:32:07.117Z",
+  "duration": 5.0155,
+  "samples": 120372,
+  "sampleRate": 24000,
+  "mediaFormat": "wav-pcm-s16le-mono",
+  "provenance": {
+    "verified": true,
+    "method": "authenticated-provider-response-and-content-hash",
+    "providerRequestId": "RJr2RuYrDluEaNFV3kpk",
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+    "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+  },
+  "verification": {
+    "mediaValid": true,
+    "nonSilent": true,
+    "clippingEvents": 0,
+    "rawPeak": 0.158599853515625,
+    "gainApplied": 3.5573605757216837,
+    "peakProtectionEvents": 0,
+    "outputPeak": 0.5641968846321106
+  },
+  "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+  "businessWordingApproved": true,
+  "productionApproved": false,
+  "binding": {
+    "slot": {
+      "kind": "NAME",
+      "phraseId": "intermediary-consent-question",
+      "name": {
+        "original": "Anna Jensen",
+        "source": "contact-data",
+        "evidenceId": "synthetic-contact-fixture",
+        "evidenceText": "SYNTHETIC rehearsal target: Anna Jensen",
+        "reviewedBy": "local-rehearsal-fixture",
+        "reviewedAt": "2026-10-18T00:00:00.000Z",
+        "pronunciationConfirmed": true,
+        "recipientRevision": 1
+      }
+    },
+    "renderedValue": "Anna Jensen",
+    "renderedText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+    "textHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "rendererVersion": "stage-2.0c2-deterministic-1",
+    "cacheKey": "eac711239c016d763cf4fb27f3ca80f2bdb8e6248fe6aac79944f5aeb52d632b"
+  }
+}
