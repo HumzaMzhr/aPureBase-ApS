@@ -1,0 +1,1791 @@
+{
+  "stage": "stage-2.0c31-candidate-1",
+  "acceptance": "NOT_ACCEPTED",
+  "assets": [
+    {
+      "phraseId": "consent-question",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "textHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+      "assetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "path": "/audio/consent-stage20c31/055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:27:56.953Z",
+      "duration": 3.947375,
+      "samples": 94737,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "kZK8ZENgppiFlm2S7XzY",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.2227783203125,
+        "gainApplied": 3.5573605757216837,
+        "peakProtectionEvents": 0,
+        "outputPeak": 0.7925028204917908
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+      "spokenTextHash": "82686ed5aae8211a6cda1b4a7bfc3dbeeb70dca083f8f9ca148707cafe6eef7c",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6"
+    },
+    {
+      "phraseId": "refusal-close",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Det er helt i orden. Tak for din tid. God dag.",
+      "textHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+      "assetHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+      "path": "/audio/consent-stage20c31/b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:27:57.525Z",
+      "duration": 2.5542083333333334,
+      "samples": 61301,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "PxtGZyc05AFxLkliYo9G",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.18572998046875,
+        "gainApplied": 3.5573605757216837,
+        "peakProtectionEvents": 0,
+        "outputPeak": 0.660708487033844
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Det er helt i orden. Tak for din tid. God dag.",
+      "spokenTextHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72"
+    },
+    {
+      "phraseId": "explanation",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+      "textHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+      "assetHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+      "path": "/audio/consent-stage20c31/ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:27:58.375Z",
+      "duration": 7.476833333333333,
+      "samples": 179444,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "BoVNorF2VkpKk3d8T5KN",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.16204833984375,
+        "gainApplied": 3.5573605757216837,
+        "peakProtectionEvents": 0,
+        "outputPeak": 0.5764643549919128
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+      "spokenTextHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142"
+    },
+    {
+      "phraseId": "why-calling",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+      "textHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+      "assetHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+      "path": "/audio/consent-stage20c31/147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:27:59.143Z",
+      "duration": 5.805,
+      "samples": 139320,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "DNp77bZMfUoQy2Ug0G7w",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.23284912109375,
+        "gainApplied": 3.5573605757216837,
+        "peakProtectionEvents": 0,
+        "outputPeak": 0.8283283114433289
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Jeg ringer kun for at spørge, om a Pure Base må sende dig relevant faglig information via e-mail.",
+      "spokenTextHash": "528ee77027d3335af28f93bf29314aaa080155cf12dd3c8a25b7f4589eb699d5",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa"
+    },
+    {
+      "phraseId": "unsubscribe",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+      "textHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+      "assetHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+      "path": "/audio/consent-stage20c31/5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:28:00.037Z",
+      "duration": 4.8762083333333335,
+      "samples": 117029,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "EICBHZPooqOvsGx2lArT",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.204254150390625,
+        "gainApplied": 3.5573605757216837,
+        "peakProtectionEvents": 0,
+        "outputPeak": 0.7266056537628174
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+      "spokenTextHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6"
+    },
+    {
+      "phraseId": "stop-contact-close",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Det forstår jeg. Tak for din tid. God dag.",
+      "textHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+      "assetHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+      "path": "/audio/consent-stage20c31/8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:28:00.566Z",
+      "duration": 2.229125,
+      "samples": 53499,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "ADIsTwQDyF7z55FZcSJZ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.13311767578125,
+        "gainApplied": 3.5573605757216837,
+        "peakProtectionEvents": 0,
+        "outputPeak": 0.4735475778579712
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Det forstår jeg. Tak for din tid. God dag.",
+      "spokenTextHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e"
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "textHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+      "assetHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+      "path": "/audio/consent-stage20c31/042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:28:02.075Z",
+      "duration": 18.715291666666666,
+      "samples": 449167,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "wQfnI52wU6PgcWN0E2h1",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.1597900390625,
+        "gainApplied": 3.5573605757216837,
+        "peakProtectionEvents": 0,
+        "outputPeak": 0.5684307813644409
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "spokenTextHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+      "binding": {
+        "rawEmail": "anna3.test-7@clinic.dk",
+        "normalizedCandidate": "anna3.test-7@clinic.dk",
+        "tokenSequence": [
+          {
+            "index": 0,
+            "character": "a",
+            "spoken": "Anna",
+            "part": "local"
+          },
+          {
+            "index": 1,
+            "character": "n",
+            "spoken": "Niels",
+            "part": "local"
+          },
+          {
+            "index": 2,
+            "character": "n",
+            "spoken": "Niels",
+            "part": "local"
+          },
+          {
+            "index": 3,
+            "character": "a",
+            "spoken": "Anna",
+            "part": "local"
+          },
+          {
+            "index": 4,
+            "character": "3",
+            "spoken": "tallet tre",
+            "part": "local"
+          },
+          {
+            "index": 5,
+            "character": ".",
+            "spoken": "punktum",
+            "part": "local"
+          },
+          {
+            "index": 6,
+            "character": "t",
+            "spoken": "Theodor",
+            "part": "local"
+          },
+          {
+            "index": 7,
+            "character": "e",
+            "spoken": "Erik",
+            "part": "local"
+          },
+          {
+            "index": 8,
+            "character": "s",
+            "spoken": "Søren",
+            "part": "local"
+          },
+          {
+            "index": 9,
+            "character": "t",
+            "spoken": "Theodor",
+            "part": "local"
+          },
+          {
+            "index": 10,
+            "character": "-",
+            "spoken": "bindestreg",
+            "part": "local"
+          },
+          {
+            "index": 11,
+            "character": "7",
+            "spoken": "tallet syv",
+            "part": "local"
+          },
+          {
+            "index": 12,
+            "character": "@",
+            "spoken": "snabel-a",
+            "part": "separator"
+          },
+          {
+            "index": 13,
+            "character": "c",
+            "spoken": "Cecilie",
+            "part": "domain"
+          },
+          {
+            "index": 14,
+            "character": "l",
+            "spoken": "Ludvig",
+            "part": "domain"
+          },
+          {
+            "index": 15,
+            "character": "i",
+            "spoken": "Ida",
+            "part": "domain"
+          },
+          {
+            "index": 16,
+            "character": "n",
+            "spoken": "Niels",
+            "part": "domain"
+          },
+          {
+            "index": 17,
+            "character": "i",
+            "spoken": "Ida",
+            "part": "domain"
+          },
+          {
+            "index": 18,
+            "character": "c",
+            "spoken": "Cecilie",
+            "part": "domain"
+          },
+          {
+            "index": 19,
+            "character": ".",
+            "spoken": "punktum",
+            "part": "domain"
+          },
+          {
+            "index": 20,
+            "character": "d",
+            "spoken": "Dora",
+            "part": "domain"
+          },
+          {
+            "index": 21,
+            "character": "k",
+            "spoken": "Knud",
+            "part": "domain"
+          }
+        ],
+        "renderedSpokenSequence": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "rendererVersion": "stage-2.0c31-danish-spelling-words-1",
+        "slot": {
+          "kind": "EMAIL",
+          "phraseId": "email-readback-intro",
+          "candidate": "anna3.test-7@clinic.dk",
+          "sourceTurnId": "synthetic-email-fixture",
+          "recipientRevision": 1,
+          "normalizationReviewed": true
+        },
+        "renderedValue": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "renderedText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "textHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "cacheKey": "1d928601fef238db49163f76077145105d0e1b34acc7edf655f19646442628dd"
+      }
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "textHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+      "assetHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+      "path": "/audio/consent-stage20c31/21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:28:03.415Z",
+      "duration": 15.65025,
+      "samples": 375606,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "6pGFtBg5aeZoYunL5sqa",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.242523193359375,
+        "gainApplied": 3.5573605757216837,
+        "peakProtectionEvents": 0,
+        "outputPeak": 0.8627424240112305
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "spokenTextHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+      "binding": {
+        "rawEmail": "anna@clinic.dk",
+        "normalizedCandidate": "anna@clinic.dk",
+        "tokenSequence": [
+          {
+            "index": 0,
+            "character": "a",
+            "spoken": "Anna",
+            "part": "local"
+          },
+          {
+            "index": 1,
+            "character": "n",
+            "spoken": "Niels",
+            "part": "local"
+          },
+          {
+            "index": 2,
+            "character": "n",
+            "spoken": "Niels",
+            "part": "local"
+          },
+          {
+            "index": 3,
+            "character": "a",
+            "spoken": "Anna",
+            "part": "local"
+          },
+          {
+            "index": 4,
+            "character": "@",
+            "spoken": "snabel-a",
+            "part": "separator"
+          },
+          {
+            "index": 5,
+            "character": "c",
+            "spoken": "Cecilie",
+            "part": "domain"
+          },
+          {
+            "index": 6,
+            "character": "l",
+            "spoken": "Ludvig",
+            "part": "domain"
+          },
+          {
+            "index": 7,
+            "character": "i",
+            "spoken": "Ida",
+            "part": "domain"
+          },
+          {
+            "index": 8,
+            "character": "n",
+            "spoken": "Niels",
+            "part": "domain"
+          },
+          {
+            "index": 9,
+            "character": "i",
+            "spoken": "Ida",
+            "part": "domain"
+          },
+          {
+            "index": 10,
+            "character": "c",
+            "spoken": "Cecilie",
+            "part": "domain"
+          },
+          {
+            "index": 11,
+            "character": ".",
+            "spoken": "punktum",
+            "part": "domain"
+          },
+          {
+            "index": 12,
+            "character": "d",
+            "spoken": "Dora",
+            "part": "domain"
+          },
+          {
+            "index": 13,
+            "character": "k",
+            "spoken": "Knud",
+            "part": "domain"
+          }
+        ],
+        "renderedSpokenSequence": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "rendererVersion": "stage-2.0c31-danish-spelling-words-1",
+        "slot": {
+          "kind": "EMAIL",
+          "phraseId": "email-readback-intro",
+          "candidate": "anna@clinic.dk",
+          "sourceTurnId": "synthetic-email-fixture",
+          "recipientRevision": 1,
+          "normalizationReviewed": true
+        },
+        "renderedValue": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "renderedText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "textHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "cacheKey": "cdd4c67155baef5656e90190adc40c951187b5c1be6121f43d05fcd9a7e5dcfd"
+      }
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+      "textHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+      "assetHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+      "path": "/audio/consent-stage20c31/fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:28:04.086Z",
+      "duration": 5.0155,
+      "samples": 120372,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "scLFcfVjwgXYRP77ZA40",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.15081787109375,
+        "gainApplied": 3.5573605757216837,
+        "peakProtectionEvents": 0,
+        "outputPeak": 0.5365135669708252
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+      "spokenTextHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8",
+      "binding": {
+        "slot": {
+          "kind": "NAME",
+          "phraseId": "receptionist-target-request",
+          "name": {
+            "original": "Jens Hansen",
+            "source": "contact-data",
+            "evidenceId": "synthetic-contact-fixture",
+            "evidenceText": "SYNTHETIC rehearsal target: Jens Hansen",
+            "reviewedBy": "local-rehearsal-fixture",
+            "reviewedAt": "2026-10-18T00:00:00.000Z",
+            "pronunciationConfirmed": true,
+            "recipientRevision": 1
+          }
+        },
+        "renderedValue": "Jens Hansen",
+        "renderedText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+        "textHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "rendererVersion": "stage-2.0c31-candidate-1",
+        "cacheKey": "db1062c7a1c327fd3c199d1c691e824ede95c66be018780594ec58444da3ec54"
+      }
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "textHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+      "assetHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+      "path": "/audio/consent-stage20c31/5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:28:06.071Z",
+      "duration": 19.319,
+      "samples": 463656,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "VEY7SjX3dPCnkJcz4ZUm",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.307098388671875,
+        "gainApplied": 3.191159693928252,
+        "peakProtectionEvents": 1,
+        "outputPeak": 0.9800000190734863
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "spokenTextHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+      "binding": {
+        "rawEmail": "anna2.test-7@clinic.dk",
+        "normalizedCandidate": "anna2.test-7@clinic.dk",
+        "tokenSequence": [
+          {
+            "index": 0,
+            "character": "a",
+            "spoken": "Anna",
+            "part": "local"
+          },
+          {
+            "index": 1,
+            "character": "n",
+            "spoken": "Niels",
+            "part": "local"
+          },
+          {
+            "index": 2,
+            "character": "n",
+            "spoken": "Niels",
+            "part": "local"
+          },
+          {
+            "index": 3,
+            "character": "a",
+            "spoken": "Anna",
+            "part": "local"
+          },
+          {
+            "index": 4,
+            "character": "2",
+            "spoken": "tallet to",
+            "part": "local"
+          },
+          {
+            "index": 5,
+            "character": ".",
+            "spoken": "punktum",
+            "part": "local"
+          },
+          {
+            "index": 6,
+            "character": "t",
+            "spoken": "Theodor",
+            "part": "local"
+          },
+          {
+            "index": 7,
+            "character": "e",
+            "spoken": "Erik",
+            "part": "local"
+          },
+          {
+            "index": 8,
+            "character": "s",
+            "spoken": "Søren",
+            "part": "local"
+          },
+          {
+            "index": 9,
+            "character": "t",
+            "spoken": "Theodor",
+            "part": "local"
+          },
+          {
+            "index": 10,
+            "character": "-",
+            "spoken": "bindestreg",
+            "part": "local"
+          },
+          {
+            "index": 11,
+            "character": "7",
+            "spoken": "tallet syv",
+            "part": "local"
+          },
+          {
+            "index": 12,
+            "character": "@",
+            "spoken": "snabel-a",
+            "part": "separator"
+          },
+          {
+            "index": 13,
+            "character": "c",
+            "spoken": "Cecilie",
+            "part": "domain"
+          },
+          {
+            "index": 14,
+            "character": "l",
+            "spoken": "Ludvig",
+            "part": "domain"
+          },
+          {
+            "index": 15,
+            "character": "i",
+            "spoken": "Ida",
+            "part": "domain"
+          },
+          {
+            "index": 16,
+            "character": "n",
+            "spoken": "Niels",
+            "part": "domain"
+          },
+          {
+            "index": 17,
+            "character": "i",
+            "spoken": "Ida",
+            "part": "domain"
+          },
+          {
+            "index": 18,
+            "character": "c",
+            "spoken": "Cecilie",
+            "part": "domain"
+          },
+          {
+            "index": 19,
+            "character": ".",
+            "spoken": "punktum",
+            "part": "domain"
+          },
+          {
+            "index": 20,
+            "character": "d",
+            "spoken": "Dora",
+            "part": "domain"
+          },
+          {
+            "index": 21,
+            "character": "k",
+            "spoken": "Knud",
+            "part": "domain"
+          }
+        ],
+        "renderedSpokenSequence": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "rendererVersion": "stage-2.0c31-danish-spelling-words-1",
+        "slot": {
+          "kind": "EMAIL",
+          "phraseId": "email-readback-intro",
+          "candidate": "anna2.test-7@clinic.dk",
+          "sourceTurnId": "synthetic-email-fixture",
+          "recipientRevision": 1,
+          "normalizationReviewed": true
+        },
+        "renderedValue": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "renderedText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "textHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "cacheKey": "dddb6d6698fbbbd63c191daac1395313af455a9962b35dea22fc74c2f312457e"
+      }
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+      "textHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+      "assetHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+      "path": "/audio/consent-stage20c31/a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:28:07.055Z",
+      "duration": 4.8762083333333335,
+      "samples": 117029,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "D4W58ZTWpMCCH5WsA63E",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.20037841796875,
+        "gainApplied": 3.5573605757216837,
+        "peakProtectionEvents": 0,
+        "outputPeak": 0.7128182649612427
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+      "spokenTextHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706",
+      "binding": {
+        "slot": {
+          "kind": "NAME",
+          "phraseId": "receptionist-target-request",
+          "name": {
+            "original": "Anna Jensen",
+            "source": "contact-data",
+            "evidenceId": "synthetic-contact-fixture",
+            "evidenceText": "SYNTHETIC rehearsal target: Anna Jensen",
+            "reviewedBy": "local-rehearsal-fixture",
+            "reviewedAt": "2026-10-18T00:00:00.000Z",
+            "pronunciationConfirmed": true,
+            "recipientRevision": 1
+          }
+        },
+        "renderedValue": "Anna Jensen",
+        "renderedText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+        "textHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "rendererVersion": "stage-2.0c31-candidate-1",
+        "cacheKey": "028ac7e1298f11e84dc8db14395d08324aa3d162f9dc79b35f88428a4bc3f4d1"
+      }
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "wordingVersion": "stage-2.0c31-candidate-1",
+      "text": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+      "textHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+      "assetHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+      "path": "/audio/consent-stage20c31/71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f.wav",
+      "voice": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "requestedSpeed": 0.95,
+      "generatedAt": "2026-10-20T17:28:08.476Z",
+      "duration": 10.866958333333333,
+      "samples": 260807,
+      "sampleRate": 24000,
+      "mediaFormat": "wav-pcm-s16le-mono",
+      "provenance": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "aKZEozi1ucfGifpJfc1X",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "verification": {
+        "mediaValid": true,
+        "nonSilent": true,
+        "clippingEvents": 0,
+        "rawPeak": 0.312591552734375,
+        "gainApplied": 3.135081519086205,
+        "peakProtectionEvents": 1,
+        "outputPeak": 0.9800000190734863
+      },
+      "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+      "businessWordingApproved": false,
+      "productionApproved": false,
+      "spokenText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+      "spokenTextHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+      "candidateWordingAuthorized": true,
+      "replacesAudioHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+      "binding": {
+        "rawEmail": "a_b+2@x.dk",
+        "normalizedCandidate": "a_b+2@x.dk",
+        "tokenSequence": [
+          {
+            "index": 0,
+            "character": "a",
+            "spoken": "Anna",
+            "part": "local"
+          },
+          {
+            "index": 1,
+            "character": "_",
+            "spoken": "understregning",
+            "part": "local"
+          },
+          {
+            "index": 2,
+            "character": "b",
+            "spoken": "Børge",
+            "part": "local"
+          },
+          {
+            "index": 3,
+            "character": "+",
+            "spoken": "plus",
+            "part": "local"
+          },
+          {
+            "index": 4,
+            "character": "2",
+            "spoken": "tallet to",
+            "part": "local"
+          },
+          {
+            "index": 5,
+            "character": "@",
+            "spoken": "snabel-a",
+            "part": "separator"
+          },
+          {
+            "index": 6,
+            "character": "x",
+            "spoken": "Xenia",
+            "part": "domain"
+          },
+          {
+            "index": 7,
+            "character": ".",
+            "spoken": "punktum",
+            "part": "domain"
+          },
+          {
+            "index": 8,
+            "character": "d",
+            "spoken": "Dora",
+            "part": "domain"
+          },
+          {
+            "index": 9,
+            "character": "k",
+            "spoken": "Knud",
+            "part": "domain"
+          }
+        ],
+        "renderedSpokenSequence": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+        "rendererVersion": "stage-2.0c31-danish-spelling-words-1",
+        "slot": {
+          "kind": "EMAIL",
+          "phraseId": "email-readback-intro",
+          "candidate": "a_b+2@x.dk",
+          "sourceTurnId": "synthetic-email-fixture",
+          "recipientRevision": 1,
+          "normalizationReviewed": true
+        },
+        "renderedValue": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+        "renderedText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+        "textHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "cacheKey": "76dcf0b7d94ce6960037fff70737ea982e357caec6398326c4a9a61af14f8ee7"
+      }
+    }
+  ],
+  "originalRecordings": [
+    {
+      "phraseId": "opening",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3.wav",
+      "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+      "textHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+      "audioHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "durationFromWav": 7.198166666666666,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "purpose",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15.wav",
+      "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+      "textHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+      "audioHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "durationFromWav": 7.476833333333333,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "consent-question",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8.wav",
+      "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "textHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+      "audioHash": "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6",
+      "durationFromWav": 4.3189166666666665,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "email-request",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6.wav",
+      "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+      "textHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+      "audioHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "durationFromWav": 3.390125,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627.wav",
+      "text": "Jeg gentager lige e-mailadressen for at være sikker.",
+      "textHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+      "audioHash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+      "durationFromWav": 2.925708333333333,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "email-confirmation-question",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f.wav",
+      "text": "Er det korrekt?",
+      "textHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+      "audioHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "durationFromWav": 0.97525,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "success-close",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49.wav",
+      "text": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+      "textHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+      "audioHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+      "durationFromWav": 4.783291666666667,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "refusal-close",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/b5cb3098fef60f1cbd4563cf14808c3cd3085ce730c08eb01a459a2dfb1f0acd.wav",
+      "text": "Det er helt i orden. Tak for din tid, og hav en god dag.",
+      "textHash": "b5cb3098fef60f1cbd4563cf14808c3cd3085ce730c08eb01a459a2dfb1f0acd",
+      "audioHash": "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72",
+      "durationFromWav": 3.390125,
+      "historicalDecision": "HUMAN_LISTENING_REJECTED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "identity",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11.wav",
+      "text": "Jeg hedder Isabella og ringer fra aPureBase.",
+      "textHash": "d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11",
+      "audioHash": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+      "durationFromWav": 2.786375,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "about-apurebase",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6.wav",
+      "text": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+      "textHash": "6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6",
+      "audioHash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+      "durationFromWav": 4.040291666666667,
+      "historicalDecision": "NOT_REVIEWED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "explanation",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/4d4bd86e384a4a918b1852c49827a6e9b9122d096d83b2b9fe385124546a088a.wav",
+      "text": "Det kan blandt andet være information om sygdomsområder, produkter og medicinske opdateringer.",
+      "textHash": "4d4bd86e384a4a918b1852c49827a6e9b9122d096d83b2b9fe385124546a088a",
+      "audioHash": "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142",
+      "durationFromWav": 5.619208333333333,
+      "historicalDecision": "HUMAN_LISTENING_REJECTED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "why-calling",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f.wav",
+      "text": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+      "textHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+      "audioHash": "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+      "durationFromWav": 6.130083333333333,
+      "historicalDecision": "HUMAN_LISTENING_REJECTED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "unsubscribe",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/e95d7a401fa4856920ed7602799c144527a8065e4d32506a5f142dcd783ccf4a.wav",
+      "text": "Ja. Du kan altid framelde dig igen, hvis du ikke længere ønsker at modtage informationen.",
+      "textHash": "e95d7a401fa4856920ed7602799c144527a8065e4d32506a5f142dcd783ccf4a",
+      "audioHash": "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6",
+      "durationFromWav": 4.922625,
+      "historicalDecision": "HUMAN_LISTENING_REJECTED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "repeat-prefix",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290.wav",
+      "text": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+      "textHash": "124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290",
+      "audioHash": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+      "durationFromWav": 2.322,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "clarify",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051.wav",
+      "text": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "textHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+      "audioHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+      "durationFromWav": 5.154833333333333,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "callback",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6.wav",
+      "text": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+      "textHash": "855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6",
+      "audioHash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+      "durationFromWav": 3.29725,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "callback-close",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4.wav",
+      "text": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+      "textHash": "1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4",
+      "audioHash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+      "durationFromWav": 4.133166666666667,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "target-unavailable",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405.wav",
+      "text": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+      "textHash": "43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405",
+      "audioHash": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+      "durationFromWav": 3.390125,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "send-first",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1.wav",
+      "text": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+      "textHash": "d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1",
+      "audioHash": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+      "durationFromWav": 4.365333333333333,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "uncertain-consent",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c.wav",
+      "text": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "textHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+      "audioHash": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+      "durationFromWav": 8.68425,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "already-receiving",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2.wav",
+      "text": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+      "textHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+      "audioHash": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+      "durationFromWav": 7.430375,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "email-correction-prefix",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70.wav",
+      "text": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+      "textHash": "5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70",
+      "audioHash": "948e1a3f03f5ea0285a1516fa0da69ea1ff90bcaca73c416a0546c2e19c64b24",
+      "durationFromWav": 3.9009583333333335,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "more-explanation",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f.wav",
+      "text": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+      "textHash": "93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f",
+      "audioHash": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+      "durationFromWav": 9.380875,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "stop-contact-close",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/01044caa100080167e93c67441edb46fd399f232a008844185dd8f7c51570f25.wav",
+      "text": "Det forstår jeg. Tak for din tid, og hav en god dag.",
+      "textHash": "01044caa100080167e93c67441edb46fd399f232a008844185dd8f7c51570f25",
+      "audioHash": "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e",
+      "durationFromWav": 3.0185833333333334,
+      "historicalDecision": "HUMAN_LISTENING_REJECTED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "thank-you",
+      "value": null,
+      "path": "public/audio/consent-stage20c1/ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7.wav",
+      "text": "Perfekt, tak.",
+      "textHash": "ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7",
+      "audioHash": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+      "durationFromWav": 1.1145416666666668,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "value": "anna3.test-7@clinic.dk",
+      "path": "benchmarks/stage20c2-dynamic-cache/094bbd3b24c4536bb36460a12a11cd6283912e82b297ec141ea83c1389ee2c76.wav",
+      "text": "a, en, en, a, tre, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "textHash": "390cf31229a800c0a839e0d9c6ca42b18b50834d3d0126abdf1741fa25f52a16",
+      "audioHash": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+      "durationFromWav": 18.715291666666666,
+      "historicalDecision": "HUMAN_LISTENING_REJECTED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "intermediary-consent-question",
+      "value": "Jens Hansen",
+      "path": "benchmarks/stage20c2-dynamic-cache/32ab04c8badee6a326b72f5ec619ec94c6d7a886b21949ae575a940c86bd7cf7.wav",
+      "text": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+      "textHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+      "audioHash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+      "durationFromWav": 5.108375,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "value": "anna@clinic.dk",
+      "path": "benchmarks/stage20c2-dynamic-cache/3c1097bebb48f9d3d335b0e317f82bef0127fad623ccec19b7c38130099a6b9b.wav",
+      "text": "a, en, en, a, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "textHash": "5b56476b0b1b1102554d705206545a005959b59180afe6e624fa71b79061793f",
+      "audioHash": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+      "durationFromWav": 8.777125,
+      "historicalDecision": "HUMAN_LISTENING_REJECTED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "value": "Jens Hansen",
+      "path": "benchmarks/stage20c2-dynamic-cache/3fcca16ff11c3c331600ac9c5fd7d6dbd9b3c332e3fbcbf41eade5f7e05ba323.wav",
+      "text": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende?",
+      "textHash": "1a6ca327138d6703af73d7b47ded31b0d27d15adac42d63e5bfd939ce614c2ec",
+      "audioHash": "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8",
+      "durationFromWav": 5.2941666666666665,
+      "historicalDecision": "HUMAN_LISTENING_REJECTED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "value": "anna2.test-7@clinic.dk",
+      "path": "benchmarks/stage20c2-dynamic-cache/9104fa03fc1ad8ef10a5d21bf0a33e88dbdf64ed389b0701dd59c47b4e3288cb.wav",
+      "text": "a, en, en, a, to, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "textHash": "980bc70513f1df076e0d3f0c0b60ea8583af52ceb38b170acb668995f25a7c48",
+      "audioHash": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+      "durationFromWav": 8.962916666666667,
+      "historicalDecision": "HUMAN_LISTENING_REJECTED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "value": "Anna Jensen",
+      "path": "benchmarks/stage20c2-dynamic-cache/a7c8e1e9879194c7fec9ac8c3073a330cb23fde60fdf93d62db37c8abc77d226.wav",
+      "text": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende?",
+      "textHash": "e9b2f10fbad1663bc27f64706e555b6c36fdae9ef9349fbe864c90d7290ebd6b",
+      "audioHash": "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706",
+      "durationFromWav": 5.20125,
+      "historicalDecision": "HUMAN_LISTENING_REJECTED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "wrong-person-close",
+      "value": "Jens Hansen",
+      "path": "benchmarks/stage20c2-dynamic-cache/a817e97e963f5083cd4e9803c210b4430ae300de611ad38918b843908e33a29c.wav",
+      "text": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+      "textHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+      "audioHash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+      "durationFromWav": 3.761625,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "value": "a_b+2@x.dk",
+      "path": "benchmarks/stage20c2-dynamic-cache/ae99e612055486a9fd30f8d02b912fbc1fac796b272538e3523036e0854b2611.wav",
+      "text": "a, understregning, be, plus, to, snabel-a, eks, punktum, de, kå",
+      "textHash": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3",
+      "audioHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+      "durationFromWav": 5.479916666666667,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": false,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "authority-ask",
+      "value": "Anna Jensen",
+      "path": "benchmarks/stage20c2-dynamic-cache/bd626ebff422aff8dffe6a83682f69a9bddc0f8d05cc93039cd0197090ea3e96.wav",
+      "text": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+      "textHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+      "audioHash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+      "durationFromWav": 4.922625,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "wrong-person-close",
+      "value": "Anna Jensen",
+      "path": "benchmarks/stage20c2-dynamic-cache/dd5620b5bf17f06eb00a64c250cb1a3eee0f2874ab9e60dcbeae686667d4ef45.wav",
+      "text": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+      "textHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+      "audioHash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+      "durationFromWav": 3.9938333333333333,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "intermediary-consent-question",
+      "value": "Anna Jensen",
+      "path": "benchmarks/stage20c2-dynamic-cache/eac711239c016d763cf4fb27f3ca80f2bdb8e6248fe6aac79944f5aeb52d632b.wav",
+      "text": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+      "textHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+      "audioHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+      "durationFromWav": 5.0155,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    },
+    {
+      "phraseId": "authority-ask",
+      "value": "Jens Hansen",
+      "path": "benchmarks/stage20c2-dynamic-cache/ec9607700680e1898f24a6f56c779d549ace09cf64aa5652cadf1a8b33afcc54.wav",
+      "text": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+      "textHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+      "audioHash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+      "durationFromWav": 4.551125,
+      "historicalDecision": "HUMAN_LISTENING_APPROVED",
+      "currentApprovalRetained": true,
+      "bytesPreserved": true
+    }
+  ],
+  "comparisons": [
+    {
+      "phraseId": "consent-question",
+      "value": null,
+      "oldText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "newCanonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "newSpokenText": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+      "oldTextHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+      "newTextHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+      "oldAudioHash": "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6",
+      "newAudioHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "oldDurationFromWav": 4.3189166666666665,
+      "newDurationFromWav": 3.947375,
+      "differenceSeconds": -0.37154166666666644,
+      "requiredHumanReview": true
+    },
+    {
+      "phraseId": "refusal-close",
+      "value": null,
+      "oldText": "Det er helt i orden. Tak for din tid, og hav en god dag.",
+      "newCanonicalText": "Det er helt i orden. Tak for din tid. God dag.",
+      "newSpokenText": "Det er helt i orden. Tak for din tid. God dag.",
+      "oldTextHash": "b5cb3098fef60f1cbd4563cf14808c3cd3085ce730c08eb01a459a2dfb1f0acd",
+      "newTextHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+      "oldAudioHash": "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72",
+      "newAudioHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+      "oldDurationFromWav": 3.390125,
+      "newDurationFromWav": 2.5542083333333334,
+      "differenceSeconds": -0.8359166666666664,
+      "requiredHumanReview": true
+    },
+    {
+      "phraseId": "explanation",
+      "value": null,
+      "oldText": "Det kan blandt andet være information om sygdomsområder, produkter og medicinske opdateringer.",
+      "newCanonicalText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+      "newSpokenText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+      "oldTextHash": "4d4bd86e384a4a918b1852c49827a6e9b9122d096d83b2b9fe385124546a088a",
+      "newTextHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+      "oldAudioHash": "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142",
+      "newAudioHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+      "oldDurationFromWav": 5.619208333333333,
+      "newDurationFromWav": 7.476833333333333,
+      "differenceSeconds": 1.8576250000000005,
+      "requiredHumanReview": true
+    },
+    {
+      "phraseId": "why-calling",
+      "value": null,
+      "oldText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+      "newCanonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+      "newSpokenText": "Jeg ringer kun for at spørge, om a Pure Base må sende dig relevant faglig information via e-mail.",
+      "oldTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+      "newTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+      "oldAudioHash": "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+      "newAudioHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+      "oldDurationFromWav": 6.130083333333333,
+      "newDurationFromWav": 5.805,
+      "differenceSeconds": -0.3250833333333336,
+      "requiredHumanReview": true
+    },
+    {
+      "phraseId": "unsubscribe",
+      "value": null,
+      "oldText": "Ja. Du kan altid framelde dig igen, hvis du ikke længere ønsker at modtage informationen.",
+      "newCanonicalText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+      "newSpokenText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+      "oldTextHash": "e95d7a401fa4856920ed7602799c144527a8065e4d32506a5f142dcd783ccf4a",
+      "newTextHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+      "oldAudioHash": "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6",
+      "newAudioHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+      "oldDurationFromWav": 4.922625,
+      "newDurationFromWav": 4.8762083333333335,
+      "differenceSeconds": -0.04641666666666655,
+      "requiredHumanReview": true
+    },
+    {
+      "phraseId": "stop-contact-close",
+      "value": null,
+      "oldText": "Det forstår jeg. Tak for din tid, og hav en god dag.",
+      "newCanonicalText": "Det forstår jeg. Tak for din tid. God dag.",
+      "newSpokenText": "Det forstår jeg. Tak for din tid. God dag.",
+      "oldTextHash": "01044caa100080167e93c67441edb46fd399f232a008844185dd8f7c51570f25",
+      "newTextHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+      "oldAudioHash": "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e",
+      "newAudioHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+      "oldDurationFromWav": 3.0185833333333334,
+      "newDurationFromWav": 2.229125,
+      "differenceSeconds": -0.7894583333333336,
+      "requiredHumanReview": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "value": "anna3.test-7@clinic.dk",
+      "oldText": "a, en, en, a, tre, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "newCanonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "newSpokenText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "oldTextHash": "390cf31229a800c0a839e0d9c6ca42b18b50834d3d0126abdf1741fa25f52a16",
+      "newTextHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+      "oldAudioHash": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+      "newAudioHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+      "oldDurationFromWav": 18.715291666666666,
+      "newDurationFromWav": 18.715291666666666,
+      "differenceSeconds": 0,
+      "requiredHumanReview": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "value": "anna@clinic.dk",
+      "oldText": "a, en, en, a, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "newCanonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "newSpokenText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "oldTextHash": "5b56476b0b1b1102554d705206545a005959b59180afe6e624fa71b79061793f",
+      "newTextHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+      "oldAudioHash": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+      "newAudioHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+      "oldDurationFromWav": 8.777125,
+      "newDurationFromWav": 15.65025,
+      "differenceSeconds": 6.873125,
+      "requiredHumanReview": true
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "value": "Jens Hansen",
+      "oldText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende?",
+      "newCanonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+      "newSpokenText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+      "oldTextHash": "1a6ca327138d6703af73d7b47ded31b0d27d15adac42d63e5bfd939ce614c2ec",
+      "newTextHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+      "oldAudioHash": "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8",
+      "newAudioHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+      "oldDurationFromWav": 5.2941666666666665,
+      "newDurationFromWav": 5.0155,
+      "differenceSeconds": -0.2786666666666662,
+      "requiredHumanReview": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "value": "anna2.test-7@clinic.dk",
+      "oldText": "a, en, en, a, to, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "newCanonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "newSpokenText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "oldTextHash": "980bc70513f1df076e0d3f0c0b60ea8583af52ceb38b170acb668995f25a7c48",
+      "newTextHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+      "oldAudioHash": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+      "newAudioHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+      "oldDurationFromWav": 8.962916666666667,
+      "newDurationFromWav": 19.319,
+      "differenceSeconds": 10.356083333333332,
+      "requiredHumanReview": true
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "value": "Anna Jensen",
+      "oldText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende?",
+      "newCanonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+      "newSpokenText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+      "oldTextHash": "e9b2f10fbad1663bc27f64706e555b6c36fdae9ef9349fbe864c90d7290ebd6b",
+      "newTextHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+      "oldAudioHash": "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706",
+      "newAudioHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+      "oldDurationFromWav": 5.20125,
+      "newDurationFromWav": 4.8762083333333335,
+      "differenceSeconds": -0.32504166666666645,
+      "requiredHumanReview": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "value": "a_b+2@x.dk",
+      "oldText": "a, understregning, be, plus, to, snabel-a, eks, punktum, de, kå",
+      "newCanonicalText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+      "newSpokenText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+      "oldTextHash": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3",
+      "newTextHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+      "oldAudioHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+      "newAudioHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+      "oldDurationFromWav": 5.479916666666667,
+      "newDurationFromWav": 10.866958333333333,
+      "differenceSeconds": 5.387041666666666,
+      "requiredHumanReview": true
+    }
+  ],
+  "organization": {
+    "displayOrganization": "aPureBase",
+    "spokenOrganization": "a Pure Base",
+    "status": "PRONUNCIATION_CANDIDATE_REQUIRES_ASEM_RETEST"
+  },
+  "emailSpellingMap": {
+    "0": "tallet nul",
+    "1": "tallet en",
+    "2": "tallet to",
+    "3": "tallet tre",
+    "4": "tallet fire",
+    "5": "tallet fem",
+    "6": "tallet seks",
+    "7": "tallet syv",
+    "8": "tallet otte",
+    "9": "tallet ni",
+    "a": "Anna",
+    "b": "Børge",
+    "c": "Cecilie",
+    "d": "Dora",
+    "e": "Erik",
+    "f": "Frederik",
+    "g": "Georg",
+    "h": "Hans",
+    "i": "Ida",
+    "j": "Jens",
+    "k": "Knud",
+    "l": "Ludvig",
+    "m": "Marie",
+    "n": "Niels",
+    "o": "Oskar",
+    "p": "Peter",
+    "q": "Quintus",
+    "r": "Rasmus",
+    "s": "Søren",
+    "t": "Theodor",
+    "u": "Ulla",
+    "v": "Viggo",
+    "w": "William",
+    "x": "Xenia",
+    "y": "Yrsa",
+    "z": "Zacharias",
+    "@": "snabel-a",
+    ".": "punktum",
+    "-": "bindestreg",
+    "_": "understregning",
+    "+": "plus",
+    "A": "stort bogstav Anna",
+    "B": "stort bogstav Børge",
+    "C": "stort bogstav Cecilie",
+    "D": "stort bogstav Dora",
+    "E": "stort bogstav Erik",
+    "F": "stort bogstav Frederik",
+    "G": "stort bogstav Georg",
+    "H": "stort bogstav Hans",
+    "I": "stort bogstav Ida",
+    "J": "stort bogstav Jens",
+    "K": "stort bogstav Knud",
+    "L": "stort bogstav Ludvig",
+    "M": "stort bogstav Marie",
+    "N": "stort bogstav Niels",
+    "O": "stort bogstav Oskar",
+    "P": "stort bogstav Peter",
+    "Q": "stort bogstav Quintus",
+    "R": "stort bogstav Rasmus",
+    "S": "stort bogstav Søren",
+    "T": "stort bogstav Theodor",
+    "U": "stort bogstav Ulla",
+    "V": "stort bogstav Viggo",
+    "W": "stort bogstav William",
+    "X": "stort bogstav Xenia",
+    "Y": "stort bogstav Yrsa",
+    "Z": "stort bogstav Zacharias"
+  },
+  "businessOpenItems": [
+    "UNSUBSCRIBE_METHOD_BUSINESS_CONFIRMATION_REQUIRED"
+  ],
+  "usage": {
+    "requests": 12,
+    "submittedCharacters": 1308,
+    "successfulGenerations": 12,
+    "failedAttempts": 0,
+    "retries": 0,
+    "openAIRequestsByAgent": 0,
+    "telephoneRequests": 0
+  },
+  "outputVerification": {
+    "sourceClipping": 0,
+    "outputClipping": 0,
+    "peakProtectionRecordings": 2,
+    "requestedGain": 3.5573605757216837,
+    "humanPronunciationApproval": "NOT_TESTED"
+  }
+}

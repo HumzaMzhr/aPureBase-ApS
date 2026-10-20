@@ -1,0 +1,503 @@
+[
+  {
+    "label": "pre-before-1",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts",
+      "--testNamePattern",
+      "replays.*\\(before\\)$",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-before-1.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 1599.69,
+    "loadBefore": [
+      4.42333984375,
+      5.22998046875,
+      4.71826171875
+    ],
+    "loadAfter": [
+      4.42333984375,
+      5.22998046875,
+      4.71826171875
+    ],
+    "tests": [
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (before)",
+        "status": "passed",
+        "durationMs": 978.919083,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 1,
+    "numFailedTests": 0
+  },
+  {
+    "label": "pre-before-2",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts",
+      "--testNamePattern",
+      "replays.*\\(before\\)$",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-before-2.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 1462.99,
+    "loadBefore": [
+      4.42333984375,
+      5.22998046875,
+      4.71826171875
+    ],
+    "loadAfter": [
+      4.38916015625,
+      5.20947265625,
+      4.7138671875
+    ],
+    "tests": [
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (before)",
+        "status": "passed",
+        "durationMs": 976.8870420000001,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 1,
+    "numFailedTests": 0
+  },
+  {
+    "label": "pre-before-3",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts",
+      "--testNamePattern",
+      "replays.*\\(before\\)$",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-before-3.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 1467.09,
+    "loadBefore": [
+      4.38916015625,
+      5.20947265625,
+      4.7138671875
+    ],
+    "loadAfter": [
+      4.38916015625,
+      5.20947265625,
+      4.7138671875
+    ],
+    "tests": [
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (before)",
+        "status": "passed",
+        "durationMs": 989.1476660000001,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 1,
+    "numFailedTests": 0
+  },
+  {
+    "label": "pre-after-1",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts",
+      "--testNamePattern",
+      "replays.*\\(after\\)$",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-after-1.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 1473.21,
+    "loadBefore": [
+      4.38916015625,
+      5.20947265625,
+      4.7138671875
+    ],
+    "loadAfter": [
+      4.38916015625,
+      5.20947265625,
+      4.7138671875
+    ],
+    "tests": [
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (after)",
+        "status": "passed",
+        "durationMs": 982.4500419999999,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 1,
+    "numFailedTests": 0
+  },
+  {
+    "label": "pre-after-2",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts",
+      "--testNamePattern",
+      "replays.*\\(after\\)$",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-after-2.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 1492.0,
+    "loadBefore": [
+      4.38916015625,
+      5.20947265625,
+      4.7138671875
+    ],
+    "loadAfter": [
+      4.35791015625,
+      5.18896484375,
+      4.70947265625
+    ],
+    "tests": [
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (after)",
+        "status": "passed",
+        "durationMs": 989.1346250000001,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 1,
+    "numFailedTests": 0
+  },
+  {
+    "label": "pre-after-3",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts",
+      "--testNamePattern",
+      "replays.*\\(after\\)$",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-after-3.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 1467.28,
+    "loadBefore": [
+      4.35791015625,
+      5.18896484375,
+      4.70947265625
+    ],
+    "loadAfter": [
+      4.35791015625,
+      5.18896484375,
+      4.70947265625
+    ],
+    "tests": [
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (after)",
+        "status": "passed",
+        "durationMs": 982.1469160000001,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 1,
+    "numFailedTests": 0
+  },
+  {
+    "label": "pre-pcm-1",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "--testNamePattern",
+      "forwards all 45 seconds of PCM",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-pcm-1.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 2977.99,
+    "loadBefore": [
+      4.35791015625,
+      5.18896484375,
+      4.70947265625
+    ],
+    "loadAfter": [
+      4.2490234375,
+      5.15234375,
+      4.69921875
+    ],
+    "tests": [
+      {
+        "file": "tests/continuous-transcription-gateway.test.ts",
+        "title": "forwards all 45 seconds of PCM across sequential items while earlier finals are delayed",
+        "status": "passed",
+        "durationMs": 2516.981042,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 1,
+    "numFailedTests": 0
+  },
+  {
+    "label": "pre-pcm-2",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "--testNamePattern",
+      "forwards all 45 seconds of PCM",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-pcm-2.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 3111.73,
+    "loadBefore": [
+      4.2490234375,
+      5.15234375,
+      4.69921875
+    ],
+    "loadAfter": [
+      4.2490234375,
+      5.15234375,
+      4.69921875
+    ],
+    "tests": [
+      {
+        "file": "tests/continuous-transcription-gateway.test.ts",
+        "title": "forwards all 45 seconds of PCM across sequential items while earlier finals are delayed",
+        "status": "passed",
+        "durationMs": 2624.509417,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 1,
+    "numFailedTests": 0
+  },
+  {
+    "label": "pre-pcm-3",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "--testNamePattern",
+      "forwards all 45 seconds of PCM",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-pcm-3.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 3049.42,
+    "loadBefore": [
+      4.2490234375,
+      5.15234375,
+      4.69921875
+    ],
+    "loadAfter": [
+      4.06884765625,
+      5.099609375,
+      4.68310546875
+    ],
+    "tests": [
+      {
+        "file": "tests/continuous-transcription-gateway.test.ts",
+        "title": "forwards all 45 seconds of PCM across sequential items while earlier finals are delayed",
+        "status": "passed",
+        "durationMs": 2594.902791,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 1,
+    "numFailedTests": 0
+  },
+  {
+    "label": "pre-combined-1",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts",
+      "tests/continuous-transcription-gateway.test.ts",
+      "--testNamePattern",
+      "replays the exact physical|forwards all 45 seconds of PCM",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-combined-1.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 3282.89,
+    "loadBefore": [
+      4.06884765625,
+      5.099609375,
+      4.68310546875
+    ],
+    "loadAfter": [
+      4.06884765625,
+      5.099609375,
+      4.68310546875
+    ],
+    "tests": [
+      {
+        "file": "tests/continuous-transcription-gateway.test.ts",
+        "title": "forwards all 45 seconds of PCM across sequential items while earlier finals are delayed",
+        "status": "passed",
+        "durationMs": 2773.5622500000004,
+        "failureMessages": []
+      },
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (before)",
+        "status": "passed",
+        "durationMs": 1338.976958,
+        "failureMessages": []
+      },
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (after)",
+        "status": "passed",
+        "durationMs": 1233.187292,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 3,
+    "numFailedTests": 0
+  },
+  {
+    "label": "pre-combined-2",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts",
+      "tests/continuous-transcription-gateway.test.ts",
+      "--testNamePattern",
+      "replays the exact physical|forwards all 45 seconds of PCM",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-combined-2.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 3417.09,
+    "loadBefore": [
+      4.06884765625,
+      5.099609375,
+      4.68310546875
+    ],
+    "loadAfter": [
+      3.98291015625,
+      5.064453125,
+      4.6728515625
+    ],
+    "tests": [
+      {
+        "file": "tests/continuous-transcription-gateway.test.ts",
+        "title": "forwards all 45 seconds of PCM across sequential items while earlier finals are delayed",
+        "status": "passed",
+        "durationMs": 2877.683209,
+        "failureMessages": []
+      },
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (before)",
+        "status": "passed",
+        "durationMs": 1312.939625,
+        "failureMessages": []
+      },
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (after)",
+        "status": "passed",
+        "durationMs": 1327.918667,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 3,
+    "numFailedTests": 0
+  },
+  {
+    "label": "pre-combined-3",
+    "cwd": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS",
+    "command": [
+      "node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts",
+      "tests/continuous-transcription-gateway.test.ts",
+      "--testNamePattern",
+      "replays the exact physical|forwards all 45 seconds of PCM",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/pre-combined-3.vitest.json"
+    ],
+    "exitCode": 0,
+    "wallMs": 3487.23,
+    "loadBefore": [
+      3.98291015625,
+      5.064453125,
+      4.6728515625
+    ],
+    "loadAfter": [
+      4.14404296875,
+      5.07958984375,
+      4.68017578125
+    ],
+    "tests": [
+      {
+        "file": "tests/continuous-transcription-gateway.test.ts",
+        "title": "forwards all 45 seconds of PCM across sequential items while earlier finals are delayed",
+        "status": "passed",
+        "durationMs": 2918.886959,
+        "failureMessages": []
+      },
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (before)",
+        "status": "passed",
+        "durationMs": 1525.2242919999999,
+        "failureMessages": []
+      },
+      {
+        "file": "tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (after)",
+        "status": "passed",
+        "durationMs": 1206.89,
+        "failureMessages": []
+      }
+    ],
+    "numPassedTests": 3,
+    "numFailedTests": 0
+  }
+]

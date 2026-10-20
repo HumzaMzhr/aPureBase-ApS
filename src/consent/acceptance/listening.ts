@@ -6,7 +6,7 @@ export interface ListenOutput {key:string; event:LocalPlaybackEvent; at:number}
 /** Local explicit human attestations. Never derived from playback completion. */
 export class ListeningRegistry {
   outputs:ListenOutput[]=[]; reviews:ListeningReview[]=[];
-  constructor(private persist?:()=>void){}
+  constructor(private persist?:()=>void,private catalog:readonly ReviewAsset[]=listeningCatalog){}
   observe(asset:ReviewAsset,event:LocalPlaybackEvent,at:number) {if(event.assetHash!==asset.assetHash||event.textHash!==asset.textHash||event.phraseId!==asset.phraseId)throw new Error('Listening output asset mismatch.');this.outputs.push({key:reviewKey(asset),event:structuredClone(event),at});this.persist?.();}
   decision(asset:ReviewAsset):HumanDecision {return this.reviews.filter(r=>r.key===reviewKey(asset)).at(-1)?.decision??'NOT_REVIEWED';}
   localCompleted(asset:ReviewAsset){return this.outputs.some(o=>o.key===reviewKey(asset)&&o.event.action==='complete'&&o.event.outputProof?.startsWith(`web-audio-source-ended:${o.event.playbackId}:`));}
@@ -22,7 +22,7 @@ export class ListeningRegistry {
   restore(raw:unknown){
     if(!raw||typeof raw!=='object')throw new Error('Invalid listening archive.');const x=raw as {outputs?:ListenOutput[];reviews?:ListeningReview[]};
     if(!Array.isArray(x.outputs)||!Array.isArray(x.reviews)||x.outputs.length>3000||x.reviews.length>2000)throw new Error('Invalid/bounded review archive required.');
-    for(const r of x.reviews){const a=listeningCatalog.find(a=>reviewKey(a)===r.key);if(!a||r.audioHash!==a.assetHash||r.textHash!==a.textHash||r.text!==a.text||!r.reviewer?.trim()||!r.timestamp||r.selfAttestedPhysicalListening!==true||!['HUMAN_LISTENING_APPROVED','HUMAN_LISTENING_REJECTED'].includes(r.decision)||!x.outputs.some(o=>o.key===r.key&&o.event.playbackId===r.playbackId&&o.event.assetHash===a.assetHash&&o.event.textHash===a.textHash&&o.event.action===(r.decision==='HUMAN_LISTENING_APPROVED'?'complete':o.event.action)&& (r.decision!=='HUMAN_LISTENING_APPROVED'||o.event.outputProof===r.outputProof&&!!r.outputProof?.startsWith(`web-audio-source-ended:${r.playbackId}:`))))throw new Error('Invalid/stale human review binding.');}
+    for(const r of x.reviews){const a=this.catalog.find(a=>reviewKey(a)===r.key);if(!a||r.audioHash!==a.assetHash||r.textHash!==a.textHash||r.text!==a.text||!r.reviewer?.trim()||!r.timestamp||r.selfAttestedPhysicalListening!==true||!['HUMAN_LISTENING_APPROVED','HUMAN_LISTENING_REJECTED'].includes(r.decision)||!x.outputs.some(o=>o.key===r.key&&o.event.playbackId===r.playbackId&&o.event.assetHash===a.assetHash&&o.event.textHash===a.textHash&&o.event.action===(r.decision==='HUMAN_LISTENING_APPROVED'?'complete':o.event.action)&& (r.decision!=='HUMAN_LISTENING_APPROVED'||o.event.outputProof===r.outputProof&&!!r.outputProof?.startsWith(`web-audio-source-ended:${r.playbackId}:`))))throw new Error('Invalid/stale human review binding.');}
     this.outputs=structuredClone(x.outputs);this.reviews=structuredClone(x.reviews);
   }
   export(){return structuredClone({outputs:this.outputs,reviews:this.reviews,productionEnabled:false,identityAssurance:'LOCAL_SELF_ATTESTATION_NOT_AUTHENTICATED'});}

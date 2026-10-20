@@ -1,0 +1,34 @@
+{
+  "commit": "a5b70549484e560351dcb2f8e2513c26ac9b2eaf",
+  "location": "/tmp/c31-timeout-baseline-a5b7054",
+  "method": "git archive, shared existing node_modules only; no env/credentials/network calls",
+  "passed": 1013,
+  "failed": 0,
+  "affected": [
+    {
+      "file": "/private/tmp/c31-timeout-baseline-a5b7054/tests/continuous-transcription-gateway.test.ts",
+      "tests": [
+        {
+          "name": "forwards all 45 seconds of PCM across sequential items while earlier finals are delayed",
+          "status": "passed",
+          "durationMs": 3866.025791
+        }
+      ]
+    },
+    {
+      "file": "/private/tmp/c31-timeout-baseline-a5b7054/tests/stage195-replay.test.ts",
+      "tests": [
+        {
+          "name": "replays the exact physical Stage 1.9.4 transcript through production delivery (before)",
+          "status": "passed",
+          "durationMs": 1359.0827920000002
+        },
+        {
+          "name": "replays the exact physical Stage 1.9.4 transcript through production delivery (after)",
+          "status": "passed",
+          "durationMs": 1638.8723340000001
+        }
+      ]
+    }
+  ]
+}

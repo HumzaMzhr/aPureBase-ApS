@@ -1,0 +1,5 @@
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run --reporter=json --outputFile /tmp/final-full-1.json
+
+JSON report written to /tmp/final-full-1.json

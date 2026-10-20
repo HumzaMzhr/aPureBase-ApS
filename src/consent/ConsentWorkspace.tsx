@@ -5,7 +5,8 @@ import { wordingVersion } from './approved/assets';
 import { ApprovedAssetPanel } from './approved/AssetPanel';
 import { LocalPrerecordedPlayback } from './approved/localPlayback';
 import { OperationalClassifier, selectOperationalResponse } from './approved/selector';
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
+const HumanRetestWorkspace=lazy(()=>import('./corrections/Workspace').then(m=>({default:m.HumanRetestWorkspace})));
 import { ConsentSession, type TakeoverContext } from './session';
 import { isTerminal } from './stateMachine';
 import { TakeoverPanel } from './TakeoverPanel';
@@ -13,6 +14,7 @@ import type { ConsentClass } from './types';
 import './consent.css';
 
 export function ConsentWorkspace({ initialSession }: { initialSession?: ConsentSession }) {
+  if (!initialSession && typeof window !== 'undefined' && new URLSearchParams(location.search).get('stage') === '2.0c31') return <Suspense fallback={<p>Indlæser C-3.1 retest…</p>}><HumanRetestWorkspace/></Suspense>;
   if (!initialSession && typeof window !== 'undefined' && new URLSearchParams(location.search).get('stage') === '2.0c3') return <AcceptanceWorkspace/>;
   if (!initialSession && typeof window !== 'undefined' && new URLSearchParams(location.search).get('stage') === '2.0c2') return <DynamicWorkspace/>;
   return <LegacyConsentWorkspace initialSession={initialSession}/>;

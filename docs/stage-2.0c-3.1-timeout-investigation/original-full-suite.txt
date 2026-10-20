@@ -1,0 +1,37 @@
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+ ❯ tests/stage195-replay.test.ts (2 tests | 2 failed) 10309ms
+   × replays the exact physical Stage 1.9.4 transcript through production delivery (before) 5286ms
+   × replays the exact physical Stage 1.9.4 transcript through production delivery (after) 5021ms
+ ❯ tests/continuous-transcription-gateway.test.ts (19 tests | 1 failed) 16986ms
+   × forwards all 45 seconds of PCM across sequential items while earlier finals are delayed 11859ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/continuous-transcription-gateway.test.ts > forwards all 45 seconds of PCM across sequential items while earlier finals are delayed
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/continuous-transcription-gateway.test.ts:57:1
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  tests/stage195-replay.test.ts > replays the exact physical Stage 1.9.4 transcript through production delivery (before)
+ FAIL  tests/stage195-replay.test.ts > replays the exact physical Stage 1.9.4 transcript through production delivery (after)
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/stage195-replay.test.ts:33:27
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+
+ Test Files  2 failed | 75 passed (77)
+      Tests  3 failed | 1111 passed (1114)
+   Start at  23:36:11
+   Duration  18.77s (transform 5.69s, setup 0ms, import 16.93s, tests 72.76s, environment 26ms)

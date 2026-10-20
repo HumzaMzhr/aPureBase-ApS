@@ -1,0 +1,24 @@
+{
+  "passed": 1114,
+  "failed": 0,
+  "affected": [
+    {
+      "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/continuous-transcription-gateway.test.ts",
+      "title": "forwards all 45 seconds of PCM across sequential items while earlier finals are delayed",
+      "status": "passed",
+      "durationMs": 3160.364208
+    },
+    {
+      "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/stage195-replay.test.ts",
+      "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (before)",
+      "status": "passed",
+      "durationMs": 945.9039170000001
+    },
+    {
+      "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/stage195-replay.test.ts",
+      "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (after)",
+      "status": "passed",
+      "durationMs": 1213.271417
+    }
+  ]
+}

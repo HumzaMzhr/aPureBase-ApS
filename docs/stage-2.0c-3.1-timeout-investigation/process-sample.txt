@@ -1,0 +1,7 @@
+Process sample at investigation start, after the failed run (not contemporaneous failure telemetry).
+Command: ps -Ao pid,ppid,%cpu,%mem,etime,comm (process arguments excluded)
+Virtualization VirtualMachine: 81.8% CPU, 5.1% memory
+mediaanalysisd: 51.0% CPU, 1.1% memory
+WindowServer: 31.5% CPU, 0.5% memory
+Other samples included PHP 11.9% CPU and Codex Renderer 8.7% CPU.
+Machine runtime snapshot/load is recorded separately in runtime.json. Free memory is a point-in-time value, not proof of memory pressure or swapping during the failed run.

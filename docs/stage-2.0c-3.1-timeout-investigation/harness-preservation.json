@@ -1,0 +1,22 @@
+{
+  "scope": "EXACT TEST-HARNESS CORRECTION ONLY; NOT ACCEPTANCE",
+  "originalPreservationSha256": "1c95865434cc99c8796ca94475284ed62bdd8c65e429a545e87cfd2c5cdf298c",
+  "changes": [
+    {
+      "path": "tests/continuous-transcription-gateway.test.ts",
+      "before": "c15731e6de9f18197b911eeb42f5b52d587d4eff9b1cf6880f9e58899016357c",
+      "after": "c2eb64ac1c36c31204ecfabc115660655e395d6bcab8903e481e1f98b98c5e04"
+    },
+    {
+      "path": "scripts/verify-stage20c31.ts",
+      "before": "ff78eefbe9235387821ab1898cd4415acdac32540ed5252463da104d332dfd5b",
+      "after": "a23fb80e36a152f38eba3212c09a8b8ab8e90ffafbd548a007789014f9ac63e4"
+    }
+  ],
+  "assertionSemantics": "450 ordered frames; all 2160000 received bytes equal all expected bytes; 15 exact generation/text finals; no error or premature termination",
+  "timeoutsChanged": false,
+  "workerConfigurationChanged": false,
+  "productionCodeChanged": false,
+  "providerRequests": 0,
+  "additionalGenerationRequests": 0
+}

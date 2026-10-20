@@ -17,6 +17,7 @@ import type { ConsentClass, ConsentSnapshot, ConversationDefinition, DiagnosticE
 
 export interface TakeoverContext { callId: string; reason: string; lastTurnId?: string }
 export interface SessionPorts {
+  assetPolicy?: { definitionId:string; validateDefinition:(definition:ConversationDefinition)=>void; assets:readonly import('./approved/assets').VerifiedAsset[]; render:typeof renderSlot; verifyDynamic:typeof verifyDynamicAsset };
   now?: () => number;
   wallClock?: () => string;
   classifier?: IntentClassifier;
@@ -53,7 +54,8 @@ export class ConsentSession {
   private classifier: IntentClassifier;
   private playback: ResponsePlayback;
   constructor(callId: string, private ports: SessionPorts = {}, definition = consentDefinition) {
-    validateDefinition(definition);
+    if(ports.assetPolicy && ports.assetPolicy.definitionId!==definition.id)throw new Error('Asset policy definition mismatch.');
+    (ports.assetPolicy?.validateDefinition??validateDefinition)(definition);
     if (!callId || callId.length > 160) throw new Error('A bounded call ID is required.');
     this.definition = structuredClone(definition);
     this.now = ports.now ?? (() => performance.now());
@@ -273,7 +275,7 @@ export class ConsentSession {
   private canDeliver(response: ResponseClip) {
     if (response.deliveryType === 'NO_AUDIO') return false;
     if (response.recipientTypes && !response.recipientTypes.includes(this.data.recipientType)) return false;
-    if (this.definition.version === wordingVersion && this.data.decision?.classification === 'NO' && response.canArmConsent) return false;
+    if ((this.definition.version === wordingVersion || this.ports.assetPolicy?.definitionId === this.definition.id) && this.data.decision?.classification === 'NO' && response.canArmConsent) return false;
     if (response.canArmConsent && (!eligibleRecipient(this.data) || response.consentScope !== this.definition.consentScope || this.data.doNotContactRequested)) return false;
     if (response.canRequestEmail || response.deliveryEvent === 'email_confirmation') return this.reviewedYes();
     if (response.deliveryEvent === 'success_closed') return this.reviewedYes() && this.data.email?.confirmed === true && this.data.email.recipientRevision === this.data.recipientRevision;
@@ -303,7 +305,7 @@ export class ConsentSession {
     const email = this.data.email;
     if (!this.ports.dynamicSpeech || this.data.state !== 'EMAIL_GIVEN' || !email || !this.reviewedYes()) throw new Error('Current guarded email/YES required.');
     const slot: SpeechSlot = { kind: 'EMAIL', phraseId: 'email-readback-intro', candidate: email.normalizedCandidate, sourceTurnId: email.sourceTurnId, recipientRevision: this.data.recipientRevision, normalizationReviewed: !email.normalizationChanged || !!email.normalizationReviewedAt };
-    try { await renderSlot(slot); } catch(error) { this.takeover('Unsupported email readback; literal evidence preserved.'); throw error; }
+    try { await (this.ports.assetPolicy?.render ?? renderSlot)(slot); } catch(error) { this.takeover('Unsupported email readback; literal evidence preserved.'); throw error; }
     const playAndCompleted = async(id: string, dynamic?: SpeechSlot) => {
       await this.approvePlayback(id, dynamic);
       return this.data.playbacks.at(-1)?.state === 'COMPLETED' && currentSlot(slot, this.data);
@@ -317,7 +319,7 @@ export class ConsentSession {
   }
   async approvePlayback(responseId: string, emailSlot?: SpeechSlot) {
     let response = this.select(responseId);
-    if (this.definition.version === wordingVersion && this.ports.localPlayback) {
+    if ((this.definition.version === wordingVersion || this.ports.assetPolicy?.definitionId === this.definition.id) && this.ports.localPlayback) {
       const dynamic = this.ports.dynamicSpeech;
       if (!dynamic && ['success-close','thank-you','email-confirmation-question','email-correction-confirm'].includes(responseId)) throw new Error('Actual dynamic email readback is unavailable; HUMAN_TAKEOVER is required. Mock confirmation remains evaluation only.');
       if (dynamic && ['email-confirmation-question','email-correction-confirm'].includes(responseId) && !this.data.email?.readbackValue) throw new Error('Actual exact readback must complete first.');
@@ -335,9 +337,9 @@ export class ConsentSession {
         const abort = new AbortController(); this.dynamicAbort = abort;
         this.log('dynamic.prepare_requested', { slot });
         try {
-          const expected = await renderSlot(slot);
+          const expected = await (this.ports.assetPolicy?.render ?? renderSlot)(slot);
           asset = await dynamic.prepare(slot,abort.signal); abort.signal.throwIfAborted();
-          binding = await verifyDynamicAsset(asset); abort.signal.throwIfAborted();
+          binding = await (this.ports.assetPolicy?.verifyDynamic ?? verifyDynamicAsset)(asset); abort.signal.throwIfAborted();
           if (JSON.stringify(binding.slot) !== JSON.stringify(slot) || expected.cacheKey !== binding.cacheKey || !currentSlot(slot,this.data) || !this.responses().some(r => r.id === responseId)) throw new Error('Dynamic slot binding/revision mismatch.');
           response = { ...response, text:binding.renderedText, dynamicValues:[], audio:{ ...response.audio!,boundText:binding.renderedText,textHash:binding.textHash,sha256:asset.assetHash,status:'GENERATED_VERIFIED_LOCAL_ONLY' } };
           dynamic.register(asset,response);
@@ -430,7 +432,7 @@ export class ConsentSession {
     if (!record || record.playbackId !== this.data.activePlaybackId || record.mode !== 'local-prerecorded' || ['COMPLETED','INTERRUPTED','FAILED'].includes(record.state)) return;
     const response = this.effective.get(record.playbackId) ?? this.response(record.phraseId)!;
     const binding = this.dynamicBindings.get(record.playbackId);
-    const boundAsset = binding ? { assetHash:response.audio?.sha256 } : verifiedAssets.find(a => a.phraseId === record.phraseId);
+    const boundAsset = binding ? { assetHash:response.audio?.sha256 } : (this.ports.assetPolicy?.assets ?? verifiedAssets).find(a => a.phraseId === record.phraseId && a.textHash === response.audio?.textHash && a.assetHash === response.audio?.sha256);
     if (binding && !currentSlot(binding.slot,this.data)) throw new Error('Stale dynamic completion rejected.');
     if (!boundAsset || event.assetHash !== boundAsset.assetHash || event.callId !== this.data.callId || event.recipientRevision !== this.data.recipientRevision || event.phraseId !== record.phraseId || event.phraseVersion !== response.version || event.textHash !== response.audio?.textHash || !/^[a-f0-9]{64}$/u.test(event.assetHash)) throw new Error('Local completion identity binding rejected.');
     if (event.action === 'complete' && (!event.outputProof?.startsWith(`web-audio-source-ended:${record.playbackId}:`) || !this.responses().some(r => r.id === response.id))) throw new Error('Missing actual output completion proof or stale response.');

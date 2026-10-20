@@ -26,10 +26,10 @@ export class LocalPrerecordedPlayback implements LocalPlaybackPort {
     private load: (path: string, signal: AbortSignal) => Promise<ArrayBuffer> = async (path, signal) => {
       if (!['localhost','127.0.0.1','[::1]'].includes(location.hostname) || !/^\/audio\/consent-stage20c1\/[a-f0-9]{64}\.wav$/u.test(path)) throw new Error('Only local approved assets may be loaded.');
       const response = await fetch(path, { signal, cache: 'no-store' }); if (!response.ok) throw new Error('Local asset unavailable.'); return response.arrayBuffer();
-    }, private makeContext: () => LocalAudioContext = () => new AudioContext()) {}
+    }, private makeContext: () => LocalAudioContext = () => new AudioContext(), private verify:typeof verifyAsset=verifyAsset) {}
   async play(response: ResponseClip, record: PlaybackRecord, emit: (event: LocalPlaybackEvent) => void) {
     this.cancel();
-    const asset = this.assets.find(a => a.phraseId === response.id);
+    const asset = this.assets.find(a => a.phraseId === response.id && a.textHash === response.audio?.textHash && a.assetHash === response.audio?.sha256);
     if (!asset || response.dynamicValues?.length || response.text !== asset.text || response.version !== asset.wordingVersion || response.audio?.textHash !== asset.textHash || response.approval !== 'business-authorized') throw new Error('No bound static asset: HUMAN_TAKEOVER required.');
     const abort = new AbortController(); let cancelled = false, settled = false;
     let source: AudioBufferSourceNode | undefined, resolveEnd = () => {};
@@ -38,7 +38,7 @@ export class LocalPrerecordedPlayback implements LocalPlaybackPort {
     const job = { abort, cancel }; this.pending = job;
     try {
       const bytes = await this.load(asset.path, abort.signal); if (cancelled) return;
-      await verifyAsset(asset, new Uint8Array(bytes)); if (cancelled) return;
+      await this.verify(asset, new Uint8Array(bytes)); if (cancelled) return;
       this.context ??= this.makeContext(); await this.context.resume();
       if (this.context.state !== 'running') throw new Error('Audio output is not running.');
       const decoded = await this.context.decodeAudioData(bytes.slice(0)); if (cancelled) return;

@@ -10,7 +10,7 @@ export interface VerifiedAsset {
   duration: number; samples: number; sampleRate: 24000; mediaFormat: 'wav-pcm-s16le-mono';
   provenance: { verified: boolean; method: 'authenticated-provider-response-and-content-hash'; providerRequestId: string | null; endpoint: string; settingsHash: string };
   verification: { mediaValid: boolean; nonSilent: boolean; clippingEvents: number; rawPeak: number; gainApplied: number; peakProtectionEvents: number; outputPeak: number };
-  status: 'GENERATED_VERIFIED_LOCAL_ONLY'; businessWordingApproved: true; productionApproved: false;
+  status: 'GENERATED_VERIFIED_LOCAL_ONLY'; businessWordingApproved: boolean; productionApproved: false;
 }
 export interface AssetManifest { version: string; assets: VerifiedAsset[]; generations: { phraseId: string; characters: number; startedAt: string; status: 'STARTED' | 'VERIFIED' | 'FAILED'; reason?: string }[]; }
 /** Strict RIFF PCM decoding; does not infer media validity from a filename. */

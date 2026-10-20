@@ -1,0 +1,56 @@
+{
+  "capturedAt": "2026-10-20T18:38:12.271Z",
+  "node": "v25.9.0",
+  "npm": "11.12.1",
+  "platform": "darwin",
+  "release": "27.0.0",
+  "architecture": "arm64",
+  "cpus": [
+    {
+      "model": "Apple M3",
+      "speed": 2400
+    },
+    {
+      "model": "Apple M3",
+      "speed": 2400
+    },
+    {
+      "model": "Apple M3",
+      "speed": 2400
+    },
+    {
+      "model": "Apple M3",
+      "speed": 2400
+    },
+    {
+      "model": "Apple M3",
+      "speed": 2400
+    },
+    {
+      "model": "Apple M3",
+      "speed": 2400
+    },
+    {
+      "model": "Apple M3",
+      "speed": 2400
+    },
+    {
+      "model": "Apple M3",
+      "speed": 2400
+    }
+  ],
+  "availableParallelism": 8,
+  "totalMemory": 17179869184,
+  "freeMemory": 160382976,
+  "loadAverage": [
+    4.82373046875,
+    5.35888671875,
+    4.7470703125
+  ],
+  "originalCommand": "npm test (vitest run)",
+  "originalLogSha256": "fdafb13be062ccf70f2dd83f838edb01f79e02c99692f31c21c8baecc1fc7a73",
+  "vitestConfig": "import { defineConfig } from 'vitest/config';\nexport default defineConfig({ test: { include: ['tests/**/*.test.{ts,tsx}'] } });\n",
+  "gitHead": "a5b70549484e560351dcb2f8e2513c26ac9b2eaf",
+  "gitStatus": " M src/consent/ConsentWorkspace.tsx\n M src/consent/acceptance/Workspace.tsx\n M src/consent/acceptance/listening.ts\n M src/consent/acceptance/matrix.ts\n M src/consent/acceptance/rehearsal.ts\n M src/consent/acceptance/store.ts\n M src/consent/approved/assets.ts\n M src/consent/approved/localPlayback.ts\n M src/consent/session.ts\n?? docs/STAGE-2.0C31-HUMAN-RETEST-README.md\n?? docs/stage-2.0c-3.1-audio-manifest.json\n?? docs/stage-2.0c-3.1-generation.jsonl\n?? docs/stage-2.0c-3.1-health.json\n?? docs/stage-2.0c-3.1-human-findings.json\n?? docs/stage-2.0c-3.1-human-findings.md\n?? docs/stage-2.0c-3.1-local-playback.json\n?? docs/stage-2.0c-3.1-preservation.json\n?? docs/stage-2.0c-3.1-timeout-investigation/\n?? docs/stage-2.0c-3.1-validation.txt\n?? docs/stage-2.0c-3.1-workspace.jpg\n?? docs/stage-2.0c-3.1.md\n?? public/audio/consent-stage20c31/\n?? scripts/stage20c31-generate.ts\n?? scripts/verify-stage20c31.ts\n?? server/consentRetest.ts\n?? server/consentRetestFallback.ts\n?? src/consent/corrections/\n?? tests/consent-stage20c31-gateway.test.ts\n?? tests/consent-stage20c31-view.test.tsx\n?? tests/consent-stage20c31.test.ts\n",
+  "providerRequests": 0
+}

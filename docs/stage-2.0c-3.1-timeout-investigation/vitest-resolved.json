@@ -1,0 +1,13 @@
+{
+  "pool": "forks",
+  "maxWorkers": "resolved as availableParallelism - 1 = 7",
+  "isolate": true,
+  "testTimeout": 5000,
+  "maxConcurrency": 5,
+  "retry": 0,
+  "hookTimeout": 10000,
+  "effectiveFileParallelism": true,
+  "resolvedMaxWorkers": 7,
+  "perFileTestsConcurrent": false,
+  "basis": "Installed Vitest 4.1.11 resolver: forks, isolate=true, fileParallelism default true, availableParallelism() - 1 for run; neither affected file uses it.concurrent."
+}

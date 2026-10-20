@@ -76,7 +76,11 @@ it('forwards all 45 seconds of PCM across sequential items while earlier finals 
  event({type:'conversation.item.input_audio_transcription.completed',item_id:'item-0',transcript:finals[0]});
  await vi.waitFor(()=>expect(messages.filter(m=>m.type==='final')).toHaveLength(15));
  const appended=upstream.send.mock.calls.map(([raw])=>JSON.parse(raw)).filter(e=>e.type==='input_audio_buffer.append');
- expect(appended).toHaveLength(450);expect(Buffer.concat(appended.map(e=>Buffer.from(e.audio,'base64')))).toEqual(Buffer.concat(input));
+ // Compare every byte natively: generic deep equality expands 2.16 MB into
+ // millions of JS properties and can exhaust the wall-clock test budget while
+ // contending with fake-clock replays. No sampling/hash or ordering relaxation.
+ const received=Buffer.concat(appended.map(e=>Buffer.from(e.audio,'base64')));
+ expect(appended).toHaveLength(450);expect(received.byteLength).toBe(45*24000*2);expect(received.equals(Buffer.concat(input))).toBe(true);
  expect(messages.filter(m=>m.type==='final').sort((a,b)=>Number(a.generation)-Number(b.generation)).map(m=>m.text)).toEqual(finals);
  expect(messages.filter(m=>m.type==='error')).toEqual([]);expect(upstream.terminate).not.toHaveBeenCalled();
 });
