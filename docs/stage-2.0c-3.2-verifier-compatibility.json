@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "candidateCommit": "93bb4e86ab6e0b681c5eeec023b6afcfbc97c513",
+  "reason": "Post-publication verifier compatibility only: retain34285a8as immutable ancestor and exact historical/audio/archive hashes. This proof authorizes only the two exact verifier-file changes; no production/test/recording/history exemption.",
+  "files": [
+    {
+      "path": "scripts/verify-stage20c32.ts",
+      "before": "e1a66d326e247de511edd101174a259a13f0a549579c3e4974449ea29f73fd1b",
+      "after": "b17df40dbfb185426272b5129831573c51e1fcf27f0dcbbb85632f5c6cd2acd1"
+    },
+    {
+      "path": "scripts/verify-stage20c32-hardening2.ts",
+      "before": "3247a3873ec366a307b0a8397e96aad0ce773831e913841912ebc0ff63510339",
+      "after": "99d98fdfa269a82ee09d7df037dbaff0ce79eadaac113c5761ba2be59b0c0270"
+    }
+  ]
+}
