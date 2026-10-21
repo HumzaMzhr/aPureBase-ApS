@@ -1,0 +1,3182 @@
+[
+  {
+    "phraseId": "opening",
+    "canonicalText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+    "canonicalHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Hello, this is Isabella from aPureBase. I am calling briefly about professional information for healthcare professionals.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-0",
+        "phraseId": "opening",
+        "canonicalHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+        "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 0,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-1",
+        "phraseId": "opening",
+        "canonicalHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+        "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 1,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+        "phraseOwner": "opening",
+        "canonicalHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "opening",
+        "canonicalHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "opening",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+        "canonicalTextHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+        "spokenRenderText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+        "spokenRenderHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "cd4192d7cecb8fe55e8a3653574c1dd56bf67b632f12c1f22eb873094fc402a5",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "purpose",
+    "canonicalText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+    "canonicalHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "We send relevant professional information including disease areas, products and medical updates.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-2",
+        "phraseId": "purpose",
+        "canonicalHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+        "assetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 2,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+        "phraseOwner": "purpose",
+        "canonicalHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "purpose",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+        "canonicalTextHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+        "spokenRenderText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+        "spokenRenderHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "24f48e6676dd76aedd1fd75aad6760e38b88ba7da5d4ac08d604eebe0f09a71c",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "consent-question",
+    "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+    "canonicalHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "May aPureBase send relevant professional information to you by email?",
+    "consentCritical": true,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-3",
+        "phraseId": "consent-question",
+        "canonicalHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+        "assetHash": "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "aPureBase sounds strange - ",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 3,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "phraseOwner": "consent-question",
+        "canonicalHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "consent-question",
+        "canonicalHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      },
+      {
+        "id": "via-email",
+        "version": "c32h1-registry-1",
+        "mode": "NATIVE_BOUNDARY_REVIEW_ONLY",
+        "span": "via e-mail",
+        "phraseOwner": "consent-question",
+        "canonicalHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+        "reason": "Preserve exact channel and proposition; review linked speech"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "consent-question",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "canonicalTextHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+        "spokenRenderText": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+        "spokenRenderHash": "82686ed5aae8211a6cda1b4a7bfc3dbeeb70dca083f8f9ca148707cafe6eef7c",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "4d270fcd39c0374b4914867663b7f01b6faef03e5d01e76ed6d65c32e32c2c5c",
+        "consentCritical": true,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "email-request",
+    "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+    "canonicalHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Thank you. Which email address may we send the information to?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-4",
+        "phraseId": "email-request",
+        "canonicalHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+        "assetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 4,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+        "phraseOwner": "email-request",
+        "canonicalHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "email-request",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+        "canonicalTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+        "spokenRenderText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+        "spokenRenderHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "50b52eea81934ab75226a8c612f6170c17897333a55f1f7b4a597ab681ada6d1",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "email-readback-intro",
+    "canonicalText": "Jeg gentager lige e-mailadressen for at være sikker.",
+    "canonicalHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "I will repeat the email address to be sure.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-5",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+        "assetHash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 5,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-25",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "390cf31229a800c0a839e0d9c6ca42b18b50834d3d0126abdf1741fa25f52a16",
+        "assetHash": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "N she says EN but the danish pronunciation is ÆN or AEN",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 25,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-27",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "5b56476b0b1b1102554d705206545a005959b59180afe6e624fa71b79061793f",
+        "assetHash": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "totally fucked",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 27,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-29",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "980bc70513f1df076e0d3f0c0b60ea8583af52ceb38b170acb668995f25a7c48",
+        "assetHash": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "no ",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 29,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-32",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3",
+        "assetHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 32,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Jeg gentager lige e-mailadressen for at være sikker.",
+        "phraseOwner": "email-readback-intro",
+        "canonicalHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Jeg gentager lige e-mailadressen for at være sikker.",
+        "canonicalTextHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+        "spokenRenderText": "Jeg gentager lige e-mailadressen for at være sikker.",
+        "spokenRenderHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "cfb1f9eabd76f0ad336ce298f1b65c0370ede636ca110335977388a03179e6ac",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg gentager lige e-mailadressen for at være sikker.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "email-readback-intro",
+    "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+    "canonicalHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "I will repeat the email address to be sure.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-5",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+        "assetHash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 5,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-25",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "390cf31229a800c0a839e0d9c6ca42b18b50834d3d0126abdf1741fa25f52a16",
+        "assetHash": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "N she says EN but the danish pronunciation is ÆN or AEN",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 25,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-27",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "5b56476b0b1b1102554d705206545a005959b59180afe6e624fa71b79061793f",
+        "assetHash": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "totally fucked",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 27,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-29",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "980bc70513f1df076e0d3f0c0b60ea8583af52ceb38b170acb668995f25a7c48",
+        "assetHash": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "no ",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 29,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-32",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3",
+        "assetHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 32,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "phraseOwner": "email-readback-intro",
+        "canonicalHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "canonicalTextHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+        "spokenRenderText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "spokenRenderHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "43d55a1a6823c48cf6c4de99c61a0f7c1a14339a70c815e51e6cde7d710f7f83",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "email-readback-intro",
+    "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+    "canonicalHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "I will repeat the email address to be sure.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-5",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+        "assetHash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 5,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-25",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "390cf31229a800c0a839e0d9c6ca42b18b50834d3d0126abdf1741fa25f52a16",
+        "assetHash": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "N she says EN but the danish pronunciation is ÆN or AEN",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 25,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-27",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "5b56476b0b1b1102554d705206545a005959b59180afe6e624fa71b79061793f",
+        "assetHash": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "totally fucked",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 27,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-29",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "980bc70513f1df076e0d3f0c0b60ea8583af52ceb38b170acb668995f25a7c48",
+        "assetHash": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "no ",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 29,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-32",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3",
+        "assetHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 32,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "phraseOwner": "email-readback-intro",
+        "canonicalHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "canonicalTextHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+        "spokenRenderText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "spokenRenderHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "6d4b52717b8a4d7b84649b97f79d020d40959d2b5372d740f57811af73ad1e6b",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "email-readback-intro",
+    "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+    "canonicalHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "I will repeat the email address to be sure.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-5",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+        "assetHash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 5,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-25",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "390cf31229a800c0a839e0d9c6ca42b18b50834d3d0126abdf1741fa25f52a16",
+        "assetHash": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "N she says EN but the danish pronunciation is ÆN or AEN",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 25,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-27",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "5b56476b0b1b1102554d705206545a005959b59180afe6e624fa71b79061793f",
+        "assetHash": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "totally fucked",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 27,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-29",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "980bc70513f1df076e0d3f0c0b60ea8583af52ceb38b170acb668995f25a7c48",
+        "assetHash": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "no ",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 29,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-32",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3",
+        "assetHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 32,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "phraseOwner": "email-readback-intro",
+        "canonicalHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "canonicalTextHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+        "spokenRenderText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "spokenRenderHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "0463ee599f7935bf09736f40b3ca8cbbecf47ea98ca446127418da15ded8c354",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "email-readback-intro",
+    "canonicalText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+    "canonicalHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "I will repeat the email address to be sure.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-5",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+        "assetHash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 5,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-25",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "390cf31229a800c0a839e0d9c6ca42b18b50834d3d0126abdf1741fa25f52a16",
+        "assetHash": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "N she says EN but the danish pronunciation is ÆN or AEN",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 25,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-27",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "5b56476b0b1b1102554d705206545a005959b59180afe6e624fa71b79061793f",
+        "assetHash": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "totally fucked",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 27,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-29",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "980bc70513f1df076e0d3f0c0b60ea8583af52ceb38b170acb668995f25a7c48",
+        "assetHash": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "no ",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 29,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-32",
+        "phraseId": "email-readback-intro",
+        "canonicalHash": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3",
+        "assetHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 32,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+        "phraseOwner": "email-readback-intro",
+        "canonicalHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+        "canonicalTextHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+        "spokenRenderText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+        "spokenRenderHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "f038ad33a8d465f31ec35cf329904b1caf891c34d007683ea2f687f6021901e9",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "email-confirmation-question",
+    "canonicalText": "Er det korrekt?",
+    "canonicalHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Is that correct?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-7",
+        "phraseId": "email-confirmation-question",
+        "canonicalHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+        "assetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 7,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Er det korrekt?",
+        "phraseOwner": "email-confirmation-question",
+        "canonicalHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "email-confirmation-question",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Er det korrekt?",
+        "canonicalTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+        "spokenRenderText": "Er det korrekt?",
+        "spokenRenderHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "f1d7090976d72bbdcf1fafbf9c714007fb34fee6953c54a42be8d82b2b6654c0",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Er det korrekt?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "success-close",
+    "canonicalText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+    "canonicalHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Perfect, thank you for your time. You can always unsubscribe. Have a good day.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-6",
+        "phraseId": "success-close",
+        "canonicalHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+        "assetHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag. <- doesnt explain how you can unsubsribe again",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 6,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+        "phraseOwner": "success-close",
+        "canonicalHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "success-close",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+        "canonicalTextHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+        "spokenRenderText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+        "spokenRenderHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "34298c4e83f1e6a6ab8f13b7c05e0699cc2d4377479525147dcb468a51c91a27",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      {
+        "phraseId": "success-close",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+        "canonicalTextHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+        "spokenRenderText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+        "spokenRenderHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+        "pronunciationVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+        "planHash": "bd9f2f44f394533c6c1e24b194386eb300c3b18c2abea870469e1751cf003ece",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "refusal-close",
+    "canonicalText": "Det er helt i orden. Tak for din tid. God dag.",
+    "canonicalHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "That is perfectly fine. Thank you for your time. Good day.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-8",
+        "phraseId": "refusal-close",
+        "canonicalHash": "b5cb3098fef60f1cbd4563cf14808c3cd3085ce730c08eb01a459a2dfb1f0acd",
+        "assetHash": "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": " hav <- sounds strange in danish the V would be silent ",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 8,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Det er helt i orden. Tak for din tid. God dag.",
+        "phraseOwner": "refusal-close",
+        "canonicalHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "refusal-close",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Det er helt i orden. Tak for din tid. God dag.",
+        "canonicalTextHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+        "spokenRenderText": "Det er helt i orden. Tak for din tid. God dag.",
+        "spokenRenderHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "08fed7ff52bd6602fc643eb467eeb773e1337c55f9079245e809e6e91480dbc5",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Det er helt i orden. Tak for din tid. God dag.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      {
+        "phraseId": "refusal-close",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Det er helt i orden. Tak for din tid. God dag.",
+        "canonicalTextHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+        "spokenRenderText": "Det er helt i orden. Tak for din tid. God dag.",
+        "spokenRenderHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+        "pronunciationVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+        "planHash": "fa547532a7fabe54385262941e7e5f519a5839103cfdfe9c828b94e0d5df72a7",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Det er helt i orden. Tak for din tid. God dag.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "receptionist-target-request",
+    "canonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+    "canonicalHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "I am calling regarding professional information for [NAME]. May I be put through?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-28",
+        "phraseId": "receptionist-target-request",
+        "canonicalHash": "1a6ca327138d6703af73d7b47ded31b0d27d15adac42d63e5bfd939ce614c2ec",
+        "assetHash": "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende? < insted og vedkommende in danish it would be  - Kan jeg komme til at tale med ham?",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 28,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-30",
+        "phraseId": "receptionist-target-request",
+        "canonicalHash": "e9b2f10fbad1663bc27f64706e555b6c36fdae9ef9349fbe864c90d7290ebd6b",
+        "assetHash": "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende? <- same as earlier\n\n",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 30,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+        "phraseOwner": "receptionist-target-request",
+        "canonicalHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "receptionist-target-request",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+        "canonicalTextHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+        "spokenRenderText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+        "spokenRenderHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "d80e5798bcbbb5946cf3e8d9410e0d4e48311b855e9ffbf607a98bbe644d6319",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      {
+        "phraseId": "receptionist-target-request",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+        "canonicalTextHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+        "spokenRenderText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+        "spokenRenderHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+        "pronunciationVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+        "planHash": "a70201602eac1e24b7a36692dcdf11791e84eb02b6aa006a9ba57d624f310ede",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "receptionist-target-request",
+    "canonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+    "canonicalHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "I am calling regarding professional information for [NAME]. May I be put through?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-28",
+        "phraseId": "receptionist-target-request",
+        "canonicalHash": "1a6ca327138d6703af73d7b47ded31b0d27d15adac42d63e5bfd939ce614c2ec",
+        "assetHash": "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende? < insted og vedkommende in danish it would be  - Kan jeg komme til at tale med ham?",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 28,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-30",
+        "phraseId": "receptionist-target-request",
+        "canonicalHash": "e9b2f10fbad1663bc27f64706e555b6c36fdae9ef9349fbe864c90d7290ebd6b",
+        "assetHash": "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende? <- same as earlier\n\n",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 30,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+        "phraseOwner": "receptionist-target-request",
+        "canonicalHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "receptionist-target-request",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+        "canonicalTextHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+        "spokenRenderText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+        "spokenRenderHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "14b58cfc2742387a7180447a89b7ecbebf6f11b2eded6e6027cdf811fcff7ec1",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      {
+        "phraseId": "receptionist-target-request",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+        "canonicalTextHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+        "spokenRenderText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+        "spokenRenderHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+        "pronunciationVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+        "planHash": "615280ff7cff97cbed55617f94e2fb15a2a414cf4225f5c63a662446747551d5",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "receptionist-target-request",
+    "canonicalText": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+    "canonicalHash": "dc7aae708cf57a21430de1a52f55f3e0c10e67a7b07d7f30542ee60fe553c687",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "I am calling regarding professional information for [NAME]. May I be put through?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-28",
+        "phraseId": "receptionist-target-request",
+        "canonicalHash": "1a6ca327138d6703af73d7b47ded31b0d27d15adac42d63e5bfd939ce614c2ec",
+        "assetHash": "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende? < insted og vedkommende in danish it would be  - Kan jeg komme til at tale med ham?",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 28,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      },
+      {
+        "id": "asem-action-30",
+        "phraseId": "receptionist-target-request",
+        "canonicalHash": "e9b2f10fbad1663bc27f64706e555b6c36fdae9ef9349fbe864c90d7290ebd6b",
+        "assetHash": "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende? <- same as earlier\n\n",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 30,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+        "phraseOwner": "receptionist-target-request",
+        "canonicalHash": "dc7aae708cf57a21430de1a52f55f3e0c10e67a7b07d7f30542ee60fe553c687",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "receptionist-target-request",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+        "canonicalTextHash": "dc7aae708cf57a21430de1a52f55f3e0c10e67a7b07d7f30542ee60fe553c687",
+        "spokenRenderText": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+        "spokenRenderHash": "dc7aae708cf57a21430de1a52f55f3e0c10e67a7b07d7f30542ee60fe553c687",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "6b4f6e5b598eac186cc82e4ba296ec5487d5aec4b8ade32b57ecf1f8754623d3",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      {
+        "phraseId": "receptionist-target-request",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+        "canonicalTextHash": "dc7aae708cf57a21430de1a52f55f3e0c10e67a7b07d7f30542ee60fe553c687",
+        "spokenRenderText": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+        "spokenRenderHash": "dc7aae708cf57a21430de1a52f55f3e0c10e67a7b07d7f30542ee60fe553c687",
+        "pronunciationVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+        "planHash": "64fe013920eb289eb0f8fef08b773d99000447e6166ecf8827353326f8d9cbdb",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "authority-ask",
+    "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+    "canonicalHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "May I confirm you are authorized to handle this on behalf of [NAME]?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-33",
+        "phraseId": "authority-ask",
+        "canonicalHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+        "assetHash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 33,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-36",
+        "phraseId": "authority-ask",
+        "canonicalHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+        "assetHash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 36,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+        "phraseOwner": "authority-ask",
+        "canonicalHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "authority-ask",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+        "canonicalTextHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+        "spokenRenderText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+        "spokenRenderHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "099629d9dfef3a4ee3325a89ecfd88a14eba6cc66396f9170bfa897e36cb8fb1",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "authority-ask",
+    "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+    "canonicalHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "May I confirm you are authorized to handle this on behalf of [NAME]?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-33",
+        "phraseId": "authority-ask",
+        "canonicalHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+        "assetHash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 33,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-36",
+        "phraseId": "authority-ask",
+        "canonicalHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+        "assetHash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 36,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+        "phraseOwner": "authority-ask",
+        "canonicalHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "authority-ask",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+        "canonicalTextHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+        "spokenRenderText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+        "spokenRenderHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "e1d54f1ec7b3d5233ffdbe0b1495e7cad8c34d109583a604de1dd9225250cc5a",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "authority-ask",
+    "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af [NAVN]?",
+    "canonicalHash": "622d1159959b850e21fd1ab57959ae16e591e6ff6d8d575f3cfe7134cd6c8ce7",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "May I confirm you are authorized to handle this on behalf of [NAME]?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-33",
+        "phraseId": "authority-ask",
+        "canonicalHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+        "assetHash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 33,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-36",
+        "phraseId": "authority-ask",
+        "canonicalHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+        "assetHash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 36,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af [NAVN]?",
+        "phraseOwner": "authority-ask",
+        "canonicalHash": "622d1159959b850e21fd1ab57959ae16e591e6ff6d8d575f3cfe7134cd6c8ce7",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "authority-ask",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af [NAVN]?",
+        "canonicalTextHash": "622d1159959b850e21fd1ab57959ae16e591e6ff6d8d575f3cfe7134cd6c8ce7",
+        "spokenRenderText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af [NAVN]?",
+        "spokenRenderHash": "622d1159959b850e21fd1ab57959ae16e591e6ff6d8d575f3cfe7134cd6c8ce7",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "ab8d0d536dabe8d685a80f8ddd661a1033fef6bb4194239567ac196d00d4d1ca",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af [NAVN]?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "intermediary-consent-question",
+    "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+    "canonicalHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Thank you. May aPureBase send relevant professional information by email to [NAME]?",
+    "consentCritical": true,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-26",
+        "phraseId": "intermediary-consent-question",
+        "canonicalHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+        "assetHash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 26,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-35",
+        "phraseId": "intermediary-consent-question",
+        "canonicalHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+        "assetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 35,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+        "phraseOwner": "intermediary-consent-question",
+        "canonicalHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "intermediary-consent-question",
+        "canonicalHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      },
+      {
+        "id": "via-email",
+        "version": "c32h1-registry-1",
+        "mode": "NATIVE_BOUNDARY_REVIEW_ONLY",
+        "span": "via e-mail",
+        "phraseOwner": "intermediary-consent-question",
+        "canonicalHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+        "reason": "Preserve exact channel and proposition; review linked speech"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "intermediary-consent-question",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+        "canonicalTextHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+        "spokenRenderText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+        "spokenRenderHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "28f12c80d0fae6f8d06e048dfb170f1912e3d5767b17889ec86d1664dac0961f",
+        "consentCritical": true,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "intermediary-consent-question",
+    "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+    "canonicalHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Thank you. May aPureBase send relevant professional information by email to [NAME]?",
+    "consentCritical": true,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-26",
+        "phraseId": "intermediary-consent-question",
+        "canonicalHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+        "assetHash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 26,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-35",
+        "phraseId": "intermediary-consent-question",
+        "canonicalHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+        "assetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 35,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+        "phraseOwner": "intermediary-consent-question",
+        "canonicalHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "intermediary-consent-question",
+        "canonicalHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      },
+      {
+        "id": "via-email",
+        "version": "c32h1-registry-1",
+        "mode": "NATIVE_BOUNDARY_REVIEW_ONLY",
+        "span": "via e-mail",
+        "phraseOwner": "intermediary-consent-question",
+        "canonicalHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+        "reason": "Preserve exact channel and proposition; review linked speech"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "intermediary-consent-question",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+        "canonicalTextHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+        "spokenRenderText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+        "spokenRenderHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "ac0f0420e33afea794bc8e3d7124d3588efefd1c217a62167b8c8e7d625cee8a",
+        "consentCritical": true,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "intermediary-consent-question",
+    "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til [NAVN]?",
+    "canonicalHash": "3db29af81fbba5f83f4d002c095b2d9f7e9d72ee40de1114e8d8bbd1135391b1",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Thank you. May aPureBase send relevant professional information by email to [NAME]?",
+    "consentCritical": true,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-26",
+        "phraseId": "intermediary-consent-question",
+        "canonicalHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+        "assetHash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 26,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-35",
+        "phraseId": "intermediary-consent-question",
+        "canonicalHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+        "assetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 35,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Tak. Må aPureBase sende relevant faglig information via e-mail til [NAVN]?",
+        "phraseOwner": "intermediary-consent-question",
+        "canonicalHash": "3db29af81fbba5f83f4d002c095b2d9f7e9d72ee40de1114e8d8bbd1135391b1",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "intermediary-consent-question",
+        "canonicalHash": "3db29af81fbba5f83f4d002c095b2d9f7e9d72ee40de1114e8d8bbd1135391b1",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      },
+      {
+        "id": "via-email",
+        "version": "c32h1-registry-1",
+        "mode": "NATIVE_BOUNDARY_REVIEW_ONLY",
+        "span": "via e-mail",
+        "phraseOwner": "intermediary-consent-question",
+        "canonicalHash": "3db29af81fbba5f83f4d002c095b2d9f7e9d72ee40de1114e8d8bbd1135391b1",
+        "reason": "Preserve exact channel and proposition; review linked speech"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "intermediary-consent-question",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til [NAVN]?",
+        "canonicalTextHash": "3db29af81fbba5f83f4d002c095b2d9f7e9d72ee40de1114e8d8bbd1135391b1",
+        "spokenRenderText": "Tak. Må a Pure Base sende relevant faglig information via e-mail til [NAVN]?",
+        "spokenRenderHash": "c01dc3f8d009ab452091907000b4e6606d56a970845ac807ed45f2221865bc0f",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "67807011ea5f0bb5d4384ed4fd8bfc1c9bc5c8ad448a0f590cd637225e68934d",
+        "consentCritical": true,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Tak. Må a Pure Base sende relevant faglig information via e-mail til [NAVN]?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "identity",
+    "canonicalText": "Jeg hedder Isabella og ringer fra aPureBase.",
+    "canonicalHash": "d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "My name is Isabella and I am calling from aPureBase.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-9",
+        "phraseId": "identity",
+        "canonicalHash": "d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11",
+        "assetHash": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 9,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Jeg hedder Isabella og ringer fra aPureBase.",
+        "phraseOwner": "identity",
+        "canonicalHash": "d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "identity",
+        "canonicalHash": "d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "identity",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Jeg hedder Isabella og ringer fra aPureBase.",
+        "canonicalTextHash": "d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11",
+        "spokenRenderText": "Jeg hedder Isabella og ringer fra aPureBase.",
+        "spokenRenderHash": "d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "7d0e5a06ebebba5a16490f03d3b74618e41697175c202f6e8ab06721b2f38d89",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg hedder Isabella og ringer fra aPureBase.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "about-apurebase",
+    "canonicalText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+    "canonicalHash": "6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "aPureBase provides relevant professional information to healthcare professionals.",
+    "consentCritical": false,
+    "sourceFeedback": [],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+        "phraseOwner": "about-apurebase",
+        "canonicalHash": "6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "about-apurebase",
+        "canonicalHash": "6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "about-apurebase",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+        "canonicalTextHash": "6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6",
+        "spokenRenderText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+        "spokenRenderHash": "6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "603fb21472401f2e91f6fce336bff8c037a2c798e4db4dc103a478a10e86414b",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "explanation",
+    "canonicalText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+    "canonicalHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "This can include professional information about disease areas, products and other relevant updates.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-10",
+        "phraseId": "explanation",
+        "canonicalHash": "4d4bd86e384a4a918b1852c49827a6e9b9122d096d83b2b9fe385124546a088a",
+        "assetHash": "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "sygdomsområder, produkter og medicinske opdateringer. <. not correct danish I think (medicinske opdateringer)",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 10,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+        "phraseOwner": "explanation",
+        "canonicalHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "explanation",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+        "canonicalTextHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+        "spokenRenderText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+        "spokenRenderHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "0e7d2b30d5ba5fe4cd0bdb421cb94981155bee6655a03a577a52c9892d8d2293",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "why-calling",
+    "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+    "canonicalHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "I am only calling to ask whether aPureBase may send you relevant professional information by email.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-11",
+        "phraseId": "why-calling",
+        "canonicalHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "assetHash": "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "it stops after jeg - and starts again . not fluent",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 11,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+        "phraseOwner": "why-calling",
+        "canonicalHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "why-calling",
+        "canonicalHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      },
+      {
+        "id": "sende-dig",
+        "version": "c32h1-registry-1",
+        "mode": "CONNECTED_WORD_REVIEW_ONLY",
+        "span": "sende dig",
+        "phraseOwner": "why-calling",
+        "canonicalHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "reason": "Asem: sente dej versus intended approximately sene dej. No misspelling or unsupported phonemes."
+      },
+      {
+        "id": "via-email",
+        "version": "c32h1-registry-1",
+        "mode": "NATIVE_BOUNDARY_REVIEW_ONLY",
+        "span": "via e-mail",
+        "phraseOwner": "why-calling",
+        "canonicalHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "reason": "Preserve exact channel and proposition; review linked speech"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "why-calling",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+        "canonicalTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "spokenRenderText": "Jeg ringer kun for at spørge, om a Pure Base må sende dig relevant faglig information via e-mail.",
+        "spokenRenderHash": "528ee77027d3335af28f93bf29314aaa080155cf12dd3c8a25b7f4589eb699d5",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "3ab88df72b408a15844318f0cd2f0227d9a9860fea2f94caf10260b9797d4cb9",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg ringer kun for at spørge, om a Pure Base må sende dig relevant faglig information via e-mail.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      {
+        "phraseId": "why-calling",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+        "canonicalTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "spokenRenderText": "Jeg ringer kun for at spørge om a Pure Base må sende dig relevant faglig information via e-mail.",
+        "spokenRenderHash": "91b7c45fc76bc37db8813ff73f4efd722b23c26d5e194efb395ec3e1dda1c22f",
+        "pronunciationVersion": "stage-2.0c32-plan-1:PUNCTUATION",
+        "planHash": "d6880824de25942e20d6f986287de12c7232a6629d1627f92d3f10bc1a194e51",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg ringer kun for at spørge om a Pure Base må sende dig relevant faglig information via e-mail.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "unsubscribe",
+    "canonicalText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+    "canonicalHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "Yes. You can always opt out if you no longer wish to receive the information.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-12",
+        "phraseId": "unsubscribe",
+        "canonicalHash": "e95d7a401fa4856920ed7602799c144527a8065e4d32506a5f142dcd783ccf4a",
+        "assetHash": "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "framelde <- the D her is silent in danish ",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 12,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+        "phraseOwner": "unsubscribe",
+        "canonicalHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "unsubscribe",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+        "canonicalTextHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+        "spokenRenderText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+        "spokenRenderHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "f3ea298798b9c86add257410265e578aad1f114a61340892753f50c4ccaa007d",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      {
+        "phraseId": "unsubscribe",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+        "canonicalTextHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+        "spokenRenderText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+        "spokenRenderHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+        "pronunciationVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+        "planHash": "fc2c7698a870215bece5b18492f9cbb36a2b56fc5d00fdf797b7528e9486d294",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "repeat-prefix",
+    "canonicalText": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+    "canonicalHash": "124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Of course. I will repeat the question.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-13",
+        "phraseId": "repeat-prefix",
+        "canonicalHash": "124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290",
+        "assetHash": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 13,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+        "phraseOwner": "repeat-prefix",
+        "canonicalHash": "124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "repeat-prefix",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+        "canonicalTextHash": "124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290",
+        "spokenRenderText": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+        "spokenRenderHash": "124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "5d39987edf1eb35b7cc41250a58d7d25cd3d821f5f8ec7d51f945633c32794a5",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "clarify",
+    "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+    "canonicalHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Of course. May aPureBase send relevant professional information to you by email?",
+    "consentCritical": true,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-14",
+        "phraseId": "clarify",
+        "canonicalHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+        "assetHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 14,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "phraseOwner": "clarify",
+        "canonicalHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "clarify",
+        "canonicalHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      },
+      {
+        "id": "via-email",
+        "version": "c32h1-registry-1",
+        "mode": "NATIVE_BOUNDARY_REVIEW_ONLY",
+        "span": "via e-mail",
+        "phraseOwner": "clarify",
+        "canonicalHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+        "reason": "Preserve exact channel and proposition; review linked speech"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "clarify",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "canonicalTextHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+        "spokenRenderText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "spokenRenderHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "7524c98cf2024eb199e96f45532f02caff6c35b3dc6a23a3af67a8756a69d92a",
+        "consentCritical": true,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "callback",
+    "canonicalText": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+    "canonicalHash": "855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "I understand. When would it be better for us to call again?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-15",
+        "phraseId": "callback",
+        "canonicalHash": "855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6",
+        "assetHash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 15,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+        "phraseOwner": "callback",
+        "canonicalHash": "855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "callback",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+        "canonicalTextHash": "855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6",
+        "spokenRenderText": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+        "spokenRenderHash": "855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "97b07ba8c52608de5b352bb05758f49c471fdaebe3c741c40c04e7429b388f46",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "callback-close",
+    "canonicalText": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+    "canonicalHash": "1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Of course. We will call again later. Thank you for your time.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-16",
+        "phraseId": "callback-close",
+        "canonicalHash": "1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4",
+        "assetHash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 16,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+        "phraseOwner": "callback-close",
+        "canonicalHash": "1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "callback-close",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+        "canonicalTextHash": "1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4",
+        "spokenRenderText": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+        "spokenRenderHash": "1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "d5907eb95414ec2c7b87b1b147fb466a1676769e7329662acd482b1793ce1f89",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "wrong-person-close",
+    "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+    "canonicalHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Sorry. Can you help me get in contact with [NAME]?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-31",
+        "phraseId": "wrong-person-close",
+        "canonicalHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+        "assetHash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 31,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-34",
+        "phraseId": "wrong-person-close",
+        "canonicalHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+        "assetHash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 34,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+        "phraseOwner": "wrong-person-close",
+        "canonicalHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "wrong-person-close",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+        "canonicalTextHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+        "spokenRenderText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+        "spokenRenderHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "ca2c1a38bb7738608bfa621a27e5b5c8b1f871d64ebad4879a0b2209b030f3ef",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "wrong-person-close",
+    "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+    "canonicalHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Sorry. Can you help me get in contact with [NAME]?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-31",
+        "phraseId": "wrong-person-close",
+        "canonicalHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+        "assetHash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 31,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-34",
+        "phraseId": "wrong-person-close",
+        "canonicalHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+        "assetHash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 34,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+        "phraseOwner": "wrong-person-close",
+        "canonicalHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "wrong-person-close",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+        "canonicalTextHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+        "spokenRenderText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+        "spokenRenderHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "ac2748aabbf5e7c70b3bd81a2c27672e31ecfde172c77f5dccd8bfe2abfec51f",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "wrong-person-close",
+    "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med [NAVN]?",
+    "canonicalHash": "b44fbffef0b57525a0d215f59cc6abf1aabbc96bfe4f9d0d6247f8f56d194aa0",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Sorry. Can you help me get in contact with [NAME]?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-31",
+        "phraseId": "wrong-person-close",
+        "canonicalHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+        "assetHash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 31,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      },
+      {
+        "id": "asem-action-34",
+        "phraseId": "wrong-person-close",
+        "canonicalHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+        "assetHash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 34,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Beklager. Kan du hjælpe mig med at komme i kontakt med [NAVN]?",
+        "phraseOwner": "wrong-person-close",
+        "canonicalHash": "b44fbffef0b57525a0d215f59cc6abf1aabbc96bfe4f9d0d6247f8f56d194aa0",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "wrong-person-close",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med [NAVN]?",
+        "canonicalTextHash": "b44fbffef0b57525a0d215f59cc6abf1aabbc96bfe4f9d0d6247f8f56d194aa0",
+        "spokenRenderText": "Beklager. Kan du hjælpe mig med at komme i kontakt med [NAVN]?",
+        "spokenRenderHash": "b44fbffef0b57525a0d215f59cc6abf1aabbc96bfe4f9d0d6247f8f56d194aa0",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "90b61ecf2a9817cf6f5b5dea992d648af2b864e1a37395df76d047c7b0dc1f33",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Beklager. Kan du hjælpe mig med at komme i kontakt med [NAVN]?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "target-unavailable",
+    "canonicalText": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+    "canonicalHash": "43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "That is quite alright. When would it be best to call again?",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-17",
+        "phraseId": "target-unavailable",
+        "canonicalHash": "43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405",
+        "assetHash": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 17,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+        "phraseOwner": "target-unavailable",
+        "canonicalHash": "43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "target-unavailable",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+        "canonicalTextHash": "43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405",
+        "spokenRenderText": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+        "spokenRenderHash": "43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "e2cbd3a8fa87c514f39511d06d7b561d96c98b7f351958ababe45510bf428d27",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "send-first",
+    "canonicalText": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+    "canonicalHash": "d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "We first need your permission before sending the information by email.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-18",
+        "phraseId": "send-first",
+        "canonicalHash": "d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1",
+        "assetHash": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 18,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+        "phraseOwner": "send-first",
+        "canonicalHash": "d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "via-email",
+        "version": "c32h1-registry-1",
+        "mode": "NATIVE_BOUNDARY_REVIEW_ONLY",
+        "span": "via e-mail",
+        "phraseOwner": "send-first",
+        "canonicalHash": "d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1",
+        "reason": "Preserve exact channel and proposition; review linked speech"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "send-first",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+        "canonicalTextHash": "d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1",
+        "spokenRenderText": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+        "spokenRenderHash": "d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "bd4d2245a3ae76efbefc03baa5e42a9b822d3f89ade4807766342b6f573c4072",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "uncertain-consent",
+    "canonicalText": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+    "canonicalHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "That is alright. I just need a clear yes or no. May aPureBase send relevant professional information to you by email?",
+    "consentCritical": true,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-19",
+        "phraseId": "uncertain-consent",
+        "canonicalHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+        "assetHash": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 19,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "phraseOwner": "uncertain-consent",
+        "canonicalHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "uncertain-consent",
+        "canonicalHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      },
+      {
+        "id": "via-email",
+        "version": "c32h1-registry-1",
+        "mode": "NATIVE_BOUNDARY_REVIEW_ONLY",
+        "span": "via e-mail",
+        "phraseOwner": "uncertain-consent",
+        "canonicalHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+        "reason": "Preserve exact channel and proposition; review linked speech"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "uncertain-consent",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "canonicalTextHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+        "spokenRenderText": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "spokenRenderHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "4a5bebbed65d02ad33c9635ecea47e9400bebe6341065cb6a4bcf4e67179b1fa",
+        "consentCritical": true,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "already-receiving",
+    "canonicalText": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+    "canonicalHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Thank you. I still need to confirm your permission. May aPureBase continue sending relevant professional information to you by email?",
+    "consentCritical": true,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-20",
+        "phraseId": "already-receiving",
+        "canonicalHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+        "assetHash": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 20,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+        "phraseOwner": "already-receiving",
+        "canonicalHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "already-receiving",
+        "canonicalHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      },
+      {
+        "id": "via-email",
+        "version": "c32h1-registry-1",
+        "mode": "NATIVE_BOUNDARY_REVIEW_ONLY",
+        "span": "via e-mail",
+        "phraseOwner": "already-receiving",
+        "canonicalHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+        "reason": "Preserve exact channel and proposition; review linked speech"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "already-receiving",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+        "canonicalTextHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+        "spokenRenderText": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+        "spokenRenderHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "0a94269659d053b70edd3920929e595158fb3a8dd2107223d2e47860999f06e9",
+        "consentCritical": true,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "email-correction-prefix",
+    "canonicalText": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+    "canonicalHash": "5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Thank you. I will correct it and repeat the new email address.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-21",
+        "phraseId": "email-correction-prefix",
+        "canonicalHash": "5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70",
+        "assetHash": "948e1a3f03f5ea0285a1516fa0da69ea1ff90bcaca73c416a0546c2e19c64b24",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 21,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+        "phraseOwner": "email-correction-prefix",
+        "canonicalHash": "5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "email-correction-prefix",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+        "canonicalTextHash": "5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70",
+        "spokenRenderText": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+        "spokenRenderHash": "5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "53dcaac6f28021ab92641f887c92d2284e218f0d9e575b4e81860541a2d58907",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "email-correction-confirm",
+    "canonicalText": "Er det korrekt?",
+    "canonicalHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Is that correct?",
+    "consentCritical": false,
+    "sourceFeedback": [],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Er det korrekt?",
+        "phraseOwner": "email-correction-confirm",
+        "canonicalHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "email-correction-confirm",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Er det korrekt?",
+        "canonicalTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+        "spokenRenderText": "Er det korrekt?",
+        "spokenRenderHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "3b4ff571f65801d036b3b8026edb8235b3e1453ba19c8bbe13cdd131a25b44fd",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Er det korrekt?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "more-explanation",
+    "canonicalText": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+    "canonicalHash": "93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "aPureBase sends professional information that may be relevant to your work. It is voluntary and you can always unsubscribe.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-22",
+        "phraseId": "more-explanation",
+        "canonicalHash": "93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f",
+        "assetHash": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 22,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+        "phraseOwner": "more-explanation",
+        "canonicalHash": "93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f",
+        "reason": "Business, scope and recipient stay canonical"
+      },
+      {
+        "id": "organization-alias",
+        "version": "c32h1-registry-1",
+        "mode": "EXISTING_C31_ALIAS",
+        "span": "aPureBase",
+        "phraseOwner": "more-explanation",
+        "canonicalHash": "93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f",
+        "reason": "Separate a Pure Base rendering only; no canonical change"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "more-explanation",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+        "canonicalTextHash": "93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f",
+        "spokenRenderText": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+        "spokenRenderHash": "93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "13b5d4e1ccc9506184990d9d85761f07ba18e111ec4e27078e1337f2845e7ef8",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "stop-contact-close",
+    "canonicalText": "Det forstår jeg. Tak for din tid. God dag.",
+    "canonicalHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+    "phraseVersion": "stage-2.0c31-candidate-1",
+    "english": "I understand. Thank you for your time. Good day.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-23",
+        "phraseId": "stop-contact-close",
+        "canonicalHash": "01044caa100080167e93c67441edb46fd399f232a008844185dd8f7c51570f25",
+        "assetHash": "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e",
+        "decision": "HUMAN_LISTENING_REJECTED",
+        "comment": "hav V is silent in danish ",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 23,
+        "reviewer": "Asem",
+        "handling": "REVIEW_OR_PRIOR_C31_REMEDIATION_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Det forstår jeg. Tak for din tid. God dag.",
+        "phraseOwner": "stop-contact-close",
+        "canonicalHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "stop-contact-close",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Det forstår jeg. Tak for din tid. God dag.",
+        "canonicalTextHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+        "spokenRenderText": "Det forstår jeg. Tak for din tid. God dag.",
+        "spokenRenderHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "d583050192a0db996822d3c52579f9c8e460c1dc5512a6b75286d5482131d89e",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Det forstår jeg. Tak for din tid. God dag.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      {
+        "phraseId": "stop-contact-close",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Det forstår jeg. Tak for din tid. God dag.",
+        "canonicalTextHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+        "spokenRenderText": "Det forstår jeg. Tak for din tid. God dag.",
+        "spokenRenderHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+        "pronunciationVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+        "planHash": "c4d5fcef6b25eae47368a660d8a92b5bc7b82175493e4653cd34a331de7f5afa",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Det forstår jeg. Tak for din tid. God dag.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "phraseId": "thank-you",
+    "canonicalText": "Perfekt, tak.",
+    "canonicalHash": "ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "english": "Perfect, thank you.",
+    "consentCritical": false,
+    "sourceFeedback": [
+      {
+        "id": "asem-action-24",
+        "phraseId": "thank-you",
+        "canonicalHash": "ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7",
+        "assetHash": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+        "decision": "HUMAN_LISTENING_APPROVED",
+        "comment": "",
+        "source": "src/consent/corrections/humanBaseline.json",
+        "originalActionIndex": 24,
+        "reviewer": "Asem",
+        "handling": "EXISTING_FEEDBACK_RETAINED"
+      }
+    ],
+    "rules": [
+      {
+        "id": "canonical-identity",
+        "version": "c32h1-registry-1",
+        "mode": "EXACT_WORDS",
+        "span": "Perfekt, tak.",
+        "phraseOwner": "thank-you",
+        "canonicalHash": "ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7",
+        "reason": "Business, scope and recipient stay canonical"
+      }
+    ],
+    "plans": [
+      {
+        "phraseId": "thank-you",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Perfekt, tak.",
+        "canonicalTextHash": "ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7",
+        "spokenRenderText": "Perfekt, tak.",
+        "spokenRenderHash": "ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "20dfcda4caed23ccba8e1caa2a0ded0cc60173757f65bb07ba6809d19e2460fb",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Perfekt, tak.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      }
+    ],
+    "humanStatus": "HUMAN_REVIEW_REQUIRED"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "changedAndNewTextFilesScanned": 45,
+  "changedNewWhitespaceDiagnostics": [],
+  "unchangedHistoricalWhitespaceDiagnostics": [],
+  "secretPatternFindings": [],
+  "manualInspection": "Changed C32 source, tests, reports and safe archive member roles inspected. Synthetic .example values and user-supplied frozen .dk fixtures only; no real clinic/contact data introduced. No source audio/binary or auth headers in exports.",
+  "trackedEnvFiles": [
+    ".env.example"
+  ],
+  "envChanges": [],
+  "credentialFilesIntroduced": [],
+  "newAudioFiles": [],
+  "archiveIssues": [],
+  "finalSourceMismatches": [],
+  "trackedDiffCheck": 0,
+  "historicalRestriction": "Historical files with whitespace are unchanged; never normalized to clean the new result.",
+  "limitation": "Pattern scan plus targeted inspection is not a guarantee against every possible secret format. No real secrets found."
+}

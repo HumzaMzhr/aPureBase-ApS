@@ -1,0 +1,328 @@
+{
+  "kind": "FINAL_FROZEN_SOURCE_LOCAL_VALIDATION_NOT_PHYSICAL",
+  "generatedAt": "2026-10-20T23:52:10.794507+00:00",
+  "runtime": {
+    "node": "v25.9.0",
+    "npm": "11.12.1",
+    "os": "Darwin 27.0.0 arm64",
+    "vitest": "4.1.11",
+    "workerConfiguration": "Vitest defaults; config contains include only. No worker/timeout/retry override.",
+    "loadObservationAfterValidation": [
+      3.2,
+      3.63,
+      3.79
+    ],
+    "CPUInformation": "sysctl unavailable under sandbox; no invented core count"
+  },
+  "results": [
+    {
+      "label": "focused",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-stage20c32-email.test.ts",
+        "tests/consent-stage20c32-hardening.test.ts",
+        "tests/consent-stage20c32-remediation.test.ts",
+        "tests/consent-stage20c32-speech.test.tsx"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1992.402083,
+      "log": "focused.txt",
+      "testsPassed": 513,
+      "testFiles": 4,
+      "maxResidentSetSize": "160464896  maximum resident set size"
+    },
+    {
+      "label": "c31",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-stage20c3.test.ts",
+        "tests/consent-stage20c3-view.test.tsx",
+        "tests/consent-stage20c31.test.ts",
+        "tests/consent-stage20c31-view.test.tsx",
+        "tests/consent-stage20c31-gateway.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1661.296292,
+      "log": "c31.txt",
+      "testsPassed": 139,
+      "testFiles": 5,
+      "maxResidentSetSize": "176799744  maximum resident set size"
+    },
+    {
+      "label": "all-prior-consent",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-foundation.test.ts",
+        "tests/consent-stage20b.test.tsx",
+        "tests/consent-stage20b2.test.tsx",
+        "tests/consent-stage20c1.test.ts",
+        "tests/consent-stage20c2.test.ts",
+        "tests/consent-stage20c3-view.test.tsx",
+        "tests/consent-stage20c3.test.ts",
+        "tests/consent-stage20c31-gateway.test.ts",
+        "tests/consent-stage20c31-view.test.tsx",
+        "tests/consent-stage20c31.test.ts",
+        "tests/consent-transcription.test.ts",
+        "tests/consent-view.test.tsx",
+        "tests/stage196-short-consent.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1787.1903750000001,
+      "log": "all-prior-consent.txt",
+      "testsPassed": 496,
+      "testFiles": 13,
+      "maxResidentSetSize": "216662016  maximum resident set size"
+    },
+    {
+      "label": "replay-1",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2323.5260420000004,
+      "log": "replay-1.txt",
+      "testsPassed": 2,
+      "testFiles": 1,
+      "maxResidentSetSize": "136806400  maximum resident set size"
+    },
+    {
+      "label": "pcm-1",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 612.8634999999995,
+      "log": "pcm-1.txt",
+      "testsPassed": 1,
+      "testFiles": 1,
+      "maxResidentSetSize": "113246208  maximum resident set size"
+    },
+    {
+      "label": "replay-2",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2342.300666000001,
+      "log": "replay-2.txt",
+      "testsPassed": 2,
+      "testFiles": 1,
+      "maxResidentSetSize": "136380416  maximum resident set size"
+    },
+    {
+      "label": "pcm-2",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 579.4798330000012,
+      "log": "pcm-2.txt",
+      "testsPassed": 1,
+      "testFiles": 1,
+      "maxResidentSetSize": "112328704  maximum resident set size"
+    },
+    {
+      "label": "replay-3",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2333.7010420000006,
+      "log": "replay-3.txt",
+      "testsPassed": 2,
+      "testFiles": 1,
+      "maxResidentSetSize": "136511488  maximum resident set size"
+    },
+    {
+      "label": "pcm-3",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 600.4282910000002,
+      "log": "pcm-3.txt",
+      "testsPassed": 1,
+      "testFiles": 1,
+      "maxResidentSetSize": "113311744  maximum resident set size"
+    },
+    {
+      "label": "replay-4",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2328.9937499999996,
+      "log": "replay-4.txt",
+      "testsPassed": 2,
+      "testFiles": 1,
+      "maxResidentSetSize": "135839744  maximum resident set size"
+    },
+    {
+      "label": "pcm-4",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 580.864166000003,
+      "log": "pcm-4.txt",
+      "testsPassed": 1,
+      "testFiles": 1,
+      "maxResidentSetSize": "112508928  maximum resident set size"
+    },
+    {
+      "label": "replay-5",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2389.9296670000003,
+      "log": "replay-5.txt",
+      "testsPassed": 2,
+      "testFiles": 1,
+      "maxResidentSetSize": "136232960  maximum resident set size"
+    },
+    {
+      "label": "pcm-5",
+      "command": [
+        "node",
+        "<workspace>/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 586.6733749999985,
+      "log": "pcm-5.txt",
+      "testsPassed": 1,
+      "testFiles": 1,
+      "maxResidentSetSize": "112427008  maximum resident set size"
+    },
+    {
+      "label": "full-1",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 9214.426415999998,
+      "log": "full-1.txt",
+      "testsPassed": 1627,
+      "testFiles": 81,
+      "maxResidentSetSize": "279199744  maximum resident set size"
+    },
+    {
+      "label": "full-2",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 7797.938000000002,
+      "log": "full-2.txt",
+      "testsPassed": 1627,
+      "testFiles": 81,
+      "maxResidentSetSize": "263897088  maximum resident set size"
+    },
+    {
+      "label": "full-3",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 6948.341750000007,
+      "log": "full-3.txt",
+      "testsPassed": 1627,
+      "testFiles": 81,
+      "maxResidentSetSize": "281772032  maximum resident set size"
+    }
+  ],
+  "otherGates": {
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "workbench": "PASS",
+    "c31-preservation": "PASS",
+    "c32-preservation": "PASS",
+    "preservation": "PASS",
+    "reports": "PASS"
+  },
+  "sourceProof": "docs/stage-2.0c-3.2-hardening-2-source-proof-final.json",
+  "logArchive": "docs/stage-2.0c-3.2-hardening-2-validation-logs.tar.gz",
+  "counts": {
+    "C32": 513,
+    "newRemediationTests": 259,
+    "C31": 139,
+    "priorConsent": 496,
+    "full": [
+      1627,
+      1627,
+      1627
+    ],
+    "fullFiles": 81,
+    "replay": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "PCM": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "limitations": [
+    "Synthetic/mock providers and local loopback sockets only; no live ASR/TTS.",
+    "Standard Vite build retains >500 kB main-chunk warning (677.40 kB minified); not a build failure.",
+    "Standalone outDir outside project emitted Vite nonempty/outside-root warning; no deletion/emptyOutDir requested.",
+    "No timeout/assertion weakening or flaky-test retries. Repeated required runs are separate measurements; no failing test was rerun to manufacture green.",
+    "Earlier typecheck errors and preservation archive maxBuffer ENOBUFS were corrected before final source freeze. Prior 1623/1625 prechecks are not final validation evidence."
+  ],
+  "accepted": false
+}

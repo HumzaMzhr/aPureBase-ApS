@@ -1,0 +1,216 @@
+{
+  "kind": "ACTUAL_GUARD_SYNTHETIC_INPUTS_NOT_HUMAN_CONSENT",
+  "denominator": 26,
+  "rows": [
+    {
+      "id": "valid-owned-final",
+      "expectedEligible": true,
+      "eligible": true,
+      "classification": "YES",
+      "operatorCanReviewYes": true,
+      "passed": true
+    },
+    {
+      "id": "partial",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "maybe",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "okay",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "thanks",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "question",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "silence",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "stale-YES",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "during-playback",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "interrupted",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "wrong-owner",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "receptionist",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "wrong-person",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "unknown-recipient",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "intermediary-no-authority",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "unsupported-question",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "model-recommendation",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "database-match",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "email-capture",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "operator-phrase-selection",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "wrong-scope",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "wrong-version",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "recipient-revision",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "consumed-window",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "missing-completion",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "NO",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "NO",
+      "operatorCanReviewYes": false,
+      "passed": true
+    }
+  ],
+  "falsePositives": 0,
+  "failed": []
+}

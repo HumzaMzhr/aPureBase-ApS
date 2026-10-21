@@ -1,0 +1,291 @@
+{
+  "stage": "2.0C-3.2",
+  "status": "HUMAN_ACCEPTANCE_CANDIDATE_NOT_ACCEPTED",
+  "allowedStatuses": [
+    "OPEN",
+    "IMPLEMENTED",
+    "AUTOMATED_VERIFIED",
+    "HUMAN_RETEST_REQUIRED",
+    "BLOCKED",
+    "REJECTED"
+  ],
+  "createdBeforeImplementation": true,
+  "issues": [
+    {
+      "id": "A",
+      "issue": "why-calling / sende dig mandatory pronunciation regression",
+      "status": "HUMAN_RETEST_REQUIRED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "HUMAN_RETEST_REQUIRED",
+          "reason": "Mandatory why-calling/sende dig registry and comma-prefix candidate exist; consonant defect is not proven fixed. No new audio or native listening."
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "issue": "Versioned canonical/synthesis pronunciation and prosody layer",
+      "status": "AUTOMATED_VERIFIED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "AUTOMATED_VERIFIED",
+          "reason": "Canonical hashes, independent synthesis version/hash, prosody metadata, strict semantic/scope/recipient checks, retained-reference and new-asset bindings tested."
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "issue": "Isabella naturalness experiment without voice/model/speed changes",
+      "status": "HUMAN_RETEST_REQUIRED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "HUMAN_RETEST_REQUIRED",
+          "reason": "Eight bounded punctuation/sentence-boundary experiments planned across criticized units. Isabella/model/speed/gain unchanged. Danish dictionary phonemes unsupported on pinned model; no generation."
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "issue": "Demote character spelling to diagnostic fallback",
+      "status": "AUTOMATED_VERIFIED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "AUTOMATED_VERIFIED",
+          "reason": "Opt-in C32 session blocks character readback as normal path; diagnostic renderer and historical C31 workspace remain unchanged."
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "issue": "Clinic speaks email naturally",
+      "status": "HUMAN_RETEST_REQUIRED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "HUMAN_RETEST_REQUIRED",
+          "reason": "Existing clinic-spoken email request opens structured acquisition only after reviewed scoped consent and completed verified output. Physical UX not tested."
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "issue": "Structured Danish ASR email parsing, no generic translation",
+      "status": "AUTOMATED_VERIFIED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "AUTOMATED_VERIFIED",
+          "reason": "Auditable Danish token grammar/reconstruction/normalization/lookup/classification implemented without prose translation or script matching."
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "issue": "Constrained optional LLM suggestion contract",
+      "status": "AUTOMATED_VERIFIED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "AUTOMATED_VERIFIED",
+          "reason": "Optional advisory port has no network implementation; malicious/nonexistent/wrong-character/wrong-candidate/promoted-class outputs rejected."
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "issue": "Inspect actual contact data and bounded resolver source",
+      "status": "BLOCKED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "BLOCKED",
+          "reason": "No actual CRM/contact schema or current-call identity mapping supplied. Bounded exact-identity synthetic adapter implemented and tested; real adapter awaits source/schema."
+        }
+      ]
+    },
+    {
+      "id": "I",
+      "issue": "Explicit confidence classes and safe action gates",
+      "status": "AUTOMATED_VERIFIED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "AUTOMATED_VERIFIED",
+          "reason": "All six confidence classes and fail-closed actions tested. No class auto-saves; high confidence needs disambiguation, exact requires owned recipient confirmation."
+        }
+      ]
+    },
+    {
+      "id": "J",
+      "issue": "Immutable raw and derived email evidence and correction lineage",
+      "status": "AUTOMATED_VERIFIED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "AUTOMATED_VERIFIED",
+          "reason": "Private append-only audit copies retain raw partial/final evidence, boundaries, token spans, transforms, snapshots, ranking, suggestions, review, confirmation and correction lineage."
+        }
+      ]
+    },
+    {
+      "id": "K",
+      "issue": "No whole-call recording; disabled future audit interface",
+      "status": "AUTOMATED_VERIFIED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "AUTOMATED_VERIFIED",
+          "reason": "PCM storage disabled; typed future business/legal authorization interface only. Diagnostics reject binary PCM and preserve transient-source behavior."
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "issue": "Concise confirmation without weakening exactness",
+      "status": "HUMAN_RETEST_REQUIRED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "HUMAN_RETEST_REQUIRED",
+          "reason": "Concise existing confirmation clip only for exact spoken/unique stored match; fresh owned final and database version recheck required. High-confidence ambiguity blocks generic question; no new candidate audio."
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "issue": "Preserve ASR preflight and add email diagnostics",
+      "status": "HUMAN_RETEST_REQUIRED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "HUMAN_RETEST_REQUIRED",
+          "reason": "C31 preflight and recognition configuration preserved byte-for-byte. Inert bridge forwards diagnostics; local deterministic ASR lifecycle checks pass, live email ASR accuracy pending."
+        }
+      ]
+    },
+    {
+      "id": "N",
+      "issue": "Keep consent independent and required before email resolution",
+      "status": "AUTOMATED_VERIFIED",
+      "history": [
+        {
+          "status": "OPEN",
+          "reason": "User-requested ledger captured before implementation."
+        },
+        {
+          "status": "IMPLEMENTED",
+          "reason": "Offline candidate implementation and regression coverage added."
+        },
+        {
+          "status": "AUTOMATED_VERIFIED",
+          "reason": "Email cannot create consent. Verified current recipient/authority, scoped completed question, owned provider final and separate review remain required; manual/stale/refused evidence blocked."
+        }
+      ]
+    }
+  ],
+  "acceptance": {
+    "status": "NOT_ACCEPTED",
+    "newAudioGenerations": 0,
+    "paidProviderRequests": 0,
+    "realContactAdapterImplemented": false,
+    "nativeListeningVerified": false,
+    "physicalASRVerified": false,
+    "telephoneVerified": false,
+    "productionReady": false
+  }
+}

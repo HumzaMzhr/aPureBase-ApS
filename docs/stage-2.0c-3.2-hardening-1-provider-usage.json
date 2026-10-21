@@ -1,0 +1,12 @@
+{
+  "scope": "This automatic hardening pass",
+  "ElevenLabsRequests": 0,
+  "OpenAIRequests": 0,
+  "telephoneCalls": 0,
+  "newAudioGenerations": 0,
+  "newPaidCharacters": 0,
+  "liveMicrophoneTests": 0,
+  "voiceTraining": 0,
+  "sourceRecordingEnabled": false,
+  "notes": "All inference/ASR/output faults and successes were injected fixtures. QA reads existing PCM files; local media fetch/build/read-only GitHub activity are not provider inference calls."
+}
