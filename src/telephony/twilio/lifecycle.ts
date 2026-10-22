@@ -1,0 +1,2 @@
+import type {CallLifecycle} from '../types';
+export function twilioStatus(status:string):CallLifecycle {switch(status){case 'initiated':case 'queued':return 'CREATING';case 'ringing':return 'RINGING';case 'in-progress':return 'ANSWERED';case 'completed':return 'ENDED';case 'busy':case 'failed':case 'no-answer':case 'canceled':return 'FAILED';default:throw new Error('Unknown provider call status');}}

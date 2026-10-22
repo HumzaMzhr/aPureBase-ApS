@@ -1,0 +1,27 @@
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+ ❯ tests/telephony-stage20d1-security.test.tsx (18 tests | 1 failed | 17 skipped) 43ms
+   × disconnect during output reaches terminal state even when clear cannot be sent 42ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/telephony-stage20d1-security.test.tsx > disconnect during output reaches terminal state even when clear cannot be sent
+AssertionError: expected [Function] to not throw an error but 'Error: Injected send failure' was thrown
+
+- Expected:
+undefined
+
++ Received:
+"Error: Injected send failure"
+
+ ❯ tests/telephony-stage20d1-security.test.tsx:23:285
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 17 skipped (18)
+   Start at  23:20:48
+   Duration  684ms (transform 338ms, setup 0ms, import 528ms, tests 43ms, environment 0ms)

@@ -1,0 +1,507 @@
+{
+  "changedFileCount": 83,
+  "modified": 8,
+  "new": 75,
+  "selfHashExcluded": true,
+  "files": [
+    {
+      "path": ".env.example",
+      "status": "modified",
+      "bytes": 1429,
+      "sha256": "f55260c86717ebb8acca69ca50c0ef656f6f2def7bff4e65b530dcec21a91e77"
+    },
+    {
+      "path": "docs/STAGE-2.0D2-PREFLIGHT-PLAN.md",
+      "status": "new",
+      "bytes": 2188,
+      "sha256": "ec41217e4ad791201f44c1a22a7cfea555ca83d680c68c295f3dfa8e1ab31885"
+    },
+    {
+      "path": "docs/stage-2.0d-1-audio-verification.json",
+      "status": "new",
+      "bytes": 73677,
+      "sha256": "6023f3a040e7f79e137e96f06b8eb951ce3815721ca8c1e7ac07406bd1f23dd7"
+    },
+    {
+      "path": "docs/stage-2.0d-1-dependencies.json",
+      "status": "new",
+      "bytes": 11734,
+      "sha256": "7e19f883797a3a1492b5af88d80a6720a420d0593ff2e015302817d3188c9e3d"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/c31.txt",
+      "status": "new",
+      "bytes": 226,
+      "sha256": "f41f04e50d58bd2aeae3ae7c13c23d9772c41db267ac44bde6c163ae1a771bd8"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/c32.txt",
+      "status": "new",
+      "bytes": 228,
+      "sha256": "52169353aae6776831393762c8d28d641c392aa117699e2f4c0902283f237dd7"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/closed-socket-regression-after.txt",
+      "status": "new",
+      "bytes": 236,
+      "sha256": "f8c8dcc77e602097684d7684a67fb771b11f2e66e85ec74f2ef87a1265f26473"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/closed-socket-regression-before.txt",
+      "status": "new",
+      "bytes": 931,
+      "sha256": "fbe74d0f64497104be4da3da57e97137a8cd102180a8998e25b3f140c08c7910"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/d1-focused.txt",
+      "status": "new",
+      "bytes": 226,
+      "sha256": "656df96d22104a5281475de32478a64d8318aff3a12af043521676ef20e836b8"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/d1-operations-qa-build.txt",
+      "status": "new",
+      "bytes": 987,
+      "sha256": "7f07aa90b55b6c13acc94b947ffc7794b0b07343aff7b1f39f70e6bb3bfcec2f"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/diff-check.txt",
+      "status": "new",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/full-1.txt",
+      "status": "new",
+      "bytes": 289,
+      "sha256": "dc292a9f32155ad91912fb9090c3a2fc1e38dcd502e6b4809bf1bda789e989e4"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/full-2.txt",
+      "status": "new",
+      "bytes": 288,
+      "sha256": "daa0fc10e289aaccd4f5a34ff06f7f8d9f72920ea108af17e35986bda14e7da1"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/full-3.txt",
+      "status": "new",
+      "bytes": 288,
+      "sha256": "2e3688a07e77f4826ee7356f370e5269cbe588f4debcf46708a79347d0712587"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/late-lookup-regression-after.txt",
+      "status": "new",
+      "bytes": 236,
+      "sha256": "07fa6a1d8426f6ff867ba4219735f9a8760b5b933364d854747fa8d19df93fe9"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/late-lookup-regression-before.txt",
+      "status": "new",
+      "bytes": 1491,
+      "sha256": "5f0ef369a13df50294dae5bbab9fa8579fc6b14d4413b9cab6acc580c821d691"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/lint.txt",
+      "status": "new",
+      "bytes": 53,
+      "sha256": "f44b0522a58534b363bde57752ef46486e55bf6511fd0691d177b1c9ad515556"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/pcm-1.txt",
+      "status": "new",
+      "bytes": 234,
+      "sha256": "9700f3542ed6a589d765c592efb3998d14f80e345372280a694b7a4d78ee9c7f"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/pcm-2.txt",
+      "status": "new",
+      "bytes": 234,
+      "sha256": "0b141171353e67ffd53d40ecae5acb7d69d65c93c42bea7ecd5f759001a5abf3"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/pcm-3.txt",
+      "status": "new",
+      "bytes": 234,
+      "sha256": "9dc3352df481ad86e89deb5ccaa474e8673ffba6a6db78874862b15ab3bb2336"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/pcm-4.txt",
+      "status": "new",
+      "bytes": 234,
+      "sha256": "36b198831483f30b9ce622df9598e1aeb1f5b2261d92c9c4694424f4d8580d71"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/pcm-5.txt",
+      "status": "new",
+      "bytes": 234,
+      "sha256": "23f14d6287f1bc3c0207a3dea6c095bcf8ec15d978fc45633c5f316da4cfc19a"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/preservation.txt",
+      "status": "new",
+      "bytes": 97,
+      "sha256": "b98ebcc875541624494e69fae70c8ee84e66cd6065682c5a4df8df0f03185ba1"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/prior-consent.txt",
+      "status": "new",
+      "bytes": 228,
+      "sha256": "e0c2890fc24251209d6855dba5d812524c5b8ad0b0457524e4cbe56f6bf24244"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/replay-1.txt",
+      "status": "new",
+      "bytes": 222,
+      "sha256": "0930b521537986751ad5d6e1aa9051003d72f178ed6ef5134efde470366e248f"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/replay-2.txt",
+      "status": "new",
+      "bytes": 222,
+      "sha256": "402e0c83f5126922b9b919a875f56fd7ce00e19055b7f751af4876d3774a7c71"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/replay-3.txt",
+      "status": "new",
+      "bytes": 222,
+      "sha256": "2893a48ad8147c8264abf7e55f4b811d629a8e7ef83112c764e1b676b6de967a"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/replay-4.txt",
+      "status": "new",
+      "bytes": 222,
+      "sha256": "5720bfe00396de1266c248f75945c7d7ca9f32249134262a7b21c3a6435eb708"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/replay-5.txt",
+      "status": "new",
+      "bytes": 222,
+      "sha256": "45ecf64be6ffb2c0c1f0619aba455809d7f9ff6402b1b2d2bdde1f77c96b751e"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/results.json",
+      "status": "new",
+      "bytes": 175244,
+      "sha256": "61694249ecfa6b72b90fd7427d7f217fc3b3813bcc4764ff540eac593618dcbb"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/standard-build.txt",
+      "status": "new",
+      "bytes": 898,
+      "sha256": "1f7faec93ef6b33c3eda793bb388de16fcd0b7c4a6bf7c25e154c3448776b39c"
+    },
+    {
+      "path": "docs/stage-2.0d-1-evidence/typecheck.txt",
+      "status": "new",
+      "bytes": 62,
+      "sha256": "c9bfb169b519cc9422dd43e853728d75b513264c08215185696d690989f22af3"
+    },
+    {
+      "path": "docs/stage-2.0d-1-files.json",
+      "status": "new",
+      "bytes": null,
+      "sha256": null
+    },
+    {
+      "path": "docs/stage-2.0d-1-finalization.md",
+      "status": "new",
+      "bytes": 6310,
+      "sha256": "42be775ff4a67b9ef400ecb624243685c0d87de33ab230151e96431579429566"
+    },
+    {
+      "path": "docs/stage-2.0d-1-first-physical-call-plan.md",
+      "status": "new",
+      "bytes": 3275,
+      "sha256": "aac25c0ff10edb110322343df1dd3bbf9fd519c00771d88029b1511b1e1acb2f"
+    },
+    {
+      "path": "docs/stage-2.0d-1-hygiene.json",
+      "status": "new",
+      "bytes": 693,
+      "sha256": "9a1ae5219d523685b991882597f31bb98e9d4850de97e90970e0aa36c8ccd90c"
+    },
+    {
+      "path": "docs/stage-2.0d-1-mocked-scenarios.json",
+      "status": "new",
+      "bytes": 94643,
+      "sha256": "308b2d64717b09c4ce00c72e319ed1e237a4e354a196672a4c606ff21e408ae1"
+    },
+    {
+      "path": "docs/stage-2.0d-1-preflight.json",
+      "status": "new",
+      "bytes": 686,
+      "sha256": "089fac128cb0e563a0ec902c1ca551af193b7f434d7de9560db268bac7e1d333"
+    },
+    {
+      "path": "docs/stage-2.0d-1-preservation-result.json",
+      "status": "new",
+      "bytes": 168181,
+      "sha256": "34bd51d1673ecd3860468b2a4873bbce538b8517baf05b067e371826e2ac29cf"
+    },
+    {
+      "path": "docs/stage-2.0d-1-preservation.json",
+      "status": "new",
+      "bytes": 138957,
+      "sha256": "3766d57dbe110ae6b8e8475799a07ef96c9094f25f3bdf83436cb3cdf3195a35"
+    },
+    {
+      "path": "docs/stage-2.0d-1-provider-usage.json",
+      "status": "new",
+      "bytes": 702,
+      "sha256": "14149c08a1f916d7610abe0577b73681c0e5c4f0cae16ea4d282c3e60d95c732"
+    },
+    {
+      "path": "docs/stage-2.0d-1-safety.json",
+      "status": "new",
+      "bytes": 846,
+      "sha256": "d7e4f5bbb5b2917a569dd9d16d3a9542c6ef46924a8f4394d684edab7de9c5fa"
+    },
+    {
+      "path": "docs/stage-2.0d-1-summary.json",
+      "status": "new",
+      "bytes": 11891,
+      "sha256": "c4fa2cdee33d8432e5179f1ddbaebf860be93b6319d1e691d6ec0be279d04c97"
+    },
+    {
+      "path": "docs/stage-2.0d-1-transcript-example.json",
+      "status": "new",
+      "bytes": 70675,
+      "sha256": "77ef4ac5ddd7c1e2f4fb27a3d409d51885cab3485fff35a149e68ab696575b31"
+    },
+    {
+      "path": "docs/stage-2.0d-1-twilio-source-review.md",
+      "status": "new",
+      "bytes": 5507,
+      "sha256": "232baab5794757d7e479845201546357f85d68fa66d8fef949ba44d8cf43c34e"
+    },
+    {
+      "path": "docs/stage-2.0d-1-validation.txt",
+      "status": "new",
+      "bytes": 14750,
+      "sha256": "ace3d653a85debcc76d001eec49c5d694f9631fbe5b0dedef2e76b84093ebebf"
+    },
+    {
+      "path": "docs/stage-2.0d-1.md",
+      "status": "new",
+      "bytes": 15227,
+      "sha256": "233d46e800aa264bcd194879b33959fd00ac7745fd9907c97ac0bd85a0b4693b"
+    },
+    {
+      "path": "package-lock.json",
+      "status": "modified",
+      "bytes": 149452,
+      "sha256": "53e79ad22a021fc49f325384cd155fea3dfbca800fa732e830e4d23709d64456"
+    },
+    {
+      "path": "package.json",
+      "status": "modified",
+      "bytes": 1029,
+      "sha256": "93db10a9cf8fdcb9f81ad49c1a05b9df8385580a84130ecbf0d2ffb960e61720"
+    },
+    {
+      "path": "scripts/stage20d1-evidence.ts",
+      "status": "new",
+      "bytes": 6034,
+      "sha256": "e007212ed639c9b7daa2e6a296b1f320e75aeb27f3690b0abbfa9a1bf187cb1a"
+    },
+    {
+      "path": "scripts/stage20d1-package.ts",
+      "status": "new",
+      "bytes": 6606,
+      "sha256": "4900def458883c5e67f414124b35a54c339d13ea18ead1e70cc54cc1d8914d5d"
+    },
+    {
+      "path": "scripts/stage20d1-serve.ts",
+      "status": "new",
+      "bytes": 2271,
+      "sha256": "949d580af5dcac0f601c21b289e9e24790dd902d6fdebe99264c5849dde1ae60"
+    },
+    {
+      "path": "scripts/stage20d1-validate.ts",
+      "status": "new",
+      "bytes": 4314,
+      "sha256": "5feb6a5bcf9f41f254027cbe0bc9f5bdfdeebdf39b5118652dceb911a3b2b87f"
+    },
+    {
+      "path": "scripts/stage20d1.vite.ts",
+      "status": "new",
+      "bytes": 248,
+      "sha256": "5c34e87d8e41814b8d1a04e36bedeaa850bad2b75df9cae03d0bd15c6f9d6e76"
+    },
+    {
+      "path": "scripts/verify-stage20d1.ts",
+      "status": "new",
+      "bytes": 3090,
+      "sha256": "528498a9717ab21bcf2887baf3ad8de16e02bfef366763eefa503df92d0104a2"
+    },
+    {
+      "path": "server/telephony/boundary.ts",
+      "status": "new",
+      "bytes": 3065,
+      "sha256": "12286181fb45e3ea7f3b8c09e0a799d0572c0e0647e63751d6735b0d0c7366df"
+    },
+    {
+      "path": "server/telephony/security.ts",
+      "status": "new",
+      "bytes": 1758,
+      "sha256": "57da99afda47da01e86b196f0ae4a6a861f4766e9fd082acb32860dc5b40e1b1"
+    },
+    {
+      "path": "src/consent/approved/localPlayback.ts",
+      "status": "modified",
+      "bytes": 6065,
+      "sha256": "c84ef78c9bd48bab8b876cd7bacf750d837cea183d4da3fdf732beba55596622"
+    },
+    {
+      "path": "src/consent/session.ts",
+      "status": "modified",
+      "bytes": 45352,
+      "sha256": "85cae9a6d347eb0333fd19c61ec3476444707b32979a1d8ef419a709ba46dfd8"
+    },
+    {
+      "path": "src/consent/stage32/email/flow.ts",
+      "status": "modified",
+      "bytes": 20177,
+      "sha256": "d8ac445fd9a176a6fc24934d72be638d203cd8d36fbda98f26daa180267763d1"
+    },
+    {
+      "path": "src/consent/stage32/operations/App.tsx",
+      "status": "modified",
+      "bytes": 10665,
+      "sha256": "7be71b6e4744704b46d3689fe42613dcfd992a6c3a7bf2aa3043c92024a645ee"
+    },
+    {
+      "path": "src/consent/types.ts",
+      "status": "modified",
+      "bytes": 9020,
+      "sha256": "07c1d7617e670c8f3fbc98b9422d929695325cc2f475cc0c9a3d3511339380d5"
+    },
+    {
+      "path": "src/telephony/asr.ts",
+      "status": "new",
+      "bytes": 4367,
+      "sha256": "9fca9f09bf24d3e3dfa7090c14a89dc0c8bd395639f589480400741b58c754d5"
+    },
+    {
+      "path": "src/telephony/callSession.ts",
+      "status": "new",
+      "bytes": 12348,
+      "sha256": "028f48eac44ccf828e072f54fb63a223b150270bd1588e5850a984863d84f5de"
+    },
+    {
+      "path": "src/telephony/lifecycle.ts",
+      "status": "new",
+      "bytes": 783,
+      "sha256": "c3b84728af308de7788e5b6141031498be6ae9c036e75828cab10dcf84bf8716"
+    },
+    {
+      "path": "src/telephony/media.ts",
+      "status": "new",
+      "bytes": 3500,
+      "sha256": "03d9f76d774488ed62eb9002f7e51c7d8c4763687a0131816df61566ab73a2e0"
+    },
+    {
+      "path": "src/telephony/mock.ts",
+      "status": "new",
+      "bytes": 5911,
+      "sha256": "4d56ad6f441b9dbdc45c405a8fdbc48e6ea4c4fb616c00c1b87e658707186dba"
+    },
+    {
+      "path": "src/telephony/operations/App.tsx",
+      "status": "new",
+      "bytes": 6817,
+      "sha256": "d833d4e7d618a22eac5b8da48b39fae1f10a09153a97471087cd025b6cb37326"
+    },
+    {
+      "path": "src/telephony/operations/main.tsx",
+      "status": "new",
+      "bytes": 1039,
+      "sha256": "c9e67d2909162b90604d637d89a8d7abc42c152a7ff1008efb9fe1d95e85084b"
+    },
+    {
+      "path": "src/telephony/preflight.ts",
+      "status": "new",
+      "bytes": 1507,
+      "sha256": "944679084fad6c370294b8e2a5db5b0b9a1f5c352786d30346e18f5c048571fe"
+    },
+    {
+      "path": "src/telephony/scenarios.ts",
+      "status": "new",
+      "bytes": 7531,
+      "sha256": "399a084183c9a9dc75958a5028ca3069055a8b4520134d04f4e6c1c9eb619883"
+    },
+    {
+      "path": "src/telephony/transcriptBridge.ts",
+      "status": "new",
+      "bytes": 2800,
+      "sha256": "30348974b5578fdccda692ae512939079e3bc8c6c0646a2e30b5af938f97e4da"
+    },
+    {
+      "path": "src/telephony/twilio/config.ts",
+      "status": "new",
+      "bytes": 1697,
+      "sha256": "09d4e78c185233d5ed156b6fc9eed24cc9d3454cd249ef8f44de3784deb479bc"
+    },
+    {
+      "path": "src/telephony/twilio/lifecycle.ts",
+      "status": "new",
+      "bytes": 403,
+      "sha256": "8797b72b27344813b0681953a818442d2dbb6ff8604eff1586be337a01ae20c4"
+    },
+    {
+      "path": "src/telephony/twilio/outbound.ts",
+      "status": "new",
+      "bytes": 2950,
+      "sha256": "16fced3c6b2ccf923380ff110b0164cc2098e69552042d5a581702727d0b8eba"
+    },
+    {
+      "path": "src/telephony/twilio/playback.ts",
+      "status": "new",
+      "bytes": 7003,
+      "sha256": "86d6711d7a4d335d94bc526a986be556e4c1cc1a9413f6d980f52768f71f36ed"
+    },
+    {
+      "path": "src/telephony/twilio/protocol.ts",
+      "status": "new",
+      "bytes": 2907,
+      "sha256": "c4d867262ac88ee604fb16bac4bce05f4314c6e1abde5b9608577f1ba1555014"
+    },
+    {
+      "path": "src/telephony/types.ts",
+      "status": "new",
+      "bytes": 2670,
+      "sha256": "b8865b944dc869cceb916ab2c0d60e7f062b48a8cc9832cd365ec3b4803cc97b"
+    },
+    {
+      "path": "stage20d1.html",
+      "status": "new",
+      "bytes": 290,
+      "sha256": "27124513ff553aac57722fc663de7bc808387589f8379c4ee77d76ab55180381"
+    },
+    {
+      "path": "tests/fixtures/stage20d1-sequences.json",
+      "status": "new",
+      "bytes": 73662,
+      "sha256": "43182491fcc2adfc6b77da4f692eb25d72a8c291193307071f2449468ed0f9f1"
+    },
+    {
+      "path": "tests/telephony-stage20d1-scenarios.test.ts",
+      "status": "new",
+      "bytes": 975,
+      "sha256": "16213d9a32f296b3c3735996615a45aaa47caa8ccba353778bce782f6358f29b"
+    },
+    {
+      "path": "tests/telephony-stage20d1-security.test.tsx",
+      "status": "new",
+      "bytes": 8733,
+      "sha256": "0f2c9813167181c9326e0ebe76780140c8c67695b316ba5170e0e0f910ea94f3"
+    },
+    {
+      "path": "tests/telephony-stage20d1.test.ts",
+      "status": "new",
+      "bytes": 12126,
+      "sha256": "b3c708218aa80acc7a6193c8d77c9c65d045cbf1a132c58d9edd3c8993616ec3"
+    }
+  ],
+  "selfSizeExcluded": true
+}

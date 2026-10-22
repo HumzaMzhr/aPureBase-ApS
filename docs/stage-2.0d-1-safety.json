@@ -1,0 +1,37 @@
+{
+  "emailCases": 66,
+  "emailPolicyCorrect": 66,
+  "databaseModel": {
+    "cases": 18,
+    "passed": 18,
+    "unsafeNegativeControlDetected": true
+  },
+  "consentMatrix": {
+    "cases": 29,
+    "passed": 29
+  },
+  "frozenScenarios": {
+    "scenarios": 46,
+    "passed": 46,
+    "ordinaryEligible": 8,
+    "ordinaryCompleted": 8,
+    "consentFalsePositives": 0,
+    "failed": []
+  },
+  "remediationScenarios": {
+    "cases": 32,
+    "passed": 32
+  },
+  "safety": {
+    "falseEmailAutoAccepts": 0,
+    "ambiguousAutomaticSelections": 0,
+    "consentFalsePositives": 0,
+    "normalPathFullEmailReadback": 0,
+    "consentFromInterruptedQuestion": 0,
+    "completedPlaybackAfterInterrupt": 0,
+    "staleProviderMutationAfterEnd": 0,
+    "duplicateFinalTranscriptEntries": 0,
+    "automaticRedials": 0,
+    "providerFailureReportedAsSuccess": 0
+  }
+}

@@ -1,0 +1,3153 @@
+{
+  "mode": "LOCAL_MOCK_NOT_PHYSICAL",
+  "passed": 18,
+  "rows": [
+    {
+      "id": "A",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Exact email confirmed by owned final and completed close",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 33334.125,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "consent.agent_reviewed"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.invalidated"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.request_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "anna snabel-a clinic punktum example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "anna snabel-a clinic punktum example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.parsed"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.resolved"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Er det korrekt?",
+          "phrase": "email-confirmation-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Er det korrekt?",
+          "phrase": "email-confirmation-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.confirmation_queued"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.recipient_confirmed"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+          "phrase": "success-close",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+          "phrase": "success-close",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.local_evaluation_stored"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDED · transport ended, not consent success"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Refusal terminal, no email",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 22317.75,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Nej",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Nej",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "consent.agent_reviewed"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Det er helt i orden. Tak for din tid. God dag.",
+          "phrase": "refusal-close",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Det er helt i orden. Tak for din tid. God dag.",
+          "phrase": "refusal-close",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDED · transport ended, not consent success"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Exact email confirmed by owned final and completed close",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 39190.625,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Måske",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Måske",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "clarify",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "clarify",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "consent.agent_reviewed"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.invalidated"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.request_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "anna snabel-a clinic punktum example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "anna snabel-a clinic punktum example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.parsed"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.resolved"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Er det korrekt?",
+          "phrase": "email-confirmation-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Er det korrekt?",
+          "phrase": "email-confirmation-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.confirmation_queued"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.recipient_confirmed"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+          "phrase": "success-close",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+          "phrase": "success-close",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.local_evaluation_stored"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDED · transport ended, not consent success"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Busy ends without padding or email",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 15769.75,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Jeg har travlt",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Jeg har travlt",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+          "phrase": "callback",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+          "phrase": "callback",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+          "phrase": "callback-close",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+          "phrase": "callback-close",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDED · transport ended, not consent success"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Receptionist transfer request has no consent",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 12513.75,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+          "phrase": "receptionist-target-request",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+          "phrase": "receptionist-target-request",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "TAKEOVER"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "TAKEOVER_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "Transfer boundary to target HCP; physical transfer unverified"
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Authorized intermediary local evaluation completed",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 35336.125,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Jeg har bemyndigelse til at håndtere denne forespørgsel og oplyse lægens e-mailadresse",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Jeg har bemyndigelse til at håndtere denne forespørgsel og oplyse lægens e-mailadresse",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "authority.evidence_recorded"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "authority.agent_attested"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+          "phrase": "intermediary-consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+          "phrase": "intermediary-consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "consent.agent_reviewed"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.invalidated"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.request_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "anna@clinic.example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "anna@clinic.example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.parsed"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.resolved"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Er det korrekt?",
+          "phrase": "email-confirmation-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Er det korrekt?",
+          "phrase": "email-confirmation-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.confirmation_queued"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.recipient_confirmed"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+          "phrase": "success-close",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+          "phrase": "success-close",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.local_evaluation_stored"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDED · transport ended, not consent success"
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "No affirmative decision; context preserved for human",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 19763.5,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Hvilken behandling skal jeg vælge?",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Hvilken behandling skal jeg vælge?",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "TAKEOVER"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "TAKEOVER_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "Unsupported, sensitive, uncertain-authority or complex response; HUMAN_TAKEOVER recommended."
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "No affirmative decision; context preserved for human",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 19763.5,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Det er den forkerte person",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Det er den forkerte person",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "TAKEOVER"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "TAKEOVER_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "Wrong recipient"
+        }
+      ]
+    },
+    {
+      "id": "I",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Interrupted question never completed nor armed",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 14995.125,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_INTERRUPTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone interrupt"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        }
+      ]
+    },
+    {
+      "id": "J",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Delayed final retains original consumed question",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 23690.875,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        }
+      ]
+    },
+    {
+      "id": "K",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Correction invalidates confirmed local candidate",
+          "pass": true
+        },
+        {
+          "name": "Exact email confirmed by owned final and completed close",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 40222.5,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "consent.agent_reviewed"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.invalidated"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.request_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "anna snabel-a clinic punktum example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "anna snabel-a clinic punktum example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.parsed"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.resolved"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Er det korrekt?",
+          "phrase": "email-confirmation-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Er det korrekt?",
+          "phrase": "email-confirmation-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.confirmation_queued"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.recipient_confirmed"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Nej, adressen er forkert",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Nej, adressen er forkert",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.invalidated"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.invalidated"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.request_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "anne snabel-a clinic punktum example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "anne snabel-a clinic punktum example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.parsed"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.resolved"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Er det korrekt?",
+          "phrase": "email-confirmation-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Er det korrekt?",
+          "phrase": "email-confirmation-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.confirmation_queued"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.recipient_confirmed"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+          "phrase": "success-close",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+          "phrase": "success-close",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.local_evaluation_stored"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDED · transport ended, not consent success"
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Ambiguous email never selected",
+          "pass": true
+        },
+        {
+          "name": "Generic confirmation cannot accept ambiguity",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 23994.625,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "consent.agent_reviewed"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "phrase": "email-request",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.invalidated"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.request_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "en snabel-a clinic punktum example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "en snabel-a clinic punktum example",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.parsed"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.resolved"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "EMAIL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "email.confirmation_blocked"
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Disconnect never marks playback completed",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 14975.125,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "ERROR_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MOCK_PROVIDER_DISCONNECT_MID_OUTPUT"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_INTERRUPTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone interrupt"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_FAILED"
+        }
+      ]
+    },
+    {
+      "id": "N",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "No late final after disconnect",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 18942.5,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Min e-mail",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "ERROR_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MOCK_PROVIDER_DISCONNECT_DURING_CLINIC"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_FAILED"
+        }
+      ]
+    },
+    {
+      "id": "O",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "ASR failure closes call without success",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 300,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "ERROR_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "ASR_FAILURE"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_FAILED"
+        }
+      ]
+    },
+    {
+      "id": "P",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Send failure propagated",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 300,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "ERROR_EVENT",
+          "text": null,
+          "phrase": "opening",
+          "message": "Output failed"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "ERROR_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "OUTPUT_FAILURE"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_FAILED"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Duplicate mark/final cannot complete again",
+          "pass": true
+        },
+        {
+          "name": "Conflicting duplicate fails closed",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 19763.5,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_PARTIAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "CLINIC",
+          "eventType": "SPEECH_FINAL",
+          "text": "Ja",
+          "phrase": null,
+          "message": null
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "ERROR_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MALFORMED_PROVIDER_EVENT"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_FAILED"
+        }
+      ]
+    },
+    {
+      "id": "R",
+      "kind": "LOCAL_MOCK_NOT_PHYSICAL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Terminal state immutable",
+          "pass": true
+        },
+        {
+          "name": "Strict chronological sequence",
+          "pass": true
+        },
+        {
+          "name": "No complete after interrupt",
+          "pass": true
+        },
+        {
+          "name": "No full-email speech",
+          "pass": true
+        }
+      ],
+      "modeledDurationMs": 18922.5,
+      "sequence": [
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_RINGING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ANSWERED"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "MEDIA_CONNECTED"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "phrase": "opening",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "AUTHORITY_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "recipient.agent_selected"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "phrase": "purpose",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_STARTED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone start"
+        },
+        {
+          "speaker": "ISABELLA",
+          "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+          "text": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "phrase": "consent-question",
+          "message": "Telephone complete"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CONSENT_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "answer.window_opened"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDING"
+        },
+        {
+          "speaker": "SYSTEM",
+          "eventType": "CALL_EVENT",
+          "text": null,
+          "phrase": null,
+          "message": "CALL_ENDED · transport ended, not consent success"
+        }
+      ]
+    }
+  ]
+}
