@@ -1,0 +1,4086 @@
+{
+  "kind": "ENGINEERING_SIGNAL_AUDIT_NOT_NATIVE_NATURALNESS_CERTIFICATION",
+  "providerRequests": 0,
+  "newAudioGenerated": 0,
+  "reviewSourceHash": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+  "reviewer": "Humza",
+  "requiredListeningItems": 12,
+  "optionalDiagnosticItems": 4,
+  "allOrdinaryBoundUnitsAudited": 32,
+  "unboundDynamicTemplates": [
+    {
+      "phraseId": "receptionist-target-request",
+      "canonicalText": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "canonicalTextHash": "dc7aae708cf57a21430de1a52f55f3e0c10e67a7b07d7f30542ee60fe553c687",
+      "synthesisText": null,
+      "currentAssetHash": null,
+      "generated": false,
+      "playable": false,
+      "status": "UNBOUND_TEMPLATE_EXACT_CACHED_VALUES_ONLY",
+      "productionEnabled": false
+    },
+    {
+      "phraseId": "authority-ask",
+      "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af [NAVN]?",
+      "canonicalVersion": "stage-2.0c1-approved-1",
+      "canonicalTextHash": "622d1159959b850e21fd1ab57959ae16e591e6ff6d8d575f3cfe7134cd6c8ce7",
+      "synthesisText": null,
+      "currentAssetHash": null,
+      "generated": false,
+      "playable": false,
+      "status": "UNBOUND_TEMPLATE_EXACT_CACHED_VALUES_ONLY",
+      "productionEnabled": false
+    },
+    {
+      "phraseId": "intermediary-consent-question",
+      "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til [NAVN]?",
+      "canonicalVersion": "stage-2.0c1-approved-1",
+      "canonicalTextHash": "3db29af81fbba5f83f4d002c095b2d9f7e9d72ee40de1114e8d8bbd1135391b1",
+      "synthesisText": null,
+      "currentAssetHash": null,
+      "generated": false,
+      "playable": false,
+      "status": "UNBOUND_TEMPLATE_EXACT_CACHED_VALUES_ONLY",
+      "productionEnabled": false
+    },
+    {
+      "phraseId": "wrong-person-close",
+      "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med [NAVN]?",
+      "canonicalVersion": "stage-2.0c1-approved-1",
+      "canonicalTextHash": "b44fbffef0b57525a0d215f59cc6abf1aabbc96bfe4f9d0d6247f8f56d194aa0",
+      "synthesisText": null,
+      "currentAssetHash": null,
+      "generated": false,
+      "playable": false,
+      "status": "UNBOUND_TEMPLATE_EXACT_CACHED_VALUES_ONLY",
+      "productionEnabled": false
+    }
+  ],
+  "ordinaryFullEmailReadbackCount": 0,
+  "thresholdCaveat": "RMS quiet regions and loudness differences are measurements, not proof that pauses, stress, consonants or cadence are linguistically wrong.",
+  "transitionClasses": {
+    "IMMEDIATE": "Engine-controlled adjacent output; no new fixed delay",
+    "SHORT_NATURAL_PAUSE": "Reserved descriptive class; no fixed pause installed",
+    "WAIT_FOR_RECIPIENT": "Recipient response/identity owns boundary",
+    "PROCESSING_WAIT": "Actual source/resolution evidence owns boundary"
+  },
+  "conclusion": "NO_CONCRETE_AUTOMATABLE_AUDIO_IMPROVEMENT_REQUIRING_NEW_TTS_IDENTIFIED",
+  "newPaidProposal": null,
+  "productionReady": false,
+  "rows": [
+    {
+      "phraseId": "opening",
+      "reviewKey": "opening:247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "canonicalText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+      "synthesisText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "canonicalTextHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+      "synthesisTextHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "sSas6ytpbM27QBAYsPM8",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 7.198166666666666,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.191192626953125,
+      "rawRms": 0.023475938880341572,
+      "renderedPeak": 0.6801410913467407,
+      "renderedRms": 0.083512379436757,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 20,
+        "trailingQuietMs": 258.16666666666663,
+        "internalQuietRuns": [
+          {
+            "startMs": 270,
+            "endMs": 550,
+            "durationMs": 280
+          },
+          {
+            "startMs": 1390,
+            "endMs": 1560,
+            "durationMs": 170
+          },
+          {
+            "startMs": 2420,
+            "endMs": 3060,
+            "durationMs": 640
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000335693359375,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 10,
+        "trailingQuietMs": 218.16666666666669,
+        "internalQuietRuns": [
+          {
+            "startMs": 280,
+            "endMs": 550,
+            "durationMs": 270
+          },
+          {
+            "startMs": 2470,
+            "endMs": 3050,
+            "durationMs": 580
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.0011941823177039623,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 3,
+      "wordCount": 15,
+      "punctuation": {
+        ",": 1,
+        ".": 2,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "aPureBase"
+      ],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 0,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509"
+        },
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 1,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "purpose",
+      "reviewKey": "purpose:bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "canonicalText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+      "synthesisText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "canonicalTextHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+      "synthesisTextHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "mU04bJpRrR1hYnATFHav",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 7.476833333333333,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.190704345703125,
+      "rawRms": 0.03164399962931483,
+      "renderedPeak": 0.6784040927886963,
+      "renderedRms": 0.1125691167726068,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 60,
+        "trailingQuietMs": 236.83333333333334,
+        "internalQuietRuns": [
+          {
+            "startMs": 2250,
+            "endMs": 2400,
+            "durationMs": 150
+          },
+          {
+            "startMs": 4430,
+            "endMs": 4670,
+            "durationMs": 240
+          },
+          {
+            "startMs": 4950,
+            "endMs": 5120,
+            "durationMs": 170
+          },
+          {
+            "startMs": 5280,
+            "endMs": 5670,
+            "durationMs": 390
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000091552734375,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 60,
+        "trailingQuietMs": 226.83333333333334,
+        "internalQuietRuns": [
+          {
+            "startMs": 4440,
+            "endMs": 4620,
+            "durationMs": 180
+          },
+          {
+            "startMs": 5290,
+            "endMs": 5670,
+            "durationMs": 380
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.0003256860945839435,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 2,
+      "wordCount": 13,
+      "punctuation": {
+        ",": 1,
+        ".": 1,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "medicinske opdateringer"
+      ],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 2,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "consent-question",
+      "reviewKey": "consent-question:055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "assetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "canonicalTextHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+      "synthesisTextHash": "82686ed5aae8211a6cda1b4a7bfc3dbeeb70dca083f8f9ca148707cafe6eef7c",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "kZK8ZENgppiFlm2S7XzY",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 3.947375,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.2227783203125,
+      "rawRms": 0.035855819782446195,
+      "renderedPeak": 0.7925028204917908,
+      "renderedRms": 0.1275520796981164,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 187.375,
+        "internalQuietRuns": [
+          {
+            "startMs": 1660,
+            "endMs": 1820,
+            "durationMs": 160
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000091552734375,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 40,
+        "trailingQuietMs": 47.375,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": -0.0003256860945839435,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 1,
+      "wordCount": 10,
+      "punctuation": {
+        ",": 0,
+        ".": 0,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "aPureBase"
+      ],
+      "historicalHumanFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 3,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "aPureBase sounds strange - ",
+          "heardExactAsset": true,
+          "audioHash": "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6"
+        }
+      ],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3.2",
+          "source": "latest-export",
+          "actionIndex": 1,
+          "decision": "PASS",
+          "ratings": {
+            "naturalness": 4,
+            "pronunciation": 2,
+            "pace": 4
+          },
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af"
+        }
+      ],
+      "latestHumanRatingForExactBytes": {
+        "key": "consent-question:055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+        "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+        "version": "stage-2.0c31-candidate-1",
+        "heardHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+        "sourceEndedProof": "web-audio-source-ended:df721378-1b28-4ef0-b838-e35151b32613:frames=94737:rate=24000:context=375.85066666666665",
+        "pronunciation": 4,
+        "naturalness": 4,
+        "pace": 4,
+        "verdict": "PASS",
+        "comment": "",
+        "sharedDefect": false,
+        "at": "2026-10-22T14:38:39.008Z"
+      },
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [
+        "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6"
+      ],
+      "currentHumanStatus": "LATEST_EXACT_BYTES_SELF_REPORTED_PASS",
+      "classification": "KEEP_CURRENT",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "email-request",
+      "reviewKey": "email-request:296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+      "synthesisText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "canonicalTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+      "synthesisTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "sXHHHxjMRxuuD4OYDUQJ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 3.390125,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.255157470703125,
+      "rawRms": 0.03491660603949241,
+      "renderedPeak": 0.9076871275901794,
+      "renderedRms": 0.12421095772535924,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 30,
+        "trailingQuietMs": 250.125,
+        "internalQuietRuns": [
+          {
+            "startMs": 320,
+            "endMs": 850,
+            "durationMs": 530
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.000030517578125,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 30,
+        "trailingQuietMs": 240.125,
+        "internalQuietRuns": [
+          {
+            "startMs": 320,
+            "endMs": 840,
+            "durationMs": 520
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.00010856203152798116,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 2,
+      "wordCount": 8,
+      "punctuation": {
+        ",": 0,
+        ".": 1,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "e-mailadresse"
+      ],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 4,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961"
+        },
+        {
+          "stage": "C-3.2",
+          "source": "latest-export",
+          "actionIndex": 2,
+          "decision": "PASS",
+          "ratings": {
+            "naturalness": 4,
+            "pronunciation": 2,
+            "pace": 4
+          },
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961"
+        }
+      ],
+      "latestHumanRatingForExactBytes": {
+        "key": "email-request:296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+        "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+        "version": "stage-2.0c1-approved-1",
+        "heardHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+        "sourceEndedProof": "web-audio-source-ended:3b942990-a768-428a-a29c-b55fb2302ca7:frames=81363:rate=24000:context=430.176",
+        "pronunciation": 4,
+        "naturalness": 4,
+        "pace": 4,
+        "verdict": "PASS",
+        "comment": "",
+        "sharedDefect": false,
+        "at": "2026-10-22T14:39:27.358Z"
+      },
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "LATEST_EXACT_BYTES_SELF_REPORTED_PASS",
+      "classification": "KEEP_CURRENT",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "email-confirmation-question",
+      "reviewKey": "email-confirmation-question:0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "canonicalText": "Er det korrekt?",
+      "synthesisText": "Er det korrekt?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "canonicalTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+      "synthesisTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "FJB7Xyo37ksWP79JFapS",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 0.97525,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.18048095703125,
+      "rawRms": 0.027123547507890488,
+      "renderedPeak": 0.6420358419418335,
+      "renderedRms": 0.09648823855232025,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 40,
+        "trailingQuietMs": 365.25,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": 0.000030517578125,
+          "last": -0.000091552734375
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 40,
+        "trailingQuietMs": 145.25,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": 0.00010856203152798116,
+          "last": -0.0003256860945839435
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 1,
+      "wordCount": 3,
+      "punctuation": {
+        ",": 0,
+        ".": 0,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 7,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "success-close",
+      "reviewKey": "success-close:e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "canonicalText": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+      "synthesisText": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+      "phraseVersion": "stage-2.0c32-candidate-1",
+      "assetHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "canonicalTextHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+      "synthesisTextHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "ihhY8XKnNt3NhwgB2KLc",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 7.52325,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.200714111328125,
+      "rawRms": 0.022444862109736567,
+      "renderedPeak": 0.7140124440193176,
+      "renderedRms": 0.0798444675773216,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 323.25,
+        "internalQuietRuns": [
+          {
+            "startMs": 320,
+            "endMs": 500,
+            "durationMs": 180
+          },
+          {
+            "startMs": 520,
+            "endMs": 670,
+            "durationMs": 150
+          },
+          {
+            "startMs": 1710,
+            "endMs": 2430,
+            "durationMs": 720
+          },
+          {
+            "startMs": 5970,
+            "endMs": 6610,
+            "durationMs": 640
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000152587890625,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 20,
+        "trailingQuietMs": 53.25,
+        "internalQuietRuns": [
+          {
+            "startMs": 350,
+            "endMs": 500,
+            "durationMs": 150
+          },
+          {
+            "startMs": 1770,
+            "endMs": 2070,
+            "durationMs": 300
+          },
+          {
+            "startMs": 6090,
+            "endMs": 6270,
+            "durationMs": 180
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.0005428101285360754,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 3,
+      "clauseCount": 5,
+      "wordCount": 23,
+      "punctuation": {
+        ",": 2,
+        ".": 3,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "hav"
+      ],
+      "historicalHumanFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 6,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag. <- doesnt explain how you can unsubsribe again",
+          "heardExactAsset": true,
+          "audioHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26"
+        },
+        {
+          "stage": "C-3.2",
+          "source": "latest-export",
+          "actionIndex": 4,
+          "decision": "FAIL",
+          "ratings": {
+            "naturalness": 4,
+            "pronunciation": 2,
+            "pace": 4
+          },
+          "comment": "frameldte < it pronounced a t ",
+          "heardExactAsset": true,
+          "audioHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26"
+        }
+      ],
+      "olderExactByteFeedback": [],
+      "latestHumanRatingForExactBytes": {
+        "key": "success-close:e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+        "hash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+        "version": "stage-2.0c32-candidate-1",
+        "heardHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+        "sourceEndedProof": "web-audio-source-ended:1ad2bccd-6847-41fd-a227-d00fb34507b2:frames=361116:rate=48000:context=25.888",
+        "pronunciation": 4,
+        "naturalness": 4,
+        "pace": 4,
+        "verdict": "PASS",
+        "comment": "",
+        "sharedDefect": false,
+        "at": "2026-10-22T14:40:17.374Z"
+      },
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [
+        "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26"
+      ],
+      "currentHumanStatus": "LATEST_EXACT_BYTES_SELF_REPORTED_PASS",
+      "classification": "KEEP_CURRENT",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "refusal-close",
+      "reviewKey": "refusal-close:b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+      "canonicalText": "Det er helt i orden. Tak for din tid. God dag.",
+      "synthesisText": "Det er helt i orden. Tak for din tid. God dag.",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "assetHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+      "canonicalTextHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+      "synthesisTextHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "PxtGZyc05AFxLkliYo9G",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 2.5542083333333334,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.18572998046875,
+      "rawRms": 0.025583727298445276,
+      "renderedPeak": 0.660708487033844,
+      "renderedRms": 0.09101054290455507,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 244.20833333333334,
+        "internalQuietRuns": [
+          {
+            "startMs": 850,
+            "endMs": 1150,
+            "durationMs": 300
+          },
+          {
+            "startMs": 1800,
+            "endMs": 2009.9999999999998,
+            "durationMs": 210
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000030517578125,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 40,
+        "trailingQuietMs": 44.208333333333336,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": -0.00010856203152798116,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 3,
+      "clauseCount": 3,
+      "wordCount": 11,
+      "punctuation": {
+        ",": 0,
+        ".": 3,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 8,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "ratings": null,
+          "comment": " hav <- sounds strange in danish the V would be silent ",
+          "heardExactAsset": true,
+          "audioHash": "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72"
+        }
+      ],
+      "olderExactByteFeedback": [],
+      "latestHumanRatingForExactBytes": {
+        "key": "refusal-close:b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+        "hash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+        "version": "stage-2.0c31-candidate-1",
+        "heardHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+        "sourceEndedProof": "web-audio-source-ended:952de911-f341-4105-91df-d7e7f8229384:frames=61301:rate=24000:context=520.352",
+        "pronunciation": 4,
+        "naturalness": 4,
+        "pace": 4,
+        "verdict": "PASS",
+        "comment": "",
+        "sharedDefect": false,
+        "at": "2026-10-22T14:40:57.192Z"
+      },
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [
+        "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72"
+      ],
+      "currentHumanStatus": "LATEST_EXACT_BYTES_SELF_REPORTED_PASS",
+      "classification": "KEEP_CURRENT",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "identity",
+      "reviewKey": "identity:291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+      "canonicalText": "Jeg hedder Isabella og ringer fra aPureBase.",
+      "synthesisText": "Jeg hedder Isabella og ringer fra aPureBase.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+      "canonicalTextHash": "d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11",
+      "synthesisTextHash": "d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "Im4pW0S5IUJjaN8ZAmKk",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 2.786375,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.170013427734375,
+      "rawRms": 0.02464242164140884,
+      "renderedPeak": 0.6047990918159485,
+      "renderedRms": 0.08766197924419679,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 326.375,
+        "internalQuietRuns": [
+          {
+            "startMs": 1040,
+            "endMs": 1200,
+            "durationMs": 160
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.000457763671875,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 0,
+        "trailingQuietMs": 36.375,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": 0.001628430443815887,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 1,
+      "wordCount": 7,
+      "punctuation": {
+        ",": 0,
+        ".": 1,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "aPureBase"
+      ],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 9,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "about-apurebase",
+      "reviewKey": "about-apurebase:b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+      "canonicalText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+      "synthesisText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+      "canonicalTextHash": "6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6",
+      "synthesisTextHash": "6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "b1Wr95EscZ5NCuOatDAj",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 4.040291666666667,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.169891357421875,
+      "rawRms": 0.025837746045647342,
+      "renderedPeak": 0.604364812374115,
+      "renderedRms": 0.09191417913189671,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 30,
+        "trailingQuietMs": 240.29166666666666,
+        "internalQuietRuns": [
+          {
+            "startMs": 1600,
+            "endMs": 1770,
+            "durationMs": 170
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000091552734375,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 30,
+        "trailingQuietMs": 50.291666666666664,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": -0.0003256860945839435,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 1,
+      "wordCount": 7,
+      "punctuation": {
+        ",": 0,
+        ".": 1,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "aPureBase"
+      ],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [],
+      "latestHumanRatingForExactBytes": {
+        "key": "about-apurebase:b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+        "hash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+        "version": "stage-2.0c1-approved-1",
+        "heardHash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+        "sourceEndedProof": "web-audio-source-ended:f9ce8b8c-bdfb-4f90-93f5-d798a2081714:frames=96967:rate=24000:context=536.3413333333333",
+        "pronunciation": 4,
+        "naturalness": 4,
+        "pace": 4,
+        "verdict": "PASS",
+        "comment": "",
+        "sharedDefect": false,
+        "at": "2026-10-22T14:41:11.174Z"
+      },
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "LATEST_EXACT_BYTES_SELF_REPORTED_PASS",
+      "classification": "KEEP_CURRENT",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "explanation",
+      "reviewKey": "explanation:ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+      "canonicalText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+      "synthesisText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "assetHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+      "canonicalTextHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+      "synthesisTextHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "BoVNorF2VkpKk3d8T5KN",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 7.476833333333333,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.16204833984375,
+      "rawRms": 0.024996009824415525,
+      "renderedPeak": 0.5764643549919128,
+      "renderedRms": 0.08891981989020942,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 60,
+        "trailingQuietMs": 256.83333333333337,
+        "internalQuietRuns": [
+          {
+            "startMs": 2350,
+            "endMs": 2880,
+            "durationMs": 530
+          },
+          {
+            "startMs": 4090,
+            "endMs": 4370,
+            "durationMs": 280
+          },
+          {
+            "startMs": 4640,
+            "endMs": 4810,
+            "durationMs": 170
+          },
+          {
+            "startMs": 4960,
+            "endMs": 5360,
+            "durationMs": 400
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000152587890625,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 30,
+        "trailingQuietMs": 46.83333333333333,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": -0.0005428101285360754,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 2,
+      "wordCount": 14,
+      "punctuation": {
+        ",": 1,
+        ".": 1,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 10,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "ratings": null,
+          "comment": "sygdomsområder, produkter og medicinske opdateringer. <. not correct danish I think (medicinske opdateringer)",
+          "heardExactAsset": true,
+          "audioHash": "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142"
+        }
+      ],
+      "olderExactByteFeedback": [],
+      "latestHumanRatingForExactBytes": {
+        "key": "explanation:ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+        "hash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+        "version": "stage-2.0c31-candidate-1",
+        "heardHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+        "sourceEndedProof": "web-audio-source-ended:19a80fcb-5ed5-48f2-9d8a-56581ca252ad:frames=179444:rate=24000:context=581.9306666666666",
+        "pronunciation": 4,
+        "naturalness": 4,
+        "pace": 4,
+        "verdict": "PASS",
+        "comment": "",
+        "sharedDefect": false,
+        "at": "2026-10-22T14:41:51.942Z"
+      },
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [
+        "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142"
+      ],
+      "currentHumanStatus": "LATEST_EXACT_BYTES_SELF_REPORTED_PASS",
+      "classification": "KEEP_CURRENT",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "why-calling",
+      "reviewKey": "why-calling:e42efb01c72e78f97a5c19de443e898637af5c0e55f3ec41429d206474b59faa",
+      "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+      "synthesisText": "Jeg ringer kun for at spørge om a Pure Base må senne dig relevant faglig information via e-mail.",
+      "phraseVersion": "stage-2.0c32-sende-correction-1",
+      "assetHash": "e42efb01c72e78f97a5c19de443e898637af5c0e55f3ec41429d206474b59faa",
+      "canonicalTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+      "synthesisTextHash": "b31c189ea8e17557c9fd2bddc851003b24c75d48539aaf2c694cf57161d8f6a8",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "XVE1gsUPCyrcJj6xUTkX",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 5.851416666666666,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.171142578125,
+      "rawRms": 0.025693662873954564,
+      "renderedPeak": 0.6088158488273621,
+      "renderedRms": 0.09140162335542014,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 60,
+        "trailingQuietMs": 231.41666666666666,
+        "internalQuietRuns": [
+          {
+            "startMs": 1710,
+            "endMs": 1940,
+            "durationMs": 230
+          },
+          {
+            "startMs": 3740,
+            "endMs": 3900,
+            "durationMs": 160
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000091552734375,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 60,
+        "trailingQuietMs": 201.41666666666666,
+        "internalQuietRuns": [
+          {
+            "startMs": 1730,
+            "endMs": 1940,
+            "durationMs": 210
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.0003256860945839435,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 2,
+      "wordCount": 16,
+      "punctuation": {
+        ",": 1,
+        ".": 1,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "sende dig",
+        "aPureBase"
+      ],
+      "historicalHumanFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 11,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "ratings": null,
+          "comment": "it stops after jeg - and starts again . not fluent",
+          "heardExactAsset": true,
+          "audioHash": "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa"
+        },
+        {
+          "stage": "C-3.2",
+          "source": "latest-export",
+          "actionIndex": 0,
+          "decision": "PASS",
+          "ratings": {
+            "naturalness": 4,
+            "pronunciation": 2,
+            "pace": 4
+          },
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb"
+        },
+        {
+          "source": "latest-submitted-offline-review",
+          "audioHash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+          "key": "why-calling:b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+          "hash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+          "version": "stage-2.0c32-candidate-1",
+          "heardHash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+          "sourceEndedProof": "web-audio-source-ended:7078ee5e-7a7d-413a-ad51-18ae33de3379:frames=280868:rate=48000:context=211.49333333333334",
+          "pronunciation": 2,
+          "naturalness": 4,
+          "pace": 4,
+          "verdict": "FAIL",
+          "comment": "remove sende d and put n like senne",
+          "sharedDefect": false,
+          "at": "2026-10-22T14:43:08.408Z"
+        }
+      ],
+      "olderExactByteFeedback": [],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [
+        "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+        "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+        "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff"
+      ],
+      "currentHumanStatus": "NEW_BYTES_NATIVE_REVIEW_PENDING",
+      "classification": "CURRENT_NEW_HUMAN_REVIEW_PENDING",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "unsubscribe",
+      "reviewKey": "unsubscribe:5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+      "canonicalText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+      "synthesisText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "assetHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+      "canonicalTextHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+      "synthesisTextHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "EICBHZPooqOvsGx2lArT",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 4.8762083333333335,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.204254150390625,
+      "rawRms": 0.02448220710457358,
+      "renderedPeak": 0.7266056537628174,
+      "renderedRms": 0.08709203834120556,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 30,
+        "trailingQuietMs": 236.20833333333331,
+        "internalQuietRuns": [
+          {
+            "startMs": 200,
+            "endMs": 780,
+            "durationMs": 580
+          },
+          {
+            "startMs": 1590,
+            "endMs": 1780,
+            "durationMs": 190
+          },
+          {
+            "startMs": 2000,
+            "endMs": 2180,
+            "durationMs": 180
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.00006103515625,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 10,
+        "trailingQuietMs": 46.20833333333333,
+        "internalQuietRuns": [
+          {
+            "startMs": 200,
+            "endMs": 700,
+            "durationMs": 500
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.00021712406305596232,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 3,
+      "wordCount": 14,
+      "punctuation": {
+        ",": 1,
+        ".": 2,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 12,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "ratings": null,
+          "comment": "framelde <- the D her is silent in danish ",
+          "heardExactAsset": true,
+          "audioHash": "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6"
+        }
+      ],
+      "olderExactByteFeedback": [],
+      "latestHumanRatingForExactBytes": {
+        "key": "unsubscribe:5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+        "hash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+        "version": "stage-2.0c31-candidate-1",
+        "heardHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+        "sourceEndedProof": "web-audio-source-ended:84caf009-c43a-40e5-b9f5-ffff26ed4dfb:frames=117029:rate=24000:context=668.5333333333333",
+        "pronunciation": 4,
+        "naturalness": 4,
+        "pace": 4,
+        "verdict": "PASS",
+        "comment": "",
+        "sharedDefect": false,
+        "at": "2026-10-22T14:43:30.708Z"
+      },
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [
+        "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6"
+      ],
+      "currentHumanStatus": "LATEST_EXACT_BYTES_SELF_REPORTED_PASS",
+      "classification": "KEEP_CURRENT",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "repeat-prefix",
+      "reviewKey": "repeat-prefix:1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+      "canonicalText": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+      "synthesisText": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+      "canonicalTextHash": "124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290",
+      "synthesisTextHash": "124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "ouglrKeOa3Wt4m03Gqlg",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 2.322,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.129180908203125,
+      "rawRms": 0.023744340947876814,
+      "renderedPeak": 0.4595430791378021,
+      "renderedRms": 0.08446718238099818,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 20,
+        "trailingQuietMs": 232,
+        "internalQuietRuns": [
+          {
+            "startMs": 570,
+            "endMs": 780,
+            "durationMs": 210
+          }
+        ],
+        "edgeSamples": {
+          "first": 0,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 20,
+        "trailingQuietMs": 42,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": 0,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 2,
+      "wordCount": 5,
+      "punctuation": {
+        ",": 0,
+        ".": 2,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 13,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "clarify",
+      "reviewKey": "clarify:5206820f9e531c97823a92dbbf3fcfee92c50fe6ff82e78e61846f48e9f0e06b",
+      "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Selvfølgelig. Må a Pure Base senne relevant faglig information til dig via e-mail?",
+      "phraseVersion": "stage-2.0c32-sende-correction-1",
+      "assetHash": "5206820f9e531c97823a92dbbf3fcfee92c50fe6ff82e78e61846f48e9f0e06b",
+      "canonicalTextHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+      "synthesisTextHash": "21e302e194cea936eb993121b64e388efdc677a82b53b7cd44d696c45f6ffa93",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "SIqk3yUkxWlIobk8TRAl",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 5.0155,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.132354736328125,
+      "rawRms": 0.026313297393598643,
+      "renderedPeak": 0.47083351016044617,
+      "renderedRms": 0.0936058867310266,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 20,
+        "trailingQuietMs": 225.5,
+        "internalQuietRuns": [
+          {
+            "startMs": 650,
+            "endMs": 1100,
+            "durationMs": 450
+          },
+          {
+            "startMs": 2620,
+            "endMs": 2790,
+            "durationMs": 170
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.00030517578125,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 10,
+        "trailingQuietMs": 35.5,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": 0.0010856202570721507,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 2,
+      "wordCount": 11,
+      "punctuation": {
+        ",": 0,
+        ".": 1,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "aPureBase"
+      ],
+      "historicalHumanFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 14,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d"
+        },
+        {
+          "stage": "C-3.2",
+          "source": "latest-export",
+          "actionIndex": 3,
+          "decision": "PASS",
+          "ratings": {
+            "naturalness": 4,
+            "pronunciation": 2,
+            "pace": 4
+          },
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d"
+        },
+        {
+          "source": "latest-submitted-offline-review",
+          "audioHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+          "key": "clarify:55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+          "hash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+          "version": "stage-2.0c32-clarify-ab-1",
+          "heardHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+          "sourceEndedProof": "web-audio-source-ended:bb1e8e14-fda7-4b51-9c91-79ad76d6750d:frames=256348:rate=48000:context=396.4053333333333",
+          "pronunciation": 4,
+          "naturalness": 4,
+          "pace": 4,
+          "verdict": "PASS",
+          "comment": "write senne instead of sende",
+          "sharedDefect": false,
+          "at": "2026-10-22T14:46:25.460Z"
+        }
+      ],
+      "olderExactByteFeedback": [],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [
+        "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+        "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420"
+      ],
+      "currentHumanStatus": "NEW_BYTES_NATIVE_REVIEW_PENDING",
+      "classification": "CURRENT_NEW_HUMAN_REVIEW_PENDING",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "callback",
+      "reviewKey": "callback:8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+      "canonicalText": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+      "synthesisText": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+      "canonicalTextHash": "855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6",
+      "synthesisTextHash": "855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "JPDav77rUmoAfiMxPQsj",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 3.29725,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.1654052734375,
+      "rawRms": 0.024822198390470732,
+      "renderedPeak": 0.5884062051773071,
+      "renderedRms": 0.08830150995703238,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 237.25,
+        "internalQuietRuns": [
+          {
+            "startMs": 730,
+            "endMs": 1160,
+            "durationMs": 430
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.000030517578125,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 57.25,
+        "internalQuietRuns": [
+          {
+            "startMs": 740,
+            "endMs": 1150,
+            "durationMs": 410
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.00010856203152798116,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 3,
+      "wordCount": 12,
+      "punctuation": {
+        ",": 1,
+        ".": 1,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 15,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "callback-close",
+      "reviewKey": "callback-close:235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+      "canonicalText": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+      "synthesisText": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+      "canonicalTextHash": "1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4",
+      "synthesisTextHash": "1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "TaweadHwoSZgVGFm4x0U",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 4.133166666666667,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.191162109375,
+      "rawRms": 0.025134151241003936,
+      "renderedPeak": 0.6800325512886047,
+      "renderedRms": 0.08941123876230832,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 20,
+        "trailingQuietMs": 323.1666666666667,
+        "internalQuietRuns": [
+          {
+            "startMs": 610,
+            "endMs": 890,
+            "durationMs": 280
+          },
+          {
+            "startMs": 2740,
+            "endMs": 3130,
+            "durationMs": 390
+          },
+          {
+            "startMs": 3280,
+            "endMs": 3440,
+            "durationMs": 160
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.000274658203125,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 10,
+        "trailingQuietMs": 163.16666666666666,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": 0.000977058312855661,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 3,
+      "clauseCount": 3,
+      "wordCount": 12,
+      "punctuation": {
+        ",": 0,
+        ".": 3,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 16,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "target-unavailable",
+      "reviewKey": "target-unavailable:2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+      "canonicalText": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+      "synthesisText": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+      "canonicalTextHash": "43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405",
+      "synthesisTextHash": "43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "CUcYOHAiDPfrJNvtzapX",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 3.390125,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.180023193359375,
+      "rawRms": 0.024779946151846914,
+      "renderedPeak": 0.640407383441925,
+      "renderedRms": 0.08815120348364018,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 40,
+        "trailingQuietMs": 230.125,
+        "internalQuietRuns": [
+          {
+            "startMs": 1040,
+            "endMs": 1480,
+            "durationMs": 440
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000030517578125,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 40,
+        "trailingQuietMs": 210.125,
+        "internalQuietRuns": [
+          {
+            "startMs": 1060,
+            "endMs": 1480,
+            "durationMs": 420
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.00010856203152798116,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 2,
+      "wordCount": 13,
+      "punctuation": {
+        ",": 0,
+        ".": 1,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 17,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "send-first",
+      "reviewKey": "send-first:19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+      "canonicalText": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+      "synthesisText": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+      "canonicalTextHash": "d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1",
+      "synthesisTextHash": "d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "JyEAxarPvBGUk6N4r5zX",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 4.365333333333333,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.16632080078125,
+      "rawRms": 0.025812784346838452,
+      "renderedPeak": 0.5916630625724792,
+      "renderedRms": 0.09182538137148157,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 60,
+        "trailingQuietMs": 235.33333333333334,
+        "internalQuietRuns": [
+          {
+            "startMs": 1770,
+            "endMs": 2080,
+            "durationMs": 310
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.00018310546875,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 55.33333333333333,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": -0.000651372189167887,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 2,
+      "wordCount": 12,
+      "punctuation": {
+        ",": 1,
+        ".": 1,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "hav"
+      ],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 18,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "uncertain-consent",
+      "reviewKey": "uncertain-consent:ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+      "canonicalText": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+      "canonicalTextHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+      "synthesisTextHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "g9q1qnsFa1aATsKPY2JP",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 8.68425,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.16314697265625,
+      "rawRms": 0.023587312485917764,
+      "renderedPeak": 0.5803726315498352,
+      "renderedRms": 0.08390857550896413,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 244.25,
+        "internalQuietRuns": [
+          {
+            "startMs": 930,
+            "endMs": 1200,
+            "durationMs": 270
+          },
+          {
+            "startMs": 2880,
+            "endMs": 3080,
+            "durationMs": 200
+          },
+          {
+            "startMs": 3520,
+            "endMs": 4290,
+            "durationMs": 770
+          },
+          {
+            "startMs": 5960,
+            "endMs": 6140,
+            "durationMs": 180
+          },
+          {
+            "startMs": 7570,
+            "endMs": 7760,
+            "durationMs": 190
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000030517578125,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 44.25,
+        "internalQuietRuns": [
+          {
+            "startMs": 940,
+            "endMs": 1190,
+            "durationMs": 250
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.00010856203152798116,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 3,
+      "clauseCount": 3,
+      "wordCount": 24,
+      "punctuation": {
+        ",": 0,
+        ".": 2,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "aPureBase",
+        "hav"
+      ],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 19,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "already-receiving",
+      "reviewKey": "already-receiving:7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+      "canonicalText": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+      "canonicalTextHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+      "synthesisTextHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "Vj5OGFp7kYOWnkVIyYmZ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 7.430375,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.22393798828125,
+      "rawRms": 0.027837770046341116,
+      "renderedPeak": 0.7966281771659851,
+      "renderedRms": 0.09902898565080917,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 40,
+        "trailingQuietMs": 260.375,
+        "internalQuietRuns": [
+          {
+            "startMs": 210,
+            "endMs": 590,
+            "durationMs": 380
+          },
+          {
+            "startMs": 2270,
+            "endMs": 2920,
+            "durationMs": 650
+          },
+          {
+            "startMs": 4780,
+            "endMs": 4960,
+            "durationMs": 180
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.000030517578125,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 40,
+        "trailingQuietMs": 250.375,
+        "internalQuietRuns": [
+          {
+            "startMs": 290,
+            "endMs": 580,
+            "durationMs": 290
+          },
+          {
+            "startMs": 2290,
+            "endMs": 2910,
+            "durationMs": 620
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.00010856203152798116,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 3,
+      "clauseCount": 3,
+      "wordCount": 18,
+      "punctuation": {
+        ",": 0,
+        ".": 2,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "aPureBase"
+      ],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 20,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "more-explanation",
+      "reviewKey": "more-explanation:307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+      "canonicalText": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+      "synthesisText": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+      "canonicalTextHash": "93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f",
+      "synthesisTextHash": "93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "DYynWbNvzZWPESGelF5w",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 9.380875,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.225006103515625,
+      "rawRms": 0.025268138477256157,
+      "renderedPeak": 0.8004278540611267,
+      "renderedRms": 0.08988787966279801,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 30,
+        "trailingQuietMs": 300.875,
+        "internalQuietRuns": [
+          {
+            "startMs": 3280,
+            "endMs": 3430,
+            "durationMs": 150
+          },
+          {
+            "startMs": 5380,
+            "endMs": 6260,
+            "durationMs": 880
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.00030517578125,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 10,
+        "trailingQuietMs": 50.875,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": -0.0010856202570721507,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 4,
+      "wordCount": 23,
+      "punctuation": {
+        ",": 2,
+        ".": 2,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "aPureBase",
+        "framelde"
+      ],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 22,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "stop-contact-close",
+      "reviewKey": "stop-contact-close:8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+      "canonicalText": "Det forstår jeg. Tak for din tid. God dag.",
+      "synthesisText": "Det forstår jeg. Tak for din tid. God dag.",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "assetHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+      "canonicalTextHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+      "synthesisTextHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "ADIsTwQDyF7z55FZcSJZ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 2.229125,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.13311767578125,
+      "rawRms": 0.021228614511184497,
+      "renderedPeak": 0.4735475778579712,
+      "renderedRms": 0.07551783633245154,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 80,
+        "trailingQuietMs": 259.125,
+        "internalQuietRuns": [
+          {
+            "startMs": 710,
+            "endMs": 980,
+            "durationMs": 270
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000091552734375,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 80,
+        "trailingQuietMs": 229.125,
+        "internalQuietRuns": [
+          {
+            "startMs": 720,
+            "endMs": 980,
+            "durationMs": 260
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.0003256860945839435,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 3,
+      "clauseCount": 3,
+      "wordCount": 9,
+      "punctuation": {
+        ",": 0,
+        ".": 3,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 23,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "ratings": null,
+          "comment": "hav V is silent in danish ",
+          "heardExactAsset": true,
+          "audioHash": "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e"
+        }
+      ],
+      "olderExactByteFeedback": [],
+      "latestHumanRatingForExactBytes": {
+        "key": "stop-contact-close:8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+        "hash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+        "version": "stage-2.0c31-candidate-1",
+        "heardHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+        "sourceEndedProof": "web-audio-source-ended:5c5f30b3-d338-4caa-86ab-4b80af752abb:frames=53499:rate=24000:context=861.4186666666667",
+        "pronunciation": 4,
+        "naturalness": 4,
+        "pace": 4,
+        "verdict": "PASS",
+        "comment": "",
+        "sharedDefect": false,
+        "at": "2026-10-22T14:46:41.876Z"
+      },
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [
+        "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e"
+      ],
+      "currentHumanStatus": "LATEST_EXACT_BYTES_SELF_REPORTED_PASS",
+      "classification": "KEEP_CURRENT",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "thank-you",
+      "reviewKey": "thank-you:60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+      "canonicalText": "Perfekt, tak.",
+      "synthesisText": "Perfekt, tak.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+      "canonicalTextHash": "ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7",
+      "synthesisTextHash": "ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "BXsAjJrMIXs6MDL6HXVv",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 1.1145416666666668,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.12689208984375,
+      "rawRms": 0.017660052307821954,
+      "renderedPeak": 0.45140090584754944,
+      "renderedRms": 0.06282317383563864,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 70,
+        "trailingQuietMs": 354.54166666666663,
+        "internalQuietRuns": [
+          {
+            "startMs": 370,
+            "endMs": 590,
+            "durationMs": 220
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.00006103515625,
+          "last": -0.000152587890625
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 70,
+        "trailingQuietMs": 194.54166666666666,
+        "internalQuietRuns": [
+          {
+            "startMs": 380,
+            "endMs": 590,
+            "durationMs": 210
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.00021712406305596232,
+          "last": -0.0005428101285360754
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 2,
+      "wordCount": 2,
+      "punctuation": {
+        ",": 1,
+        ".": 1,
+        "?": 0,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 24,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "intermediary-consent-question",
+      "reviewKey": "intermediary-consent-question:2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+      "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+      "synthesisText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+      "canonicalTextHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+      "synthesisTextHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "ygQUsGtdGous3G3FJ1l3",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 5.108375,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.182525634765625,
+      "rawRms": 0.02660766133418648,
+      "renderedPeak": 0.649309515953064,
+      "renderedRms": 0.094653045466339,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 30,
+        "trailingQuietMs": 238.375,
+        "internalQuietRuns": [
+          {
+            "startMs": 380,
+            "endMs": 720,
+            "durationMs": 340
+          },
+          {
+            "startMs": 2210,
+            "endMs": 2380,
+            "durationMs": 170
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.00006103515625,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 30,
+        "trailingQuietMs": 118.375,
+        "internalQuietRuns": [
+          {
+            "startMs": 400,
+            "endMs": 710,
+            "durationMs": 310
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.00021712406305596232,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 2,
+      "wordCount": 12,
+      "punctuation": {
+        ",": 0,
+        ".": 1,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "aPureBase"
+      ],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 26,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "reviewKey": "receptionist-target-request:fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+      "canonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+      "synthesisText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "assetHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+      "canonicalTextHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+      "synthesisTextHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "scLFcfVjwgXYRP77ZA40",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 5.0155,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.15081787109375,
+      "rawRms": 0.02839183014996011,
+      "renderedPeak": 0.5365135669708252,
+      "renderedRms": 0.10099997723137262,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 60,
+        "trailingQuietMs": 275.5,
+        "internalQuietRuns": [
+          {
+            "startMs": 2960,
+            "endMs": 3420,
+            "durationMs": 460
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.00006103515625,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 60,
+        "trailingQuietMs": 45.5,
+        "internalQuietRuns": [
+          {
+            "startMs": 3110,
+            "endMs": 3390,
+            "durationMs": 280
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.00021712406305596232,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 2,
+      "wordCount": 13,
+      "punctuation": {
+        ",": 0,
+        ".": 1,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 28,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "ratings": null,
+          "comment": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende? < insted og vedkommende in danish it would be  - Kan jeg komme til at tale med ham?",
+          "heardExactAsset": true,
+          "audioHash": "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8"
+        }
+      ],
+      "olderExactByteFeedback": [],
+      "latestHumanRatingForExactBytes": {
+        "key": "receptionist-target-request:fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+        "hash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+        "version": "stage-2.0c31-candidate-1",
+        "heardHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+        "sourceEndedProof": "web-audio-source-ended:ddd1d184-bd22-455d-8961-43e4a43525b3:frames=120372:rate=24000:context=932.6293333333333",
+        "pronunciation": 4,
+        "naturalness": 4,
+        "pace": 4,
+        "verdict": "PASS",
+        "comment": "",
+        "sharedDefect": false,
+        "at": "2026-10-22T14:47:48.710Z"
+      },
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [
+        "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8"
+      ],
+      "currentHumanStatus": "LATEST_EXACT_BYTES_SELF_REPORTED_PASS",
+      "classification": "KEEP_CURRENT",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "reviewKey": "receptionist-target-request:a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+      "canonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+      "synthesisText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "assetHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+      "canonicalTextHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+      "synthesisTextHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "D4W58ZTWpMCCH5WsA63E",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 4.8762083333333335,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.20037841796875,
+      "rawRms": 0.029301263708866675,
+      "renderedPeak": 0.7128182649612427,
+      "renderedRms": 0.10423516035273266,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 266.2083333333333,
+        "internalQuietRuns": [
+          {
+            "startMs": 2870,
+            "endMs": 3410,
+            "durationMs": 540
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.00018310546875,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 10,
+        "trailingQuietMs": 56.208333333333336,
+        "internalQuietRuns": [
+          {
+            "startMs": 3020,
+            "endMs": 3200,
+            "durationMs": 180
+          },
+          {
+            "startMs": 3210,
+            "endMs": 3400,
+            "durationMs": 190
+          }
+        ],
+        "edgeSamples": {
+          "first": 0.000651372189167887,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 2,
+      "wordCount": 13,
+      "punctuation": {
+        ",": 0,
+        ".": 1,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 30,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "ratings": null,
+          "comment": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende? <- same as earlier\n\n",
+          "heardExactAsset": true,
+          "audioHash": "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706"
+        }
+      ],
+      "olderExactByteFeedback": [],
+      "latestHumanRatingForExactBytes": {
+        "key": "receptionist-target-request:a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+        "hash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+        "version": "stage-2.0c31-candidate-1",
+        "heardHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+        "sourceEndedProof": "web-audio-source-ended:1ef32bd5-2b72-4f26-ad5f-5a80247221af:frames=117029:rate=24000:context=965.9306666666666",
+        "pronunciation": 4,
+        "naturalness": 4,
+        "pace": 4,
+        "verdict": "PASS",
+        "comment": "",
+        "sharedDefect": false,
+        "at": "2026-10-22T14:48:28.276Z"
+      },
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [
+        "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706"
+      ],
+      "currentHumanStatus": "LATEST_EXACT_BYTES_SELF_REPORTED_PASS",
+      "classification": "KEEP_CURRENT",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "wrong-person-close",
+      "reviewKey": "wrong-person-close:8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+      "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+      "synthesisText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+      "canonicalTextHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+      "synthesisTextHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "BsTqfMWwsxSNSQxiseS7",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 3.761625,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.209381103515625,
+      "rawRms": 0.03008053045619375,
+      "renderedPeak": 0.7448440790176392,
+      "renderedRms": 0.10700729315727965,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 80,
+        "trailingQuietMs": 251.625,
+        "internalQuietRuns": [
+          {
+            "startMs": 620,
+            "endMs": 900,
+            "durationMs": 280
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.000335693359375,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 60,
+        "trailingQuietMs": 201.625,
+        "internalQuietRuns": [
+          {
+            "startMs": 700,
+            "endMs": 900,
+            "durationMs": 200
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.0011941823177039623,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 2,
+      "wordCount": 13,
+      "punctuation": {
+        ",": 0,
+        ".": 1,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 31,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "authority-ask",
+      "reviewKey": "authority-ask:8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+      "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+      "synthesisText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+      "canonicalTextHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+      "synthesisTextHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "UjuqvKHgSOxe4lMdUcHb",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 4.922625,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.1839599609375,
+      "rawRms": 0.02865852263647114,
+      "renderedPeak": 0.6544119119644165,
+      "renderedRms": 0.10194869857157425,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 242.625,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": -0.0001220703125,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 222.625,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": -0.00043424812611192465,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 2,
+      "wordCount": 17,
+      "punctuation": {
+        ",": 1,
+        ".": 0,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 33,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "wrong-person-close",
+      "reviewKey": "wrong-person-close:71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+      "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+      "synthesisText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+      "canonicalTextHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+      "synthesisTextHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "lxkdLiaLSSsIaN7kDOZQ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 3.9938333333333333,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.193756103515625,
+      "rawRms": 0.030152784615609572,
+      "renderedPeak": 0.6892603039741516,
+      "renderedRms": 0.10726432723869522,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 70,
+        "trailingQuietMs": 283.8333333333333,
+        "internalQuietRuns": [
+          {
+            "startMs": 530,
+            "endMs": 1260,
+            "durationMs": 730
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.00006103515625,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 70,
+        "trailingQuietMs": 253.83333333333334,
+        "internalQuietRuns": [
+          {
+            "startMs": 550,
+            "endMs": 1260,
+            "durationMs": 710
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.00021712406305596232,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 2,
+      "wordCount": 13,
+      "punctuation": {
+        ",": 0,
+        ".": 1,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 34,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "intermediary-consent-question",
+      "reviewKey": "intermediary-consent-question:80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+      "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+      "synthesisText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+      "canonicalTextHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+      "synthesisTextHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "RJr2RuYrDluEaNFV3kpk",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 5.0155,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.158599853515625,
+      "rawRms": 0.02506663989669577,
+      "renderedPeak": 0.5641968846321106,
+      "renderedRms": 0.0891710765188728,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 20,
+        "trailingQuietMs": 225.5,
+        "internalQuietRuns": [
+          {
+            "startMs": 310,
+            "endMs": 770,
+            "durationMs": 460
+          }
+        ],
+        "edgeSamples": {
+          "first": -0.0001220703125,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 10,
+        "trailingQuietMs": 45.5,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": -0.00043424812611192465,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 2,
+      "clauseCount": 2,
+      "wordCount": 12,
+      "punctuation": {
+        ",": 0,
+        ".": 1,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [
+        "aPureBase"
+      ],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 35,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "authority-ask",
+      "reviewKey": "authority-ask:6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+      "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+      "synthesisText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+      "canonicalTextHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+      "synthesisTextHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "gCptWtrGIePSlbkArsMI",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 4.551125,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.244476318359375,
+      "rawRms": 0.030541533102846265,
+      "renderedPeak": 0.8696904182434082,
+      "renderedRms": 0.10864724579647217,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 60,
+        "trailingQuietMs": 231.125,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": 0,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 50,
+        "trailingQuietMs": 201.125,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": 0,
+          "last": 0
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 2,
+      "wordCount": 17,
+      "punctuation": {
+        ",": 1,
+        ".": 0,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 36,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    },
+    {
+      "phraseId": "email-correction-confirm",
+      "reviewKey": "email-correction-confirm:0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "canonicalText": "Er det korrekt?",
+      "synthesisText": "Er det korrekt?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "canonicalTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+      "synthesisTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "FJB7Xyo37ksWP79JFapS",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "duration": 0.97525,
+      "format": {
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "encoding": "PCM_S16LE_MONO"
+      },
+      "rawPeak": 0.18048095703125,
+      "rawRms": 0.027123547507890488,
+      "renderedPeak": 0.6420358419418335,
+      "renderedRms": 0.09648823855232025,
+      "gain": 3.5573605757216837,
+      "clipping": 0,
+      "peakProtection": 0,
+      "rawSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 40,
+        "trailingQuietMs": 365.25,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": 0.000030517578125,
+          "last": -0.000091552734375
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "renderedSignal": {
+        "method": "10 ms frame RMS below 0.005 (-46.02 dBFS); quiet is not proof of a linguistic defect",
+        "leadingQuietMs": 40,
+        "trailingQuietMs": 145.25,
+        "internalQuietRuns": [],
+        "edgeSamples": {
+          "first": 0.00010856203152798116,
+          "last": -0.0003256860945839435
+        },
+        "truncation": "Closed WAV/container/length checked; acoustic truncation requires listening"
+      },
+      "sentenceCount": 1,
+      "clauseCount": 1,
+      "wordCount": 3,
+      "punctuation": {
+        ",": 0,
+        ".": 0,
+        "?": 1,
+        "!": 0,
+        ";": 0,
+        ":": 0
+      },
+      "knownContexts": [],
+      "historicalHumanFeedback": [],
+      "olderExactByteFeedback": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 7,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98"
+        }
+      ],
+      "latestHumanRatingForExactBytes": null,
+      "latestSubmittedReviewSource": {
+        "sha256": "d3a2804f8c9b47a0dceb33657d1eed62b80ae74084109a709fd4e7c81ca71084",
+        "reviewer": "Humza",
+        "authenticated": false
+      },
+      "replacementLineage": [],
+      "currentHumanStatus": "RESOLVED_BY_HUMAN_EVIDENCE",
+      "classification": "HUMAN_ONLY_QUALITY_GATE",
+      "technicalRecommendation": "No proven bounded automatable defect requiring new synthesis. Preserve bytes/settings; assess consonants, connected speech, cadence, endings and phrase joins through native listening.",
+      "nativeNaturalnessProven": false
+    }
+  ],
+  "transitions": [
+    {
+      "scenario": "direct",
+      "from": "opening",
+      "to": "purpose",
+      "fromHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "toHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "transitionClass": "WAIT_FOR_RECIPIENT",
+      "modeledOutputGapMs": 1650,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": 2.593368015980807,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "direct",
+      "from": "purpose",
+      "to": "consent-question",
+      "fromHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "toHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "transitionClass": "IMMEDIATE",
+      "modeledOutputGapMs": 150,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": 1.085365709098229,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "direct",
+      "from": "consent-question",
+      "to": "email-request",
+      "fromHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "toHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "transitionClass": "WAIT_FOR_RECIPIENT",
+      "modeledOutputGapMs": 3850,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": -0.230552672641795,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "direct",
+      "from": "email-request",
+      "to": "email-confirmation-question",
+      "fromHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "toHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "transitionClass": "PROCESSING_WAIT",
+      "modeledOutputGapMs": 4850,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": -2.193710644598332,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "direct",
+      "from": "email-confirmation-question",
+      "to": "success-close",
+      "fromHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "toHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "transitionClass": "WAIT_FOR_RECIPIENT",
+      "modeledOutputGapMs": 3850,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": -1.6445909785372965,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "clarification",
+      "from": "opening",
+      "to": "purpose",
+      "fromHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "toHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "transitionClass": "WAIT_FOR_RECIPIENT",
+      "modeledOutputGapMs": 1650,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": 2.593368015980807,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "clarification",
+      "from": "purpose",
+      "to": "consent-question",
+      "fromHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "toHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "transitionClass": "IMMEDIATE",
+      "modeledOutputGapMs": 150,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": 1.085365709098229,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "clarification",
+      "from": "consent-question",
+      "to": "clarify",
+      "fromHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "toHash": "5206820f9e531c97823a92dbbf3fcfee92c50fe6ff82e78e61846f48e9f0e06b",
+      "transitionClass": "WAIT_FOR_RECIPIENT",
+      "modeledOutputGapMs": 2350,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": -2.6876876466251827,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "clarification",
+      "from": "clarify",
+      "to": "email-request",
+      "fromHash": "5206820f9e531c97823a92dbbf3fcfee92c50fe6ff82e78e61846f48e9f0e06b",
+      "toHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "transitionClass": "WAIT_FOR_RECIPIENT",
+      "modeledOutputGapMs": 3850,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": 2.4571349739833876,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "clarification",
+      "from": "email-request",
+      "to": "email-confirmation-question",
+      "fromHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "toHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "transitionClass": "PROCESSING_WAIT",
+      "modeledOutputGapMs": 4850,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": -2.193710644598332,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "clarification",
+      "from": "email-confirmation-question",
+      "to": "success-close",
+      "fromHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "toHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "transitionClass": "WAIT_FOR_RECIPIENT",
+      "modeledOutputGapMs": 3850,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": -1.6445909785372965,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "refusal",
+      "from": "opening",
+      "to": "purpose",
+      "fromHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "toHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "transitionClass": "WAIT_FOR_RECIPIENT",
+      "modeledOutputGapMs": 1650,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": 2.593368015980807,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "refusal",
+      "from": "purpose",
+      "to": "consent-question",
+      "fromHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "toHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "transitionClass": "IMMEDIATE",
+      "modeledOutputGapMs": 150,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": 1.085365709098229,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "refusal",
+      "from": "consent-question",
+      "to": "refusal-close",
+      "fromHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "toHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+      "transitionClass": "WAIT_FOR_RECIPIENT",
+      "modeledOutputGapMs": 2350,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": -2.9319167794975245,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "transfer",
+      "from": "opening",
+      "to": "receptionist-target-request",
+      "fromHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "toHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+      "transitionClass": "WAIT_FOR_RECIPIENT",
+      "modeledOutputGapMs": 1650,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": 1.6514083617779711,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "transfer",
+      "from": "receptionist-target-request",
+      "to": "purpose",
+      "fromHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+      "toHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "transitionClass": "WAIT_FOR_RECIPIENT",
+      "modeledOutputGapMs": 1650,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": 0.9419596542028366,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    },
+    {
+      "scenario": "transfer",
+      "from": "purpose",
+      "to": "consent-question",
+      "fromHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "toHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "transitionClass": "IMMEDIATE",
+      "modeledOutputGapMs": 150,
+      "physicalGapMs": null,
+      "relativeRenderedRmsDb": 1.085365709098229,
+      "physicalContinuity": "UNVERIFIED",
+      "interpretation": "Synthetic clock includes configured recipient thinking/speech, operator approval and simulator pace. Not measured physical silence or provider latency. No runtime pause was added."
+    }
+  ]
+}

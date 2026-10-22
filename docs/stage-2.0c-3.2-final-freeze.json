@@ -1,0 +1,225 @@
+{
+  "stage": "2.0C-3.2",
+  "status": "ENGINEERING_VERIFIED_READY_FOR_CONDITIONAL_PUBLICATION",
+  "humanAccepted": false,
+  "productionReady": false,
+  "preFreezeMainSHA": "dc63f0e427f61e56c8e29e13e0fd10c8e4f4b748",
+  "candidateSourceHash": "183c2affcce513623b734945ac6fb14cf24ffe844bdca48e4980c0d66412f5bb",
+  "publicationIdentity": "Record pre-merge SHA, merged main SHA, PR/checks and STAGE_2_0C32_FROZEN_BASELINE_SHA in PR and completion report after conditional publication; tracked source cannot contain its own future commit SHA.",
+  "validation": {
+    "focused": {
+      "exitCode": 0,
+      "testsPassed": 723,
+      "testFiles": 15,
+      "elapsedMs": 3262.888958
+    },
+    "c31": {
+      "exitCode": 0,
+      "testsPassed": 139,
+      "testFiles": 5,
+      "elapsedMs": 1927.1480839999995
+    },
+    "prior-consent": {
+      "exitCode": 0,
+      "testsPassed": 496,
+      "testFiles": 13,
+      "elapsedMs": 1426.5195000000003
+    },
+    "replay-1": {
+      "exitCode": 0,
+      "testsPassed": 2,
+      "testFiles": 1,
+      "elapsedMs": 2480.2606670000005
+    },
+    "pcm-1": {
+      "exitCode": 0,
+      "testsPassed": 1,
+      "testFiles": 1,
+      "elapsedMs": 625.9372079999994
+    },
+    "replay-2": {
+      "exitCode": 0,
+      "testsPassed": 2,
+      "testFiles": 1,
+      "elapsedMs": 2570.252208
+    },
+    "pcm-2": {
+      "exitCode": 0,
+      "testsPassed": 1,
+      "testFiles": 1,
+      "elapsedMs": 614.9690410000003
+    },
+    "replay-3": {
+      "exitCode": 0,
+      "testsPassed": 2,
+      "testFiles": 1,
+      "elapsedMs": 2479.730749999999
+    },
+    "pcm-3": {
+      "exitCode": 0,
+      "testsPassed": 1,
+      "testFiles": 1,
+      "elapsedMs": 608.9080839999988
+    },
+    "replay-4": {
+      "exitCode": 0,
+      "testsPassed": 2,
+      "testFiles": 1,
+      "elapsedMs": 2500.0753750000003
+    },
+    "pcm-4": {
+      "exitCode": 0,
+      "testsPassed": 1,
+      "testFiles": 1,
+      "elapsedMs": 632.9220830000013
+    },
+    "replay-5": {
+      "exitCode": 0,
+      "testsPassed": 2,
+      "testFiles": 1,
+      "elapsedMs": 2488.5420000000013
+    },
+    "pcm-5": {
+      "exitCode": 0,
+      "testsPassed": 1,
+      "testFiles": 1,
+      "elapsedMs": 644.4522919999981
+    },
+    "full-1": {
+      "exitCode": 0,
+      "testsPassed": 1843,
+      "testFiles": 93,
+      "elapsedMs": 11089.870332999999
+    },
+    "full-2": {
+      "exitCode": 0,
+      "testsPassed": 1843,
+      "testFiles": 93,
+      "elapsedMs": 9627.355875000001
+    },
+    "full-3": {
+      "exitCode": 0,
+      "testsPassed": 1843,
+      "testFiles": 93,
+      "elapsedMs": 10133.285916
+    },
+    "lint": {
+      "exitCode": 0,
+      "testsPassed": null,
+      "testFiles": null,
+      "elapsedMs": 3739.9472499999974
+    },
+    "typecheck": {
+      "exitCode": 0,
+      "testsPassed": null,
+      "testFiles": null,
+      "elapsedMs": 5804.642125000006
+    },
+    "standard-build": {
+      "exitCode": 0,
+      "testsPassed": null,
+      "testFiles": null,
+      "elapsedMs": 6348.237249999998
+    }
+  },
+  "safety": {
+    "emailCases": 66,
+    "emailPolicyCorrect": 66,
+    "falseEmailAutoAccepts": 0,
+    "ambiguousAutomaticSelections": 0,
+    "dbModelCases": 18,
+    "dbModelPassed": 18,
+    "negativeControl": {
+      "kind": "TEST_ONLY_UNSAFE_SNAPSHOT_NEVER_APPLIED_TO_REAL_CONTROLLER",
+      "metrics": {
+        "falseAutoAccepts": 1,
+        "ambiguousAutoSelections": 1
+      },
+      "detected": true,
+      "realControllerStoredEmail": null
+    },
+    "consentCases": 29,
+    "consentFalsePositives": 0,
+    "scenarios": 46,
+    "remediation": 32,
+    "normalPathFullEmailReadbackCount": 0,
+    "requiredListening": 12,
+    "optionalDiagnostics": 4,
+    "recordingsPreserved": 52,
+    "providerRequests": 0,
+    "audioGeneration": 0,
+    "liveASR": 0,
+    "telephone": 0,
+    "productionReady": false,
+    "accepted": false
+  },
+  "recordings": {
+    "total": 54,
+    "previous": 52,
+    "newAlreadyGeneratedBeforeFreeze": 2,
+    "newDuringFreeze": 0,
+    "zeroClipping": true,
+    "allExactHashesVerified": true
+  },
+  "currentHashes": {
+    "why-calling": "e42efb01c72e78f97a5c19de443e898637af5c0e55f3ec41429d206474b59faa",
+    "clarify": "5206820f9e531c97823a92dbbf3fcfee92c50fe6ff82e78e61846f48e9f0e06b",
+    "success-close": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908"
+  },
+  "canonicalSendePreserved": true,
+  "senneOnlyExactProviderInputs": true,
+  "requiredListening": 12,
+  "optionalDiagnostics": 4,
+  "normalFullEmailReadbackReachability": 0,
+  "operations": {
+    "route": "/",
+    "status": "LOCAL_UI_AND_FUTURE_INTERFACES_ONLY",
+    "transport": "NOT_CONNECTED",
+    "productionStatistics": "NOT_CONNECTED",
+    "evaluationExample": "EXPLICIT_OPT_IN_IN_MEMORY"
+  },
+  "humanAcceptance": {
+    "route": "/qa",
+    "status": "PRESERVED_NO_GATE_BYPASS"
+  },
+  "transcript": {
+    "schema": "c32-transcript-ledger-1",
+    "authority": "callId+sequenceNumber",
+    "storage": "IN_MEMORY_EXPLICIT_LOCAL_EXPORT_ONLY",
+    "retention": "BUSINESS_DECISION_REQUIRED",
+    "consentAuthority": false
+  },
+  "isabellaAudit": {
+    "units": 32,
+    "conclusion": "NO_CONCRETE_AUTOMATABLE_AUDIO_IMPROVEMENT_REQUIRING_NEW_TTS_IDENTIFIED",
+    "classifications": {
+      "CURRENT_NEW_HUMAN_REVIEW_PENDING": 2,
+      "HUMAN_ONLY_QUALITY_GATE": 20,
+      "KEEP_CURRENT": 10
+    }
+  },
+  "remainingHumanGates": [
+    "Native exact-byte listening for new Why Calling and Clarify; other unresolved quality gates",
+    "Five live microphone/provider ASR smoke tests",
+    "Email recovery/correction with genuine ASR",
+    "Physical natural-call scenarios and timing",
+    "Returned evidence review; no acceptance inferred from signal QA"
+  ],
+  "remainingBusinessGates": [
+    "eight-day mechanism",
+    "eight-day starting event",
+    "consent effectiveness timing",
+    "suppression timing",
+    "system of record",
+    "retention",
+    "recording authorization",
+    "full-call recording",
+    "unsubscribe mechanism",
+    "stored-email shortcut",
+    "intermediary authority standard"
+  ],
+  "Twilio": "NOT_STARTED",
+  "productionPersistence": "NOT_IMPLEMENTED",
+  "deployment": "NONE",
+  "postFreezeRule": "Future C32 changes require explicit regression reason, preserved frozen identity and fresh validation. Do not start Stage 2.0D in this task."
+}

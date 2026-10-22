@@ -1,6 +1,7 @@
+import {selectedSendeAssets,SendePlayback} from './sende';
 import {retestDefinition,retestPlaybackCatalog,validateRetestDefinition,RetestPlayback,RetestRegistry,qaResponse} from '../../corrections/retest';
 import type {ReviewAsset} from '../../acceptance/catalog';
-import {candidateCatalog,candidates,candidateIds,C32CandidatePlayback} from './candidates';
+import {candidateCatalog,candidateIds,C32CandidatePlayback} from './candidates';
 import type {ConversationDefinition,PlaybackRecord,ResponseClip} from '../../types';
 import type {LocalAudioContext,LocalPlaybackEvent} from '../../approved/localPlayback';
 import type {ListeningRegistry} from '../../acceptance/listening';
@@ -8,7 +9,7 @@ import {textHash} from '../../wording';
 
 /** One C32 selection authority; historical C1/C31 catalogs are never mutated. */
 export function currentC32Catalog(){
- const selected=candidateCatalog();
+ const corrections=selectedSendeAssets(),selected=candidateCatalog().map(a=>corrections.find(c=>c.phraseId===a.phraseId)??a);
  return structuredClone([...selected,...retestPlaybackCatalog().filter(a=>!candidateIds.some(id=>id===a.phraseId)&&!selected.some(s=>s.phraseId===a.phraseId&&s.textHash===a.textHash))]);
 }
 export function currentC32Asset(phraseId:string){
@@ -25,7 +26,7 @@ export async function currentC32ReviewBindings(){return Promise.all(currentC32Ca
 export const c32Definition=structuredClone(retestDefinition);
 c32Definition.id='apurebase-consent-stage20c32';
 c32Definition.version='stage-2.0c32-feedback-closure-1';
-for(const candidate of candidates){
+for(const candidate of currentC32Catalog().filter(a=>candidateIds.some(id=>id===a.phraseId))){
  const response=c32Definition.responses.find(r=>r.id===candidate.phraseId);
  if(!response||!response.audio||response.canArmConsent&&(candidate.phraseId!=='clarify'||candidate.text!==response.text||candidate.textHash!==response.audio.textHash))throw new Error('Only exact canonical Clarify audio may replace a consent question');
  response.text=candidate.text;response.version=candidate.wordingVersion;
@@ -45,16 +46,17 @@ export function validateC32Definition(definition:ConversationDefinition){
 /** Cached playback only. One owner across the new and retained local players. */
 export class C32Playback extends RetestPlayback {
  private readonly candidatePlayer:C32CandidatePlayback;
- constructor(registry:ListeningRegistry=new RetestRegistry(),makeContext?:()=>LocalAudioContext){super(registry,undefined,makeContext);this.candidatePlayer=new C32CandidatePlayback(makeContext);}
+ private readonly sendePlayer:SendePlayback;
+ constructor(registry:ListeningRegistry=new RetestRegistry(),makeContext?:()=>LocalAudioContext){super(registry,undefined,makeContext);this.candidatePlayer=new C32CandidatePlayback(makeContext);this.sendePlayer=new SendePlayback(makeContext);}
  override async play(response:ResponseClip,record:PlaybackRecord,emit:(event:LocalPlaybackEvent)=>void){
   this.cancel();
   if(candidateIds.some(id=>id===response.id)){
    const current=currentC32Asset(response.id);
    if(response.version!==current.wordingVersion||response.audio?.sha256!==current.assetHash)throw new Error('Historical C32 candidate selection blocked');
-   return this.candidatePlayer.play(response,record,emit);
+   return selectedSendeAssets().some(a=>a.phraseId===response.id)?this.sendePlayer.play(response,record,emit):this.candidatePlayer.play(response,record,emit);
   }
   return super.play(response,record,emit);
  }
- override cancel(){super.cancel();this.candidatePlayer?.cancel();}
- override async dispose(){await super.dispose();await this.candidatePlayer.dispose();}
+ override cancel(){super.cancel();this.candidatePlayer?.cancel();this.sendePlayer?.cancel();}
+ override async dispose(){await super.dispose();await this.candidatePlayer.dispose();await this.sendePlayer.dispose();}
 }

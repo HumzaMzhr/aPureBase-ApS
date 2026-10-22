@@ -1,0 +1,36 @@
+{
+  "desktopBrowser": {
+    "disabledCallButtons": [
+      "Start call",
+      "End call",
+      "Begin human takeover",
+      "Complete takeover"
+    ],
+    "scrollWidth": 1365,
+    "speech": [
+      "#1 \u00b7 ISABELLA00:00.000ISABELLA PLAYBACK STARTEDHej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedr\u00f8rende faglig information til sundhedspersoner.LOCAL EVALUATION \u00b7 example:opening",
+      "#3 \u00b7 CLINIC00:07.698SPEECH PARTIAL \u00b7 provisionalJa, hvadLOCAL EVALUATION \u00b7 example:turn-1",
+      "#4 \u00b7 CLINIC00:08.398SPEECH FINALJa, hvad drejer det sig om?English meaning \u00b7 derivedYes, what is this about?LOCAL EVALUATION \u00b7 example:turn-1",
+      "#5 \u00b7 ISABELLA00:09.398ISABELLA PLAYBACK STARTEDJeg ringer kun for at sp\u00f8rge, om aPureBase m\u00e5 sende dig relevant faglig information via e-mail.LOCAL EVALUATION \u00b7 example:why-calling",
+      "#8 \u00b7 CLINIC00:18.249SPEECH FINALinfo snabel-a klinik punktum dkLOCAL EVALUATION \u00b7 example:turn-2"
+    ],
+    "systemStatuses": [
+      "#2 \u00b7 ISABELLA00:07.198ISABELLA PLAYBACK COMPLETEDLOCAL EVALUATION \u00b7 example:opening",
+      "#6 \u00b7 ISABELLA00:15.249ISABELLA PLAYBACK COMPLETEDLOCAL EVALUATION \u00b7 example:why-calling",
+      "#7 \u00b7 SYSTEM00:15.749CONSENT EVENTNo reviewed consent. This is an observational local example only.LOCAL EVALUATION",
+      "#9 \u00b7 SYSTEM00:18.349EMAIL EVENTSynthetic email candidate reconstructed; recipient confirmation required.LOCAL EVALUATION"
+    ],
+    "viewport": 1365
+  },
+  "keyboardSkipLink": "PASS: Tab focuses Skip to operations",
+  "routes": {
+    "operations": "/",
+    "qa": "/qa"
+  },
+  "degradedPreview": "Consent unclear visibly requires review; no action or success",
+  "responsiveChecks": "Browser desktop 1365 CSS pixels; stylesheet/grid/focus tests cover 1100/700 breakpoint rules. No exhaustive device or screen-reader certification.",
+  "screenshots": "Local-only /private/tmp/c32-final-freeze/operations-dashboard.png, operations-active-call.png, human-acceptance.png; excluded from Git",
+  "microphoneOpened": false,
+  "providerRequests": 0,
+  "nativeAudioApproval": false
+}

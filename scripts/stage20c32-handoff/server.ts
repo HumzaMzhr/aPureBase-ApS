@@ -30,7 +30,7 @@ const server=createServer(async(req,res)=>{
   if(req.method!=='GET')return json(res,405,{error:'Unsupported method'});
   if(path==='/review-data.json')return json(res,200,data);
   const media=data.allCurrentAssets.find((a:{loadURL:string})=>a.loadURL===path);
-  const file=media?resolve(app,media.path.slice(1)):resolve(app,path==='/'?'stage20c32-retest.html':path.slice(1));
+  const file=media?resolve(app,media.path.slice(1)):resolve(app,['/','/qa','/operations'].includes(path)?'stage20c32-retest.html':path.slice(1));
   if(path.startsWith('/api/')&&!media)return json(res,404,{error:'Only current cached media, local health and manually armed recognition exist'});
   if(!file.startsWith(app+sep))return json(res,403,{error:'Invalid path'});
   const real=await realpath(file);if(!real.startsWith(app+sep))return json(res,403,{error:'Invalid resource'});

@@ -24,7 +24,7 @@ npm ci
 node --import tsx scripts/stage20c32-run.ts
 ```
 
-Open **http://127.0.0.1:5173/** in Chrome. Use this exact origin consistently so saved progress remains available. The command rebuilds the local app in ignored `dist/c32-human-retest/` using repository source and cached media. It creates no ZIP, downloads no Node runtime, and opens no provider session. If port 5173 is occupied, stop the older app first; the launcher never replaces it. Stop with Ctrl+C when finished.
+Open **http://127.0.0.1:5173/qa** in Chrome. The root URL opens the separate Operations shell; its telephone controls are not connected. Use this exact origin consistently so saved progress remains available. The command rebuilds the local app in ignored `dist/c32-human-retest/` using repository source and cached media. It creates no ZIP, downloads no Node runtime, and opens no provider session. If port 5173 is occupied, stop the older app first; the launcher never replaces it. Stop with Ctrl+C when finished.
 
 ## Listening first
 
@@ -33,7 +33,7 @@ Enter your name. Complete the five steps: **Voice Review → Microphone → Emai
 - **12 REQUIRED HUMAN REVIEW** listening items belong to current normal call speech. Play each complete recording, attest that you heard it, rate pronunciation/naturalness/pace and record your verdict. Comments are required for concerns or scores at most 3.
 - **4 OPTIONAL DIAGNOSTIC REVIEW** email-spelling clips are historical comparisons. They are excluded from required normal listening counts. A separately reported issue affecting the shared ordinary voice remains a safety concern.
 - Full email readback/spelling is **not part of a normal call**, including corrections. The clinic says the email. The app displays reconstruction, scoped **synthetic test database** corroboration, optional model-advice status and final resolution as text. Isabella asks only the existing short confirmation. Text on screen does not authorize Isabella to speak the full address.
-- All current replacement audio remains pending your native Danish approval. Old ratings do not approve new bytes. Do not pass weak or incorrect output merely to unlock later tests.
+- All current replacement audio remains pending your native Danish approval. Old ratings do not approve new bytes. The latest Why Calling and Clarify use synthesis-only `senne`; displayed/canonical Danish remains `sende`. Do not pass weak or incorrect output merely to unlock later tests.
 
 ## Optional authorized live ASR setup — kept outside Git
 
