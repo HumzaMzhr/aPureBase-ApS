@@ -1,0 +1,427 @@
+{
+  "status": "STAGE 2.0D-1 READY \u2014 PHYSICAL CALL AUTHORIZATION REQUIRED",
+  "baseline": "a25618abd4444e82b393d41026b62273e751336a",
+  "branch": "codex/stage-2.0d1-twilio-foundation",
+  "commitCreated": false,
+  "proposedCommitMessage": "Add Stage 2.0D-1 mocked outbound telephony foundation",
+  "changedFiles": 81,
+  "dependenciesAdded": {
+    "twilio": "6.2.0"
+  },
+  "validation": [
+    {
+      "label": "d1-focused",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/telephony-stage20d1-scenarios.test.ts",
+        "tests/telephony-stage20d1-security.test.tsx",
+        "tests/telephony-stage20d1.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 8646.722458,
+      "testsPassed": 102,
+      "testFiles": 3
+    },
+    {
+      "label": "c32",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-stage20c32-candidates.test.ts",
+        "tests/consent-stage20c32-consolidation.test.tsx",
+        "tests/consent-stage20c32-email-freeze.test.ts",
+        "tests/consent-stage20c32-email.test.ts",
+        "tests/consent-stage20c32-feedback-closure.test.ts",
+        "tests/consent-stage20c32-freeze-quality.test.ts",
+        "tests/consent-stage20c32-hardening.test.ts",
+        "tests/consent-stage20c32-operations-ledger.test.ts",
+        "tests/consent-stage20c32-operations-ui.test.tsx",
+        "tests/consent-stage20c32-package-brand.test.tsx",
+        "tests/consent-stage20c32-package-ui.test.tsx",
+        "tests/consent-stage20c32-package.test.ts",
+        "tests/consent-stage20c32-remediation.test.ts",
+        "tests/consent-stage20c32-sende.test.ts",
+        "tests/consent-stage20c32-speech.test.tsx"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2591.814125000001,
+      "testsPassed": 723,
+      "testFiles": 15
+    },
+    {
+      "label": "c31",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-stage20c3.test.ts",
+        "tests/consent-stage20c3-view.test.tsx",
+        "tests/consent-stage20c31.test.ts",
+        "tests/consent-stage20c31-view.test.tsx",
+        "tests/consent-stage20c31-gateway.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1678.3909999999996,
+      "testsPassed": 139,
+      "testFiles": 5
+    },
+    {
+      "label": "prior-consent",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-foundation.test.ts",
+        "tests/consent-stage20b.test.tsx",
+        "tests/consent-stage20b2.test.tsx",
+        "tests/consent-stage20c1.test.ts",
+        "tests/consent-stage20c2.test.ts",
+        "tests/consent-stage20c3-view.test.tsx",
+        "tests/consent-stage20c3.test.ts",
+        "tests/consent-stage20c31-gateway.test.ts",
+        "tests/consent-stage20c31-view.test.tsx",
+        "tests/consent-stage20c31.test.ts",
+        "tests/consent-transcription.test.ts",
+        "tests/consent-view.test.tsx",
+        "tests/stage196-short-consent.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1885.5572919999995,
+      "testsPassed": 496,
+      "testFiles": 13
+    },
+    {
+      "label": "replay-1",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2635.6853330000013,
+      "testsPassed": 2,
+      "testFiles": 1
+    },
+    {
+      "label": "pcm-1",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 624.7691249999989,
+      "testsPassed": 1,
+      "testFiles": 1
+    },
+    {
+      "label": "replay-2",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2426.361582999998,
+      "testsPassed": 2,
+      "testFiles": 1
+    },
+    {
+      "label": "pcm-2",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 616.9502909999974,
+      "testsPassed": 1,
+      "testFiles": 1
+    },
+    {
+      "label": "replay-3",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2351.033457999998,
+      "testsPassed": 2,
+      "testFiles": 1
+    },
+    {
+      "label": "pcm-3",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 599.760000000002,
+      "testsPassed": 1,
+      "testFiles": 1
+    },
+    {
+      "label": "replay-4",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2326.434208999999,
+      "testsPassed": 2,
+      "testFiles": 1
+    },
+    {
+      "label": "pcm-4",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 589.0527499999989,
+      "testsPassed": 1,
+      "testFiles": 1
+    },
+    {
+      "label": "replay-5",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2353.5068329999995,
+      "testsPassed": 2,
+      "testFiles": 1
+    },
+    {
+      "label": "pcm-5",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 602.1474159999998,
+      "testsPassed": 1,
+      "testFiles": 1
+    },
+    {
+      "label": "full-1",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 11926.870417000002,
+      "testsPassed": 1945,
+      "testFiles": 96
+    },
+    {
+      "label": "full-2",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 12185.623334000004,
+      "testsPassed": 1945,
+      "testFiles": 96
+    },
+    {
+      "label": "full-3",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 11945.92783400001,
+      "testsPassed": 1945,
+      "testFiles": 96
+    },
+    {
+      "label": "lint",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2983.600250000003,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "typecheck",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 4657.183665999997,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "standard-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 5464.949458999996,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "d1-operations-qa-build",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "--import",
+        "tsx",
+        "scripts/stage20d1-package.ts",
+        "/private/tmp/d1-validation-A4DdC8/package"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1098.4977910000016,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "preservation",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "--import",
+        "tsx",
+        "scripts/verify-stage20d1.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 293.4873340000049,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 376.64437499998894,
+      "testsPassed": null,
+      "testFiles": null
+    }
+  ],
+  "safety": {
+    "emailCases": 66,
+    "emailPolicyCorrect": 66,
+    "databaseModel": {
+      "cases": 18,
+      "passed": 18,
+      "unsafeNegativeControlDetected": true
+    },
+    "consentMatrix": {
+      "cases": 29,
+      "passed": 29
+    },
+    "frozenScenarios": {
+      "scenarios": 46,
+      "passed": 46,
+      "ordinaryEligible": 8,
+      "ordinaryCompleted": 8,
+      "consentFalsePositives": 0,
+      "failed": []
+    },
+    "remediationScenarios": {
+      "cases": 32,
+      "passed": 32
+    },
+    "safety": {
+      "falseEmailAutoAccepts": 0,
+      "ambiguousAutomaticSelections": 0,
+      "consentFalsePositives": 0,
+      "normalPathFullEmailReadback": 0,
+      "consentFromInterruptedQuestion": 0,
+      "completedPlaybackAfterInterrupt": 0,
+      "staleProviderMutationAfterEnd": 0,
+      "duplicateFinalTranscriptEntries": 0,
+      "automaticRedials": 0,
+      "providerFailureReportedAsSuccess": 0
+    }
+  },
+  "sourceRecordingsPreserved": 54,
+  "telephoneConversions": 34,
+  "physicalProviderUsage": {
+    "twilioCalls": 0,
+    "elevenLabsGenerations": 0,
+    "openAILiveASR": 0,
+    "audioGenerations": 0
+  },
+  "preflight": {
+    "status": "LOCAL_MOCK_READY",
+    "configurationStatus": "NOT_CONFIGURED",
+    "missing": [
+      "ACCOUNT_CONFIGURATION_MISSING",
+      "SIGNATURE_CREDENTIAL_MISSING",
+      "FROM_CONFIGURATION_MISSING",
+      "CALLBACK_ENDPOINT_MISSING",
+      "MEDIA_ENDPOINT_MISSING",
+      "ASR_MISSING"
+    ],
+    "blockers": [],
+    "destinationSupplied": false,
+    "destinationValid": false,
+    "physicalMode": false,
+    "physicalCallAuthorizationRequired": true,
+    "d1DialingAvailable": false,
+    "providerVerified": false,
+    "checks": {
+      "webhookValidation": true,
+      "assets": true,
+      "ledger": true,
+      "emailPolicy": true,
+      "consentPolicy": true,
+      "takeover": true,
+      "mockValidation": true
+    }
+  },
+  "physicalAcceptance": false,
+  "humanAccepted": false,
+  "productionReady": false,
+  "commit": false,
+  "push": false,
+  "prChanged": false,
+  "merge": false,
+  "deploy": false,
+  "d2Started": false
+}

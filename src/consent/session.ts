@@ -351,7 +351,7 @@ export class ConsentSession {
       }
       const id = this.queueResponse(responseId), record = this.data.playbacks.find(p => p.playbackId === id)!;
       this.effective.set(id,response); if(binding)this.dynamicBindings.set(id,binding);
-      record.mode = 'local-prerecorded'; record.textHash=response.audio?.textHash??undefined;
+      record.mode = this.outputMode(); record.textHash=response.audio?.textHash??undefined;
       this.log('local.playback_requested', { playbackId:id,responseId,binding,assetHash:asset?.assetHash });
       try { await this.ports.localPlayback.play(response,structuredClone(record),event=>this.localPlaybackEvent(event)); }
       catch(error) { if(['QUEUED','PLAYING'].includes(record.state)){this.mock.fail(record,this.now());this.closeWindow();this.data.playing=false;} this.log('local.playback_error',{playbackId:id,message:error instanceof Error?error.message:'Playback failed'});if(dynamic&&this.data.state!=='HUMAN_TAKEOVER')this.takeover('Output verification failed; evidence preserved.');throw error; }
@@ -375,7 +375,7 @@ export class ConsentSession {
     if (record && ['NOT_STARTED', 'QUEUED', 'PLAYING'].includes(record.state)) {
       this.mock.interrupt(record, this.now()); this.log('mock.playback_interrupted', { ...record });
     }
-    if (record?.mode === 'local-prerecorded') this.ports.localPlayback?.cancel();
+    if (record && (record.mode === 'local-prerecorded' || record.mode === 'telephone-prerecorded')) this.ports.localPlayback?.cancel();
     this.data.playing = false;
   }
   private observeBargeIn(turn: Transcript) {
@@ -409,7 +409,7 @@ export class ConsentSession {
     this.active();
     const record = this.data.playbacks.find(p => p.playbackId === playbackId);
     if (!record || playbackId !== this.data.activePlaybackId || record.recipientRevision !== this.data.recipientRevision) throw new Error('Stale or unknown playback ID.');
-    if (record.mode === 'local-prerecorded') throw new Error('Mock controls cannot complete or change real local playback.');
+    if ((record.mode === 'local-prerecorded' || record.mode === 'telephone-prerecorded')) throw new Error('Mock controls cannot complete or change real local playback.');
     const response = this.response(record.phraseId)!;
     if (action === 'complete' && !this.responses().some(r => r.id === response.id)) throw new Error('Playback no longer matches current state/evidence.');
     this.mock[action](record, this.now());
@@ -422,23 +422,30 @@ export class ConsentSession {
       this.applyDelivery(response);
       if (response.canArmConsent && !record.answerConsumed) {
         this.data.answerWindow = { playbackId: record.playbackId, openedAt: record.completedAt!, recipientRevision: record.recipientRevision, status: 'OPEN' };
-        this.question = { responseId: response.id, scope: response.consentScope!, completedAt: record.completedAt!, delivery: record.mode === 'local-prerecorded' ? 'audible' : 'rehearsed', instanceId: record.playbackId, responseVersion: response.version, exactText: response.text, textHash: response.audio?.textHash ?? canonicalConsent.textHash, recipientRevision: this.data.recipientRevision, recipientType: this.data.recipientType, playback: structuredClone(record) };
+        this.question = { responseId: response.id, scope: response.consentScope!, completedAt: record.completedAt!, delivery: (record.mode === 'local-prerecorded' || record.mode === 'telephone-prerecorded') ? 'audible' : 'rehearsed', instanceId: record.playbackId, responseVersion: response.version, exactText: response.text, textHash: response.audio?.textHash ?? canonicalConsent.textHash, recipientRevision: this.data.recipientRevision, recipientType: this.data.recipientType, playback: structuredClone(record) };
         this.log('answer.window_opened', { ...this.data.answerWindow, completionSource: record.completionSource });
       }
     } else if (action === 'interrupt' || action === 'fail') this.closeWindow();
   }
+  outputMode(): 'local-prerecorded' | 'telephone-prerecorded' { return this.ports.localPlayback?.completionBoundary?.mode ?? 'local-prerecorded'; }
+  outputSource(): 'VERIFIED_OUTPUT_ADAPTER' | 'VERIFIED_TELEPHONE_MARK' { return this.ports.localPlayback?.completionBoundary?.source ?? 'VERIFIED_OUTPUT_ADAPTER'; }
+  acceptsOutput(record: import('./types').PlaybackRecord, proof: string | undefined) {
+    const boundary = this.ports.localPlayback?.completionBoundary;
+    return boundary ? record.mode === boundary.mode && boundary.accepts(record, proof) : record.mode === 'local-prerecorded' && !!proof?.startsWith(`web-audio-source-ended:${record.playbackId}:`);
+  }
+  verifiedPlaybackRecord(record: import('./types').PlaybackRecord) { return record.state === 'COMPLETED' && record.completionSource === this.outputSource() && this.acceptsOutput(record, record.outputProof); }
   private localPlaybackEvent(event: LocalPlaybackEvent) {
     const record = this.data.playbacks.find(p => p.playbackId === event.playbackId);
-    if (!record || record.playbackId !== this.data.activePlaybackId || record.mode !== 'local-prerecorded' || ['COMPLETED','INTERRUPTED','FAILED'].includes(record.state)) return;
+    if (!record || record.playbackId !== this.data.activePlaybackId || record.mode !== this.outputMode() || ['COMPLETED','INTERRUPTED','FAILED'].includes(record.state)) return;
     const response = this.effective.get(record.playbackId) ?? this.response(record.phraseId)!;
     const binding = this.dynamicBindings.get(record.playbackId);
     const boundAsset = binding ? { assetHash:response.audio?.sha256 } : (this.ports.assetPolicy?.assets ?? verifiedAssets).find(a => a.phraseId === record.phraseId && a.textHash === response.audio?.textHash && a.assetHash === response.audio?.sha256);
     if (binding && !currentSlot(binding.slot,this.data)) throw new Error('Stale dynamic completion rejected.');
     if (!boundAsset || event.assetHash !== boundAsset.assetHash || event.callId !== this.data.callId || event.recipientRevision !== this.data.recipientRevision || event.phraseId !== record.phraseId || event.phraseVersion !== response.version || event.textHash !== response.audio?.textHash || !/^[a-f0-9]{64}$/u.test(event.assetHash)) throw new Error('Local completion identity binding rejected.');
-    if (event.action === 'complete' && (!event.outputProof?.startsWith(`web-audio-source-ended:${record.playbackId}:`) || !this.responses().some(r => r.id === response.id))) throw new Error('Missing actual output completion proof or stale response.');
+    if (event.action === 'complete' && (!this.acceptsOutput(record,event.outputProof) || !this.responses().some(r => r.id === response.id))) throw new Error('Missing actual output completion proof or stale response.');
     record.assetHash = event.assetHash; record.outputProof = event.outputProof; record.gain = event.gain;
     this.mock[event.action](record, this.now());
-    if (event.action === 'complete') record.completionSource = 'VERIFIED_OUTPUT_ADAPTER';
+    if (event.action === 'complete') record.completionSource = this.outputSource();
     this.data.playing = record.state === 'PLAYING';
     this.log('local.playback_' + event.action, { ...record, error: event.error });
     this.afterPlaybackAction(response, record, event.action);

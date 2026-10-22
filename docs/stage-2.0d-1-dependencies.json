@@ -1,0 +1,412 @@
+{
+  "directAdded": {
+    "twilio": "6.2.0"
+  },
+  "purpose": "Official Twilio signature-validation helpers; no client construction or network executor installed in D1",
+  "addedTransitiveAndDirectPackageEntries": [
+    {
+      "path": "node_modules/agent-base",
+      "version": "6.0.2",
+      "declaredDependencies": {
+        "debug": "4"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/asynckit",
+      "version": "0.4.0",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/axios",
+      "version": "1.20.0",
+      "declaredDependencies": {
+        "follow-redirects": "^1.16.0",
+        "form-data": "^4.0.6",
+        "https-proxy-agent": "^5.0.1",
+        "proxy-from-env": "^2.1.0"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/buffer-equal-constant-time",
+      "version": "1.0.1",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/call-bind-apply-helpers",
+      "version": "1.0.2",
+      "declaredDependencies": {
+        "es-errors": "^1.3.0",
+        "function-bind": "^1.1.2"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/call-bound",
+      "version": "1.0.4",
+      "declaredDependencies": {
+        "call-bind-apply-helpers": "^1.0.2",
+        "get-intrinsic": "^1.3.0"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/combined-stream",
+      "version": "1.0.8",
+      "declaredDependencies": {
+        "delayed-stream": "~1.0.0"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/dayjs",
+      "version": "1.11.23",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/delayed-stream",
+      "version": "1.0.0",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/dunder-proto",
+      "version": "1.0.1",
+      "declaredDependencies": {
+        "call-bind-apply-helpers": "^1.0.1",
+        "es-errors": "^1.3.0",
+        "gopd": "^1.2.0"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/ecdsa-sig-formatter",
+      "version": "1.0.11",
+      "declaredDependencies": {
+        "safe-buffer": "^5.0.1"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/es-define-property",
+      "version": "1.0.1",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/es-errors",
+      "version": "1.3.0",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/es-object-atoms",
+      "version": "1.1.2",
+      "declaredDependencies": {
+        "es-errors": "^1.3.0"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/es-set-tostringtag",
+      "version": "2.1.0",
+      "declaredDependencies": {
+        "es-errors": "^1.3.0",
+        "get-intrinsic": "^1.2.6",
+        "has-tostringtag": "^1.0.2",
+        "hasown": "^2.0.2"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/follow-redirects",
+      "version": "1.16.1",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/form-data",
+      "version": "4.0.6",
+      "declaredDependencies": {
+        "asynckit": "^0.4.0",
+        "combined-stream": "^1.0.8",
+        "es-set-tostringtag": "^2.1.0",
+        "hasown": "^2.0.4",
+        "mime-types": "^2.1.35"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/function-bind",
+      "version": "1.1.2",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/get-intrinsic",
+      "version": "1.3.0",
+      "declaredDependencies": {
+        "call-bind-apply-helpers": "^1.0.2",
+        "es-define-property": "^1.0.1",
+        "es-errors": "^1.3.0",
+        "es-object-atoms": "^1.1.1",
+        "function-bind": "^1.1.2",
+        "get-proto": "^1.0.1",
+        "gopd": "^1.2.0",
+        "has-symbols": "^1.1.0",
+        "hasown": "^2.0.2",
+        "math-intrinsics": "^1.1.0"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/get-proto",
+      "version": "1.0.1",
+      "declaredDependencies": {
+        "dunder-proto": "^1.0.1",
+        "es-object-atoms": "^1.0.0"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/gopd",
+      "version": "1.2.0",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/has-symbols",
+      "version": "1.1.0",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/has-tostringtag",
+      "version": "1.0.2",
+      "declaredDependencies": {
+        "has-symbols": "^1.0.3"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/hasown",
+      "version": "2.0.4",
+      "declaredDependencies": {
+        "function-bind": "^1.1.2"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/https-proxy-agent",
+      "version": "5.0.1",
+      "declaredDependencies": {
+        "agent-base": "6",
+        "debug": "4"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/jsonwebtoken",
+      "version": "9.0.3",
+      "declaredDependencies": {
+        "jws": "^4.0.1",
+        "lodash.includes": "^4.3.0",
+        "lodash.isboolean": "^3.0.3",
+        "lodash.isinteger": "^4.0.4",
+        "lodash.isnumber": "^3.0.3",
+        "lodash.isplainobject": "^4.0.6",
+        "lodash.isstring": "^4.0.1",
+        "lodash.once": "^4.0.0",
+        "ms": "^2.1.1",
+        "semver": "^7.5.4"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/jsonwebtoken/node_modules/semver",
+      "version": "7.8.5",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/jwa",
+      "version": "2.0.1",
+      "declaredDependencies": {
+        "buffer-equal-constant-time": "^1.0.1",
+        "ecdsa-sig-formatter": "1.0.11",
+        "safe-buffer": "^5.0.1"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/jws",
+      "version": "4.0.1",
+      "declaredDependencies": {
+        "jwa": "^2.0.1",
+        "safe-buffer": "^5.0.1"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/lodash.includes",
+      "version": "4.3.0",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/lodash.isboolean",
+      "version": "3.0.3",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/lodash.isinteger",
+      "version": "4.0.4",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/lodash.isnumber",
+      "version": "3.0.3",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/lodash.isplainobject",
+      "version": "4.0.6",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/lodash.isstring",
+      "version": "4.0.1",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/lodash.once",
+      "version": "4.1.1",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/math-intrinsics",
+      "version": "1.1.0",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/mime-db",
+      "version": "1.52.0",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/mime-types",
+      "version": "2.1.35",
+      "declaredDependencies": {
+        "mime-db": "1.52.0"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/object-inspect",
+      "version": "1.13.4",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/proxy-from-env",
+      "version": "2.1.0",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/qs",
+      "version": "6.16.1",
+      "declaredDependencies": {
+        "es-define-property": "^1.0.1",
+        "side-channel": "^1.1.1"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/safe-buffer",
+      "version": "5.2.1",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/side-channel",
+      "version": "1.1.1",
+      "declaredDependencies": {
+        "es-errors": "^1.3.0",
+        "object-inspect": "^1.13.4",
+        "side-channel-list": "^1.0.1",
+        "side-channel-map": "^1.0.1",
+        "side-channel-weakmap": "^1.0.2"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/side-channel-list",
+      "version": "1.0.1",
+      "declaredDependencies": {
+        "es-errors": "^1.3.0",
+        "object-inspect": "^1.13.4"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/side-channel-map",
+      "version": "1.0.1",
+      "declaredDependencies": {
+        "call-bound": "^1.0.2",
+        "es-errors": "^1.3.0",
+        "get-intrinsic": "^1.2.5",
+        "object-inspect": "^1.13.3"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/side-channel-weakmap",
+      "version": "1.0.2",
+      "declaredDependencies": {
+        "call-bound": "^1.0.2",
+        "es-errors": "^1.3.0",
+        "get-intrinsic": "^1.2.5",
+        "object-inspect": "^1.13.3",
+        "side-channel-map": "^1.0.1"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/twilio",
+      "version": "6.2.0",
+      "declaredDependencies": {
+        "axios": "^1.13.5",
+        "dayjs": "^1.11.9",
+        "https-proxy-agent": "^5.0.0",
+        "jsonwebtoken": "^9.0.3",
+        "qs": "^6.14.1",
+        "xmlbuilder": "^13.0.2"
+      },
+      "reason": "Locked official SDK dependency closure"
+    },
+    {
+      "path": "node_modules/xmlbuilder",
+      "version": "13.0.2",
+      "declaredDependencies": {},
+      "reason": "Locked official SDK dependency closure"
+    }
+  ],
+  "existingVersionChanges": [],
+  "existingMetadataChanges": [
+    "node_modules/debug",
+    "node_modules/ms"
+  ]
+}

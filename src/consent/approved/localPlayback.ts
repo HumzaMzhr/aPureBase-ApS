@@ -8,7 +8,13 @@ export interface LocalPlaybackEvent {
   recipientRevision: number; outputProof?: string; error?: string;
   gain?: { gainApplied: number; clippingEvents: number; peakProtectionEvents: number; postGainPeak: number };
 }
-export interface LocalPlaybackPort { play(response: ResponseClip, record: PlaybackRecord, emit: (event: LocalPlaybackEvent) => void): Promise<void>; cancel(): void; }
+/** Opt-in transport evidence. The browser default remains source-ended only. */
+export interface OutputCompletionBoundary {
+ readonly mode: 'telephone-prerecorded';
+ readonly source: 'VERIFIED_TELEPHONE_MARK';
+ accepts(record: PlaybackRecord, proof: string | undefined): boolean;
+}
+export interface LocalPlaybackPort { readonly completionBoundary?: OutputCompletionBoundary; play(response: ResponseClip, record: PlaybackRecord, emit: (event: LocalPlaybackEvent) => void): Promise<void>; cancel(): void; }
 export interface LocalAudioContext {
   currentTime: number; state: string; resume(): Promise<void>; close(): Promise<void>;
   decodeAudioData(bytes: ArrayBuffer): Promise<AudioBuffer>;

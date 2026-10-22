@@ -1,0 +1,41 @@
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+ ❯ tests/telephony-stage20d1-security.test.tsx (19 tests | 1 failed | 18 skipped) 111ms
+   × termination aborts a pending email lookup; late result cannot mutate ended evidence 110ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/telephony-stage20d1-security.test.tsx > termination aborts a pending email lookup; late result cannot mutate ended evidence
+AssertionError: expected { auditVersion: 'stage-2.0d-1', …(22) } to deeply equal { auditVersion: 'stage-2.0d-1', …(22) }
+
+- Expected
++ Received
+
+@@ -214,12 +214,196 @@
+        "turnId": "mic:telephone:127006a7-85e8-4e9d-8aa7-c29ee2f798c8:0",
+      },
+    ],
+    "durationMs": 23194.625,
+    "emailEvidence": {
+-     "attempt": undefined,
+-     "attemptHistory": [],
++     "attempt": {
++       "at": 23294.625,
++       "consentTurnId": "mic:telephone:127006a7-85e8-4e9d-8aa7-c29ee2f798c8:0",
++       "correctionOf": undefined,
++       "id": "mic:telephone:127006a7-85e8-4e9d-8aa7-c29ee2f798c8:1",
++       "parsed": {
++         "candidates": [
++           "anna@clinic.example",
++         ],
++         "comparisonOnly": false,
++         "correctionPrefix": undefined,
++         "errors": [],
++         "operations": [],
++         "raw": "anna@clinic.example",
++         "tokens": [
++           {
++             "alternatives": [
++               "anna@clinic.example",
+[remaining synthetic object diff omitted; original retained privately]

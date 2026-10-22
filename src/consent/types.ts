@@ -172,10 +172,10 @@ export type PlaybackState = typeof playbackStates[number];
 export interface PlaybackRecord {
   playbackId: string; callId: string; phraseId: string; phraseVersion: string;
   assetId: string; assetHash: string | null; state: PlaybackState;
-  textHash?: string; mode?: 'mock' | 'local-prerecorded'; outputProof?: string; gain?: { gainApplied: number; clippingEvents: number; peakProtectionEvents: number; postGainPeak: number };
+  textHash?: string; mode?: 'mock' | 'local-prerecorded' | 'telephone-prerecorded'; outputProof?: string; gain?: { gainApplied: number; clippingEvents: number; peakProtectionEvents: number; postGainPeak: number };
   queuedAt: number | null; startedAt: number | null; completedAt: number | null;
   interruptedAt: number | null; failedAt: number | null;
-  completionSource: 'MOCK_ADAPTER' | 'VERIFIED_OUTPUT_ADAPTER' | null;
+  completionSource: 'MOCK_ADAPTER' | 'VERIFIED_OUTPUT_ADAPTER' | 'VERIFIED_TELEPHONE_MARK' | null;
   recipientRevision: number; answerConsumed: boolean;
 }
 export interface AnswerWindow { playbackId: string; openedAt: number; recipientRevision: number; status: 'OPEN' | 'CONSUMED' | 'INVALIDATED' }

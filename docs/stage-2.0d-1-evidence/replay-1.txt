@@ -1,0 +1,8 @@
+
+ RUN  v4.1.11 /private/tmp/d1-validation-A4DdC8/tree
+
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  23:28:29
+   Duration  2.41s (transform 154ms, setup 0ms, import 194ms, tests 2.10s, environment 0ms)

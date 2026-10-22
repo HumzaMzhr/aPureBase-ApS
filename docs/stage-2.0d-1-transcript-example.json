@@ -1,0 +1,2070 @@
+{
+  "auditVersion": "stage-2.0d-1",
+  "evaluationOnly": true,
+  "mode": "LOCAL_MOCK",
+  "callId": "d1-mock-65",
+  "provider": "TWILIO",
+  "providerCallReference": "CA00000000000000000000000000000041",
+  "streamReference": "MZ00000000000000000000000000000041",
+  "startedAt": "2026-01-01T00:00:00.100Z",
+  "endedAt": "2026-01-01T00:00:33.434Z",
+  "startMonotonic": 100,
+  "endMonotonic": 33434.125,
+  "durationMs": 33334.125,
+  "orderedTranscriptLedger": {
+    "schema": "c32-transcript-ledger-1",
+    "callId": "d1-mock-65",
+    "ordering": "callId+sequenceNumber",
+    "observationalOnly": true,
+    "productionConsent": false,
+    "sourceAudioStored": false,
+    "retention": "BUSINESS_DECISION_REQUIRED",
+    "entries": [
+      {
+        "speaker": "SYSTEM",
+        "eventType": "CALL_EVENT",
+        "metadata": {
+          "message": "CALL_CREATED · LOCAL MOCK"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:1",
+        "timestamp": "2026-01-01T00:00:00.100Z",
+        "monotonicTimestamp": 100,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 1
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "CALL_EVENT",
+        "metadata": {
+          "message": "CALL_RINGING"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:2",
+        "timestamp": "2026-01-01T00:00:00.100Z",
+        "monotonicTimestamp": 100,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 2
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "CALL_EVENT",
+        "metadata": {
+          "message": "CALL_ANSWERED"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:3",
+        "timestamp": "2026-01-01T00:00:00.400Z",
+        "monotonicTimestamp": 400,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 3
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "CALL_EVENT",
+        "metadata": {
+          "message": "MEDIA_CONNECTING"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:4",
+        "timestamp": "2026-01-01T00:00:00.400Z",
+        "monotonicTimestamp": 400,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 4
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "CALL_EVENT",
+        "metadata": {
+          "message": "MEDIA_CONNECTED"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:5",
+        "timestamp": "2026-01-01T00:00:00.400Z",
+        "monotonicTimestamp": 400,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 5
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_STARTED",
+        "sourceText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+        "sourceLanguage": "da",
+        "playbackId": "d1-mock-65:playback-1",
+        "metadata": {
+          "phraseId": "opening",
+          "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "completionSource": null,
+          "physicalHearingProven": false,
+          "message": "Telephone start"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:6",
+        "timestamp": "2026-01-01T00:00:00.400Z",
+        "monotonicTimestamp": 400,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 6
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+        "sourceText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+        "sourceLanguage": "da",
+        "playbackId": "d1-mock-65:playback-1",
+        "metadata": {
+          "phraseId": "opening",
+          "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "completionSource": "TWILIO_MARK_BOUNDARY",
+          "physicalHearingProven": false,
+          "message": "Telephone complete"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:7",
+        "timestamp": "2026-01-01T00:00:07.598Z",
+        "monotonicTimestamp": 7598.25,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 7
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "AUTHORITY_EVENT",
+        "evidenceReferences": [
+          "engine:8"
+        ],
+        "metadata": {
+          "message": "recipient.agent_selected",
+          "engineSequence": 8,
+          "recipientRevision": 1
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:8",
+        "timestamp": "2026-01-01T00:00:07.598Z",
+        "monotonicTimestamp": 7598.25,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 8
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_STARTED",
+        "sourceText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+        "sourceLanguage": "da",
+        "playbackId": "d1-mock-65:playback-2",
+        "metadata": {
+          "phraseId": "purpose",
+          "assetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "completionSource": null,
+          "physicalHearingProven": false,
+          "message": "Telephone start"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:9",
+        "timestamp": "2026-01-01T00:00:07.598Z",
+        "monotonicTimestamp": 7598.25,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 9
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+        "sourceText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+        "sourceLanguage": "da",
+        "playbackId": "d1-mock-65:playback-2",
+        "metadata": {
+          "phraseId": "purpose",
+          "assetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "completionSource": "TWILIO_MARK_BOUNDARY",
+          "physicalHearingProven": false,
+          "message": "Telephone complete"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:10",
+        "timestamp": "2026-01-01T00:00:15.075Z",
+        "monotonicTimestamp": 15075.125,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 10
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_STARTED",
+        "sourceText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "sourceLanguage": "da",
+        "playbackId": "d1-mock-65:playback-3",
+        "metadata": {
+          "phraseId": "consent-question",
+          "assetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+          "phraseVersion": "stage-2.0c31-candidate-1",
+          "completionSource": null,
+          "physicalHearingProven": false,
+          "message": "Telephone start"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:11",
+        "timestamp": "2026-01-01T00:00:15.075Z",
+        "monotonicTimestamp": 15075.125,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 11
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+        "sourceText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "sourceLanguage": "da",
+        "playbackId": "d1-mock-65:playback-3",
+        "metadata": {
+          "phraseId": "consent-question",
+          "assetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+          "phraseVersion": "stage-2.0c31-candidate-1",
+          "completionSource": "TWILIO_MARK_BOUNDARY",
+          "physicalHearingProven": false,
+          "message": "Telephone complete"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:12",
+        "timestamp": "2026-01-01T00:00:19.022Z",
+        "monotonicTimestamp": 19022.5,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 12
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "CONSENT_EVENT",
+        "evidenceReferences": [
+          "engine:19"
+        ],
+        "metadata": {
+          "message": "answer.window_opened",
+          "engineSequence": 19,
+          "recipientRevision": 1
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:13",
+        "timestamp": "2026-01-01T00:00:19.022Z",
+        "monotonicTimestamp": 19022.5,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 13
+      },
+      {
+        "speaker": "CLINIC",
+        "eventType": "SPEECH_PARTIAL",
+        "sourceLanguage": "da",
+        "sourceText": "Ja",
+        "sourceTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:0",
+        "asrFinal": false,
+        "translationStatus": "NOT_REQUESTED",
+        "metadata": {
+          "answerPlaybackId": "d1-mock-65:playback-3",
+          "speechStartedAt": 19023.5,
+          "providerItemId": "item-0"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:14",
+        "timestamp": "2026-01-01T00:00:19.043Z",
+        "monotonicTimestamp": 19043.5,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 14
+      },
+      {
+        "speaker": "CLINIC",
+        "eventType": "SPEECH_FINAL",
+        "sourceLanguage": "da",
+        "sourceText": "Ja",
+        "sourceTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:0",
+        "asrFinal": true,
+        "translationStatus": "NOT_REQUESTED",
+        "metadata": {
+          "answerPlaybackId": "d1-mock-65:playback-3",
+          "speechStartedAt": 19023.5,
+          "providerItemId": "item-0"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:15",
+        "timestamp": "2026-01-01T00:00:19.063Z",
+        "monotonicTimestamp": 19063.5,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 15
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "CONSENT_EVENT",
+        "evidenceReferences": [
+          "engine:25"
+        ],
+        "metadata": {
+          "message": "consent.agent_reviewed",
+          "engineSequence": 25,
+          "recipientRevision": 1
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:16",
+        "timestamp": "2026-01-01T00:00:19.863Z",
+        "monotonicTimestamp": 19863.5,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 16
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_STARTED",
+        "sourceText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+        "sourceLanguage": "da",
+        "playbackId": "d1-mock-65:playback-4",
+        "metadata": {
+          "phraseId": "email-request",
+          "assetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "completionSource": null,
+          "physicalHearingProven": false,
+          "message": "Telephone start"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:17",
+        "timestamp": "2026-01-01T00:00:19.863Z",
+        "monotonicTimestamp": 19863.5,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 17
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+        "sourceText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+        "sourceLanguage": "da",
+        "playbackId": "d1-mock-65:playback-4",
+        "metadata": {
+          "phraseId": "email-request",
+          "assetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "completionSource": "TWILIO_MARK_BOUNDARY",
+          "physicalHearingProven": false,
+          "message": "Telephone complete"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:18",
+        "timestamp": "2026-01-01T00:00:23.253Z",
+        "monotonicTimestamp": 23253.625,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 18
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "EMAIL_EVENT",
+        "evidenceReferences": [
+          "email:1"
+        ],
+        "metadata": {
+          "message": "email.invalidated",
+          "emailSequence": 1
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:19",
+        "timestamp": "2026-01-01T00:00:23.274Z",
+        "monotonicTimestamp": 23274.625,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 19
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "EMAIL_EVENT",
+        "evidenceReferences": [
+          "email:2"
+        ],
+        "metadata": {
+          "message": "email.request_opened",
+          "emailSequence": 2
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:20",
+        "timestamp": "2026-01-01T00:00:23.274Z",
+        "monotonicTimestamp": 23274.625,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 20
+      },
+      {
+        "speaker": "CLINIC",
+        "eventType": "SPEECH_PARTIAL",
+        "sourceLanguage": "da",
+        "sourceText": "anna snabel-a clinic punktum example",
+        "sourceTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+        "asrFinal": false,
+        "translationStatus": "NOT_REQUESTED",
+        "metadata": {
+          "answerPlaybackId": "d1-mock-65:playback-4",
+          "speechStartedAt": 23254.5,
+          "providerItemId": "item-1"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:21",
+        "timestamp": "2026-01-01T00:00:23.274Z",
+        "monotonicTimestamp": 23274.625,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 21
+      },
+      {
+        "speaker": "CLINIC",
+        "eventType": "SPEECH_FINAL",
+        "sourceLanguage": "da",
+        "sourceText": "anna snabel-a clinic punktum example",
+        "sourceTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+        "asrFinal": true,
+        "translationStatus": "NOT_REQUESTED",
+        "metadata": {
+          "answerPlaybackId": "d1-mock-65:playback-4",
+          "speechStartedAt": 23254.5,
+          "providerItemId": "item-1"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:22",
+        "timestamp": "2026-01-01T00:00:23.294Z",
+        "monotonicTimestamp": 23294.625,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 22
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "EMAIL_EVENT",
+        "evidenceReferences": [
+          "email:6"
+        ],
+        "metadata": {
+          "message": "email.parsed",
+          "emailSequence": 6
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:23",
+        "timestamp": "2026-01-01T00:00:23.314Z",
+        "monotonicTimestamp": 23314.625,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 23
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "EMAIL_EVENT",
+        "evidenceReferences": [
+          "email:7"
+        ],
+        "metadata": {
+          "message": "email.resolved",
+          "emailSequence": 7
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:24",
+        "timestamp": "2026-01-01T00:00:23.314Z",
+        "monotonicTimestamp": 23314.625,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 24
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_STARTED",
+        "sourceText": "Er det korrekt?",
+        "sourceLanguage": "da",
+        "playbackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+        "metadata": {
+          "phraseId": "email-confirmation-question",
+          "assetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "completionSource": null,
+          "physicalHearingProven": false,
+          "message": "Telephone start"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:25",
+        "timestamp": "2026-01-01T00:00:24.094Z",
+        "monotonicTimestamp": 24094.625,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 25
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+        "sourceText": "Er det korrekt?",
+        "sourceLanguage": "da",
+        "playbackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+        "metadata": {
+          "phraseId": "email-confirmation-question",
+          "assetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "completionSource": "TWILIO_MARK_BOUNDARY",
+          "physicalHearingProven": false,
+          "message": "Telephone complete"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:26",
+        "timestamp": "2026-01-01T00:00:25.069Z",
+        "monotonicTimestamp": 25069.875,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 26
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "EMAIL_EVENT",
+        "evidenceReferences": [
+          "email:8"
+        ],
+        "metadata": {
+          "message": "email.confirmation_queued",
+          "emailSequence": 8
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:27",
+        "timestamp": "2026-01-01T00:00:25.069Z",
+        "monotonicTimestamp": 25069.875,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 27
+      },
+      {
+        "speaker": "CLINIC",
+        "eventType": "SPEECH_PARTIAL",
+        "sourceLanguage": "da",
+        "sourceText": "Ja",
+        "sourceTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:2",
+        "asrFinal": false,
+        "translationStatus": "NOT_REQUESTED",
+        "metadata": {
+          "answerPlaybackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+          "speechStartedAt": 25070.5,
+          "providerItemId": "item-2"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:28",
+        "timestamp": "2026-01-01T00:00:25.090Z",
+        "monotonicTimestamp": 25090.875,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 28
+      },
+      {
+        "speaker": "CLINIC",
+        "eventType": "SPEECH_FINAL",
+        "sourceLanguage": "da",
+        "sourceText": "Ja",
+        "sourceTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:2",
+        "asrFinal": true,
+        "translationStatus": "NOT_REQUESTED",
+        "metadata": {
+          "answerPlaybackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+          "speechStartedAt": 25070.5,
+          "providerItemId": "item-2"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:29",
+        "timestamp": "2026-01-01T00:00:25.110Z",
+        "monotonicTimestamp": 25110.875,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 29
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "EMAIL_EVENT",
+        "evidenceReferences": [
+          "email:14"
+        ],
+        "metadata": {
+          "message": "email.recipient_confirmed",
+          "emailSequence": 14
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:30",
+        "timestamp": "2026-01-01T00:00:25.130Z",
+        "monotonicTimestamp": 25130.875,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 30
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_STARTED",
+        "sourceText": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+        "sourceLanguage": "da",
+        "playbackId": "bbc58aa6-4b5a-49cb-b92e-430845104f61",
+        "metadata": {
+          "phraseId": "success-close",
+          "assetHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+          "phraseVersion": "stage-2.0c32-candidate-1",
+          "completionSource": null,
+          "physicalHearingProven": false,
+          "message": "Telephone start"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:31",
+        "timestamp": "2026-01-01T00:00:25.910Z",
+        "monotonicTimestamp": 25910.875,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 31
+      },
+      {
+        "speaker": "ISABELLA",
+        "eventType": "ISABELLA_PLAYBACK_COMPLETED",
+        "sourceText": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+        "sourceLanguage": "da",
+        "playbackId": "bbc58aa6-4b5a-49cb-b92e-430845104f61",
+        "metadata": {
+          "phraseId": "success-close",
+          "assetHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+          "phraseVersion": "stage-2.0c32-candidate-1",
+          "completionSource": "TWILIO_MARK_BOUNDARY",
+          "physicalHearingProven": false,
+          "message": "Telephone complete"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:32",
+        "timestamp": "2026-01-01T00:00:33.434Z",
+        "monotonicTimestamp": 33434.125,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 32
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "EMAIL_EVENT",
+        "evidenceReferences": [
+          "email:17"
+        ],
+        "metadata": {
+          "message": "email.local_evaluation_stored",
+          "emailSequence": 17
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:33",
+        "timestamp": "2026-01-01T00:00:33.434Z",
+        "monotonicTimestamp": 33434.125,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 33
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "CALL_EVENT",
+        "metadata": {
+          "message": "CALL_ENDING"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:34",
+        "timestamp": "2026-01-01T00:00:33.434Z",
+        "monotonicTimestamp": 33434.125,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 34
+      },
+      {
+        "speaker": "SYSTEM",
+        "eventType": "CALL_EVENT",
+        "metadata": {
+          "message": "CALL_ENDED · transport ended, not consent success"
+        },
+        "callId": "d1-mock-65",
+        "eventId": "d1-mock-65:35",
+        "timestamp": "2026-01-01T00:00:33.434Z",
+        "monotonicTimestamp": 33434.125,
+        "evidenceClassification": "LOCAL_EVALUATION",
+        "sequenceNumber": 35
+      }
+    ]
+  },
+  "consentEvidence": [
+    {
+      "turnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:0",
+      "consent": {
+        "respondent": "recipient",
+        "recipient": {
+          "recipientType": "TARGET_HCP",
+          "targetVerified": true,
+          "recipientRevision": 1,
+          "authorityPolicyVersion": "apurebase-authority-2.0b2-1",
+          "identityAttestation": {
+            "reason": "Independent synthetic identity",
+            "recordedAt": "2026-01-01T00:00:07.598Z"
+          },
+          "authorityStatus": "NOT_APPLICABLE"
+        },
+        "question": {
+          "responseId": "consent-question",
+          "scope": "apurebase-professional-information-by-email-v1",
+          "completedAt": 19022.5,
+          "delivery": "audible",
+          "instanceId": "d1-mock-65:playback-3",
+          "responseVersion": "stage-2.0c31-candidate-1",
+          "exactText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "textHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+          "recipientRevision": 1,
+          "recipientType": "TARGET_HCP",
+          "playback": {
+            "callId": "d1-mock-65",
+            "playbackId": "d1-mock-65:playback-3",
+            "phraseId": "consent-question",
+            "phraseVersion": "stage-2.0c31-candidate-1",
+            "assetId": "consent-question",
+            "assetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "state": "COMPLETED",
+            "queuedAt": 15075.125,
+            "startedAt": 15075.125,
+            "completedAt": 19022.5,
+            "interruptedAt": null,
+            "failedAt": null,
+            "completionSource": "VERIFIED_TELEPHONE_MARK",
+            "recipientRevision": 1,
+            "answerConsumed": false,
+            "mode": "telephone-prerecorded",
+            "textHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+            "outputProof": "twilio-mark-boundary:1fe794f2-6f04-4bf1-8914-896881a3a00e"
+          }
+        },
+        "classification": "YES",
+        "eligibleYes": true,
+        "reason": "Explicit affirmative to the delivered proposition from a verified recipient; agent review required."
+      },
+      "review": {
+        "classification": "YES",
+        "reason": "Owned synthetic final after actual mock provider mark",
+        "reviewedAt": 19863.5,
+        "overridden": false
+      }
+    }
+  ],
+  "emailEvidence": {
+    "state": "END_SUCCESS",
+    "attempt": {
+      "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+      "revision": 1,
+      "consentTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:0",
+      "at": 23294.625,
+      "turn": {
+        "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+        "text": "anna snabel-a clinic punktum example",
+        "final": true,
+        "source": "provider",
+        "observedAt": 23294.625,
+        "providerItemId": "item-1",
+        "speechStartedAt": 23254.5,
+        "answerPlaybackId": "d1-mock-65:playback-4",
+        "recipientRevision": 1
+      },
+      "parsed": {
+        "version": "stage-2.0c32-structured-email-1",
+        "raw": "anna snabel-a clinic punktum example",
+        "tokens": [
+          {
+            "raw": "anna",
+            "start": 0,
+            "end": 4,
+            "kind": "literal",
+            "alternatives": [
+              "anna"
+            ]
+          },
+          {
+            "raw": "snabel-a",
+            "start": 5,
+            "end": 13,
+            "kind": "separator",
+            "alternatives": [
+              "@"
+            ]
+          },
+          {
+            "raw": "clinic",
+            "start": 14,
+            "end": 20,
+            "kind": "literal",
+            "alternatives": [
+              "clinic"
+            ]
+          },
+          {
+            "raw": "punktum",
+            "start": 21,
+            "end": 28,
+            "kind": "separator",
+            "alternatives": [
+              "."
+            ]
+          },
+          {
+            "raw": "example",
+            "start": 29,
+            "end": 36,
+            "kind": "literal",
+            "alternatives": [
+              "example"
+            ]
+          }
+        ],
+        "candidates": [
+          "anna@clinic.example"
+        ],
+        "operations": [
+          {
+            "operation": "EXPLICIT_SPOKEN_TOKEN",
+            "before": "snabel-a",
+            "after": "@",
+            "tokenIndex": 1
+          },
+          {
+            "operation": "EXPLICIT_SPOKEN_TOKEN",
+            "before": "punktum",
+            "after": ".",
+            "tokenIndex": 3
+          },
+          {
+            "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+            "before": "anna snabel-a clinic punktum example",
+            "after": "anna@clinic.example"
+          }
+        ],
+        "uncertainTokens": [],
+        "errors": [],
+        "comparisonOnly": false
+      },
+      "resolution": {
+        "ranked": [
+          {
+            "candidate": "anna@clinic.example",
+            "matches": [
+              {
+                "contactId": "synthetic:clinic-a",
+                "email": "anna@clinic.example",
+                "recordVersion": "1",
+                "sourceRecordId": "synthetic:record-a"
+              }
+            ],
+            "score": 1,
+            "reason": "Exact characters; scoped record agrees"
+          }
+        ],
+        "databaseCandidates": [
+          {
+            "contactId": "synthetic:clinic-a",
+            "email": "anna@clinic.example",
+            "recordVersion": "1",
+            "sourceRecordId": "synthetic:record-a"
+          },
+          {
+            "contactId": "synthetic:clinic-a",
+            "email": "anne@clinic.example",
+            "recordVersion": "1",
+            "sourceRecordId": "synthetic:record-b"
+          }
+        ],
+        "databaseStatus": "OK",
+        "selected": "anna@clinic.example",
+        "selectionSource": "DETERMINISTIC_EXACT",
+        "classification": "EXACT_VERIFIED_MATCH",
+        "action": "CONFIRM",
+        "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+        "databaseEvidence": {
+          "scope": {
+            "callId": "d1-mock-65",
+            "recipientRevision": 1,
+            "contactId": "synthetic:clinic-a",
+            "mappingEvidenceId": "synthetic:identity-attestation",
+            "source": "SYNTHETIC_FIXTURE"
+          },
+          "requestedAt": 1792693664415,
+          "receivedAt": 1792693664416,
+          "clock": "unix-epoch-ms",
+          "provenance": "SYNTHETIC_FIXTURE",
+          "receipts": []
+        },
+        "lookupStatus": "MULTIPLE_MATCHES",
+        "policyLabel": "VERY_STRONG",
+        "matchType": "NORMALIZED_EXACT",
+        "autoAccept": false,
+        "calibratedProbability": null,
+        "businessDecision": "CONCISE_CONFIRMATION_FROZEN_C32"
+      }
+    },
+    "confirmation": {
+      "turn": {
+        "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:2",
+        "text": "Ja",
+        "final": true,
+        "source": "provider",
+        "observedAt": 25110.875,
+        "providerItemId": "item-2",
+        "speechStartedAt": 25070.5,
+        "answerPlaybackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+        "recipientRevision": 1
+      },
+      "candidate": "anna@clinic.example"
+    },
+    "window": {
+      "id": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+      "completedAt": 25069.875,
+      "revision": 1,
+      "kind": "CONFIRM",
+      "attemptId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+      "consumed": true
+    },
+    "playback": {
+      "playbackId": "bbc58aa6-4b5a-49cb-b92e-430845104f61",
+      "callId": "d1-mock-65",
+      "phraseId": "success-close",
+      "phraseVersion": "stage-2.0c32-candidate-1",
+      "assetId": "/audio/consent-stage20c32/e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908.wav",
+      "assetHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "textHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+      "state": "COMPLETED",
+      "mode": "telephone-prerecorded",
+      "queuedAt": 25910.875,
+      "startedAt": 25910.875,
+      "completedAt": 33434.125,
+      "interruptedAt": null,
+      "failedAt": null,
+      "completionSource": "VERIFIED_TELEPHONE_MARK",
+      "recipientRevision": 1,
+      "answerConsumed": false,
+      "outputProof": "twilio-mark-boundary:dd193664-04fd-4e12-8315-cb6f931504cd"
+    },
+    "storedEmail": {
+      "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+      "email": "anna@clinic.example",
+      "recipientRevision": 1,
+      "consentTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:0",
+      "sourceTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+      "confirmationTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:2",
+      "candidateRevision": 1,
+      "storedAt": 33434.125,
+      "reviewer": "synthetic:operator",
+      "reviewReason": "Owned synthetic recipient confirmation",
+      "productionConsent": false
+    },
+    "candidateAttempts": 1,
+    "savingEnabled": false,
+    "sourceAudioStored": false,
+    "characterReadback": "DIAGNOSTIC_COMPARISON_ONLY",
+    "productionReady": false,
+    "normalEmailSpeech": "CONCISE_CONFIRMATION_ONLY",
+    "fullCallRecording": "NOT_IMPLEMENTED_BUSINESS_DECISION_REQUIRED",
+    "takeoverReason": null,
+    "attemptHistory": [
+      {
+        "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+        "revision": 1,
+        "consentTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:0",
+        "at": 23294.625,
+        "turn": {
+          "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+          "text": "anna snabel-a clinic punktum example",
+          "final": true,
+          "source": "provider",
+          "observedAt": 23294.625,
+          "providerItemId": "item-1",
+          "speechStartedAt": 23254.5,
+          "answerPlaybackId": "d1-mock-65:playback-4",
+          "recipientRevision": 1
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "anna snabel-a clinic punktum example",
+          "tokens": [
+            {
+              "raw": "anna",
+              "start": 0,
+              "end": 4,
+              "kind": "literal",
+              "alternatives": [
+                "anna"
+              ]
+            },
+            {
+              "raw": "snabel-a",
+              "start": 5,
+              "end": 13,
+              "kind": "separator",
+              "alternatives": [
+                "@"
+              ]
+            },
+            {
+              "raw": "clinic",
+              "start": 14,
+              "end": 20,
+              "kind": "literal",
+              "alternatives": [
+                "clinic"
+              ]
+            },
+            {
+              "raw": "punktum",
+              "start": 21,
+              "end": 28,
+              "kind": "separator",
+              "alternatives": [
+                "."
+              ]
+            },
+            {
+              "raw": "example",
+              "start": 29,
+              "end": 36,
+              "kind": "literal",
+              "alternatives": [
+                "example"
+              ]
+            }
+          ],
+          "candidates": [
+            "anna@clinic.example"
+          ],
+          "operations": [
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "snabel-a",
+              "after": "@",
+              "tokenIndex": 1
+            },
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "punktum",
+              "after": ".",
+              "tokenIndex": 3
+            },
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "anna snabel-a clinic punktum example",
+              "after": "anna@clinic.example"
+            }
+          ],
+          "uncertainTokens": [],
+          "errors": [],
+          "comparisonOnly": false
+        },
+        "resolution": {
+          "ranked": [
+            {
+              "candidate": "anna@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:clinic-a",
+                  "email": "anna@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:record-a"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:clinic-a",
+              "email": "anna@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:record-a"
+            },
+            {
+              "contactId": "synthetic:clinic-a",
+              "email": "anne@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:record-b"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": "anna@clinic.example",
+          "selectionSource": "DETERMINISTIC_EXACT",
+          "classification": "EXACT_VERIFIED_MATCH",
+          "action": "CONFIRM",
+          "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+          "databaseEvidence": {
+            "scope": {
+              "callId": "d1-mock-65",
+              "recipientRevision": 1,
+              "contactId": "synthetic:clinic-a",
+              "mappingEvidenceId": "synthetic:identity-attestation",
+              "source": "SYNTHETIC_FIXTURE"
+            },
+            "requestedAt": 1792693664415,
+            "receivedAt": 1792693664416,
+            "clock": "unix-epoch-ms",
+            "provenance": "SYNTHETIC_FIXTURE",
+            "receipts": []
+          },
+          "lookupStatus": "MULTIPLE_MATCHES",
+          "policyLabel": "VERY_STRONG",
+          "matchType": "NORMALIZED_EXACT",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "CONCISE_CONFIRMATION_FROZEN_C32"
+        }
+      }
+    ],
+    "pipeline": {
+      "rawTranscript": "anna snabel-a clinic punktum example",
+      "reconstructedCandidate": [
+        "anna@clinic.example"
+      ],
+      "databaseCandidates": [
+        {
+          "contactId": "synthetic:clinic-a",
+          "email": "anna@clinic.example",
+          "recordVersion": "1",
+          "sourceRecordId": "synthetic:record-a"
+        },
+        {
+          "contactId": "synthetic:clinic-a",
+          "email": "anne@clinic.example",
+          "recordVersion": "1",
+          "sourceRecordId": "synthetic:record-b"
+        }
+      ],
+      "modelRecommendation": {
+        "status": "NOT_REQUESTED",
+        "raw": null,
+        "accepted": false,
+        "reason": "No advisory model invoked"
+      },
+      "resolutionStatus": "EXACT_VERIFIED_MATCH",
+      "resolvedCandidate": "anna@clinic.example",
+      "confirmationStatus": "OWNED_RECIPIENT_CONFIRMED",
+      "correctionLineage": [
+        {
+          "attemptId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+          "correctionOf": null,
+          "candidate": "anna@clinic.example",
+          "status": "CONFIRMED"
+        }
+      ],
+      "takeoverReason": null,
+      "sourceTurn": {
+        "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+        "text": "anna snabel-a clinic punktum example",
+        "final": true,
+        "source": "provider",
+        "observedAt": 23294.625,
+        "providerItemId": "item-1",
+        "speechStartedAt": 23254.5,
+        "answerPlaybackId": "d1-mock-65:playback-4",
+        "recipientRevision": 1
+      },
+      "reconstruction": {
+        "version": "stage-2.0c32-structured-email-1",
+        "raw": "anna snabel-a clinic punktum example",
+        "tokens": [
+          {
+            "raw": "anna",
+            "start": 0,
+            "end": 4,
+            "kind": "literal",
+            "alternatives": [
+              "anna"
+            ]
+          },
+          {
+            "raw": "snabel-a",
+            "start": 5,
+            "end": 13,
+            "kind": "separator",
+            "alternatives": [
+              "@"
+            ]
+          },
+          {
+            "raw": "clinic",
+            "start": 14,
+            "end": 20,
+            "kind": "literal",
+            "alternatives": [
+              "clinic"
+            ]
+          },
+          {
+            "raw": "punktum",
+            "start": 21,
+            "end": 28,
+            "kind": "separator",
+            "alternatives": [
+              "."
+            ]
+          },
+          {
+            "raw": "example",
+            "start": 29,
+            "end": 36,
+            "kind": "literal",
+            "alternatives": [
+              "example"
+            ]
+          }
+        ],
+        "candidates": [
+          "anna@clinic.example"
+        ],
+        "operations": [
+          {
+            "operation": "EXPLICIT_SPOKEN_TOKEN",
+            "before": "snabel-a",
+            "after": "@",
+            "tokenIndex": 1
+          },
+          {
+            "operation": "EXPLICIT_SPOKEN_TOKEN",
+            "before": "punktum",
+            "after": ".",
+            "tokenIndex": 3
+          },
+          {
+            "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+            "before": "anna snabel-a clinic punktum example",
+            "after": "anna@clinic.example"
+          }
+        ],
+        "uncertainTokens": [],
+        "errors": [],
+        "comparisonOnly": false
+      },
+      "databaseEvidence": {
+        "scope": {
+          "callId": "d1-mock-65",
+          "recipientRevision": 1,
+          "contactId": "synthetic:clinic-a",
+          "mappingEvidenceId": "synthetic:identity-attestation",
+          "source": "SYNTHETIC_FIXTURE"
+        },
+        "requestedAt": 1792693664415,
+        "receivedAt": 1792693664416,
+        "clock": "unix-epoch-ms",
+        "provenance": "SYNTHETIC_FIXTURE",
+        "receipts": []
+      },
+      "confirmation": {
+        "turn": {
+          "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:2",
+          "text": "Ja",
+          "final": true,
+          "source": "provider",
+          "observedAt": 25110.875,
+          "providerItemId": "item-2",
+          "speechStartedAt": 25070.5,
+          "answerPlaybackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+          "recipientRevision": 1
+        },
+        "candidate": "anna@clinic.example"
+      },
+      "questionPlayback": {
+        "playbackId": "bbc58aa6-4b5a-49cb-b92e-430845104f61",
+        "callId": "d1-mock-65",
+        "phraseId": "success-close",
+        "phraseVersion": "stage-2.0c32-candidate-1",
+        "assetId": "/audio/consent-stage20c32/e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908.wav",
+        "assetHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+        "textHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+        "state": "COMPLETED",
+        "mode": "telephone-prerecorded",
+        "queuedAt": 25910.875,
+        "startedAt": 25910.875,
+        "completedAt": 33434.125,
+        "interruptedAt": null,
+        "failedAt": null,
+        "completionSource": "VERIFIED_TELEPHONE_MARK",
+        "recipientRevision": 1,
+        "answerConsumed": false,
+        "outputProof": "twilio-mark-boundary:dd193664-04fd-4e12-8315-cb6f931504cd"
+      },
+      "fullEmailSpeechEnabled": false
+    },
+    "wholeCallRecordingEnabled": false,
+    "events": [
+      {
+        "sequence": 1,
+        "event": "email.invalidated",
+        "at": 23253.625,
+        "data": {
+          "reason": "NEW_ADDRESS_WINDOW"
+        }
+      },
+      {
+        "sequence": 2,
+        "event": "email.request_opened",
+        "at": 23253.625,
+        "data": {
+          "scope": {
+            "callId": "d1-mock-65",
+            "recipientRevision": 1,
+            "contactId": "synthetic:clinic-a",
+            "mappingEvidenceId": "synthetic:identity-attestation",
+            "source": "SYNTHETIC_FIXTURE"
+          },
+          "playback": {
+            "callId": "d1-mock-65",
+            "playbackId": "d1-mock-65:playback-4",
+            "phraseId": "email-request",
+            "phraseVersion": "stage-2.0c1-approved-1",
+            "assetId": "email-request",
+            "assetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "state": "COMPLETED",
+            "queuedAt": 19863.5,
+            "startedAt": 19863.5,
+            "completedAt": 23253.625,
+            "interruptedAt": null,
+            "failedAt": null,
+            "completionSource": "VERIFIED_TELEPHONE_MARK",
+            "recipientRevision": 1,
+            "answerConsumed": false,
+            "mode": "telephone-prerecorded",
+            "textHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+            "outputProof": "twilio-mark-boundary:8fc753f2-0bb0-427c-9cac-236b0a682099"
+          },
+          "consentTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:0",
+          "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?"
+        }
+      },
+      {
+        "sequence": 3,
+        "event": "email.asr",
+        "at": 23274.625,
+        "data": {
+          "transcript": {
+            "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+            "text": "",
+            "final": false,
+            "source": "provider",
+            "observedAt": 23274.625,
+            "speechStartedAt": 23254.5,
+            "answerPlaybackId": "d1-mock-65:playback-4",
+            "recipientRevision": 1
+          },
+          "endpointOwner": "d1-mock-65:playback-4",
+          "revision": 1
+        }
+      },
+      {
+        "sequence": 4,
+        "event": "email.asr",
+        "at": 23274.625,
+        "data": {
+          "transcript": {
+            "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+            "text": "anna snabel-a clinic punktum example",
+            "final": false,
+            "source": "provider",
+            "observedAt": 23274.625,
+            "providerItemId": "item-1",
+            "speechStartedAt": 23254.5,
+            "answerPlaybackId": "d1-mock-65:playback-4",
+            "recipientRevision": 1
+          },
+          "endpointOwner": "d1-mock-65:playback-4",
+          "revision": 1
+        }
+      },
+      {
+        "sequence": 5,
+        "event": "email.asr",
+        "at": 23294.625,
+        "data": {
+          "transcript": {
+            "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+            "text": "anna snabel-a clinic punktum example",
+            "final": true,
+            "source": "provider",
+            "observedAt": 23294.625,
+            "providerItemId": "item-1",
+            "speechStartedAt": 23254.5,
+            "answerPlaybackId": "d1-mock-65:playback-4",
+            "recipientRevision": 1
+          },
+          "endpointOwner": "d1-mock-65:playback-4",
+          "revision": 1
+        }
+      },
+      {
+        "sequence": 6,
+        "event": "email.parsed",
+        "at": 23294.625,
+        "data": {
+          "sourceTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+          "parsed": {
+            "version": "stage-2.0c32-structured-email-1",
+            "raw": "anna snabel-a clinic punktum example",
+            "tokens": [
+              {
+                "raw": "anna",
+                "start": 0,
+                "end": 4,
+                "kind": "literal",
+                "alternatives": [
+                  "anna"
+                ]
+              },
+              {
+                "raw": "snabel-a",
+                "start": 5,
+                "end": 13,
+                "kind": "separator",
+                "alternatives": [
+                  "@"
+                ]
+              },
+              {
+                "raw": "clinic",
+                "start": 14,
+                "end": 20,
+                "kind": "literal",
+                "alternatives": [
+                  "clinic"
+                ]
+              },
+              {
+                "raw": "punktum",
+                "start": 21,
+                "end": 28,
+                "kind": "separator",
+                "alternatives": [
+                  "."
+                ]
+              },
+              {
+                "raw": "example",
+                "start": 29,
+                "end": 36,
+                "kind": "literal",
+                "alternatives": [
+                  "example"
+                ]
+              }
+            ],
+            "candidates": [
+              "anna@clinic.example"
+            ],
+            "operations": [
+              {
+                "operation": "EXPLICIT_SPOKEN_TOKEN",
+                "before": "snabel-a",
+                "after": "@",
+                "tokenIndex": 1
+              },
+              {
+                "operation": "EXPLICIT_SPOKEN_TOKEN",
+                "before": "punktum",
+                "after": ".",
+                "tokenIndex": 3
+              },
+              {
+                "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+                "before": "anna snabel-a clinic punktum example",
+                "after": "anna@clinic.example"
+              }
+            ],
+            "uncertainTokens": [],
+            "errors": [],
+            "comparisonOnly": false
+          }
+        }
+      },
+      {
+        "sequence": 7,
+        "event": "email.resolved",
+        "at": 23294.625,
+        "data": {
+          "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+          "revision": 1,
+          "consentTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:0",
+          "at": 23294.625,
+          "turn": {
+            "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+            "text": "anna snabel-a clinic punktum example",
+            "final": true,
+            "source": "provider",
+            "observedAt": 23294.625,
+            "providerItemId": "item-1",
+            "speechStartedAt": 23254.5,
+            "answerPlaybackId": "d1-mock-65:playback-4",
+            "recipientRevision": 1
+          },
+          "parsed": {
+            "version": "stage-2.0c32-structured-email-1",
+            "raw": "anna snabel-a clinic punktum example",
+            "tokens": [
+              {
+                "raw": "anna",
+                "start": 0,
+                "end": 4,
+                "kind": "literal",
+                "alternatives": [
+                  "anna"
+                ]
+              },
+              {
+                "raw": "snabel-a",
+                "start": 5,
+                "end": 13,
+                "kind": "separator",
+                "alternatives": [
+                  "@"
+                ]
+              },
+              {
+                "raw": "clinic",
+                "start": 14,
+                "end": 20,
+                "kind": "literal",
+                "alternatives": [
+                  "clinic"
+                ]
+              },
+              {
+                "raw": "punktum",
+                "start": 21,
+                "end": 28,
+                "kind": "separator",
+                "alternatives": [
+                  "."
+                ]
+              },
+              {
+                "raw": "example",
+                "start": 29,
+                "end": 36,
+                "kind": "literal",
+                "alternatives": [
+                  "example"
+                ]
+              }
+            ],
+            "candidates": [
+              "anna@clinic.example"
+            ],
+            "operations": [
+              {
+                "operation": "EXPLICIT_SPOKEN_TOKEN",
+                "before": "snabel-a",
+                "after": "@",
+                "tokenIndex": 1
+              },
+              {
+                "operation": "EXPLICIT_SPOKEN_TOKEN",
+                "before": "punktum",
+                "after": ".",
+                "tokenIndex": 3
+              },
+              {
+                "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+                "before": "anna snabel-a clinic punktum example",
+                "after": "anna@clinic.example"
+              }
+            ],
+            "uncertainTokens": [],
+            "errors": [],
+            "comparisonOnly": false
+          },
+          "resolution": {
+            "ranked": [
+              {
+                "candidate": "anna@clinic.example",
+                "matches": [
+                  {
+                    "contactId": "synthetic:clinic-a",
+                    "email": "anna@clinic.example",
+                    "recordVersion": "1",
+                    "sourceRecordId": "synthetic:record-a"
+                  }
+                ],
+                "score": 1,
+                "reason": "Exact characters; scoped record agrees"
+              }
+            ],
+            "databaseCandidates": [
+              {
+                "contactId": "synthetic:clinic-a",
+                "email": "anna@clinic.example",
+                "recordVersion": "1",
+                "sourceRecordId": "synthetic:record-a"
+              },
+              {
+                "contactId": "synthetic:clinic-a",
+                "email": "anne@clinic.example",
+                "recordVersion": "1",
+                "sourceRecordId": "synthetic:record-b"
+              }
+            ],
+            "databaseStatus": "OK",
+            "selected": "anna@clinic.example",
+            "selectionSource": "DETERMINISTIC_EXACT",
+            "classification": "EXACT_VERIFIED_MATCH",
+            "action": "CONFIRM",
+            "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+            "databaseEvidence": {
+              "scope": {
+                "callId": "d1-mock-65",
+                "recipientRevision": 1,
+                "contactId": "synthetic:clinic-a",
+                "mappingEvidenceId": "synthetic:identity-attestation",
+                "source": "SYNTHETIC_FIXTURE"
+              },
+              "requestedAt": 1792693664415,
+              "receivedAt": 1792693664416,
+              "clock": "unix-epoch-ms",
+              "provenance": "SYNTHETIC_FIXTURE",
+              "receipts": []
+            },
+            "lookupStatus": "MULTIPLE_MATCHES",
+            "policyLabel": "VERY_STRONG",
+            "matchType": "NORMALIZED_EXACT",
+            "autoAccept": false,
+            "calibratedProbability": null,
+            "businessDecision": "CONCISE_CONFIRMATION_FROZEN_C32"
+          }
+        }
+      },
+      {
+        "sequence": 8,
+        "event": "email.confirmation_queued",
+        "at": 24094.625,
+        "data": {
+          "attemptId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+          "selected": "anna@clinic.example",
+          "record": {
+            "playbackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+            "callId": "d1-mock-65",
+            "phraseId": "email-confirmation-question",
+            "phraseVersion": "stage-2.0c1-approved-1",
+            "assetId": "/audio/consent-stage20c1/fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f.wav",
+            "assetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "textHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+            "state": "QUEUED",
+            "mode": "telephone-prerecorded",
+            "queuedAt": 24094.625,
+            "startedAt": null,
+            "completedAt": null,
+            "interruptedAt": null,
+            "failedAt": null,
+            "completionSource": null,
+            "recipientRevision": 1,
+            "answerConsumed": false
+          }
+        }
+      },
+      {
+        "sequence": 9,
+        "event": "email.output",
+        "at": 24094.625,
+        "data": {
+          "action": "start",
+          "callId": "d1-mock-65",
+          "playbackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+          "phraseId": "email-confirmation-question",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "textHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+          "assetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "recipientRevision": 1,
+          "gain": {
+            "gainPolicy": "isabella-calibrated-headroom-v2",
+            "samples": 23406,
+            "preGainPeak": 0.18048095703125,
+            "preGainRms": 0.027123547507890488,
+            "requestedGain": 3.5573605757216837,
+            "effectiveGain": 3.5573605757216837,
+            "gainApplied": 3.5573605757216837,
+            "postGainPeak": 0.6420358419418335,
+            "postGainRms": 0.09648823855232025,
+            "clippingEvents": 0,
+            "peakProtectionEvents": 0
+          }
+        }
+      },
+      {
+        "sequence": 10,
+        "event": "email.output",
+        "at": 25069.875,
+        "data": {
+          "action": "complete",
+          "callId": "d1-mock-65",
+          "playbackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+          "phraseId": "email-confirmation-question",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "textHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+          "assetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "recipientRevision": 1,
+          "outputProof": "twilio-mark-boundary:348239c1-3719-4998-b56c-98338ef54a35"
+        }
+      },
+      {
+        "sequence": 11,
+        "event": "email.asr",
+        "at": 25090.875,
+        "data": {
+          "transcript": {
+            "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:2",
+            "text": "",
+            "final": false,
+            "source": "provider",
+            "observedAt": 25090.875,
+            "speechStartedAt": 25070.5,
+            "answerPlaybackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+            "recipientRevision": 1
+          },
+          "endpointOwner": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+          "revision": 1
+        }
+      },
+      {
+        "sequence": 12,
+        "event": "email.asr",
+        "at": 25090.875,
+        "data": {
+          "transcript": {
+            "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:2",
+            "text": "Ja",
+            "final": false,
+            "source": "provider",
+            "observedAt": 25090.875,
+            "providerItemId": "item-2",
+            "speechStartedAt": 25070.5,
+            "answerPlaybackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+            "recipientRevision": 1
+          },
+          "endpointOwner": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+          "revision": 1
+        }
+      },
+      {
+        "sequence": 13,
+        "event": "email.asr",
+        "at": 25110.875,
+        "data": {
+          "transcript": {
+            "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:2",
+            "text": "Ja",
+            "final": true,
+            "source": "provider",
+            "observedAt": 25110.875,
+            "providerItemId": "item-2",
+            "speechStartedAt": 25070.5,
+            "answerPlaybackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+            "recipientRevision": 1
+          },
+          "endpointOwner": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+          "revision": 1
+        }
+      },
+      {
+        "sequence": 14,
+        "event": "email.recipient_confirmed",
+        "at": 25110.875,
+        "data": {
+          "attemptId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+          "turn": {
+            "id": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:2",
+            "text": "Ja",
+            "final": true,
+            "source": "provider",
+            "observedAt": 25110.875,
+            "providerItemId": "item-2",
+            "speechStartedAt": 25070.5,
+            "answerPlaybackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+            "recipientRevision": 1
+          },
+          "candidate": "anna@clinic.example",
+          "savingEnabled": false
+        }
+      },
+      {
+        "sequence": 15,
+        "event": "email.local_close_output",
+        "at": 25910.875,
+        "data": {
+          "action": "start",
+          "callId": "d1-mock-65",
+          "playbackId": "bbc58aa6-4b5a-49cb-b92e-430845104f61",
+          "phraseId": "success-close",
+          "phraseVersion": "stage-2.0c32-candidate-1",
+          "textHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+          "assetHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+          "recipientRevision": 1,
+          "gain": {
+            "gainPolicy": "isabella-calibrated-headroom-v2",
+            "samples": 180558,
+            "preGainPeak": 0.200714111328125,
+            "preGainRms": 0.022444862109736567,
+            "requestedGain": 3.5573605757216837,
+            "effectiveGain": 3.5573605757216837,
+            "gainApplied": 3.5573605757216837,
+            "postGainPeak": 0.7140124440193176,
+            "postGainRms": 0.0798444675773216,
+            "clippingEvents": 0,
+            "peakProtectionEvents": 0
+          }
+        }
+      },
+      {
+        "sequence": 16,
+        "event": "email.local_close_output",
+        "at": 33434.125,
+        "data": {
+          "action": "complete",
+          "callId": "d1-mock-65",
+          "playbackId": "bbc58aa6-4b5a-49cb-b92e-430845104f61",
+          "phraseId": "success-close",
+          "phraseVersion": "stage-2.0c32-candidate-1",
+          "textHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+          "assetHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+          "recipientRevision": 1,
+          "outputProof": "twilio-mark-boundary:dd193664-04fd-4e12-8315-cb6f931504cd"
+        }
+      },
+      {
+        "sequence": 17,
+        "event": "email.local_evaluation_stored",
+        "at": 33434.125,
+        "data": {
+          "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+          "email": "anna@clinic.example",
+          "recipientRevision": 1,
+          "consentTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:0",
+          "sourceTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:1",
+          "confirmationTurnId": "mic:telephone:2ad36acd-b8e9-41ef-a42a-1630b5783420:2",
+          "candidateRevision": 1,
+          "storedAt": 33434.125,
+          "reviewer": "synthetic:operator",
+          "reviewReason": "Owned synthetic recipient confirmation",
+          "productionConsent": false
+        }
+      }
+    ],
+    "stage": "2.0C-3.2",
+    "status": "NOT_ACCEPTED",
+    "downstreamHandoffEnabled": false,
+    "telephoneVerified": false
+  },
+  "authorityEvidence": {
+    "status": "NOT_APPLICABLE",
+    "evidence": null
+  },
+  "takeoverEvidence": [],
+  "completionEvidence": [
+    {
+      "kind": "TWILIO_MARK_BOUNDARY",
+      "callId": "d1-mock-65",
+      "streamId": "MZ00000000000000000000000000000041",
+      "playbackId": "d1-mock-65:playback-1",
+      "phraseId": "opening",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "canonicalTextHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+      "synthesisTextHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+      "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "recipientRevision": 0,
+      "markName": "d1:0b6fabf3-6129-45f3-8751-44cfdea2c7b6",
+      "markSequence": 2,
+      "submittedFrames": 360,
+      "firstOutboundSequence": 1,
+      "lastOutboundSequence": 360,
+      "startedAt": 400,
+      "completedAt": 7598.25,
+      "physicalHearingProven": false,
+      "proof": "twilio-mark-boundary:0c2e7bcd-b9b8-425c-b80b-df247f389563"
+    },
+    {
+      "kind": "TWILIO_MARK_BOUNDARY",
+      "callId": "d1-mock-65",
+      "streamId": "MZ00000000000000000000000000000041",
+      "playbackId": "d1-mock-65:playback-2",
+      "phraseId": "purpose",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "canonicalTextHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+      "synthesisTextHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+      "assetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "recipientRevision": 1,
+      "markName": "d1:0d7bb794-d985-46c1-9a3b-f7caab9acac3",
+      "markSequence": 3,
+      "submittedFrames": 374,
+      "firstOutboundSequence": 361,
+      "lastOutboundSequence": 734,
+      "startedAt": 7598.25,
+      "completedAt": 15075.125,
+      "physicalHearingProven": false,
+      "proof": "twilio-mark-boundary:05da5e9f-d9d4-434c-9eae-5292e72bb33d"
+    },
+    {
+      "kind": "TWILIO_MARK_BOUNDARY",
+      "callId": "d1-mock-65",
+      "streamId": "MZ00000000000000000000000000000041",
+      "playbackId": "d1-mock-65:playback-3",
+      "phraseId": "consent-question",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "canonicalTextHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+      "synthesisTextHash": "82686ed5aae8211a6cda1b4a7bfc3dbeeb70dca083f8f9ca148707cafe6eef7c",
+      "assetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "recipientRevision": 1,
+      "markName": "d1:6654b19e-7bfa-4a26-8766-e6aa918026b3",
+      "markSequence": 4,
+      "submittedFrames": 198,
+      "firstOutboundSequence": 735,
+      "lastOutboundSequence": 932,
+      "startedAt": 15075.125,
+      "completedAt": 19022.5,
+      "physicalHearingProven": false,
+      "proof": "twilio-mark-boundary:1fe794f2-6f04-4bf1-8914-896881a3a00e"
+    },
+    {
+      "kind": "TWILIO_MARK_BOUNDARY",
+      "callId": "d1-mock-65",
+      "streamId": "MZ00000000000000000000000000000041",
+      "playbackId": "d1-mock-65:playback-4",
+      "phraseId": "email-request",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "canonicalTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+      "synthesisTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+      "assetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "recipientRevision": 1,
+      "markName": "d1:8dcc5fde-ddae-43b0-b7fc-b1f8468a6b1f",
+      "markSequence": 46,
+      "submittedFrames": 170,
+      "firstOutboundSequence": 933,
+      "lastOutboundSequence": 1102,
+      "startedAt": 19863.5,
+      "completedAt": 23253.625,
+      "physicalHearingProven": false,
+      "proof": "twilio-mark-boundary:8fc753f2-0bb0-427c-9cac-236b0a682099"
+    },
+    {
+      "kind": "TWILIO_MARK_BOUNDARY",
+      "callId": "d1-mock-65",
+      "streamId": "MZ00000000000000000000000000000041",
+      "playbackId": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+      "phraseId": "email-confirmation-question",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "canonicalTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+      "synthesisTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+      "assetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "recipientRevision": 1,
+      "markName": "d1:47db0b98-3052-4252-b853-f7f8d724ab19",
+      "markSequence": 88,
+      "submittedFrames": 49,
+      "firstOutboundSequence": 1103,
+      "lastOutboundSequence": 1151,
+      "startedAt": 24094.625,
+      "completedAt": 25069.875,
+      "physicalHearingProven": false,
+      "proof": "twilio-mark-boundary:348239c1-3719-4998-b56c-98338ef54a35"
+    },
+    {
+      "kind": "TWILIO_MARK_BOUNDARY",
+      "callId": "d1-mock-65",
+      "streamId": "MZ00000000000000000000000000000041",
+      "playbackId": "bbc58aa6-4b5a-49cb-b92e-430845104f61",
+      "phraseId": "success-close",
+      "phraseVersion": "stage-2.0c32-candidate-1",
+      "canonicalTextHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+      "synthesisTextHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+      "assetHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "recipientRevision": 1,
+      "markName": "d1:eaa15858-e075-4ca4-8b25-ec35613e8a52",
+      "markSequence": 130,
+      "submittedFrames": 377,
+      "firstOutboundSequence": 1152,
+      "lastOutboundSequence": 1528,
+      "startedAt": 25910.875,
+      "completedAt": 33434.125,
+      "physicalHearingProven": false,
+      "proof": "twilio-mark-boundary:dd193664-04fd-4e12-8315-cb6f931504cd"
+    }
+  ],
+  "errors": [],
+  "transportDiagnosticsSummary": {
+    "provider": "TWILIO",
+    "mode": "LOCAL_MOCK",
+    "callId": "d1-mock-65",
+    "providerCallReference": "CA00000000000000000000000000000041",
+    "streamId": "MZ00000000000000000000000000000041",
+    "lifecycle": "ENDED",
+    "mediaSequenceHealth": "OK",
+    "inboundPackets": 123,
+    "outboundPackets": 1528,
+    "outboundPlaybackId": null,
+    "markStatus": "PROVIDER_MARK_BOUNDARY",
+    "interruptions": 0,
+    "asrLifecycle": "STOPPED",
+    "errors": [],
+    "rejectedEvents": 0,
+    "automaticRedials": 0,
+    "audioStored": false
+  },
+  "asrLifecycle": [
+    {
+      "event": "speechStarted",
+      "at": 19043.5,
+      "generation": 0,
+      "owner": "d1-mock-65:playback-3",
+      "start": 19023.5
+    },
+    {
+      "event": "providerPartial",
+      "at": 19043.5,
+      "generation": 0,
+      "owner": "d1-mock-65:playback-3",
+      "start": 19023.5
+    },
+    {
+      "event": "providerFinal",
+      "at": 19063.5,
+      "generation": 0,
+      "owner": "d1-mock-65:playback-3",
+      "start": 19023.5
+    },
+    {
+      "event": "speechEnded/commitRequested",
+      "at": 19843.5,
+      "generation": 0,
+      "owner": "d1-mock-65:playback-3",
+      "start": 19023.5,
+      "end": 19043.5
+    },
+    {
+      "event": "speechStarted",
+      "at": 23274.625,
+      "generation": 1,
+      "owner": "d1-mock-65:playback-4",
+      "start": 23254.5
+    },
+    {
+      "event": "providerPartial",
+      "at": 23274.625,
+      "generation": 1,
+      "owner": "d1-mock-65:playback-4",
+      "start": 23254.5
+    },
+    {
+      "event": "providerFinal",
+      "at": 23294.625,
+      "generation": 1,
+      "owner": "d1-mock-65:playback-4",
+      "start": 23254.5
+    },
+    {
+      "event": "speechEnded/commitRequested",
+      "at": 24074.625,
+      "generation": 1,
+      "owner": "d1-mock-65:playback-4",
+      "start": 23254.5,
+      "end": 23274.5
+    },
+    {
+      "event": "speechStarted",
+      "at": 25090.875,
+      "generation": 2,
+      "owner": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+      "start": 25070.5
+    },
+    {
+      "event": "providerPartial",
+      "at": 25090.875,
+      "generation": 2,
+      "owner": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+      "start": 25070.5
+    },
+    {
+      "event": "providerFinal",
+      "at": 25110.875,
+      "generation": 2,
+      "owner": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+      "start": 25070.5
+    },
+    {
+      "event": "speechEnded/commitRequested",
+      "at": 25890.875,
+      "generation": 2,
+      "owner": "9bb66d61-05ab-4093-9fe8-af9c93276d67",
+      "start": 25070.5,
+      "end": 25090.5
+    }
+  ],
+  "sourceAudioStored": false,
+  "productionConsent": false
+}

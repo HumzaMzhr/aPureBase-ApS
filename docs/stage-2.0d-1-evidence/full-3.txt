@@ -1,0 +1,12 @@
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /private/tmp/d1-validation-A4DdC8/tree
+
+
+ Test Files  96 passed (96)
+      Tests  1945 passed (1945)
+   Start at  23:29:09
+   Duration  11.59s (transform 3.29s, setup 0ms, import 9.17s, tests 48.25s, environment 7ms)

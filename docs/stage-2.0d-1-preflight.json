@@ -1,0 +1,28 @@
+{
+  "status": "LOCAL_MOCK_READY",
+  "configurationStatus": "NOT_CONFIGURED",
+  "missing": [
+    "ACCOUNT_CONFIGURATION_MISSING",
+    "SIGNATURE_CREDENTIAL_MISSING",
+    "FROM_CONFIGURATION_MISSING",
+    "CALLBACK_ENDPOINT_MISSING",
+    "MEDIA_ENDPOINT_MISSING",
+    "ASR_MISSING"
+  ],
+  "blockers": [],
+  "destinationSupplied": false,
+  "destinationValid": false,
+  "physicalMode": false,
+  "physicalCallAuthorizationRequired": true,
+  "d1DialingAvailable": false,
+  "providerVerified": false,
+  "checks": {
+    "webhookValidation": true,
+    "assets": true,
+    "ledger": true,
+    "emailPolicy": true,
+    "consentPolicy": true,
+    "takeover": true,
+    "mockValidation": true
+  }
+}

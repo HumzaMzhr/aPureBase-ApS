@@ -1,0 +1,17 @@
+{
+  "pass": true,
+  "changedFilesScanned": 81,
+  "credentialPatternFindings": [],
+  "trackedPrivateEnv": [],
+  "whitespaceFindings": [],
+  "validatedSourceDrift": [],
+  "excludedPrivateAndGeneratedData": {
+    "privateEnvNamesPresent": 1,
+    "ignoredBenchmarkFilesExcluded": 6455,
+    "ignoredDependencyFilesExcluded": 8278,
+    "ignoredBuildFilesExcluded": 134
+  },
+  "inspectionScope": "All candidate changed UTF-8 files plus tracked env names; no ignored private file contents read. Synthetic test tokens and reserved test destinations are fixtures, not provider credentials.",
+  "screenshot": "Private local only, outside Git; no screenshot or raw audio added",
+  "providerRequests": 0
+}

@@ -1,0 +1,1 @@
+{"pass":true,"protected":996,"integrationHooks":8,"recordingsPreserved":54,"sourceRecords":1025}
