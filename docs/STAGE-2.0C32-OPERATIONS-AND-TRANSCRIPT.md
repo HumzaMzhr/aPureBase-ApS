@@ -1,0 +1,19 @@
+# C32 Operations and transcript contract
+
+Operations is the default `/` (also `/operations`); existing Human Acceptance is `/qa`. Start using `node --import tsx scripts/stage20c32-run.ts`. This rebuilds cached source and media only. All controls for telephone calls/transfer are disabled. There is no Twilio dependency, API, Media Stream, production database or deployment. This is a frozen engineering foundation, not production readiness or human acceptance.
+
+Operations sections: Dashboard, Calls, Active Call, Transcripts, Contacts / Resolution, Review, Diagnostics and Settings. Production metrics remain NOT CONNECTED. A deliberate **Load local evaluation example** action supplies a clearly labelled synthetic transcript held in component memory. Reload discards it. No provider, microphone or audio playback is involved. The example is not a production contact or consent record. Existing QA persistence remains separate and unchanged.
+
+`src/consent/stage32/operations/ledger.ts` defines schema `c32-transcript-ledger-1` and the in-memory per-call append authority. Ordering is `(callId, sequenceNumber)`, allocated on observation; wall/monotonic timestamps are evidence/display metadata. Late finals append with the original sourceTurnId. Partials remain distinct. Repeated exact finals are suppressed; conflicting rewrites or stale partials after a final fail closed. Duplicate event IDs cannot change an existing observation. Export import rejects sequence tampering and duplicate speech.
+
+Speakers: ISABELLA, CLINIC, HUMAN_AGENT, SYSTEM. Events cover partial/final speech, derived translations, actual playback lifecycle observations including interruption, consent, email, authority, takeover, errors and call lifecycle. An interrupted playback cannot complete. Returned entries are defensive copies. No ledger path mutates the existing consent/session engine or becomes eligibility evidence. The observational export explicitly declares productionConsent=false and sourceAudioStored=false.
+
+Danish source text is never replaced with English or synthesis spelling. Derived English is separately labelled and may be attached when available or appended in a TRANSLATION_EVENT referencing an existing final. A playback observation uses canonical Danish; actual future adapters must bind exact current phrase/version/text/audio from the existing player, and must source completion from actual output lifecycle, not elapsed-duration timers. The local example explicitly identifies all events as LOCAL_EVALUATION.
+
+`FutureTranscriptStoragePort` is an interface only; no implementation is installed. Retention/storage authority is BUSINESS_DECISION_REQUIRED. Operations does not write browser storage, CRM, cloud, transcript databases or audio recordings. Explicit local export is user initiated and remains observational.
+
+`FutureCallControlPort` defines beginTakeover(context), completeTakeover(callId), returnToAutomation(callId, policyAuthorization) and endCall(callId). No implementation is present. Takeover context includes recipient, complete ordered transcript, consent/email state, reason and last Isabella/clinic actions. Return to automation requires a future explicit policy; no UI action enables it now. Stage 1.9.6 remains preserved, with no telephone transfer integration claim.
+
+The Diagnostics view makes each requested unavailable/degraded condition explicit. Its state preview is local presentation only and performs no action. Settings show frozen Isabella/model/speed/gain and short email confirmation; there is no production “Speak email” button. The existing guarded email/consent engine remains the decision authority.
+
+Stage 2.0D may supply adapters only after a separate instruction. Human listening, live ASR, physical timing, business/retention decisions, CRM and telephone acceptance remain pending.

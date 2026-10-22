@@ -1,0 +1,31 @@
+{
+  "emailCases": 66,
+  "emailPolicyCorrect": 66,
+  "falseEmailAutoAccepts": 0,
+  "ambiguousAutomaticSelections": 0,
+  "dbModelCases": 18,
+  "dbModelPassed": 18,
+  "negativeControl": {
+    "kind": "TEST_ONLY_UNSAFE_SNAPSHOT_NEVER_APPLIED_TO_REAL_CONTROLLER",
+    "metrics": {
+      "falseAutoAccepts": 1,
+      "ambiguousAutoSelections": 1
+    },
+    "detected": true,
+    "realControllerStoredEmail": null
+  },
+  "consentCases": 29,
+  "consentFalsePositives": 0,
+  "scenarios": 46,
+  "remediation": 32,
+  "normalPathFullEmailReadbackCount": 0,
+  "requiredListening": 12,
+  "optionalDiagnostics": 4,
+  "recordingsPreserved": 52,
+  "providerRequests": 0,
+  "audioGeneration": 0,
+  "liveASR": 0,
+  "telephone": 0,
+  "productionReady": false,
+  "accepted": false
+}

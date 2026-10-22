@@ -1,0 +1,303 @@
+{
+  "directory": "/private/tmp/c32-freeze-validation-xRAIp1",
+  "tree": "/private/tmp/c32-freeze-validation-xRAIp1/tree",
+  "results": [
+    {
+      "label": "focused",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-stage20c32-candidates.test.ts",
+        "tests/consent-stage20c32-consolidation.test.tsx",
+        "tests/consent-stage20c32-email-freeze.test.ts",
+        "tests/consent-stage20c32-email.test.ts",
+        "tests/consent-stage20c32-feedback-closure.test.ts",
+        "tests/consent-stage20c32-freeze-quality.test.ts",
+        "tests/consent-stage20c32-hardening.test.ts",
+        "tests/consent-stage20c32-operations-ledger.test.ts",
+        "tests/consent-stage20c32-operations-ui.test.tsx",
+        "tests/consent-stage20c32-package-brand.test.tsx",
+        "tests/consent-stage20c32-package-ui.test.tsx",
+        "tests/consent-stage20c32-package.test.ts",
+        "tests/consent-stage20c32-remediation.test.ts",
+        "tests/consent-stage20c32-sende.test.ts",
+        "tests/consent-stage20c32-speech.test.tsx"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 3262.888958,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/focused.txt",
+      "testsPassed": 723,
+      "testFiles": 15
+    },
+    {
+      "label": "c31",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-stage20c3.test.ts",
+        "tests/consent-stage20c3-view.test.tsx",
+        "tests/consent-stage20c31.test.ts",
+        "tests/consent-stage20c31-view.test.tsx",
+        "tests/consent-stage20c31-gateway.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1927.1480839999995,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/c31.txt",
+      "testsPassed": 139,
+      "testFiles": 5
+    },
+    {
+      "label": "prior-consent",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-foundation.test.ts",
+        "tests/consent-stage20b.test.tsx",
+        "tests/consent-stage20b2.test.tsx",
+        "tests/consent-stage20c1.test.ts",
+        "tests/consent-stage20c2.test.ts",
+        "tests/consent-stage20c3-view.test.tsx",
+        "tests/consent-stage20c3.test.ts",
+        "tests/consent-stage20c31-gateway.test.ts",
+        "tests/consent-stage20c31-view.test.tsx",
+        "tests/consent-stage20c31.test.ts",
+        "tests/consent-transcription.test.ts",
+        "tests/consent-view.test.tsx",
+        "tests/stage196-short-consent.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1426.5195000000003,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/prior-consent.txt",
+      "testsPassed": 496,
+      "testFiles": 13
+    },
+    {
+      "label": "replay-1",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2480.2606670000005,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/replay-1.txt",
+      "testsPassed": 2,
+      "testFiles": 1
+    },
+    {
+      "label": "pcm-1",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 625.9372079999994,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/pcm-1.txt",
+      "testsPassed": 1,
+      "testFiles": 1
+    },
+    {
+      "label": "replay-2",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2570.252208,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/replay-2.txt",
+      "testsPassed": 2,
+      "testFiles": 1
+    },
+    {
+      "label": "pcm-2",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 614.9690410000003,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/pcm-2.txt",
+      "testsPassed": 1,
+      "testFiles": 1
+    },
+    {
+      "label": "replay-3",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2479.730749999999,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/replay-3.txt",
+      "testsPassed": 2,
+      "testFiles": 1
+    },
+    {
+      "label": "pcm-3",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 608.9080839999988,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/pcm-3.txt",
+      "testsPassed": 1,
+      "testFiles": 1
+    },
+    {
+      "label": "replay-4",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2500.0753750000003,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/replay-4.txt",
+      "testsPassed": 2,
+      "testFiles": 1
+    },
+    {
+      "label": "pcm-4",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 632.9220830000013,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/pcm-4.txt",
+      "testsPassed": 1,
+      "testFiles": 1
+    },
+    {
+      "label": "replay-5",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/stage195-replay.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 2488.5420000000013,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/replay-5.txt",
+      "testsPassed": 2,
+      "testFiles": 1
+    },
+    {
+      "label": "pcm-5",
+      "command": [
+        "/opt/homebrew/Cellar/node/25.9.0/bin/node",
+        "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/continuous-transcription-gateway.test.ts",
+        "-t",
+        "forwards all 45 seconds"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 644.4522919999981,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/pcm-5.txt",
+      "testsPassed": 1,
+      "testFiles": 1
+    },
+    {
+      "label": "full-1",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 11089.870332999999,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/full-1.txt",
+      "testsPassed": 1843,
+      "testFiles": 93
+    },
+    {
+      "label": "full-2",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 9627.355875000001,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/full-2.txt",
+      "testsPassed": 1843,
+      "testFiles": 93
+    },
+    {
+      "label": "full-3",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 10133.285916,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/full-3.txt",
+      "testsPassed": 1843,
+      "testFiles": 93
+    },
+    {
+      "label": "lint",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 3739.9472499999974,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/lint.txt",
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "typecheck",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 5804.642125000006,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/typecheck.txt",
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "standard-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 6348.237249999998,
+      "log": "/private/tmp/c32-freeze-validation-xRAIp1/standard-build.txt",
+      "testsPassed": null,
+      "testFiles": null
+    }
+  ]
+}

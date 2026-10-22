@@ -1,0 +1,96 @@
+[
+  {
+    "phraseId": "why-calling",
+    "wordingVersion": "stage-2.0c32-sende-correction-1",
+    "text": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+    "textHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+    "assetHash": "e42efb01c72e78f97a5c19de443e898637af5c0e55f3ec41429d206474b59faa",
+    "path": "/audio/consent-stage20c32/e42efb01c72e78f97a5c19de443e898637af5c0e55f3ec41429d206474b59faa.wav",
+    "voice": {
+      "provider": "ElevenLabs",
+      "name": "Isabella",
+      "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+      "modelId": "eleven_flash_v2_5",
+      "speed": 0.95
+    },
+    "requestedSpeed": 0.95,
+    "generatedAt": "2026-10-22T14:59:05.798Z",
+    "duration": 5.851416666666666,
+    "samples": 140434,
+    "sampleRate": 24000,
+    "mediaFormat": "wav-pcm-s16le-mono",
+    "provenance": {
+      "verified": true,
+      "method": "authenticated-provider-response-and-content-hash",
+      "providerRequestId": "XVE1gsUPCyrcJj6xUTkX",
+      "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+      "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+    },
+    "verification": {
+      "mediaValid": true,
+      "nonSilent": true,
+      "clippingEvents": 0,
+      "rawPeak": 0.171142578125,
+      "gainApplied": 3.5573605757216837,
+      "peakProtectionEvents": 0,
+      "outputPeak": 0.6088158488273621
+    },
+    "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+    "businessWordingApproved": false,
+    "productionApproved": false,
+    "spokenText": "Jeg ringer kun for at spørge om a Pure Base må senne dig relevant faglig information via e-mail.",
+    "spokenTextHash": "b31c189ea8e17557c9fd2bddc851003b24c75d48539aaf2c694cf57161d8f6a8",
+    "planHash": "fbc872c89c07bcd69255e4e24ff7572e522a9498d4c50b21955036ac9a749d26",
+    "synthesisVersion": "stage-2.0c32-sende-correction-1",
+    "replacesAudioHash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+    "humanReviewStatus": "HUMAN_REVIEW_PENDING",
+    "candidateWordingAuthorized": true
+  },
+  {
+    "phraseId": "clarify",
+    "wordingVersion": "stage-2.0c32-sende-correction-1",
+    "text": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+    "textHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+    "assetHash": "5206820f9e531c97823a92dbbf3fcfee92c50fe6ff82e78e61846f48e9f0e06b",
+    "path": "/audio/consent-stage20c32/5206820f9e531c97823a92dbbf3fcfee92c50fe6ff82e78e61846f48e9f0e06b.wav",
+    "voice": {
+      "provider": "ElevenLabs",
+      "name": "Isabella",
+      "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+      "modelId": "eleven_flash_v2_5",
+      "speed": 0.95
+    },
+    "requestedSpeed": 0.95,
+    "generatedAt": "2026-10-22T14:59:06.811Z",
+    "duration": 5.0155,
+    "samples": 120372,
+    "sampleRate": 24000,
+    "mediaFormat": "wav-pcm-s16le-mono",
+    "provenance": {
+      "verified": true,
+      "method": "authenticated-provider-response-and-content-hash",
+      "providerRequestId": "SIqk3yUkxWlIobk8TRAl",
+      "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+      "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+    },
+    "verification": {
+      "mediaValid": true,
+      "nonSilent": true,
+      "clippingEvents": 0,
+      "rawPeak": 0.132354736328125,
+      "gainApplied": 3.5573605757216837,
+      "peakProtectionEvents": 0,
+      "outputPeak": 0.47083351016044617
+    },
+    "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+    "businessWordingApproved": true,
+    "productionApproved": false,
+    "spokenText": "Selvfølgelig. Må a Pure Base senne relevant faglig information til dig via e-mail?",
+    "spokenTextHash": "21e302e194cea936eb993121b64e388efdc677a82b53b7cd44d696c45f6ffa93",
+    "planHash": "3208e5aba930fa0c16b43d426091c1a99f32a426606cd50f5426dd5fa37f14b8",
+    "synthesisVersion": "stage-2.0c32-sende-correction-1",
+    "replacesAudioHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+    "humanReviewStatus": "HUMAN_REVIEW_PENDING",
+    "candidateWordingAuthorized": true
+  }
+]

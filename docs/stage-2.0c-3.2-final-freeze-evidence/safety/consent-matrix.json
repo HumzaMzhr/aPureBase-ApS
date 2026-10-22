@@ -1,0 +1,1080 @@
+{
+  "kind": "ACTUAL_GUARDS_WITH_PUBLIC_SESSION_INVALIDATIONS",
+  "denominator": 29,
+  "rows": [
+    {
+      "id": "valid-owned-final",
+      "expectedEligible": true,
+      "eligible": true,
+      "classification": "YES",
+      "operatorCanReviewYes": true,
+      "passed": true
+    },
+    {
+      "id": "partial",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "maybe",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "okay",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "thanks",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "question",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "silence",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "stale-YES",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "during-playback",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "interrupted",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "wrong-owner",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "receptionist",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "wrong-person",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "unknown-recipient",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "intermediary-no-authority",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "unsupported-question",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "model-recommendation",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "database-match",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "email-capture",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "operator-phrase-selection",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "wrong-scope",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "wrong-version",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "recipient-revision",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "consumed-window",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "missing-completion",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "UNCLEAR",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "NO",
+      "expectedEligible": false,
+      "eligible": false,
+      "classification": "NO",
+      "operatorCanReviewYes": false,
+      "passed": true
+    },
+    {
+      "id": "authority-revision",
+      "expectedEligible": false,
+      "eligible": false,
+      "passed": true,
+      "evidence": {
+        "initialState": "ANSWERED",
+        "transcripts": [
+          {
+            "id": "mic:SIMULATED:1",
+            "text": "Jeg har bemyndigelse til at håndtere denne forespørgsel og oplyse lægens e-mailadresse",
+            "source": "provider",
+            "final": true,
+            "observedAt": 14048.166666666666,
+            "speechStartedAt": 10048.166666666666,
+            "answerPlaybackId": "synthetic:remediation-authority-revision:playback-1"
+          },
+          {
+            "id": "mic:SIMULATED:2",
+            "text": "Ja",
+            "source": "provider",
+            "final": true,
+            "observedAt": 30633.375,
+            "speechStartedAt": 29633.375,
+            "answerPlaybackId": "synthetic:remediation-authority-revision:playback-3"
+          },
+          {
+            "id": "mic:SIMULATED:4",
+            "text": "Jeg har ikke fuldmagt",
+            "source": "provider",
+            "final": true,
+            "observedAt": 42573.5,
+            "speechStartedAt": 41573.5,
+            "answerPlaybackId": "synthetic:remediation-authority-revision:playback-4",
+            "recipientRevision": 2
+          }
+        ],
+        "recipientType": "INTERMEDIARY",
+        "authorityStatus": "DENIED",
+        "consent": null,
+        "consentOwner": null,
+        "transcriptOwnership": [
+          {
+            "id": "mic:SIMULATED:1",
+            "owner": "synthetic:remediation-authority-revision:playback-1"
+          },
+          {
+            "id": "mic:SIMULATED:2",
+            "owner": "synthetic:remediation-authority-revision:playback-3"
+          },
+          {
+            "id": "mic:SIMULATED:4",
+            "owner": "synthetic:remediation-authority-revision:playback-4"
+          }
+        ],
+        "email": {
+          "state": "HUMAN_TAKEOVER",
+          "attempt": {
+            "id": "mic:SIMULATED:3",
+            "revision": 1,
+            "consentTurnId": "mic:SIMULATED:2",
+            "at": 40373.5,
+            "turn": {
+              "id": "mic:SIMULATED:3",
+              "text": "anna@clinic.example",
+              "source": "provider",
+              "final": true,
+              "observedAt": 40373.5,
+              "speechStartedAt": 36873.5,
+              "answerPlaybackId": "synthetic:remediation-authority-revision:playback-4",
+              "recipientRevision": 2
+            },
+            "parsed": {
+              "version": "stage-2.0c32-structured-email-1",
+              "raw": "anna@clinic.example",
+              "tokens": [
+                {
+                  "raw": "anna@clinic.example",
+                  "start": 0,
+                  "end": 19,
+                  "kind": "literal",
+                  "alternatives": [
+                    "anna@clinic.example"
+                  ]
+                }
+              ],
+              "candidates": [
+                "anna@clinic.example"
+              ],
+              "operations": [],
+              "uncertainTokens": [],
+              "errors": [],
+              "comparisonOnly": false
+            },
+            "resolution": {
+              "ranked": [
+                {
+                  "candidate": "anna@clinic.example",
+                  "matches": [
+                    {
+                      "contactId": "synthetic:clinic",
+                      "email": "anna@clinic.example",
+                      "recordVersion": "1",
+                      "sourceRecordId": "synthetic:record:0"
+                    }
+                  ],
+                  "score": 1,
+                  "reason": "Exact characters; scoped record agrees"
+                }
+              ],
+              "databaseCandidates": [
+                {
+                  "contactId": "synthetic:clinic",
+                  "email": "anna@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:record:0"
+                },
+                {
+                  "contactId": "synthetic:clinic",
+                  "email": "anne@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:record:1"
+                }
+              ],
+              "databaseStatus": "OK",
+              "selected": "anna@clinic.example",
+              "selectionSource": "DETERMINISTIC_EXACT",
+              "classification": "EXACT_VERIFIED_MATCH",
+              "action": "CONFIRM",
+              "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+              "databaseEvidence": {
+                "scope": {
+                  "callId": "synthetic:remediation-authority-revision",
+                  "recipientRevision": 2,
+                  "contactId": "synthetic:clinic",
+                  "mappingEvidenceId": "synthetic:verified-map",
+                  "source": "SYNTHETIC_FIXTURE"
+                },
+                "requestedAt": 1792686619373,
+                "receivedAt": 1792686619373,
+                "clock": "unix-epoch-ms",
+                "provenance": "SYNTHETIC_FIXTURE",
+                "receipts": []
+              },
+              "lookupStatus": "MULTIPLE_MATCHES",
+              "policyLabel": "EXACT",
+              "matchType": "EXACT",
+              "autoAccept": false,
+              "calibratedProbability": null,
+              "businessDecision": "CONCISE_CONFIRMATION_FROZEN_C32"
+            }
+          },
+          "candidateAttempts": 1,
+          "savingEnabled": false,
+          "sourceAudioStored": false,
+          "characterReadback": "DIAGNOSTIC_COMPARISON_ONLY",
+          "productionReady": false,
+          "normalEmailSpeech": "CONCISE_CONFIRMATION_ONLY",
+          "fullCallRecording": "NOT_IMPLEMENTED_BUSINESS_DECISION_REQUIRED",
+          "takeoverReason": "AUTHORITY_DENIED",
+          "attemptHistory": [
+            {
+              "id": "mic:SIMULATED:3",
+              "revision": 1,
+              "consentTurnId": "mic:SIMULATED:2",
+              "at": 40373.5,
+              "turn": {
+                "id": "mic:SIMULATED:3",
+                "text": "anna@clinic.example",
+                "source": "provider",
+                "final": true,
+                "observedAt": 40373.5,
+                "speechStartedAt": 36873.5,
+                "answerPlaybackId": "synthetic:remediation-authority-revision:playback-4",
+                "recipientRevision": 2
+              },
+              "parsed": {
+                "version": "stage-2.0c32-structured-email-1",
+                "raw": "anna@clinic.example",
+                "tokens": [
+                  {
+                    "raw": "anna@clinic.example",
+                    "start": 0,
+                    "end": 19,
+                    "kind": "literal",
+                    "alternatives": [
+                      "anna@clinic.example"
+                    ]
+                  }
+                ],
+                "candidates": [
+                  "anna@clinic.example"
+                ],
+                "operations": [],
+                "uncertainTokens": [],
+                "errors": [],
+                "comparisonOnly": false
+              },
+              "resolution": {
+                "ranked": [
+                  {
+                    "candidate": "anna@clinic.example",
+                    "matches": [
+                      {
+                        "contactId": "synthetic:clinic",
+                        "email": "anna@clinic.example",
+                        "recordVersion": "1",
+                        "sourceRecordId": "synthetic:record:0"
+                      }
+                    ],
+                    "score": 1,
+                    "reason": "Exact characters; scoped record agrees"
+                  }
+                ],
+                "databaseCandidates": [
+                  {
+                    "contactId": "synthetic:clinic",
+                    "email": "anna@clinic.example",
+                    "recordVersion": "1",
+                    "sourceRecordId": "synthetic:record:0"
+                  },
+                  {
+                    "contactId": "synthetic:clinic",
+                    "email": "anne@clinic.example",
+                    "recordVersion": "1",
+                    "sourceRecordId": "synthetic:record:1"
+                  }
+                ],
+                "databaseStatus": "OK",
+                "selected": "anna@clinic.example",
+                "selectionSource": "DETERMINISTIC_EXACT",
+                "classification": "EXACT_VERIFIED_MATCH",
+                "action": "CONFIRM",
+                "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+                "databaseEvidence": {
+                  "scope": {
+                    "callId": "synthetic:remediation-authority-revision",
+                    "recipientRevision": 2,
+                    "contactId": "synthetic:clinic",
+                    "mappingEvidenceId": "synthetic:verified-map",
+                    "source": "SYNTHETIC_FIXTURE"
+                  },
+                  "requestedAt": 1792686619373,
+                  "receivedAt": 1792686619373,
+                  "clock": "unix-epoch-ms",
+                  "provenance": "SYNTHETIC_FIXTURE",
+                  "receipts": []
+                },
+                "lookupStatus": "MULTIPLE_MATCHES",
+                "policyLabel": "EXACT",
+                "matchType": "EXACT",
+                "autoAccept": false,
+                "calibratedProbability": null,
+                "businessDecision": "CONCISE_CONFIRMATION_FROZEN_C32"
+              }
+            }
+          ],
+          "pipeline": {
+            "rawTranscript": "anna@clinic.example",
+            "reconstructedCandidate": [
+              "anna@clinic.example"
+            ],
+            "databaseCandidates": [
+              {
+                "contactId": "synthetic:clinic",
+                "email": "anna@clinic.example",
+                "recordVersion": "1",
+                "sourceRecordId": "synthetic:record:0"
+              },
+              {
+                "contactId": "synthetic:clinic",
+                "email": "anne@clinic.example",
+                "recordVersion": "1",
+                "sourceRecordId": "synthetic:record:1"
+              }
+            ],
+            "modelRecommendation": {
+              "status": "NOT_REQUESTED",
+              "raw": null,
+              "accepted": false,
+              "reason": "No advisory model invoked"
+            },
+            "resolutionStatus": "EXACT_VERIFIED_MATCH",
+            "resolvedCandidate": null,
+            "confirmationStatus": "NOT_CONFIRMED",
+            "correctionLineage": [
+              {
+                "attemptId": "mic:SIMULATED:3",
+                "correctionOf": null,
+                "candidate": "anna@clinic.example",
+                "status": "INVALIDATED"
+              }
+            ],
+            "takeoverReason": "AUTHORITY_DENIED",
+            "sourceTurn": {
+              "id": "mic:SIMULATED:3",
+              "text": "anna@clinic.example",
+              "source": "provider",
+              "final": true,
+              "observedAt": 40373.5,
+              "speechStartedAt": 36873.5,
+              "answerPlaybackId": "synthetic:remediation-authority-revision:playback-4",
+              "recipientRevision": 2
+            },
+            "reconstruction": {
+              "version": "stage-2.0c32-structured-email-1",
+              "raw": "anna@clinic.example",
+              "tokens": [
+                {
+                  "raw": "anna@clinic.example",
+                  "start": 0,
+                  "end": 19,
+                  "kind": "literal",
+                  "alternatives": [
+                    "anna@clinic.example"
+                  ]
+                }
+              ],
+              "candidates": [
+                "anna@clinic.example"
+              ],
+              "operations": [],
+              "uncertainTokens": [],
+              "errors": [],
+              "comparisonOnly": false
+            },
+            "databaseEvidence": {
+              "scope": {
+                "callId": "synthetic:remediation-authority-revision",
+                "recipientRevision": 2,
+                "contactId": "synthetic:clinic",
+                "mappingEvidenceId": "synthetic:verified-map",
+                "source": "SYNTHETIC_FIXTURE"
+              },
+              "requestedAt": 1792686619373,
+              "receivedAt": 1792686619373,
+              "clock": "unix-epoch-ms",
+              "provenance": "SYNTHETIC_FIXTURE",
+              "receipts": []
+            },
+            "confirmation": null,
+            "questionPlayback": null,
+            "fullEmailSpeechEnabled": false
+          },
+          "wholeCallRecordingEnabled": false,
+          "events": [
+            {
+              "sequence": 1,
+              "event": "email.invalidated",
+              "at": 35673.5,
+              "data": {
+                "reason": "NEW_ADDRESS_WINDOW"
+              }
+            },
+            {
+              "sequence": 2,
+              "event": "email.request_opened",
+              "at": 35673.5,
+              "data": {
+                "scope": {
+                  "callId": "synthetic:remediation-authority-revision",
+                  "recipientRevision": 2,
+                  "contactId": "synthetic:clinic",
+                  "mappingEvidenceId": "synthetic:verified-map",
+                  "source": "SYNTHETIC_FIXTURE"
+                },
+                "playback": {
+                  "callId": "synthetic:remediation-authority-revision",
+                  "playbackId": "synthetic:remediation-authority-revision:playback-4",
+                  "phraseId": "email-request",
+                  "phraseVersion": "stage-2.0c1-approved-1",
+                  "assetId": "email-request",
+                  "assetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+                  "state": "COMPLETED",
+                  "queuedAt": 32133.375,
+                  "startedAt": 32283.375,
+                  "completedAt": 35673.5,
+                  "interruptedAt": null,
+                  "failedAt": null,
+                  "completionSource": "VERIFIED_OUTPUT_ADAPTER",
+                  "recipientRevision": 2,
+                  "answerConsumed": false,
+                  "mode": "local-prerecorded",
+                  "textHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+                  "outputProof": "web-audio-source-ended:synthetic:remediation-authority-revision:playback-4:SYNTHETIC_SIMULATOR_NOT_PHYSICAL"
+                },
+                "consentTurnId": "mic:SIMULATED:2",
+                "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?"
+              }
+            },
+            {
+              "sequence": 3,
+              "event": "email.asr",
+              "at": 40373.5,
+              "data": {
+                "transcript": {
+                  "id": "mic:SIMULATED:3",
+                  "text": "anna@clinic.example",
+                  "source": "provider",
+                  "final": true,
+                  "observedAt": 40373.5,
+                  "speechStartedAt": 36873.5,
+                  "answerPlaybackId": "synthetic:remediation-authority-revision:playback-4",
+                  "recipientRevision": 2
+                },
+                "endpointOwner": "synthetic:remediation-authority-revision:playback-4",
+                "revision": 2
+              }
+            },
+            {
+              "sequence": 4,
+              "event": "email.parsed",
+              "at": 40373.5,
+              "data": {
+                "sourceTurnId": "mic:SIMULATED:3",
+                "parsed": {
+                  "version": "stage-2.0c32-structured-email-1",
+                  "raw": "anna@clinic.example",
+                  "tokens": [
+                    {
+                      "raw": "anna@clinic.example",
+                      "start": 0,
+                      "end": 19,
+                      "kind": "literal",
+                      "alternatives": [
+                        "anna@clinic.example"
+                      ]
+                    }
+                  ],
+                  "candidates": [
+                    "anna@clinic.example"
+                  ],
+                  "operations": [],
+                  "uncertainTokens": [],
+                  "errors": [],
+                  "comparisonOnly": false
+                }
+              }
+            },
+            {
+              "sequence": 5,
+              "event": "email.resolved",
+              "at": 40373.5,
+              "data": {
+                "id": "mic:SIMULATED:3",
+                "revision": 1,
+                "consentTurnId": "mic:SIMULATED:2",
+                "at": 40373.5,
+                "turn": {
+                  "id": "mic:SIMULATED:3",
+                  "text": "anna@clinic.example",
+                  "source": "provider",
+                  "final": true,
+                  "observedAt": 40373.5,
+                  "speechStartedAt": 36873.5,
+                  "answerPlaybackId": "synthetic:remediation-authority-revision:playback-4",
+                  "recipientRevision": 2
+                },
+                "parsed": {
+                  "version": "stage-2.0c32-structured-email-1",
+                  "raw": "anna@clinic.example",
+                  "tokens": [
+                    {
+                      "raw": "anna@clinic.example",
+                      "start": 0,
+                      "end": 19,
+                      "kind": "literal",
+                      "alternatives": [
+                        "anna@clinic.example"
+                      ]
+                    }
+                  ],
+                  "candidates": [
+                    "anna@clinic.example"
+                  ],
+                  "operations": [],
+                  "uncertainTokens": [],
+                  "errors": [],
+                  "comparisonOnly": false
+                },
+                "resolution": {
+                  "ranked": [
+                    {
+                      "candidate": "anna@clinic.example",
+                      "matches": [
+                        {
+                          "contactId": "synthetic:clinic",
+                          "email": "anna@clinic.example",
+                          "recordVersion": "1",
+                          "sourceRecordId": "synthetic:record:0"
+                        }
+                      ],
+                      "score": 1,
+                      "reason": "Exact characters; scoped record agrees"
+                    }
+                  ],
+                  "databaseCandidates": [
+                    {
+                      "contactId": "synthetic:clinic",
+                      "email": "anna@clinic.example",
+                      "recordVersion": "1",
+                      "sourceRecordId": "synthetic:record:0"
+                    },
+                    {
+                      "contactId": "synthetic:clinic",
+                      "email": "anne@clinic.example",
+                      "recordVersion": "1",
+                      "sourceRecordId": "synthetic:record:1"
+                    }
+                  ],
+                  "databaseStatus": "OK",
+                  "selected": "anna@clinic.example",
+                  "selectionSource": "DETERMINISTIC_EXACT",
+                  "classification": "EXACT_VERIFIED_MATCH",
+                  "action": "CONFIRM",
+                  "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+                  "databaseEvidence": {
+                    "scope": {
+                      "callId": "synthetic:remediation-authority-revision",
+                      "recipientRevision": 2,
+                      "contactId": "synthetic:clinic",
+                      "mappingEvidenceId": "synthetic:verified-map",
+                      "source": "SYNTHETIC_FIXTURE"
+                    },
+                    "requestedAt": 1792686619373,
+                    "receivedAt": 1792686619373,
+                    "clock": "unix-epoch-ms",
+                    "provenance": "SYNTHETIC_FIXTURE",
+                    "receipts": []
+                  },
+                  "lookupStatus": "MULTIPLE_MATCHES",
+                  "policyLabel": "EXACT",
+                  "matchType": "EXACT",
+                  "autoAccept": false,
+                  "calibratedProbability": null,
+                  "businessDecision": "CONCISE_CONFIRMATION_FROZEN_C32"
+                }
+              }
+            },
+            {
+              "sequence": 6,
+              "event": "email.asr",
+              "at": 42573.5,
+              "data": {
+                "transcript": {
+                  "id": "mic:SIMULATED:4",
+                  "text": "Jeg har ikke fuldmagt",
+                  "source": "provider",
+                  "final": true,
+                  "observedAt": 42573.5,
+                  "speechStartedAt": 41573.5,
+                  "answerPlaybackId": "synthetic:remediation-authority-revision:playback-4",
+                  "recipientRevision": 2
+                },
+                "endpointOwner": "synthetic:remediation-authority-revision:playback-4",
+                "revision": 2
+              }
+            },
+            {
+              "sequence": 7,
+              "event": "email.invalidated",
+              "at": 42573.5,
+              "data": {
+                "reason": "AUTHORITY_DENIED",
+                "attemptId": "mic:SIMULATED:3"
+              }
+            },
+            {
+              "sequence": 8,
+              "event": "email.control_forwarded",
+              "at": 42573.5,
+              "data": {
+                "intent": "AUTHORITY_DENIED"
+              }
+            }
+          ],
+          "stage": "2.0C-3.2",
+          "status": "NOT_ACCEPTED",
+          "downstreamHandoffEnabled": false,
+          "telephoneVerified": false
+        },
+        "terminalState": "AUTHORITY_CHECK",
+        "confirmationState": null,
+        "modelAdvisory": null,
+        "correctionLineage": [
+          {
+            "sequence": 5,
+            "event": "email.resolved",
+            "at": 40373.5,
+            "data": {
+              "id": "mic:SIMULATED:3",
+              "revision": 1,
+              "consentTurnId": "mic:SIMULATED:2",
+              "at": 40373.5,
+              "turn": {
+                "id": "mic:SIMULATED:3",
+                "text": "anna@clinic.example",
+                "source": "provider",
+                "final": true,
+                "observedAt": 40373.5,
+                "speechStartedAt": 36873.5,
+                "answerPlaybackId": "synthetic:remediation-authority-revision:playback-4",
+                "recipientRevision": 2
+              },
+              "parsed": {
+                "version": "stage-2.0c32-structured-email-1",
+                "raw": "anna@clinic.example",
+                "tokens": [
+                  {
+                    "raw": "anna@clinic.example",
+                    "start": 0,
+                    "end": 19,
+                    "kind": "literal",
+                    "alternatives": [
+                      "anna@clinic.example"
+                    ]
+                  }
+                ],
+                "candidates": [
+                  "anna@clinic.example"
+                ],
+                "operations": [],
+                "uncertainTokens": [],
+                "errors": [],
+                "comparisonOnly": false
+              },
+              "resolution": {
+                "ranked": [
+                  {
+                    "candidate": "anna@clinic.example",
+                    "matches": [
+                      {
+                        "contactId": "synthetic:clinic",
+                        "email": "anna@clinic.example",
+                        "recordVersion": "1",
+                        "sourceRecordId": "synthetic:record:0"
+                      }
+                    ],
+                    "score": 1,
+                    "reason": "Exact characters; scoped record agrees"
+                  }
+                ],
+                "databaseCandidates": [
+                  {
+                    "contactId": "synthetic:clinic",
+                    "email": "anna@clinic.example",
+                    "recordVersion": "1",
+                    "sourceRecordId": "synthetic:record:0"
+                  },
+                  {
+                    "contactId": "synthetic:clinic",
+                    "email": "anne@clinic.example",
+                    "recordVersion": "1",
+                    "sourceRecordId": "synthetic:record:1"
+                  }
+                ],
+                "databaseStatus": "OK",
+                "selected": "anna@clinic.example",
+                "selectionSource": "DETERMINISTIC_EXACT",
+                "classification": "EXACT_VERIFIED_MATCH",
+                "action": "CONFIRM",
+                "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+                "databaseEvidence": {
+                  "scope": {
+                    "callId": "synthetic:remediation-authority-revision",
+                    "recipientRevision": 2,
+                    "contactId": "synthetic:clinic",
+                    "mappingEvidenceId": "synthetic:verified-map",
+                    "source": "SYNTHETIC_FIXTURE"
+                  },
+                  "requestedAt": 1792686619373,
+                  "receivedAt": 1792686619373,
+                  "clock": "unix-epoch-ms",
+                  "provenance": "SYNTHETIC_FIXTURE",
+                  "receipts": []
+                },
+                "lookupStatus": "MULTIPLE_MATCHES",
+                "policyLabel": "EXACT",
+                "matchType": "EXACT",
+                "autoAccept": false,
+                "calibratedProbability": null,
+                "businessDecision": "CONCISE_CONFIRMATION_FROZEN_C32"
+              }
+            }
+          }
+        ],
+        "takeoverReason": {
+          "reason": "AUTHORITY_DENIED",
+          "attemptId": "mic:SIMULATED:3"
+        },
+        "automaticStorage": false
+      }
+    },
+    {
+      "id": "email-review-without-consent",
+      "expectedEligible": false,
+      "eligible": false,
+      "passed": true,
+      "evidence": {
+        "initialState": "ANSWERED",
+        "transcripts": [],
+        "recipientType": "TARGET_HCP",
+        "authorityStatus": "NOT_APPLICABLE",
+        "consent": null,
+        "consentOwner": null,
+        "transcriptOwnership": [],
+        "email": {
+          "state": "OPERATOR_REVIEW",
+          "candidateAttempts": 0,
+          "savingEnabled": false,
+          "sourceAudioStored": false,
+          "characterReadback": "DIAGNOSTIC_COMPARISON_ONLY",
+          "productionReady": false,
+          "normalEmailSpeech": "CONCISE_CONFIRMATION_ONLY",
+          "fullCallRecording": "NOT_IMPLEMENTED_BUSINESS_DECISION_REQUIRED",
+          "takeoverReason": "OPERATOR_REVIEW_CANNOT_OVERRIDE_RECIPIENT_EVIDENCE",
+          "attemptHistory": [],
+          "pipeline": {
+            "rawTranscript": null,
+            "reconstructedCandidate": [],
+            "databaseCandidates": [],
+            "modelRecommendation": {
+              "status": "NOT_REQUESTED",
+              "raw": null,
+              "accepted": false,
+              "reason": "No advisory model invoked"
+            },
+            "resolutionStatus": "NOT_RESOLVED",
+            "resolvedCandidate": null,
+            "confirmationStatus": "NOT_CONFIRMED",
+            "correctionLineage": [],
+            "takeoverReason": "OPERATOR_REVIEW_CANNOT_OVERRIDE_RECIPIENT_EVIDENCE",
+            "sourceTurn": null,
+            "reconstruction": null,
+            "databaseEvidence": null,
+            "confirmation": null,
+            "questionPlayback": null,
+            "fullEmailSpeechEnabled": false
+          },
+          "wholeCallRecordingEnabled": false,
+          "events": [
+            {
+              "sequence": 1,
+              "event": "email.operator_review",
+              "at": 20572.375,
+              "data": {
+                "reviewer": "synthetic:operator",
+                "reason": "Email is not consent",
+                "authorizedSave": false
+              }
+            },
+            {
+              "sequence": 2,
+              "event": "email.invalidated",
+              "at": 20572.375,
+              "data": {
+                "reason": "OPERATOR_REVIEW_CANNOT_OVERRIDE_RECIPIENT_EVIDENCE"
+              }
+            }
+          ],
+          "stage": "2.0C-3.2",
+          "status": "NOT_ACCEPTED",
+          "downstreamHandoffEnabled": false,
+          "telephoneVerified": false
+        },
+        "terminalState": "CONSENT_ASK",
+        "confirmationState": null,
+        "modelAdvisory": null,
+        "correctionLineage": [],
+        "takeoverReason": {
+          "reason": "OPERATOR_REVIEW_CANNOT_OVERRIDE_RECIPIENT_EVIDENCE"
+        },
+        "automaticStorage": false
+      }
+    },
+    {
+      "id": "clarification-after-consumed-question",
+      "expectedEligible": false,
+      "eligible": false,
+      "passed": true,
+      "evidence": {
+        "initialState": "ANSWERED",
+        "transcripts": [
+          {
+            "id": "mic:SIMULATED:1",
+            "text": "Hvilken information?",
+            "source": "provider",
+            "final": true,
+            "observedAt": 22772.375,
+            "speechStartedAt": 21772.375,
+            "answerPlaybackId": "synthetic:consumed-question:playback-3"
+          },
+          {
+            "id": "mic:SIMULATED:2",
+            "text": "Ja",
+            "source": "provider",
+            "final": true,
+            "observedAt": 32599.208333333332,
+            "speechStartedAt": 31599.208333333332,
+            "answerPlaybackId": "synthetic:consumed-question:playback-3"
+          }
+        ],
+        "recipientType": "TARGET_HCP",
+        "authorityStatus": "NOT_APPLICABLE",
+        "consent": null,
+        "consentOwner": null,
+        "transcriptOwnership": [
+          {
+            "id": "mic:SIMULATED:1",
+            "owner": "synthetic:consumed-question:playback-3"
+          },
+          {
+            "id": "mic:SIMULATED:2",
+            "owner": "synthetic:consumed-question:playback-3"
+          }
+        ],
+        "email": {
+          "state": "IDLE",
+          "candidateAttempts": 0,
+          "savingEnabled": false,
+          "sourceAudioStored": false,
+          "characterReadback": "DIAGNOSTIC_COMPARISON_ONLY",
+          "productionReady": false,
+          "normalEmailSpeech": "CONCISE_CONFIRMATION_ONLY",
+          "fullCallRecording": "NOT_IMPLEMENTED_BUSINESS_DECISION_REQUIRED",
+          "takeoverReason": null,
+          "attemptHistory": [],
+          "pipeline": {
+            "rawTranscript": null,
+            "reconstructedCandidate": [],
+            "databaseCandidates": [],
+            "modelRecommendation": {
+              "status": "NOT_REQUESTED",
+              "raw": null,
+              "accepted": false,
+              "reason": "No advisory model invoked"
+            },
+            "resolutionStatus": "NOT_RESOLVED",
+            "resolvedCandidate": null,
+            "confirmationStatus": "NOT_CONFIRMED",
+            "correctionLineage": [],
+            "takeoverReason": null,
+            "sourceTurn": null,
+            "reconstruction": null,
+            "databaseEvidence": null,
+            "confirmation": null,
+            "questionPlayback": null,
+            "fullEmailSpeechEnabled": false
+          },
+          "wholeCallRecordingEnabled": false,
+          "events": [],
+          "stage": "2.0C-3.2",
+          "status": "NOT_ACCEPTED",
+          "downstreamHandoffEnabled": false,
+          "telephoneVerified": false
+        },
+        "terminalState": "CONSENT_UNCLEAR",
+        "confirmationState": null,
+        "modelAdvisory": null,
+        "correctionLineage": [],
+        "takeoverReason": null,
+        "automaticStorage": false
+      }
+    }
+  ],
+  "falsePositives": 0,
+  "failed": []
+}

@@ -1,0 +1,300 @@
+Final C32 freeze validation — exact final source snapshot. No retries or timeout/concurrency changes.
+
+{"label": "focused", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/consent-stage20c32-candidates.test.ts", "tests/consent-stage20c32-consolidation.test.tsx", "tests/consent-stage20c32-email-freeze.test.ts", "tests/consent-stage20c32-email.test.ts", "tests/consent-stage20c32-feedback-closure.test.ts", "tests/consent-stage20c32-freeze-quality.test.ts", "tests/consent-stage20c32-hardening.test.ts", "tests/consent-stage20c32-operations-ledger.test.ts", "tests/consent-stage20c32-operations-ui.test.tsx", "tests/consent-stage20c32-package-brand.test.tsx", "tests/consent-stage20c32-package-ui.test.tsx", "tests/consent-stage20c32-package.test.ts", "tests/consent-stage20c32-remediation.test.ts", "tests/consent-stage20c32-sende.test.ts", "tests/consent-stage20c32-speech.test.tsx"], "exitCode": 0, "elapsedMs": 3262.888958, "testsPassed": 723, "testFiles": 15}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  15 passed (15)
+      Tests  723 passed (723)
+   Start at  21:34:28
+   Duration  2.93s (transform 1.90s, setup 0ms, import 3.67s, tests 6.24s, environment 2ms)
+
+{"label": "c31", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/consent-stage20c3.test.ts", "tests/consent-stage20c3-view.test.tsx", "tests/consent-stage20c31.test.ts", "tests/consent-stage20c31-view.test.tsx", "tests/consent-stage20c31-gateway.test.ts"], "exitCode": 0, "elapsedMs": 1927.1480839999995, "testsPassed": 139, "testFiles": 5}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  5 passed (5)
+      Tests  139 passed (139)
+   Start at  21:34:32
+   Duration  811ms (transform 1.57s, setup 0ms, import 2.52s, tests 354ms, environment 0ms)
+
+{"label": "prior-consent", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/consent-foundation.test.ts", "tests/consent-stage20b.test.tsx", "tests/consent-stage20b2.test.tsx", "tests/consent-stage20c1.test.ts", "tests/consent-stage20c2.test.ts", "tests/consent-stage20c3-view.test.tsx", "tests/consent-stage20c3.test.ts", "tests/consent-stage20c31-gateway.test.ts", "tests/consent-stage20c31-view.test.tsx", "tests/consent-stage20c31.test.ts", "tests/consent-transcription.test.ts", "tests/consent-view.test.tsx", "tests/stage196-short-consent.test.ts"], "exitCode": 0, "elapsedMs": 1426.5195000000003, "testsPassed": 496, "testFiles": 13}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  13 passed (13)
+      Tests  496 passed (496)
+   Start at  21:34:34
+   Duration  1.17s (transform 1.81s, setup 0ms, import 3.43s, tests 1.99s, environment 2ms)
+
+{"label": "replay-1", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/stage195-replay.test.ts"], "exitCode": 0, "elapsedMs": 2480.2606670000005, "testsPassed": 2, "testFiles": 1}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  21:34:35
+   Duration  2.26s (transform 119ms, setup 0ms, import 154ms, tests 1.99s, environment 0ms)
+
+{"label": "pcm-1", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/continuous-transcription-gateway.test.ts", "-t", "forwards all 45 seconds"], "exitCode": 0, "elapsedMs": 625.9372079999994, "testsPassed": 1, "testFiles": 1}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 18 skipped (19)
+   Start at  21:34:38
+   Duration  393ms (transform 55ms, setup 0ms, import 96ms, tests 186ms, environment 0ms)
+
+{"label": "replay-2", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/stage195-replay.test.ts"], "exitCode": 0, "elapsedMs": 2570.252208, "testsPassed": 2, "testFiles": 1}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  21:34:38
+   Duration  2.33s (transform 143ms, setup 0ms, import 188ms, tests 2.03s, environment 0ms)
+
+{"label": "pcm-2", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/continuous-transcription-gateway.test.ts", "-t", "forwards all 45 seconds"], "exitCode": 0, "elapsedMs": 614.9690410000003, "testsPassed": 1, "testFiles": 1}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 18 skipped (19)
+   Start at  21:34:41
+   Duration  388ms (transform 55ms, setup 0ms, import 95ms, tests 186ms, environment 0ms)
+
+{"label": "replay-3", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/stage195-replay.test.ts"], "exitCode": 0, "elapsedMs": 2479.730749999999, "testsPassed": 2, "testFiles": 1}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  21:34:41
+   Duration  2.26s (transform 122ms, setup 0ms, import 158ms, tests 1.99s, environment 0ms)
+
+{"label": "pcm-3", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/continuous-transcription-gateway.test.ts", "-t", "forwards all 45 seconds"], "exitCode": 0, "elapsedMs": 608.9080839999988, "testsPassed": 1, "testFiles": 1}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 18 skipped (19)
+   Start at  21:34:44
+   Duration  390ms (transform 55ms, setup 0ms, import 97ms, tests 185ms, environment 0ms)
+
+{"label": "replay-4", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/stage195-replay.test.ts"], "exitCode": 0, "elapsedMs": 2500.0753750000003, "testsPassed": 2, "testFiles": 1}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  21:34:45
+   Duration  2.27s (transform 122ms, setup 0ms, import 157ms, tests 2.01s, environment 0ms)
+
+{"label": "pcm-4", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/continuous-transcription-gateway.test.ts", "-t", "forwards all 45 seconds"], "exitCode": 0, "elapsedMs": 632.9220830000013, "testsPassed": 1, "testFiles": 1}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 18 skipped (19)
+   Start at  21:34:47
+   Duration  397ms (transform 56ms, setup 0ms, import 97ms, tests 186ms, environment 0ms)
+
+{"label": "replay-5", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/stage195-replay.test.ts"], "exitCode": 0, "elapsedMs": 2488.5420000000013, "testsPassed": 2, "testFiles": 1}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  21:34:48
+   Duration  2.26s (transform 134ms, setup 0ms, import 170ms, tests 1.99s, environment 0ms)
+
+{"label": "pcm-5", "command": ["/opt/homebrew/Cellar/node/25.9.0/bin/node", "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs", "run", "tests/continuous-transcription-gateway.test.ts", "-t", "forwards all 45 seconds"], "exitCode": 0, "elapsedMs": 644.4522919999981, "testsPassed": 1, "testFiles": 1}
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 18 skipped (19)
+   Start at  21:34:50
+   Duration  416ms (transform 63ms, setup 0ms, import 108ms, tests 194ms, environment 0ms)
+
+{"label": "full-1", "command": ["npm", "test"], "exitCode": 0, "elapsedMs": 11089.870332999999, "testsPassed": 1843, "testFiles": 93}
+
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  93 passed (93)
+      Tests  1843 passed (1843)
+   Start at  21:34:51
+   Duration  10.59s (transform 3.18s, setup 0ms, import 8.98s, tests 37.07s, environment 7ms)
+
+{"label": "full-2", "command": ["npm", "test"], "exitCode": 0, "elapsedMs": 9627.355875000001, "testsPassed": 1843, "testFiles": 93}
+
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  93 passed (93)
+      Tests  1843 passed (1843)
+   Start at  21:35:02
+   Duration  9.24s (transform 3.32s, setup 0ms, import 9.06s, tests 36.72s, environment 8ms)
+
+{"label": "full-3", "command": ["npm", "test"], "exitCode": 0, "elapsedMs": 10133.285916, "testsPassed": 1843, "testFiles": 93}
+
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /private/tmp/c32-freeze-validation-xRAIp1/tree
+
+
+ Test Files  93 passed (93)
+      Tests  1843 passed (1843)
+   Start at  21:35:12
+   Duration  9.70s (transform 3.51s, setup 0ms, import 9.59s, tests 37.95s, environment 13ms)
+
+{"label": "lint", "command": ["npm", "run", "lint"], "exitCode": 0, "elapsedMs": 3739.9472499999974, "testsPassed": null, "testFiles": null}
+
+
+> apurebase-stage1-translator@0.9.0 lint
+> eslint .
+
+{"label": "typecheck", "command": ["npm", "run", "typecheck"], "exitCode": 0, "elapsedMs": 5804.642125000006, "testsPassed": null, "testFiles": null}
+
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+{"label": "standard-build", "command": ["npm", "run", "build"], "exitCode": 0, "elapsedMs": 6348.237249999998, "testsPassed": null, "testFiles": null}
+
+
+> apurebase-stage1-translator@0.9.0 build
+> npm run typecheck && vite build
+
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 125 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                      0.37 kB │ gzip:   0.27 kB
+dist/assets/index-j0eZ6Glf.css      17.21 kB │ gzip:   4.35 kB
+dist/assets/Workspace-DMXMx32Q.js  190.38 kB │ gzip:  30.69 kB
+dist/assets/index-CloNzLRu.js      677.40 kB │ gzip: 192.43 kB
+✓ built in 859ms
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+OPERATIONS + QA BUILD
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 108 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/c32-human-retest/app/stage20c32-retest.html                            0.40 kB │ gzip:   0.29 kB
+dist/c32-human-retest/app/assets/apurebase-wordmark-Ddho7gsC.jpg            4.73 kB
+dist/c32-human-retest/app/assets/apurebase-molecular-header-44XA9jj7.jpg   25.77 kB
+dist/c32-human-retest/app/assets/stage20c32-retest-ZnVZZuMQ.css            23.81 kB │ gzip:   5.42 kB
+dist/c32-human-retest/app/assets/stage20c32-retest-DmKkpqoW.js            693.96 kB │ gzip: 173.80 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 647ms
+{"status":"PASS","listeningItems":16,"displayedCatalogWAVPlaybackEquality":16,"allCurrentUnits":38,"uniqueCurrentRecordings":37,"files":64,"candidate":"183c2affcce513623b734945ac6fb14cf24ffe844bdca48e4980c0d66412f5bb","providerRequests":0,"productionReady":false}
+{
+  "packageDirectory": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/dist/c32-human-retest",
+  "identity": {
+    "baseCommit": "560c99e39cb77a7c00d2c14a49209d76f47a72d1",
+    "coreSourceHash": "c3baed3afbc4e965e278a1f8d5b318cc5cdd9291c25d10a33f8c67af103d3211",
+    "handoffSourceHash": "16bc176c9c39763ab132360f595dfab3f02f826b3a0174b928cab62f77b3dad6",
+    "candidateSourceHash": "183c2affcce513623b734945ac6fb14cf24ffe844bdca48e4980c0d66412f5bb",
+    "uncommitted": true,
+    "packageVersion": "stage-2.0c32-email-architecture-1"
+  },
+  "listeningItems": 16,
+  "packagedCurrentUnits": 38,
+  "uniqueCurrentRecordings": 37
+}
+
+LAYERED PRESERVATION
+
+{
+  "status": "PASS",
+  "filesBeforeFreeze": 968,
+  "intentionalFreezeChanges": [
+    "scripts/stage20c32-package.ts",
+    "scripts/stage20c32-handoff/server.ts",
+    "src/consent/stage32/handoff/main.tsx",
+    "docs/STAGE-2.0C32-ASEM-GIT-RETEST.md"
+  ],
+  "protectedRecordings": 54,
+  "Stage196Preserved": true,
+  "consentEmailEnginePreserved": true,
+  "historicalReportsPreserved": true,
+  "officialBrandAssetsPreserved": true
+}
+
+C31 PRESERVATION
+
+{
+  "status": "PASS",
+  "baselineFiles": 433,
+  "candidateFiles": 44,
+  "harnessCorrectionFiles": [
+    "tests/continuous-transcription-gateway.test.ts",
+    "scripts/verify-stage20c31.ts"
+  ],
+  "originalRecordings": 37,
+  "newRecordings": 12,
+  "retainedCurrentApprovals": 24,
+  "humanRetestRequired": 13,
+  "providerRequests": 0,
+  "physicalASR": "NOT_TESTED",
+  "stage": "NOT_ACCEPTED",
+  "telephoneVerified": false,
+  "productionEnabled": false
+}

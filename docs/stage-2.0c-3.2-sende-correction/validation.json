@@ -1,0 +1,46 @@
+{
+  "focused": {
+    "passed": 674,
+    "files": 12
+  },
+  "fullSequential": {
+    "passed": 1794,
+    "files": 90,
+    "durationSeconds": 7.59
+  },
+  "firstFullAttempt": {
+    "passed": 1792,
+    "failed": 2,
+    "cause": "Replay before exceeded 5000ms while builds ran concurrently; dependent after could not read its before artifact. Resource sensitivity is consistent with prior investigation, not physical timing evidence."
+  },
+  "replayIsolation": {
+    "passed": 2,
+    "durationSeconds": 2.36
+  },
+  "lint": "PASS",
+  "typecheck": "PASS",
+  "build": "PASS_WITH_EXISTING_BUNDLE_SIZE_WARNING",
+  "handoffBuild": "PASS_WITH_EXISTING_BUNDLE_SIZE_WARNING",
+  "exactValidatedSnapshotSourceHashesEqual": 391,
+  "C31Preservation": "PASS",
+  "layeredPreservation": "PASS",
+  "diffWhitespace": "PASS",
+  "newSecretPatternsDetected": 0,
+  "providerRequests": {
+    "TTS": 2,
+    "ASR": 0,
+    "OpenAI": 0,
+    "automaticRetries": 0
+  },
+  "logs": {
+    "full-tests.txt": "\n> apurebase-stage1-translator@0.9.0 test\n> vitest run\n\n\n RUN  v4.1.11 /private/tmp/c32-sende-correction/validation-tree\n\n \u276f tests/stage195-replay.test.ts (2 tests | 2 failed) 8229ms\n   \u00d7 replays the exact physical Stage 1.9.4 transcript through production delivery (before) 5067ms\n   \u00d7 replays the exact physical Stage 1.9.4 transcript through production delivery (after) 3161ms\n\n\u23af\u23af\u23af\u23af\u23af\u23af\u23af Failed Tests 2 \u23af\u23af\u23af\u23af\u23af\u23af\u23af\n\n FAIL  tests/stage195-replay.test.ts > replays the exact physical Stage 1.9.4 transcript through production delivery (before)\nError: Test timed out in 5000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n \u276f tests/stage195-replay.test.ts:33:27\n\n\n\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af[1/2]\u23af\n\n FAIL  tests/stage195-replay.test.ts > replays the exact physical Stage 1.9.4 transcript through production delivery (after)\nError: ENOENT: no such file or directory, open 'benchmarks/stage195-production-replay-before.json'\n \u276f tests/stage195-replay.test.ts:49:49\n\n\n\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af[2/2]\u23af\n\n\n Test Files  1 failed | 89 passed (90)\n      Tests  2 failed | 1792 passed (1794)\n   Start at  20:02:15\n   Duration  13.38s (transform 2.97s, setup 0ms, import 7.75s, tests 56.21s, environment 6ms)\n\n",
+    "replay-isolation.txt": "\n RUN  v4.1.11 /private/tmp/c32-sende-correction/validation-tree\n\n\n Test Files  1 passed (1)\n      Tests  2 passed (2)\n   Start at  20:03:33\n   Duration  2.36s (transform 118ms, setup 0ms, import 150ms, tests 2.10s, environment 0ms)\n\n",
+    "full-tests-sequential.txt": "\n> apurebase-stage1-translator@0.9.0 test\n> vitest run\n\n\n RUN  v4.1.11 /private/tmp/c32-sende-correction/validation-tree\n\n\n Test Files  90 passed (90)\n      Tests  1794 passed (1794)\n   Start at  20:03:36\n   Duration  7.59s (transform 2.73s, setup 0ms, import 7.16s, tests 31.71s, environment 6ms)\n\n",
+    "final-lint.txt": "\n> apurebase-stage1-translator@0.9.0 lint\n> eslint .\n\n",
+    "typecheck.txt": "\n> apurebase-stage1-translator@0.9.0 typecheck\n> tsc --noEmit\n\n",
+    "build.txt": "\n> apurebase-stage1-translator@0.9.0 build\n> npm run typecheck && vite build\n\n\n> apurebase-stage1-translator@0.9.0 typecheck\n> tsc --noEmit\n\nvite v7.3.7 building client environment for production...\ntransforming...\n\u2713 125 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                      0.37 kB \u2502 gzip:   0.27 kB\ndist/assets/index-j0eZ6Glf.css      17.21 kB \u2502 gzip:   4.35 kB\ndist/assets/Workspace-DMXMx32Q.js  190.38 kB \u2502 gzip:  30.69 kB\ndist/assets/index-CloNzLRu.js      677.40 kB \u2502 gzip: 192.43 kB\n\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n\u2713 built in 787ms\n",
+    "package.txt": "vite v7.3.7 building client environment for production...\ntransforming...\n\u2713 104 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/c32-human-retest/app/stage20c32-retest.html                            0.40 kB \u2502 gzip:   0.29 kB\ndist/c32-human-retest/app/assets/apurebase-wordmark-Ddho7gsC.jpg            4.73 kB\ndist/c32-human-retest/app/assets/apurebase-molecular-header-44XA9jj7.jpg   25.77 kB\ndist/c32-human-retest/app/assets/stage20c32-retest-D8I9FmIr.css            17.42 kB \u2502 gzip:   4.16 kB\ndist/c32-human-retest/app/assets/stage20c32-retest-Bxfkn0uV.js            674.83 kB \u2502 gzip: 168.04 kB\n\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n\u2713 built in 572ms\n{\"status\":\"PASS\",\"listeningItems\":16,\"displayedCatalogWAVPlaybackEquality\":16,\"allCurrentUnits\":38,\"uniqueCurrentRecordings\":37,\"files\":64,\"candidate\":\"7a08ae4fffa9fad1bc64103de388d7f75824760b98daa93d5bb31b1a3ba35e77\",\"providerRequests\":0,\"productionReady\":false}\n{\n  \"packageDirectory\": \"/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/dist/c32-human-retest\",\n  \"identity\": {\n    \"baseCommit\": \"560c99e39cb77a7c00d2c14a49209d76f47a72d1\",\n    \"coreSourceHash\": \"e053e038a17655a7579d76c1f556b238faed6683dac37da0798e74f5a11655e9\",\n    \"handoffSourceHash\": \"40f9e30603d9dcaab83741f12a5fd9b310e7ec5d0264a669fa19c55f4069964f\",\n    \"candidateSourceHash\": \"7a08ae4fffa9fad1bc64103de388d7f75824760b98daa93d5bb31b1a3ba35e77\",\n    \"uncommitted\": true,\n    \"packageVersion\": \"stage-2.0c32-email-architecture-1\"\n  },\n  \"listeningItems\": 16,\n  \"packagedCurrentUnits\": 38,\n  \"uniqueCurrentRecordings\": 37\n}\n",
+    "c31-preservation.txt": "{\n  \"status\": \"PASS\",\n  \"baselineFiles\": 433,\n  \"candidateFiles\": 44,\n  \"harnessCorrectionFiles\": [\n    \"tests/continuous-transcription-gateway.test.ts\",\n    \"scripts/verify-stage20c31.ts\"\n  ],\n  \"originalRecordings\": 37,\n  \"newRecordings\": 12,\n  \"retainedCurrentApprovals\": 24,\n  \"humanRetestRequired\": 13,\n  \"providerRequests\": 0,\n  \"physicalASR\": \"NOT_TESTED\",\n  \"stage\": \"NOT_ACCEPTED\",\n  \"telephoneVerified\": false,\n  \"productionEnabled\": false\n}\n",
+    "preservation.txt": "{\n  \"status\": \"PASS\",\n  \"originalFilesChecked\": 952,\n  \"exactSourceChanges\": 6,\n  \"Stage196Preserved\": true,\n  \"originalAudio\": 37,\n  \"C31Audio\": 12,\n  \"earlierC32Audio\": 3,\n  \"newCorrections\": 2,\n  \"totalRecordings\": 54,\n  \"historicalEvidencePreserved\": true\n}\n"
+  }
+}

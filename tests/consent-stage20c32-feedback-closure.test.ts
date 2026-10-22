@@ -2,6 +2,8 @@ import {describe,it,expect} from 'vitest';
 import {pronunciationConcerns,type PhraseReview} from '../src/consent/stage32/hardening/review';
 import {ordinaryScenario} from '../src/consent/stage32/hardening/simulator';
 import {candidates} from '../src/consent/stage32/speech/candidates';
+import {sendeAssets} from '../src/consent/stage32/speech/sende';
+const selectedCandidates=candidates.map(a=>sendeAssets.find(s=>s.phraseId===a.phraseId)??a);
 
 describe('feedback closure defects reproduced before correction',()=>{
  const row:PhraseReview={phraseId:'clarify',canonicalHash:'a'.repeat(64),spokenHash:'b'.repeat(64),audioHash:'c'.repeat(64),heardExactAsset:true,status:'PASS',naturalness:4,pronunciation:4,pace:4,comments:''};
@@ -38,7 +40,7 @@ describe('complete current C32 asset ownership',()=>{
  });
  it('never reselects any replaced low-rated hash, including Clarify, on definition, review or structured-call paths',async()=>{
   const table=await currentAssetTable();
-  for(const a of candidates){const old=currentCatalog().find(o=>o.phraseId===a.phraseId)!;
+  for(const a of selectedCandidates){const old=currentCatalog().find(o=>o.phraseId===a.phraseId)!;
    expect(table.rows.filter(r=>r.phraseId===a.phraseId).map(r=>r.currentAssetHash)).toEqual([a.assetHash]);
    expect(c32Definition.responses.find(r=>r.id===a.phraseId)?.audio?.sha256).toBe(a.assetHash);
    expect(table.rows.find(r=>r.phraseId===a.phraseId)?.historicalAssetHashes).toContain(old.assetHash);
@@ -48,7 +50,7 @@ describe('complete current C32 asset ownership',()=>{
   }
  });
  it('the completed Clarify candidate owns consent without inheriting the old human PASS or 2/5 rating',async()=>{
-  const run=await ordinaryScenario('Q'),asset=candidates.find(a=>a.phraseId==='clarify')!;
+  const run=await ordinaryScenario('Q'),asset=selectedCandidates.find(a=>a.phraseId==='clarify')!;
   expect(run.intervals.filter(i=>i.phraseId==='clarify').map(i=>i.hash)).toEqual([asset.assetHash]);
   const table=await currentAssetTable(),row=table.rows.find(r=>r.phraseId==='clarify')!;
   expect(row.humanRatingForCurrentHash).toEqual([]);expect(row.humanStatus).toBe('NEW_CANDIDATE_HUMAN_REVIEW_PENDING');
@@ -65,7 +67,7 @@ describe('complete current C32 asset ownership',()=>{
    const current=c32Definition.responses.find(r=>r.id===q.id)!;
    expect({...current,version:q.version,audio:q.audio}).toEqual(q);
    if(q.id!=='clarify')expect(current).toEqual(q);
-   else {expect(current.audio?.sha256).toBe(candidates.find(a=>a.phraseId==='clarify')!.assetHash);expect(current.text).toBe(q.text);}
+   else {expect(current.audio?.sha256).toBe(selectedCandidates.find(a=>a.phraseId==='clarify')!.assetHash);expect(current.text).toBe(q.text);}
   }
   const d=structuredClone(c32Definition);d.responses.find(r=>r.id==='why-calling')!.audio!.sha256=currentCatalog().find(r=>r.phraseId==='why-calling')!.assetHash;
   expect(()=>validateC32Definition(d)).toThrow();
@@ -75,7 +77,7 @@ describe('complete current C32 asset ownership',()=>{
   expect(master.latestWeakPhrases.map(r=>r.phraseId).sort()).toEqual(['clarify','consent-question','email-request','success-close','why-calling']);
   expect(master.separateC31HumanRetestEvidence).toBe('NOT_FOUND');expect(master.physicalAttempts).toBe(6);
   expect(master.observations.filter(r=>r.id==='C-3:listening:0'||r.id==='C-3:listening:1')).toHaveLength(2);
-  const current=await currentAssetTable();for(const a of candidates)expect(current.rows.find(r=>r.currentAssetHash===a.assetHash)?.humanRatingForCurrentHash).toEqual([]);
+  const current=await currentAssetTable();for(const a of selectedCandidates)expect(current.rows.find(r=>r.currentAssetHash===a.assetHash)?.humanRatingForCurrentHash).toEqual([]);
  });
  it('the single completed authorization cannot be relabelled as ungenerated or reused',async()=>{
   const proposal=await proposedClosureGenerations();expect(proposal.requestCount).toBe(1);expect(proposal.requests[0].phraseId).toBe('clarify');
