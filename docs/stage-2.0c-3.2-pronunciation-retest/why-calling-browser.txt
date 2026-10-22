@@ -1,0 +1,192 @@
+Browser tab: 1, Title: "aPureBase C-3.2 Offline Candidate", URL: "http://127.0.0.1:5186/stage20c32.html".
+0 AXWebArea aPureBase C-3.2 Offline Candidate, URL: 127.0.0.1:5186/stage20c32.html
+	1 container
+		2 text Historical hardening-2 evidence and review instructions remain preserved. The two new C-3.2 candidate hashes appear in Speech ownership and must receive a fresh focused listening review; prior PASS labels do not transfer to new audio. LOCAL · OFFLINE · SYNTHETIC FIXTURES
+		3 heading Danish speech + email resolution, Value: 1
+			4 text Danish speech + email resolution
+		5 heading Stage 2.0C-3.2 hardening 2 · NOT ACCEPTED, Value: 2
+			6 text Stage 2.0C-3.2 hardening 2 · NOT ACCEPTED
+		7 text Engineering candidate only. Isabella · eleven_flash_v2_5 · speed 0.95 · existing calibrated gain and peak protection. Native pronunciation, “sende dig” and real ASR remain HUMAN REVIEW REQUIRED. BUSINESS DECISION REQUIRED: concise confirmation versus exact spoken readback. Real CRM and telephone integration are UNVERIFIED. Whole-call recording is disabled. No generation controls are installed.
+		8 checkbox Email inspector, Value: 0
+		9 checkbox Canonical / speech plans, Value: 0
+		10 checkbox C-3.2 human review / export, Value: 1
+		37 heading Human evidence collection · NOT PRODUCTION CONSENT DATA, Value: 2
+			38 text Human evidence collection · NOT PRODUCTION CONSENT DATA
+		39 text Two new C-3.2 candidates require Asem’s focused listening retest. Microphone/provider capture is not started here. Focus on sende dig, aPureBase, e-mail and weak consonants. Historical 2/5 pronunciation ratings remain concerns even when marked PASS. Manual observations remain explicitly self-reported.
+		40 container
+			41 text Reviewer name 
+			42 text field (settable) Reviewer name
+		43 container
+			44 heading AUTOMATED ENGINEERING EVIDENCE · injected preflight and complete local flow, Value: 3
+				45 text AUTOMATED ENGINEERING EVIDENCE · injected preflight and complete local flow
+			46 text Injected preflight condition 
+			47 pop up button (collapsed, settable) Injected preflight condition, Value: unknown, Secondary Actions: Expand
+				48 menu
+					49 (selected) unknown
+					50 missing
+					51 permission
+					52 denied
+					53 transport
+					54 model
+					55 ready
+			56 button Apply injected lifecycle — no provider
+			57 text Current underlying state: 
+			58 text MIC_PERMISSION_REQUIRED
+			59 text  ·  INJECTED_LOCAL  · LIVE ASR UNVERIFIED {
+  "status": "MIC_PERMISSION_REQUIRED",
+  "transportChecks": {
+    "backend": "NOT_TESTED",
+    "microphone": "NOT_TESTED",
+    "authorization": "NOT_TESTED",
+    "transport": "NOT_TESTED"
+  },
+  "scenarioEvidenceGate": false,
+  "inputs": {
+    "permission": "prompt",
+    "transport": "unknown"
+  },
+  "evidenceSource": "INJECTED_LOCAL",
+  "liveASRVerified": false
+} Injected scenario 
+			60 pop up button (collapsed, settable) Injected scenario, Value: A, Secondary Actions: Expand
+				61 menu
+					62 (selected) A
+					63 AT
+					64 Q
+					65 L
+					66 M
+					67 AQ
+					68 AR
+			69 text Reviewer decision 
+			70 pop up button (collapsed, settable) Reviewer decision, Value: PENDING, Secondary Actions: Expand
+				71 menu
+					72 (selected) PENDING
+					73 PASS
+					74 FAIL
+			75 text Recovered correctly (self-reported) 
+			76 pop up button (collapsed, settable) Recovered correctly (self-reported), Value: unknown, Secondary Actions: Expand
+				77 menu
+					78 (selected) unknown
+					79 yes
+					80 no
+			81 button Run and retain linked INJECTED_LOCAL evidence
+			82 text No live capture or provider evidence.
+			83 heading Import independently authorized transcript diagnostics · no audio, Value: 4
+				84 text Import independently authorized transcript diagnostics · no audio
+			85 text Exact EvidenceChain JSON
+			86 text entry area (settable) Exact EvidenceChain JSON
+			87 button Validate and retain imported evidence
+			88 text HUMAN LISTENING, MICROPHONE/ASR and NATURAL-CALL evidence are separate. Injected success is never human or production consent evidence.
+		89 button (collapsed) Linked observation chain (0) · provider absence is explicit, Secondary Actions: Expand
+			90 text Linked observation chain (
+			91 text 0
+			92 text ) · provider absence is explicit
+		93 heading HUMAN LISTENING EVIDENCE · six focused listening items, Value: 3
+			94 text HUMAN LISTENING EVIDENCE · six focused listening items
+		95 container
+			96 text Phrase 
+			97 pop up button (collapsed, settable) Phrase, Value: why-calling, Secondary Actions: Expand
+				98 menu
+					99 opening
+					100 (selected) why-calling
+					101 consent-question
+					102 email-request
+					103 clarify
+					104 success-close
+		105 button Play exact current candidate locally
+		106 button Stop local playback
+		107 text Why Calling and Success Close use new C-3.2 hashes only. Other references retain their historical hashes. Calibrated gain/provenance checks apply.
+		108 container
+			109 text Selected review binding:  b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff  · canonical  2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f  · spoken  91b7c45fc76bc37db8813ff73f4efd722b23c26d5e194efb395ec3e1dda1c22f .
+		110 container
+			111 checkbox (settable, integer) Description: I personally heard the exact selected asset, Value: 0
+			112 text  I personally heard the exact selected asset
+		113 container
+			114 text Naturalness
+			115 pop up button (collapsed, settable) Naturalness, Value: Not rated, Secondary Actions: Expand
+				116 menu
+					117 (selected) Not rated
+					118 1
+					119 2
+					120 3
+					121 4
+					122 5
+		123 container
+			124 text Pronunciation
+			125 pop up button (collapsed, settable) Pronunciation, Value: Not rated, Secondary Actions: Expand
+				126 menu
+					127 (selected) Not rated
+					128 1
+					129 2
+					130 3
+					131 4
+					132 5
+		133 container
+			134 text Pace
+			135 pop up button (collapsed, settable) Pace, Value: Not rated, Secondary Actions: Expand
+				136 menu
+					137 (selected) Not rated
+					138 1
+					139 2
+					140 3
+					141 4
+					142 5
+		143 container
+			144 text Result 
+			145 pop up button (collapsed, settable) Result, Value: FAIL, Secondary Actions: Expand
+				146 menu
+					147 (selected) FAIL
+					148 PASS
+		149 container
+			150 text Comments
+			151 text entry area (settable) Comments
+		152 button Record listening observation
+		153 heading MICROPHONE/ASR EVIDENCE · five observations · live ASR UNVERIFIED, Value: 3
+			154 text MICROPHONE/ASR EVIDENCE · five observations · live ASR UNVERIFIED
+		155 container
+			156 text Test 
+			157 pop up button (collapsed, settable) Test, Value: ordinary, Secondary Actions: Expand
+				158 menu
+					159 (selected) ordinary
+					160 yes
+					161 no
+					162 email
+					163 correction
+		164 container
+			165 text Raw transcript
+			166 text entry area (settable) Raw transcript
+		167 container
+			168 text Final 
+			169 checkbox (settable, integer) Description: Final, Value: 0
+		170 container
+			171 text Material word errors 
+			172 checkbox (settable, integer) Description: Material word errors, Value: 0
+		173 container
+			174 text Latency ms (blank = unknown) 
+			175 stepper (settable) Latency ms (blank = unknown)
+		176 button Record microphone observation
+		177 heading NATURAL-CALL EVIDENCE · timing observations, Value: 3
+			178 text NATURAL-CALL EVIDENCE · timing observations
+		179 container
+			180 text Listening complete:  false  · Five linked microphone observations complete:  false . Record PASS only after both; origin/authenticity and physical behavior still need human review.
+		181 container
+			182 text Scenario 
+			183 pop up button (collapsed, settable) Scenario, Value: direct, Secondary Actions: Expand
+				184 menu
+					185 (selected) direct
+					186 new-email
+					187 correction
+					188 clarification
+					189 refusal-or-receptionist
+		190 container
+			191 text Human elapsed seconds 
+			192 stepper (settable) Human elapsed seconds
+		193 button Record call observation
+		194 container
+			195 text Retained:  0  phrase reviews ·  0  microphone observations ·  0  call timings. All manual synthetic email inspections are included separately, with correction links.
+		196 button Export HUMAN REVIEW EVIDENCE
+		197 text Local WebAudio source-ended for b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff. Technical playback only; enter your own ratings and attestation.
+		35 link Description: Preserved C-3.1 workspace, Value: 127.0.0.1:5186/consent-call?stage=2.0c31
+		36 text . The historical character renderer remains available for comparison; the C-3.2 ordinary path captures email as data.
+
+The focused UI element is 105 button Play exact current candidate locally

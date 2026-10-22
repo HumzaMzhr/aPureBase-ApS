@@ -1,0 +1,220 @@
+{
+  "status": "PASS",
+  "identity": {
+    "baseCommit": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+    "coreSourceHash": "cda13e62d921062f0a734589e992b460d643ef2c912c5d5436eb08fed6c82eea",
+    "handoffSourceHash": "a0a0920e93a4da6180da52b4fb0db72c12682963d74621c228db1620642e93b2",
+    "candidateSourceHash": "d157a64eb1151de1681c99db087160d3945d5caf7ab2916fa88d2ca78941bcb0",
+    "uncommitted": true,
+    "packageVersion": "stage-2.0c32-consolidated-human-retest-2"
+  },
+  "health": {
+    "stage": "2.0c31",
+    "gateway": true,
+    "configured": false,
+    "model": "gpt-live-transcribe",
+    "language": "da",
+    "sampleRate": 24000,
+    "packageVersion": "stage-2.0c32-consolidated-human-retest-2",
+    "candidateSourceHash": "d157a64eb1151de1681c99db087160d3945d5caf7ab2916fa88d2ca78941bcb0",
+    "bootId": "b3525a0b-d30b-412d-bdf2-b48852984c26",
+    "processId": 84365,
+    "providerAuthorization": "NOT_TESTED_UNTIL_MANUAL_START",
+    "providerRequestsOnHealth": 0,
+    "verificationOnly": true
+  },
+  "cachedMedia": [
+    {
+      "phrase": "opening",
+      "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "status": "PASS"
+    },
+    {
+      "phrase": "purpose",
+      "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "status": "PASS"
+    },
+    {
+      "phrase": "consent-question",
+      "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "status": "PASS"
+    },
+    {
+      "phrase": "email-request",
+      "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "status": "PASS"
+    },
+    {
+      "phrase": "email-readback-intro",
+      "hash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+      "status": "PASS"
+    },
+    {
+      "phrase": "email-confirmation-question",
+      "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "status": "PASS"
+    },
+    {
+      "phrase": "success-close",
+      "hash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "status": "PASS"
+    },
+    {
+      "phrase": "refusal-close",
+      "hash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+      "status": "PASS"
+    },
+    {
+      "phrase": "identity",
+      "hash": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+      "status": "PASS"
+    },
+    {
+      "phrase": "about-apurebase",
+      "hash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+      "status": "PASS"
+    },
+    {
+      "phrase": "explanation",
+      "hash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+      "status": "PASS"
+    },
+    {
+      "phrase": "why-calling",
+      "hash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+      "status": "PASS"
+    },
+    {
+      "phrase": "unsubscribe",
+      "hash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+      "status": "PASS"
+    },
+    {
+      "phrase": "repeat-prefix",
+      "hash": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+      "status": "PASS"
+    },
+    {
+      "phrase": "clarify",
+      "hash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+      "status": "PASS"
+    },
+    {
+      "phrase": "callback",
+      "hash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+      "status": "PASS"
+    },
+    {
+      "phrase": "callback-close",
+      "hash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+      "status": "PASS"
+    },
+    {
+      "phrase": "target-unavailable",
+      "hash": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+      "status": "PASS"
+    },
+    {
+      "phrase": "send-first",
+      "hash": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+      "status": "PASS"
+    },
+    {
+      "phrase": "uncertain-consent",
+      "hash": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+      "status": "PASS"
+    },
+    {
+      "phrase": "already-receiving",
+      "hash": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+      "status": "PASS"
+    },
+    {
+      "phrase": "email-correction-prefix",
+      "hash": "948e1a3f03f5ea0285a1516fa0da69ea1ff90bcaca73c416a0546c2e19c64b24",
+      "status": "PASS"
+    },
+    {
+      "phrase": "more-explanation",
+      "hash": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+      "status": "PASS"
+    },
+    {
+      "phrase": "stop-contact-close",
+      "hash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+      "status": "PASS"
+    },
+    {
+      "phrase": "thank-you",
+      "hash": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+      "status": "PASS"
+    },
+    {
+      "phrase": "email-readback-intro",
+      "hash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+      "status": "PASS"
+    },
+    {
+      "phrase": "intermediary-consent-question",
+      "hash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+      "status": "PASS"
+    },
+    {
+      "phrase": "email-readback-intro",
+      "hash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+      "status": "PASS"
+    },
+    {
+      "phrase": "receptionist-target-request",
+      "hash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+      "status": "PASS"
+    },
+    {
+      "phrase": "email-readback-intro",
+      "hash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+      "status": "PASS"
+    },
+    {
+      "phrase": "receptionist-target-request",
+      "hash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+      "status": "PASS"
+    },
+    {
+      "phrase": "wrong-person-close",
+      "hash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+      "status": "PASS"
+    },
+    {
+      "phrase": "email-readback-intro",
+      "hash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+      "status": "PASS"
+    },
+    {
+      "phrase": "authority-ask",
+      "hash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+      "status": "PASS"
+    },
+    {
+      "phrase": "wrong-person-close",
+      "hash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+      "status": "PASS"
+    },
+    {
+      "phrase": "intermediary-consent-question",
+      "hash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+      "status": "PASS"
+    },
+    {
+      "phrase": "authority-ask",
+      "hash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+      "status": "PASS"
+    },
+    {
+      "phrase": "email-correction-confirm",
+      "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "status": "PASS"
+    }
+  ],
+  "ASRArmRejectedInVerificationMode": true,
+  "providerRequests": 0
+}

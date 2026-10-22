@@ -1,0 +1,65 @@
+Browser tab: 4, Title: "aPureBase · Final Asem Human Retest", URL: "http://127.0.0.1:5173/".
+1 AXWebArea aPureBase · Final Asem Human Retest, URL: 127.0.0.1:5173/
+	2 container
+		3 text LOCAL HUMAN RETEST · NOT ACCEPTED · NOT PRODUCTION READY
+		4 heading aPureBase · Asem’s consolidated C-3.2 retest, Value: 1
+			5 text aPureBase · Asem’s consolidated C-3.2 retest
+		6 text Only the 16 pending exact assets require new listening reviews. Unchanged historical approvals remain preserved. No telephone integration, CRM writing or audio recording is enabled.
+		7 button (collapsed) Candidate and source identity, Secondary Actions: Expand
+			8 text Candidate and source identity
+		9 container
+			10 text Reviewer name
+			11 text field (settable) Reviewer name, Value: TECHNICAL PACKAGE CHECK — NOT ASEM
+		12 container
+			13 checkbox 1 · Listening, Value: 0
+			14 checkbox 2 · Five microphone tests, Value: 1
+			15 checkbox 3 · Email recovery, Value: 0
+			16 checkbox 4 · Natural calls, Value: 0
+			17 checkbox 5 · Export, Value: 0
+		104 heading Physical testing prerequisites, Value: 2
+			105 text Physical testing prerequisites
+		106 text Use headphones. Start buttons explicitly open paid OpenAI ASR using a separately supplied local key. Expected text stays local for comparison; it is never sent as a recognition hint. Speak naturally. After speaking, allow the existing endpoint pause and wait for a provider final before stopping. If readiness fails, stop that attempt and retain the exact error.
+		107 checkbox (settable, integer) Description: Headphones and microphone are connected, Value: 0
+		108 checkbox (settable, integer) Description: I am authorized to use this local ASR key and incur provider usage when I press Start, Value: 0
+		109 button Check backend health — no provider request
+		110 text {
+  "stage": "2.0c31",
+  "gateway": true,
+  "configured": false,
+  "model": "gpt-live-transcribe",
+  "language": "da",
+  "sampleRate": 24000,
+  "packageVersion": "stage-2.0c32-consolidated-human-retest-1",
+  "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+  "bootId": "289f5ca3-c41f-49ef-9018-fb17bd3775c9",
+  "processId": 78621,
+  "providerAuthorization": "NOT_TESTED_UNTIL_MANUAL_START",
+  "providerRequestsOnHealth": 0,
+  "verificationOnly": true
+}
+		111 container
+			112 text Listening gate:  false  · five microphone tests:  false  · email recovery:  false
+		113 heading 2 · Exactly five microphone/ASR test types, Value: 2
+			114 text 2 · Exactly five microphone/ASR test types
+		115 text Ordinary Danish sentence; explicit YES; explicit NO; naturally spoken email; then correction of that email. For these two smoke tests the local fixtures are info@klinik.dk and a correction to kontakt@klinik.dk. Use your own natural wording. Do not repeat a fixed script or exaggerate pauses.
+		116 container
+			117 text Microphone test
+			118 pop up button (collapsed, settable) Microphone test, Value: ordinary, Secondary Actions: Expand
+				119 menu
+					120 (selected) ordinary
+					121 yes
+					122 no
+					123 email
+					124 correction
+		125 container
+			126 text What you intend to say (offline expected text)
+			127 text entry area (settable) What you intend to say (offline expected text)
+		128 button Start microphone test + paid ASR
+			129 text Start 
+			130 text microphone test
+			131 text  + paid ASR
+		132 button (disabled) Stop test / retain evidence
+		102 text Ready for listening. No provider session has started.
+		103 text Progress is saved in this browser on this machine. Export before changing browsers or clearing browser storage. Stop the server with Stop.command after finishing.
+
+The focused UI element is 109 button Check backend health — no provider request

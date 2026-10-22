@@ -37,3 +37,20 @@ export class FixtureContactEmailResolver implements ContactEmailResolver {
   return boundedRecords(this.records.filter(r=>r.contactId===scope.contactId),scope);
  }
 }
+
+/** No network implementation: a future verified adapter must supply exact fresh receipts.
+ * Fixture-only minimal records remain explicitly synthetic, never production provenance. */
+export async function lookupContactEvidence(db:ContactEmailResolver,scope:ContactScope,signal:AbortSignal,spokenCandidates:readonly string[]=[],now:()=>number=Date.now){
+ validateContactScope(scope);const requestedAt=now(),request=structuredClone(scope);
+ let records:ContactEmail[],receipts:ContactLookupReceipt[]=[];
+ if(scope.source==='VERIFIED_CONTACT_ADAPTER'){
+  if(!db.lookupReceipts)throw new Error('Verified lookup receipts required');
+  const raw:unknown=await db.lookupReceipts(request,signal);signal.throwIfAborted();
+  if(!Array.isArray(raw)||raw.length>3)throw new Error('Bounded lookup receipts required');
+  const receivedAt=now();receipts=raw.map(r=>validateLookupReceipt(r,scope));
+  if(receipts.some(r=>r.lookedUpAt<requestedAt||r.lookedUpAt>receivedAt))throw new Error('Stale or future lookup receipt');
+  records=boundedRecords(receipts.map(r=>({contactId:r.contactId,email:r.email,recordVersion:r.recordVersion,sourceRecordId:r.sourceRecordId})),scope);
+ }else records=boundedRecords(await db.resolveCandidates({...request,spokenCandidates:[...spokenCandidates]},signal),scope);
+ signal.throwIfAborted();
+ return {records,evidence:{scope:request,requestedAt,receivedAt:now(),clock:'unix-epoch-ms' as const,provenance:scope.source,receipts}};
+}

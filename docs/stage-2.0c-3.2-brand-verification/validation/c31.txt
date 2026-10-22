@@ -1,0 +1,9 @@
+
+ RUN  v4.1.11 /private/tmp/c32-brand-source/validation-final/tree
+
+
+ Test Files  5 passed (5)
+      Tests  139 passed (139)
+   Start at  05:24:56
+   Duration  612ms (transform 1.15s, setup 0ms, import 1.85s, tests 277ms, environment 0ms)
+

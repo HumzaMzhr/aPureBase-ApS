@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "preConsolidationFiles": 902,
+  "exactConsolidationChanges": [
+    "tests/consent-stage20c32-package-ui.test.tsx",
+    "scripts/stage20c32-handoff/Configure-ASR.command",
+    "scripts/stage20c32-package.ts",
+    "src/consent/stage32/handoff/presentation.ts",
+    "src/consent/stage32/handoff/App.tsx",
+    "src/consent/stage32/handoff/contract.ts"
+  ],
+  "Stage196Unchanged": true,
+  "consentBaselineUnchanged": true,
+  "originalAudio": 37,
+  "C31Audio": 12,
+  "C32Audio": 3,
+  "historicalReportsPreserved": true,
+  "providerRequests": 0
+}

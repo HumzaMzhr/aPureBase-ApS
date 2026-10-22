@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "zipSHA256": "c25637fe96861c172901f23fee8bb39e274b27e0d7b7b76905d72a14f500b088",
+  "zipBytes": 91812065,
+  "sourceRecordsUnchanged": {
+    "validatedCore": 347,
+    "handoff": 18
+  },
+  "manifestFiles": 64,
+  "exactCurrentBindings": 38,
+  "uniqueCurrentAudio": 37,
+  "listeningActualSourceEnded": 16,
+  "humanReviewsFabricated": 0,
+  "packagedCredentialsOrForbiddenPrivateFiles": 0,
+  "secretPatternFindings": 0,
+  "whitespace": "PASS",
+  "mainCheckoutClean": true,
+  "mainHEAD": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+  "providerRequestsDuringConstruction": 0,
+  "audioGenerationDuringConstruction": 0,
+  "stageAccepted": false,
+  "productionReady": false,
+  "technicalExportResult": "HUMAN_RETEST_INCOMPLETE"
+}

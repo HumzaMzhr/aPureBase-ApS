@@ -3,8 +3,9 @@ import type {ConsentSnapshot,PlaybackRecord,Transcript} from '../../types';
 import type {LocalPlaybackPort} from '../../approved/localPlayback';
 import {eligibleRecipient} from '../../authority';
 import {ConservativeDanishClassifier,explicitAffirmative} from '../../classifier';
-import {currentCatalog} from '../../corrections/assets';
-import {qaResponse,retestDefinition} from '../../corrections/retest';
+import {currentC32Catalog as currentCatalog,currentC32Response as qaResponse} from '../speech/current';
+import {retestDefinition} from '../../corrections/retest';
+import {validateContactScope} from './databaseResolver';
 import {EmailAudit} from './audit';
 import {hardenedEmailPolicy} from './policy';
 import type {ContactEmailResolver,ContactScope,EmailReconciliationPort,EmailTurn,ParsedEmail,Resolution} from './types';
@@ -24,24 +25,27 @@ export class EmailAcquisition {
  private confirmation?:{turn:EmailTurn;candidate:string};private seen=new Set<string>();
  private onsets=new Map<string,{onset?:number;owner?:string;revision:number;generation:number}>();
  private generation=0;private abort?:AbortController;private playback?:PlaybackRecord;private correctionOf?:string;
+ private history:Attempt[]=[];private takeoverReason:string|null=null;
  private requests=new Map<string,number>();private requestIds=new Set<string>();private candidateCount=0;
  private stored?:{kind:'LOCAL_EVALUATION_CONFIRMED_EMAIL';email:string;recipientRevision:number;consentTurnId:string;sourceTurnId:string;confirmationTurnId:string;candidateRevision:number;storedAt:number;reviewer:string;reviewReason:string;productionConsent:false};
  constructor(private session:ConsentSession,private resolver:ContactEmailResolver,private player:LocalPlaybackPort,private model?:EmailReconciliationPort,private now:()=>number=()=>performance.now(),private forwardControl:(turn:Transcript)=>void=turn=>session.receive(turn)){this.audit=new EmailAudit(now);}
- snapshot(){return structuredClone({state:this.state,attempt:this.attempt,confirmation:this.confirmation,window:this.window,playback:this.playback,storedEmail:this.current()?this.stored:undefined,candidateAttempts:this.candidateCount,savingEnabled:false,sourceAudioStored:false,characterReadback:'DIAGNOSTIC_COMPARISON_ONLY',productionReady:false,businessDecisionRequired:'CONCISE_CONFIRMATION_VS_EXACT_READBACK'});}
+ snapshot(){return structuredClone({state:this.state,attempt:this.attempt,confirmation:this.confirmation,window:this.window,playback:this.playback,storedEmail:this.current()?this.stored:undefined,candidateAttempts:this.candidateCount,savingEnabled:false,sourceAudioStored:false,characterReadback:'DIAGNOSTIC_COMPARISON_ONLY',productionReady:false,normalEmailSpeech:'CONCISE_CONFIRMATION_ONLY',fullCallRecording:'NOT_IMPLEMENTED_BUSINESS_DECISION_REQUIRED',takeoverReason:this.takeoverReason,attemptHistory:this.history,pipeline:this.pipeline()});}
+ pipeline(){const a=this.attempt;return structuredClone({rawTranscript:a?.turn.text??null,reconstructedCandidate:a?.parsed.candidates??[],databaseCandidates:a?.resolution.databaseCandidates??[],modelRecommendation:a?.resolution.suggestion??{status:'NOT_REQUESTED',raw:null,accepted:false,reason:'No advisory model invoked'},resolutionStatus:a?.resolution.classification??'NOT_RESOLVED',resolvedCandidate:this.current()&&['CONFIRM_REQUIRED','CONFIRMED_LOCAL_CANDIDATE','END_SUCCESS'].includes(this.state)?a?.resolution.selected??null:null,confirmationStatus:this.confirmation?'OWNED_RECIPIENT_CONFIRMED':this.state==='CONFIRM_REQUIRED'?'PENDING_CONFIRMATION':'NOT_CONFIRMED',correctionLineage:this.history.map(h=>({attemptId:h.id,correctionOf:h.correctionOf??null,candidate:h.resolution.selected,status:h.id===a?.id?(this.confirmation?'CONFIRMED':this.state==='CONFIRM_REQUIRED'?'PENDING_CONFIRMATION':'INVALIDATED'):'SUPERSEDED'})),takeoverReason:this.takeoverReason,sourceTurn:a?.turn??null,reconstruction:a?.parsed??null,databaseEvidence:a?.resolution.databaseEvidence??null,confirmation:this.confirmation??null,questionPlayback:this.playback??null,fullEmailSpeechEnabled:false});}
  private current(){const s=this.session.snapshot();return hasReviewedConsent(s)&&this.scope?.callId===s.callId&&this.scope.recipientRevision===s.recipientRevision;}
  private consentKey(){const s=this.session.snapshot();return s.callId+':'+s.recipientRevision+':'+s.decision?.turnId;}
  assertCanRequest(){if(this.state==='END_SUCCESS')throw new Error('Local call already completed');if((this.requests.get(this.consentKey())??0)>=2){this.invalidate('EMAIL_RETRY_BUDGET_EXHAUSTED');this.state='HUMAN_TAKEOVER';throw new Error('One email retry only; human assistance required');}}
  open(scope:ContactScope){
+  validateContactScope(scope);
   const s=this.session.snapshot(),p=s.playbacks.at(-1),a=currentCatalog().find(a=>a.phraseId==='email-request');
   if(!hasReviewedConsent(s)||scope.callId!==s.callId||scope.recipientRevision!==s.recipientRevision||!scope.contactId||!scope.mappingEvidenceId||!p||!a||p.phraseId!=='email-request'||p.state!=='COMPLETED'||p.mode!=='local-prerecorded'||p.completionSource!=='VERIFIED_OUTPUT_ADAPTER'||p.completedAt===null||p.assetHash!==a.assetHash||p.textHash!==a.textHash||p.recipientRevision!==s.recipientRevision)throw new Error('Current reviewed scoped consent, independent contact mapping and completed email request required');
   this.assertCanRequest();if(this.requestIds.has(p.playbackId))throw new Error('Completed request cannot be reused');
   this.requests.set(this.consentKey(),(this.requests.get(this.consentKey())??0)+1);this.requestIds.add(p.playbackId);
   if(this.scope?.recipientRevision!==scope.recipientRevision)this.candidateCount=0;
-  this.invalidate('NEW_ADDRESS_WINDOW');this.scope=structuredClone(scope);this.window={id:p.playbackId,completedAt:p.completedAt,revision:s.recipientRevision,kind:'ADDRESS',consumed:false};this.state='LISTENING';
+  this.invalidate('NEW_ADDRESS_WINDOW');this.scope=structuredClone(scope);this.window={id:p.playbackId,completedAt:p.completedAt,revision:s.recipientRevision,kind:'ADDRESS',consumed:false};this.state='LISTENING';this.takeoverReason=null;
   this.audit.append('email.request_opened',{scope,playback:p,consentTurnId:s.decision!.turnId,canonicalText:a.text});
  }
  owner(){if(!this.current())return undefined;return this.playback&&['QUEUED','PLAYING'].includes(this.playback.state)?this.playback.playbackId:this.window&&!this.window.consumed?this.window.id:undefined;}
- invalidate(reason:string){this.generation++;this.abort?.abort();this.abort=undefined;this.window=undefined;this.confirmation=undefined;this.stored=undefined;if(this.playback&&['QUEUED','PLAYING'].includes(this.playback.state)){this.playback.state='INTERRUPTED';this.player.cancel();}this.state='OPERATOR_REVIEW';this.audit.append('email.invalidated',{reason,attemptId:this.attempt?.id});}
+ invalidate(reason:string){this.generation++;this.abort?.abort();this.abort=undefined;this.window=undefined;this.confirmation=undefined;this.stored=undefined;if(this.playback&&['QUEUED','PLAYING'].includes(this.playback.state)){this.playback.state='INTERRUPTED';this.player.cancel();}this.state='OPERATOR_REVIEW';this.takeoverReason=reason;this.audit.append('email.invalidated',{reason,attemptId:this.attempt?.id});}
  operatorReview(reviewer:string,reason:string,proposedValue?:string){this.audit.append('email.operator_review',{reviewer,reason,proposedValue,authorizedSave:false});this.invalidate('OPERATOR_REVIEW_CANNOT_OVERRIDE_RECIPIENT_EVIDENCE');}
  private deny(reason:string){this.audit.append('email.evidence_rejected',{reason});return false;}
  /** Adapter must forward the original Danish transcript, not normalized text. */
@@ -82,8 +86,11 @@ export class EmailAcquisition {
   const resolution=await hardenedEmailPolicy.resolve(parsed,this.scope!,this.resolver,this.model,this.abort.signal).catch(()=>null);
   if(generation!==this.generation||!this.current())return this.deny('STALE_RESOLUTION');
   if(!resolution){this.invalidate('RESOLUTION_CANCELLED');return false;}
-  this.attempt={id:turn.id,revision:this.candidateCount,consentTurnId:this.session.snapshot().decision!.turnId,at:this.now(),turn,parsed,resolution,correctionOf:this.correctionOf??(w.kind==='CONFIRM'?w.attemptId:undefined)};this.correctionOf=undefined;
-  this.state=resolution.action==='CONFIRM'?'CONFIRM_REQUIRED':resolution.action;
+  this.attempt={id:turn.id,revision:this.candidateCount,consentTurnId:this.session.snapshot().decision!.turnId,at:this.now(),turn,parsed,resolution,correctionOf:this.correctionOf??(w.kind==='CONFIRM'?w.attemptId:undefined)};this.correctionOf=undefined;this.history.push(structuredClone(this.attempt));
+  this.state=resolution.action==='CONFIRM'?'CONFIRM_REQUIRED':resolution.classification==='UNPARSABLE'&&parsed.errors.every(e=>e==='NO_LITERAL_ADDRESS_STRUCTURE')&&this.candidateCount<2?'CLARIFICATION_REQUIRED':resolution.action;
+  if(this.state==='CLARIFICATION_REQUIRED')this.audit.append('email.repeat_required',{attemptId:turn.id,remaining:1,requestPhraseId:'email-request'});
+  if(this.candidateCount>=2&&resolution.action!=='CONFIRM')this.state='HUMAN_TAKEOVER';
+  this.takeoverReason=['OPERATOR_REVIEW','HUMAN_TAKEOVER'].includes(this.state)?resolution.reason:null;
   this.audit.append('email.resolved',this.attempt);return true;
  }
  /** Local evaluation data only; no CRM/production storage or baseline consent mutation. */

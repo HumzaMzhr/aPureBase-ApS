@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "manifestFiles": 296,
+  "manifestIntegrity": true,
+  "launcherSyntax": "PASS",
+  "serverSyntax": "PASS",
+  "staticPageByteMatch": true,
+  "newMediaOverHTTP": [
+    {
+      "phrase": "why-calling",
+      "sha256": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+      "httpHashMatch": true
+    },
+    {
+      "phrase": "success-close",
+      "sha256": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "httpHashMatch": true
+    }
+  ],
+  "APIRejected404": true,
+  "credentialPatternFindings": [],
+  "privateEnvFilesIncluded": false,
+  "providerRequests": 0
+}

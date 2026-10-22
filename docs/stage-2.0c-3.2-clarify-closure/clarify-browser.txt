@@ -1,0 +1,4 @@
+Browser tab: 3, Title: "aPureBase C-3.2 Offline Candidate", URL: "http://127.0.0.1:5186/stage20c32.html".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~		235 text Local WebAudio source-ended for 55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420. Technical playback only; enter your own ratings and attestation.
+The focused UI element is 139 button Play exact current candidate locally

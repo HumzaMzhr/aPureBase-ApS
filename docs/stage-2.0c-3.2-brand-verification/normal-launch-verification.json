@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "normalStartCommandExecuted": true,
+  "automaticBrowserOpenBranchCompleted": true,
+  "bundledAppleSiliconRuntimeExecuted": true,
+  "shutdownRestartResumeVerified": true,
+  "providerVerificationMode": true,
+  "providerRequests": 0,
+  "IntelNativeExecution": "NOT_PERFORMED"
+}

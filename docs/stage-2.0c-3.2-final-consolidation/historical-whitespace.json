@@ -1,0 +1,1090 @@
+{
+  "policy": "Exact archived raw logs only; bytes unchanged; code/new reports still checked",
+  "historicalWarnings": [
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/presentation-tests.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/c31.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/c32-focused.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/full.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/lint.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/prior-consent.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/typecheck.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/c31.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 17,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 24,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 35,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 52,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 62,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 68,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 89,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 173,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 185,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 197,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 200,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 203,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 211,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "line": 220,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/focused.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/full-1.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/full-2.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/full-3.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/lint.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/pcm-1.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/pcm-2.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/pcm-3.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/pcm-4.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/pcm-5.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/prior-consent.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/replay-1.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/replay-2.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/replay-3.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/replay-4.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/replay-5.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/typecheck.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/c31.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/c32-focused.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/full.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/lint.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/prior-consent.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/typecheck.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/boundaries.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/c31.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/correction-first.txt",
+      "line": 23,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/correction-second.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/focused.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/full-1.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/full-2.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/full-3.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/inventory-corrected.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/lint.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/pcm-1.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/pcm-2.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/pcm-3.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/pcm-4.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/pcm-5.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/prior-consent.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/replay-1.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/replay-2.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/replay-3.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/replay-4.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/replay-5.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/reproduced-before.txt",
+      "line": 49,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 17,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 24,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 35,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 52,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 62,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 68,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 89,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 173,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 185,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 197,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 200,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 203,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 211,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "line": 220,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/typecheck.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 17,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 24,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 35,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 52,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 62,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 68,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 89,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 173,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 185,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 197,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 200,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 203,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 211,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "line": 220,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/sealed-browser-health.txt",
+      "line": 58,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/c31.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/c32-focused.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/full.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/lint.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/prior-consent.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/typecheck.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/c31.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/focused.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/full-1.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/full-2.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/full-3.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/lint.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/pcm-1.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/pcm-2.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/pcm-3.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/pcm-4.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/pcm-5.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/prior-consent.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/replay-1.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/replay-2.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/replay-3.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/replay-4.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/replay-5.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-consolidation/validation/typecheck.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/c31.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/focused.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/full.txt",
+      "line": 13,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/lint.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/prior-consent.txt",
+      "line": 9,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 17,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 22,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 33,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 50,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 60,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 66,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 87,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 135,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 147,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 159,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 162,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 165,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 173,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "line": 182,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/typecheck.txt",
+      "line": 4,
+      "warning": "new blank line at EOF."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 17,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 22,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 33,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 50,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 60,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 66,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 87,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 135,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 147,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 159,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 162,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 165,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 173,
+      "warning": "trailing whitespace."
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "line": 182,
+      "warning": "trailing whitespace."
+    }
+  ],
+  "exemptPaths": [
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/presentation-tests.txt",
+      "sha256": "a66e1b71b2ff5cb2dc044f4726fc01485d2c94897eeccce2c44dc12c67dbcb14"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/c31.txt",
+      "sha256": "7f74c2aa62d022e5c3a5f6b145db9a250eff1fd1180f08805ee522dad88fbdaa"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/c32-focused.txt",
+      "sha256": "e1c3bb8329780a24368791d26643f46119c1abdb4fad02ccbca0db0fc4135e01"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/full.txt",
+      "sha256": "9242a31dc69c101b4365d97d13f6f47e76ec1629f9c38a428f02e8afb64bbecb"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/lint.txt",
+      "sha256": "30f2bbb806dce4b9111110f4a817c889c3baa69737842714c5e62dc1406432ef"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/prior-consent.txt",
+      "sha256": "0947f4f11244460da0363faa147eecaa1c2ddaf51a51d26b76f7e6ef824fba09"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-brand-verification/validation/typecheck.txt",
+      "sha256": "6036e6439d0a74693c7dd58f4881022033fa6fb2285d34ceb59ee88d1b11f75e"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/c31.txt",
+      "sha256": "540a9e664fbef6599cc93a4a528906bfd2a794cce88751bbf689c4f1f0724481"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/clarify-browser-full.txt",
+      "sha256": "d0a66d0dcd5b2eb4aa18ec99f29cca784899eb5c73e03e772ccd8431e76669f1"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/focused.txt",
+      "sha256": "6e71bad92b54e2cea00633fe2c3d66bc65363804320df510cf68901b0c308733"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/full-1.txt",
+      "sha256": "93c5de6ac392eadef6631610f4b3b411885f8a7c709f125e4f5a02e40a96a462"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/full-2.txt",
+      "sha256": "e5f316dcc8412a895c323fe0c30654d8e70e843bbe555b9fcc33af14f5f52149"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/full-3.txt",
+      "sha256": "9a3e50d4c9424aa55e97dcd3e8c611c1a3ebf2ba4251850bd274151ed16c54a2"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/lint.txt",
+      "sha256": "30f2bbb806dce4b9111110f4a817c889c3baa69737842714c5e62dc1406432ef"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/pcm-1.txt",
+      "sha256": "7324355c2a2957b1f7b81291b17e815ffbc7b55bd64c7286a78cccbf244b1732"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/pcm-2.txt",
+      "sha256": "3ada022b5df7b82f783a3d2cc188aa7cc27849fa2ebdf558782f911be3914820"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/pcm-3.txt",
+      "sha256": "49e0d22d72bfaee8e053d87cdc8b47c8be9dbc2f71b9c8c42d8006ba04a01546"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/pcm-4.txt",
+      "sha256": "0982866340bf4503b0977f11bbe4d71f3c65cc348cba37283eb64713ba20949e"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/pcm-5.txt",
+      "sha256": "315b11f4591d2c56dce6c1030f621e68babbbc61b2b5d6fed2a8f9143d0899ab"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/prior-consent.txt",
+      "sha256": "ef4223daf0696a6b26c908705ba1f351cb3f1ac2a0e1aa3f99636c61330fa708"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/replay-1.txt",
+      "sha256": "8d6cd9d01cac856586228569927c45e15b3664044172184069b2d86dbac65d46"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/replay-2.txt",
+      "sha256": "23ebbd87cf7ec4c9337433237f43e661eb9471f081000470da3b05f11d515524"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/replay-3.txt",
+      "sha256": "550f509e3e3521cf47a51e00be09ee6dbdf1119b5431eacdda508b6782272a5d"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/replay-4.txt",
+      "sha256": "df11107c24839b6282f771c783e2dc25f614e000d85935cdbf78b07478465c0e"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/replay-5.txt",
+      "sha256": "fe5dd224b494561ee8f4081db056ffc67c46e9a5e113649f791993f7b7841252"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-closure/typecheck.txt",
+      "sha256": "6036e6439d0a74693c7dd58f4881022033fa6fb2285d34ceb59ee88d1b11f75e"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/c31.txt",
+      "sha256": "6903947d701cdbb769de72eeece0fbae327afe1ddaf7c8d11d91a113fee5b178"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/c32-focused.txt",
+      "sha256": "c16e1df2c7e0bb713b0a6858e18864d6d9b87cb2f0d1f11a249f2c5ca2c55d1a"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/full.txt",
+      "sha256": "2b80ada97a76be573bf343257893a5940c7cac7a832c38e038bd1f8269337c70"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/lint.txt",
+      "sha256": "30f2bbb806dce4b9111110f4a817c889c3baa69737842714c5e62dc1406432ef"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/prior-consent.txt",
+      "sha256": "34d3db53aac9b9aa5d354df3b96af141259ae562cdd1df31b20c45060bbbfe0b"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-email-architecture/validation/typecheck.txt",
+      "sha256": "6036e6439d0a74693c7dd58f4881022033fa6fb2285d34ceb59ee88d1b11f75e"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/boundaries.txt",
+      "sha256": "99d462b41de4ddc0ea1b96fea3e3923de5dada62ef8aa62b59b8967c80bd91c1"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/c31.txt",
+      "sha256": "bee3abc04a164681c550593793bdc4147abba4b5adbbce0bd9b43d1bb638b2f2"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/correction-first.txt",
+      "sha256": "41bebeb50cf5f0e291c1b7d0c1d85aec9e19f0932cdd30c1ba5c38f99fa66225"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/correction-second.txt",
+      "sha256": "c65165dab00cea79722c9a2a2b1c8e0a38ef50d5cf576ea855cfe696bea5e9d2"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/focused.txt",
+      "sha256": "cae19d6cc324a545bea9ffe94afc08a2c0fd0a90939ce44788c2536b444ceb5a"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/full-1.txt",
+      "sha256": "896de5da026a1035af6e72001f2de490d1db9b9e536c6d7ffdd860566c104912"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/full-2.txt",
+      "sha256": "2384f0e61149d30a1e5fb2ad19b7033b5ebd562f77875ee1f2565c83a86a7ac1"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/full-3.txt",
+      "sha256": "2f2d30c89af41304d35921ee06f9f7a640a97c81b5bddbc126dc0198ec30f4f6"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/inventory-corrected.txt",
+      "sha256": "c3731f678af17c97862157a4875ff6f589afc2b45be686af15e1cac166d4175c"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/lint.txt",
+      "sha256": "30f2bbb806dce4b9111110f4a817c889c3baa69737842714c5e62dc1406432ef"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/pcm-1.txt",
+      "sha256": "2f03302b03d2244384227087c2acfcdf91239ff13fb7000e93a62778ee52e290"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/pcm-2.txt",
+      "sha256": "c841393f237ac87ba6d0964b59d13d264883c5d0ced6685b04c793c6909b83ff"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/pcm-3.txt",
+      "sha256": "256e10e810d6b952cb01fb1bbff46d6787bc95a2148835463598947d6296a882"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/pcm-4.txt",
+      "sha256": "3ddfe6fda583ee512238349595d6bc45126d67906e0e112b17de0d394bdaa176"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/pcm-5.txt",
+      "sha256": "c5acb0febe3e6286298358cc76c0bb31a602f100020294bbcaa1f619bed4525c"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/prior-consent.txt",
+      "sha256": "40fd4f8b4232e2b1dba9ac6a0eca038c623b07033821ad876849ec5857fe1665"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/replay-1.txt",
+      "sha256": "89e4e413f8a12a73375f1b0baf42a39869c84aa23cb392c5672cd93193b52a90"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/replay-2.txt",
+      "sha256": "0f07f2f520c65025dc91b4b6fc60635ad21a4550a8d1c73de0f045f531f711e4"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/replay-3.txt",
+      "sha256": "060e9d7bcd2f29f934fcc0231e30684e64e6f99f46823c557e64db3c5f8c8f49"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/replay-4.txt",
+      "sha256": "7e13cc4b3a743e2df6a52cda78844303b7c5d0e0b4668b87c5e5b10932419068"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/replay-5.txt",
+      "sha256": "90479c814cd2ba09acc27c3aee144d55d2948071a8a03e6e1d659944de6e51cb"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/reproduced-before.txt",
+      "sha256": "0627228ed748d76016ff5bfb514faaad04c84fc8b10ef4f89942a62d97cea23b"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/success-browser.txt",
+      "sha256": "ca25339ea6998833ba493b65233161a0dc4ad2960dfc2430cef3983c8940b581"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/typecheck.txt",
+      "sha256": "6036e6439d0a74693c7dd58f4881022033fa6fb2285d34ceb59ee88d1b11f75e"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-feedback-closure/why-browser.txt",
+      "sha256": "fc61c20812a858d763a4b1fd90d23c80deea83354ed8d1643c2b6d0c8cd721a6"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/sealed-browser-health.txt",
+      "sha256": "1263fa26933b0f899384650b67c3b12f2b8ae72914b8c6b4d8921f2bc1ee5c6c"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/c31.txt",
+      "sha256": "592e63e073c4294c626ac66bd499ced8cea8a6ee590eaf5b87c4bface8021b2d"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/c32-focused.txt",
+      "sha256": "260585b60efa58eeaa47e89f3a63d20ea9fe956486ca5f0912d7212f552feea5"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/full.txt",
+      "sha256": "c0b494793c6dda3b9712684894e392fa8d51c17c57a81ff3c5c10180d4a1f1d7"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/lint.txt",
+      "sha256": "30f2bbb806dce4b9111110f4a817c889c3baa69737842714c5e62dc1406432ef"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/prior-consent.txt",
+      "sha256": "6d315251a25665d3150a3a90ab22d82909d71eb2c363c3db477f667821eb2508"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-final-asem-package/validation/typecheck.txt",
+      "sha256": "6036e6439d0a74693c7dd58f4881022033fa6fb2285d34ceb59ee88d1b11f75e"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/c31.txt",
+      "sha256": "cdca4802e5b872bb507cee8768fa83613b356fd0252a23e8b7d62823b6880611"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/focused.txt",
+      "sha256": "d5f426aa86aa5bde1c3dedfe35ca21cf58611c2e7c06256b8d7daa24c9ae516c"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/full.txt",
+      "sha256": "c012eed90733aa8ec8feef6b9a88d47721213bdf0928a51982a6add8d3b734e5"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/lint.txt",
+      "sha256": "30f2bbb806dce4b9111110f4a817c889c3baa69737842714c5e62dc1406432ef"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/prior-consent.txt",
+      "sha256": "5ca2bdc6bcabf73fa012e2f13d6c9416dbd14516905f5b59fa44c0fd98380e96"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/success-close-browser.txt",
+      "sha256": "7ddb2e819f37ffc9a48da885bc0f6d28aceb78fab68eb1bbeba384c29b0a27fd"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/typecheck.txt",
+      "sha256": "6036e6439d0a74693c7dd58f4881022033fa6fb2285d34ceb59ee88d1b11f75e"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-pronunciation-retest/why-calling-browser.txt",
+      "sha256": "15f8a4f6f1713a7b30acd0c9941ebfa38b46b008e86167bb5c93c602543ecf23"
+    }
+  ],
+  "newLogsNormalized": [
+    "docs/stage-2.0c-3.2-final-consolidation/validation/c31.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/focused.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/full-1.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/full-2.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/full-3.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/lint.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/pcm-1.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/pcm-2.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/pcm-3.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/pcm-4.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/pcm-5.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/prior-consent.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/replay-1.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/replay-2.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/replay-3.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/replay-4.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/replay-5.txt",
+    "docs/stage-2.0c-3.2-final-consolidation/validation/typecheck.txt"
+  ]
+}

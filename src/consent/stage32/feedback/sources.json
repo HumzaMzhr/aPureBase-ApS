@@ -1,0 +1,164 @@
+{
+  "sources": [
+    {
+      "path": "/Users/humzamazhar/Downloads/WhatsApp Business Acceptance Data.json",
+      "sha256": "c741e276f8d9fcd35232a4770fbb9ec33e3a983aed658992d12a154d2301ae0e",
+      "bytes": 241381,
+      "role": "RAW_HUMAN_EXPORT"
+    },
+    {
+      "path": "/Users/humzamazhar/Downloads/APureBase C32 Human Review.json",
+      "sha256": "03f0ce346ab57af201c29b1f743da63ffcc8a807d3a46d68fb8e303b4672e05f",
+      "bytes": 3087,
+      "role": "RAW_HUMAN_EXPORT"
+    },
+    {
+      "path": "/Users/humzamazhar/Downloads/stage20c3-acceptance-1792330201269.json",
+      "sha256": "6ff0e8d44fff9c1f42407e23460f440dd9abedd126bb32b7b52ad77f41f5dfeb",
+      "bytes": 38723,
+      "role": "RAW_HUMAN_EXPORT"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-human-findings.json",
+      "sha256": "d8524fd94e2e5fcdb43bc0489d4ab2d8a51a07d419726534ef39ced5a3dc9374",
+      "bytes": 309856,
+      "role": "DERIVED_OR_HISTORICAL_EVIDENCE"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-human-findings.md",
+      "sha256": "5d0640fc22225db62cebd715c97a167764b6e6057983fe76414996bef1be0b68",
+      "bytes": 17980,
+      "role": "DERIVED_OR_HISTORICAL_EVIDENCE"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-hardening-2-acceptance-index.json",
+      "sha256": "1b76d12df8ba59559fad5e32cb14f4fdce3eb5cf8b2e9af03c24fa55aa8570f6",
+      "bytes": 25840,
+      "role": "DERIVED_OR_HISTORICAL_EVIDENCE"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-hardening-2-acceptance-index.md",
+      "sha256": "1edf908dbd931e84b6f8c2c819d2a80151e96b162c61b40f8be55dddac52302b",
+      "bytes": 21340,
+      "role": "DERIVED_OR_HISTORICAL_EVIDENCE"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-hardening-1-pronunciation-registry.json",
+      "sha256": "b9e14a53b28dd3981511412854eff54128e3c1b75798504a165af16b318bd8ce",
+      "bytes": 144156,
+      "role": "DERIVED_OR_HISTORICAL_EVIDENCE"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-hardening-2-pronunciation-registry.json",
+      "sha256": "b9e14a53b28dd3981511412854eff54128e3c1b75798504a165af16b318bd8ce",
+      "bytes": 144156,
+      "role": "DERIVED_OR_HISTORICAL_EVIDENCE"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-listening-matrix.csv",
+      "sha256": "35d1f750a222dfd6606ba517a9a337a20e1fd1829eda3d0f0a0b0f81541ca96a",
+      "bytes": 15369,
+      "role": "DERIVED_OR_HISTORICAL_EVIDENCE"
+    },
+    {
+      "path": "src/consent/corrections/humanBaseline.json",
+      "sha256": "54c39206d120d1c5061ea9cd0f83ee15bfa5ee110bb8581e134b8f40490a6405",
+      "bytes": 171864,
+      "role": "DERIVED_OR_HISTORICAL_EVIDENCE"
+    },
+    {
+      "path": "src/consent/corrections/assetPack.json",
+      "sha256": "3df6c82a627e41752407acef788338205f8417e622a9df45aafcec014e7c28d1",
+      "bytes": 39202,
+      "role": "DERIVED_OR_HISTORICAL_EVIDENCE"
+    },
+    {
+      "path": "src/consent/stage32/speech/candidatePack.json",
+      "sha256": "93a71ee22e20b928d9474a327fb1cf9b9423894834cca8884c3ad8527c703528",
+      "bytes": 4271,
+      "role": "DERIVED_OR_HISTORICAL_EVIDENCE; extended only with the single authorized Clarify candidate; first two objects retained exactly",
+      "previousAuditSHA256": "bc973ac33a1307006998ad38048e64a59dcdfaebca73bcbef600c9902826a39e"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-generation.jsonl",
+      "sha256": "9843b7d67346bc1234e36bb92db7f12236d39c5eaa03141fd0ce60fbfa7590c7",
+      "bytes": 1760,
+      "role": "DERIVED_OR_HISTORICAL_EVIDENCE"
+    },
+    {
+      "path": "/Users/humzamazhar/.codex/attachments/dcd48e56-2c7d-40f2-b9e5-59102640016f/Pasted text.txt",
+      "sha256": "fde040c5ea90900e659c338a4cb05371c0fb8c8d7d321e6ecfabb515d9888ad4",
+      "bytes": 19969,
+      "role": "USER_INSTRUCTIONS_AND_RELAYED_FEEDBACK_NOT_NEW_HUMAN_TEST"
+    },
+    {
+      "path": "/Users/humzamazhar/.codex/attachments/ffe5418b-d84c-4482-b81a-0080af11d655/Pasted text.txt",
+      "sha256": "a763ab79fb65f54657edfeb760bb755cbc6d66be12b0cbdbeac8e46d7666e679",
+      "bytes": 20988,
+      "role": "USER_INSTRUCTIONS_AND_RELAYED_FEEDBACK_NOT_NEW_HUMAN_TEST"
+    },
+    {
+      "path": "/Users/humzamazhar/.codex/attachments/cd966761-7986-4e6f-8d13-6a1c93453f12/Pasted text.txt",
+      "sha256": "c2a287bf0d804e55cce1a1fa85b4e2369345c61d7f28a378bdbcdc76b81e3dfc",
+      "bytes": 20830,
+      "role": "USER_INSTRUCTIONS_AND_RELAYED_FEEDBACK_NOT_NEW_HUMAN_TEST"
+    },
+    {
+      "path": "/Users/humzamazhar/.codex/attachments/6b5d8d64-b303-4249-9305-e1dcc3f42614/Pasted text.txt",
+      "sha256": "27418ec918213c646f45bb6d3df0811e34d9249a268e2fa5ee4fe7673179396a",
+      "bytes": 17663,
+      "role": "USER_INSTRUCTIONS_AND_RELAYED_FEEDBACK_NOT_NEW_HUMAN_TEST"
+    },
+    {
+      "path": "/Users/humzamazhar/.codex/attachments/caf065ea-45b8-44ce-997b-81732d162c32/Pasted text.txt",
+      "sha256": "e4aae3cb36cc0fadf446597b450c4f9aef4a49cb2388a6156764a39b09fe5df1",
+      "bytes": 9264,
+      "role": "USER_INSTRUCTIONS_AND_RELAYED_FEEDBACK_NOT_NEW_HUMAN_TEST"
+    },
+    {
+      "path": "/Users/humzamazhar/.codex/attachments/5c1f5279-80e1-4b57-9832-08af2f46c068/Pasted text.txt",
+      "sha256": "b0d893fe676f4333524c749f37cf8a4601b17220b5039c3f1f839066d721a1ae",
+      "bytes": 15981,
+      "role": "USER_INSTRUCTIONS_AND_RELAYED_FEEDBACK_NOT_NEW_HUMAN_TEST"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1.md",
+      "sha256": "6e9296f3cfd3b1fddfafb0dcdd10331ca98e7a69838996e97f548dfab6fcd0d1",
+      "bytes": 32062,
+      "role": "HISTORICAL_CORRECTION_OR_REVIEW_REPORT_NOT_NEW_HUMAN_TEST"
+    },
+    {
+      "path": "docs/stage-2.0c-3.md",
+      "sha256": "98dc48c9f6cf5b5f4831f431aa943685fa151eda8b1f3c6f591a0c1ee0687b91",
+      "bytes": 20879,
+      "role": "HISTORICAL_CORRECTION_OR_REVIEW_REPORT_NOT_NEW_HUMAN_TEST"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-hardening-2-completion.md",
+      "sha256": "8006eca1aa12c083e96d7dcd02b5ece673ef16f4817b2dafeb560f991509f3d5",
+      "bytes": 13584,
+      "role": "HISTORICAL_CORRECTION_OR_REVIEW_REPORT_NOT_NEW_HUMAN_TEST"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-hardening-1-pronunciation-review.md",
+      "sha256": "8482797299b1f2cae27cf65615c602753271c0c7f417d0947deed50c74f4a511",
+      "bytes": 20561,
+      "role": "HISTORICAL_CORRECTION_OR_REVIEW_REPORT_NOT_NEW_HUMAN_TEST"
+    },
+    {
+      "path": "/Users/humzamazhar/.codex/attachments/725c4fca-2d52-49ec-94d6-cf8354865875/Pasted text.txt",
+      "sha256": "e3c8634e0166226ad119903aa68b9805b21f39af5b7c68c60eca37d1da579db9",
+      "role": "Current exact one-request Clarify authorization and complete final quality gate"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-clarify-generation.jsonl",
+      "sha256": "0d886bc687b4e80dbf91c9256215a0a36a80c9dc9f60bbd398759c46cdef8ab2",
+      "role": "Durable exclusive single authorized Clarify request journal; no retries"
+    }
+  ],
+  "separateC31HumanRetestExport": "NOT_FOUND_IN_AVAILABLE_EVIDENCE",
+  "earliestExportListeningReviews": 0,
+  "originalExportListeningActions": 37,
+  "latestExportListeningActions": 5,
+  "duplicatesInDerivedReportsAreNotNewObservations": true
+}

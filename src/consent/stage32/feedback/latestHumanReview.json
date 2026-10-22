@@ -1,0 +1,83 @@
+{
+  "kind": "HUMAN_REVIEW_EVIDENCE_NOT_PRODUCTION_CONSENT",
+  "stageVersion": "stage-2.0c32-hardening-2",
+  "timestamp": "2026-10-21T21:06:14.030Z",
+  "reviewerEnteredName": "asem",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6.2 Safari/605.1.15",
+    "language": "en-GB",
+    "timeZone": "Europe/Copenhagen"
+  },
+  "linkedEvidence": [],
+  "phraseReviews": [
+    {
+      "phraseId": "why-calling",
+      "canonicalHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+      "spokenHash": "528ee77027d3335af28f93bf29314aaa080155cf12dd3c8a25b7f4589eb699d5",
+      "audioHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+      "heardExactAsset": true,
+      "status": "PASS",
+      "naturalness": 4,
+      "pronunciation": 2,
+      "pace": 4,
+      "comments": ""
+    },
+    {
+      "phraseId": "consent-question",
+      "canonicalHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+      "spokenHash": "82686ed5aae8211a6cda1b4a7bfc3dbeeb70dca083f8f9ca148707cafe6eef7c",
+      "audioHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "heardExactAsset": true,
+      "status": "PASS",
+      "naturalness": 4,
+      "pronunciation": 2,
+      "pace": 4,
+      "comments": ""
+    },
+    {
+      "phraseId": "email-request",
+      "canonicalHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+      "spokenHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+      "audioHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "heardExactAsset": true,
+      "status": "PASS",
+      "naturalness": 4,
+      "pronunciation": 2,
+      "pace": 4,
+      "comments": ""
+    },
+    {
+      "phraseId": "clarify",
+      "canonicalHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+      "spokenHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+      "audioHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+      "heardExactAsset": true,
+      "status": "PASS",
+      "naturalness": 4,
+      "pronunciation": 2,
+      "pace": 4,
+      "comments": ""
+    },
+    {
+      "phraseId": "success-close",
+      "canonicalHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+      "spokenHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+      "audioHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+      "heardExactAsset": true,
+      "status": "FAIL",
+      "naturalness": 4,
+      "pronunciation": 2,
+      "pace": 4,
+      "comments": "frameldte < it pronounced a t "
+    }
+  ],
+  "microphoneTests": [],
+  "emailEvidence": [],
+  "naturalCallTimings": [],
+  "acceptance": "NOT_ACCEPTED",
+  "sourceAudioStored": false,
+  "productionConsentData": false,
+  "authenticatedReviewer": false,
+  "providerRequestsByThisExportTool": 0,
+  "reportedMicrophoneSessionProviderUsage": "NOT_KNOWN_FROM_SELF_REPORT"
+}

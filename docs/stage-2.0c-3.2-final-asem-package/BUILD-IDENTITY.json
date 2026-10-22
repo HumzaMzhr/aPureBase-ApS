@@ -1,0 +1,8 @@
+{
+  "baseCommit": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+  "coreSourceHash": "cda13e62d921062f0a734589e992b460d643ef2c912c5d5436eb08fed6c82eea",
+  "handoffSourceHash": "cf88b228269297d9bb0ef10653e8dd832a3330f8ff3462cee9e2aab9b4bd7fff",
+  "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+  "uncommitted": true,
+  "packageVersion": "stage-2.0c32-consolidated-human-retest-1"
+}

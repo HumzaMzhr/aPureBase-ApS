@@ -1,0 +1,37 @@
+{
+  "preBrandIdentity": {
+    "baseCommit": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+    "coreSourceHash": "cda13e62d921062f0a734589e992b460d643ef2c912c5d5436eb08fed6c82eea",
+    "handoffSourceHash": "f76c77e93475f250de43da3538749b848d80a2cf43ff0495b459524e4636a3c0",
+    "candidateSourceHash": "929af7f4c86b88be23d5cca95d9eb54fedec6d959321c2902984780c8fbafa60",
+    "uncommitted": true,
+    "packageVersion": "stage-2.0c32-consolidated-human-retest-2"
+  },
+  "protectedFiles": [
+    {
+      "path": "src/consent/stage32/handoff/contract.ts",
+      "sha256": "5e1fc50a10b61f325f8ed4690c446eea88ee13cfa19062c5113af2fb69f4bfae"
+    },
+    {
+      "path": "src/consent/stage32/handoff/live.ts",
+      "sha256": "55ef3ab6ff98164bf7a58c78cd7eb5c5e5da0e1b4c28b226cc594f35750b7c9f"
+    },
+    {
+      "path": "src/consent/stage32/handoff/presentation.ts",
+      "sha256": "686010061f6d69f37b8137f083ed469cc6bcd37523dbfa060ab3e7002e58271a"
+    },
+    {
+      "path": "scripts/stage20c32-handoff/server.ts",
+      "sha256": "3746687e87b26b9768c66d55829a2a90f04148900a3e0c7a41f1c0b707e737f5"
+    },
+    {
+      "path": "scripts/stage20c32-handoff/verify-review.ts",
+      "sha256": "fcada607d135d5534ed32816032d9c8a9a354aacc4e9fede1a7c1224d9a92a7f"
+    },
+    {
+      "path": "scripts/stage20c32-handoff/REVIEW-EXPORT-SCHEMA.json",
+      "sha256": "a9419936d338fc4e1960b862333e06ee20e65b556064b41969b9de23b89858b6"
+    }
+  ],
+  "appBehaviorPrefixSHA256": "cf086628d6693a27551580a9b393b9598e24972060e03f71c8c1da653a299098"
+}

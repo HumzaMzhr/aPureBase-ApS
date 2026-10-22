@@ -1,0 +1,14 @@
+Browser tab: 2, Title: "aPureBase C-3.2 Offline Candidate", URL: "http://127.0.0.1:5186/stage20c32.html".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~			99 pop up button (collapsed, settable) Phrase, Secondary Actions: Expand, Value: success-close · e72d65aabdc5 · Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.
+~					107 (selected) success-close · e72d65aabdc5 · Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.
+~					112 why-calling · b2d46752a12b · Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.
+~			143 text Canonical:  Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.
+~			144 text Spoken render:  Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.
+~			147 text Selected review binding:  e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908  · canonical  050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e  · spoken  050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e .
+~			153 pop up button (collapsed, settable) Naturalness, Value: Not rated, Secondary Actions: Expand
+~					155 (selected) Not rated
+~					158 3
+~			189 text entry area (settable) Comments
+~		235 text Fresh ratings required for this exact asset.
+The focused UI element is 99 pop up button (collapsed, settable) Phrase, Secondary Actions: Expand, Value: success-close · e72d65aabdc5 · Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.

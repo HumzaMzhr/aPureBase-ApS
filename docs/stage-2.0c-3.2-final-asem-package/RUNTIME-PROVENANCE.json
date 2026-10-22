@@ -1,0 +1,16 @@
+[
+  {
+    "arch": "arm64",
+    "version": "25.9.0",
+    "archiveSHA256": "e479f3c469d3d9303a44f00a8ea37a3788395d171bb8059c48a4bbbd2e371b59",
+    "nodeSHA256": "4b3fe8b384e30ee917e28a9f5b79a3ca64b72b13b70d9ab2273e6e9a823f4cbf",
+    "source": "https://nodejs.org/dist/v25.9.0/node-v25.9.0-darwin-arm64.tar.gz"
+  },
+  {
+    "arch": "x64",
+    "version": "25.9.0",
+    "archiveSHA256": "7d737b53ce191142bfa1c17cfa5b070d96e84eebf76b8dd06d84981cbdc3f7e3",
+    "nodeSHA256": "628a498d9031134330c5beffd7623cb28184edb67ca891a51bc6f7d87ff8759f",
+    "source": "https://nodejs.org/dist/v25.9.0/node-v25.9.0-darwin-x64.tar.gz"
+  }
+]

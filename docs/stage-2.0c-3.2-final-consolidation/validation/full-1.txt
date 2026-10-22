@@ -1,0 +1,12 @@
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  89 passed (89)
+      Tests  1788 passed (1788)
+   Start at  06:02:30
+   Duration  10.27s (transform 3.02s, setup 0ms, import 7.82s, tests 35.41s, environment 7ms)

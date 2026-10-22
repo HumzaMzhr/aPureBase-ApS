@@ -1,0 +1,3 @@
+
+> apurebase-stage1-translator@0.9.0 lint
+> eslint .

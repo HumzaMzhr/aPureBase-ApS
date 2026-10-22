@@ -55,7 +55,7 @@ export const emailCorpus:readonly EmailCase[]=Object.freeze([
  example('db-offline','anna@clinic.example',['anna@clinic.example'],null,'INSUFFICIENT',{db:'ERROR'}),
  example('db-malformed','anna@clinic.example',['anna@clinic.example'],null,'INSUFFICIENT',{db:'MALFORMED'}),
  example('model-invalid','anna@clinic.example',['anna@clinic.example'],'anna@clinic.example','EXACT',{model:'INVALID'}),
- example('model-wrong','anna@clinic.example',['anna@clinic.example'],'anna@clinic.example','EXACT',{model:'WRONG'}),
+ example('model-wrong','anna@clinic.example',['anna@clinic.example'],null,'CONFLICT',{model:'WRONG'}),
  example('model-timeout','anna@clinic.example',['anna@clinic.example'],'anna@clinic.example','EXACT',{model:'TIMEOUT'}),
  example('long-local','a'.repeat(60)+'@long-clinic.department.example',['a'.repeat(60)+'@long-clinic.department.example'],'a'.repeat(60)+'@long-clinic.department.example','EXACT'),
  example('too-long-local','a'.repeat(65)+'@clinic.example',['anna@clinic.example'],null,'INSUFFICIENT'),

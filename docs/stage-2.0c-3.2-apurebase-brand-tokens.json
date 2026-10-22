@@ -1,0 +1,283 @@
+{
+  "authority": "User-supplied original aPureBase documents; not the preceding AI UI concept",
+  "sourceDocuments": [
+    {
+      "path": "/Users/humzamazhar/Downloads/E-Consents v2.pptx",
+      "sha256": "82f272599c8b72a07898e1ea64ad398eb5e057b3816560955a703bd43467f0c5",
+      "inspection": "OOXML slide/master/theme/media inspected and original thumbnail/media contact sheet reviewed"
+    },
+    {
+      "path": "/Users/humzamazhar/Downloads/E-Permission Communication Document Template.docx",
+      "sha256": "cdb864c6f29072b01d5dbea4a4ea8e7a81d00fbc1f78c73fa191c30e1de1cee5",
+      "inspection": "OOXML all content/theme/media inspected; original thumbnails/assets visually reviewed; DOCX also rendered to 31 pages each"
+    },
+    {
+      "path": "/Users/humzamazhar/Downloads/E-Permission Template.docx",
+      "sha256": "59df244e9d2ef3a899b42595ff0959c7dae5119fc2c3b965ee96d340c1034e0d",
+      "inspection": "OOXML all content/theme/media inspected; original thumbnails/assets visually reviewed; DOCX also rendered to 31 pages each"
+    },
+    {
+      "path": "/Users/humzamazhar/Downloads/E-consent Nordics Feb 15 2021.pdf",
+      "sha256": "b0e5c0d726f650e5db3dfef3851cbcba68c7415cd6f06d1cfef1ab10b2b9b2bb",
+      "inspection": "PDF all pages rendered and vector/text colors/fonts extracted"
+    },
+    {
+      "path": "/Users/humzamazhar/Downloads/E-consent Nordics Feb 15 2021.pptx",
+      "sha256": "d2ebdd19507821418a8a7dcd08bdc6241664ef6b2d51065811458b4d265486b1",
+      "inspection": "OOXML slide/master/theme/media inspected and original thumbnail/media contact sheet reviewed"
+    },
+    {
+      "path": "/Users/humzamazhar/Downloads/Email Consent Collection Nordics Abbott Feb 12 2021.pptx",
+      "sha256": "acfb87e9d148ef37384f1a0f189c228eefadaac6ca916aca5c33c6343c01dcf4",
+      "inspection": "OOXML slide/master/theme/media inspected and original thumbnail/media contact sheet reviewed"
+    },
+    {
+      "path": "/Users/humzamazhar/Downloads/Email Consent Collection Nordics Abbott Feb 15 2021.pptx",
+      "sha256": "1aa9bbd9335b4f065c3b77565fc95ce0476aec90aea0a9ec373aac90bc94f848",
+      "inspection": "OOXML slide/master/theme/media inspected and original thumbnail/media contact sheet reviewed"
+    },
+    {
+      "path": "/Users/humzamazhar/Downloads/Email Consent Methodology 2021 Nordics Abbott.pptx",
+      "sha256": "57bf53b98089a2fe6213bd6473b8de7d1dcdb28f790b0569126e194dc51cbe79",
+      "inspection": "OOXML slide/master/theme/media inspected and original thumbnail/media contact sheet reviewed"
+    },
+    {
+      "path": "/Users/humzamazhar/Downloads/aPureBase E-mail Consent Methodology_2021-02-16_Nordics_Abbott.pdf",
+      "sha256": "17dc0265bf80e96bf8e02d5d0f2548c2deeb1676c01567fd31e63de2625cfdaa",
+      "inspection": "PDF all pages rendered and vector/text colors/fonts extracted"
+    }
+  ],
+  "tokens": {
+    "--apb-brand-primary": {
+      "value": "#C2CD23",
+      "classification": "SOURCE_EXACT",
+      "evidence": "Methodology PPTX ppt/theme/theme1.xml accent1; cross-checked PDF vector fills (0.761,0.804,0.137)."
+    },
+    "--apb-brand-primary-hover": {
+      "value": "#B0BA1F",
+      "classification": "SOURCE_EXACT",
+      "evidence": "Original Nordic decks direct shape/arrow fill and text; reused for hover, not asserted as a published hover specification."
+    },
+    "--apb-brand-primary-soft": {
+      "value": "#F4F6E8",
+      "classification": "SOURCE_SAMPLED",
+      "evidence": "Rounded 8-bit rendering of the source PDF pale table fill (0.957,0.965,0.910); not an official HEX specification."
+    },
+    "--apb-brand-header": {
+      "value": "#C2CD23",
+      "classification": "SOURCE_EXACT",
+      "evidence": "Same source accent1, behind the extracted original green molecular header."
+    },
+    "--apb-background": {
+      "value": "#F8F8F8",
+      "classification": "SOURCE_SAMPLED",
+      "evidence": "Closest 8-bit neutral to source PDF grey 0.973; not an official documented HEX."
+    },
+    "--apb-surface": {
+      "value": "#FFFFFF",
+      "classification": "SOURCE_EXACT",
+      "evidence": "Original PowerPoint lt1 and white slide working surfaces."
+    },
+    "--apb-text-primary": {
+      "value": "#333333",
+      "classification": "UI_DERIVED_ACCESSIBILITY",
+      "evidence": "Darker neutral than the original grey for readable small text and lime controls."
+    },
+    "--apb-text-secondary": {
+      "value": "#5F5F5F",
+      "classification": "SOURCE_EXACT",
+      "evidence": "Original Nordic PPTX direct text colors, also PDF grey 0.373 (rounded)."
+    },
+    "--apb-heading": {
+      "value": "#5F5F5F",
+      "classification": "SOURCE_EXACT",
+      "evidence": "Original grey heading/text treatment; used on white surfaces."
+    },
+    "--apb-border": {
+      "value": "#D9D9D9",
+      "classification": "SEMANTIC_UI_COLOR",
+      "evidence": "Neutral interface separators; not an official brand specification."
+    },
+    "--apb-focus": {
+      "value": "#626A12",
+      "classification": "UI_DERIVED_ACCESSIBILITY",
+      "evidence": "Darker yellow-green focus outline, derived for contrast on white."
+    },
+    "--apb-brand-label": {
+      "value": "#43490D",
+      "classification": "UI_DERIVED_ACCESSIBILITY",
+      "evidence": "Dark lime-family label text for small badges and active-step labels."
+    },
+    "--apb-success": {
+      "value": "#486019",
+      "classification": "SEMANTIC_UI_COLOR",
+      "evidence": "Restrained positive status, deliberately secondary to source lime."
+    },
+    "--apb-success-soft": {
+      "value": "#F0F4E8",
+      "classification": "SEMANTIC_UI_COLOR",
+      "evidence": "Light positive-status surface."
+    },
+    "--apb-success-border": {
+      "value": "#BDC9A7",
+      "classification": "SEMANTIC_UI_COLOR",
+      "evidence": "Positive-status border."
+    },
+    "--apb-warning": {
+      "value": "#805B09",
+      "classification": "SEMANTIC_UI_COLOR",
+      "evidence": "Restrained amber for concerns; independent from the brand palette."
+    },
+    "--apb-warning-soft": {
+      "value": "#FBF6E9",
+      "classification": "SEMANTIC_UI_COLOR",
+      "evidence": "Light warning surface."
+    },
+    "--apb-error": {
+      "value": "#963C30",
+      "classification": "SEMANTIC_UI_COLOR",
+      "evidence": "Restrained red for errors."
+    },
+    "--apb-error-soft": {
+      "value": "#FAEFEC",
+      "classification": "SEMANTIC_UI_COLOR",
+      "evidence": "Light error surface."
+    },
+    "--apb-disabled": {
+      "value": "#EEEEEB",
+      "classification": "SEMANTIC_UI_COLOR",
+      "evidence": "Neutral disabled-control surface."
+    },
+    "--apb-disabled-text": {
+      "value": "#6B6B65",
+      "classification": "UI_DERIVED_ACCESSIBILITY",
+      "evidence": "Readable neutral disabled text, not a new brand color."
+    },
+    "--apb-neutral-soft": {
+      "value": "#F3F3EF",
+      "classification": "SEMANTIC_UI_COLOR",
+      "evidence": "Secondary panel backgrounds."
+    },
+    "--apb-banner-overlay-opacity": {
+      "value": "0.90196",
+      "classification": "SOURCE_EXACT",
+      "evidence": "Methodology PDF page 4 /ExtGState /GS23 /ca 0.90196, /BM /Normal: original lime rectangle painted over Image53 before text."
+    }
+  },
+  "contrastChecks": [
+    {
+      "foreground": "--apb-text-primary",
+      "background": "--apb-brand-primary",
+      "ratio": 7.25
+    },
+    {
+      "foreground": "--apb-text-primary",
+      "background": "--apb-brand-primary-hover",
+      "ratio": 5.95
+    },
+    {
+      "foreground": "--apb-text-secondary",
+      "background": "--apb-surface",
+      "ratio": 6.385
+    },
+    {
+      "foreground": "--apb-brand-label",
+      "background": "--apb-brand-primary-soft",
+      "ratio": 8.735
+    },
+    {
+      "foreground": "--apb-focus",
+      "background": "--apb-surface",
+      "ratio": 5.85
+    },
+    {
+      "foreground": "--apb-warning",
+      "background": "--apb-warning-soft",
+      "ratio": 5.693
+    },
+    {
+      "foreground": "--apb-error",
+      "background": "--apb-error-soft",
+      "ratio": 6.237
+    },
+    {
+      "foreground": "--apb-success",
+      "background": "--apb-success-soft",
+      "ratio": 6.349
+    }
+  ],
+  "typography": {
+    "sourceObserved": [
+      "Calibri",
+      "Calibri Bold",
+      "Candara Bold",
+      "some Arial"
+    ],
+    "implemented": "Calibri, Segoe UI, Arial, sans-serif; Candara-first restrained headings",
+    "officialFontSpecificationClaimed": false,
+    "fontsBundled": false
+  },
+  "assets": [
+    {
+      "path": "src/consent/stage32/handoff/brand/apurebase-wordmark.jpg",
+      "sha256": "54049e9513e608407635aa6effe7c7afd19ee140795b80a70d8edb951ab8232e",
+      "source": "Email Consent Methodology 2021 Nordics Abbott.pptx:ppt/media/image3.jpg; byte-identical to existing public/apurebase-logo.jpg and same logo on methodology PDF page 1",
+      "operation": "Original asset extracted/copied without recoloring, redrawing or resampling"
+    },
+    {
+      "path": "src/consent/stage32/handoff/brand/apurebase-molecular-header.jpg",
+      "sha256": "b1864a8f367c5e07ebafc84323d3102ca4ae1dd6a1218de4da4df0d2695adbda",
+      "source": "aPureBase E-mail Consent Methodology_2021-02-16_Nordics_Abbott.pdf:page4 Image53.jpg (1200x210), also used on page5",
+      "operation": "Original asset extracted/copied without recoloring, redrawing or resampling"
+    }
+  ],
+  "observedVisualSystem": {
+    "primary": "Lime/yellow-green; exact original theme accent1 #C2CD23",
+    "secondary": "White and neutral greys; sparse orange/blue flow annotations in source slides are not the primary brand",
+    "heading": "Original Calibri/Candara, grey on white and neutral text on green banners",
+    "borders": "Mostly square blocks, thin neutral separators and clean table lines",
+    "logoPlacement": "Page 1 top-left; small footer wordmark bottom-right on content pages",
+    "logoProportions": "Original JPG 250×59 (4.237288:1); unchanged embedded pixels with their white clear space",
+    "headerFooter": "Wide lime molecular image banners; restrained neutral title strips; small source footers",
+    "spacing": "Large white working areas, simple left alignment, generous margins",
+    "graphics": "Original Image53 molecular JPEG plus exact source lime rectangle at normal alpha 0.90196; no redrawing or invented illustration.",
+    "workingSurface": "White remains dominant; green reserved for header, selected steps and primary actions"
+  },
+  "behaviorPreservation": {
+    "preBrandIdentity": {
+      "baseCommit": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+      "coreSourceHash": "cda13e62d921062f0a734589e992b460d643ef2c912c5d5436eb08fed6c82eea",
+      "handoffSourceHash": "f76c77e93475f250de43da3538749b848d80a2cf43ff0495b459524e4636a3c0",
+      "candidateSourceHash": "929af7f4c86b88be23d5cca95d9eb54fedec6d959321c2902984780c8fbafa60",
+      "uncommitted": true,
+      "packageVersion": "stage-2.0c32-consolidated-human-retest-2"
+    },
+    "protectedFiles": [
+      {
+        "path": "src/consent/stage32/handoff/contract.ts",
+        "sha256": "5e1fc50a10b61f325f8ed4690c446eea88ee13cfa19062c5113af2fb69f4bfae"
+      },
+      {
+        "path": "src/consent/stage32/handoff/live.ts",
+        "sha256": "55ef3ab6ff98164bf7a58c78cd7eb5c5e5da0e1b4c28b226cc594f35750b7c9f"
+      },
+      {
+        "path": "src/consent/stage32/handoff/presentation.ts",
+        "sha256": "686010061f6d69f37b8137f083ed469cc6bcd37523dbfa060ab3e7002e58271a"
+      },
+      {
+        "path": "scripts/stage20c32-handoff/server.ts",
+        "sha256": "3746687e87b26b9768c66d55829a2a90f04148900a3e0c7a41f1c0b707e737f5"
+      },
+      {
+        "path": "scripts/stage20c32-handoff/verify-review.ts",
+        "sha256": "fcada607d135d5534ed32816032d9c8a9a354aacc4e9fede1a7c1224d9a92a7f"
+      },
+      {
+        "path": "scripts/stage20c32-handoff/REVIEW-EXPORT-SCHEMA.json",
+        "sha256": "a9419936d338fc4e1960b862333e06ee20e65b556064b41969b9de23b89858b6"
+      }
+    ],
+    "appBehaviorPrefixSHA256": "cf086628d6693a27551580a9b393b9598e24972060e03f71c8c1da653a299098"
+  }
+}

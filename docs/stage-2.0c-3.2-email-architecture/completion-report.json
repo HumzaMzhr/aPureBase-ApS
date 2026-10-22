@@ -1,0 +1,264 @@
+{
+  "status": "HUMAN_RETEST_CANDIDATE_NOT_ACCEPTED_NOT_PRODUCTION_READY",
+  "workspace": "/private/tmp/apurebase-c32-pronunciation",
+  "baseCommit": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+  "candidate": {
+    "baseCommit": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+    "coreSourceHash": "d4f107a55e3177917376888469cf4f6736bc9128243aaeedf6cf5af8b7258da7",
+    "handoffSourceHash": "c1e0038e86efe415f8f58fb70ed1aea2e9c89f2893d44cdd00843599406c7d73",
+    "candidateSourceHash": "7ddc6a19759dd00559b880497b7b3b4dd0834c3ae53ded93edb77bd282422a1d",
+    "uncommitted": true,
+    "packageVersion": "stage-2.0c32-email-architecture-1"
+  },
+  "existingChangedSourceFiles": [
+    "scripts/stage20c32-handoff/HUMAN-REVIEW-GUIDE.txt",
+    "scripts/stage20c32-handoff/REVIEW-EXPORT-SCHEMA.json",
+    "scripts/stage20c32-handoff/START-HERE.txt",
+    "scripts/stage20c32-handoff/verify.mjs",
+    "scripts/stage20c32-package.ts",
+    "src/consent/stage32/feedback/adversarial.ts",
+    "src/consent/stage32/handoff/App.tsx",
+    "src/consent/stage32/handoff/contract.ts",
+    "src/consent/stage32/handoff/live.ts",
+    "src/consent/stage32/handoff/presentation.ts",
+    "src/consent/stage32/Workbench.tsx",
+    "src/consent/stage32/duration.ts",
+    "src/consent/stage32/email/danishEmailLexicon.ts",
+    "src/consent/stage32/email/databaseResolver.ts",
+    "src/consent/stage32/email/flow.ts",
+    "src/consent/stage32/email/types.ts",
+    "src/consent/stage32/hardening/corpus.ts",
+    "src/consent/stage32/hardening/resolution.ts",
+    "src/consent/stage32/session.ts",
+    "tests/consent-stage20c32-hardening.test.ts"
+  ],
+  "newSourceFiles": [
+    "src/consent/stage32/email/architecture.ts",
+    "tests/consent-stage20c32-email-freeze.test.ts",
+    "scripts/stage20c32-email-architecture-audit.ts",
+    "scripts/verify-stage20c32-email-freeze.py"
+  ],
+  "validation": [
+    {
+      "label": "c32-focused",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "/private/tmp/c32-email-freeze/validation-frozen/tree/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-stage20c32-candidates.test.ts",
+        "tests/consent-stage20c32-email-freeze.test.ts",
+        "tests/consent-stage20c32-email.test.ts",
+        "tests/consent-stage20c32-feedback-closure.test.ts",
+        "tests/consent-stage20c32-hardening.test.ts",
+        "tests/consent-stage20c32-package-brand.test.tsx",
+        "tests/consent-stage20c32-package-ui.test.tsx",
+        "tests/consent-stage20c32-package.test.ts",
+        "tests/consent-stage20c32-remediation.test.ts",
+        "tests/consent-stage20c32-speech.test.tsx"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 2.441,
+      "testsPassed": 666,
+      "testFiles": 10
+    },
+    {
+      "label": "c31",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "/private/tmp/c32-email-freeze/validation-frozen/tree/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-stage20c3.test.ts",
+        "tests/consent-stage20c3-view.test.tsx",
+        "tests/consent-stage20c31.test.ts",
+        "tests/consent-stage20c31-view.test.tsx",
+        "tests/consent-stage20c31-gateway.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 1.664,
+      "testsPassed": 139,
+      "testFiles": 5
+    },
+    {
+      "label": "prior-consent",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "/private/tmp/c32-email-freeze/validation-frozen/tree/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-foundation.test.ts",
+        "tests/consent-stage20b.test.tsx",
+        "tests/consent-stage20b2.test.tsx",
+        "tests/consent-stage20c1.test.ts",
+        "tests/consent-stage20c2.test.ts",
+        "tests/consent-stage20c3-view.test.tsx",
+        "tests/consent-stage20c3.test.ts",
+        "tests/consent-stage20c31-gateway.test.ts",
+        "tests/consent-stage20c31-view.test.tsx",
+        "tests/consent-stage20c31.test.ts",
+        "tests/consent-transcription.test.ts",
+        "tests/consent-view.test.tsx",
+        "tests/stage196-short-consent.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 1.76,
+      "testsPassed": 496,
+      "testFiles": 13
+    },
+    {
+      "label": "full",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 7.444,
+      "testsPassed": 1786,
+      "testFiles": 88
+    },
+    {
+      "label": "lint",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 2.707,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "typecheck",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 3.82,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 4.703,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "c32-build",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "/private/tmp/c32-email-freeze/validation-frozen/tree/node_modules/vite/bin/vite.js",
+        "build",
+        "--config",
+        "src/consent/stage32/vite.config.ts",
+        "--outDir",
+        "/private/tmp/c32-email-freeze/validation-frozen/c32-build"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.688,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "handoff-build",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "/private/tmp/c32-email-freeze/validation-frozen/tree/node_modules/vite/bin/vite.js",
+        "build",
+        "--config",
+        "scripts/stage20c32-handoff.vite.ts",
+        "--outDir",
+        "/private/tmp/c32-email-freeze/validation-frozen/handoff-build"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.698,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "preservation-c31",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "--import",
+        "tsx",
+        "scripts/verify-stage20c31.ts"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.282,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "preservation-c32-email",
+      "command": [
+        "python3",
+        "scripts/verify-stage20c32-email-freeze.py"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.149,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "package-hashes",
+      "command": [
+        "/private/tmp/c32-email-freeze/package-frozen/aPureBase-C32-Email-Architecture-Retest/runtime/arm64/node",
+        "/private/tmp/c32-email-freeze/package-frozen/aPureBase-C32-Email-Architecture-Retest/verify.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.218,
+      "testsPassed": null,
+      "testFiles": null
+    }
+  ],
+  "sourceProof": "source-proof.json",
+  "preservation": {
+    "beforeFiles": 874,
+    "originalRecordings": 37,
+    "C31Recordings": 12,
+    "C32Recordings": 3,
+    "Stage196Unchanged": true,
+    "historicalReportsAndExportsUnchanged": true,
+    "externalFileHashes": {
+      "/Users/humzamazhar/Downloads/aPureBase-C32-Asem-Branded-Human-Retest.zip": "b26aabba1aba4a665aae828113188e6d3ceec44cb08c5530968b2420a1dde4ab",
+      "/Users/humzamazhar/Downloads/aPureBase-C32-Final-Consolidated-Asem-Human-Retest.zip": "c25637fe96861c172901f23fee8bb39e274b27e0d7b7b76905d72a14f500b088",
+      "/Users/humzamazhar/Downloads/WhatsApp Business Acceptance Data.json": "c741e276f8d9fcd35232a4770fbb9ec33e3a983aed658992d12a154d2301ae0e",
+      "/Users/humzamazhar/Downloads/APureBase C32 Human Review.json": "03f0ce346ab57af201c29b1f743da63ffcc8a807d3a46d68fb8e303b4672e05f"
+    },
+    "historicalVerifier": "PASS on preserved pre-freeze tree; current email tree validated through exact layered pins"
+  },
+  "normalCallAudio": {
+    "requiredPending": 12,
+    "optionalDiagnosticPending": 4,
+    "fullEmailSpeech": false
+  },
+  "requests": {
+    "externalProvider": 0,
+    "audioGeneration": 0,
+    "liveASR": 0,
+    "localMockTraffic": true
+  },
+  "gitActions": {
+    "commit": false,
+    "push": false,
+    "prUpdate": false,
+    "deploy": false,
+    "merge": false
+  },
+  "sourceHygiene": {
+    "secretOrWhitespaceFindings": []
+  },
+  "humanReviewPending": true,
+  "telephoneIntegrated": false,
+  "fullCallRecording": "NOT_IMPLEMENTED_BUSINESS_DECISION_REQUIRED",
+  "Stage20DStarted": false,
+  "packageDirectory": "/private/tmp/c32-email-freeze/package-frozen/aPureBase-C32-Email-Architecture-Retest",
+  "newZipPublished": false
+}

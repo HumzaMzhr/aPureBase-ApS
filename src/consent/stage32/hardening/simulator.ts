@@ -1,7 +1,8 @@
 import {StructuredEmailSession} from '../session';
 import {evaluationFlow,type NaturalFlow} from './naturalFlow';
 export {naturalFlow} from './naturalFlow';
-import {currentCatalog,prepareCorrection} from '../../corrections/assets';
+import {prepareCorrection} from '../../corrections/assets';
+import {currentC32Catalog as currentCatalog} from '../speech/current';
 import type {LocalPlaybackEvent,LocalPlaybackPort} from '../../approved/localPlayback';
 import type {ContactEmailResolver,ContactScope} from '../email/types';
 /** Actual consent/session code + synthetic event clock. Never plays PCM or opens providers. */

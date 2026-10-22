@@ -1,0 +1,13 @@
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /private/tmp/c32-clarify-closure/validation/tree
+
+
+ Test Files  84 passed (84)
+      Tests  1684 passed (1684)
+   Start at  03:45:22
+   Duration  8.40s (transform 3.15s, setup 0ms, import 8.06s, tests 34.70s, environment 9ms)
+

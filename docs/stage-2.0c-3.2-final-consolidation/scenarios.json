@@ -1,0 +1,890 @@
+{
+  "original": [
+    {
+      "id": "A",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "I",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "J",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "K",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Verified cached target transfer request",
+          "pass": true
+        },
+        {
+          "name": "No consent from receptionist",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "passed": true,
+      "checks": [
+        {
+          "name": "New independently verified recipient succeeds",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Authorized intermediary preserves independent authority",
+          "pass": true
+        },
+        {
+          "name": "Authorized intermediary local completion",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "N",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Unverified intermediary question/YES blocked",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "O",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Refusal is terminal with no persuasion/email",
+          "pass": true
+        },
+        {
+          "name": "No re-asking consent after refusal",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "P",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Uncertain final is not YES",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "R",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Busy ends without email or minimum-duration padding",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "S",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Unsupported topics route to human without YES",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Unsupported topics route to human without YES",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "U",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Unsupported topics route to human without YES",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "V",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Barge-in/late output cannot grant consent",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "W",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Stale question owner fails",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "X",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Recipient revision invalidates reviewed YES",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "Y",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Output failure cannot deliver consent question",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "Z",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Injected ASR transport failure is durable",
+          "pass": true
+        },
+        {
+          "name": "No invented final or consent",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AA",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Invalid dynamic name fails closed",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AB",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AC",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AD",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AE",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AF",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AG",
+      "passed": true,
+      "checks": [
+        {
+          "name": "All phrase bindings validate",
+          "pass": true
+        },
+        {
+          "name": "Known regression is explicit",
+          "pass": true
+        },
+        {
+          "name": "No phonetic business spelling",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AH",
+      "passed": true,
+      "checks": [
+        {
+          "name": "All phrase bindings validate",
+          "pass": true
+        },
+        {
+          "name": "Known regression is explicit",
+          "pass": true
+        },
+        {
+          "name": "No phonetic business spelling",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AI",
+      "passed": true,
+      "checks": [
+        {
+          "name": "All phrase bindings validate",
+          "pass": true
+        },
+        {
+          "name": "Known regression is explicit",
+          "pass": true
+        },
+        {
+          "name": "No phonetic business spelling",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AJ",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AK",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AL",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AM",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AN",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Cancellation rejects rather than applying a result",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AO",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Duplicate final cannot replace earlier evidence",
+          "pass": true
+        },
+        {
+          "name": "No stale result stored",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AP",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AQ",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Refusal is terminal with no persuasion/email",
+          "pass": true
+        },
+        {
+          "name": "No re-asking consent after refusal",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AR",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Busy ends without email or minimum-duration padding",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AS",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "AT",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "remediation": [
+    {
+      "id": "direct",
+      "passed": true
+    },
+    {
+      "id": "clarification",
+      "passed": true
+    },
+    {
+      "id": "correction",
+      "passed": true
+    },
+    {
+      "id": "receptionist",
+      "passed": true
+    },
+    {
+      "id": "wrong-correct",
+      "passed": true
+    },
+    {
+      "id": "intermediary",
+      "passed": true
+    },
+    {
+      "id": "refusal",
+      "passed": true
+    },
+    {
+      "id": "busy",
+      "passed": true
+    },
+    {
+      "id": "unsupported-question",
+      "passed": true
+    },
+    {
+      "id": "human-request",
+      "passed": true
+    },
+    {
+      "id": "unsupported-value",
+      "passed": true
+    },
+    {
+      "id": "output-failure",
+      "passed": true
+    },
+    {
+      "id": "authority-denied",
+      "passed": true
+    },
+    {
+      "id": "authority-revision",
+      "passed": true
+    },
+    {
+      "id": "stale-lookup",
+      "passed": true
+    },
+    {
+      "id": "recipient-during-lookup",
+      "passed": true
+    },
+    {
+      "id": "malformed-db",
+      "passed": true
+    },
+    {
+      "id": "email-revision-confirmation",
+      "passed": true
+    },
+    {
+      "id": "partial-finalization",
+      "passed": true
+    },
+    {
+      "id": "barge-consent",
+      "passed": true
+    },
+    {
+      "id": "barge-email",
+      "passed": true
+    },
+    {
+      "id": "delayed-final-repeat",
+      "passed": true
+    },
+    {
+      "id": "model-timeout",
+      "passed": true
+    },
+    {
+      "id": "model-invalid",
+      "passed": true
+    },
+    {
+      "id": "model-invented",
+      "passed": true
+    },
+    {
+      "id": "model-conflict",
+      "passed": true
+    },
+    {
+      "id": "model-late-revision",
+      "passed": true
+    },
+    {
+      "id": "db-delay",
+      "passed": true
+    },
+    {
+      "id": "ambiguous",
+      "passed": true
+    },
+    {
+      "id": "conflict",
+      "passed": true
+    },
+    {
+      "id": "post-confirmation-correction",
+      "passed": true
+    },
+    {
+      "id": "email-review-without-consent",
+      "passed": true
+    }
+  ]
+}

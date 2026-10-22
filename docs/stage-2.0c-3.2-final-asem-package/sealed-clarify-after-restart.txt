@@ -1,0 +1,107 @@
+Browser tab: 4, Title: "aPureBase · Final Asem Human Retest", URL: "http://127.0.0.1:5173/".
+1 AXWebArea aPureBase · Final Asem Human Retest, URL: 127.0.0.1:5173/
+	2 container
+		3 text LOCAL HUMAN RETEST · NOT ACCEPTED · NOT PRODUCTION READY
+		4 heading aPureBase · Asem’s consolidated C-3.2 retest, Value: 1
+			5 text aPureBase · Asem’s consolidated C-3.2 retest
+		6 text Only the 16 pending exact assets require new listening reviews. Unchanged historical approvals remain preserved. No telephone integration, CRM writing or audio recording is enabled.
+		7 button (collapsed) Candidate and source identity, Secondary Actions: Expand
+			8 text Candidate and source identity
+		9 container
+			10 text Reviewer name
+			11 text field (settable) Reviewer name, Value: TECHNICAL PACKAGE CHECK — NOT ASEM
+		12 container
+			13 checkbox 1 · Listening, Value: 1
+			14 checkbox 2 · Five microphone tests, Value: 0
+			15 checkbox 3 · Email recovery, Value: 0
+			16 checkbox 4 · Natural calls, Value: 0
+			17 checkbox 5 · Export, Value: 0
+		18 heading 1 · Listen and rate each pending asset, Value: 2
+			19 text 1 · Listen and rate each pending asset
+		20 container
+			21 text Completed  0 /16. Current-path blocking concerns:  0 . Diagnostic-only concerns:  0 .
+		22 container
+			23 text Listening item
+			24 pop up button (collapsed, settable) Listening item, Value: Clarify · 55e255476384, Secondary Actions: Expand
+				25 menu
+					26 Consent Question · 055b74f018aa
+					27 Email Request · 296dae9cfb01
+					28 Success Close · e72d65aabdc5
+					29 Refusal Close · b6ba0f6cf3fa
+					30 About aPureBase · b1de20bc3b5a
+					31 Explanation · ea34f7943a86
+					32 Why Calling · b2d46752a12b
+					33 Unsubscribe · 5ce6b94bdcb5
+					34 (selected) Clarify · 55e255476384
+					35 Stop Contact Close · 8938c63491e0
+					36 Corrected Diagnostic Email Readback — anna3.test-7@clinic.dk · 042e43febe08
+					37 Corrected Diagnostic Email Readback — anna@clinic.dk · 21cfdc124951
+					38 Corrected Receptionist Target Request — Jens Hansen · fbf293862c07
+					39 Corrected Diagnostic Email Readback — anna2.test-7@clinic.dk · 5bc45c32fadc
+					40 Corrected Receptionist Target Request — Anna Jensen · a4549b780cf7
+					41 Corrected Diagnostic Email Readback — a_b+2@x.dk · 71dded509fbc
+		42 heading Clarify, Value: 3
+			43 text Clarify
+		44 container
+			45 text CURRENT CALL PATH  ·  NEW C32 REPLACEMENT
+		46 container
+			47 text Canonical:  Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?
+		104 container
+			105 text Synthesis-only rendering:  Selvfølgelig. Må a Pure Base sende relevant faglig information til dig via e-mail?
+		48 container
+			49 text Exact current WAV SHA-256:  55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420
+		50 container
+			51 text Phrase version:  stage-2.0c32-clarify-ab-1
+		52 text Previous pronunciation 2/5 despite PASS. New synthesis-only a Pure Base alias; canonical consent question unchanged.
+		53 container
+			54 text Previous hash(es):  4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d
+		55 button (collapsed) Historical comments and ratings for these bytes / replacements, Secondary Actions: Expand
+			56 text Historical comments and ratings for these bytes / replacements
+		57 button Play exact displayed recording
+		58 button Stop playback
+		59 checkbox (settable, integer) Description: I personally heard the complete exact selected recording, Value: 0
+		60 container
+			61 text pronunciation
+			62 pop up button (collapsed, settable) pronunciation, Value: Not rated, Secondary Actions: Expand
+				63 menu
+					64 (selected) Not rated
+					65 1
+					66 2
+					67 3
+					68 4
+					69 5
+		70 container
+			71 text naturalness
+			72 pop up button (collapsed, settable) naturalness, Value: Not rated, Secondary Actions: Expand
+				73 menu
+					74 (selected) Not rated
+					75 1
+					76 2
+					77 3
+					78 4
+					79 5
+		80 container
+			81 text pace
+			82 pop up button (collapsed, settable) pace, Value: Not rated, Secondary Actions: Expand
+				83 menu
+					84 (selected) Not rated
+					85 1
+					86 2
+					87 3
+					88 4
+					89 5
+		90 container
+			91 text PASS / FAIL
+			92 pop up button (collapsed, settable) PASS / FAIL, Value: FAIL, Secondary Actions: Expand
+				93 menu
+					94 (selected) FAIL
+					95 PASS
+		96 container
+			97 text Comment (required for FAIL or any rating ≤3)
+			98 text entry area (settable) Comment (required for FAIL or any rating ≤3)
+		100 button Save this listening review
+		101 text PASS with a low score remains a concern. Diagnostic-only failures are reported separately; they block the current architecture only if you flag a shared defect.
+		102 text Actual local WebAudio source-ended: 55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420. Native ratings remain yours.
+		103 text Progress is saved in this browser on this machine. Export before changing browsers or clearing browser storage. Stop the server with Stop.command after finishing.
+
+The focused UI element is 1 AXWebArea aPureBase · Final Asem Human Retest, URL: 127.0.0.1:5173/

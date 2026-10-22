@@ -1,0 +1,15 @@
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 104 modules transformed.
+
+(!) outDir /private/tmp/c32-pronunciation-revalidation/c32-build is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../c32-build/stage20c32.html                   0.31 kB │ gzip:  0.24 kB
+../c32-build/assets/SpeechPanel-DXU3Nj57.js    2.19 kB │ gzip:  0.99 kB
+../c32-build/assets/ReviewPanel-CVojsh5B.js  118.18 kB │ gzip: 34.02 kB
+../c32-build/assets/stage20c32-nYiVwJDv.js   242.37 kB │ gzip: 77.36 kB
+../c32-build/assets/candidates-Bbx3qaev.js   299.97 kB │ gzip: 53.65 kB
+✓ built in 621ms

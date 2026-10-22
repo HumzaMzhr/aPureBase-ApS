@@ -1,0 +1,23 @@
+
+ RUN  v4.1.11 /private/tmp/apurebase-c32-pronunciation
+
+ ❯ tests/consent-stage20c32-candidates.test.ts (4 tests | 1 failed) 135ms
+     × keeps poor pronunciation visible even where the human status was PASS 2ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/consent-stage20c32-candidates.test.ts > new C-3.2 listening candidates > keeps poor pronunciation visible even where the human status was PASS
+TypeError: Cannot read properties of undefined (reading 'trim')
+ ❯ src/consent/stage32/hardening/review.ts:5:204
+
+ ❯ pronunciationConcerns src/consent/stage32/hardening/review.ts:4:87
+ ❯ tests/consent-stage20c32-candidates.test.ts:82:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  1 failed | 7 passed (8)
+   Start at  02:53:04
+   Duration  412ms (transform 280ms, setup 0ms, import 358ms, tests 151ms, environment 0ms)
+

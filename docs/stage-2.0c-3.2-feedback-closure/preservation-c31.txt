@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "baselineFiles": 433,
+  "candidateFiles": 44,
+  "harnessCorrectionFiles": [
+    "tests/continuous-transcription-gateway.test.ts",
+    "scripts/verify-stage20c31.ts"
+  ],
+  "originalRecordings": 37,
+  "newRecordings": 12,
+  "retainedCurrentApprovals": 24,
+  "humanRetestRequired": 13,
+  "providerRequests": 0,
+  "physicalASR": "NOT_TESTED",
+  "stage": "NOT_ACCEPTED",
+  "telephoneVerified": false,
+  "productionEnabled": false
+}

@@ -1,0 +1,13 @@
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /private/tmp/c32-feedback-closure/validation/tree
+
+
+ Test Files  84 passed (84)
+      Tests  1683 passed (1683)
+   Start at  03:17:45
+   Duration  9.48s (transform 2.47s, setup 0ms, import 6.39s, tests 31.57s, environment 5ms)
+

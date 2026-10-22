@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "originalAudio": 37,
+  "C31Audio": 12,
+  "priorC32Audio": 2,
+  "newClarify": 1,
+  "allExisting49PlusTwoBytesUnchanged": true,
+  "firstTwoC32CandidateObjectsUnchanged": true,
+  "Stage196ServerStreamingUnchanged": true,
+  "baselineFiles": 642,
+  "byteIdenticalBaselineFiles": 634,
+  "exactC32TrackedChanges": 8,
+  "preAuditInventory": 674,
+  "authorizedClarifyPreAuditExtensions": [
+    {
+      "path": "src/consent/stage32/speech/candidatePack.json",
+      "before": "bc973ac33a1307006998ad38048e64a59dcdfaebca73bcbef600c9902826a39e",
+      "after": "93a71ee22e20b928d9474a327fb1cf9b9423894834cca8884c3ad8527c703528",
+      "reason": "Exact one-request Clarify candidate extension; prior two candidates preserved"
+    },
+    {
+      "path": "src/consent/stage32/speech/candidates.ts",
+      "before": "0a070536cfb574f917af8316f9d25a69e8d7c6e239b9279276f7b1f40145c5a4",
+      "after": "e240df68a169cf9ac9443bab6dfc658d8b51fd070f2e7b40a246a2e0cf340399",
+      "reason": "Exact one-request Clarify candidate extension; prior two candidates preserved"
+    },
+    {
+      "path": "tests/consent-stage20c32-candidates.test.ts",
+      "before": "e67ea0d350481923713defd2aa9e1aad4ee95a385b116168a3bd9c171504f3c7",
+      "after": "9ea1e66d6b823f4325fbe439c33feb2edb6202aeb64953c150c42a9109991092",
+      "reason": "Exact one-request Clarify candidate extension; prior two candidates preserved"
+    }
+  ],
+  "previousAuditArchivedBeforeRegeneration": {
+    "path": "/private/tmp/c32-clarify-closure/before-clarify.tar.gz",
+    "sha256": "b1116d5c4f39079f01ff04b15a6e7ec2ad87b1792d3fd38f7e9d4267a883e632",
+    "records": 737
+  }
+}

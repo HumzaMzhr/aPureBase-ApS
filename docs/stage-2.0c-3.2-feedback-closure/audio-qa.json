@@ -1,0 +1,4665 @@
+{
+  "kind": "AUTOMATIC_AUDIO_AND_TEXT_AUDIT_NOT_NATIVE_PRONUNCIATION_ACCEPTANCE",
+  "passed": 52,
+  "historicalPassed": 49,
+  "rows": [
+    {
+      "phraseId": "opening",
+      "path": "public/audio/consent-stage20c1/7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3.wav",
+      "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "canonicalText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+      "synthesisText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "sSas6ytpbM27QBAYsPM8",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 7.198166666666666,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 7.198166666666666,
+        "rawPeak": 0.191192626953125,
+        "allSilent": false,
+        "leadingSilenceMs": 2.8333333333333335,
+        "trailingSilenceMs": 156.54166666666666,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 345556,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.27218736252286463
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 172756,
+        "preGainPeak": 0.191192626953125,
+        "preGainRms": 0.023475938880341572,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6801410913467407,
+        "postGainRms": 0.083512379436757,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 172756,
+      "duration": 7.198166666666666,
+      "rawRms": 0.023475938880341572,
+      "wordCount": 15,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        6,
+        9
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 280,
+          "endMs": 540,
+          "durationMs": 260
+        },
+        {
+          "startMs": 2460,
+          "endMs": 3040,
+          "durationMs": 580
+        },
+        {
+          "startMs": 6960,
+          "endMs": 7198.166666666667,
+          "durationMs": 238.16666666666666
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "purpose",
+      "path": "public/audio/consent-stage20c1/e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15.wav",
+      "assetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "canonicalText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+      "synthesisText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "mU04bJpRrR1hYnATFHav",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 7.476833333333333,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 7.476833333333333,
+        "rawPeak": 0.190704345703125,
+        "allSilent": false,
+        "leadingSilenceMs": 57.291666666666664,
+        "trailingSilenceMs": 40.666666666666664,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 358932,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.20769710884732842
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 179444,
+        "preGainPeak": 0.190704345703125,
+        "preGainRms": 0.03164399962931483,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6784040927886963,
+        "postGainRms": 0.1125691167726068,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 179444,
+      "duration": 7.476833333333333,
+      "rawRms": 0.03164399962931483,
+      "wordCount": 13,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        13
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 4440,
+          "endMs": 4620,
+          "durationMs": 180
+        },
+        {
+          "startMs": 4960,
+          "endMs": 5120,
+          "durationMs": 160
+        },
+        {
+          "startMs": 5280,
+          "endMs": 5660,
+          "durationMs": 380
+        },
+        {
+          "startMs": 7260,
+          "endMs": 7476.833333333333,
+          "durationMs": 216.83333333333334
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "consent-question",
+      "path": "public/audio/consent-stage20c1/50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8.wav",
+      "assetHash": "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6",
+      "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "b5P1FXt6zlgrEc4nYZJe",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 4.3189166666666665,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 4.3189166666666665,
+        "rawPeak": 0.154632568359375,
+        "allSilent": false,
+        "leadingSilenceMs": 5.333333333333333,
+        "trailingSilenceMs": 38.75,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 207352,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.08094236594825091
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 103654,
+        "preGainPeak": 0.154632568359375,
+        "preGainRms": 0.024273411084293758,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5500838160514832,
+        "postGainRms": 0.08634927563325948,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 103654,
+      "duration": 4.3189166666666665,
+      "rawRms": 0.024273411084293758,
+      "wordCount": 10,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        11
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-request",
+      "path": "public/audio/consent-stage20c1/c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6.wav",
+      "assetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+      "synthesisText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "sXHHHxjMRxuuD4OYDUQJ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 3.390125,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 3.390125,
+        "rawPeak": 0.255157470703125,
+        "allSilent": false,
+        "leadingSilenceMs": 33,
+        "trailingSilenceMs": 226.125,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 162770,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.3438172142128486
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 81363,
+        "preGainPeak": 0.255157470703125,
+        "preGainRms": 0.03491660603949241,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.9076871275901794,
+        "postGainRms": 0.12421095772535924,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 81363,
+      "duration": 3.390125,
+      "rawRms": 0.03491660603949241,
+      "wordCount": 8,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        1,
+        8
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 320,
+          "endMs": 840,
+          "durationMs": 520
+        },
+        {
+          "startMs": 3140,
+          "endMs": 3390.125,
+          "durationMs": 250.125
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "path": "public/audio/consent-stage20c1/7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627.wav",
+      "assetHash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+      "canonicalText": "Jeg gentager lige e-mailadressen for at være sikker.",
+      "synthesisText": "Jeg gentager lige e-mailadressen for at være sikker.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "x7cqFsLLQHUJl84CV1sV",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 2.925708333333333,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 2.925708333333333,
+        "rawPeak": 0.18450927734375,
+        "allSilent": false,
+        "leadingSilenceMs": 60.041666666666664,
+        "trailingSilenceMs": 57.875,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 140478,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.17602574875030264
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 70217,
+        "preGainPeak": 0.18450927734375,
+        "preGainRms": 0.02493761186512589,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6563660502433777,
+        "postGainRms": 0.08871207730090376,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 70217,
+      "duration": 2.925708333333333,
+      "rawRms": 0.02493761186512589,
+      "wordCount": 8,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        9
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 2700,
+          "endMs": 2925.7083333333335,
+          "durationMs": 225.70833333333334
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-confirmation-question",
+      "path": "public/audio/consent-stage20c1/fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f.wav",
+      "assetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "canonicalText": "Er det korrekt?",
+      "synthesisText": "Er det korrekt?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "FJB7Xyo37ksWP79JFapS",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 0.97525,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 0.97525,
+        "rawPeak": 0.18048095703125,
+        "allSilent": false,
+        "leadingSilenceMs": 39.45833333333333,
+        "trailingSilenceMs": 145,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 46856,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.412501068102196
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 23406,
+        "preGainPeak": 0.18048095703125,
+        "preGainRms": 0.027123547507890488,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6420358419418335,
+        "postGainRms": 0.09648823855232025,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 23406,
+      "duration": 0.97525,
+      "rawRms": 0.027123547507890488,
+      "wordCount": 3,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        3
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 800,
+          "endMs": 975.25,
+          "durationMs": 175.25
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "success-close",
+      "path": "public/audio/consent-stage20c1/73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49.wav",
+      "assetHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+      "canonicalText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+      "synthesisText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "NtBCIlnfByVJ1KTEHmJ8",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 4.783291666666667,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 4.783291666666667,
+        "rawPeak": 0.187255859375,
+        "allSilent": false,
+        "leadingSilenceMs": 4.833333333333334,
+        "trailingSilenceMs": 42.625,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 229642,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.1648185088720285
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 114799,
+        "preGainPeak": 0.187255859375,
+        "preGainRms": 0.02387549406583555,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.666136622428894,
+        "postGainRms": 0.08493374132164254,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 114799,
+      "duration": 4.783291666666667,
+      "rawRms": 0.02387549406583555,
+      "wordCount": 16,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        6,
+        6,
+        4
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 1660,
+          "endMs": 1820,
+          "durationMs": 160
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "refusal-close",
+      "path": "public/audio/consent-stage20c1/b5cb3098fef60f1cbd4563cf14808c3cd3085ce730c08eb01a459a2dfb1f0acd.wav",
+      "assetHash": "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72",
+      "canonicalText": "Det er helt i orden. Tak for din tid, og hav en god dag.",
+      "synthesisText": "Det er helt i orden. Tak for din tid, og hav en god dag.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "GiFUgzun4wQORFUoy5II",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 3.390125,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 3.390125,
+        "rawPeak": 0.12615966796875,
+        "allSilent": false,
+        "leadingSilenceMs": 52,
+        "trailingSilenceMs": 44.916666666666664,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 162770,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.3642073178225975
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 81363,
+        "preGainPeak": 0.12615966796875,
+        "preGainRms": 0.019279037160876682,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.4487954378128052,
+        "postGainRms": 0.06858248673710787,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 81363,
+      "duration": 3.390125,
+      "rawRms": 0.019279037160876682,
+      "wordCount": 14,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        5,
+        9
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 940,
+          "endMs": 1440,
+          "durationMs": 500
+        },
+        {
+          "startMs": 2180,
+          "endMs": 2380,
+          "durationMs": 200
+        },
+        {
+          "startMs": 3140,
+          "endMs": 3390.125,
+          "durationMs": 250.125
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "identity",
+      "path": "public/audio/consent-stage20c1/d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11.wav",
+      "assetHash": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+      "canonicalText": "Jeg hedder Isabella og ringer fra aPureBase.",
+      "synthesisText": "Jeg hedder Isabella og ringer fra aPureBase.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "Im4pW0S5IUJjaN8ZAmKk",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 2.786375,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 2.786375,
+        "rawPeak": 0.170013427734375,
+        "allSilent": false,
+        "leadingSilenceMs": 0.9166666666666666,
+        "trailingSilenceMs": 33.541666666666664,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 133790,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.11870261540532054
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 66873,
+        "preGainPeak": 0.170013427734375,
+        "preGainRms": 0.02464242164140884,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6047990918159485,
+        "postGainRms": 0.08766197924419679,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 66873,
+      "duration": 2.786375,
+      "rawRms": 0.02464242164140884,
+      "wordCount": 7,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        7
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "about-apurebase",
+      "path": "public/audio/consent-stage20c1/6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6.wav",
+      "assetHash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+      "canonicalText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+      "synthesisText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "b1Wr95EscZ5NCuOatDAj",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 4.040291666666667,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 4.040291666666667,
+        "rawPeak": 0.169891357421875,
+        "allSilent": false,
+        "leadingSilenceMs": 9.666666666666668,
+        "trailingSilenceMs": 50.166666666666664,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 193978,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.1575690698897563
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 96967,
+        "preGainPeak": 0.169891357421875,
+        "preGainRms": 0.025837746045647342,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.604364812374115,
+        "postGainRms": 0.09191417913189671,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 96967,
+      "duration": 4.040291666666667,
+      "rawRms": 0.025837746045647342,
+      "wordCount": 7,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        7
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 3820,
+          "endMs": 4040.2916666666665,
+          "durationMs": 220.29166666666666
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "explanation",
+      "path": "public/audio/consent-stage20c1/4d4bd86e384a4a918b1852c49827a6e9b9122d096d83b2b9fe385124546a088a.wav",
+      "assetHash": "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142",
+      "canonicalText": "Det kan blandt andet være information om sygdomsområder, produkter og medicinske opdateringer.",
+      "synthesisText": "Det kan blandt andet være information om sygdomsområder, produkter og medicinske opdateringer.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "PIw4EB8HRU8z1LX6I3mY",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 5.619208333333333,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 5.619208333333333,
+        "rawPeak": 0.2490234375,
+        "allSilent": false,
+        "leadingSilenceMs": 19.041666666666664,
+        "trailingSilenceMs": 40.08333333333333,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 269766,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.13630330488428827
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 134861,
+        "preGainPeak": 0.2490234375,
+        "preGainRms": 0.02796506786279704,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.8858661651611328,
+        "postGainRms": 0.09948182990175526,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 134861,
+      "duration": 5.619208333333333,
+      "rawRms": 0.02796506786279704,
+      "wordCount": 12,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        12
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "why-calling",
+      "path": "public/audio/consent-stage20c1/2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f.wav",
+      "assetHash": "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+      "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+      "synthesisText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "BpjCaxiBx0dmdvn7JvnZ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 6.130083333333333,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 6.130083333333333,
+        "rawPeak": 0.110870361328125,
+        "allSilent": false,
+        "leadingSilenceMs": 4.291666666666667,
+        "trailingSilenceMs": 38.875,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 294288,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.07915879338236294
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 147122,
+        "preGainPeak": 0.110870361328125,
+        "preGainRms": 0.0238241392661231,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.3944058418273926,
+        "postGainRms": 0.08475105376833982,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 147122,
+      "duration": 6.130083333333333,
+      "rawRms": 0.0238241392661231,
+      "wordCount": 16,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        17
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "unsubscribe",
+      "path": "public/audio/consent-stage20c1/e95d7a401fa4856920ed7602799c144527a8065e4d32506a5f142dcd783ccf4a.wav",
+      "assetHash": "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6",
+      "canonicalText": "Ja. Du kan altid framelde dig igen, hvis du ikke længere ønsker at modtage informationen.",
+      "synthesisText": "Ja. Du kan altid framelde dig igen, hvis du ikke længere ønsker at modtage informationen.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "MzWGcv7gmwhyYQ9vLYsM",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 4.922625,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 4.922625,
+        "rawPeak": 0.198089599609375,
+        "allSilent": false,
+        "leadingSilenceMs": 29.125,
+        "trailingSilenceMs": 43.833333333333336,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 236330,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.13503127565746595
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 118143,
+        "preGainPeak": 0.198089599609375,
+        "preGainRms": 0.02512776090028607,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.7046761512756348,
+        "postGainRms": 0.08938850594485649,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 118143,
+      "duration": 4.922625,
+      "rawRms": 0.02512776090028607,
+      "wordCount": 15,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        1,
+        14
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 240,
+          "endMs": 600,
+          "durationMs": 360
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "repeat-prefix",
+      "path": "public/audio/consent-stage20c1/124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290.wav",
+      "assetHash": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+      "canonicalText": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+      "synthesisText": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "ouglrKeOa3Wt4m03Gqlg",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 2.322,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 2.322,
+        "rawPeak": 0.129180908203125,
+        "allSilent": false,
+        "leadingSilenceMs": 11.041666666666666,
+        "trailingSilenceMs": 40.75,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 111500,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.1333620442147574
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 55728,
+        "preGainPeak": 0.129180908203125,
+        "preGainRms": 0.023744340947876814,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.4595430791378021,
+        "postGainRms": 0.08446718238099818,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 55728,
+      "duration": 2.322,
+      "rawRms": 0.023744340947876814,
+      "wordCount": 5,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        1,
+        4
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 2120,
+          "endMs": 2322,
+          "durationMs": 202
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "clarify",
+      "path": "public/audio/consent-stage20c1/2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051.wav",
+      "assetHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+      "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "gWkgSymtsLQ4PooylDmT",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 5.154833333333333,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 5.154833333333333,
+        "rawPeak": 0.1910400390625,
+        "allSilent": false,
+        "leadingSilenceMs": 15.375,
+        "trailingSilenceMs": 37.166666666666664,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 247476,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.22194380678327782
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 123716,
+        "preGainPeak": 0.1910400390625,
+        "preGainRms": 0.029726895040401918,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.679598331451416,
+        "postGainRms": 0.1057492844671001,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 123716,
+      "duration": 5.154833333333333,
+      "rawRms": 0.029726895040401918,
+      "wordCount": 11,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        1,
+        11
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 620,
+          "endMs": 1180,
+          "durationMs": 560
+        },
+        {
+          "startMs": 4960,
+          "endMs": 5154.833333333333,
+          "durationMs": 194.83333333333334
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "callback",
+      "path": "public/audio/consent-stage20c1/855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6.wav",
+      "assetHash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+      "canonicalText": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+      "synthesisText": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "JPDav77rUmoAfiMxPQsj",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 3.29725,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 3.29725,
+        "rawPeak": 0.1654052734375,
+        "allSilent": false,
+        "leadingSilenceMs": 50.375,
+        "trailingSilenceMs": 53.375,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 158312,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.3004650339929739
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 79134,
+        "preGainPeak": 0.1654052734375,
+        "preGainRms": 0.024822198390470732,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5884062051773071,
+        "postGainRms": 0.08830150995703238,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 79134,
+      "duration": 3.29725,
+      "rawRms": 0.024822198390470732,
+      "wordCount": 12,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        3,
+        9
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 740,
+          "endMs": 1160,
+          "durationMs": 420
+        },
+        {
+          "startMs": 3140,
+          "endMs": 3297.25,
+          "durationMs": 157.25
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "callback-close",
+      "path": "public/audio/consent-stage20c1/1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4.wav",
+      "assetHash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+      "canonicalText": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+      "synthesisText": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "TaweadHwoSZgVGFm4x0U",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 4.133166666666667,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 4.133166666666667,
+        "rawPeak": 0.191162109375,
+        "allSilent": false,
+        "leadingSilenceMs": 8.458333333333334,
+        "trailingSilenceMs": 42.916666666666664,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 198436,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.20814347352715834
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 99196,
+        "preGainPeak": 0.191162109375,
+        "preGainRms": 0.025134151241003936,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6800325512886047,
+        "postGainRms": 0.08941123876230832,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 99196,
+      "duration": 4.133166666666667,
+      "rawRms": 0.025134151241003936,
+      "wordCount": 12,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        1,
+        7,
+        4
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 640,
+          "endMs": 880,
+          "durationMs": 240
+        },
+        {
+          "startMs": 2760,
+          "endMs": 3120,
+          "durationMs": 360
+        },
+        {
+          "startMs": 3880,
+          "endMs": 4133.166666666667,
+          "durationMs": 253.16666666666666
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "target-unavailable",
+      "path": "public/audio/consent-stage20c1/43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405.wav",
+      "assetHash": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+      "canonicalText": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+      "synthesisText": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "CUcYOHAiDPfrJNvtzapX",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 3.390125,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 3.390125,
+        "rawPeak": 0.180023193359375,
+        "allSilent": false,
+        "leadingSilenceMs": 38.75,
+        "trailingSilenceMs": 168.16666666666666,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 162770,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.3251723756498654
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 81363,
+        "preGainPeak": 0.180023193359375,
+        "preGainRms": 0.024779946151846914,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.640407383441925,
+        "postGainRms": 0.08815120348364018,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 81363,
+      "duration": 3.390125,
+      "rawRms": 0.024779946151846914,
+      "wordCount": 13,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        5,
+        8
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 1060,
+          "endMs": 1480,
+          "durationMs": 420
+        },
+        {
+          "startMs": 3180,
+          "endMs": 3390.125,
+          "durationMs": 210.125
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "send-first",
+      "path": "public/audio/consent-stage20c1/d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1.wav",
+      "assetHash": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+      "canonicalText": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+      "synthesisText": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "JyEAxarPvBGUk6N4r5zX",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 4.365333333333333,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 4.365333333333333,
+        "rawPeak": 0.16632080078125,
+        "allSilent": false,
+        "leadingSilenceMs": 16.916666666666668,
+        "trailingSilenceMs": 39.08333333333333,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 209580,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.12022755039706781
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 104768,
+        "preGainPeak": 0.16632080078125,
+        "preGainRms": 0.025812784346838452,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5916630625724792,
+        "postGainRms": 0.09182538137148157,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 104768,
+      "duration": 4.365333333333333,
+      "rawRms": 0.025812784346838452,
+      "wordCount": 12,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        13
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 1800,
+          "endMs": 2020,
+          "durationMs": 220
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "uncertain-consent",
+      "path": "public/audio/consent-stage20c1/15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c.wav",
+      "assetHash": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+      "canonicalText": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "g9q1qnsFa1aATsKPY2JP",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 8.68425,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 8.68425,
+        "rawPeak": 0.16314697265625,
+        "allSilent": false,
+        "leadingSilenceMs": 49.833333333333336,
+        "trailingSilenceMs": 43.125,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 416888,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.15876442985865216
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 208422,
+        "preGainPeak": 0.16314697265625,
+        "preGainRms": 0.023587312485917764,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5803726315498352,
+        "postGainRms": 0.08390857550896413,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 208422,
+      "duration": 8.68425,
+      "rawRms": 0.023587312485917764,
+      "wordCount": 24,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        5,
+        9,
+        11
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 940,
+          "endMs": 1200,
+          "durationMs": 260
+        },
+        {
+          "startMs": 4040,
+          "endMs": 4280,
+          "durationMs": 240
+        },
+        {
+          "startMs": 8460,
+          "endMs": 8620,
+          "durationMs": 160
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "already-receiving",
+      "path": "public/audio/consent-stage20c1/7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2.wav",
+      "assetHash": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+      "canonicalText": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "Vj5OGFp7kYOWnkVIyYmZ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 7.430375,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 7.430375,
+        "rawPeak": 0.22393798828125,
+        "allSilent": false,
+        "leadingSilenceMs": 42.208333333333336,
+        "trailingSilenceMs": 200.5,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 356702,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.29448379119492624
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 178329,
+        "preGainPeak": 0.22393798828125,
+        "preGainRms": 0.027837770046341116,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.7966281771659851,
+        "postGainRms": 0.09902898565080917,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 178329,
+      "duration": 7.430375,
+      "rawRms": 0.027837770046341116,
+      "wordCount": 18,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        1,
+        6,
+        12
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 220,
+          "endMs": 580,
+          "durationMs": 360
+        },
+        {
+          "startMs": 2280,
+          "endMs": 2900,
+          "durationMs": 620
+        },
+        {
+          "startMs": 7180,
+          "endMs": 7430.375,
+          "durationMs": 250.375
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-correction-prefix",
+      "path": "public/audio/consent-stage20c1/5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70.wav",
+      "assetHash": "948e1a3f03f5ea0285a1516fa0da69ea1ff90bcaca73c416a0546c2e19c64b24",
+      "canonicalText": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+      "synthesisText": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "KF85RA4elsDrbmrcj9XG",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "948e1a3f03f5ea0285a1516fa0da69ea1ff90bcaca73c416a0546c2e19c64b24",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 3.9009583333333335,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 3.9009583333333335,
+        "rawPeak": 0.18939208984375,
+        "allSilent": false,
+        "leadingSilenceMs": 18.291666666666668,
+        "trailingSilenceMs": 43.791666666666664,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 187290,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.26858784700340727
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 93623,
+        "preGainPeak": 0.18939208984375,
+        "preGainRms": 0.021672518372779465,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6737359762191772,
+        "postGainRms": 0.07709696244118995,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 93623,
+      "duration": 3.9009583333333335,
+      "rawRms": 0.021672518372779465,
+      "wordCount": 9,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        1,
+        3,
+        6
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 360,
+          "endMs": 700,
+          "durationMs": 340
+        },
+        {
+          "startMs": 1360,
+          "endMs": 1840,
+          "durationMs": 480
+        },
+        {
+          "startMs": 3680,
+          "endMs": 3900.9583333333335,
+          "durationMs": 220.95833333333334
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "more-explanation",
+      "path": "public/audio/consent-stage20c1/93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f.wav",
+      "assetHash": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+      "canonicalText": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+      "synthesisText": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "DYynWbNvzZWPESGelF5w",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 9.380875,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 9.380875,
+        "rawPeak": 0.225006103515625,
+        "allSilent": false,
+        "leadingSilenceMs": 5.458333333333333,
+        "trailingSilenceMs": 42.916666666666664,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 450326,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.14051638750827258
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 225141,
+        "preGainPeak": 0.225006103515625,
+        "preGainRms": 0.025268138477256157,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.8004278540611267,
+        "postGainRms": 0.08988787966279801,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 225141,
+      "duration": 9.380875,
+      "rawRms": 0.025268138477256157,
+      "wordCount": 23,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        13,
+        10
+      ],
+      "punctuation": {
+        "commas": 2,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 9100,
+          "endMs": 9380.875,
+          "durationMs": 280.875
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "stop-contact-close",
+      "path": "public/audio/consent-stage20c1/01044caa100080167e93c67441edb46fd399f232a008844185dd8f7c51570f25.wav",
+      "assetHash": "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e",
+      "canonicalText": "Det forstår jeg. Tak for din tid, og hav en god dag.",
+      "synthesisText": "Det forstår jeg. Tak for din tid, og hav en god dag.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "QJ6sikWziLfjDrSBeHHA",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 3.0185833333333334,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 3.0185833333333334,
+        "rawPeak": 0.140380859375,
+        "allSilent": false,
+        "leadingSilenceMs": 51.208333333333336,
+        "trailingSilenceMs": 276.5,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 144936,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.41545426938685365
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 72446,
+        "preGainPeak": 0.140380859375,
+        "preGainRms": 0.0204311599667038,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.4993853271007538,
+        "postGainRms": 0.07268100297122533,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 72446,
+      "duration": 3.0185833333333334,
+      "rawRms": 0.0204311599667038,
+      "wordCount": 12,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        3,
+        9
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 740,
+          "endMs": 1100,
+          "durationMs": 360
+        },
+        {
+          "startMs": 1820,
+          "endMs": 2000,
+          "durationMs": 180
+        },
+        {
+          "startMs": 2700,
+          "endMs": 3018.5833333333335,
+          "durationMs": 318.5833333333333
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "thank-you",
+      "path": "public/audio/consent-stage20c1/ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7.wav",
+      "assetHash": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+      "canonicalText": "Perfekt, tak.",
+      "synthesisText": "Perfekt, tak.",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "BXsAjJrMIXs6MDL6HXVv",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 1.1145416666666668,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 1.1145416666666668,
+        "rawPeak": 0.12689208984375,
+        "allSilent": false,
+        "leadingSilenceMs": 69.79166666666667,
+        "trailingSilenceMs": 130.33333333333334,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 53542,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.5997607387192044
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 26749,
+        "preGainPeak": 0.12689208984375,
+        "preGainRms": 0.017660052307821954,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.45140090584754944,
+        "postGainRms": 0.06282317383563864,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 26749,
+      "duration": 1.1145416666666668,
+      "rawRms": 0.017660052307821954,
+      "wordCount": 2,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        2
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 380,
+          "endMs": 580,
+          "durationMs": 200
+        },
+        {
+          "startMs": 920,
+          "endMs": 1114.5416666666667,
+          "durationMs": 194.54166666666666
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "path": "benchmarks/stage20c2-dynamic-cache/094bbd3b24c4536bb36460a12a11cd6283912e82b297ec141ea83c1389ee2c76.wav",
+      "assetHash": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+      "canonicalText": "a, en, en, a, tre, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "synthesisText": "a, en, en, a, tre, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "4pRfmaNfVIP8cU9VXH49",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 18.715291666666666,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 18.715291666666666,
+        "rawPeak": 0.2896728515625,
+        "allSilent": false,
+        "leadingSilenceMs": 13.958333333333332,
+        "trailingSilenceMs": 28.833333333333332,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 898378,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.5933605986192219
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 449167,
+        "preGainPeak": 0.2896728515625,
+        "preGainRms": 0.01814162052159181,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.3831268436578172,
+        "gainApplied": 3.3831268436578172,
+        "postGainPeak": 0.9800000190734863,
+        "postGainRms": 0.061375403367347224,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 1
+      },
+      "samples": 449167,
+      "duration": 18.715291666666666,
+      "rawRms": 0.01814162052159181,
+      "wordCount": 22,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        23
+      ],
+      "punctuation": {
+        "commas": 21,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 220,
+          "endMs": 540,
+          "durationMs": 320
+        },
+        {
+          "startMs": 920,
+          "endMs": 1380,
+          "durationMs": 460
+        },
+        {
+          "startMs": 1740,
+          "endMs": 2220,
+          "durationMs": 480
+        },
+        {
+          "startMs": 2540,
+          "endMs": 2760,
+          "durationMs": 220
+        },
+        {
+          "startMs": 3060,
+          "endMs": 3800,
+          "durationMs": 740
+        },
+        {
+          "startMs": 4340,
+          "endMs": 4960,
+          "durationMs": 620
+        },
+        {
+          "startMs": 5200,
+          "endMs": 5540,
+          "durationMs": 340
+        },
+        {
+          "startMs": 5740,
+          "endMs": 6280,
+          "durationMs": 540
+        },
+        {
+          "startMs": 6580,
+          "endMs": 6880,
+          "durationMs": 300
+        },
+        {
+          "startMs": 7160,
+          "endMs": 7840,
+          "durationMs": 680
+        },
+        {
+          "startMs": 8420,
+          "endMs": 8980,
+          "durationMs": 560
+        },
+        {
+          "startMs": 9400,
+          "endMs": 9880,
+          "durationMs": 480
+        },
+        {
+          "startMs": 10780,
+          "endMs": 11300,
+          "durationMs": 520
+        },
+        {
+          "startMs": 11640,
+          "endMs": 12200,
+          "durationMs": 560
+        },
+        {
+          "startMs": 12520,
+          "endMs": 13200,
+          "durationMs": 680
+        },
+        {
+          "startMs": 13500,
+          "endMs": 13940,
+          "durationMs": 440
+        },
+        {
+          "startMs": 14300,
+          "endMs": 14740,
+          "durationMs": 440
+        },
+        {
+          "startMs": 15000,
+          "endMs": 15560,
+          "durationMs": 560
+        },
+        {
+          "startMs": 15880,
+          "endMs": 16240,
+          "durationMs": 360
+        },
+        {
+          "startMs": 16640,
+          "endMs": 17220,
+          "durationMs": 580
+        },
+        {
+          "startMs": 17500,
+          "endMs": 18100,
+          "durationMs": 600
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "intermediary-consent-question",
+      "path": "benchmarks/stage20c2-dynamic-cache/32ab04c8badee6a326b72f5ec619ec94c6d7a886b21949ae575a940c86bd7cf7.wav",
+      "assetHash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+      "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+      "synthesisText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "ygQUsGtdGous3G3FJ1l3",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 5.108375,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 5.108375,
+        "rawPeak": 0.182525634765625,
+        "allSilent": false,
+        "leadingSilenceMs": 30.583333333333332,
+        "trailingSilenceMs": 30.166666666666668,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 245246,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.1852024045480869
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 122601,
+        "preGainPeak": 0.182525634765625,
+        "preGainRms": 0.02660766133418648,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.649309515953064,
+        "postGainRms": 0.094653045466339,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 122601,
+      "duration": 5.108375,
+      "rawRms": 0.02660766133418648,
+      "wordCount": 12,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        1,
+        12
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 400,
+          "endMs": 720,
+          "durationMs": 320
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "path": "benchmarks/stage20c2-dynamic-cache/3c1097bebb48f9d3d335b0e317f82bef0127fad623ccec19b7c38130099a6b9b.wav",
+      "assetHash": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+      "canonicalText": "a, en, en, a, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "synthesisText": "a, en, en, a, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "yWC1VIlMeYQW00WqP0tj",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 8.777125,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 8.777125,
+        "rawPeak": 0.328277587890625,
+        "allSilent": false,
+        "leadingSilenceMs": 15.666666666666666,
+        "trailingSilenceMs": 34.708333333333336,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 421346,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.5999164494827938
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 210651,
+        "preGainPeak": 0.328277587890625,
+        "preGainRms": 0.021379397082263954,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 2.9852784233522356,
+        "gainApplied": 2.9852784233522356,
+        "postGainPeak": 0.9800000190734863,
+        "postGainRms": 0.06382345281695949,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 1
+      },
+      "samples": 210651,
+      "duration": 8.777125,
+      "rawRms": 0.021379397082263954,
+      "wordCount": 14,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        15
+      ],
+      "punctuation": {
+        "commas": 13,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 200,
+          "endMs": 360,
+          "durationMs": 160
+        },
+        {
+          "startMs": 520,
+          "endMs": 860,
+          "durationMs": 340
+        },
+        {
+          "startMs": 980,
+          "endMs": 1520,
+          "durationMs": 540
+        },
+        {
+          "startMs": 2620,
+          "endMs": 3040,
+          "durationMs": 420
+        },
+        {
+          "startMs": 3360,
+          "endMs": 3600,
+          "durationMs": 240
+        },
+        {
+          "startMs": 3880,
+          "endMs": 4400,
+          "durationMs": 520
+        },
+        {
+          "startMs": 4540,
+          "endMs": 4780,
+          "durationMs": 240
+        },
+        {
+          "startMs": 4920,
+          "endMs": 5380,
+          "durationMs": 460
+        },
+        {
+          "startMs": 5500,
+          "endMs": 5920,
+          "durationMs": 420
+        },
+        {
+          "startMs": 6200,
+          "endMs": 6880,
+          "durationMs": 680
+        },
+        {
+          "startMs": 7300,
+          "endMs": 7580,
+          "durationMs": 280
+        },
+        {
+          "startMs": 7740,
+          "endMs": 8260,
+          "durationMs": 520
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "path": "benchmarks/stage20c2-dynamic-cache/3fcca16ff11c3c331600ac9c5fd7d6dbd9b3c332e3fbcbf41eade5f7e05ba323.wav",
+      "assetHash": "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8",
+      "canonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende?",
+      "synthesisText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "6UQm54j8wpNNJkSnuCBQ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 5.2941666666666665,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 5.2941666666666665,
+        "rawPeak": 0.158721923828125,
+        "allSilent": false,
+        "leadingSilenceMs": 60.75,
+        "trailingSilenceMs": 41.041666666666664,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 254164,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.2625059027231229
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 127060,
+        "preGainPeak": 0.158721923828125,
+        "preGainRms": 0.024835748030785157,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5646311044692993,
+        "postGainRms": 0.08834971092604996,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 127060,
+      "duration": 5.2941666666666665,
+      "rawRms": 0.024835748030785157,
+      "wordCount": 13,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        8,
+        5
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 3120,
+          "endMs": 3740,
+          "durationMs": 620
+        },
+        {
+          "startMs": 5060,
+          "endMs": 5294.166666666667,
+          "durationMs": 234.16666666666666
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "path": "benchmarks/stage20c2-dynamic-cache/9104fa03fc1ad8ef10a5d21bf0a33e88dbdf64ed389b0701dd59c47b4e3288cb.wav",
+      "assetHash": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+      "canonicalText": "a, en, en, a, to, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "synthesisText": "a, en, en, a, to, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "IEjDhwj4YO79bxvOOVB6",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 8.962916666666667,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 8.962916666666667,
+        "rawPeak": 0.21453857421875,
+        "allSilent": false,
+        "leadingSilenceMs": 6.5,
+        "trailingSilenceMs": 48.75,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 430264,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.42309516061549907
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 215110,
+        "preGainPeak": 0.21453857421875,
+        "preGainRms": 0.0240001799977533,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.7631910443305969,
+        "postGainRms": 0.08537729412829385,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 215110,
+      "duration": 8.962916666666667,
+      "rawRms": 0.0240001799977533,
+      "wordCount": 22,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        23
+      ],
+      "punctuation": {
+        "commas": 21,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 1980,
+          "endMs": 2180,
+          "durationMs": 200
+        },
+        {
+          "startMs": 3420,
+          "endMs": 4000,
+          "durationMs": 580
+        },
+        {
+          "startMs": 4280,
+          "endMs": 4540,
+          "durationMs": 260
+        },
+        {
+          "startMs": 6060,
+          "endMs": 6660,
+          "durationMs": 600
+        },
+        {
+          "startMs": 8160,
+          "endMs": 8340,
+          "durationMs": 180
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "path": "benchmarks/stage20c2-dynamic-cache/a7c8e1e9879194c7fec9ac8c3073a330cb23fde60fdf93d62db37c8abc77d226.wav",
+      "assetHash": "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706",
+      "canonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende?",
+      "synthesisText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "en59GnJmbrDbTjMUmh2D",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 5.20125,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 5.20125,
+        "rawPeak": 0.159881591796875,
+        "allSilent": false,
+        "leadingSilenceMs": 25.333333333333332,
+        "trailingSilenceMs": 40.29166666666667,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 249704,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.1642553873267644
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 124830,
+        "preGainPeak": 0.159881591796875,
+        "preGainRms": 0.0237508832756519,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5687564611434937,
+        "postGainRms": 0.08449045576277246,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 124830,
+      "duration": 5.20125,
+      "rawRms": 0.0237508832756519,
+      "wordCount": 13,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        8,
+        5
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 3000,
+          "endMs": 3580,
+          "durationMs": 580
+        },
+        {
+          "startMs": 4960,
+          "endMs": 5201.25,
+          "durationMs": 241.25
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "wrong-person-close",
+      "path": "benchmarks/stage20c2-dynamic-cache/a817e97e963f5083cd4e9803c210b4430ae300de611ad38918b843908e33a29c.wav",
+      "assetHash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+      "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+      "synthesisText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "BsTqfMWwsxSNSQxiseS7",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 3.761625,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 3.761625,
+        "rawPeak": 0.209381103515625,
+        "allSilent": false,
+        "leadingSilenceMs": 10.916666666666666,
+        "trailingSilenceMs": 47.25,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 180602,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.2030372511879839
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 90279,
+        "preGainPeak": 0.209381103515625,
+        "preGainRms": 0.03008053045619375,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.7448440790176392,
+        "postGainRms": 0.10700729315727965,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 90279,
+      "duration": 3.761625,
+      "rawRms": 0.03008053045619375,
+      "wordCount": 13,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        1,
+        12
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 640,
+          "endMs": 900,
+          "durationMs": 260
+        },
+        {
+          "startMs": 3540,
+          "endMs": 3761.625,
+          "durationMs": 221.625
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "path": "benchmarks/stage20c2-dynamic-cache/ae99e612055486a9fd30f8d02b912fbc1fac796b272538e3523036e0854b2611.wav",
+      "assetHash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+      "canonicalText": "a, understregning, be, plus, to, snabel-a, eks, punktum, de, kå",
+      "synthesisText": "a, understregning, be, plus, to, snabel-a, eks, punktum, de, kå",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "UpsrkUfmwWgWaFdC0SmR",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 5.479916666666667,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 5.479916666666667,
+        "rawPeak": 0.155242919921875,
+        "allSilent": false,
+        "leadingSilenceMs": 16.833333333333332,
+        "trailingSilenceMs": 153.41666666666669,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 263080,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.4038382578810505
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 131518,
+        "preGainPeak": 0.155242919921875,
+        "preGainRms": 0.021897319258604078,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5522550344467163,
+        "postGainRms": 0.07789666022852594,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 131518,
+      "duration": 5.479916666666667,
+      "rawRms": 0.021897319258604078,
+      "wordCount": 10,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        11
+      ],
+      "punctuation": {
+        "commas": 9,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 140,
+          "endMs": 380,
+          "durationMs": 240
+        },
+        {
+          "startMs": 1360,
+          "endMs": 1520,
+          "durationMs": 160
+        },
+        {
+          "startMs": 1900,
+          "endMs": 2100,
+          "durationMs": 200
+        },
+        {
+          "startMs": 2380,
+          "endMs": 2600,
+          "durationMs": 220
+        },
+        {
+          "startMs": 3400,
+          "endMs": 3780,
+          "durationMs": 380
+        },
+        {
+          "startMs": 5280,
+          "endMs": 5479.916666666667,
+          "durationMs": 199.91666666666666
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "authority-ask",
+      "path": "benchmarks/stage20c2-dynamic-cache/bd626ebff422aff8dffe6a83682f69a9bddc0f8d05cc93039cd0197090ea3e96.wav",
+      "assetHash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+      "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+      "synthesisText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "UjuqvKHgSOxe4lMdUcHb",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 4.922625,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 4.922625,
+        "rawPeak": 0.1839599609375,
+        "allSilent": false,
+        "leadingSilenceMs": 54.79166666666667,
+        "trailingSilenceMs": 48.625,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 236330,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.19625369255901745
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 118143,
+        "preGainPeak": 0.1839599609375,
+        "preGainRms": 0.02865852263647114,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6544119119644165,
+        "postGainRms": 0.10194869857157425,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 118143,
+      "duration": 4.922625,
+      "rawRms": 0.02865852263647114,
+      "wordCount": 17,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        17
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 4700,
+          "endMs": 4922.625,
+          "durationMs": 222.625
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "wrong-person-close",
+      "path": "benchmarks/stage20c2-dynamic-cache/dd5620b5bf17f06eb00a64c250cb1a3eee0f2874ab9e60dcbeae686667d4ef45.wav",
+      "assetHash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+      "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+      "synthesisText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "lxkdLiaLSSsIaN7kDOZQ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 3.9938333333333333,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 3.9938333333333333,
+        "rawPeak": 0.193756103515625,
+        "allSilent": false,
+        "leadingSilenceMs": 71,
+        "trailingSilenceMs": 46.83333333333333,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 191748,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.3263677335892835
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 95852,
+        "preGainPeak": 0.193756103515625,
+        "preGainRms": 0.030152784615609572,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6892603039741516,
+        "postGainRms": 0.10726432723869522,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 95852,
+      "duration": 3.9938333333333333,
+      "rawRms": 0.030152784615609572,
+      "wordCount": 13,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        1,
+        12
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 540,
+          "endMs": 1260,
+          "durationMs": 720
+        },
+        {
+          "startMs": 3740,
+          "endMs": 3993.8333333333335,
+          "durationMs": 253.83333333333334
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "intermediary-consent-question",
+      "path": "benchmarks/stage20c2-dynamic-cache/eac711239c016d763cf4fb27f3ca80f2bdb8e6248fe6aac79944f5aeb52d632b.wav",
+      "assetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+      "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+      "synthesisText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "RJr2RuYrDluEaNFV3kpk",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 5.0155,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 5.0155,
+        "rawPeak": 0.158599853515625,
+        "allSilent": false,
+        "leadingSilenceMs": 13.666666666666668,
+        "trailingSilenceMs": 45.083333333333336,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 240788,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.09557039843152892
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 120372,
+        "preGainPeak": 0.158599853515625,
+        "preGainRms": 0.02506663989669577,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5641968846321106,
+        "postGainRms": 0.0891710765188728,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 120372,
+      "duration": 5.0155,
+      "rawRms": 0.02506663989669577,
+      "wordCount": 12,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        1,
+        12
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "authority-ask",
+      "path": "benchmarks/stage20c2-dynamic-cache/ec9607700680e1898f24a6f56c779d549ace09cf64aa5652cadf1a8b33afcc54.wav",
+      "assetHash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+      "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+      "synthesisText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "gCptWtrGIePSlbkArsMI",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 4.551125,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 4.551125,
+        "rawPeak": 0.244476318359375,
+        "allSilent": false,
+        "leadingSilenceMs": 54.25,
+        "trailingSilenceMs": 47.20833333333333,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 218498,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.2121453486775248
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 109227,
+        "preGainPeak": 0.244476318359375,
+        "preGainRms": 0.030541533102846265,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.8696904182434082,
+        "postGainRms": 0.10864724579647217,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 109227,
+      "duration": 4.551125,
+      "rawRms": 0.030541533102846265,
+      "wordCount": 17,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        17
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 4340,
+          "endMs": 4551.125,
+          "durationMs": 211.125
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "consent-question",
+      "path": "public/audio/consent-stage20c31/055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af.wav",
+      "assetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "kZK8ZENgppiFlm2S7XzY",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 3.947375,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 3.947375,
+        "rawPeak": 0.2227783203125,
+        "allSilent": false,
+        "leadingSilenceMs": 22.166666666666668,
+        "trailingSilenceMs": 31.541666666666668,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 189518,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.12661367786609246
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 94737,
+        "preGainPeak": 0.2227783203125,
+        "preGainRms": 0.035855819782446195,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.7925028204917908,
+        "postGainRms": 0.1275520796981164,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 94737,
+      "duration": 3.947375,
+      "rawRms": 0.035855819782446195,
+      "wordCount": 10,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        11
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "refusal-close",
+      "path": "public/audio/consent-stage20c31/b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a.wav",
+      "assetHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+      "canonicalText": "Det er helt i orden. Tak for din tid. God dag.",
+      "synthesisText": "Det er helt i orden. Tak for din tid. God dag.",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "PxtGZyc05AFxLkliYo9G",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 2.5542083333333334,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 2.5542083333333334,
+        "rawPeak": 0.18572998046875,
+        "allSilent": false,
+        "leadingSilenceMs": 9.125,
+        "trailingSilenceMs": 39.79166666666667,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 122646,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.192362277940001
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 61301,
+        "preGainPeak": 0.18572998046875,
+        "preGainRms": 0.025583727298445276,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.660708487033844,
+        "postGainRms": 0.09101054290455507,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 61301,
+      "duration": 2.5542083333333334,
+      "rawRms": 0.025583727298445276,
+      "wordCount": 11,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        5,
+        4,
+        2
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 860,
+          "endMs": 1140,
+          "durationMs": 280
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "explanation",
+      "path": "public/audio/consent-stage20c31/ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665.wav",
+      "assetHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+      "canonicalText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+      "synthesisText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "BoVNorF2VkpKk3d8T5KN",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 7.476833333333333,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 7.476833333333333,
+        "rawPeak": 0.16204833984375,
+        "allSilent": false,
+        "leadingSilenceMs": 9.25,
+        "trailingSilenceMs": 48.25,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 358932,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.13805978466819732
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 179444,
+        "preGainPeak": 0.16204833984375,
+        "preGainRms": 0.024996009824415525,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5764643549919128,
+        "postGainRms": 0.08891981989020942,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 179444,
+      "duration": 7.476833333333333,
+      "rawRms": 0.024996009824415525,
+      "wordCount": 14,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        14
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 2580,
+          "endMs": 2740,
+          "durationMs": 160
+        },
+        {
+          "startMs": 7260,
+          "endMs": 7476.833333333333,
+          "durationMs": 216.83333333333334
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "why-calling",
+      "path": "public/audio/consent-stage20c31/147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb.wav",
+      "assetHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+      "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+      "synthesisText": "Jeg ringer kun for at spørge, om a Pure Base må sende dig relevant faglig information via e-mail.",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "DNp77bZMfUoQy2Ug0G7w",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 5.805,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 5.805,
+        "rawPeak": 0.23284912109375,
+        "allSilent": false,
+        "leadingSilenceMs": 15.291666666666666,
+        "trailingSilenceMs": 45.58333333333333,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 278684,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.13166810221073788
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 139320,
+        "preGainPeak": 0.23284912109375,
+        "preGainRms": 0.03170506638715002,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.8283283114433289,
+        "postGainRms": 0.11278635315714085,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 139320,
+      "duration": 5.805,
+      "rawRms": 0.03170506638715002,
+      "wordCount": 16,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        17
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "unsubscribe",
+      "path": "public/audio/consent-stage20c31/5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483.wav",
+      "assetHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+      "canonicalText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+      "synthesisText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "EICBHZPooqOvsGx2lArT",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 4.8762083333333335,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 4.8762083333333335,
+        "rawPeak": 0.204254150390625,
+        "allSilent": false,
+        "leadingSilenceMs": 3.458333333333333,
+        "trailingSilenceMs": 41.5,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 234102,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.18803031727178735
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 117029,
+        "preGainPeak": 0.204254150390625,
+        "preGainRms": 0.02448220710457358,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.7266056537628174,
+        "postGainRms": 0.08709203834120556,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 117029,
+      "duration": 4.8762083333333335,
+      "rawRms": 0.02448220710457358,
+      "wordCount": 14,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        1,
+        13
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 200,
+          "endMs": 780,
+          "durationMs": 580
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "stop-contact-close",
+      "path": "public/audio/consent-stage20c31/8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955.wav",
+      "assetHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+      "canonicalText": "Det forstår jeg. Tak for din tid. God dag.",
+      "synthesisText": "Det forstår jeg. Tak for din tid. God dag.",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "ADIsTwQDyF7z55FZcSJZ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 2.229125,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 2.229125,
+        "rawPeak": 0.13311767578125,
+        "allSilent": false,
+        "leadingSilenceMs": 18.708333333333332,
+        "trailingSilenceMs": 196,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 107042,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.4066991906390774
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 53499,
+        "preGainPeak": 0.13311767578125,
+        "preGainRms": 0.021228614511184497,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.4735475778579712,
+        "postGainRms": 0.07551783633245154,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 53499,
+      "duration": 2.229125,
+      "rawRms": 0.021228614511184497,
+      "wordCount": 9,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        3,
+        4,
+        2
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 720,
+          "endMs": 980,
+          "durationMs": 260
+        },
+        {
+          "startMs": 1980,
+          "endMs": 2229.125,
+          "durationMs": 249.125
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "path": "public/audio/consent-stage20c31/042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9.wav",
+      "assetHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+      "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "synthesisText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "wQfnI52wU6PgcWN0E2h1",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 18.715291666666666,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 18.715291666666666,
+        "rawPeak": 0.1597900390625,
+        "allSilent": false,
+        "leadingSilenceMs": 46.58333333333333,
+        "trailingSilenceMs": 23.583333333333336,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 898378,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.10692904866118838
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 449167,
+        "preGainPeak": 0.1597900390625,
+        "preGainRms": 0.021395960082155503,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5684307813644409,
+        "postGainRms": 0.0761131448691335,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 449167,
+      "duration": 18.715291666666666,
+      "rawRms": 0.021395960082155503,
+      "wordCount": 30,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        5,
+        16,
+        10
+      ],
+      "punctuation": {
+        "commas": 20,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "path": "public/audio/consent-stage20c31/21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53.wav",
+      "assetHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+      "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "synthesisText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "6pGFtBg5aeZoYunL5sqa",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 15.65025,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 15.65025,
+        "rawPeak": 0.242523193359375,
+        "allSilent": false,
+        "leadingSilenceMs": 45.66666666666667,
+        "trailingSilenceMs": 35.541666666666664,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 751256,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.12644100466978694
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 375606,
+        "preGainPeak": 0.242523193359375,
+        "preGainRms": 0.017995228187389793,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.8627424240112305,
+        "postGainRms": 0.06401551530018099,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 375606,
+      "duration": 15.65025,
+      "rawRms": 0.017995228187389793,
+      "wordCount": 20,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        5,
+        6,
+        10
+      ],
+      "punctuation": {
+        "commas": 12,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "path": "public/audio/consent-stage20c31/fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc.wav",
+      "assetHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+      "canonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+      "synthesisText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "scLFcfVjwgXYRP77ZA40",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 5.0155,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 5.0155,
+        "rawPeak": 0.15081787109375,
+        "allSilent": false,
+        "leadingSilenceMs": 19.375,
+        "trailingSilenceMs": 43.416666666666664,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 240788,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.1520785564749277
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 120372,
+        "preGainPeak": 0.15081787109375,
+        "preGainRms": 0.02839183014996011,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5365135669708252,
+        "postGainRms": 0.10099997723137262,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 120372,
+      "duration": 5.0155,
+      "rawRms": 0.02839183014996011,
+      "wordCount": 13,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        8,
+        5
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 3040,
+          "endMs": 3400,
+          "durationMs": 360
+        },
+        {
+          "startMs": 4860,
+          "endMs": 5015.5,
+          "durationMs": 155.5
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "path": "public/audio/consent-stage20c31/5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445.wav",
+      "assetHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+      "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "synthesisText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "VEY7SjX3dPCnkJcz4ZUm",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 19.319,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 19.319,
+        "rawPeak": 0.307098388671875,
+        "allSilent": false,
+        "leadingSilenceMs": 19.875,
+        "trailingSilenceMs": 32.833333333333336,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 927356,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.1878698862950118
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 463656,
+        "preGainPeak": 0.307098388671875,
+        "preGainRms": 0.02034070657943507,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.191159693928252,
+        "gainApplied": 3.191159693928252,
+        "postGainPeak": 0.9800000190734863,
+        "postGainRms": 0.0649104429951963,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 1
+      },
+      "samples": 463656,
+      "duration": 19.319,
+      "rawRms": 0.02034070657943507,
+      "wordCount": 30,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        5,
+        16,
+        10
+      ],
+      "punctuation": {
+        "commas": 20,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 1820,
+          "endMs": 2520,
+          "durationMs": 700
+        },
+        {
+          "startMs": 2920,
+          "endMs": 3080,
+          "durationMs": 160
+        },
+        {
+          "startMs": 3520,
+          "endMs": 3720,
+          "durationMs": 200
+        },
+        {
+          "startMs": 4160,
+          "endMs": 4340,
+          "durationMs": 180
+        },
+        {
+          "startMs": 4680,
+          "endMs": 5280,
+          "durationMs": 600
+        },
+        {
+          "startMs": 5960,
+          "endMs": 6200,
+          "durationMs": 240
+        },
+        {
+          "startMs": 6960,
+          "endMs": 7120,
+          "durationMs": 160
+        },
+        {
+          "startMs": 8400,
+          "endMs": 8560,
+          "durationMs": 160
+        },
+        {
+          "startMs": 9040,
+          "endMs": 9360,
+          "durationMs": 320
+        },
+        {
+          "startMs": 9380,
+          "endMs": 9540,
+          "durationMs": 160
+        },
+        {
+          "startMs": 10180,
+          "endMs": 10620,
+          "durationMs": 440
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "path": "public/audio/consent-stage20c31/a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c.wav",
+      "assetHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+      "canonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+      "synthesisText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "D4W58ZTWpMCCH5WsA63E",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 4.8762083333333335,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 4.8762083333333335,
+        "rawPeak": 0.20037841796875,
+        "allSilent": false,
+        "leadingSilenceMs": 10.708333333333334,
+        "trailingSilenceMs": 56.083333333333336,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 234102,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.13099317263242444
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 117029,
+        "preGainPeak": 0.20037841796875,
+        "preGainRms": 0.029301263708866675,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.7128182649612427,
+        "postGainRms": 0.10423516035273266,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 117029,
+      "duration": 4.8762083333333335,
+      "rawRms": 0.029301263708866675,
+      "wordCount": 13,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        8,
+        5
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 2920,
+          "endMs": 3400,
+          "durationMs": 480
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "path": "public/audio/consent-stage20c31/71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f.wav",
+      "assetHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+      "canonicalText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+      "synthesisText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+      "phraseVersion": "stage-2.0c31-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "aKZEozi1ucfGifpJfc1X",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 10.866958333333333,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 10.866958333333333,
+        "rawPeak": 0.312591552734375,
+        "allSilent": false,
+        "leadingSilenceMs": 39.625,
+        "trailingSilenceMs": 63.083333333333336,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 521658,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.39648475692753643
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 260807,
+        "preGainPeak": 0.312591552734375,
+        "preGainRms": 0.019537121810228146,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.135081519086205,
+        "gainApplied": 3.135081519086205,
+        "postGainPeak": 0.9800000190734863,
+        "postGainRms": 0.06125046951326458,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 1
+      },
+      "samples": 260807,
+      "duration": 10.866958333333333,
+      "rawRms": 0.019537121810228146,
+      "wordCount": 17,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        5,
+        8,
+        5
+      ],
+      "punctuation": {
+        "commas": 8,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 1740,
+          "endMs": 2340,
+          "durationMs": 600
+        },
+        {
+          "startMs": 2680,
+          "endMs": 3300,
+          "durationMs": 620
+        },
+        {
+          "startMs": 4420,
+          "endMs": 4580,
+          "durationMs": 160
+        },
+        {
+          "startMs": 4880,
+          "endMs": 5400,
+          "durationMs": 520
+        },
+        {
+          "startMs": 5960,
+          "endMs": 6140,
+          "durationMs": 180
+        },
+        {
+          "startMs": 6840,
+          "endMs": 7580,
+          "durationMs": 740
+        },
+        {
+          "startMs": 8840,
+          "endMs": 9080,
+          "durationMs": 240
+        },
+        {
+          "startMs": 10140,
+          "endMs": 10380,
+          "durationMs": 240
+        },
+        {
+          "startMs": 10660,
+          "endMs": 10866.958333333334,
+          "durationMs": 206.95833333333334
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "why-calling",
+      "path": "public/audio/consent-stage20c32/b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff.wav",
+      "assetHash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+      "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+      "synthesisText": "Jeg ringer kun for at spørge om a Pure Base må sende dig relevant faglig information via e-mail.",
+      "phraseVersion": "stage-2.0c32-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "AHXB6wn4Lh1ytEhRQuVg",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 5.851416666666666,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 5.851416666666666,
+        "rawPeak": 0.13623046875,
+        "allSilent": false,
+        "leadingSilenceMs": 53.25,
+        "trailingSilenceMs": 47.45833333333333,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 280912,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.17313471096742955
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 140434,
+        "preGainPeak": 0.13623046875,
+        "preGainRms": 0.022776856164598507,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.4846208989620209,
+        "postGainRms": 0.08102549014187845,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 140434,
+      "duration": 5.851416666666666,
+      "rawRms": 0.022776856164598507,
+      "wordCount": 16,
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        17
+      ],
+      "punctuation": {
+        "commas": 1,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 5620,
+          "endMs": 5851.416666666667,
+          "durationMs": 231.41666666666666
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "success-close",
+      "path": "public/audio/consent-stage20c32/e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908.wav",
+      "assetHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "canonicalText": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+      "synthesisText": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+      "phraseVersion": "stage-2.0c32-candidate-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "ihhY8XKnNt3NhwgB2KLc",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 7.52325,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 7.52325,
+        "rawPeak": 0.200714111328125,
+        "allSilent": false,
+        "leadingSilenceMs": 17.833333333333332,
+        "trailingSilenceMs": 47.25,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 361160,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.21282911862116327
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 180558,
+        "preGainPeak": 0.200714111328125,
+        "preGainRms": 0.022444862109736567,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.7140124440193176,
+        "postGainRms": 0.0798444675773216,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 180558,
+      "duration": 7.52325,
+      "rawRms": 0.022444862109736567,
+      "wordCount": 23,
+      "sentenceCount": 3,
+      "sentenceWordCounts": [
+        6,
+        13,
+        4
+      ],
+      "punctuation": {
+        "commas": 2,
+        "questions": 0
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 340,
+          "endMs": 500,
+          "durationMs": 160
+        },
+        {
+          "startMs": 1720,
+          "endMs": 2340,
+          "durationMs": 620
+        },
+        {
+          "startMs": 5980,
+          "endMs": 6580,
+          "durationMs": 600
+        },
+        {
+          "startMs": 7340,
+          "endMs": 7523.25,
+          "durationMs": 183.25
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    },
+    {
+      "phraseId": "clarify",
+      "path": "public/audio/consent-stage20c32/55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420.wav",
+      "assetHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+      "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Selvfølgelig. Må a Pure Base sende relevant faglig information til dig via e-mail?",
+      "phraseVersion": "stage-2.0c32-clarify-ab-1",
+      "provider": {
+        "provider": "ElevenLabs",
+        "name": "Isabella",
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "modelId": "eleven_flash_v2_5",
+        "speed": 0.95
+      },
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "EhTO84mneZ2azEN2C9fy",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "technical": {
+        "hash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 5.340583333333333,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 5.340583333333333,
+        "rawPeak": 0.17303466796875,
+        "allSilent": false,
+        "leadingSilenceMs": 14.291666666666666,
+        "trailingSilenceMs": 40.375,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 256392,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.19567931093669544
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 128174,
+        "preGainPeak": 0.17303466796875,
+        "preGainRms": 0.027376157570068383,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.615546703338623,
+        "postGainRms": 0.09738686359275751,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "samples": 128174,
+      "duration": 5.340583333333333,
+      "rawRms": 0.027376157570068383,
+      "wordCount": 11,
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        1,
+        11
+      ],
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "quietIntervalsOver150ms": [
+        {
+          "startMs": 640,
+          "endMs": 1200,
+          "durationMs": 560
+        },
+        {
+          "startMs": 5140,
+          "endMs": 5340.583333333333,
+          "durationMs": 200.58333333333334
+        }
+      ],
+      "quietProxyDefinition": "20ms non-overlapping frames; raw RMS <0.002 for >=150ms. Quiet consonants may qualify; not acoustic word alignment or proven perceived silence.",
+      "clauseBoundaryOwnership": "Consent completion remains a separate exact completed clip; no sentence merging or permanent playback buffering",
+      "humanQuality": "NOT_INFERRED_FROM_SIGNAL_STATISTICS"
+    }
+  ],
+  "providerRequests": 0
+}

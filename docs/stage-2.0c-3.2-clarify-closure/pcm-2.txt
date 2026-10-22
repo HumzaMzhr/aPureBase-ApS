@@ -1,0 +1,9 @@
+
+ RUN  v4.1.11 /private/tmp/c32-clarify-closure/validation/tree
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 18 skipped (19)
+   Start at  03:44:52
+   Duration  394ms (transform 58ms, setup 0ms, import 100ms, tests 185ms, environment 0ms)
+

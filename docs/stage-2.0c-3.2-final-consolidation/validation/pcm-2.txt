@@ -1,0 +1,8 @@
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 18 skipped (19)
+   Start at  06:03:14
+   Duration  417ms (transform 64ms, setup 0ms, import 110ms, tests 188ms, environment 0ms)

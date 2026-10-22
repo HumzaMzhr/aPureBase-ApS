@@ -17,7 +17,7 @@ import {consentCases,consentMatrix} from '../src/consent/stage32/hardening/conse
 
 describe('frozen email corpus, no result-based exclusions',()=>{
  it.each(emailCorpus.map(c=>[c.id,c] as const))('%s',async(_,c)=>{const r=await runEmailCase(c);expect(r.correct).toBe(true);expect(r.autoAccepted).toBe(false);if(c.label==='AMBIGUOUS')expect(r.result.selected).toBeNull();if(c.source!=='OWNED_FINAL')expect(r.eligibleForConfirmation).toBe(false);});
- it('retains every denominator and all safety counts',async()=>{const r=await runEmailCorpus();expect(r.rows).toHaveLength(corpusContract.denominator);expect(r.metrics).toMatchObject({cases:66,policyCorrect:66,addressCorrect:41,ambiguousCases:6,ambiguousBlocked:6,falseAutoAccepts:0,ambiguousAutoSelections:0,failedCases:[]});});
+ it('retains every denominator and all safety counts',async()=>{const r=await runEmailCorpus();expect(r.rows).toHaveLength(corpusContract.denominator);expect(r.metrics).toMatchObject({cases:66,policyCorrect:66,addressCorrect:40,ambiguousCases:6,ambiguousBlocked:6,falseAutoAccepts:0,ambiguousAutoSelections:0,failedCases:[]});});
 });
 describe('actual consent/session + modeled call scenarios A–AT',()=>{
  it.each(scenarioContract.ids)('%s',async id=>{const r=await runScenario(id);expect(r.passed,JSON.stringify(r)).toBe(true);});

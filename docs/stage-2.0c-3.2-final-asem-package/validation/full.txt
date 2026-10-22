@@ -1,0 +1,13 @@
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /private/tmp/c32-final-asem-package/validation-sealed/tree
+
+
+ Test Files  85 passed (85)
+      Tests  1701 passed (1701)
+   Start at  04:29:46
+   Duration  9.67s (transform 2.98s, setup 0ms, import 8.48s, tests 40.38s, environment 9ms)
+

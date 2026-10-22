@@ -1,3 +1,4 @@
+import type {ContactLookupReceipt} from './databaseResolver';
 import type {Transcript} from '../../types';
 
 export const emailVersion = 'stage-2.0c32-structured-email-1';
@@ -9,9 +10,9 @@ export interface ParsedEmail {version:string; raw:string; tokens:EmailToken[]; c
 /** Supplied by an independently verified identity mapping, never inferred from an email. */
 export interface ContactScope {callId:string; recipientRevision:number; contactId:string; mappingEvidenceId:string; source:'SYNTHETIC_FIXTURE'|'VERIFIED_CONTACT_ADAPTER'}
 export interface ContactEmail {contactId:string; email:string; recordVersion:string; sourceRecordId:string}
-export interface ContactEmailResolver {resolveCandidates(input:ContactScope & {spokenCandidates:readonly string[]}, signal:AbortSignal):Promise<readonly ContactEmail[]>}
+export interface ContactEmailResolver {lookupReceipts?(scope:ContactScope,signal:AbortSignal):Promise<readonly ContactLookupReceipt[]>;resolveCandidates(input:ContactScope & {spokenCandidates:readonly string[]}, signal:AbortSignal):Promise<readonly ContactEmail[]>}
 export interface RankedCandidate {candidate:string; matches:ContactEmail[]; score:0|1; reason:string}
-export interface Resolution {classification:Confidence; action:Action; selected:string|null; selectionSource:'DETERMINISTIC_EXACT'|'BOUNDED_RECONCILIATION'|null; reason:string; ranked:RankedCandidate[]; databaseCandidates:ContactEmail[]; databaseStatus:'OK'|'UNAVAILABLE'|'TIMEOUT'; suggestion?:{raw:unknown; accepted:boolean; reason:string}}
+export interface Resolution {classification:Confidence; action:Action; selected:string|null; selectionSource:'DETERMINISTIC_EXACT'|'BOUNDED_RECONCILIATION'|null; reason:string; ranked:RankedCandidate[]; databaseCandidates:ContactEmail[]; databaseStatus:'OK'|'UNAVAILABLE'|'TIMEOUT'; databaseEvidence?:{scope:ContactScope;requestedAt:number;receivedAt:number;clock:'unix-epoch-ms';provenance:ContactScope['source'];receipts:ContactLookupReceipt[]};suggestion?:{raw:unknown; accepted:boolean; reason:string;status?:'ACCEPTED_ADVISORY'|'REJECTED'|'TIMEOUT'|'ERROR'}}
 export interface EmailReconciliationInput {rawTranscript:string; tokens:readonly EmailToken[]; reconstructed:readonly string[]; knownContacts:readonly ContactEmail[]}
 export interface EmailSuggestion {candidate:string; confidence:Confidence; reason:string; evidenceTokenIndices:number[]; uncertainTokens:number[]}
 /** No implementation making network requests is installed. Suggestions never authorize saving. */

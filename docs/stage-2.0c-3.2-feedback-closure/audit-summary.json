@@ -1,0 +1,51 @@
+{
+  "status": "AUTOMATED_REPORTS_COMPLETE_NOT_ACCEPTANCE",
+  "observations": 52,
+  "currentCachedUnits": 38,
+  "distinctCurrentHashes": 37,
+  "templates": 4,
+  "lowRatedCurrent": [
+    {
+      "phraseId": "consent-question",
+      "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af"
+    },
+    {
+      "phraseId": "email-request",
+      "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961"
+    }
+  ],
+  "audioFiles": 52,
+  "clipping": 0,
+  "email": {
+    "cases": 66,
+    "passed": 66,
+    "falseEmailAutoAccepts": 0,
+    "ambiguousAutomaticSelections": 0
+  },
+  "boundaries": {
+    "cases": 18,
+    "passed": 18,
+    "falseEmailAutoAccepts": 0,
+    "ambiguousAutomaticSelections": 0,
+    "negativeControl": {
+      "kind": "TEST_ONLY_UNSAFE_SNAPSHOT_NEVER_APPLIED_TO_REAL_CONTROLLER",
+      "metrics": {
+        "falseAutoAccepts": 1,
+        "ambiguousAutoSelections": 1
+      },
+      "detected": true,
+      "realControllerStoredEmail": null
+    }
+  },
+  "consent": {
+    "cases": 29,
+    "falsePositives": 0,
+    "failed": []
+  },
+  "scenarios": 46,
+  "remediationScenarios": 32,
+  "completedAuthorizedCalls": 1,
+  "completedAuthorizedCharacters": 82,
+  "remainingAuthorizedCalls": 0,
+  "providerRequests": 0
+}
