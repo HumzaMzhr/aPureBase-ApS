@@ -1,0 +1,690 @@
+{
+  "scope": "LOCAL_WEB_AUDIO_TECHNICAL_ONLY",
+  "capturedAt": "2026-10-20T17:50:19.900Z",
+  "origin": "http://127.0.0.1:5173/consent-call?stage=2.0c31",
+  "humanApprovalsAdded": 0,
+  "microphoneStarted": false,
+  "liveASRRequests": 0,
+  "uniqueCompletedAudioHashes": [
+    "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+    "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+    "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+    "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+    "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+    "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+    "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+    "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+    "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+    "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+    "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+    "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c"
+  ],
+  "completedCount": 12,
+  "clippingEvents": 0,
+  "peakProtectionCompletions": 1,
+  "outputs": [
+    {
+      "key": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8:055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "b5d8e55a-bf7d-40be-803d-3c927cb24b93",
+        "callId": "c31-listening",
+        "phraseId": "consent-question",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+        "assetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 189474,
+          "preGainPeak": 0.2225775122642517,
+          "preGainRms": 0.035836254180312804,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.7917884588241577,
+          "postGainRms": 0.12748247781470012,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 88360.39999999851
+    },
+    {
+      "key": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8:055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "b5d8e55a-bf7d-40be-803d-3c927cb24b93",
+        "callId": "c31-listening",
+        "phraseId": "consent-question",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+        "assetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:b5d8e55a-bf7d-40be-803d-3c927cb24b93:frames=189474:rate=48000:context=3.952",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 189474,
+          "preGainPeak": 0.2225775122642517,
+          "preGainRms": 0.035836254180312804,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.7917884588241577,
+          "postGainRms": 0.12748247781470012,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 95301.5
+    },
+    {
+      "key": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792:b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "e7c7b4a8-1976-467c-9591-891ce9fec38e",
+        "callId": "c31-listening",
+        "phraseId": "refusal-close",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+        "assetHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 122602,
+          "preGainPeak": 0.1856483519077301,
+          "preGainRms": 0.025574848745756117,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.6604181528091431,
+          "postGainRms": 0.09097895865710105,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 95676.69999999925
+    },
+    {
+      "key": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792:b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "e7c7b4a8-1976-467c-9591-891ce9fec38e",
+        "callId": "c31-listening",
+        "phraseId": "refusal-close",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+        "assetHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:e7c7b4a8-1976-467c-9591-891ce9fec38e:frames=122602:rate=48000:context=6.88",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 122602,
+          "preGainPeak": 0.1856483519077301,
+          "preGainRms": 0.025574848745756117,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.6604181528091431,
+          "postGainRms": 0.09097895865710105,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 98227.59999999776
+    },
+    {
+      "key": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1:ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "4eeba595-38ef-437e-a662-2b8d779fa9b4",
+        "callId": "c31-listening",
+        "phraseId": "explanation",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+        "assetHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 358888,
+          "preGainPeak": 0.16064131259918213,
+          "preGainRms": 0.024985316542916098,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.5714590549468994,
+          "postGainRms": 0.08888178004575577,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 98324.19999999925
+    },
+    {
+      "key": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1:ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "4eeba595-38ef-437e-a662-2b8d779fa9b4",
+        "callId": "c31-listening",
+        "phraseId": "explanation",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+        "assetHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:4eeba595-38ef-437e-a662-2b8d779fa9b4:frames=358888:rate=48000:context=14.453333333333333",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 358888,
+          "preGainPeak": 0.16064131259918213,
+          "preGainRms": 0.024985316542916098,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.5714590549468994,
+          "postGainRms": 0.08888178004575577,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 105801.19999999925
+    },
+    {
+      "key": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a:042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "550c5ec1-f832-4022-8eac-d63e97d5c6fd",
+        "callId": "c31-listening",
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+        "assetHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 898334,
+          "preGainPeak": 0.15685072541236877,
+          "preGainRms": 0.0213687102656193,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.5579745769500732,
+          "postGainRms": 0.07601620745550232,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 140254.29999999702
+    },
+    {
+      "key": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a:042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "550c5ec1-f832-4022-8eac-d63e97d5c6fd",
+        "callId": "c31-listening",
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+        "assetHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:550c5ec1-f832-4022-8eac-d63e97d5c6fd:frames=898334:rate=48000:context=67.61066666666666",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 898334,
+          "preGainPeak": 0.15685072541236877,
+          "preGainRms": 0.0213687102656193,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.5579745769500732,
+          "postGainRms": 0.07601620745550232,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 159365.3999999985
+    },
+    {
+      "key": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f:147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "bf9c5e2b-b02d-49ac-be50-2e3bac28f1b4",
+        "callId": "c31-listening",
+        "phraseId": "why-calling",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "assetHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 278640,
+          "preGainPeak": 0.23299497365951538,
+          "preGainRms": 0.03169353331586787,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.8288471102714539,
+          "postGainRms": 0.11274532593184616,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 268473.19999999925
+    },
+    {
+      "key": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f:147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "bf9c5e2b-b02d-49ac-be50-2e3bac28f1b4",
+        "callId": "c31-listening",
+        "phraseId": "why-calling",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "assetHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:bf9c5e2b-b02d-49ac-be50-2e3bac28f1b4:frames=278640:rate=48000:context=5.8133333333333335",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 278640,
+          "preGainPeak": 0.23299497365951538,
+          "preGainRms": 0.03169353331586787,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.8288471102714539,
+          "postGainRms": 0.11274532593184616,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 274654.09999999776
+    },
+    {
+      "key": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990:5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "dabb9a31-529f-4bad-b7c4-98451cd86ce6",
+        "callId": "c31-listening",
+        "phraseId": "unsubscribe",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+        "assetHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 234058,
+          "preGainPeak": 0.20598280429840088,
+          "preGainRms": 0.024467922647154035,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.7327551245689392,
+          "postGainRms": 0.08704122340152667,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 445991.799999997
+    },
+    {
+      "key": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990:5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "dabb9a31-529f-4bad-b7c4-98451cd86ce6",
+        "callId": "c31-listening",
+        "phraseId": "unsubscribe",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+        "assetHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:dabb9a31-529f-4bad-b7c4-98451cd86ce6:frames=234058:rate=48000:context=181.82933333333332",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 234058,
+          "preGainPeak": 0.20598280429840088,
+          "preGainRms": 0.024467922647154035,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.7327551245689392,
+          "postGainRms": 0.08704122340152667,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 450886.19999999925
+    },
+    {
+      "key": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1:8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "21619dde-04ab-4408-a979-cdd65dabca79",
+        "callId": "c31-listening",
+        "phraseId": "stop-contact-close",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+        "assetHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 106998,
+          "preGainPeak": 0.13379299640655518,
+          "preGainRms": 0.021204978247296353,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.4759499430656433,
+          "postGainRms": 0.07543375359900983,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 468635.5
+    },
+    {
+      "key": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1:8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "21619dde-04ab-4408-a979-cdd65dabca79",
+        "callId": "c31-listening",
+        "phraseId": "stop-contact-close",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+        "assetHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:21619dde-04ab-4408-a979-cdd65dabca79:frames=106998:rate=48000:context=201.25333333333333",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 106998,
+          "preGainPeak": 0.13379299640655518,
+          "preGainRms": 0.021204978247296353,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.4759499430656433,
+          "postGainRms": 0.07543375359900983,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 470863.69999999925
+    },
+    {
+      "key": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11:21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "d67e84c2-cd49-4a21-a498-0ff2926b2bec",
+        "callId": "c31-listening",
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+        "assetHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 751212,
+          "preGainPeak": 0.21537062525749207,
+          "preGainRms": 0.017922784268046683,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.766150951385498,
+          "postGainRms": 0.06375780616632581,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 511760
+    },
+    {
+      "key": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11:21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "d67e84c2-cd49-4a21-a498-0ff2926b2bec",
+        "callId": "c31-listening",
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+        "assetHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:d67e84c2-cd49-4a21-a498-0ff2926b2bec:frames=751212:rate=48000:context=257.80266666666665",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 751212,
+          "preGainPeak": 0.21537062525749207,
+          "preGainRms": 0.017922784268046683,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.766150951385498,
+          "postGainRms": 0.06375780616632581,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 527455.299999997
+    },
+    {
+      "key": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b:5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "70f182f0-6b4a-4280-b93a-4991c58147ad",
+        "callId": "c31-listening",
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+        "assetHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 927312,
+          "preGainPeak": 0.22395272552967072,
+          "preGainRms": 0.020253087165333854,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.7966805696487427,
+          "postGainRms": 0.07204753382066521,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 530969.299999997
+    },
+    {
+      "key": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b:5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "70f182f0-6b4a-4280-b93a-4991c58147ad",
+        "callId": "c31-listening",
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+        "assetHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:70f182f0-6b4a-4280-b93a-4991c58147ad:frames=927312:rate=48000:context=280.63466666666665",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 927312,
+          "preGainPeak": 0.22395272552967072,
+          "preGainRms": 0.020253087165333854,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.7966805696487427,
+          "postGainRms": 0.07204753382066521,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 550287.299999997
+    },
+    {
+      "key": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185:71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "4abe9fee-04e3-477c-a8a9-c96f8e00a0f2",
+        "callId": "c31-listening",
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+        "assetHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 521614,
+          "preGainPeak": 0.2886336147785187,
+          "preGainRms": 0.019445183730752512,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.3953079261124777,
+          "gainApplied": 3.3953079261124777,
+          "postGainPeak": 0.9800000190734863,
+          "postGainRms": 0.06602238644577073,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 1
+        }
+      },
+      "at": 636237.5
+    },
+    {
+      "key": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185:71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "4abe9fee-04e3-477c-a8a9-c96f8e00a0f2",
+        "callId": "c31-listening",
+        "phraseId": "email-readback-intro",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+        "assetHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:4abe9fee-04e3-477c-a8a9-c96f8e00a0f2:frames=521614:rate=48000:context=377.39733333333334",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 521614,
+          "preGainPeak": 0.2886336147785187,
+          "preGainRms": 0.019445183730752512,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.3953079261124777,
+          "gainApplied": 3.3953079261124777,
+          "postGainPeak": 0.9800000190734863,
+          "postGainRms": 0.06602238644577073,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 1
+        }
+      },
+      "at": 647142.5999999978
+    },
+    {
+      "key": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3:fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "7308e2de-5fdf-4f17-a7f9-0e1b413c9dc5",
+        "callId": "c31-listening",
+        "phraseId": "receptionist-target-request",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+        "assetHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 240744,
+          "preGainPeak": 0.1504186987876892,
+          "preGainRms": 0.028381484576243777,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.5350935459136963,
+          "postGainRms": 0.10096317431714971,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 666241.8999999985
+    },
+    {
+      "key": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3:fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "7308e2de-5fdf-4f17-a7f9-0e1b413c9dc5",
+        "callId": "c31-listening",
+        "phraseId": "receptionist-target-request",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+        "assetHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:7308e2de-5fdf-4f17-a7f9-0e1b413c9dc5:frames=240744:rate=48000:context=401.51466666666664",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 240744,
+          "preGainPeak": 0.1504186987876892,
+          "preGainRms": 0.028381484576243777,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.5350935459136963,
+          "postGainRms": 0.10096317431714971,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 671259.6999999993
+    },
+    {
+      "key": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2:a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "85402aad-5ee1-4f18-9ce0-a7680a35d2a8",
+        "callId": "c31-listening",
+        "phraseId": "receptionist-target-request",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+        "assetHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+        "recipientRevision": 0,
+        "action": "start",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 234058,
+          "preGainPeak": 0.20226038992404938,
+          "preGainRms": 0.029295957126258338,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.7195131182670593,
+          "postGainRms": 0.10421628290697643,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 689536.5999999978
+    },
+    {
+      "key": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2:a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c:gIfqD5jrnhkFu8ENVbXC:eleven_flash_v2_5:0.95:isabella-calibrated-headroom-v2",
+      "event": {
+        "playbackId": "85402aad-5ee1-4f18-9ce0-a7680a35d2a8",
+        "callId": "c31-listening",
+        "phraseId": "receptionist-target-request",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "textHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+        "assetHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+        "recipientRevision": 0,
+        "action": "complete",
+        "outputProof": "web-audio-source-ended:85402aad-5ee1-4f18-9ce0-a7680a35d2a8:frames=234058:rate=48000:context=4.88",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 234058,
+          "preGainPeak": 0.20226038992404938,
+          "preGainRms": 0.029295957126258338,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.7195131182670593,
+          "postGainRms": 0.10421628290697643,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      },
+      "at": 694434.5999999978
+    }
+  ],
+  "acceptance": "NOT_ACCEPTED",
+  "telephoneVerified": false,
+  "productionEnabled": false
+}

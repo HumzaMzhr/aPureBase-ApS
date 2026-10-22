@@ -1,0 +1,83 @@
+Stage 2.0B-1 offline validation
+Recorded: 2026-10-18T00:07:53.991613+00:00
+
+30 atomic response units; 43 master scenario examples; 22 states.
+141 new deterministic tests; 199 focused tests (including all 58 original consent tests); 828 total tests in 69 files.
+No existing test file modified or deleted.
+All new Danish and English wording remains subject to native/business approval; production approval NOT_APPROVED.
+No phone transport, production playback, provider request, audio generation, commit, push, PR or deployment.
+
+Preservation: 105 pre-existing source/server/public hashes; 98 unchanged; exactly 7 existing consent modules changed.
+New source modules: authority.ts and email.ts.
+Stage 1.9.6, takeover, route, server/provider, config, existing audio/public files unchanged.
+Existing tracked Git diff is byte-identical to the before snapshot; intended consent changes were in already-untracked Stage 2.0A files.
+Before/after hashes: docs/stage-2.0b-preservation.json.
+git diff --check and explicit new-file whitespace checks passed.
+
+Browser A-E: all passed on a built STATIC preview with no provider backend.
+A: verified target -> complete question -> candidate -> explicit review -> email -> exact readback -> confirmation -> END_SUCCESS.
+B: unverified receptionist YES/email blocked -> no decision/no captured email -> END_OTHER.
+C: CLAIMED remains blocked -> separate attestation -> intermediary question -> candidate -> review -> confirmed email -> END_SUCCESS.
+D: okay and later YES remain UNCLEAR -> fresh complete question required -> new candidate only.
+E: medical question recommends HUMAN_TAKEOVER -> same call/audit ID -> original interpreter READY -> no pairing/start.
+Browser evidence: docs/stage-2.0b-browser-rehearsal.json and flow-a/flow-c/flow-e screenshots.
+
+Development notes:
+An original compatibility test exposed registry reordering; identify was restored as the first entry, without changing the test.
+A new email correction assertion was corrected to test an omitted optional readback value with toBeUndefined().
+The tsx CLI hit sandbox IPC EPERM; node --import tsx generated the specification offline successfully.
+Build warning retained: minified chunk 510.42 kB / gzip 152.32 kB exceeds 500 kB recommendation. Build succeeded.
+No unresolved test failures.
+
+--- Focused (exit 0) ---
+RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  4 passed (4)
+      Tests  199 passed (199)
+   Start at  05:01:30
+   Duration  462ms (transform 538ms, setup 0ms, import 717ms, tests 178ms, environment 0ms)
+
+--- Full npm test (exit 0) ---
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  69 passed (69)
+      Tests  828 passed (828)
+   Start at  05:02:19
+   Duration  8.20s (transform 1.90s, setup 0ms, import 4.02s, tests 27.55s, environment 6ms)
+
+--- Lint (exit 0) ---
+> apurebase-stage1-translator@0.9.0 lint
+> eslint .
+
+--- Typecheck (exit 0) ---
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+--- Build (exit 0) ---
+> apurebase-stage1-translator@0.9.0 build
+> npm run typecheck && vite build
+
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 90 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.37 kB │ gzip:   0.27 kB
+dist/assets/index-COnpGKWz.css   16.73 kB │ gzip:   4.22 kB
+dist/assets/index-iGC39oob.js   510.42 kB │ gzip: 152.32 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 801ms

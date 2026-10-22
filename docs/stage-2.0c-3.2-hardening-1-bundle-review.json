@@ -1,0 +1,80 @@
+{
+  "beforeMain": [
+    {
+      "file": "Workspace-DMXMx32Q.js",
+      "bytes": 190376,
+      "gzipBytes": 30552,
+      "sha256": "67007c7d30bc70fbe5cd687d5fb350d92868028cb2c962270c1490491771b797",
+      "imports": []
+    },
+    {
+      "file": "index-CloNzLRu.js",
+      "bytes": 677400,
+      "gzipBytes": 191865,
+      "sha256": "27d71b7cee577d934399621691d3e5574b47ae02731b2e4a20dc17b673c46b7e",
+      "imports": []
+    }
+  ],
+  "afterMain": [
+    {
+      "file": "Workspace-DMXMx32Q.js",
+      "bytes": 190376,
+      "gzipBytes": 30552,
+      "sha256": "67007c7d30bc70fbe5cd687d5fb350d92868028cb2c962270c1490491771b797",
+      "imports": []
+    },
+    {
+      "file": "index-CloNzLRu.js",
+      "bytes": 677400,
+      "gzipBytes": 191865,
+      "sha256": "27d71b7cee577d934399621691d3e5574b47ae02731b2e4a20dc17b673c46b7e",
+      "imports": []
+    }
+  ],
+  "beforeWorkbench": [
+    {
+      "file": "stage20c32-CiodndIv.js",
+      "bytes": 354728,
+      "gzipBytes": 97778,
+      "sha256": "e1c7d379731aac0ec1b435d21860304dd646c0509bd39f91f27669b017bdd8cc",
+      "imports": []
+    }
+  ],
+  "afterWorkbench": [
+    {
+      "file": "ReviewPanel-z1cp8Pt5.js",
+      "bytes": 10357,
+      "gzipBytes": 4086,
+      "sha256": "4d8feeceab2d103fa846b38e743ae4474b635ff914be7be89675754e002485a5",
+      "imports": []
+    },
+    {
+      "file": "SpeechPanel-CXCVykEB.js",
+      "bytes": 1567,
+      "gzipBytes": 806,
+      "sha256": "0218a2c82343efbfe8c03d0c2b282e37eae4aaa51e4839184cdf2b487f9e2a44",
+      "imports": []
+    },
+    {
+      "file": "speech-DCcoDsDF.js",
+      "bytes": 285759,
+      "gzipBytes": 49220,
+      "sha256": "82a5fe880ae82044092890bc7f02e895870b25e33bd0d4e2577ab34704116038",
+      "imports": []
+    },
+    {
+      "file": "stage20c32-DcF7_e1K.js",
+      "bytes": 240990,
+      "gzipBytes": 76683,
+      "sha256": "d68211251a92efa0360c64d306f683bb68dfcf48887ac2dda156928ea16d0026",
+      "imports": [
+        "SpeechPanel",
+        "ReviewPanel"
+      ]
+    }
+  ],
+  "method": "Vite 7.3.7; same baseline restored from before tar plus tracked files; fresh directories; bytes are files, not runtime timing",
+  "mainContribution": "Original main entry and C31 workspace are byte-identical. C32 standalone only.",
+  "lazyBoundary": "SpeechPanel and ReviewPanel dynamic imports; pronunciation/historical data enters lazy shared speech chunk. Corpus/scenario/test modules not in initial entry.",
+  "tradeoff": "Initial C32 entry shrinks; total downloaded JS grows when both new panels are opened. Existing >500 kB main warning remains, unsuppressed."
+}

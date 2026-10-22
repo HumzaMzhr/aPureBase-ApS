@@ -1,0 +1,15 @@
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 110 modules transformed.
+
+(!) outDir /private/tmp/c32-email-freeze/validation-frozen/c32-build is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../c32-build/stage20c32.html                   0.31 kB │ gzip:  0.24 kB
+../c32-build/assets/SpeechPanel-SJcZnPag.js   13.18 kB │ gzip:  4.98 kB
+../c32-build/assets/ReviewPanel-Da4Mvwnm.js  121.75 kB │ gzip: 35.12 kB
+../c32-build/assets/stage20c32-DO2qiS18.js   244.35 kB │ gzip: 77.96 kB
+../c32-build/assets/current-Cr4EcmeP.js      301.68 kB │ gzip: 53.93 kB
+✓ built in 527ms

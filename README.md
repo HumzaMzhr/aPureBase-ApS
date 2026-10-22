@@ -17,6 +17,10 @@ Open http://localhost:5173. The normal screen already selects LOCAL TEST / REALT
 
 Optional cached Danish opening plays before English capture and is excluded from metrics. Enable Developer mode **before START** for actual models, partial/committed transcripts, per-unit timestamps, estimated current/median/p95/max trailing lag, end-of-source tail and source/ASR/TTS/playback positions. **Finish speaking** is available there for explicit finalization. If an error stops a session, review retained text and START a fresh session; nothing is replayed automatically. Stop an older server with Ctrl+C if port 5173 is already occupied.
 
+After a local session fails or stops, Developer Mode **Export last session diagnostics** downloads `apurebase-last-session-diagnostics.json`. The last ended session survives READY, direction/path resets and browser reloads in the same browser/origin using localStorage (`apurebase.last-session-diagnostics.v1`). Starting another session leaves the archive intact until that session ends. Export before ending another session if you need to preserve a particular failure.
+
+Diagnostics retain at most 2,000 recent metadata events, 200 unit summaries and 32 connection summaries, within 384 KiB of JSON; eviction is counted. Browser monotonic timestamps and server monotonic timestamps are labeled separately and must not be directly subtracted. Recognition states/IDs, unit stage timestamps, TTS submission lengths, first/last PCM receipt timestamps, flush/EOS/final/close and watchdog metadata are retained. Speech/transcript text, keys, headers, raw PCM and generated audio are excluded. There is no automatic upload. Browser storage must be permitted; if blocked/full, export remains available in memory but cannot survive a reload.
+
 [Stage 1.8 architecture, measured results, limitations and all 16 report items](docs/stage-1.8-report.md). The controlled live harness `/scripts/stage18-benchmark.html` makes paid calls only when Run is clicked, uses synthetic fixtures and never opens a microphone or plays source audio.
 
 ## Run on two computers

@@ -1,0 +1,531 @@
+{
+  "rows": [
+    {
+      "phraseId": "consent-question",
+      "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "submittedSynthesisText": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "kZK8ZENgppiFlm2S7XzY",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "brandSpan": "ALREADY_USES_EXISTING_ALIAS",
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "sentenceCount": 1,
+      "sentenceWordCounts": [
+        11
+      ],
+      "segmentation": "Single continuous submitted unit. Existing sentence punctuation is intact; no locally spliced or missing segment.",
+      "comments": [
+        ""
+      ],
+      "technical": {
+        "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 3.947375,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 3.947375,
+        "rawPeak": 0.2227783203125,
+        "allSilent": false,
+        "leadingSilenceMs": 22.166666666666668,
+        "trailingSilenceMs": 31.541666666666668,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 189518,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.12661367786609246
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 94737,
+        "preGainPeak": 0.2227783203125,
+        "preGainRms": 0.035855819782446195,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.7925028204917908,
+        "postGainRms": 0.1275520796981164,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "quietIntervals": [],
+      "newerConventionComparison": "Same exact scoped question and a Pure Base alias as the question portion of new Clarify; no missing pronunciation convention.",
+      "concreteBoundedAutomatableImprovementFound": false,
+      "disposition": "HUMAN_REVIEW_REQUIRED_LOW_RATING_RETAINED",
+      "reason": "Empty latest comment and 2/5 rating do not identify a word/phoneme defect. Valid receipt, intact complete WAV, zero raw/rendered clipping; signal quiet runs cannot diagnose Danish pronunciation. Arbitrary punctuation/segmentation/phonetic spelling or identical regeneration would be speculative."
+    },
+    {
+      "phraseId": "email-request",
+      "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+      "submittedSynthesisText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+      "providerReceipt": {
+        "verified": true,
+        "method": "authenticated-provider-response-and-content-hash",
+        "providerRequestId": "sXHHHxjMRxuuD4OYDUQJ",
+        "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+        "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+      },
+      "brandSpan": "NO_BRAND_SPAN",
+      "punctuation": {
+        "commas": 0,
+        "questions": 1
+      },
+      "sentenceCount": 2,
+      "sentenceWordCounts": [
+        1,
+        8
+      ],
+      "segmentation": "Single continuous submitted unit. Existing sentence punctuation is intact; no locally spliced or missing segment.",
+      "comments": [
+        "",
+        ""
+      ],
+      "technical": {
+        "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+        "bitDepth": 16,
+        "headerCompleteness": "COMPLETE",
+        "durationSeconds": 3.390125,
+        "durationStatus": "DERIVED_CLOSED_CONTAINER",
+        "payloadDurationSeconds": 3.390125,
+        "rawPeak": 0.255157470703125,
+        "allSilent": false,
+        "leadingSilenceMs": 33,
+        "trailingSilenceMs": 226.125,
+        "unexpectedlyShort": false,
+        "truncated": false,
+        "duplicateByteGroup": null,
+        "format": "PCM",
+        "sampleRate": 24000,
+        "channels": 1,
+        "bytes": 162770,
+        "structurallyValid": true,
+        "streamingHeader": false,
+        "payloadAligned": true,
+        "rawClipping": 0,
+        "silenceFraction": 0.3438172142128486
+      },
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 81363,
+        "preGainPeak": 0.255157470703125,
+        "preGainRms": 0.03491660603949241,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.9076871275901794,
+        "postGainRms": 0.12421095772535924,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      },
+      "quietIntervals": [
+        {
+          "startMs": 320,
+          "endMs": 840,
+          "durationMs": 520
+        },
+        {
+          "startMs": 3140,
+          "endMs": 3390.125,
+          "durationMs": 250.125
+        }
+      ],
+      "newerConventionComparison": "No brand exists to alias. e-mailadresse is the ordinary canonical compound; e-mail-only review metadata does not establish a correction.",
+      "concreteBoundedAutomatableImprovementFound": false,
+      "disposition": "HUMAN_REVIEW_REQUIRED_LOW_RATING_RETAINED",
+      "reason": "Empty latest comment and 2/5 rating do not identify a word/phoneme defect. Valid receipt, intact complete WAV, zero raw/rendered clipping; signal quiet runs cannot diagnose Danish pronunciation. Arbitrary punctuation/segmentation/phonetic spelling or identical regeneration would be speculative."
+    }
+  ],
+  "allFiveHistoricalWeakRatings": [
+    {
+      "historical": {
+        "phraseId": "why-calling",
+        "audioHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+        "ratings": {
+          "pronunciation": 2,
+          "naturalness": 4,
+          "pace": 4
+        },
+        "decision": "PASS",
+        "comment": ""
+      },
+      "current": {
+        "phraseId": "why-calling",
+        "reviewKey": "why-calling:b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+        "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+        "canonicalVersion": "stage-2.0c32-candidate-1",
+        "canonicalTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "synthesisText": "Jeg ringer kun for at spørge om a Pure Base må sende dig relevant faglig information via e-mail.",
+        "synthesisVersion": "stage-2.0c32-plan-1:PUNCTUATION",
+        "synthesisTextHash": "91b7c45fc76bc37db8813ff73f4efd722b23c26d5e194efb395ec3e1dda1c22f",
+        "pronunciationExpectation": {
+          "kind": "HUMAN_REVIEW_DESCRIPTION_NOT_PROVIDER_PAYLOAD",
+          "connectedSpeech": "Asem: written sende dig; expected approximately sene dej, reported sente dej. Human comparison of exact hashes required.",
+          "weakConsonants": "Native assessment of weak consonants and soft-d remains required.",
+          "organization": "Preserve organization identity; distinguish canonical spelling from existing a Pure Base synthesis alias.",
+          "scope": "No phonetic misspelling in canonical text; no acoustic correctness inferred from spelling or PCM statistics."
+        },
+        "currentAssetHash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+        "historicalAssetHashes": [
+          "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+          "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb"
+        ],
+        "assetPath": "/audio/consent-stage20c32/b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff.wav",
+        "actualLoadURL": "/audio/consent-stage20c32/b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff.wav",
+        "phraseVersionBinding": "EXACT_STATIC_DEFINITION",
+        "binding": {
+          "phraseId": "why-calling",
+          "canonicalHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+          "spokenHash": "91b7c45fc76bc37db8813ff73f4efd722b23c26d5e194efb395ec3e1dda1c22f",
+          "audioHash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff"
+        },
+        "provider": {
+          "provider": "ElevenLabs",
+          "name": "Isabella",
+          "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+          "modelId": "eleven_flash_v2_5",
+          "speed": 0.95
+        },
+        "providerReceipt": {
+          "verified": true,
+          "method": "authenticated-provider-response-and-content-hash",
+          "providerRequestId": "AHXB6wn4Lh1ytEhRQuVg",
+          "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+          "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+        },
+        "generated": true,
+        "generatedAt": "2026-10-21T21:20:07.832Z",
+        "seconds": 5.851416666666666,
+        "humanRatingForCurrentHash": [],
+        "humanStatus": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING",
+        "diagnosticOnly": false,
+        "productionEnabled": false,
+        "intendedReviewPath": "C32 ReviewPanel -> exact reviewKey -> C32Playback",
+        "selectionReason": "Newest generated C32 candidate; historical hashes blocked"
+      },
+      "disposition": "REPLACED_NEW_HASH_HUMAN_REVIEW_PENDING"
+    },
+    {
+      "historical": {
+        "phraseId": "consent-question",
+        "audioHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+        "ratings": {
+          "pronunciation": 2,
+          "naturalness": 4,
+          "pace": 4
+        },
+        "decision": "PASS",
+        "comment": ""
+      },
+      "current": {
+        "phraseId": "consent-question",
+        "reviewKey": "consent-question:055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+        "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "canonicalVersion": "stage-2.0c31-candidate-1",
+        "canonicalTextHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+        "synthesisText": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+        "synthesisVersion": "stage-2.0c31-candidate-1:provider-input",
+        "synthesisTextHash": "82686ed5aae8211a6cda1b4a7bfc3dbeeb70dca083f8f9ca148707cafe6eef7c",
+        "pronunciationExpectation": {
+          "kind": "HUMAN_REVIEW_DESCRIPTION_NOT_PROVIDER_PAYLOAD",
+          "connectedSpeech": "Natural connected Danish; inspect function-word joins and word boundaries.",
+          "weakConsonants": "Native assessment of weak consonants and soft-d remains required.",
+          "organization": "Preserve organization identity; distinguish canonical spelling from existing a Pure Base synthesis alias.",
+          "scope": "No phonetic misspelling in canonical text; no acoustic correctness inferred from spelling or PCM statistics."
+        },
+        "currentAssetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+        "historicalAssetHashes": [
+          "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6"
+        ],
+        "assetPath": "/audio/consent-stage20c31/055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af.wav",
+        "actualLoadURL": "/audio/consent-stage20c31/055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af.wav",
+        "phraseVersionBinding": "EXACT_STATIC_DEFINITION",
+        "binding": {
+          "phraseId": "consent-question",
+          "canonicalHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+          "spokenHash": "82686ed5aae8211a6cda1b4a7bfc3dbeeb70dca083f8f9ca148707cafe6eef7c",
+          "audioHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af"
+        },
+        "provider": {
+          "provider": "ElevenLabs",
+          "name": "Isabella",
+          "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+          "modelId": "eleven_flash_v2_5",
+          "speed": 0.95
+        },
+        "providerReceipt": {
+          "verified": true,
+          "method": "authenticated-provider-response-and-content-hash",
+          "providerRequestId": "kZK8ZENgppiFlm2S7XzY",
+          "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+          "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+        },
+        "generated": true,
+        "generatedAt": "2026-10-20T17:27:56.953Z",
+        "seconds": 3.947375,
+        "humanRatingForCurrentHash": [
+          {
+            "stage": "C-3.2",
+            "source": "latest-export",
+            "actionIndex": 1,
+            "decision": "PASS",
+            "ratings": {
+              "naturalness": 4,
+              "pronunciation": 2,
+              "pace": 4
+            },
+            "comment": "",
+            "heardExactAsset": true,
+            "audioHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af"
+          }
+        ],
+        "humanStatus": "UNRESOLVED",
+        "diagnosticOnly": false,
+        "productionEnabled": false,
+        "intendedReviewPath": "C32 ReviewPanel -> exact reviewKey -> C32Playback",
+        "selectionReason": "Exact existing C31 correction; no later generated replacement"
+      },
+      "disposition": "UNCHANGED_LOW_RATING_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "historical": {
+        "phraseId": "email-request",
+        "audioHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+        "ratings": {
+          "pronunciation": 2,
+          "naturalness": 4,
+          "pace": 4
+        },
+        "decision": "PASS",
+        "comment": ""
+      },
+      "current": {
+        "phraseId": "email-request",
+        "reviewKey": "email-request:296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+        "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+        "canonicalVersion": "stage-2.0c1-approved-1",
+        "canonicalTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+        "synthesisText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+        "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+        "synthesisTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+        "pronunciationExpectation": {
+          "kind": "HUMAN_REVIEW_DESCRIPTION_NOT_PROVIDER_PAYLOAD",
+          "connectedSpeech": "Natural connected Danish; inspect function-word joins and word boundaries.",
+          "weakConsonants": "Native assessment of weak consonants and soft-d remains required.",
+          "organization": null,
+          "scope": "No phonetic misspelling in canonical text; no acoustic correctness inferred from spelling or PCM statistics."
+        },
+        "currentAssetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+        "historicalAssetHashes": [],
+        "assetPath": "/audio/consent-stage20c1/c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6.wav",
+        "actualLoadURL": "/audio/consent-stage20c1/c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6.wav",
+        "phraseVersionBinding": "EXACT_STATIC_DEFINITION",
+        "binding": {
+          "phraseId": "email-request",
+          "canonicalHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+          "spokenHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+          "audioHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961"
+        },
+        "provider": {
+          "provider": "ElevenLabs",
+          "name": "Isabella",
+          "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+          "modelId": "eleven_flash_v2_5",
+          "speed": 0.95
+        },
+        "providerReceipt": {
+          "verified": true,
+          "method": "authenticated-provider-response-and-content-hash",
+          "providerRequestId": "sXHHHxjMRxuuD4OYDUQJ",
+          "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+          "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+        },
+        "generated": true,
+        "generatedAt": "2026-10-18T11:49:13.782Z",
+        "seconds": 3.390125,
+        "humanRatingForCurrentHash": [
+          {
+            "stage": "C-3",
+            "source": "original-export",
+            "actionIndex": 4,
+            "decision": "HUMAN_LISTENING_APPROVED",
+            "ratings": null,
+            "comment": "",
+            "heardExactAsset": true,
+            "audioHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961"
+          },
+          {
+            "stage": "C-3.2",
+            "source": "latest-export",
+            "actionIndex": 2,
+            "decision": "PASS",
+            "ratings": {
+              "naturalness": 4,
+              "pronunciation": 2,
+              "pace": 4
+            },
+            "comment": "",
+            "heardExactAsset": true,
+            "audioHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961"
+          }
+        ],
+        "humanStatus": "UNRESOLVED",
+        "diagnosticOnly": false,
+        "productionEnabled": false,
+        "intendedReviewPath": "C32 ReviewPanel -> exact reviewKey -> C32Playback",
+        "selectionReason": "Unchanged C1/C2 reference; historical human evidence retained without new approval"
+      },
+      "disposition": "UNCHANGED_LOW_RATING_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "historical": {
+        "phraseId": "clarify",
+        "audioHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+        "ratings": {
+          "pronunciation": 2,
+          "naturalness": 4,
+          "pace": 4
+        },
+        "decision": "PASS",
+        "comment": ""
+      },
+      "current": {
+        "phraseId": "clarify",
+        "reviewKey": "clarify:55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+        "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "canonicalVersion": "stage-2.0c32-clarify-ab-1",
+        "canonicalTextHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+        "synthesisText": "Selvfølgelig. Må a Pure Base sende relevant faglig information til dig via e-mail?",
+        "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "synthesisTextHash": "79731682622f866b2bf9e59c5589fda254ba8c5300fe8cd81e6eb5015eb43892",
+        "pronunciationExpectation": {
+          "kind": "HUMAN_REVIEW_DESCRIPTION_NOT_PROVIDER_PAYLOAD",
+          "connectedSpeech": "Natural connected Danish; inspect function-word joins and word boundaries.",
+          "weakConsonants": "Native assessment of weak consonants and soft-d remains required.",
+          "organization": "Preserve organization identity; distinguish canonical spelling from existing a Pure Base synthesis alias.",
+          "scope": "No phonetic misspelling in canonical text; no acoustic correctness inferred from spelling or PCM statistics."
+        },
+        "currentAssetHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+        "historicalAssetHashes": [
+          "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d"
+        ],
+        "assetPath": "/audio/consent-stage20c32/55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420.wav",
+        "actualLoadURL": "/audio/consent-stage20c32/55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420.wav",
+        "phraseVersionBinding": "EXACT_STATIC_DEFINITION",
+        "binding": {
+          "phraseId": "clarify",
+          "canonicalHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+          "spokenHash": "79731682622f866b2bf9e59c5589fda254ba8c5300fe8cd81e6eb5015eb43892",
+          "audioHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420"
+        },
+        "provider": {
+          "provider": "ElevenLabs",
+          "name": "Isabella",
+          "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+          "modelId": "eleven_flash_v2_5",
+          "speed": 0.95
+        },
+        "providerReceipt": {
+          "verified": true,
+          "method": "authenticated-provider-response-and-content-hash",
+          "providerRequestId": "EhTO84mneZ2azEN2C9fy",
+          "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+          "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+        },
+        "generated": true,
+        "generatedAt": "2026-10-21T22:41:09.037Z",
+        "seconds": 5.340583333333333,
+        "humanRatingForCurrentHash": [],
+        "humanStatus": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING",
+        "diagnosticOnly": false,
+        "productionEnabled": false,
+        "intendedReviewPath": "C32 ReviewPanel -> exact reviewKey -> C32Playback",
+        "selectionReason": "Newest generated C32 candidate; historical hashes blocked"
+      },
+      "disposition": "REPLACED_NEW_HASH_HUMAN_REVIEW_PENDING"
+    },
+    {
+      "historical": {
+        "phraseId": "success-close",
+        "audioHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+        "ratings": {
+          "pronunciation": 2,
+          "naturalness": 4,
+          "pace": 4
+        },
+        "decision": "FAIL",
+        "comment": "frameldte < it pronounced a t "
+      },
+      "current": {
+        "phraseId": "success-close",
+        "reviewKey": "success-close:e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+        "canonicalText": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+        "canonicalVersion": "stage-2.0c32-candidate-1",
+        "canonicalTextHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+        "synthesisText": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+        "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "synthesisTextHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+        "pronunciationExpectation": {
+          "kind": "HUMAN_REVIEW_DESCRIPTION_NOT_PROVIDER_PAYLOAD",
+          "connectedSpeech": "Natural connected Danish; inspect function-word joins and word boundaries.",
+          "weakConsonants": "Native assessment of weak consonants and soft-d remains required.",
+          "organization": null,
+          "scope": "No phonetic misspelling in canonical text; no acoustic correctness inferred from spelling or PCM statistics."
+        },
+        "currentAssetHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+        "historicalAssetHashes": [
+          "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26"
+        ],
+        "assetPath": "/audio/consent-stage20c32/e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908.wav",
+        "actualLoadURL": "/audio/consent-stage20c32/e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908.wav",
+        "phraseVersionBinding": "EXACT_STATIC_DEFINITION",
+        "binding": {
+          "phraseId": "success-close",
+          "canonicalHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+          "spokenHash": "050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e",
+          "audioHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908"
+        },
+        "provider": {
+          "provider": "ElevenLabs",
+          "name": "Isabella",
+          "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+          "modelId": "eleven_flash_v2_5",
+          "speed": 0.95
+        },
+        "providerReceipt": {
+          "verified": true,
+          "method": "authenticated-provider-response-and-content-hash",
+          "providerRequestId": "ihhY8XKnNt3NhwgB2KLc",
+          "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+          "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+        },
+        "generated": true,
+        "generatedAt": "2026-10-21T21:20:08.978Z",
+        "seconds": 7.52325,
+        "humanRatingForCurrentHash": [],
+        "humanStatus": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING",
+        "diagnosticOnly": false,
+        "productionEnabled": false,
+        "intendedReviewPath": "C32 ReviewPanel -> exact reviewKey -> C32Playback",
+        "selectionReason": "Newest generated C32 candidate; historical hashes blocked"
+      },
+      "disposition": "REPLACED_NEW_HASH_HUMAN_REVIEW_PENDING"
+    }
+  ],
+  "automatableGaps": [],
+  "nativePronunciationProven": false
+}

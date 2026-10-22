@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "normalStartCommandExecuted": true,
+  "bundledArm64RuntimeExecuted": true,
+  "automaticBrowserOpenBranchCompleted": true,
+  "URL": "http://127.0.0.1:5173/",
+  "providerVerificationMode": true,
+  "providerRequests": 0,
+  "childProcessesAfterBrowserOpen": [
+    {
+      "pid": 79366,
+      "command": "/private/tmp/c32-final-asem-package/sealed-extracted/aPureBase-C32-Final-Asem-Retest/runtime/arm64/node"
+    }
+  ],
+  "shutdownRestartPreviouslyVerified": true,
+  "IntelRuntimeChecksumVerifiedNativeExecutionNotPerformed": true
+}

@@ -12,18 +12,18 @@ const items: { id: string; text: string; language: 'da' | 'en'; voice: string }[
 const danishConfig = elevenLabsConfig();
 items.push(...allScriptLines.map(l => ({ id: l.id, text: l.text, language: l.language, voice: l.language === 'da' ? config.clinicVoice : config.voice })));
 await mkdir('public/audio', { recursive: true });
-let manifest: Record<string, { hash: string; model: string; voice: string; language: string; bytes: number; provider?: string }> = {};
+let manifest: Record<string, { hash: string; model: string; voice: string; language: string; bytes: number; provider?: string;audioSha256?:string }> = {};
 try { manifest = JSON.parse(await readFile('public/audio/manifest.json', 'utf8')); } catch { /* first generation */ }
 for (const phrase of fixedPhrases) {
   const hash = phraseHash(phrase.id, phrase.da, danishConfig);
   let exists = false;
   try { exists = (await readFile(`public/audio/${phrase.id}.wav`)).length > 1000; } catch { /* absent */ }
-  if (manifest[phrase.id]?.hash === hash && exists) { console.info('Reusing ElevenLabs asset', phrase.id); continue; }
+  if (manifest[phrase.id]?.hash === hash && manifest[phrase.id]?.audioSha256 && exists) { console.info('Reusing ElevenLabs asset', phrase.id); continue; }
   const provider = new ElevenLabsVoiceProvider(danishConfig);
   try {
     const bytes = pcmToWav(await provider.generateSpeech(phrase.da));
     await writeFile(`public/audio/${phrase.id}.wav`, bytes);
-    manifest[phrase.id] = { hash, provider: 'ElevenLabs', model: danishConfig.modelId, voice: danishConfig.voiceId, language: 'da', bytes: bytes.length };
+    manifest[phrase.id] = { hash, provider: 'ElevenLabs', model: danishConfig.modelId, voice: danishConfig.voiceId, language: 'da', bytes: bytes.length,audioSha256:createHash('sha256').update(bytes).digest('hex') };
     await writeFile('public/audio/manifest.json', JSON.stringify(manifest, null, 2));
     console.info('Generated ElevenLabs asset', phrase.id, bytes.length, 'bytes');
   } catch (error) {

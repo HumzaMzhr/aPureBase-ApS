@@ -1,0 +1,62 @@
+{
+  "phraseId": "authority-ask",
+  "wordingVersion": "stage-2.0c1-approved-1",
+  "text": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+  "textHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+  "assetHash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+  "path": "http://127.0.0.1:5180/cache/ec9607700680e1898f24a6f56c779d549ace09cf64aa5652cadf1a8b33afcc54.wav",
+  "voice": {
+    "provider": "ElevenLabs",
+    "name": "Isabella",
+    "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+    "modelId": "eleven_flash_v2_5",
+    "speed": 0.95
+  },
+  "requestedSpeed": 0.95,
+  "generatedAt": "2026-10-18T12:32:08.541Z",
+  "duration": 4.551125,
+  "samples": 109227,
+  "sampleRate": 24000,
+  "mediaFormat": "wav-pcm-s16le-mono",
+  "provenance": {
+    "verified": true,
+    "method": "authenticated-provider-response-and-content-hash",
+    "providerRequestId": "gCptWtrGIePSlbkArsMI",
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+    "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+  },
+  "verification": {
+    "mediaValid": true,
+    "nonSilent": true,
+    "clippingEvents": 0,
+    "rawPeak": 0.244476318359375,
+    "gainApplied": 3.5573605757216837,
+    "peakProtectionEvents": 0,
+    "outputPeak": 0.8696904182434082
+  },
+  "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+  "businessWordingApproved": true,
+  "productionApproved": false,
+  "binding": {
+    "slot": {
+      "kind": "NAME",
+      "phraseId": "authority-ask",
+      "name": {
+        "original": "Jens Hansen",
+        "source": "contact-data",
+        "evidenceId": "synthetic-contact-fixture",
+        "evidenceText": "SYNTHETIC rehearsal target: Jens Hansen",
+        "reviewedBy": "local-rehearsal-fixture",
+        "reviewedAt": "2026-10-18T00:00:00.000Z",
+        "pronunciationConfirmed": true,
+        "recipientRevision": 1
+      }
+    },
+    "renderedValue": "Jens Hansen",
+    "renderedText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+    "textHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "rendererVersion": "stage-2.0c2-deterministic-1",
+    "cacheKey": "ec9607700680e1898f24a6f56c779d549ace09cf64aa5652cadf1a8b33afcc54"
+  }
+}

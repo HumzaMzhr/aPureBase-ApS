@@ -1,0 +1,314 @@
+{
+  "kind": "SAME_FIXED_SYNTHETIC_TEXT_PARSER_COMPARISON_NOT_ASR_NOT_PHYSICAL",
+  "denominator": 41,
+  "oldParserIncludesCorrectCandidate": 25,
+  "newResolverSelectsCorrectCandidate": 41,
+  "limits": "Old candidate inclusion and new selected policy are different scopes; this is text evidence coverage only. Old arbitrary TTS readback never established address accuracy. No physical accuracy or takeover improvement is established.",
+  "rows": [
+    {
+      "id": "literal",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "spoken",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "kontakt",
+      "expected": "kontakt@clinic.example",
+      "oldCandidates": [],
+      "newSelected": "kontakt@clinic.example"
+    },
+    {
+      "id": "domain-case",
+      "expected": "Anna@clinic.example",
+      "oldCandidates": [
+        "Anna@clinic.example"
+      ],
+      "newSelected": "Anna@clinic.example"
+    },
+    {
+      "id": "terminal-period",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "spoken-period",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "mixed-symbols",
+      "expected": "anna.test@clinic.example",
+      "oldCandidates": [
+        "anna.test@clinic.example"
+      ],
+      "newSelected": "anna.test@clinic.example"
+    },
+    {
+      "id": "hyphen",
+      "expected": "anna-test@clinic.example",
+      "oldCandidates": [
+        "annastregtest@clinic.example"
+      ],
+      "newSelected": "anna-test@clinic.example"
+    },
+    {
+      "id": "underscore",
+      "expected": "anna_test@clinic.example",
+      "oldCandidates": [
+        "annaunderstregtest@clinic.example"
+      ],
+      "newSelected": "anna_test@clinic.example"
+    },
+    {
+      "id": "plus",
+      "expected": "anna+test@clinic.example",
+      "oldCandidates": [
+        "anna+test@clinic.example"
+      ],
+      "newSelected": "anna+test@clinic.example"
+    },
+    {
+      "id": "digits",
+      "expected": "a123@clinic.example",
+      "oldCandidates": [
+        "a123@clinic.example"
+      ],
+      "newSelected": "a123@clinic.example"
+    },
+    {
+      "id": "natural-number-explicit",
+      "expected": "a21@clinic.example",
+      "oldCandidates": [],
+      "newSelected": "a21@clinic.example"
+    },
+    {
+      "id": "natural-number-uncertain",
+      "expected": "a12@clinic.example",
+      "oldCandidates": [
+        "atolv@clinic.example"
+      ],
+      "newSelected": "a12@clinic.example"
+    },
+    {
+      "id": "letter",
+      "expected": "ab@clinic.example",
+      "oldCandidates": [
+        "ab@clinic.example"
+      ],
+      "newSelected": "ab@clinic.example"
+    },
+    {
+      "id": "uppercase-cue",
+      "expected": "Anna@clinic.example",
+      "oldCandidates": [
+        "Anna@clinic.example"
+      ],
+      "newSelected": "Anna@clinic.example"
+    },
+    {
+      "id": "repeated-character",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "same-twice",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "new-correction",
+      "expected": "anne@clinic.example",
+      "oldCandidates": [],
+      "newSelected": "anne@clinic.example"
+    },
+    {
+      "id": "sorry-correction",
+      "expected": "anne@clinic.example",
+      "oldCandidates": [],
+      "newSelected": "anne@clinic.example"
+    },
+    {
+      "id": "i-said-correction",
+      "expected": "anne@clinic.example",
+      "oldCandidates": [
+        "jegsagdeanne@clinic.example"
+      ],
+      "newSelected": "anne@clinic.example"
+    },
+    {
+      "id": "unique-en",
+      "expected": "n@clinic.example",
+      "oldCandidates": [
+        "1@clinic.example",
+        "n@clinic.example"
+      ],
+      "newSelected": "n@clinic.example"
+    },
+    {
+      "id": "danish-ae",
+      "expected": "laegehuset@clinic.example",
+      "oldCandidates": [],
+      "newSelected": "laegehuset@clinic.example"
+    },
+    {
+      "id": "danish-oe",
+      "expected": "oejen@clinic.example",
+      "oldCandidates": [],
+      "newSelected": "oejen@clinic.example"
+    },
+    {
+      "id": "danish-aa",
+      "expected": "aase@clinic.example",
+      "oldCandidates": [],
+      "newSelected": "aase@clinic.example"
+    },
+    {
+      "id": "partial",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "interrupted",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "stale",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "hallucinated-at-unowned",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "model-invalid",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "model-wrong",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "model-timeout",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "long-local",
+      "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example",
+      "oldCandidates": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example"
+      ],
+      "newSelected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example"
+    },
+    {
+      "id": "hyphen-domain",
+      "expected": "anna@long-clinic.example",
+      "oldCandidates": [
+        "anna@long-clinic.example"
+      ],
+      "newSelected": "anna@long-clinic.example"
+    },
+    {
+      "id": "multiple-dots",
+      "expected": "a.b.c@sub.clinic.example",
+      "oldCandidates": [
+        "a.b.c@sub.clinic.example"
+      ],
+      "newSelected": "a.b.c@sub.clinic.example"
+    },
+    {
+      "id": "digit-heavy",
+      "expected": "a1234567890@c123.example",
+      "oldCandidates": [
+        "a1234567890@c123.example"
+      ],
+      "newSelected": "a1234567890@c123.example"
+    },
+    {
+      "id": "whitespace",
+      "expected": "anna@clinic.example",
+      "oldCandidates": [
+        "anna@clinic.example"
+      ],
+      "newSelected": "anna@clinic.example"
+    },
+    {
+      "id": "example-A",
+      "expected": "info@klinik.dk",
+      "oldCandidates": [
+        "info@klinik.dk"
+      ],
+      "newSelected": "info@klinik.dk"
+    },
+    {
+      "id": "example-B",
+      "expected": "kontakt@klinik.dk",
+      "oldCandidates": [],
+      "newSelected": "kontakt@klinik.dk"
+    },
+    {
+      "id": "example-D",
+      "expected": "anna.jensen@hospital.dk",
+      "oldCandidates": [
+        "anna.jensen@hospital.dk"
+      ],
+      "newSelected": "anna.jensen@hospital.dk"
+    },
+    {
+      "id": "example-E",
+      "expected": "laegehuset@domain.dk",
+      "oldCandidates": [],
+      "newSelected": "laegehuset@domain.dk"
+    },
+    {
+      "id": "example-I",
+      "expected": "info@klinik.dk",
+      "oldCandidates": [],
+      "newSelected": "info@klinik.dk"
+    }
+  ]
+}

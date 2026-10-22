@@ -1,0 +1,31 @@
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 101 modules transformed.
+rendering chunks...
+computing gzip size...
+../c32-email-freeze/package-frozen/aPureBase-C32-Email-Architecture-Retest/app/stage20c32-retest.html                            0.40 kB │ gzip:   0.29 kB
+../c32-email-freeze/package-frozen/aPureBase-C32-Email-Architecture-Retest/app/assets/apurebase-wordmark-Ddho7gsC.jpg            4.73 kB
+../c32-email-freeze/package-frozen/aPureBase-C32-Email-Architecture-Retest/app/assets/apurebase-molecular-header-44XA9jj7.jpg   25.77 kB
+../c32-email-freeze/package-frozen/aPureBase-C32-Email-Architecture-Retest/app/assets/stage20c32-retest-D8I9FmIr.css            17.42 kB │ gzip:   4.16 kB
+../c32-email-freeze/package-frozen/aPureBase-C32-Email-Architecture-Retest/app/assets/stage20c32-retest-DvSSvf8N.js            666.79 kB │ gzip: 166.31 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 553ms
+{"status":"PASS","listeningItems":16,"displayedCatalogWAVPlaybackEquality":16,"allCurrentUnits":38,"uniqueCurrentRecordings":37,"files":67,"candidate":"7ddc6a19759dd00559b880497b7b3b4dd0834c3ae53ded93edb77bd282422a1d","providerRequests":0,"productionReady":false}
+{
+  "packageDirectory": "/private/tmp/c32-email-freeze/package-frozen/aPureBase-C32-Email-Architecture-Retest",
+  "identity": {
+    "baseCommit": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+    "coreSourceHash": "d4f107a55e3177917376888469cf4f6736bc9128243aaeedf6cf5af8b7258da7",
+    "handoffSourceHash": "c1e0038e86efe415f8f58fb70ed1aea2e9c89f2893d44cdd00843599406c7d73",
+    "candidateSourceHash": "7ddc6a19759dd00559b880497b7b3b4dd0834c3ae53ded93edb77bd282422a1d",
+    "uncommitted": true,
+    "packageVersion": "stage-2.0c32-email-architecture-1"
+  },
+  "listeningItems": 16,
+  "packagedCurrentUnits": 38,
+  "uniqueCurrentRecordings": 37
+}

@@ -1,0 +1,333 @@
+[
+  {
+    "check": "focused",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/consent-stage20c32-candidates.test.ts",
+      "tests/consent-stage20c32-consolidation.test.tsx",
+      "tests/consent-stage20c32-email-freeze.test.ts",
+      "tests/consent-stage20c32-email.test.ts",
+      "tests/consent-stage20c32-feedback-closure.test.ts",
+      "tests/consent-stage20c32-hardening.test.ts",
+      "tests/consent-stage20c32-package-brand.test.tsx",
+      "tests/consent-stage20c32-package-ui.test.tsx",
+      "tests/consent-stage20c32-package.test.ts",
+      "tests/consent-stage20c32-remediation.test.ts",
+      "tests/consent-stage20c32-speech.test.tsx"
+    ],
+    "exitCode": 0,
+    "seconds": 3.157,
+    "testsPassed": 668
+  },
+  {
+    "check": "c31",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/consent-stage20c3.test.ts",
+      "tests/consent-stage20c3-view.test.tsx",
+      "tests/consent-stage20c31.test.ts",
+      "tests/consent-stage20c31-view.test.tsx",
+      "tests/consent-stage20c31-gateway.test.ts"
+    ],
+    "exitCode": 0,
+    "seconds": 0.867,
+    "testsPassed": 139
+  },
+  {
+    "check": "prior-consent",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/consent-foundation.test.ts",
+      "tests/consent-stage20b.test.tsx",
+      "tests/consent-stage20b2.test.tsx",
+      "tests/consent-stage20c1.test.ts",
+      "tests/consent-stage20c2.test.ts",
+      "tests/consent-stage20c3-view.test.tsx",
+      "tests/consent-stage20c3.test.ts",
+      "tests/consent-stage20c31-gateway.test.ts",
+      "tests/consent-stage20c31-view.test.tsx",
+      "tests/consent-stage20c31.test.ts",
+      "tests/consent-transcription.test.ts",
+      "tests/consent-view.test.tsx",
+      "tests/stage196-short-consent.test.ts"
+    ],
+    "exitCode": 0,
+    "seconds": 1.372,
+    "testsPassed": 496
+  },
+  {
+    "check": "full-1",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitCode": 0,
+    "seconds": 10.706,
+    "testsPassed": 1788
+  },
+  {
+    "check": "full-2",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitCode": 0,
+    "seconds": 9.926,
+    "testsPassed": 1788
+  },
+  {
+    "check": "full-3",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitCode": 0,
+    "seconds": 9.673,
+    "testsPassed": 1788
+  },
+  {
+    "check": "replay-1",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts"
+    ],
+    "exitCode": 0,
+    "seconds": 2.803,
+    "testsPassed": 2
+  },
+  {
+    "check": "replay-2",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts"
+    ],
+    "exitCode": 0,
+    "seconds": 2.514,
+    "testsPassed": 2
+  },
+  {
+    "check": "replay-3",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts"
+    ],
+    "exitCode": 0,
+    "seconds": 2.552,
+    "testsPassed": 2
+  },
+  {
+    "check": "replay-4",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts"
+    ],
+    "exitCode": 0,
+    "seconds": 2.459,
+    "testsPassed": 2
+  },
+  {
+    "check": "replay-5",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts"
+    ],
+    "exitCode": 0,
+    "seconds": 2.505,
+    "testsPassed": 2
+  },
+  {
+    "check": "pcm-1",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "-t",
+      "forwards all 45 seconds of PCM"
+    ],
+    "exitCode": 0,
+    "seconds": 0.622,
+    "testsPassed": 1
+  },
+  {
+    "check": "pcm-2",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "-t",
+      "forwards all 45 seconds of PCM"
+    ],
+    "exitCode": 0,
+    "seconds": 0.652,
+    "testsPassed": 1
+  },
+  {
+    "check": "pcm-3",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "-t",
+      "forwards all 45 seconds of PCM"
+    ],
+    "exitCode": 0,
+    "seconds": 0.623,
+    "testsPassed": 1
+  },
+  {
+    "check": "pcm-4",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "-t",
+      "forwards all 45 seconds of PCM"
+    ],
+    "exitCode": 0,
+    "seconds": 0.906,
+    "testsPassed": 1
+  },
+  {
+    "check": "pcm-5",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "-t",
+      "forwards all 45 seconds of PCM"
+    ],
+    "exitCode": 0,
+    "seconds": 0.669,
+    "testsPassed": 1
+  },
+  {
+    "check": "final-safety-audio-corpus",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "--import",
+      "tsx",
+      "scripts/stage20c32-final-audit.ts",
+      "/private/tmp/c32-consolidation/validation/corpus"
+    ],
+    "exitCode": 0,
+    "seconds": 1.95,
+    "testsPassed": null
+  },
+  {
+    "check": "lint",
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "exitCode": 0,
+    "seconds": 3.571,
+    "testsPassed": null
+  },
+  {
+    "check": "typecheck",
+    "command": [
+      "npm",
+      "run",
+      "typecheck"
+    ],
+    "exitCode": 0,
+    "seconds": 4.427,
+    "testsPassed": null
+  },
+  {
+    "check": "build",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exitCode": 0,
+    "seconds": 5.679,
+    "testsPassed": null
+  },
+  {
+    "check": "c32-build",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vite/bin/vite.js",
+      "build",
+      "--config",
+      "src/consent/stage32/vite.config.ts",
+      "--outDir",
+      "/private/tmp/c32-consolidation/validation/c32-build"
+    ],
+    "exitCode": 0,
+    "seconds": 0.842,
+    "testsPassed": null
+  },
+  {
+    "check": "human-ui-build",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "node_modules/vite/bin/vite.js",
+      "build",
+      "--config",
+      "scripts/stage20c32-handoff.vite.ts",
+      "--outDir",
+      "/private/tmp/c32-consolidation/validation/human-ui-build"
+    ],
+    "exitCode": 0,
+    "seconds": 0.82,
+    "testsPassed": null
+  },
+  {
+    "check": "preservation-c31",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "--import",
+      "tsx",
+      "scripts/verify-stage20c31.ts"
+    ],
+    "exitCode": 0,
+    "seconds": 0.267,
+    "testsPassed": null
+  },
+  {
+    "check": "preservation-final",
+    "command": [
+      "python3",
+      "scripts/verify-stage20c32-final.py"
+    ],
+    "exitCode": 0,
+    "seconds": 0.188,
+    "testsPassed": null
+  },
+  {
+    "check": "diff-check",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 0.02,
+    "testsPassed": null
+  }
+]

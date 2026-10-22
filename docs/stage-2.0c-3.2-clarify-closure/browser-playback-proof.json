@@ -1,0 +1,17 @@
+{
+  "kind": "ACTUAL_LOCAL_BROWSER_WEBAUDIO_NOT_NATIVE_APPROVAL",
+  "url": "http://127.0.0.1:5186/stage20c32.html",
+  "newClarifyHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+  "canonicalHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+  "spokenHash": "79731682622f866b2bf9e59c5589fda254ba8c5300fe8cd81e6eb5015eb43892",
+  "version": "stage-2.0c32-clarify-ab-1",
+  "sourceEndedObserved": true,
+  "humanRatingsEntered": false,
+  "humanAttestationEntered": false,
+  "humanObservationsRecorded": 0,
+  "microphoneObservations": 0,
+  "liveProviderEndpointsInstalledInStaticServer": false,
+  "proof": "clarify-browser-full.txt",
+  "screenshot": "clarify-completion.jpg",
+  "bindingScreenshot": "clarify-browser.jpg"
+}

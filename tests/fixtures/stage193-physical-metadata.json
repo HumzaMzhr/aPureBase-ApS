@@ -1,0 +1,1435 @@
+{
+  "sessionId": "09b238c8-4a24-492c-a5e2-bdd8fab281e3",
+  "units": [
+    {
+      "unitId": "en-1-0-1",
+      "timing": {
+        "translation_queued": 51585.30000001192,
+        "translation_consumed": 55070.19999998808,
+        "tts_queued": 55070.30000001192,
+        "source_start": 48637.5,
+        "source_end_observed": 51094.10000002384,
+        "source_stable_at": 51585.30000001192,
+        "translation_started": 51585.69999998808,
+        "translation_first_text": 54766.60000002384,
+        "translation_ready": 55069.19999998808,
+        "tts_text_sent": 55070.60000002384,
+        "first_audio_received": 57027,
+        "playback_scheduled": 57045.5,
+        "playback_started": 57045,
+        "playback_finished": 57281.89999997616
+      },
+      "words": 1
+    },
+    {
+      "unitId": "en-2-0-2",
+      "timing": {
+        "translation_queued": 52758.60000002384,
+        "translation_consumed": 55113.60000002384,
+        "tts_queued": 55113.60000002384,
+        "source_start": 50827.30000001192,
+        "source_end_observed": 51948.60000002384,
+        "source_stable_at": 52758.60000002384,
+        "translation_started": 52758.60000002384,
+        "translation_first_text": 54778.5,
+        "translation_ready": 55113.5,
+        "tts_text_sent": 55113.60000002384,
+        "first_audio_received": 57027.5,
+        "playback_scheduled": 57300.69999998808,
+        "playback_started": 57300.10000002384,
+        "playback_finished": 57803.89999997616
+      },
+      "words": 2
+    },
+    {
+      "unitId": "en-3-0-4",
+      "timing": {
+        "translation_queued": 54453.69999998808,
+        "translation_consumed": 57502.60000002384,
+        "tts_queued": 57502.60000002384,
+        "source_start": 52427.30000001192,
+        "source_end_observed": 53950.10000002384,
+        "source_stable_at": 54453.69999998808,
+        "translation_started": 55069.30000001192,
+        "translation_first_text": 57148,
+        "translation_ready": 57502.19999998808,
+        "tts_text_sent": 57502.69999998808,
+        "first_audio_received": 58304.89999997616,
+        "playback_scheduled": 58347.166666666664,
+        "playback_started": 58352.89999997616,
+        "playback_finished": 59340
+      },
+      "words": 4
+    },
+    {
+      "unitId": "en-4-0-6",
+      "timing": {
+        "translation_queued": 57788.80000001192,
+        "translation_consumed": 59587.19999998808,
+        "tts_queued": 59587.30000001192,
+        "source_start": 54137.39999997616,
+        "source_end_observed": 57320,
+        "source_stable_at": 57788.80000001192,
+        "translation_started": 57788.80000001192,
+        "translation_first_text": 59191.80000001192,
+        "translation_ready": 59587.10000002384,
+        "tts_text_sent": 59587.30000001192,
+        "first_audio_received": 60076.10000002384,
+        "playback_scheduled": 60124.56666664282,
+        "playback_started": 60132.69999998808,
+        "playback_finished": 61992.39999997616
+      },
+      "words": 6
+    },
+    {
+      "unitId": "en-5-0-1",
+      "timing": {
+        "translation_queued": 58816.89999997616,
+        "translation_consumed": 60446.10000002384,
+        "tts_queued": 60446.10000002384,
+        "source_start": 57037.89999997616,
+        "source_end_observed": 58069.69999998808,
+        "source_stable_at": 58816.89999997616,
+        "translation_started": 58817.10000002384,
+        "translation_first_text": 60150.39999997616,
+        "translation_ready": 60445,
+        "tts_text_sent": 60446.19999998808,
+        "first_audio_received": 61741.89999997616,
+        "playback_scheduled": 62124.63333334526,
+        "playback_started": 62132.80000001192,
+        "playback_finished": 62301.30000001192
+      },
+      "words": 1
+    },
+    {
+      "unitId": "en-6-0-5",
+      "timing": {
+        "translation_queued": 62021.69999998808,
+        "translation_consumed": 63827.80000001192,
+        "tts_queued": 63827.80000001192,
+        "source_start": 58237.19999998808,
+        "source_end_observed": 61471.89999997616,
+        "source_stable_at": 62021.69999998808,
+        "translation_started": 62021.69999998808,
+        "translation_first_text": 63485.30000001192,
+        "translation_ready": 63827,
+        "tts_text_sent": 63827.80000001192,
+        "first_audio_received": 64440.80000001192,
+        "playback_scheduled": 64465.233333309494,
+        "playback_started": 64471.69999998808,
+        "playback_finished": 66482.19999998808
+      },
+      "words": 5
+    },
+    {
+      "unitId": "en-7-0-4",
+      "timing": {
+        "translation_queued": 64462.60000002384,
+        "translation_consumed": 66148.10000002384,
+        "tts_queued": 66148.10000002384,
+        "source_start": 61626.89999997616,
+        "source_end_observed": 64050.89999997616,
+        "source_stable_at": 64462.60000002384,
+        "translation_started": 64462.60000002384,
+        "translation_first_text": 65821.69999998808,
+        "translation_ready": 66147.80000001192,
+        "tts_text_sent": 66148.10000002384,
+        "first_audio_received": 66813,
+        "playback_scheduled": 66851.93333335717,
+        "playback_started": 66861.39999997616,
+        "playback_finished": 68493.5
+      },
+      "words": 4
+    },
+    {
+      "unitId": "en-8-0-1",
+      "timing": {
+        "translation_queued": 65298.80000001192,
+        "translation_consumed": 66950.60000002384,
+        "tts_queued": 66950.60000002384,
+        "source_start": 63737.19999998808,
+        "source_end_observed": 64926.39999997616,
+        "source_stable_at": 65298.80000001192,
+        "translation_started": 65298.80000001192,
+        "translation_first_text": 66577.39999997616,
+        "translation_ready": 66950.39999997616,
+        "tts_text_sent": 66950.60000002384,
+        "first_audio_received": 68526.89999997616,
+        "playback_scheduled": 68661.56666664283,
+        "playback_started": 68662.60000002384,
+        "playback_finished": 69334.89999997616
+      },
+      "words": 1
+    },
+    {
+      "unitId": "en-9-0-1",
+      "timing": {
+        "translation_queued": 66717.19999998808,
+        "translation_consumed": 68076.69999998808,
+        "tts_queued": 68076.80000001192,
+        "source_start": 64828,
+        "source_end_observed": 65775.5,
+        "source_stable_at": 66717.19999998808,
+        "translation_started": 66717.30000001192,
+        "translation_first_text": 67789.60000002384,
+        "translation_ready": 68076.30000001192,
+        "tts_text_sent": 68076.80000001192,
+        "first_audio_received": 68530.69999998808,
+        "playback_scheduled": 69502.56666664283,
+        "playback_started": 69504.60000002384,
+        "playback_finished": 70222.89999997616
+      },
+      "words": 1
+    },
+    {
+      "unitId": "en-10-0-5",
+      "timing": {
+        "translation_queued": 69528.39999997616,
+        "translation_consumed": 70949.80000001192,
+        "tts_queued": 70949.80000001192,
+        "source_start": 66327.10000002384,
+        "source_end_observed": 68973.89999997616,
+        "source_stable_at": 69528.39999997616,
+        "translation_started": 69528.39999997616,
+        "translation_first_text": 70538.69999998808,
+        "translation_ready": 70948.80000001192,
+        "tts_text_sent": 70949.80000001192,
+        "first_audio_received": 71368.89999997616,
+        "playback_scheduled": 71416.30000001192,
+        "playback_started": 71421.69999998808,
+        "playback_finished": 73331.30000001192
+      },
+      "words": 5
+    },
+    {
+      "unitId": "en-11-0-2",
+      "timing": {
+        "translation_queued": 70971.89999997616,
+        "translation_consumed": 72152,
+        "tts_queued": 72152,
+        "source_start": 69036.89999997616,
+        "source_end_observed": 70182.30000001192,
+        "source_stable_at": 70971.89999997616,
+        "translation_started": 70972,
+        "translation_first_text": 71893.60000002384,
+        "translation_ready": 72151.69999998808,
+        "tts_text_sent": 72152,
+        "first_audio_received": 73144.80000001192,
+        "playback_scheduled": 73455.43333335717,
+        "playback_started": 73461.10000002384,
+        "playback_finished": 74573.30000001192
+      },
+      "words": 2
+    },
+    {
+      "unitId": "en-12-0-6",
+      "timing": {
+        "translation_queued": 74136,
+        "translation_consumed": 75432.39999997616,
+        "tts_queued": 75432.39999997616,
+        "source_start": 70327,
+        "source_end_observed": 73772.60000002384,
+        "source_stable_at": 74136,
+        "translation_started": 74136,
+        "translation_first_text": 75145.60000002384,
+        "translation_ready": 75431.69999998808,
+        "tts_text_sent": 75432.5,
+        "first_audio_received": 75824.39999997616,
+        "playback_scheduled": 75859.13333334525,
+        "playback_started": 75860.10000002384,
+        "playback_finished": 78673.10000002384
+      },
+      "words": 6
+    },
+    {
+      "unitId": "en-13-0-7",
+      "timing": {
+        "translation_queued": 77459.30000001192,
+        "translation_consumed": 78873.80000001192,
+        "tts_queued": 78873.80000001192,
+        "source_start": 73836.80000001192,
+        "source_end_observed": 76904.80000001192,
+        "source_stable_at": 77459.30000001192,
+        "translation_started": 77459.30000001192,
+        "translation_first_text": 78780.19999998808,
+        "translation_ready": 78873.30000001192,
+        "tts_text_sent": 78873.80000001192,
+        "first_audio_received": 79328,
+        "playback_scheduled": 79374.89999997616,
+        "playback_started": 79372.5,
+        "playback_finished": 81361.60000002384
+      },
+      "words": 7
+    },
+    {
+      "unitId": "en-14-0-5",
+      "timing": {
+        "translation_queued": 79891.30000001192,
+        "translation_consumed": 81446,
+        "tts_queued": 81446,
+        "source_start": 76830.39999997616,
+        "source_end_observed": 79486.10000002384,
+        "source_stable_at": 79891.30000001192,
+        "translation_started": 79891.30000001192,
+        "translation_first_text": 81126.60000002384,
+        "translation_ready": 81445.60000002384,
+        "tts_text_sent": 81446,
+        "first_audio_received": 82140.80000001192,
+        "playback_scheduled": 82172.60000002384,
+        "playback_started": 82176.19999998808,
+        "playback_finished": 83592.89999997616
+      },
+      "words": 5
+    },
+    {
+      "unitId": "en-15-0-2",
+      "timing": {
+        "translation_queued": 81144,
+        "translation_consumed": 82845.19999998808,
+        "tts_queued": 82845.19999998808,
+        "source_start": 79527.69999998808,
+        "source_end_observed": 80689.69999998808,
+        "source_stable_at": 81144,
+        "translation_started": 81144,
+        "translation_first_text": 82216.10000002384,
+        "translation_ready": 82844.69999998808,
+        "tts_text_sent": 82845.19999998808,
+        "first_audio_received": 83454.5,
+        "playback_scheduled": 83739.33333333333,
+        "playback_started": 83752.39999997616,
+        "playback_finished": 84528.10000002384
+      },
+      "words": 2
+    },
+    {
+      "unitId": "en-16-0-2",
+      "timing": {
+        "translation_queued": 82371.10000002384,
+        "translation_consumed": 83676.69999998808,
+        "tts_queued": 83676.69999998808,
+        "source_start": 80427,
+        "source_end_observed": 81762.39999997616,
+        "source_stable_at": 82371.10000002384,
+        "translation_started": 82371.10000002384,
+        "translation_first_text": 83383.89999997616,
+        "translation_ready": 83676.10000002384,
+        "tts_text_sent": 83676.69999998808,
+        "first_audio_received": 84312.5,
+        "playback_scheduled": 84678.43333335717,
+        "playback_started": 84683,
+        "playback_finished": 85251.60000002384
+      },
+      "words": 2
+    },
+    {
+      "unitId": "en-17-0-8",
+      "timing": {
+        "translation_queued": 86455,
+        "translation_consumed": 89549.5,
+        "tts_queued": 89549.5,
+        "source_start": 82027.19999998808,
+        "source_end_observed": 86094,
+        "source_stable_at": 86455,
+        "translation_started": 86455.10000002384,
+        "translation_first_text": 88879.10000002384,
+        "translation_ready": 89548.19999998808,
+        "tts_text_sent": 89549.5,
+        "first_audio_received": 90173.60000002384,
+        "playback_scheduled": 90216.06666664282,
+        "playback_started": 90227.10000002384,
+        "playback_finished": 93013.69999998808
+      },
+      "words": 8
+    },
+    {
+      "unitId": "en-18-0-7",
+      "timing": {
+        "translation_queued": 90229,
+        "translation_consumed": 92216.30000001192,
+        "tts_queued": 92216.30000001192,
+        "source_start": 85837.19999998808,
+        "source_end_observed": 89983.39999997616,
+        "source_stable_at": 90229,
+        "translation_started": 90229,
+        "translation_first_text": 92198.60000002384,
+        "translation_ready": 92215.80000001192,
+        "tts_text_sent": 92216.30000001192,
+        "first_audio_received": 93182.60000002384,
+        "playback_scheduled": 93208.33333333333,
+        "playback_started": 93209.80000001192,
+        "playback_finished": 95129.39999997616
+      },
+      "words": 7
+    },
+    {
+      "unitId": "en-19-0-4",
+      "timing": {
+        "translation_queued": 92102,
+        "translation_consumed": 124982.69999998808,
+        "tts_queued": 124982.80000001192,
+        "source_start": 89627.10000002384,
+        "source_end_observed": 91783.19999998808,
+        "source_stable_at": 92102,
+        "translation_started": 92102,
+        "translation_first_text": 93643,
+        "translation_ready": 124982.69999998808,
+        "tts_text_sent": 124982.80000001192,
+        "first_audio_received": 125585.69999998808,
+        "playback_scheduled": 125623.5,
+        "playback_started": 125625.80000001192,
+        "playback_finished": 127330.80000001192
+      },
+      "words": 4
+    },
+    {
+      "unitId": "en-20-0-4",
+      "timing": {
+        "translation_queued": 95164.30000001192,
+        "translation_consumed": 124986.89999997616,
+        "tts_queued": 124987,
+        "source_start": 92027.30000001192,
+        "source_end_observed": 94695.69999998808,
+        "source_stable_at": 95164.30000001192,
+        "translation_started": 95164.30000001192,
+        "translation_first_text": 96524.39999997616,
+        "translation_ready": 96633.80000001192,
+        "tts_text_sent": 124989.80000001192,
+        "first_audio_received": 125600.60000002384,
+        "playback_scheduled": 127817.53333332142,
+        "playback_started": 127857.60000002384,
+        "playback_finished": 129502.89999997616
+      },
+      "words": 4
+    },
+    {
+      "unitId": "en-21-0-12",
+      "timing": {
+        "translation_queued": 101847.19999998808,
+        "translation_consumed": 124992.39999997616,
+        "tts_queued": 124992.39999997616,
+        "source_start": 94727,
+        "source_end_observed": 101491.69999998808,
+        "source_stable_at": 101847.19999998808,
+        "translation_started": 101847.19999998808,
+        "translation_first_text": 102998.60000002384,
+        "translation_ready": 103620.10000002384,
+        "tts_text_sent": 124994.60000002384,
+        "first_audio_received": 125621.19999998808,
+        "playback_scheduled": 129875.03333332141,
+        "playback_started": 129915,
+        "playback_finished": 133761.39999997616
+      },
+      "words": 12
+    },
+    {
+      "unitId": "en-22-0-5",
+      "timing": {
+        "translation_queued": 107991.30000001192,
+        "translation_consumed": 124997.60000002384,
+        "tts_queued": 124997.60000002384,
+        "source_start": 101227.10000002384,
+        "source_end_observed": 104561.39999997616,
+        "source_stable_at": 107991.30000001192,
+        "translation_started": 107991.5,
+        "translation_first_text": 109022.80000001192,
+        "translation_ready": 109348.10000002384,
+        "tts_text_sent": 125000.39999997616,
+        "first_audio_received": 126935.5,
+        "playback_scheduled": 134217.7666666905,
+        "playback_started": 134224.5,
+        "playback_finished": 136460.60000002384
+      },
+      "words": 5
+    },
+    {
+      "unitId": "en-22-5-6",
+      "timing": {
+        "translation_queued": 108451.10000002384,
+        "translation_consumed": 125002.10000002384,
+        "tts_queued": 125002.10000002384,
+        "source_start": 107639.5,
+        "source_end_observed": 107639.5,
+        "source_stable_at": 108451.10000002384,
+        "translation_started": 109348.10000002384,
+        "translation_first_text": 110348.10000002384,
+        "translation_ready": 110636.19999998808,
+        "tts_text_sent": 125004.10000002384,
+        "first_audio_received": 127135.69999998808,
+        "playback_scheduled": 136561.10000002384,
+        "playback_started": 136574.80000001192,
+        "playback_finished": 137382.10000002384
+      },
+      "words": 1
+    },
+    {
+      "unitId": "en-23-0-2",
+      "timing": {
+        "translation_queued": 108455.60000002384,
+        "translation_consumed": 125006.10000002384,
+        "tts_queued": 125006.10000002384,
+        "source_start": 105337.19999998808,
+        "source_end_observed": 108452.19999998808,
+        "source_stable_at": 108455.60000002384,
+        "translation_started": 109787.69999998808,
+        "translation_first_text": 110838.69999998808,
+        "translation_ready": 111149.39999997616,
+        "tts_text_sent": 125007.89999997616,
+        "first_audio_received": 127820.30000001192,
+        "playback_scheduled": 138012,
+        "playback_started": 138035.69999998808,
+        "playback_finished": 138783.69999998808
+      },
+      "words": 2
+    },
+    {
+      "unitId": "en-24-0-6",
+      "timing": {
+        "translation_queued": 111568.69999998808,
+        "translation_consumed": 125009.80000001192,
+        "tts_queued": 125009.80000001192,
+        "source_start": 106537.19999998808,
+        "source_end_observed": 110709.30000001192,
+        "source_stable_at": 111568.69999998808,
+        "translation_started": 111568.69999998808,
+        "translation_first_text": 112707.80000001192,
+        "translation_ready": 113037.19999998808,
+        "tts_text_sent": 125010.69999998808,
+        "first_audio_received": 127821.80000001192,
+        "playback_scheduled": 138953.89999997616,
+        "playback_started": 138963.39999997616,
+        "playback_finished": 141928.80000001192
+      },
+      "words": 6
+    },
+    {
+      "unitId": "en-25-0-12",
+      "timing": {
+        "translation_queued": 117348.39999997616,
+        "translation_consumed": 125012.10000002384,
+        "tts_queued": 125012.10000002384,
+        "source_start": 111037.10000002384,
+        "source_end_observed": 117078.10000002384,
+        "source_stable_at": 117348.39999997616,
+        "translation_started": 117348.39999997616,
+        "translation_first_text": 118773.69999998808,
+        "translation_ready": 119536.89999997616,
+        "tts_text_sent": 125013,
+        "first_audio_received": 131604.89999997616,
+        "playback_scheduled": 142783.86666665474,
+        "playback_started": 142791.89999997616,
+        "playback_finished": 147734.39999997616
+      },
+      "words": 12
+    },
+    {
+      "unitId": "en-26-0-2",
+      "timing": {
+        "translation_queued": 119702,
+        "translation_consumed": 125014.10000002384,
+        "tts_queued": 125014.10000002384,
+        "source_start": 117437,
+        "source_end_observed": 118777.80000001192,
+        "source_stable_at": 119702,
+        "translation_started": 119702,
+        "translation_first_text": 120873.89999997616,
+        "translation_ready": 121118.69999998808,
+        "tts_text_sent": 125015.19999998808,
+        "first_audio_received": 134419.19999998808,
+        "playback_scheduled": 148592.69999998808,
+        "playback_started": 148602.69999998808,
+        "playback_finished": 149563.5
+      },
+      "words": 2
+    },
+    {
+      "unitId": "en-27-0-5",
+      "timing": {
+        "translation_queued": 122062.10000002384,
+        "translation_consumed": 125016.69999998808,
+        "tts_queued": 125016.69999998808,
+        "source_start": 119037.10000002384,
+        "source_end_observed": 121569,
+        "source_stable_at": 122062.10000002384,
+        "translation_started": 122062.10000002384,
+        "translation_first_text": 123064.5,
+        "translation_ready": 123340.19999998808,
+        "tts_text_sent": 125017.80000001192,
+        "first_audio_received": 134420,
+        "playback_scheduled": 149626.10000002384,
+        "playback_started": 149631.89999997616,
+        "playback_finished": 151329.80000001192
+      },
+      "words": 5
+    },
+    {
+      "unitId": "en-28-0-14",
+      "timing": {
+        "translation_queued": 131465.5,
+        "translation_consumed": 133954.30000001192,
+        "tts_queued": 133954.30000001192,
+        "source_start": 121227,
+        "source_end_observed": 131217.19999998808,
+        "source_stable_at": 131465.5,
+        "translation_started": 131465.5,
+        "translation_first_text": 133914.39999997616,
+        "translation_ready": 133953.69999998808,
+        "tts_text_sent": 133954.30000001192,
+        "first_audio_received": 134907,
+        "playback_scheduled": 151474.06666664284,
+        "playback_started": 151498.30000001192,
+        "playback_finished": 155563.5
+      },
+      "words": 14
+    },
+    {
+      "unitId": "en-29-0-11",
+      "timing": {
+        "translation_queued": 132800.80000001192,
+        "translation_consumed": 135812.60000002384,
+        "tts_queued": 135812.69999998808,
+        "source_start": 128027,
+        "source_end_observed": 132532.30000001192,
+        "source_stable_at": 132800.80000001192,
+        "translation_started": 132800.89999997616,
+        "translation_first_text": 135334.5,
+        "translation_ready": 135811.69999998808,
+        "tts_text_sent": 135812.69999998808,
+        "first_audio_received": 139053,
+        "playback_scheduled": 156292.9666666786,
+        "playback_started": 156293.39999997616,
+        "playback_finished": 159241.80000001192
+      },
+      "words": 11
+    },
+    {
+      "unitId": "en-30-0-10",
+      "timing": {
+        "translation_queued": 136570,
+        "translation_consumed": 139667,
+        "tts_queued": 139667,
+        "source_start": 131627,
+        "source_end_observed": 135980.39999997616,
+        "source_stable_at": 136570,
+        "translation_started": 136570,
+        "translation_first_text": 139192.69999998808,
+        "translation_ready": 139666,
+        "tts_text_sent": 139667,
+        "first_audio_received": 140845.39999997616,
+        "playback_scheduled": 159702.5333333214,
+        "playback_started": 159715.30000001192,
+        "playback_finished": 163882.10000002384
+      },
+      "words": 10
+    },
+    {
+      "unitId": "en-31-0-6",
+      "timing": {
+        "translation_queued": 139102.5,
+        "translation_consumed": 140765.89999997616,
+        "tts_queued": 140765.89999997616,
+        "source_start": 135837.19999998808,
+        "source_end_observed": 138825.39999997616,
+        "source_stable_at": 139102.5,
+        "translation_started": 139102.5,
+        "translation_first_text": 140366.89999997616,
+        "translation_ready": 140765.19999998808,
+        "tts_text_sent": 140765.89999997616,
+        "first_audio_received": 142341.69999998808,
+        "playback_scheduled": 164160.1666666667,
+        "playback_started": 164163.10000002384,
+        "playback_finished": 166130.69999998808
+      },
+      "words": 6
+    },
+    {
+      "unitId": "en-32-0-2",
+      "timing": {
+        "translation_queued": 139678.5,
+        "translation_consumed": 141109.69999998808,
+        "tts_queued": 141109.69999998808,
+        "source_start": 138032.60000002384,
+        "source_end_observed": 139390.39999997616,
+        "source_stable_at": 139678.5,
+        "translation_started": 139678.5,
+        "translation_first_text": 140809.80000001192,
+        "translation_ready": 141109,
+        "tts_text_sent": 141109.69999998808,
+        "first_audio_received": 142798,
+        "playback_scheduled": 166308.93333335718,
+        "playback_started": 166312.39999997616,
+        "playback_finished": 166745.89999997616
+      },
+      "words": 2
+    }
+  ],
+  "blocks": [
+    {
+      "samples": 21692,
+      "peak": 0.232452392578125,
+      "rms": 0.04318153810944772,
+      "start": 57039.60000002384,
+      "end": 57943.43333335718,
+      "scheduledAt": 57035.10000002384
+    },
+    {
+      "samples": 27676,
+      "peak": 0.09912109375,
+      "rms": 0.01997491224822682,
+      "start": 58319.60000002384,
+      "end": 59472.76666669051,
+      "scheduledAt": 58311.60000002384
+    },
+    {
+      "samples": 47872,
+      "peak": 0.11029052734375,
+      "rms": 0.024287933068855464,
+      "start": 60090.26666669051,
+      "end": 62084.93333335718,
+      "scheduledAt": 60086.5
+    },
+    {
+      "samples": 8228,
+      "peak": 0.07122802734375,
+      "rms": 0.013420653447642,
+      "start": 62084.93333335718,
+      "end": 62427.76666669051,
+      "scheduledAt": 61743.10000002384
+    },
+    {
+      "samples": 52360,
+      "peak": 0.1634521484375,
+      "rms": 0.02268519938815204,
+      "start": 64447.60000002384,
+      "end": 66629.26666669051,
+      "scheduledAt": 64447.89999997616
+    },
+    {
+      "samples": 43384,
+      "peak": 0.151947021484375,
+      "rms": 0.02371097328845473,
+      "start": 66831.60000002384,
+      "end": 68639.26666669051,
+      "scheduledAt": 66822.69999998808
+    },
+    {
+      "samples": 20196,
+      "peak": 0.150787353515625,
+      "rms": 0.021001666582671243,
+      "start": 68639.26666669051,
+      "end": 69480.76666669051,
+      "scheduledAt": 68528.10000002384
+    },
+    {
+      "samples": 20944,
+      "peak": 0.127105712890625,
+      "rms": 0.019010937881479055,
+      "start": 69480.76666669051,
+      "end": 70353.43333335718,
+      "scheduledAt": 68533
+    },
+    {
+      "samples": 49368,
+      "peak": 0.220428466796875,
+      "rms": 0.02859070111502866,
+      "start": 71391.60000002384,
+      "end": 73448.60000002384,
+      "scheduledAt": 71379.60000002384
+    },
+    {
+      "samples": 29920,
+      "peak": 0.157257080078125,
+      "rms": 0.020690140021978498,
+      "start": 73448.60000002384,
+      "end": 74695.26666669051,
+      "scheduledAt": 73146.5
+    },
+    {
+      "samples": 36652,
+      "peak": 0.17938232421875,
+      "rms": 0.03341386038757254,
+      "start": 75839.60000002384,
+      "end": 77366.76666669051,
+      "scheduledAt": 75828.89999997616
+    },
+    {
+      "samples": 34408,
+      "peak": 0.08380126953125,
+      "rms": 0.017323486216540406,
+      "start": 77366.76666669051,
+      "end": 78800.43333335718,
+      "scheduledAt": 75912.60000002384
+    },
+    {
+      "samples": 51612,
+      "peak": 0.168548583984375,
+      "rms": 0.02434263946385345,
+      "start": 79338.26666669051,
+      "end": 81488.76666669051,
+      "scheduledAt": 79333.30000001192
+    },
+    {
+      "samples": 38148,
+      "peak": 0.109161376953125,
+      "rms": 0.019404995197534768,
+      "start": 82148.93333335717,
+      "end": 83738.43333335718,
+      "scheduledAt": 82145.69999998808
+    },
+    {
+      "samples": 21692,
+      "peak": 0.1356201171875,
+      "rms": 0.016927118189545395,
+      "start": 83738.43333335718,
+      "end": 84642.2666666905,
+      "scheduledAt": 83456.10000002384
+    },
+    {
+      "samples": 17952,
+      "peak": 0.07861328125,
+      "rms": 0.012544540725938124,
+      "start": 84642.2666666905,
+      "end": 85390.2666666905,
+      "scheduledAt": 84314.5
+    },
+    {
+      "samples": 29920,
+      "peak": 0.13226318359375,
+      "rms": 0.02573006209579112,
+      "start": 90191.60000002384,
+      "end": 91438.26666669051,
+      "scheduledAt": 90179.30000001192
+    },
+    {
+      "samples": 40392,
+      "peak": 0.10931396484375,
+      "rms": 0.023058216671161102,
+      "start": 91438.26666669051,
+      "end": 93121.26666669051,
+      "scheduledAt": 90357.89999997616
+    },
+    {
+      "samples": 50116,
+      "peak": 0.1619873046875,
+      "rms": 0.02576624993044265,
+      "start": 93188.93333335717,
+      "end": 95277.10000002384,
+      "scheduledAt": 93185.89999997616
+    },
+    {
+      "samples": 40392,
+      "peak": 0.10589599609375,
+      "rms": 0.018185878632681132,
+      "start": 125604.93333335718,
+      "end": 127287.93333335718,
+      "scheduledAt": 125593.10000002384
+    },
+    {
+      "samples": 16456,
+      "peak": 0.097381591796875,
+      "rms": 0.01149809780509698,
+      "start": 127287.93333335718,
+      "end": 127973.60000002384,
+      "scheduledAt": 125603.69999998808
+    },
+    {
+      "samples": 40392,
+      "peak": 0.149200439453125,
+      "rms": 0.02466157932600873,
+      "start": 127973.60000002384,
+      "end": 129656.60000002384,
+      "scheduledAt": 125615.30000001192
+    },
+    {
+      "samples": 28424,
+      "peak": 0.11639404296875,
+      "rms": 0.025566340400187584,
+      "start": 129656.60000002384,
+      "end": 130840.93333335718,
+      "scheduledAt": 125623
+    },
+    {
+      "samples": 40392,
+      "peak": 0.2005615234375,
+      "rms": 0.028019680712214154,
+      "start": 130840.93333335718,
+      "end": 132523.93333335718,
+      "scheduledAt": 126645.80000001192
+    },
+    {
+      "samples": 31416,
+      "peak": 0.14306640625,
+      "rms": 0.01822095675673942,
+      "start": 132523.93333335718,
+      "end": 133832.93333335718,
+      "scheduledAt": 126655.39999997616
+    },
+    {
+      "samples": 39644,
+      "peak": 0.1552734375,
+      "rms": 0.025118559510906597,
+      "start": 133832.93333335718,
+      "end": 135484.76666669053,
+      "scheduledAt": 126937.5
+    },
+    {
+      "samples": 12716,
+      "peak": 0.096221923828125,
+      "rms": 0.022760770264634213,
+      "start": 135484.76666669053,
+      "end": 136014.60000002384,
+      "scheduledAt": 126965.19999998808
+    },
+    {
+      "samples": 39644,
+      "peak": 0.1226806640625,
+      "rms": 0.015517590238586395,
+      "start": 136014.60000002384,
+      "end": 137666.43333335718,
+      "scheduledAt": 127137.80000001192
+    },
+    {
+      "samples": 40392,
+      "peak": 0.1759033203125,
+      "rms": 0.029180754619179874,
+      "start": 137666.43333335718,
+      "end": 139349.43333335718,
+      "scheduledAt": 127825.60000002384
+    },
+    {
+      "samples": 1496,
+      "peak": 0.076873779296875,
+      "rms": 0.0195690771718721,
+      "start": 139349.43333335718,
+      "end": 139411.7666666905,
+      "scheduledAt": 127835.80000001192
+    },
+    {
+      "samples": 39644,
+      "peak": 0.141357421875,
+      "rms": 0.02226354783272372,
+      "start": 139411.7666666905,
+      "end": 141063.60000002384,
+      "scheduledAt": 131590.30000001192
+    },
+    {
+      "samples": 36652,
+      "peak": 0.074798583984375,
+      "rms": 0.007850513093975442,
+      "start": 141063.60000002384,
+      "end": 142590.7666666905,
+      "scheduledAt": 131597.69999998808
+    },
+    {
+      "samples": 40392,
+      "peak": 0.152557373046875,
+      "rms": 0.01824335477447339,
+      "start": 142590.7666666905,
+      "end": 144273.76666669053,
+      "scheduledAt": 131607.5
+    },
+    {
+      "samples": 14212,
+      "peak": 0.085601806640625,
+      "rms": 0.025343733976993407,
+      "start": 144273.76666669053,
+      "end": 144865.93333335718,
+      "scheduledAt": 131837.19999998808
+    },
+    {
+      "samples": 40392,
+      "peak": 0.143768310546875,
+      "rms": 0.020884830890516706,
+      "start": 144865.93333335718,
+      "end": 146548.93333335718,
+      "scheduledAt": 132852.60000002384
+    },
+    {
+      "samples": 35904,
+      "peak": 0.05181884765625,
+      "rms": 0.013047755702429982,
+      "start": 146548.93333335718,
+      "end": 148044.93333335718,
+      "scheduledAt": 133298
+    },
+    {
+      "samples": 81532,
+      "peak": 0.1490478515625,
+      "rms": 0.026175822504958444,
+      "start": 148044.93333335718,
+      "end": 151442.10000002384,
+      "scheduledAt": 134422.19999998808
+    },
+    {
+      "samples": 32164,
+      "peak": 0.168212890625,
+      "rms": 0.02624820181909514,
+      "start": 151442.10000002384,
+      "end": 152782.2666666905,
+      "scheduledAt": 134909.39999997616
+    },
+    {
+      "samples": 38896,
+      "peak": 0.101470947265625,
+      "rms": 0.02414389301144537,
+      "start": 152782.2666666905,
+      "end": 154402.93333335718,
+      "scheduledAt": 136849.19999998808
+    },
+    {
+      "samples": 40392,
+      "peak": 0.096588134765625,
+      "rms": 0.014414117440238858,
+      "start": 154402.93333335718,
+      "end": 156085.93333335718,
+      "scheduledAt": 138802.69999998808
+    },
+    {
+      "samples": 32164,
+      "peak": 0.102203369140625,
+      "rms": 0.01668472738044143,
+      "start": 156085.93333335718,
+      "end": 157426.10000002384,
+      "scheduledAt": 139054.80000001192
+    },
+    {
+      "samples": 39644,
+      "peak": 0.104095458984375,
+      "rms": 0.020897452731764028,
+      "start": 157426.10000002384,
+      "end": 159077.93333335718,
+      "scheduledAt": 140710.19999998808
+    },
+    {
+      "samples": 26928,
+      "peak": 0.125518798828125,
+      "rms": 0.017386960860780547,
+      "start": 159077.93333335718,
+      "end": 160199.93333335718,
+      "scheduledAt": 140847.10000002384
+    },
+    {
+      "samples": 40392,
+      "peak": 0.142333984375,
+      "rms": 0.022321075787517804,
+      "start": 160199.93333335718,
+      "end": 161882.93333335718,
+      "scheduledAt": 141001.5
+    },
+    {
+      "samples": 5236,
+      "peak": 0.0802001953125,
+      "rms": 0.017141320505376104,
+      "start": 161882.93333335718,
+      "end": 162101.10000002384,
+      "scheduledAt": 141007.69999998808
+    },
+    {
+      "samples": 40392,
+      "peak": 0.100372314453125,
+      "rms": 0.015366279882606368,
+      "start": 162101.10000002384,
+      "end": 163784.10000002384,
+      "scheduledAt": 141770.60000002384
+    },
+    {
+      "samples": 29920,
+      "peak": 0.137298583984375,
+      "rms": 0.023178592680192903,
+      "start": 163784.10000002384,
+      "end": 165030.76666669053,
+      "scheduledAt": 142344.5
+    },
+    {
+      "samples": 43384,
+      "peak": 0.092041015625,
+      "rms": 0.013478276156565088,
+      "start": 165030.76666669053,
+      "end": 166838.43333335718,
+      "scheduledAt": 142799.80000001192
+    },
+    {
+      "samples": 691,
+      "peak": 0.000091552734375,
+      "rms": 0.00003151699372751582,
+      "start": 166838.43333335718,
+      "end": 166867.22500002384,
+      "scheduledAt": 142804.10000002384
+    }
+  ],
+  "gaps": [
+    {
+      "start": 59219.60000002384,
+      "end": 60240.26666669051,
+      "duration": 1020.6666666666715,
+      "causes": [
+        {
+          "at": 60011,
+          "classification": "ELEVENLABS_WAITING_FOR_AUDIO"
+        },
+        {
+          "at": 60076.19999998808,
+          "classification": "JITTER_OR_PCM_FRAME_WAIT"
+        },
+        {
+          "at": 60084.80000001192,
+          "classification": "AUDIO_STREAM_UNDERRUN"
+        },
+        {
+          "at": 60086.69999998808,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    },
+    {
+      "start": 62344.93333335718,
+      "end": 64538.93333335718,
+      "duration": 2194,
+      "causes": [
+        {
+          "at": 63112.5,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 63828.30000001192,
+          "classification": "ELEVENLABS_WAITING_FOR_AUDIO"
+        },
+        {
+          "at": 64440.89999997616,
+          "classification": "JITTER_OR_PCM_FRAME_WAIT"
+        },
+        {
+          "at": 64445.60000002384,
+          "classification": "AUDIO_STREAM_UNDERRUN"
+        },
+        {
+          "at": 64448.10000002384,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    },
+    {
+      "start": 70220.76666669051,
+      "end": 71610.93333335718,
+      "duration": 1390.1666666666715,
+      "causes": [
+        {
+          "at": 70971.5,
+          "classification": "ELEVENLABS_WAITING_FOR_AUDIO"
+        },
+        {
+          "at": 71369,
+          "classification": "JITTER_OR_PCM_FRAME_WAIT"
+        },
+        {
+          "at": 71377.5,
+          "classification": "AUDIO_STREAM_UNDERRUN"
+        },
+        {
+          "at": 71379.80000001192,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    },
+    {
+      "start": 74568.60000002384,
+      "end": 76010.93333335718,
+      "duration": 1442.333333333343,
+      "causes": [
+        {
+          "at": 75337.69999998808,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 75433,
+          "classification": "ELEVENLABS_WAITING_FOR_AUDIO"
+        },
+        {
+          "at": 75824.5,
+          "classification": "JITTER_OR_PCM_FRAME_WAIT"
+        },
+        {
+          "at": 75828.10000002384,
+          "classification": "AUDIO_STREAM_UNDERRUN"
+        },
+        {
+          "at": 75829.19999998808,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    },
+    {
+      "start": 78606.76666669051,
+      "end": 79440.26666669051,
+      "duration": 833.5,
+      "causes": [
+        {
+          "at": 79372.39999997616,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    },
+    {
+      "start": 81318.2666666905,
+      "end": 82149.60000002384,
+      "duration": 831.333333333343,
+      "causes": [
+        {
+          "at": 82089.30000001192,
+          "classification": "ELEVENLABS_WAITING_FOR_AUDIO"
+        },
+        {
+          "at": 82141.10000002384,
+          "classification": "JITTER_OR_PCM_FRAME_WAIT"
+        },
+        {
+          "at": 82144.30000001192,
+          "classification": "AUDIO_STREAM_UNDERRUN"
+        },
+        {
+          "at": 82146,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    },
+    {
+      "start": 85222.2666666905,
+      "end": 90330.93333335718,
+      "duration": 5108.666666666686,
+      "causes": [
+        {
+          "at": 85992.30000001192,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 86456,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 89550.10000002384,
+          "classification": "ELEVENLABS_WAITING_FOR_AUDIO"
+        },
+        {
+          "at": 90174.10000002384,
+          "classification": "JITTER_OR_PCM_FRAME_WAIT"
+        },
+        {
+          "at": 90177.30000001192,
+          "classification": "AUDIO_STREAM_UNDERRUN"
+        },
+        {
+          "at": 90179.60000002384,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    },
+    {
+      "start": 95068.93333335718,
+      "end": 125626.93333335718,
+      "duration": 30558,
+      "causes": [
+        {
+          "at": 95837.80000001192,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 97192.30000001192,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 97215.89999997616,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 98856.69999998808,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 98913.39999997616,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 100762.10000002384,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 100814.10000002384,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 102594.69999998808,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 102612.60000002384,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 104396.10000002384,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 104417.5,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 106944.30000001192,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 107012.39999997616,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 108422.69999998808,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 108447.89999997616,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 109790.39999997616,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 109819.10000002384,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 112309.80000001192,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 112317.60000002384,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 113806.5,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 113813.5,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 115259.89999997616,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 115312.60000002384,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 116675.39999997616,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 116704.10000002384,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 118330,
+          "classification": "ASR_WAITING"
+        },
+        {
+          "at": 118332.30000001192,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 119683.10000002384,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 119700.89999997616,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 120972.80000001192,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 121013.10000002384,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 122293.89999997616,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 122320,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 123637.19999998808,
+          "classification": "SEMANTIC_COMMITMENT"
+        },
+        {
+          "at": 123703.5,
+          "classification": "TRANSLATION_REQUEST"
+        },
+        {
+          "at": 124984.10000002384,
+          "classification": "ELEVENLABS_WAITING_FOR_AUDIO"
+        },
+        {
+          "at": 125586.60000002384,
+          "classification": "JITTER_OR_PCM_FRAME_WAIT"
+        },
+        {
+          "at": 125590.89999997616,
+          "classification": "AUDIO_STREAM_UNDERRUN"
+        },
+        {
+          "at": 125593.80000001192,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    },
+    {
+      "start": 141743.60000002384,
+      "end": 142885.60000002384,
+      "duration": 1142,
+      "causes": [
+        {
+          "at": 142511.30000001192,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    },
+    {
+      "start": 147668.93333335718,
+      "end": 148586.93333335718,
+      "duration": 918,
+      "causes": [
+        {
+          "at": 148428.89999997616,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    },
+    {
+      "start": 155482.93333335718,
+      "end": 156389.60000002384,
+      "duration": 906.666666666657,
+      "causes": [
+        {
+          "at": 156238,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    },
+    {
+      "start": 158966.10000002384,
+      "end": 159728.2666666905,
+      "duration": 762.166666666657,
+      "causes": [
+        {
+          "at": 159716.80000001192,
+          "classification": "PROVIDER_GENERATED_SILENCE"
+        }
+      ]
+    }
+  ],
+  "firstAudio": 8575.190666642826,
+  "tail": 28441.790666666697
+}

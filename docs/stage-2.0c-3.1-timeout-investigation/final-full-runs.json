@@ -1,0 +1,134 @@
+[
+  {
+    "label": "final-full-1",
+    "command": [
+      "npm",
+      "test",
+      "--",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/final-full-1.json"
+    ],
+    "wallMs": 8813.252958,
+    "exitCode": 0,
+    "passed": 1114,
+    "failed": 0,
+    "total": 1114,
+    "loadAfter": [
+      2.771484375,
+      3.5888671875,
+      4.078125
+    ],
+    "affected": [
+      {
+        "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/continuous-transcription-gateway.test.ts",
+        "title": "forwards all 45 seconds of PCM across sequential items while earlier finals are delayed",
+        "status": "passed",
+        "durationMs": 190.00862499999994,
+        "failureMessages": []
+      },
+      {
+        "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (before)",
+        "status": "passed",
+        "durationMs": 1032.49025,
+        "failureMessages": []
+      },
+      {
+        "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (after)",
+        "status": "passed",
+        "durationMs": 1139.549834,
+        "failureMessages": []
+      }
+    ]
+  },
+  {
+    "label": "final-full-2",
+    "command": [
+      "npm",
+      "test",
+      "--",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/final-full-2.json"
+    ],
+    "wallMs": 6130.574208000001,
+    "exitCode": 0,
+    "passed": 1114,
+    "failed": 0,
+    "total": 1114,
+    "loadAfter": [
+      2.62939453125,
+      3.54541015625,
+      4.06005859375
+    ],
+    "affected": [
+      {
+        "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/continuous-transcription-gateway.test.ts",
+        "title": "forwards all 45 seconds of PCM across sequential items while earlier finals are delayed",
+        "status": "passed",
+        "durationMs": 173.92716699999983,
+        "failureMessages": []
+      },
+      {
+        "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (before)",
+        "status": "passed",
+        "durationMs": 990.593167,
+        "failureMessages": []
+      },
+      {
+        "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (after)",
+        "status": "passed",
+        "durationMs": 1099.5717499999998,
+        "failureMessages": []
+      }
+    ]
+  },
+  {
+    "label": "final-full-3",
+    "command": [
+      "npm",
+      "test",
+      "--",
+      "--reporter=json",
+      "--outputFile",
+      "/tmp/final-full-3.json"
+    ],
+    "wallMs": 6281.2567500000005,
+    "exitCode": 0,
+    "passed": 1114,
+    "failed": 0,
+    "total": 1114,
+    "loadAfter": [
+      2.73876953125,
+      3.552734375,
+      4.0595703125
+    ],
+    "affected": [
+      {
+        "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/continuous-transcription-gateway.test.ts",
+        "title": "forwards all 45 seconds of PCM across sequential items while earlier finals are delayed",
+        "status": "passed",
+        "durationMs": 173.03466700000013,
+        "failureMessages": []
+      },
+      {
+        "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (before)",
+        "status": "passed",
+        "durationMs": 967.6886670000001,
+        "failureMessages": []
+      },
+      {
+        "file": "/Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/tests/stage195-replay.test.ts",
+        "title": "replays the exact physical Stage 1.9.4 transcript through production delivery (after)",
+        "status": "passed",
+        "durationMs": 1078.8770830000003,
+        "failureMessages": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "identity": {
+    "baseCommit": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+    "coreSourceHash": "cda13e62d921062f0a734589e992b460d643ef2c912c5d5436eb08fed6c82eea",
+    "handoffSourceHash": "a0a0920e93a4da6180da52b4fb0db72c12682963d74621c228db1620642e93b2",
+    "candidateSourceHash": "d157a64eb1151de1681c99db087160d3945d5caf7ab2916fa88d2ca78941bcb0",
+    "uncommitted": true,
+    "packageVersion": "stage-2.0c32-consolidated-human-retest-2"
+  },
+  "coreUnchanged": true,
+  "protectedBehaviorAndSchemaUnchanged": true,
+  "protectedSourceCounts": {
+    "validatedCore": 347,
+    "handoff": 26
+  },
+  "packageFiles": 68,
+  "zipSHA256": "b26aabba1aba4a665aae828113188e6d3ceec44cb08c5530968b2420a1dde4ab",
+  "zipBytes": 91863946,
+  "filesChangedInBrandPass": [
+    {
+      "path": "docs/stage-2.0c-3.2-apurebase-brand-source.md",
+      "kind": "ADDED"
+    },
+    {
+      "path": "docs/stage-2.0c-3.2-apurebase-brand-tokens.json",
+      "kind": "ADDED"
+    },
+    {
+      "path": "scripts/stage20c32-handoff/START-HERE.txt",
+      "kind": "MODIFIED"
+    },
+    {
+      "path": "scripts/stage20c32-package.ts",
+      "kind": "MODIFIED"
+    },
+    {
+      "path": "src/consent/stage32/handoff/App.tsx",
+      "kind": "MODIFIED"
+    },
+    {
+      "path": "src/consent/stage32/handoff/brand/apurebase-molecular-header.jpg",
+      "kind": "ADDED"
+    },
+    {
+      "path": "src/consent/stage32/handoff/brand/apurebase-wordmark.jpg",
+      "kind": "ADDED"
+    },
+    {
+      "path": "src/consent/stage32/handoff/style.css",
+      "kind": "MODIFIED"
+    },
+    {
+      "path": "tests/consent-stage20c32-package-brand.test.tsx",
+      "kind": "ADDED"
+    }
+  ],
+  "secretFindings": 0,
+  "privateFilesPackaged": 0,
+  "whitespace": "PASS",
+  "mainCheckoutClean": true,
+  "providerRequests": 0,
+  "additionalAudioGeneration": 0,
+  "technicalExport": "HUMAN_RETEST_INCOMPLETE",
+  "humanObservationsEntered": 0
+}

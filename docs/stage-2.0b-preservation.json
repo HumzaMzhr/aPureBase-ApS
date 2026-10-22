@@ -1,0 +1,660 @@
+{
+  "version": 1,
+  "recordedAt": "2026-10-18T00:07:53.991613+00:00",
+  "baselineFileCount": 105,
+  "unchangedExistingFiles": 98,
+  "changedExistingFiles": [
+    "src/consent/ConsentWorkspace.tsx",
+    "src/consent/classifier.ts",
+    "src/consent/consent.css",
+    "src/consent/consentGuard.ts",
+    "src/consent/definition.ts",
+    "src/consent/session.ts",
+    "src/consent/types.ts"
+  ],
+  "newSourceFiles": [
+    "src/consent/authority.ts",
+    "src/consent/email.ts"
+  ],
+  "stage196Changed": false,
+  "serverProviderChanged": false,
+  "existingPublicAssetsChanged": false,
+  "mainRouteChanged": false,
+  "existingTrackedDiffPreserved": true,
+  "trackedDiffBeforeSha256": "7aa81859e7d02c398c3e28fc09aee85cb3d72d41b052d9c5b90c233380ed0ae1",
+  "trackedDiffAfterSha256": "7aa81859e7d02c398c3e28fc09aee85cb3d72d41b052d9c5b90c233380ed0ae1",
+  "statusBefore": " M README.md\n M public/pcm-capture.js\n M scripts/generate-audio.ts\n M server/api.ts\n M server/continuousTranscription.ts\n M server/continuousVoice.ts\n M server/incrementalTranslation.ts\n M server/index.ts\n M server/liveTranscription.ts\n M src/main.tsx\n M src/streaming/LocalTestView.tsx\n M src/streaming/acousticTiming.ts\n M src/streaming/audioDiagnostics.ts\n M src/streaming/continuousRecognition.ts\n M src/streaming/continuousTranscriptionClient.ts\n M src/streaming/controlledOutput.ts\n M src/streaming/engine.ts\n M src/streaming/input.ts\n M src/streaming/localOutput.ts\n M src/streaming/localSession.ts\n M src/streaming/output.ts\n M src/streaming/peer.ts\n M src/streaming/scheduler.ts\n M src/streaming/semantic.ts\n M src/streaming/translationClient.ts\n M src/streaming/types.ts\n M src/streaming/voiceClient.ts\n M src/streaming/voiceIdentity.ts\n M tests/acoustic-timing.test.ts\n M tests/audio-diagnostics.test.ts\n M tests/backpressure.test.ts\n M tests/continuous-recognition.test.ts\n M tests/continuous-transcription-client.test.ts\n M tests/continuous-transcription-gateway.test.ts\n M tests/continuous-voice-client.test.ts\n M tests/fixtures/voice.ts\n M tests/local-output.test.ts\n M tests/local-pipeline.test.ts\n M tests/local-session.test.ts\n M tests/local-view.test.tsx\n M tests/server.test.ts\n M tests/stream-server.test.ts\n M tests/streaming-scheduler.test.ts\n M tests/streaming-voice.test.ts\n M tests/uncertainty-routing.test.ts\n?? docs/stage-2.0a-validation.txt\n?? docs/stage-2.0a-workspace.jpg\n?? docs/stage-2.0a.md\n?? scripts/analyze-stage192-latency.ts\n?? scripts/analyze-stage193-baseline.ts\n?? scripts/analyze-stage194-baseline.ts\n?? scripts/analyze-stage195-physical.ts\n?? scripts/analyze-stage196-batch.py\n?? scripts/analyze-stage196-physical.py\n?? scripts/analyze-stage196-short-consent.py\n?? scripts/analyze-stage196-stress.py\n?? scripts/score-stage195-asr.ts\n?? scripts/stage192-simulation.ts\n?? scripts/stage193-simulation.ts\n?? scripts/stage196-batch-collector.mjs\n?? scripts/stage196-batch-prepare.py\n?? scripts/stage196-batch.html\n?? scripts/stage196-stress-collector.mjs\n?? scripts/stage196-stress-prepare.py\n?? scripts/stage196-stress-support.checks.mjs\n?? scripts/stage196-stress-support.mjs\n?? scripts/stage196-stress.html\n?? server/transcriptionContext.ts\n?? src/config/realtimeDelivery.ts\n?? src/consent/\n?? src/streaming/completeGreeting.ts\n?? src/streaming/deliveryGain.ts\n?? src/streaming/pcmProvenance.ts\n?? src/streaming/recognitionAudit.ts\n?? src/streaming/sessionBreakdown.ts\n?? src/streaming/sessionDiagnostics.ts\n?? src/streaming/validatedGreeting.ts\n?? src/streaming/voiceDemand.ts\n?? tests/consent-foundation.test.ts\n?? tests/consent-transcription.test.ts\n?? tests/consent-view.test.tsx\n?? tests/fixtures/stage191-engine.ts\n?? tests/fixtures/stage191-semantic.ts\n?? tests/fixtures/stage192-engine.ts\n?? tests/fixtures/stage192-semantic.ts\n?? tests/fixtures/stage193-physical-metadata.json\n?? tests/fixtures/stage193-voiceClient.ts\n?? tests/fixtures/stage194-continuousRecognition.ts\n?? tests/fixtures/stage194-greeting.ts\n?? tests/fixtures/stage194-physical-metadata.json\n?? tests/fixtures/stage195-continuousRecognition.ts\n?? tests/fixtures/stage195-locked-files.json\n?? tests/fixtures/stage195-physical-session.json\n?? tests/fixtures/stage195-reference.json\n?? tests/fixtures/stage195-semantic.ts\n?? tests/fixtures/stage195-voiceClient.ts\n?? tests/fixtures/stage196-before-short-voiceClient.ts\n?? tests/fixtures/stage196-physical-session.json\n?? tests/fixtures/stage196-short-consent-physical.json\n?? tests/fixtures/stage196-short-consent-reference.json\n?? tests/pcm-provenance.test.ts\n?? tests/peer-provenance.test.ts\n?? tests/session-diagnostics.test.ts\n?? tests/stage192-analysis.test.ts\n?? tests/stage192-engine.test.ts\n?? tests/stage192-performance.test.ts\n?? tests/stage192-provenance.test.ts\n?? tests/stage193-performance.test.ts\n?? tests/stage193-physical.test.ts\n?? tests/stage193-quality.test.ts\n?? tests/stage194-replay.test.ts\n?? tests/stage194-starvation.test.ts\n?? tests/stage195-diagnostics.test.ts\n?? tests/stage195-recognition.test.ts\n?? tests/stage195-replay.test.ts\n?? tests/stage196-diagnostics.test.ts\n?? tests/stage196-forensic.test.ts\n?? tests/stage196-recognition.test.ts\n?? tests/stage196-semantic.test.ts\n?? tests/stage196-short-consent.test.ts\n?? tests/stage196-sustained-stress.test.ts\n?? tests/stage196-translation.test.ts\n?? tests/translation-dispatch.test.ts\n",
+  "statusAfter": " M README.md\n M public/pcm-capture.js\n M scripts/generate-audio.ts\n M server/api.ts\n M server/continuousTranscription.ts\n M server/continuousVoice.ts\n M server/incrementalTranslation.ts\n M server/index.ts\n M server/liveTranscription.ts\n M src/main.tsx\n M src/streaming/LocalTestView.tsx\n M src/streaming/acousticTiming.ts\n M src/streaming/audioDiagnostics.ts\n M src/streaming/continuousRecognition.ts\n M src/streaming/continuousTranscriptionClient.ts\n M src/streaming/controlledOutput.ts\n M src/streaming/engine.ts\n M src/streaming/input.ts\n M src/streaming/localOutput.ts\n M src/streaming/localSession.ts\n M src/streaming/output.ts\n M src/streaming/peer.ts\n M src/streaming/scheduler.ts\n M src/streaming/semantic.ts\n M src/streaming/translationClient.ts\n M src/streaming/types.ts\n M src/streaming/voiceClient.ts\n M src/streaming/voiceIdentity.ts\n M tests/acoustic-timing.test.ts\n M tests/audio-diagnostics.test.ts\n M tests/backpressure.test.ts\n M tests/continuous-recognition.test.ts\n M tests/continuous-transcription-client.test.ts\n M tests/continuous-transcription-gateway.test.ts\n M tests/continuous-voice-client.test.ts\n M tests/fixtures/voice.ts\n M tests/local-output.test.ts\n M tests/local-pipeline.test.ts\n M tests/local-session.test.ts\n M tests/local-view.test.tsx\n M tests/server.test.ts\n M tests/stream-server.test.ts\n M tests/streaming-scheduler.test.ts\n M tests/streaming-voice.test.ts\n M tests/uncertainty-routing.test.ts\n?? docs/stage-2.0a-validation.txt\n?? docs/stage-2.0a-workspace.jpg\n?? docs/stage-2.0a.md\n?? docs/stage-2.0b-browser-rehearsal.json\n?? docs/stage-2.0b-flow-a.jpg\n?? docs/stage-2.0b-flow-c.jpg\n?? docs/stage-2.0b-flow-e.jpg\n?? docs/stage-2.0b-master-scenario-matrix.md\n?? docs/stage-2.0b-planned-audio-manifest.json\n?? docs/stage-2.0b-workspace.jpg\n?? docs/stage-2.0b.md\n?? scripts/analyze-stage192-latency.ts\n?? scripts/analyze-stage193-baseline.ts\n?? scripts/analyze-stage194-baseline.ts\n?? scripts/analyze-stage195-physical.ts\n?? scripts/analyze-stage196-batch.py\n?? scripts/analyze-stage196-physical.py\n?? scripts/analyze-stage196-short-consent.py\n?? scripts/analyze-stage196-stress.py\n?? scripts/score-stage195-asr.ts\n?? scripts/stage192-simulation.ts\n?? scripts/stage193-simulation.ts\n?? scripts/stage196-batch-collector.mjs\n?? scripts/stage196-batch-prepare.py\n?? scripts/stage196-batch.html\n?? scripts/stage196-stress-collector.mjs\n?? scripts/stage196-stress-prepare.py\n?? scripts/stage196-stress-support.checks.mjs\n?? scripts/stage196-stress-support.mjs\n?? scripts/stage196-stress.html\n?? scripts/stage20b-specification.ts\n?? server/transcriptionContext.ts\n?? src/config/realtimeDelivery.ts\n?? src/consent/\n?? src/streaming/completeGreeting.ts\n?? src/streaming/deliveryGain.ts\n?? src/streaming/pcmProvenance.ts\n?? src/streaming/recognitionAudit.ts\n?? src/streaming/sessionBreakdown.ts\n?? src/streaming/sessionDiagnostics.ts\n?? src/streaming/validatedGreeting.ts\n?? src/streaming/voiceDemand.ts\n?? tests/consent-foundation.test.ts\n?? tests/consent-stage20b.test.tsx\n?? tests/consent-transcription.test.ts\n?? tests/consent-view.test.tsx\n?? tests/fixtures/stage191-engine.ts\n?? tests/fixtures/stage191-semantic.ts\n?? tests/fixtures/stage192-engine.ts\n?? tests/fixtures/stage192-semantic.ts\n?? tests/fixtures/stage193-physical-metadata.json\n?? tests/fixtures/stage193-voiceClient.ts\n?? tests/fixtures/stage194-continuousRecognition.ts\n?? tests/fixtures/stage194-greeting.ts\n?? tests/fixtures/stage194-physical-metadata.json\n?? tests/fixtures/stage195-continuousRecognition.ts\n?? tests/fixtures/stage195-locked-files.json\n?? tests/fixtures/stage195-physical-session.json\n?? tests/fixtures/stage195-reference.json\n?? tests/fixtures/stage195-semantic.ts\n?? tests/fixtures/stage195-voiceClient.ts\n?? tests/fixtures/stage196-before-short-voiceClient.ts\n?? tests/fixtures/stage196-physical-session.json\n?? tests/fixtures/stage196-short-consent-physical.json\n?? tests/fixtures/stage196-short-consent-reference.json\n?? tests/fixtures/stage20b-scenarios.ts\n?? tests/pcm-provenance.test.ts\n?? tests/peer-provenance.test.ts\n?? tests/session-diagnostics.test.ts\n?? tests/stage192-analysis.test.ts\n?? tests/stage192-engine.test.ts\n?? tests/stage192-performance.test.ts\n?? tests/stage192-provenance.test.ts\n?? tests/stage193-performance.test.ts\n?? tests/stage193-physical.test.ts\n?? tests/stage193-quality.test.ts\n?? tests/stage194-replay.test.ts\n?? tests/stage194-starvation.test.ts\n?? tests/stage195-diagnostics.test.ts\n?? tests/stage195-recognition.test.ts\n?? tests/stage195-replay.test.ts\n?? tests/stage196-diagnostics.test.ts\n?? tests/stage196-forensic.test.ts\n?? tests/stage196-recognition.test.ts\n?? tests/stage196-semantic.test.ts\n?? tests/stage196-short-consent.test.ts\n?? tests/stage196-sustained-stress.test.ts\n?? tests/stage196-translation.test.ts\n?? tests/translation-dispatch.test.ts\n",
+  "files": [
+    {
+      "path": "public/apurebase-logo.jpg",
+      "before": "54049e9513e608407635aa6effe7c7afd19ee140795b80a70d8edb951ab8232e",
+      "after": "54049e9513e608407635aa6effe7c7afd19ee140795b80a70d8edb951ab8232e",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/agent-callback.wav",
+      "before": "35339229a37e37949655ffaef375b86688b8e9418f4f12cc43ccecea4d939a37",
+      "after": "35339229a37e37949655ffaef375b86688b8e9418f4f12cc43ccecea4d939a37",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/agent-information.wav",
+      "before": "0934b4e7f7fa77b9c74cf75855a00e6bdc41df001d8ab96d10b1d1146992be1e",
+      "after": "0934b4e7f7fa77b9c74cf75855a00e6bdc41df001d8ab96d10b1d1146992be1e",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/agent-permission.wav",
+      "before": "a39c1980060bab21ea2cd2a325104f5d7546e37bc34148e11d6bea3d3fea27bb",
+      "after": "a39c1980060bab21ea2cd2a325104f5d7546e37bc34148e11d6bea3d3fea27bb",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/agent-purpose.wav",
+      "before": "80dba61e7b62c81156b521a2a15e06bac41cd89c67c3b87192032d3f9ebe4bc9",
+      "after": "80dba61e7b62c81156b521a2a15e06bac41cd89c67c3b87192032d3f9ebe4bc9",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/callback.wav",
+      "before": "001278eef8375dc46d65c8b3f346d97b4e0cc4313a3a100e15710e7770272942",
+      "after": "001278eef8375dc46d65c8b3f346d97b4e0cc4313a3a100e15710e7770272942",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/clinic-ask-doctor.wav",
+      "before": "a841706762c7ab721533ce5730021f2d891cd1a8016b32bbb60186a7203cfe4f",
+      "after": "a841706762c7ab721533ce5730021f2d891cd1a8016b32bbb60186a7203cfe4f",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/clinic-callback.wav",
+      "before": "ccbe4212fcd95dea5ee6d95508f522e7cecfa56c5b51099f0a2eb18786471a66",
+      "after": "ccbe4212fcd95dea5ee6d95508f522e7cecfa56c5b51099f0a2eb18786471a66",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/clinic-connect.wav",
+      "before": "770282478f8b911fb18437e2b7106d660641130b0a57e8cabfb2ec080678abf8",
+      "after": "770282478f8b911fb18437e2b7106d660641130b0a57e8cabfb2ec080678abf8",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/clinic-greeting.wav",
+      "before": "dae8b6d8415b8329fb2939343bca9522fb624fc3ba7c00c05913cdad60391894",
+      "after": "dae8b6d8415b8329fb2939343bca9522fb624fc3ba7c00c05913cdad60391894",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/clinic-information.wav",
+      "before": "44428b465eaf03284d7279f629299c798e59e22531a8fa4d168d581a6a97a2de",
+      "after": "44428b465eaf03284d7279f629299c798e59e22531a8fa4d168d581a6a97a2de",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/clinic-request.wav",
+      "before": "05586f3a3057cb3fb009d9aa7703acc2a4eec7b51bb6089d2803380c093d3976",
+      "after": "05586f3a3057cb3fb009d9aa7703acc2a4eec7b51bb6089d2803380c093d3976",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/hcp-agreement.wav",
+      "before": "5bac79d7836d71ef18de0ec85505c353232913b385bc9326f7a2113b284b9319",
+      "after": "5bac79d7836d71ef18de0ec85505c353232913b385bc9326f7a2113b284b9319",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/hcp-information.wav",
+      "before": "32e5df7029b0c7b9989ee3cdd3b6d5356bb5f422c571b72f823e81ca788f8c81",
+      "after": "32e5df7029b0c7b9989ee3cdd3b6d5356bb5f422c571b72f823e81ca788f8c81",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/information.wav",
+      "before": "1e6906f3b74582031517b33553a1c752fff5c4d2b7fde17a5b38db01aef64652",
+      "after": "1e6906f3b74582031517b33553a1c752fff5c4d2b7fde17a5b38db01aef64652",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/manifest.json",
+      "before": "98ec9ed6afa80db126a4de83ee18d073d62d96f9a5eefe344900e5cc63d341b5",
+      "after": "98ec9ed6afa80db126a4de83ee18d073d62d96f9a5eefe344900e5cc63d341b5",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/opening.wav",
+      "before": "4c99247911a8d382ae77214c287dce5254c1f228c6753f0a13a6e42749ddb355",
+      "after": "4c99247911a8d382ae77214c287dce5254c1f228c6753f0a13a6e42749ddb355",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/purpose.wav",
+      "before": "bdd8a2895f4666bb234fc4277badb4bda4008a33fec82aaf98f30c6b3343f51c",
+      "after": "bdd8a2895f4666bb234fc4277badb4bda4008a33fec82aaf98f30c6b3343f51c",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/request-email.wav",
+      "before": "83ef9befdf59f2f4b425fd7119ebc38f61f3f1294cdfb20bf63205477535d400",
+      "after": "83ef9befdf59f2f4b425fd7119ebc38f61f3f1294cdfb20bf63205477535d400",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/thank-you.wav",
+      "before": "b4895f02346b2d45fbb810be41d258a58a69c3980afc169ff6e26746db1466d1",
+      "after": "b4895f02346b2d45fbb810be41d258a58a69c3980afc169ff6e26746db1466d1",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/unsubscribe.wav",
+      "before": "108bc8c1294cb9f9714a17dc095245a92db476ebc2417adb645f15c1cecb9b15",
+      "after": "108bc8c1294cb9f9714a17dc095245a92db476ebc2417adb645f15c1cecb9b15",
+      "unchanged": true
+    },
+    {
+      "path": "public/open-sans-latin.woff2",
+      "before": "3c4d6a1421c7ddb7e404521fe8c4cd5be5af446d7689cd880be26612eaad3cfa",
+      "after": "3c4d6a1421c7ddb7e404521fe8c4cd5be5af446d7689cd880be26612eaad3cfa",
+      "unchanged": true
+    },
+    {
+      "path": "public/pcm-capture.js",
+      "before": "a3c01b2104097bc4c66559202dd302b156845855a5364282ee05fac1b7f87c08",
+      "after": "a3c01b2104097bc4c66559202dd302b156845855a5364282ee05fac1b7f87c08",
+      "unchanged": true
+    },
+    {
+      "path": "server/api.ts",
+      "before": "9232207786891c808d161762985d784b54dcb5d971785418350fffc7f4bfcadd",
+      "after": "9232207786891c808d161762985d784b54dcb5d971785418350fffc7f4bfcadd",
+      "unchanged": true
+    },
+    {
+      "path": "server/audioAssets.ts",
+      "before": "070bf3fdc6d71f6d92db49c2704913d8405af8bcc1e53eb1b0646f1ca2e9c48f",
+      "after": "070bf3fdc6d71f6d92db49c2704913d8405af8bcc1e53eb1b0646f1ca2e9c48f",
+      "unchanged": true
+    },
+    {
+      "path": "server/benchmarkArtifacts.ts",
+      "before": "d2a4f702d9a26fbd5c468631b385eadd0c794d3f7ffe95f71300f54d1bca4ba1",
+      "after": "d2a4f702d9a26fbd5c468631b385eadd0c794d3f7ffe95f71300f54d1bca4ba1",
+      "unchanged": true
+    },
+    {
+      "path": "server/continuousTranscription.ts",
+      "before": "7998b10ce7a7f6ad035db02cd8fae29f490988024173e3bb3525d8853693c5e1",
+      "after": "7998b10ce7a7f6ad035db02cd8fae29f490988024173e3bb3525d8853693c5e1",
+      "unchanged": true
+    },
+    {
+      "path": "server/continuousVoice.ts",
+      "before": "54b4defa5d88ec2504b5daf01ff4f26f36b5f836df5a3e66c6695dc17f7882fd",
+      "after": "54b4defa5d88ec2504b5daf01ff4f26f36b5f836df5a3e66c6695dc17f7882fd",
+      "unchanged": true
+    },
+    {
+      "path": "server/incrementalTranslation.ts",
+      "before": "fda308d274732de8be01c543dfdff7bf1c164b0480167138ee1334dfde7d3d9f",
+      "after": "fda308d274732de8be01c543dfdff7bf1c164b0480167138ee1334dfde7d3d9f",
+      "unchanged": true
+    },
+    {
+      "path": "server/index.ts",
+      "before": "10d8e8dc508b4cafd66e9a20748ceba3aeecafb6b8fd2cb17c36e6e216b5ad52",
+      "after": "10d8e8dc508b4cafd66e9a20748ceba3aeecafb6b8fd2cb17c36e6e216b5ad52",
+      "unchanged": true
+    },
+    {
+      "path": "server/intelligence.ts",
+      "before": "e71875b50848a697aca41b3286211111a64475b04b6ed8f94d9cd5260977df81",
+      "after": "e71875b50848a697aca41b3286211111a64475b04b6ed8f94d9cd5260977df81",
+      "unchanged": true
+    },
+    {
+      "path": "server/liveTranscription.ts",
+      "before": "7e38d97d15e9fcca482002ded3769e7bcad688877637ca762c3c14c5320f7d89",
+      "after": "7e38d97d15e9fcca482002ded3769e7bcad688877637ca762c3c14c5320f7d89",
+      "unchanged": true
+    },
+    {
+      "path": "server/models.ts",
+      "before": "5ebaf8abefd62022c39dfd712c69403f6dc30d0dd6a5796b795ffecae17929c7",
+      "after": "5ebaf8abefd62022c39dfd712c69403f6dc30d0dd6a5796b795ffecae17929c7",
+      "unchanged": true
+    },
+    {
+      "path": "server/openai.ts",
+      "before": "1f8167c399c9793f196f8899bea4893f2a8d72eb34e4c5e98e206b7ae372fd8e",
+      "after": "1f8167c399c9793f196f8899bea4893f2a8d72eb34e4c5e98e206b7ae372fd8e",
+      "unchanged": true
+    },
+    {
+      "path": "server/participant.ts",
+      "before": "fc4cd77d6f8b6efdd6dad325ffba6789f868229ced099098b4b296d5ece63a3d",
+      "after": "fc4cd77d6f8b6efdd6dad325ffba6789f868229ced099098b4b296d5ece63a3d",
+      "unchanged": true
+    },
+    {
+      "path": "server/realtimeTranslation.ts",
+      "before": "a863492df4a77667cda09a97db152426e7178997541c67cf9aa69de27ed1760f",
+      "after": "a863492df4a77667cda09a97db152426e7178997541c67cf9aa69de27ed1760f",
+      "unchanged": true
+    },
+    {
+      "path": "server/transcriptionContext.ts",
+      "before": "aa150963a6a52819e5316958f95701855341180d3145ac07f862f882e33b3aa9",
+      "after": "aa150963a6a52819e5316958f95701855341180d3145ac07f862f882e33b3aa9",
+      "unchanged": true
+    },
+    {
+      "path": "server/translation.ts",
+      "before": "1aa53dd4591e188780ea3437dbd816d05fcd7222695d3beaeb11d0156f9520ef",
+      "after": "1aa53dd4591e188780ea3437dbd816d05fcd7222695d3beaeb11d0156f9520ef",
+      "unchanged": true
+    },
+    {
+      "path": "server/voice.ts",
+      "before": "dfcb76dae84730c94f205e367733f31e19765b0eb1237fc8d30d558a11648dde",
+      "after": "dfcb76dae84730c94f205e367733f31e19765b0eb1237fc8d30d558a11648dde",
+      "unchanged": true
+    },
+    {
+      "path": "src/browserAudio.ts",
+      "before": "d81cc997c11d7fcc82391ad9201a3fc26ce0bc495728dd1186b789034d90619b",
+      "after": "d81cc997c11d7fcc82391ad9201a3fc26ce0bc495728dd1186b789034d90619b",
+      "unchanged": true
+    },
+    {
+      "path": "src/config/campaignGlossary.ts",
+      "before": "5abe0ea95fa8b6b17b2982f508f728607bc6372ee90291e2c43e64a3338e6e94",
+      "after": "5abe0ea95fa8b6b17b2982f508f728607bc6372ee90291e2c43e64a3338e6e94",
+      "unchanged": true
+    },
+    {
+      "path": "src/config/campaignSpeech.ts",
+      "before": "04f91b038dfbc1870e7751195eccbae528a455a579b0d9d0faabf2fca6472258",
+      "after": "04f91b038dfbc1870e7751195eccbae528a455a579b0d9d0faabf2fca6472258",
+      "unchanged": true
+    },
+    {
+      "path": "src/config/phrases.ts",
+      "before": "be1fb87ce102a36ddd2dd03301263be253fe8ee834f475f73d992889071f746a",
+      "after": "be1fb87ce102a36ddd2dd03301263be253fe8ee834f475f73d992889071f746a",
+      "unchanged": true
+    },
+    {
+      "path": "src/config/realtimeDelivery.ts",
+      "before": "838690c0a3a9355b0e4e5b557dae62431ad5961aaf28305405bf093ed8756ded",
+      "after": "838690c0a3a9355b0e4e5b557dae62431ad5961aaf28305405bf093ed8756ded",
+      "unchanged": true
+    },
+    {
+      "path": "src/config/scenarios.ts",
+      "before": "7838d7effcade7674a6562290f92839945112af727c9e9fcdc9df5c63c95f8c6",
+      "after": "7838d7effcade7674a6562290f92839945112af727c9e9fcdc9df5c63c95f8c6",
+      "unchanged": true
+    },
+    {
+      "path": "src/consent/ConsentWorkspace.tsx",
+      "before": "9f77762d99587d82559213a6225670e1b31143feda176bbd6ffffff4d5389334",
+      "after": "bf1ec82116cd630ab3ff41dc736a006cbd2abdecbd1a7c1a83fc877fe4c1657d",
+      "unchanged": false
+    },
+    {
+      "path": "src/consent/TakeoverPanel.tsx",
+      "before": "121ba32f29fd352bab61cbaa09db5904cefeab4556a6e9ea06d1258e3c0a3fd2",
+      "after": "121ba32f29fd352bab61cbaa09db5904cefeab4556a6e9ea06d1258e3c0a3fd2",
+      "unchanged": true
+    },
+    {
+      "path": "src/consent/classifier.ts",
+      "before": "1b56d6ecba9efa14f9a39631668081f6cc11da95b553cfd2218f482cc537408c",
+      "after": "1a13049bb826cabac03bdcb5c5d9b3a5ba080cfd693f380c8ba98c7977564ce1",
+      "unchanged": false
+    },
+    {
+      "path": "src/consent/consent.css",
+      "before": "a8ad19a70d80b5c6239ced620ce4e7b098a706e49a9cfb3c5947901b15a0031c",
+      "after": "dda1de19e5b91549aaadfd1eb001ea207c7317d3fc4361f9a42c6bb27aaec2bf",
+      "unchanged": false
+    },
+    {
+      "path": "src/consent/consentGuard.ts",
+      "before": "3607904d4b1587b7d141ed7ce28b8f14598ed19b904c808b6bcc8dea89c7b45a",
+      "after": "c034f77c242dad7c553fbc6f103ce4b496ea7d8419bd105eddd2a0ac5cdfdb75",
+      "unchanged": false
+    },
+    {
+      "path": "src/consent/definition.ts",
+      "before": "da8c2053aecb63aa3f165bd04b962a9aff2089cf23d27d662fa27731d2650f79",
+      "after": "cf3bee5ae921b87c15ccf78a9fdadacf4985b60c8d711d053140a40e4095f6ef",
+      "unchanged": false
+    },
+    {
+      "path": "src/consent/playback.ts",
+      "before": "81515ad0184208dbe3e87ec2ac3a8c89a119b62eb0c574ec8863a22cedbadb3e",
+      "after": "81515ad0184208dbe3e87ec2ac3a8c89a119b62eb0c574ec8863a22cedbadb3e",
+      "unchanged": true
+    },
+    {
+      "path": "src/consent/session.ts",
+      "before": "91716da75be55a9e4abda976a5404773e0b3cf6eeb7b3582a3240253b8f8ceda",
+      "after": "7a3a15134d29a2cc5472caee67758add17a63a34772f398b34098dbbe935131d",
+      "unchanged": false
+    },
+    {
+      "path": "src/consent/stateMachine.ts",
+      "before": "642b25b9c3a66daa9112fa8a331f272dcd3e5f27d32ce3149b71a85c588360f3",
+      "after": "642b25b9c3a66daa9112fa8a331f272dcd3e5f27d32ce3149b71a85c588360f3",
+      "unchanged": true
+    },
+    {
+      "path": "src/consent/transcription.ts",
+      "before": "7955b04931720b6870ee1540132a6e9114271a6f6972a3a26dbd89eb47cf8a6f",
+      "after": "7955b04931720b6870ee1540132a6e9114271a6f6972a3a26dbd89eb47cf8a6f",
+      "unchanged": true
+    },
+    {
+      "path": "src/consent/types.ts",
+      "before": "265104b96f434cc2d901075d8df19889b460ef9638eaf0563b20a59f8ff641a5",
+      "after": "7a983c01d051a5a8cc60aa575eb6da26a7d3c32db844d8317c758945476550cf",
+      "unchanged": false
+    },
+    {
+      "path": "src/controller.ts",
+      "before": "0ba67cc2bbdcc8245b777a306a74da40d1b69f9e807d4845df8a5199fa5afca8",
+      "after": "0ba67cc2bbdcc8245b777a306a74da40d1b69f9e807d4845df8a5199fa5afca8",
+      "unchanged": true
+    },
+    {
+      "path": "src/decision.ts",
+      "before": "14594933a738a4984b2db07d3ec6a208f61993774938fe3389739af8052b7559",
+      "after": "14594933a738a4984b2db07d3ec6a208f61993774938fe3389739af8052b7559",
+      "unchanged": true
+    },
+    {
+      "path": "src/email.ts",
+      "before": "f52144da8e47aaaf27af4b8a5da31e06f37da8d455fdbffc5a922c95de2526ae",
+      "after": "f52144da8e47aaaf27af4b8a5da31e06f37da8d455fdbffc5a922c95de2526ae",
+      "unchanged": true
+    },
+    {
+      "path": "src/latency.ts",
+      "before": "49068b509a0949f0bb76dfa2559205b757bf0764fbe69a98aab4584456c35319",
+      "after": "49068b509a0949f0bb76dfa2559205b757bf0764fbe69a98aab4584456c35319",
+      "unchanged": true
+    },
+    {
+      "path": "src/liveTranscription.ts",
+      "before": "fdc83820e388d686d8d1d0d03cbd5ec3fe6871f488762c18873a7d4fd93f733e",
+      "after": "fdc83820e388d686d8d1d0d03cbd5ec3fe6871f488762c18873a7d4fd93f733e",
+      "unchanged": true
+    },
+    {
+      "path": "src/main.tsx",
+      "before": "bf387c2dddc3abb5877858f101ca6cd7289a2616a72e40f64f06e5e1e5c92342",
+      "after": "bf387c2dddc3abb5877858f101ca6cd7289a2616a72e40f64f06e5e1e5c92342",
+      "unchanged": true
+    },
+    {
+      "path": "src/pcmPlayback.ts",
+      "before": "fa71963b7a99ed81c424fefc393bb6a68e12797a88ef5fbac07061a4a5fdf4f0",
+      "after": "fa71963b7a99ed81c424fefc393bb6a68e12797a88ef5fbac07061a4a5fdf4f0",
+      "unchanged": true
+    },
+    {
+      "path": "src/sse.ts",
+      "before": "52cb0da4a91a94ac54fcf94b57e1af22de5119beb112eb7d31f8d58d79d7d349",
+      "after": "52cb0da4a91a94ac54fcf94b57e1af22de5119beb112eb7d31f8d58d79d7d349",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/LocalTestView.tsx",
+      "before": "76bb8b1084b0cf6bdfd35ef8e18001fbac69b7e0d11acdcd26ee5b233a064e64",
+      "after": "76bb8b1084b0cf6bdfd35ef8e18001fbac69b7e0d11acdcd26ee5b233a064e64",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/View.tsx",
+      "before": "9c5202d9ac0a261db4dd433872ffbfa4cbccf8b7752ef7920709af15a6d47f2d",
+      "after": "9c5202d9ac0a261db4dd433872ffbfa4cbccf8b7752ef7920709af15a6d47f2d",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/acousticTiming.ts",
+      "before": "fdba791900829f95df97e983587245f84b810f042a2a5928959a0f61d6be8fe9",
+      "after": "fdba791900829f95df97e983587245f84b810f042a2a5928959a0f61d6be8fe9",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/alignment.ts",
+      "before": "3232ff7a71f9286ec11d54a886cbf40a9151b83a05a7ca265a953a119969c22b",
+      "after": "3232ff7a71f9286ec11d54a886cbf40a9151b83a05a7ca265a953a119969c22b",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/audioDiagnostics.ts",
+      "before": "e660c0b3e994997e7a2affd9db7403d272578d0b00a9e13e0ba6d9e8ee48b1e4",
+      "after": "e660c0b3e994997e7a2affd9db7403d272578d0b00a9e13e0ba6d9e8ee48b1e4",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/audioInterfaces.ts",
+      "before": "a57ae0e043c39872a16c78b51164749c062e99127d7340d46c95695351611067",
+      "after": "a57ae0e043c39872a16c78b51164749c062e99127d7340d46c95695351611067",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/calibrationTrace.ts",
+      "before": "d9926f2631b22060a298bcaa25bbea02c72ba477c38912ad0bf8c31bb61f02e1",
+      "after": "d9926f2631b22060a298bcaa25bbea02c72ba477c38912ad0bf8c31bb61f02e1",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/clinic.ts",
+      "before": "50214842eed32ded997474e0e9034dd1726db5476276fa4332c47a266ef0c44a",
+      "after": "50214842eed32ded997474e0e9034dd1726db5476276fa4332c47a266ef0c44a",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/completeGreeting.ts",
+      "before": "50015abb880bbea635a6c7d5575c0feff32176691a85c3b7f48d2fcb753d104f",
+      "after": "50015abb880bbea635a6c7d5575c0feff32176691a85c3b7f48d2fcb753d104f",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/continuousRecognition.ts",
+      "before": "0bf4894dc3275216cc86fa864fab1b87a509e4d30a80b5168ec58e82e9af4f01",
+      "after": "0bf4894dc3275216cc86fa864fab1b87a509e4d30a80b5168ec58e82e9af4f01",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/continuousTranscriptionClient.ts",
+      "before": "de40ceb5dbd55c1f09eb7226c082a6bc19c6a21240d92e9ba74d954e786c7bdd",
+      "after": "de40ceb5dbd55c1f09eb7226c082a6bc19c6a21240d92e9ba74d954e786c7bdd",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/controlledOutput.ts",
+      "before": "80ede98a4b307305bc85e7f86303188986e640143e6686aa82d6cbaa72923cac",
+      "after": "80ede98a4b307305bc85e7f86303188986e640143e6686aa82d6cbaa72923cac",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/deliveryGain.ts",
+      "before": "a50907fd12459fae2110bc80ad3a0fa1e6219ed26f41b0bc030609c2fb998c25",
+      "after": "a50907fd12459fae2110bc80ad3a0fa1e6219ed26f41b0bc030609c2fb998c25",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/engine.ts",
+      "before": "fe6e74afa76a4df9f634523aa9a35f11dde85585f2b4b0ec8cea4a0ef25e1656",
+      "after": "fe6e74afa76a4df9f634523aa9a35f11dde85585f2b4b0ec8cea4a0ef25e1656",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/host.ts",
+      "before": "fd4fce5a11f8c93cc4bb7acfa5fb58a090453a6dca41f82eabab39080f6e79db",
+      "after": "fd4fce5a11f8c93cc4bb7acfa5fb58a090453a6dca41f82eabab39080f6e79db",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/identity.ts",
+      "before": "0b474a06601977b66cc4aec942b82b17373abee723977fb7b5654ede079d99b8",
+      "after": "0b474a06601977b66cc4aec942b82b17373abee723977fb7b5654ede079d99b8",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/input.ts",
+      "before": "c3f08f258c2499a2400b055cf8be6fa2eda84345f75438d581e332e880f357f3",
+      "after": "c3f08f258c2499a2400b055cf8be6fa2eda84345f75438d581e332e880f357f3",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/localOutput.ts",
+      "before": "55ee33db9966fa352e85fb6b00a1f752bf00446b40677c7fea3f9dd12fadee71",
+      "after": "55ee33db9966fa352e85fb6b00a1f752bf00446b40677c7fea3f9dd12fadee71",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/localSession.ts",
+      "before": "9c41e63ae146267d714621a466f35567119df6eaecfe53dfebca2cb71a6be3e5",
+      "after": "9c41e63ae146267d714621a466f35567119df6eaecfe53dfebca2cb71a6be3e5",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/output.ts",
+      "before": "bfa47e1470a20848e4980c84896bf52b5c09ac3125a550ae49463042d0042f23",
+      "after": "bfa47e1470a20848e4980c84896bf52b5c09ac3125a550ae49463042d0042f23",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/pcmProvenance.ts",
+      "before": "0019677547dec2bee493c4b7782e50e5a0d139e57a9dd610e0a084aca677f71b",
+      "after": "0019677547dec2bee493c4b7782e50e5a0d139e57a9dd610e0a084aca677f71b",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/pcmWav.ts",
+      "before": "625d6333ab283f38c1106433f2033b06deaca64dce626243c2402f0592ba32dd",
+      "after": "625d6333ab283f38c1106433f2033b06deaca64dce626243c2402f0592ba32dd",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/peer.ts",
+      "before": "02d880b8d0de735f567698fda07a597e79ff7f75cc49a0cb4554060b63f10e0a",
+      "after": "02d880b8d0de735f567698fda07a597e79ff7f75cc49a0cb4554060b63f10e0a",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/realtimeTranslationClient.ts",
+      "before": "06805b5acaac9550c0905ccbcf8a207fcf2d22b2752c198f48856099624b8a91",
+      "after": "06805b5acaac9550c0905ccbcf8a207fcf2d22b2752c198f48856099624b8a91",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/recognition.ts",
+      "before": "6101a8d7fb4be2d87152fe42a98d1f34768e76f93e110abc2c8f46ffdeb8eaa9",
+      "after": "6101a8d7fb4be2d87152fe42a98d1f34768e76f93e110abc2c8f46ffdeb8eaa9",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/recognitionAudit.ts",
+      "before": "114938d168b253f00e9e276264d15733d319857904b152fab42434fb78dd40ee",
+      "after": "114938d168b253f00e9e276264d15733d319857904b152fab42434fb78dd40ee",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/routing.ts",
+      "before": "0b377448b2837474133f782c4e42ee9ef76b657b27d87a56041108360404add3",
+      "after": "0b377448b2837474133f782c4e42ee9ef76b657b27d87a56041108360404add3",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/scheduler.ts",
+      "before": "a47d30a4b004b6031b03f9988bf73a5500840ab5ca665b02c9ffa19168e35869",
+      "after": "a47d30a4b004b6031b03f9988bf73a5500840ab5ca665b02c9ffa19168e35869",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/semantic.ts",
+      "before": "252996bd8b5b658f7efc42c5da9b49c370d61c59c8b265f831d2f15e045b93f1",
+      "after": "252996bd8b5b658f7efc42c5da9b49c370d61c59c8b265f831d2f15e045b93f1",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/sessionBreakdown.ts",
+      "before": "479c1d9f179513269f7f28912cdaa2ae9f3889b7a16e5fbfaf7a71c0197d9eb0",
+      "after": "479c1d9f179513269f7f28912cdaa2ae9f3889b7a16e5fbfaf7a71c0197d9eb0",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/sessionDiagnostics.ts",
+      "before": "c895fc9036e1cf15f2ab8900dfd3a688ee64c8d750c9aad924221a67e1b57faf",
+      "after": "c895fc9036e1cf15f2ab8900dfd3a688ee64c8d750c9aad924221a67e1b57faf",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/trailing.ts",
+      "before": "fe611c129e577946b7ced5658d9d6fe61e2082ab757b6e2bf7eb097e02676e11",
+      "after": "fe611c129e577946b7ced5658d9d6fe61e2082ab757b6e2bf7eb097e02676e11",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/translationClient.ts",
+      "before": "f62db4d399a111b3ccdea2e0d2d9c6b8801bdc2307713fac7fc70352f16db7d2",
+      "after": "f62db4d399a111b3ccdea2e0d2d9c6b8801bdc2307713fac7fc70352f16db7d2",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/types.ts",
+      "before": "31da152a1e453a9b55519bc3057aa2c2721d08a865d4dd561ae196e8008b87bf",
+      "after": "31da152a1e453a9b55519bc3057aa2c2721d08a865d4dd561ae196e8008b87bf",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/uncertainty.ts",
+      "before": "7dee36d8130ffe1173ae754c1a1180294af78331abc38b35c9d64a085589d22e",
+      "after": "7dee36d8130ffe1173ae754c1a1180294af78331abc38b35c9d64a085589d22e",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/validatedGreeting.ts",
+      "before": "56da979a5513bf5b4445eb1153745738086698b36ac62148fdd80078ff81cd2e",
+      "after": "56da979a5513bf5b4445eb1153745738086698b36ac62148fdd80078ff81cd2e",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/voiceClient.ts",
+      "before": "d65beb3745068ee2e49caaaad82a0c08cc4759837ac784d8b08e900069f88a14",
+      "after": "d65beb3745068ee2e49caaaad82a0c08cc4759837ac784d8b08e900069f88a14",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/voiceDemand.ts",
+      "before": "2c8c8a20d1d068d33d48d056d8549707f97ea10166c2ac61e0095605841b64ec",
+      "after": "2c8c8a20d1d068d33d48d056d8549707f97ea10166c2ac61e0095605841b64ec",
+      "unchanged": true
+    },
+    {
+      "path": "src/streaming/voiceIdentity.ts",
+      "before": "45336e078d769774149066d6acf78bbda4c9de238edb60e28871f8a26cf9635f",
+      "after": "45336e078d769774149066d6acf78bbda4c9de238edb60e28871f8a26cf9635f",
+      "unchanged": true
+    },
+    {
+      "path": "src/style.css",
+      "before": "bead1bf531ab04107285669e087609cba3ceabf3a92c7b38ae341558e523e83f",
+      "after": "bead1bf531ab04107285669e087609cba3ceabf3a92c7b38ae341558e523e83f",
+      "unchanged": true
+    },
+    {
+      "path": "src/types.ts",
+      "before": "f038a5c12e84c9e82cbe988b07378e60dafb0c20a7cda1fd0b4a9045fa75466d",
+      "after": "f038a5c12e84c9e82cbe988b07378e60dafb0c20a7cda1fd0b4a9045fa75466d",
+      "unchanged": true
+    }
+  ]
+}

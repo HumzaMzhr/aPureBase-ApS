@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "sourceDrift": [],
+  "newSecretPatternFindings": [],
+  "newSourceWhitespace": [],
+  "privateEnvOrKeyFilesIntroduced": [],
+  "gitDiffCheck": "PASS",
+  "mainClean": true,
+  "providerRequestsThisTask": 0
+}

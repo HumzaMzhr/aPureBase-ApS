@@ -1,0 +1,256 @@
+{
+  "status": "PROPOSED_ONLY_NOT_AUTHORIZED",
+  "generationProgramInstalled": false,
+  "requestCount": 1,
+  "totalCharacters": 96,
+  "rows": [
+    {
+      "phraseId": "opening",
+      "canonicalText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+      "english": "Hello, this is Isabella from aPureBase. I am calling briefly about professional information for healthcare professionals.",
+      "existingAssetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "current": {
+        "phraseId": "opening",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+        "canonicalTextHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+        "spokenRenderText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+        "spokenRenderHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "cd4192d7cecb8fe55e8a3653574c1dd56bf67b632f12c1f22eb873094fc402a5",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      "candidate": null,
+      "reason": "No additional paid variant justified before focused listening; preserve current rendering",
+      "humanFeedbackTriggered": false,
+      "generationActuallyNecessary": "NO",
+      "consentCritical": false,
+      "newAudioGenerated": false
+    },
+    {
+      "phraseId": "why-calling",
+      "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+      "english": "I am only calling to ask whether aPureBase may send you relevant professional information by email.",
+      "existingAssetHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+      "current": {
+        "phraseId": "why-calling",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+        "canonicalTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "spokenRenderText": "Jeg ringer kun for at spørge, om a Pure Base må sende dig relevant faglig information via e-mail.",
+        "spokenRenderHash": "528ee77027d3335af28f93bf29314aaa080155cf12dd3c8a25b7f4589eb699d5",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "3ab88df72b408a15844318f0cd2f0227d9a9860fea2f94caf10260b9797d4cb9",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg ringer kun for at spørge, om a Pure Base må sende dig relevant faglig information via e-mail.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      "candidate": {
+        "phraseId": "why-calling",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+        "canonicalTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "spokenRenderText": "Jeg ringer kun for at spørge om a Pure Base må sende dig relevant faglig information via e-mail.",
+        "spokenRenderHash": "91b7c45fc76bc37db8813ff73f4efd722b23c26d5e194efb395ec3e1dda1c22f",
+        "pronunciationVersion": "stage-2.0c32-plan-1:PUNCTUATION",
+        "planHash": "d6880824de25942e20d6f986287de12c7232a6629d1627f92d3f10bc1a194e51",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Jeg ringer kun for at spørge om a Pure Base må sende dig relevant faglig information via e-mail.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      "reason": "Bounded comma/connected-speech A/B motivated by reported weak-consonant/fluency issue; effectiveness unknown",
+      "humanFeedbackTriggered": true,
+      "generationActuallyNecessary": "ONLY_IF_AUTHORIZED_FOR_AB",
+      "consentCritical": false,
+      "newAudioGenerated": false
+    },
+    {
+      "phraseId": "consent-question",
+      "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "english": "May aPureBase send relevant professional information to you by email?",
+      "existingAssetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "current": {
+        "phraseId": "consent-question",
+        "phraseVersion": "stage-2.0c31-candidate-1",
+        "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "canonicalTextHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+        "spokenRenderText": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+        "spokenRenderHash": "82686ed5aae8211a6cda1b4a7bfc3dbeeb70dca083f8f9ca148707cafe6eef7c",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "4d270fcd39c0374b4914867663b7f01b6faef03e5d01e76ed6d65c32e32c2c5c",
+        "consentCritical": true,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      "candidate": null,
+      "reason": "No additional paid variant justified before focused listening; preserve current rendering",
+      "humanFeedbackTriggered": true,
+      "generationActuallyNecessary": "NO",
+      "consentCritical": true,
+      "newAudioGenerated": false
+    },
+    {
+      "phraseId": "email-request",
+      "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+      "english": "Thank you. Which email address may we send the information to?",
+      "existingAssetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "current": {
+        "phraseId": "email-request",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+        "canonicalTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+        "spokenRenderText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+        "spokenRenderHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "50b52eea81934ab75226a8c612f6170c17897333a55f1f7b4a597ab681ada6d1",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      "candidate": null,
+      "reason": "No additional paid variant justified before focused listening; preserve current rendering",
+      "humanFeedbackTriggered": false,
+      "generationActuallyNecessary": "NO",
+      "consentCritical": false,
+      "newAudioGenerated": false
+    },
+    {
+      "phraseId": "clarify",
+      "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "english": "Of course. May aPureBase send relevant professional information to you by email?",
+      "existingAssetHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+      "current": {
+        "phraseId": "clarify",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "canonicalTextHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+        "spokenRenderText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "spokenRenderHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "7524c98cf2024eb199e96f45532f02caff6c35b3dc6a23a3af67a8756a69d92a",
+        "consentCritical": true,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      "candidate": null,
+      "reason": "No additional paid variant justified before focused listening; preserve current rendering",
+      "humanFeedbackTriggered": false,
+      "generationActuallyNecessary": "NO",
+      "consentCritical": true,
+      "newAudioGenerated": false
+    },
+    {
+      "phraseId": "success-close",
+      "canonicalText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+      "english": "Perfect, thank you for your time. You can always unsubscribe. Have a good day.",
+      "existingAssetHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+      "current": {
+        "phraseId": "success-close",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "canonicalText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+        "canonicalTextHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+        "spokenRenderText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+        "spokenRenderHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+        "pronunciationVersion": "stage-2.0c32-plan-1:REFERENCE",
+        "planHash": "34298c4e83f1e6a6ab8f13b7c05e0699cc2d4377479525147dcb468a51c91a27",
+        "consentCritical": false,
+        "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+        "providerParameters": {
+          "text": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+          "model_id": "eleven_flash_v2_5",
+          "language_code": "da",
+          "voice_settings": {
+            "speed": 0.95
+          }
+        },
+        "generationAuthorized": false,
+        "recording": null
+      },
+      "candidate": null,
+      "reason": "No additional paid variant justified before focused listening; preserve current rendering",
+      "humanFeedbackTriggered": true,
+      "generationActuallyNecessary": "NO",
+      "consentCritical": false,
+      "newAudioGenerated": false
+    }
+  ],
+  "requests": [
+    {
+      "phraseId": "why-calling",
+      "url": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC?output_format=pcm_24000",
+      "voice": "Isabella",
+      "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+      "body": {
+        "text": "Jeg ringer kun for at spørge om a Pure Base må sende dig relevant faglig information via e-mail.",
+        "model_id": "eleven_flash_v2_5",
+        "language_code": "da",
+        "voice_settings": {
+          "speed": 0.95
+        }
+      },
+      "characters": 96,
+      "canonicalHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+      "spokenHash": "91b7c45fc76bc37db8813ff73f4efd722b23c26d5e194efb395ec3e1dda1c22f",
+      "planHash": "d6880824de25942e20d6f986287de12c7232a6629d1627f92d3f10bc1a194e51"
+    }
+  ],
+  "semanticRisk": "Punctuation can alter prosody; native listening must establish whether the consonant improves. No automatic correctness claim.",
+  "voiceTraining": false,
+  "globalSettingsChanged": false
+}

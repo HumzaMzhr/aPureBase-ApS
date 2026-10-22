@@ -1,0 +1,18 @@
+{
+  "src/streaming/voiceIdentity.ts": "45336e078d769774149066d6acf78bbda4c9de238edb60e28871f8a26cf9635f",
+  "src/streaming/pcmProvenance.ts": "0019677547dec2bee493c4b7782e50e5a0d139e57a9dd610e0a084aca677f71b",
+  "src/streaming/voiceClient.ts": "caccad26b61d7cb55e21ad22f19e26e7625e9c1a823a4c92e5a3a7ff17a21613",
+  "src/streaming/localOutput.ts": "f3edd5ec3856b7b0068a5d74b1420a82e92621b79956df9f8230fd9d1ea18523",
+  "src/streaming/scheduler.ts": "b1e572f1c34d5bd3292651cc355623b021a46ed5cce256fb9d01a42879f38faf",
+  "src/streaming/controlledOutput.ts": "80ede98a4b307305bc85e7f86303188986e640143e6686aa82d6cbaa72923cac",
+  "src/streaming/peer.ts": "02d880b8d0de735f567698fda07a597e79ff7f75cc49a0cb4554060b63f10e0a",
+  "src/streaming/output.ts": "bfa47e1470a20848e4980c84896bf52b5c09ac3125a550ae49463042d0042f23",
+  "src/streaming/sessionDiagnostics.ts": "5b79856223cee89aa4054c7d49335368d40184ec6c8ace427ad7d2311ca27e3c",
+  "src/streaming/acousticTiming.ts": "f0dc8923e2f56586577549a7507d5dd9aed35e3440fef531e04dc48ed9019f12",
+  "server/continuousVoice.ts": "199d644cad7ba47652041cc62880bc3ae685a55b93e87f3b0515ebcb6eaa5867",
+  "server/incrementalTranslation.ts": "62413a1f41c6e57ec74f26ebdc6f7734bc763c0c0078ff724d61e3bf5fca1038",
+  "server/models.ts": "5ebaf8abefd62022c39dfd712c69403f6dc30d0dd6a5796b795ffecae17929c7",
+  "src/config/campaignSpeech.ts": "04f91b038dfbc1870e7751195eccbae528a455a579b0d9d0faabf2fca6472258",
+  "src/streaming/continuousRecognition.ts": "c1ac164694080944e6037e6fea567830ddf2b0cc578f6676e80e76a0439915e4",
+  "server/continuousTranscription.ts": "f6f4c3ba9f0f1ac591c5ef206def6e8c62bf2e961dffd9700cd828eb2bb8e3bf"
+}

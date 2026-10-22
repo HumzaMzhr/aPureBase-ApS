@@ -1,0 +1,324 @@
+[
+  {
+    "label": "focused",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/consent-stage20c32-candidates.test.ts",
+      "tests/consent-stage20c32-email.test.ts",
+      "tests/consent-stage20c32-feedback-closure.test.ts",
+      "tests/consent-stage20c32-hardening.test.ts",
+      "tests/consent-stage20c32-remediation.test.ts",
+      "tests/consent-stage20c32-speech.test.tsx"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 2.552,
+    "testsPassed": 563,
+    "testFiles": 6
+  },
+  {
+    "label": "c31",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/consent-stage20c3.test.ts",
+      "tests/consent-stage20c3-view.test.tsx",
+      "tests/consent-stage20c31.test.ts",
+      "tests/consent-stage20c31-view.test.tsx",
+      "tests/consent-stage20c31-gateway.test.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.788,
+    "testsPassed": 139,
+    "testFiles": 5
+  },
+  {
+    "label": "prior-consent",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/consent-foundation.test.ts",
+      "tests/consent-stage20b.test.tsx",
+      "tests/consent-stage20b2.test.tsx",
+      "tests/consent-stage20c1.test.ts",
+      "tests/consent-stage20c2.test.ts",
+      "tests/consent-stage20c3-view.test.tsx",
+      "tests/consent-stage20c3.test.ts",
+      "tests/consent-stage20c31-gateway.test.ts",
+      "tests/consent-stage20c31-view.test.tsx",
+      "tests/consent-stage20c31.test.ts",
+      "tests/consent-transcription.test.ts",
+      "tests/consent-view.test.tsx",
+      "tests/stage196-short-consent.test.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 1.791,
+    "testsPassed": 496,
+    "testFiles": 13
+  },
+  {
+    "label": "replay-1",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 2.429,
+    "testsPassed": 2,
+    "testFiles": 1
+  },
+  {
+    "label": "pcm-1",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "-t",
+      "forwards all 45 seconds"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.605,
+    "testsPassed": 1,
+    "testFiles": 1
+  },
+  {
+    "label": "replay-2",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 2.403,
+    "testsPassed": 2,
+    "testFiles": 1
+  },
+  {
+    "label": "pcm-2",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "-t",
+      "forwards all 45 seconds"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.589,
+    "testsPassed": 1,
+    "testFiles": 1
+  },
+  {
+    "label": "replay-3",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 2.342,
+    "testsPassed": 2,
+    "testFiles": 1
+  },
+  {
+    "label": "pcm-3",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "-t",
+      "forwards all 45 seconds"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.594,
+    "testsPassed": 1,
+    "testFiles": 1
+  },
+  {
+    "label": "replay-4",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 2.377,
+    "testsPassed": 2,
+    "testFiles": 1
+  },
+  {
+    "label": "pcm-4",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "-t",
+      "forwards all 45 seconds"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.603,
+    "testsPassed": 1,
+    "testFiles": 1
+  },
+  {
+    "label": "replay-5",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/stage195-replay.test.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 2.384,
+    "testsPassed": 2,
+    "testFiles": 1
+  },
+  {
+    "label": "pcm-5",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/continuous-transcription-gateway.test.ts",
+      "-t",
+      "forwards all 45 seconds"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.616,
+    "testsPassed": 1,
+    "testFiles": 1
+  },
+  {
+    "label": "full-1",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 9.914,
+    "testsPassed": 1683,
+    "testFiles": 84
+  },
+  {
+    "label": "full-2",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 7.428,
+    "testsPassed": 1683,
+    "testFiles": 84
+  },
+  {
+    "label": "full-3",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 7.457,
+    "testsPassed": 1683,
+    "testFiles": 84
+  },
+  {
+    "label": "audit-corpora",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "--import",
+      "tsx",
+      "scripts/stage20c32-feedback-audit.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 2.022,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "lint",
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 2.787,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "typecheck",
+    "command": [
+      "npm",
+      "run",
+      "typecheck"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 3.7,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "build",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 4.859,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "c32-build",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-feedback-closure/validation/tree/node_modules/vite/bin/vite.js",
+      "build",
+      "--config",
+      "src/consent/stage32/vite.config.ts",
+      "--outDir",
+      "/private/tmp/c32-feedback-closure/validation/c32-build"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.747,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "preservation-c31",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "--import",
+      "tsx",
+      "scripts/verify-stage20c31.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.252,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "preservation-c32-closure",
+    "command": [
+      "python3",
+      "scripts/verify-stage20c32-feedback-closure.py"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.358,
+    "testsPassed": null,
+    "testFiles": null
+  }
+]

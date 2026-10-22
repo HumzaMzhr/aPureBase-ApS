@@ -1,0 +1,629 @@
+{
+  "auditedAt": "2026-10-20T23:50:29.039631+00:00",
+  "gaps": [
+    {
+      "id": "GAP-001",
+      "title": "One public/default hardened policy",
+      "status": "CLOSED",
+      "scope": "ENGINEERING_DOCUMENTATION_ONLY",
+      "originalFinding": {
+        "id": "GAP-001",
+        "requirements": [
+          4,
+          8,
+          20,
+          22,
+          26,
+          27,
+          48
+        ],
+        "expected": "Normal C32 session and evaluator use the same hardened parsing/policy.",
+        "observed": "StructuredEmailSession default policy={} falls back to reconstructEmail/resolveEmail. Only simulator injects parseEmailEvidence/resolveEvidence. Repeated identical address fails default session but succeeds explicit hardened session.",
+        "severity": "IMPORTANT",
+        "files": [
+          "src/consent/stage32/session.ts",
+          "src/consent/stage32/email/flow.ts",
+          "src/consent/stage32/hardening/simulator.ts"
+        ],
+        "proposedMinimalFix": "Choose one explicit C32 policy at the composition root and test public/default constructor on corpus/corrections; retain Stage1/C31 unchanged.",
+        "evidence": "audit probes defaultSession vs explicitHardenedSession",
+        "disposition": "OPEN_RECORDED_BEFORE_ANY_FIX",
+        "fixedAfterAudit": false
+      },
+      "implementation": [
+        {
+          "file": "src/consent/stage32/email/policy.ts",
+          "symbol": "hardenedEmailPolicy",
+          "line": 4
+        },
+        {
+          "file": "src/consent/stage32/email/flow.ts",
+          "symbol": "EmailAcquisition",
+          "line": 21
+        },
+        {
+          "file": "src/consent/stage32/session.ts",
+          "symbol": "StructuredEmailSession",
+          "line": 13
+        }
+      ],
+      "tests": [
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "public/default path %s",
+          "line": 24,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "public constructor refuses a hidden policy override rather than falling back",
+          "line": 67,
+          "result": "PASS_FINAL_SOURCE"
+        }
+      ],
+      "evidence": [
+        "docs/stage-2.0c-3.2-hardening-2-email-resolution-report.json"
+      ],
+      "closureReason": "Default and simulator now share the frozen policy. Public constructor rejects hidden parser overrides. No Stage 1/C31 behavior changed.",
+      "limitation": "Acoustic recognition remains unverified.",
+      "remainingAction": "Human/business gates below remain pending; user reviews before any commit/test request."
+    },
+    {
+      "id": "GAP-002",
+      "title": "Strict fail-closed database provenance",
+      "status": "CLOSED",
+      "scope": "ENGINEERING_DOCUMENTATION_ONLY",
+      "originalFinding": {
+        "id": "GAP-002",
+        "requirements": [
+          6,
+          19,
+          25,
+          50
+        ],
+        "expected": "Malformed contact response must fail closed, including invalid provenance/version types.",
+        "observed": "boundedRecords checks truthiness only for recordVersion/sourceRecordId. Audit probe accepted object-valued metadata. Existing malformed tests cover empty/wrong contact/too many rows, not these types.",
+        "severity": "BLOCKING",
+        "files": [
+          "src/consent/stage32/email/databaseResolver.ts"
+        ],
+        "proposedMinimalFix": "Validate runtime string types, nonempty bounded IDs/versions and exact scope shape; add object/number/array/null provenance cases.",
+        "evidence": "audit probe malformedDatabase.rejected=false",
+        "disposition": "OPEN_RECORDED_BEFORE_ANY_FIX",
+        "fixedAfterAudit": false
+      },
+      "implementation": [
+        {
+          "file": "src/consent/stage32/email/databaseResolver.ts",
+          "symbol": "boundedRecords",
+          "line": 10
+        },
+        {
+          "file": "src/consent/stage32/email/databaseResolver.ts",
+          "symbol": "validateLookupReceipt",
+          "line": 20
+        }
+      ],
+      "tests": [
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "${field} rejects malformed scalar #%s",
+          "line": 7,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "malformed provenance never changes consent/authority/identity or stores an email",
+          "line": 27,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "equivalent valid lookup scope is independent of JSON property order",
+          "line": 70,
+          "result": "PASS_FINAL_SOURCE"
+        }
+      ],
+      "evidence": [
+        "docs/stage-2.0c-3.2-hardening-2-email-resolution-report.json"
+      ],
+      "closureReason": "Exact bounded runtime shapes reject malformed scalar metadata, unknown fields, scope/contact mismatch and excessive rows. Future receipt adds provenance/time/revision. Host identity/authority/consent remain unchanged.",
+      "limitation": "Synthetic fixtures only; no production DB integration.",
+      "remainingAction": "Human/business gates below remain pending; user reviews before any commit/test request."
+    },
+    {
+      "id": "GAP-003",
+      "title": "Observed session safety metrics",
+      "status": "CLOSED",
+      "scope": "ENGINEERING_DOCUMENTATION_ONLY",
+      "originalFinding": {
+        "id": "GAP-003",
+        "requirements": [
+          13,
+          17,
+          38,
+          39,
+          50,
+          60
+        ],
+        "expected": "Safety counts derive from exercised acquisition outcomes, not literals.",
+        "observed": "runEmailCase hard-codes autoAccepted:false and finalStoredAddress:null. falseAutoAccepts therefore cannot become nonzero under a flow-storage regression. PARTIAL/INTERRUPTED/STALE corpus sources gate a boolean outside actual session. Eight valid local scenarios and separate ownership tests are real but do not exhaust adversarial storage outcomes.",
+        "severity": "IMPORTANT",
+        "files": [
+          "src/consent/stage32/hardening/corpus.ts",
+          "src/consent/stage32/hardening/scenarios.ts"
+        ],
+        "proposedMinimalFix": "Drive adversarial owned/unowned turns through public session; derive stored outcome and negative acceptance counts from actual snapshots; keep fixed denominator and positive confirmation requirements.",
+        "evidence": "runEmailCase/runEmailCorpus static inspection; audit corpus results",
+        "disposition": "OPEN_RECORDED_BEFORE_ANY_FIX",
+        "fixedAfterAudit": false
+      },
+      "implementation": [
+        {
+          "file": "src/consent/stage32/hardening/outcomes.ts",
+          "symbol": "measureOutcome",
+          "line": 6
+        },
+        {
+          "file": "src/consent/stage32/hardening/outcomes.ts",
+          "symbol": "safetyMetrics",
+          "line": 13
+        },
+        {
+          "file": "src/consent/stage32/hardening/corpus.ts",
+          "symbol": "runEmailCase",
+          "line": 79
+        }
+      ],
+      "tests": [
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "TEST ONLY unsafe snapshot double makes both safety metrics nonzero and trips the gate",
+          "line": 26,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "positive complete local outcome is observed, not an always-empty metric",
+          "line": 25,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "public corpus metrics are actual observed outcomes",
+          "line": 30,
+          "result": "PASS_FINAL_SOURCE"
+        }
+      ],
+      "evidence": [
+        "docs/stage-2.0c-3.2-hardening-2-email-resolution-report.json",
+        "docs/stage-2.0c-3.2-hardening-2-scenario-results.json"
+      ],
+      "closureReason": "All 66 retained corpus cases drive actual public sessions. Snapshot-derived stored value, review, confirmation and ownership determine counters. Unsafe ambiguous storage test double yields 1 false accept and 1 ambiguous selection; gate throws.",
+      "limitation": "Corpus submission cases stop before recipient confirmation; positive complete scenarios separately observe real local storage. No acoustic hallucination detector is claimed.",
+      "remainingAction": "Human/business gates below remain pending; user reviews before any commit/test request."
+    },
+    {
+      "id": "GAP-004",
+      "title": "Lifecycle-connected visible preflight",
+      "status": "CLOSED",
+      "scope": "ENGINEERING_DOCUMENTATION_ONLY",
+      "originalFinding": {
+        "id": "GAP-004",
+        "requirements": [
+          11,
+          34,
+          46
+        ],
+        "expected": "Explicit preflight status reflects actual recognition/permission/transport state in evaluation composition.",
+        "observed": "preflightStatus is referenced by its unit test only. prepareC32Recognition uses old ASRPreflight; workspace has no displayed/connected new six-state preflight or capture lifecycle.",
+        "severity": "IMPORTANT",
+        "files": [
+          "src/consent/stage32/hardening/preflight.ts",
+          "src/consent/stage32/recognition.ts",
+          "src/consent/stage32/Workbench.tsx"
+        ],
+        "proposedMinimalFix": "Wire pure status mapping to existing preflight lifecycle without starting providers; test injected status transitions and render status.",
+        "evidence": "rg reference search plus actual browser inspection",
+        "disposition": "OPEN_RECORDED_BEFORE_ANY_FIX",
+        "fixedAfterAudit": false
+      },
+      "implementation": [
+        {
+          "file": "src/consent/stage32/hardening/preflight.ts",
+          "symbol": "EvaluationPreflight",
+          "line": 8
+        },
+        {
+          "file": "src/consent/stage32/recognition.ts",
+          "symbol": "prepareC32Recognition",
+          "line": 10
+        },
+        {
+          "file": "src/consent/stage32/hardening/EvaluationPanel.tsx",
+          "symbol": "EvaluationPanel",
+          "line": 7
+        }
+      ],
+      "tests": [
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "actual recognition composition notifies READY only after injected capture and ready; stopped is no longer READY",
+          "line": 46,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "invalid backend health never becomes READY despite injected transport events",
+          "line": 68,
+          "result": "PASS_FINAL_SOURCE"
+        }
+      ],
+      "evidence": [
+        "docs/stage-2.0c-3.2-hardening-2-validation.txt"
+      ],
+      "closureReason": "Existing recognition lifecycle feeds subclass/callback; workspace exposes actual injected inputs and underlying transport checks. Wrong backend health never becomes READY. No capture/transport is opened by construction.",
+      "limitation": "READY transport status is distinct from completion of five microphone/scenario gates; injected READY never verifies live ASR.",
+      "remainingAction": "Human/business gates below remain pending; user reviews before any commit/test request."
+    },
+    {
+      "id": "GAP-005",
+      "title": "Exact human evidence schema",
+      "status": "CLOSED",
+      "scope": "ENGINEERING_DOCUMENTATION_ONLY",
+      "originalFinding": {
+        "id": "GAP-005",
+        "requirements": [
+          24,
+          34,
+          42,
+          47
+        ],
+        "expected": "Required review fields/types and test IDs validated before export.",
+        "observed": "HumanReviewEvidence.microphone accepted PASS observation with unknown testId, absent final/materialErrors. shape rejects extra fields but does not require required fields/types. Manual form is honest/self-reported, but serialized contract can silently omit required finalization/errors.",
+        "severity": "IMPORTANT",
+        "files": [
+          "src/consent/stage32/hardening/review.ts"
+        ],
+        "proposedMinimalFix": "Exact required schemas and bounded enums/booleans; reject missing fields and nested objects in scalar fields; add negative runtime-schema tests.",
+        "evidence": "audit probe incompleteMicrophoneObservation.rejected=false",
+        "disposition": "OPEN_RECORDED_BEFORE_ANY_FIX",
+        "fixedAfterAudit": false
+      },
+      "implementation": [
+        {
+          "file": "src/consent/stage32/hardening/review.ts",
+          "symbol": "HumanReviewEvidence",
+          "line": 8
+        }
+      ],
+      "tests": [
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "missing %s cannot serialize PASS",
+          "line": 37,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "${field} malformed #%s fails",
+          "line": 38,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "incomplete invalid PASS %j fails",
+          "line": 39,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "linked partial/final differences are retained, and pending reviewer decision cannot export a mic PASS",
+          "line": 69,
+          "result": "PASS_FINAL_SOURCE"
+        }
+      ],
+      "evidence": [
+        "docs/stage-2.0c-3.2-hardening-2-validation.txt"
+      ],
+      "closureReason": "Exact plain shapes, required fields, bounded IDs/enums, boolean and timing checks fail closed. Linked PASS requires corresponding source reviewer PASS. Legacy complete manual observation remains labeled SELF_REPORTED.",
+      "limitation": "No reviewer authentication or provider authenticity is inferred.",
+      "remainingAction": "Human/business gates below remain pending; user reviews before any commit/test request."
+    },
+    {
+      "id": "GAP-006",
+      "title": "Linked, inspectable recovery evidence",
+      "status": "CLOSED",
+      "scope": "ENGINEERING_DOCUMENTATION_ONLY",
+      "originalFinding": {
+        "id": "GAP-006",
+        "requirements": [
+          5,
+          34,
+          46,
+          47,
+          48
+        ],
+        "expected": "Human package links each spoken-email/mic observation to interpreted tokens, candidate comparison and correction outcome; controlled local call can be exercised or independent raw evidence imported.",
+        "observed": "ReviewPanel records manual raw/final/latency/error observations and separate manual inspector rows. No mic-result→email-inspection/correction association, source session/provider/endpoint timing or recovered-correctly field; natural-call pane is elapsed-time entry only. It does not run the complete C32 flow.",
+        "severity": "IMPORTANT",
+        "files": [
+          "src/consent/stage32/hardening/ReviewPanel.tsx",
+          "src/consent/stage32/hardening/review.ts",
+          "src/consent/stage32/Workbench.tsx"
+        ],
+        "proposedMinimalFix": "Add bounded session/turn/revision links and email-recovery assessment; support inert injected/local scenario wiring or import independently authorized diagnostics. Keep manual/physical evidence distinctions and no automatic provider start.",
+        "evidence": "actual browser AX state; ReviewPanel/MicrophoneReview schema",
+        "disposition": "OPEN_RECORDED_BEFORE_ANY_FIX",
+        "fixedAfterAudit": false
+      },
+      "implementation": [
+        {
+          "file": "src/consent/stage32/hardening/review.ts",
+          "symbol": "EvidenceChain",
+          "line": 5
+        },
+        {
+          "file": "src/consent/stage32/hardening/EvaluationPanel.tsx",
+          "symbol": "EvaluationPanel",
+          "line": 7
+        },
+        {
+          "file": "src/consent/stage32/hardening/ReviewPanel.tsx",
+          "symbol": "ReviewPanel",
+          "line": 10
+        }
+      ],
+      "tests": [
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "valid observations and complete linked correction preserve unknown provider and immutable raw evidence",
+          "line": 40,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "missing or mismatched linked source cannot attach to microphone result",
+          "line": 42,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "linked provider IDs must be nonempty and resolution must be a bounded enum",
+          "line": 71,
+          "result": "PASS_FINAL_SOURCE"
+        }
+      ],
+      "evidence": [
+        "docs/stage-2.0c-3.2-hardening-2-scenario-results.json"
+      ],
+      "closureReason": "Injected actual controller or imported independently authorized diagnostics retain session/turn/revisions, raw/final, tokens, candidates, deterministic result, correction lineage, timing, errors and decision. Full controller state is inspectable. Absent provider/endpoint/latency remains null; import is unverified.",
+      "limitation": "Real microphone tests and recovered-correctly judgments remain pending. Human evidence never becomes production consent.",
+      "remainingAction": "Human/business gates below remain pending; user reviews before any commit/test request."
+    },
+    {
+      "id": "GAP-007",
+      "title": "Consumed bounded natural-flow config",
+      "status": "CLOSED",
+      "scope": "ENGINEERING_DOCUMENTATION_ONLY",
+      "originalFinding": {
+        "id": "GAP-007",
+        "requirements": [
+          15,
+          37,
+          52,
+          53
+        ],
+        "expected": "Proposed natural-flow config is actually exercised by state/evidence tests.",
+        "observed": "naturalFlow is an exported descriptor with no consumers; simulator hard-codes150ms and separate counters. AS follows same branch asA without reading config. GreenAS does not verify config changes preserve behavior.",
+        "severity": "IMPORTANT",
+        "files": [
+          "src/consent/stage32/hardening/simulator.ts",
+          "src/consent/stage32/hardening/scenarios.ts"
+        ],
+        "proposedMinimalFix": "Consume bounded config in simulator/controller composition; test invalid/question-merge settings fail closed, duration components and guard invariants; do not alter approved production pacing.",
+        "evidence": "rg naturalFlow shows declaration only",
+        "disposition": "OPEN_RECORDED_BEFORE_ANY_FIX",
+        "fixedAfterAudit": false
+      },
+      "implementation": [
+        {
+          "file": "src/consent/stage32/hardening/naturalFlow.ts",
+          "symbol": "evaluationFlow",
+          "line": 3
+        },
+        {
+          "file": "src/consent/stage32/hardening/simulator.ts",
+          "symbol": "syntheticCall",
+          "line": 8
+        },
+        {
+          "file": "src/consent/stage32/hardening/scenarios.ts",
+          "symbol": "runScenario",
+          "line": 11
+        }
+      ],
+      "tests": [
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "changed pace changes transition component exactly, not media/speech or guards",
+          "line": 49,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "invalid config %j fails closed",
+          "line": 50,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "barge-in and stale output remain interrupted under changed pacing",
+          "line": 51,
+          "result": "PASS_FINAL_SOURCE"
+        }
+      ],
+      "evidence": [
+        "docs/stage-2.0c-3.2-hardening-2-duration-report.json",
+        "docs/stage-2.0c-3.2-hardening-2-scenario-results.json"
+      ],
+      "closureReason": "Simulator consumes validated pace/thinking/speech/operator configuration; AS differs from A by configured pace. Timings separate media, recipient, transitions and operator including authority review. No padding or changed voice speed.",
+      "limitation": "Physical/network delay is unknown, not zero; subjective naturalness is pending.",
+      "remainingAction": "Human/business gates below remain pending; user reviews before any commit/test request."
+    },
+    {
+      "id": "GAP-008",
+      "title": "Per-file technical QA for every available WAV",
+      "status": "CLOSED",
+      "scope": "ENGINEERING_DOCUMENTATION_ONLY",
+      "originalFinding": {
+        "id": "GAP-008",
+        "requirements": [
+          32
+        ],
+        "expected": "Apply all requested technical QA checks to all available WAVs while minimizing private data.",
+        "observed": "49 consent assets have detailed matrix; other237 only aggregate format/alignment/raw clipping/all-silent stats. Their durations, individual silence bounds, duplicate-byte groups and unexpectedly-short/truncated assessment are absent.12 streaming headers stay UNKNOWN.",
+        "severity": "IMPORTANT",
+        "files": [
+          "scripts/stage20c32-hardening-qa.ts"
+        ],
+        "proposedMinimalFix": "Add anonymized/hash-keyed technical matrix with available duration/payload/sample/silence/duplicate data and explicit N/A or UNKNOWN metadata; never copy private PCM or paths.",
+        "evidence": "technicalAudioQA outsideConsentInventory; independent rerun",
+        "disposition": "OPEN_RECORDED_BEFORE_ANY_FIX",
+        "fixedAfterAudit": false
+      },
+      "implementation": [
+        {
+          "file": "scripts/stage20c32-hardening-qa.ts",
+          "symbol": "inspectWave",
+          "line": 18
+        },
+        {
+          "file": "scripts/stage20c32-hardening-qa.ts",
+          "symbol": "technicalAudioQA",
+          "line": 9
+        }
+      ],
+      "tests": [
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "GAP-008 per-file QA contract covers closed and indefinite containers; full inventory runs outside Vitest workers",
+          "line": 65,
+          "result": "PASS_FINAL_SOURCE"
+        }
+      ],
+      "evidence": [
+        "docs/stage-2.0c-3.2-hardening-2-audio-qa.json"
+      ],
+      "closureReason": "All 286 available WAVs have individual technical rows: 49 manifest-bound assets and 237 anonymous hash-keyed rows. Twelve indefinite headers explicitly have UNKNOWN duration/completion. File bytes are never copied into reports.",
+      "limitation": "Technical shape/silence/peak heuristics cannot establish native pronunciation or intended semantic completeness.",
+      "remainingAction": "Human/business gates below remain pending; user reviews before any commit/test request."
+    },
+    {
+      "id": "GAP-009",
+      "title": "Canonical current acceptance index",
+      "status": "CLOSED",
+      "scope": "ENGINEERING_DOCUMENTATION_ONLY",
+      "originalFinding": {
+        "id": "GAP-009",
+        "requirements": [
+          35,
+          36
+        ],
+        "expected": "Acceptance impact explicitly maps still-valid/retest/superseded/not-yet-tested evidence, including minimum delta.",
+        "observed": "Hardening impact matrix explains unchanged/retest components but does not enumerate SUPERSEDED predecessor→current evidence or use all four required categories. Old unsuffixed guide/inventory remain historical and need explicit current-index linkage.",
+        "severity": "DOCUMENTATION_ONLY",
+        "files": [
+          "docs/stage-2.0c-3.2-hardening-1-acceptance-impact.md",
+          "docs/STAGE-2.0C32-HUMAN-REVIEW-README.md",
+          "docs/stage-2.0c-3.2-files.json"
+        ],
+        "proposedMinimalFix": "Add new current evidence index/category matrix keyed by hashes and link canonical slots to suffixed current reports; do not overwrite history.",
+        "evidence": "deliverables content review",
+        "disposition": "OPEN_RECORDED_BEFORE_ANY_FIX",
+        "fixedAfterAudit": false
+      },
+      "implementation": [
+        {
+          "file": "scripts/stage20c32-hardening2-reports.ts",
+          "symbol": "minimumDelta",
+          "line": 27
+        },
+        {
+          "file": "src/consent/stage32/Workbench.tsx",
+          "symbol": "HISTORICAL",
+          "line": 14
+        }
+      ],
+      "tests": [],
+      "evidence": [
+        "docs/stage-2.0c-3.2-hardening-2-acceptance-index.json"
+      ],
+      "closureReason": "Exactly four categories: STILL_VALID 24, RETEST_REQUIRED 13, SUPERSEDED 12 with predecessor/replacement hashes, NOT_YET_TESTED 4 groups. Current guide is prominent; historical guides/audits remain immutable.",
+      "limitation": "Minimum next human delta is prepared only; no request to Asem was sent.",
+      "remainingAction": "Human/business gates below remain pending; user reviews before any commit/test request.",
+      "verification": "Direct four-category/hash/version/content and current-workspace inspection; report generator and preservation checks. No artificial test count."
+    },
+    {
+      "id": "GAP-010",
+      "title": "Truthful provider uncertainty and future journal",
+      "status": "CLOSED",
+      "scope": "ENGINEERING_DOCUMENTATION_ONLY",
+      "originalFinding": {
+        "id": "GAP-010",
+        "requirements": [
+          1,
+          3,
+          31,
+          38,
+          43,
+          60
+        ],
+        "expected": "Historical C32 provider usage must be independently supported or labeled UNKNOWN.",
+        "observed": "Reports assert0 but no complete provider/network usage ledger or external billing/request inventory is available. Code and audit fixtures support zero for this audit; they cannot prove absence of all historical calls. No unexpected provider activity was observed.",
+        "severity": "IMPORTANT",
+        "files": [
+          "docs/stage-2.0c-3.2-hardening-1-provider-usage.json",
+          "docs/stage-2.0c-3.2-hardening-1-completion.md"
+        ],
+        "proposedMinimalFix": "Label historical count UNKNOWN unless independent evidence obtained without initiating inference; attach bounded request journal for future runs. Audit-run actual requests remain0.",
+        "evidence": "audit command ledger and absence of complete historical request evidence",
+        "disposition": "OPEN_RECORDED_BEFORE_ANY_FIX",
+        "fixedAfterAudit": false
+      },
+      "implementation": [
+        {
+          "file": "src/consent/stage32/hardening/requestJournal.ts",
+          "symbol": "RequestJournal",
+          "line": 4
+        },
+        {
+          "file": "src/consent/stage32/hardening/requestJournal.ts",
+          "symbol": "journalRequest",
+          "line": 10
+        }
+      ],
+      "tests": [
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "is empty/inert; retains only receipt metadata and unknown external history",
+          "line": 55,
+          "result": "PASS_FINAL_SOURCE"
+        },
+        {
+          "file": "tests/consent-stage20c32-remediation.test.ts",
+          "nameOrParameterizedTemplate": "future explicitly invoked mock transport is journaled before/after; zero real transport is installed",
+          "line": 63,
+          "result": "PASS_FINAL_SOURCE"
+        }
+      ],
+      "evidence": [
+        "docs/stage-2.0c-3.2-hardening-2-provider-usage.json"
+      ],
+      "closureReason": "Current run is zero, repository declarations remain repository evidence, historical external totals remain UNKNOWN. Future metadata/hash-only journal bounds provider/endpoint/model/voice/characters/result/retry/cost and records before/after explicit mock work. No transport installed.",
+      "limitation": "No historical external ledger exists; UNKNOWN is not changed to zero. Original instruction is qualified by remediation section 12.",
+      "remainingAction": "Human/business gates below remain pending; user reviews before any commit/test request."
+    }
+  ],
+  "openEngineeringGaps": []
+}

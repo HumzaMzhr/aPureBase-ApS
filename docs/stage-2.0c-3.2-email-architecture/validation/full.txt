@@ -1,0 +1,13 @@
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /private/tmp/c32-email-freeze/validation-frozen/tree
+
+
+ Test Files  88 passed (88)
+      Tests  1786 passed (1786)
+   Start at  05:47:10
+   Duration  7.02s (transform 2.27s, setup 0ms, import 6.23s, tests 30.16s, environment 6ms)
+

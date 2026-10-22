@@ -1,0 +1,60 @@
+aPureBase — FINAL CONSOLIDATED C-3.2 ASEM HUMAN RETEST · HUMAN REVIEW UI
+HUMAN RETEST CANDIDATE · NOT ACCEPTED · NOT PRODUCTION READY
+
+For Asem Raza Shareef. Use this package instead of the earlier two-phrase ZIP.
+This is a local evaluation. No telephone calls, real CRM writes or consent
+emails are made. Do not use real patient/contact information in these tests.
+
+1. Unzip the entire folder to your Mac. Keep the files together.
+   Apple Silicon and Intel Node runtimes are included; no npm/install/build
+   commands or development knowledge are needed. A supported modern macOS and
+   browser with WebAudio/microphone support are required.
+2. Read HUMAN-REVIEW-GUIDE.txt. Connect headphones and a microphone.
+3. Listening needs NO credentials. For authorized paid live OpenAI ASR only:
+   double-click Configure-ASR.command and enter an authorized key at its HIDDEN
+   prompt. The key is saved privately OUTSIDE this ZIP at:
+   ~/Library/Application Support/aPureBase-C32-Retest/openai-asr-key.txt
+   It is never shown in the browser, logs, review JSON or package manifest.
+   Do not email the key or put it in the extracted package. No ElevenLabs key
+   is needed. Stop/restart after supplying a key. Cancel the prompt to keep
+   listening-only mode. Delete that private key file when no longer needed.
+4. Double-click Start.command. It verifies all package bytes, starts a local
+   server and opens http://127.0.0.1:5173/ . Keep its Terminal window open.
+   If an older build uses port 5173, stop that build normally first. This
+   launcher refuses to replace another server. Do not use an already-open
+   historical tab. The new page uses the original lime aPureBase wordmark and says
+   “Human Acceptance Review.” Candidate/source identity remains
+   available under Results → Technical details.
+5. Enter your name. Follow the persistent five-step bar: VOICE REVIEW → MICROPHONE → EMAIL →
+   CALL TESTS → RESULTS. Complete in order: 12 required normal-call listening reviews (four optional diagnostic spelling clips); five
+   live microphone tests; synthetic email recovery; A–D natural calls (E
+   correction is an optional fifth). The page guides you. Use natural Danish;
+   no verbatim script or exaggerated pause is required. Wait for a visible
+   provider final after speaking before stopping a microphone test.
+6. In RESULTS, press EXPORT REVIEW. Export even if blocked/incomplete or failed.
+   Your browser normally saves aPureBase-C32-Asem-Human-Retest.json in Downloads.
+   Reviewers return that JSON to Humza, with any additional observations.
+   Never return credentials or a recording of real contacts.
+7. Double-click Stop.command when finished. Progress remains in this browser.
+   Restart Start.command to resume. Export before changing browser/profile,
+   clearing site storage or moving to another computer.
+
+Startup and Check connection do NOT contact a provider. Each explicit
+Start Test / Start Call action can incur OpenAI usage. Only use
+a key and account you are authorized to use, and acknowledge that action in
+the page. No TTS is generated, and no microphone PCM is saved.
+
+If readiness/permission/provider setup fails, stop that attempt and retain its
+exact diagnostic. Missing provider finals cannot pass. Do not fill in a final
+manually. Expected text is for offline comparison only; it never becomes an
+ASR hint or a correction dictionary.
+
+Any safety failure is blocking. Diagnostic spelling problems are separate
+from the clinic-spoken-email path unless they expose a shared defect.
+HUMAN_RETEST_PASS is a human local-retest result, not stage acceptance or
+production readiness. Humza must review the returned evidence.
+
+If macOS/browser blocks startup, send Humza the exact message. Do not disable
+system protections. If a microphone request is blocked, retain the error;
+no fake result should be entered. Nothing in this package requests a telephone
+call, installation of third-party development tools, TTS generation or deploy.

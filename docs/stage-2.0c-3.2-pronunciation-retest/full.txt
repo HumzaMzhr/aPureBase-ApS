@@ -1,0 +1,13 @@
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /private/tmp/c32-pronunciation-revalidation/tree
+
+
+ Test Files  83 passed (83)
+      Tests  1637 passed (1637)
+   Start at  02:34:37
+   Duration  6.91s (transform 2.06s, setup 0ms, import 5.51s, tests 29.85s, environment 5ms)
+

@@ -1,0 +1,206 @@
+{
+  "scope": "TIMEOUT INVESTIGATION ONLY",
+  "head": "a5b70549484e560351dcb2f8e2513c26ac9b2eaf",
+  "originalPreservationSha256": "1c95865434cc99c8796ca94475284ed62bdd8c65e429a545e87cfd2c5cdf298c",
+  "originalFailureSourceSha256": "fdafb13be062ccf70f2dd83f838edb01f79e02c99692f31c21c8baecc1fc7a73",
+  "journalSha256": "60ffaec8f7e19c9eb979d019f9aa7e5b9138cbeaa21a665584dee0a890240ec3",
+  "originalRecordingsPreserved": 37,
+  "c31RecordingsPreserved": 12,
+  "productionCodePreserved": true,
+  "productionSourceEntriesChecked": 130,
+  "stage195ReplayTestPreserved": true,
+  "testConfigAndTimeoutsPreserved": true,
+  "credentialsIntroduced": false,
+  "forbiddenEnvPaths": [],
+  "onlyChangedPriorCandidatePaths": [
+    "tests/continuous-transcription-gateway.test.ts",
+    "scripts/verify-stage20c31.ts"
+  ],
+  "historicalReportsPreserved": true,
+  "providerRequests": 0,
+  "audioGenerationRequests": 0,
+  "commits": 0,
+  "pushes": 0,
+  "prWrites": 0,
+  "deploys": 0,
+  "stage20DStarted": false,
+  "artifactIndexExcludesSelf": true,
+  "newEvidenceFiles": [
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation.md",
+      "sha256": "edefeb5f1f2eebfeee3ea43b980b5f7b0e71b824d07d04d3c83e92b3d8dc4de3"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/baseline-full.json",
+      "sha256": "4f90bccb022db05e55b5674c5b31b38fb4756fecc4bfea4ece160c1e795e2c35"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/baseline-phase-profile.txt",
+      "sha256": "4f9db06271dc689b5fe434866b3c0ff80720a5f6840d8507e1b57bc352852266"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/final-full-1.txt",
+      "sha256": "efd07ef7c903e42a7b3feca63f770531a0b4b79cbf9441064279690217ccf1d5"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/final-full-2.txt",
+      "sha256": "5bcc8554d92005128ebefe92dfdba40a3fb5411e511d255ed6aadf2a112b1e24"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/final-full-3.txt",
+      "sha256": "24a970591290ce40e414b9763d3048308478829a674a295ce2de8e06f75cfe12"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/final-full-runs.json",
+      "sha256": "caa7dfa7f47ac8bcb2d2289fdc2ea1ceefbda4affd89d94c9f0eec28855cbb39"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/harness-preservation.json",
+      "sha256": "cfb5c0552c11ef558b23927615b312cbfdb74d066151e5a0e1d91ce948f9ae90"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/original-full-suite.json",
+      "sha256": "e996de7bbcf958645618e6868a51144de70a83c2d0ad487f5a82048184ea9e43"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/original-full-suite.txt",
+      "sha256": "b44d816a1f569bb1ee51a4910e7c8b4b6617374e4028259fbb38577e0d0cf776"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/original-verifier.txt",
+      "sha256": "ff78eefbe9235387821ab1898cd4415acdac32540ed5252463da104d332dfd5b"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-after-1.txt",
+      "sha256": "14126a9bdb3b2f33bc3c5bc8f0f18237f305982974fe096d5a175265831e4a6a"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-after-2.txt",
+      "sha256": "da0a0d00af34497e61daf499810f11f1ffde1cbd1280325ec3c27a74eaf9a03f"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-after-3.txt",
+      "sha256": "584ce859675ede52f95d405de56c40bc2e231b03ac1d39c04549220b882fb9cc"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-before-1.txt",
+      "sha256": "531f53a421f0e4b8cd98aceac9286c65e7a2c22e47cadddb2087fd226de8f1b3"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-before-2.txt",
+      "sha256": "5eb532d7ea4e4434fee4a1792a2a0e9c4c0e555559bafd9f03ced86e25885d1b"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-before-3.txt",
+      "sha256": "1fff0f72c47ca3719b8cf622678f37468ed0c28a878814b20a63e5c87a9e1a87"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-combined-1.txt",
+      "sha256": "b19ce1b5e60c6de0ef49160fabb0562fe80f517833c02c1f57fe6847fece2cde"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-combined-2.txt",
+      "sha256": "303c00d50bd83c31541faf45440a1d28a6d95dc99a593b32d164aebd227c4543"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-combined-3.txt",
+      "sha256": "011b5a21f15e4d8d6b77330c5afc53b52796bfc2bc45aa6340195a5c4a447dde"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-pcm-1.txt",
+      "sha256": "a445dd485f000206aa99f3bc62e13a781a89978519f25962a939a18b71b62e0b"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-pcm-2.txt",
+      "sha256": "3ca9a5f9ceffbe3927cccb84551119945155f213f9eb52c1cb002e2515184f18"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-pcm-3.txt",
+      "sha256": "0f5df78ea71eaa92d1bc41da83429f09cc5cc3422c5a31f762f643a001ae5c19"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/post-runs.json",
+      "sha256": "311702f842acd46ab394f21d94791345642ef27209b06ad90711ded7856c29c5"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-after-1.txt",
+      "sha256": "1c8991ac5b9a41df318663a7d7cae7e60b1a17904a3be6eb86cdca444812a08b"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-after-2.txt",
+      "sha256": "13e073f72ffbabe40b663f1a98d002f96cc2724f09d030d6df3299a3e39e4da2"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-after-3.txt",
+      "sha256": "d7cac36d46f9cda38ad0f1733cd1ea791385957d02dd3888c89061dc8c9331e1"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-before-1.txt",
+      "sha256": "576b9acb8c16d11d3c371ce46df042fa4affd627679ae5d9658a30f91b7d4378"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-before-2.txt",
+      "sha256": "66ba3ccad883815ce1e615a24f98639aaf3abab22aa6e856b5b44b49ea3c7198"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-before-3.txt",
+      "sha256": "162754e48c0c567a443995fdd284de9c4ad50d394fcfc4d160ec794c0c8f352f"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-combined-1.txt",
+      "sha256": "39896b57d8f16086c4d83e95d15e519331c137e1032ba36092f0b87acce981b5"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-combined-2.txt",
+      "sha256": "de6b0fdafc6cbc1784fe3375bbab5695f78e6197f5d10b3e7f3a8872a3a062d3"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-combined-3.txt",
+      "sha256": "b7fc79316ff1d17706abc78a963f507d9cc166e69ee39b46aadb355e37e0dd22"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-pcm-1.txt",
+      "sha256": "c498c80c2cb3413c739fd2890d4b78848367f2c53b81c44ccfdd78142fd74cab"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-pcm-2.txt",
+      "sha256": "3f2b8f52f8b732bf8fc753ee808a24957d47ced3c62d1410ab985c34aaf4cb93"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-pcm-3.txt",
+      "sha256": "5628e5e7b01a3af4f17d8c7ccd6e26dfa28e169e74f2bf122c7eb7eb708a3cae"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/pre-runs.json",
+      "sha256": "9ee848b4a76e9e573e8b597259378b61224b0df27e58e7dd653ed3b21159a28a"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/process-sample.txt",
+      "sha256": "24b091b036f084a824cbdec21004a4882722e49f3424249fb16a85f70fdb592a"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/profile-deep-equality.txt",
+      "sha256": "ae51d845da930147889ab64bb14dd3d575eac16af1f00f3d83ec009afed0ad71"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/profile-native-equality.txt",
+      "sha256": "c0296a0f08ddd5212eb10f75e8ee9eba5586fd52fadbb71bba94c4f5a55a2930"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/runtime.json",
+      "sha256": "e4839701be853ed5f70e24cb726f9f894f7fa4c06180bf7d099f468b2118bca9"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/unmodified-current-full.json",
+      "sha256": "53bdd09f7b887f629bd55faa264847dd30babb4fed767c64867ea9860d78ee9e"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-investigation/vitest-resolved.json",
+      "sha256": "73575b425ea173bf9a57e9ca549966725ca523f116b50af8358f896e5e357eae"
+    },
+    {
+      "path": "docs/stage-2.0c-3.1-timeout-validation.txt",
+      "sha256": "c208cbcdcd41a65f9d2f8c463e934bbd9714d0d8c693d6f4955be855a7d95fe0"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "version": "stage-2.0c1-approved-1",
+  "physicalTelephoneLatencyMeasured": false,
+  "assumptions": {
+    "recipientResponseSeconds": "Explicit scenario assumptions only, not measurements",
+    "systemTransitionSecondsPerBoundary": 0.05,
+    "dynamicDuration": "null, unresolved; no invented pronunciation or telephone delay",
+    "ordinaryTargetSeconds": [
+      30,
+      60
+    ],
+    "clarificationUpperTargetSeconds": 90
+  },
+  "scenarios": [
+    {
+      "id": "A",
+      "scenario": "Straight direct HCP YES + email",
+      "ids": [
+        "opening",
+        "purpose",
+        "consent-question",
+        "email-request",
+        "email-readback-intro",
+        "email-confirmation-question",
+        "success-close"
+      ],
+      "dynamic": [
+        "Exact email address pronunciation/readback"
+      ],
+      "responses": [
+        2,
+        3,
+        5,
+        2
+      ],
+      "staticPrerecordedSpeakingSeconds": 31.068291666666667,
+      "dynamicValueSeconds": null,
+      "recipientResponseSeconds": 12,
+      "systemTransitionSeconds": 0.35000000000000003,
+      "modeledKnownSubtotalSeconds": 43.41829166666667,
+      "modeledTotalSeconds": null,
+      "over90Seconds": "UNRESOLVED_TOTAL",
+      "automationComplete": false,
+      "limitation": "Static subtotal only; real local flow routes unresolved dynamic values to HUMAN_TAKEOVER. Success is not a fully automated measured call."
+    },
+    {
+      "id": "B",
+      "scenario": "Direct HCP NO",
+      "ids": [
+        "opening",
+        "purpose",
+        "consent-question",
+        "refusal-close"
+      ],
+      "dynamic": [],
+      "responses": [
+        2,
+        3
+      ],
+      "staticPrerecordedSpeakingSeconds": 22.38404166666667,
+      "dynamicValueSeconds": 0,
+      "recipientResponseSeconds": 5,
+      "systemTransitionSeconds": 0.2,
+      "modeledKnownSubtotalSeconds": 27.584041666666668,
+      "modeledTotalSeconds": 27.584041666666668,
+      "over90Seconds": "NO",
+      "automationComplete": true,
+      "limitation": "Local projection only; no physical phone latency included."
+    },
+    {
+      "id": "C",
+      "scenario": "One clarification then YES",
+      "ids": [
+        "opening",
+        "purpose",
+        "consent-question",
+        "clarify",
+        "email-request",
+        "email-readback-intro",
+        "email-confirmation-question",
+        "success-close"
+      ],
+      "dynamic": [
+        "Exact email address pronunciation/readback"
+      ],
+      "responses": [
+        2,
+        3,
+        3,
+        5,
+        2
+      ],
+      "staticPrerecordedSpeakingSeconds": 36.223124999999996,
+      "dynamicValueSeconds": null,
+      "recipientResponseSeconds": 15,
+      "systemTransitionSeconds": 0.4,
+      "modeledKnownSubtotalSeconds": 51.623124999999995,
+      "modeledTotalSeconds": null,
+      "over90Seconds": "UNRESOLVED_TOTAL",
+      "automationComplete": false,
+      "limitation": "Static subtotal only; real local flow routes unresolved dynamic values to HUMAN_TAKEOVER. Success is not a fully automated measured call."
+    },
+    {
+      "id": "D",
+      "scenario": "Receptionist to doctor to YES",
+      "ids": [
+        "opening",
+        "purpose",
+        "consent-question",
+        "email-request",
+        "email-readback-intro",
+        "email-confirmation-question",
+        "success-close"
+      ],
+      "dynamic": [
+        "Named target request",
+        "Transfer/wait duration",
+        "Exact email readback"
+      ],
+      "responses": [
+        3,
+        2,
+        3,
+        5,
+        2
+      ],
+      "staticPrerecordedSpeakingSeconds": 31.068291666666667,
+      "dynamicValueSeconds": null,
+      "recipientResponseSeconds": 15,
+      "systemTransitionSeconds": 0.35000000000000003,
+      "modeledKnownSubtotalSeconds": 46.41829166666667,
+      "modeledTotalSeconds": null,
+      "over90Seconds": "UNRESOLVED_TOTAL",
+      "automationComplete": false,
+      "limitation": "Static subtotal only; real local flow routes unresolved dynamic values to HUMAN_TAKEOVER. Success is not a fully automated measured call."
+    },
+    {
+      "id": "E",
+      "scenario": "Authorized intermediary YES",
+      "ids": [
+        "opening",
+        "purpose",
+        "email-request",
+        "email-readback-intro",
+        "email-confirmation-question",
+        "success-close"
+      ],
+      "dynamic": [
+        "Named authority question",
+        "Named intermediary consent question",
+        "Exact email readback"
+      ],
+      "responses": [
+        3,
+        3,
+        5,
+        2
+      ],
+      "staticPrerecordedSpeakingSeconds": 26.749375,
+      "dynamicValueSeconds": null,
+      "recipientResponseSeconds": 13,
+      "systemTransitionSeconds": 0.30000000000000004,
+      "modeledKnownSubtotalSeconds": 40.049375,
+      "modeledTotalSeconds": null,
+      "over90Seconds": "UNRESOLVED_TOTAL",
+      "automationComplete": false,
+      "limitation": "Static subtotal only; real local flow routes unresolved dynamic values to HUMAN_TAKEOVER. Success is not a fully automated measured call."
+    },
+    {
+      "id": "F",
+      "scenario": "Busy/callback",
+      "ids": [
+        "opening",
+        "callback",
+        "callback-close"
+      ],
+      "dynamic": [],
+      "responses": [
+        2,
+        4
+      ],
+      "staticPrerecordedSpeakingSeconds": 14.628583333333335,
+      "dynamicValueSeconds": 0,
+      "recipientResponseSeconds": 6,
+      "systemTransitionSeconds": 0.15000000000000002,
+      "modeledKnownSubtotalSeconds": 20.778583333333334,
+      "modeledTotalSeconds": 20.778583333333334,
+      "over90Seconds": "NO",
+      "automationComplete": true,
+      "limitation": "Local projection only; no physical phone latency included."
+    },
+    {
+      "id": "G",
+      "scenario": "Human takeover trigger",
+      "ids": [
+        "opening"
+      ],
+      "dynamic": [
+        "Human conversation duration"
+      ],
+      "responses": [
+        3
+      ],
+      "staticPrerecordedSpeakingSeconds": 7.198166666666666,
+      "dynamicValueSeconds": null,
+      "recipientResponseSeconds": 3,
+      "systemTransitionSeconds": 0.05,
+      "modeledKnownSubtotalSeconds": 10.248166666666666,
+      "modeledTotalSeconds": null,
+      "over90Seconds": "UNRESOLVED_TOTAL",
+      "automationComplete": false,
+      "limitation": "Static subtotal only; real local flow routes unresolved dynamic values to HUMAN_TAKEOVER. Success is not a fully automated measured call."
+    }
+  ]
+}

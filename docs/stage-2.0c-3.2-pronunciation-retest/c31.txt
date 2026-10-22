@@ -1,0 +1,9 @@
+
+ RUN  v4.1.11 /private/tmp/c32-pronunciation-revalidation/tree
+
+
+ Test Files  5 passed (5)
+      Tests  139 passed (139)
+   Start at  02:34:34
+   Duration  489ms (transform 897ms, setup 0ms, import 1.45s, tests 218ms, environment 0ms)
+

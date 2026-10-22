@@ -7,7 +7,7 @@ import {TrailingMonitor,type TrailingSample,type PlaybackPosition} from './trail
 import {IsolatedMicrophone} from './input';
 import {LocalOutput} from './localOutput';
 import {RecognitionDirection} from './recognition';
-import {ContinuousRecognitionDirection,type RecognitionPosition} from './continuousRecognition';
+import {ContinuousRecognitionDirection,RecognitionReviewRequired,type RecognitionPosition} from './continuousRecognition';
 import type {AudioInputSource,TranslatedAudioOutput,TranslatedPcmOutput} from './audioInterfaces';
 import {RealtimeTranslationTrial} from './realtimeTranslationClient';
 import {StreamingInterpreter,type InterpreterIO} from './engine';
@@ -15,17 +15,18 @@ import {translateLocalControlledTurn,translateUnit} from './translationClient';
 import {emptyLane,unitMetrics,type StreamingSnapshot} from './types';
 import type {StreamingOptions} from './host';
 import type {PlaybackHooks} from './scheduler';
+import {SessionDiagnostics,diagnosticReason} from './sessionDiagnostics';
 
 export type LocalPath='realtime'|'semantic'|'direct';
 export interface LocalOptions extends StreamingOptions {source:Language;path:LocalPath;prosodyMs?:number;cachedOpening:boolean}
 export interface LocalSnapshot extends StreamingSnapshot {
- active:boolean;path:LocalPath;acoustic?:AcousticSnapshot;trailing?:TrailingMonitor['summary'];trailingSamples?:TrailingSample[];lastSourceSpeechAt?:number;controlled:boolean;sourceOnset?:number;firstAudioMs?:number;firstPlaybackMs?:number;queuedMs?:number;
+ voiceQuality?:Record<string,unknown>;latencyBreakdown?:ReturnType<typeof import('./sessionBreakdown').sessionBreakdown>;active:boolean;path:LocalPath;acoustic?:AcousticSnapshot;trailing?:TrailingMonitor['summary'];trailingSamples?:TrailingSample[];lastSourceSpeechAt?:number;controlled:boolean;sourceOnset?:number;firstAudioMs?:number;firstPlaybackMs?:number;queuedMs?:number;
  audioTrace?:AudioTrace[];gaps?:GapTrace[];events:{at:number;type:string;detail:string}[];
- recognition?:RecognitionPosition;positions?:Partial<PlaybackPosition>&{sourceSamples?:number;asrObservedWords?:number;translationSourceWords:number;ttsCharacters?:number;targetSamples?:number;playbackSamples?:number};
+ voiceProvenance?:import('./pcmProvenance').VoiceProvenanceSummary;recognition?:RecognitionPosition;positions?:Partial<PlaybackPosition>&{sourceSamples?:number;asrObservedWords?:number;translationSourceWords:number;ttsCharacters?:number;targetSamples?:number;playbackSamples?:number};
 }
 export const emptyLocal=():LocalSnapshot=>({state:'READY',lanes:{en:emptyLane(),da:emptyLane()},error:'',warning:'',bargeIns:[],active:false,path:'realtime',controlled:false,events:[]});
 type Microphone=AudioInputSource;
-type Recognition=Pick<RecognitionDirection,'open'|'feed'|'finish'|'cancel'>;
+type Recognition=Pick<RecognitionDirection,'open'|'finish'|'cancel'>&{feed(bytes:Uint8Array,at?:number,timing?:CaptureTiming):void};
 type Direct=Pick<RealtimeTranslationTrial,'open'|'append'|'finish'|'close'>;
 type OutputDevice=TranslatedAudioOutput;
 /** Dependencies can be replaced by offline tests; defaults are the existing Stage 1.7 components. */
@@ -44,35 +45,36 @@ export function localMetrics(snapshot:LocalSnapshot,source:Language){
 export class LocalTestSession {
  snapshot:LocalSnapshot=emptyLocal();
  private abort=new AbortController();private microphone:Microphone;private output:OutputDevice;private engine:StreamingInterpreter;private recognition?:Recognition;private direct?:Direct;private renderer?:TranslatedPcmOutput;private timer?:ReturnType<typeof setInterval>;private paused=false;private preparing=false;private ended=false;private finishing=false;private directSamples=0;
- private acoustic:AcousticTiming;
+ private acoustic:AcousticTiming;private diagnostics:SessionDiagnostics;private failureReason?:string;
  private gapTimeline=new GapTimeline(gap=>{this.snapshot.events=[...this.snapshot.events,{at:this.now(),type:'GAP',detail:JSON.stringify(gap)}].slice(-200);});private now:()=>number;private trailingMonitor=new TrailingMonitor();private sampleBase=0;private playedBase=0;
  constructor(private options:LocalOptions,private changed:(state:LocalSnapshot)=>void,deps:LocalDependencies={}){
   if(options.path==='direct'&&options.source==='en')throw new Error('OpenAI Danish audio is disabled. Use REALTIME INTERPRETER with ElevenLabs Isabella.');
   if(options.path==='direct'&&options.forceControlled)throw new Error('Direct translation cannot use controlled handling.');
   if(options.cachedOpening&&options.source!=='en')throw new Error('Cached Danish opening requires English → Danish.');
   this.now=deps.now??(()=>performance.now());this.acoustic=new AcousticTiming(this.now,options.source==='en'?450:1350);
+  this.diagnostics=new SessionDiagnostics(options.source,options.path,this.now);
   this.snapshot.path=options.path;this.snapshot.controlled=options.forceControlled;
-  this.microphone=deps.microphone?.()??new IsolatedMicrophone();
-  const hooks:PlaybackHooks={measurement:event=>{if(!this.preparing)this.acoustic.playback(event);},audit:event=>{if(event.type==='ELEVENLABS_TEXT_SENT'&&Array.isArray(event.unitIds))this.acoustic.textSent(event.unitIds as string[],event.at);this.snapshot.audioTrace??=[];this.snapshot.audioTrace.push(event);if(this.snapshot.audioTrace.length>4096)this.snapshot.audioTrace.shift();if(event.type!=='HCP_OUTPUT_DA_PCM')this.event(event.type,JSON.stringify(event));},progress:(id,fraction)=>this.engine.playbackPosition(id,fraction),failed:this.fail,voiceIdentity:voice=>this.event('verified voice',JSON.stringify(voice)),firstAudio:(id,at)=>{this.engine.playback(id,'firstAudio',at);if(this.snapshot.sourceOnset!==undefined)this.snapshot.firstAudioMs??=at-this.snapshot.sourceOnset;this.emit();},scheduled:(id,at)=>this.engine.playback(id,'scheduled',at),started:(id,at)=>{this.engine.playback(id,'started',at);if(this.snapshot.sourceOnset!==undefined)this.snapshot.firstPlaybackMs??=at-this.snapshot.sourceOnset;this.event('target playback',id);},finished:(id,at)=>this.engine.playback(id,'finished',at),underrun:ms=>{this.snapshot.warning='Output underrun observed. Human listening review required.';this.event('underrun',`${Math.round(ms)} ms`);}};
+  this.microphone=deps.microphone?.()??new IsolatedMicrophone(this.diagnostics.record);
+  const hooks:PlaybackHooks={measurement:event=>{if(!this.preparing)this.acoustic.playback(event);if(['block_scheduled','block_started','block_rendered','unit_scheduled'].includes(event.type))this.diagnostics.record(`playback.${event.type}`,{streamId:event.streamId,unitId:event.unitId,providerAt:event.at,clock:'browser-performance.now'});},audit:event=>{this.diagnostics.record(event.type,event);if(event.type==='ELEVENLABS_TEXT_SENT'&&Array.isArray(event.unitIds))for(const unitId of event.unitIds)this.diagnostics.record('tts.unit_sent',{unitId,requestId:event.requestId,providerAt:event.at,clock:'browser-performance.now'});if(event.type==='ELEVENLABS_TEXT_SENT'&&Array.isArray(event.unitIds))this.acoustic.textSent(event.unitIds as string[],event.at);this.snapshot.audioTrace??=[];this.snapshot.audioTrace.push(event);if(this.snapshot.audioTrace.length>4096)this.snapshot.audioTrace.shift();if(event.type!=='HCP_OUTPUT_DA_PCM')this.event(event.type,JSON.stringify(event));},progress:(id,fraction)=>this.engine.playbackPosition(id,fraction),failed:this.fail,voiceIdentity:voice=>this.event('verified voice',JSON.stringify(voice)),firstAudio:(id,at)=>{this.engine.playback(id,'firstAudio',at);if(this.snapshot.sourceOnset!==undefined)this.snapshot.firstAudioMs??=at-this.snapshot.sourceOnset;this.emit();},scheduled:(id,at)=>this.engine.playback(id,'scheduled',at),started:(id,at)=>{this.engine.playback(id,'started',at);if(this.snapshot.sourceOnset!==undefined)this.snapshot.firstPlaybackMs??=at-this.snapshot.sourceOnset;this.event('target playback',id);},finished:(id,at)=>this.engine.playback(id,'finished',at),underrun:ms=>{this.snapshot.warning='Output underrun observed. Human listening review required.';this.event('underrun',`${Math.round(ms)} ms`);}};
   this.output=deps.output?.(options.source,options.jitterMs,hooks)??new LocalOutput(options.source,options.jitterMs,hooks,{quality:options.path==='realtime',simultaneous:options.path==='realtime',prosodyMs:options.prosodyMs??250});
-  this.engine=new StreamingInterpreter({now:this.now,translate:deps.translate??(options.forceControlled?translateLocalControlledTurn:translateUnit),output:async(language,turn,signal)=>{
+  this.engine=new StreamingInterpreter({now:this.now,stage:(unitId,event,at,data)=>this.diagnostics.record(event,{...data,unitId,providerAt:at,clock:'browser-performance.now'}),translate:deps.translate??(options.forceControlled?translateLocalControlledTurn:translateUnit),output:async(language,turn,signal)=>{
    if(language!==options.source)throw new Error('Local direction isolation violation.');
    if(!options.forceControlled)return this.output.open(language,turn,signal);
    this.microphone.enable(false);
    const output=await this.output.controlled(language,turn,signal);
    return{send:output.send,cancel:output.cancel,finish:async()=>{await output.finish();await new Promise<void>(r=>setTimeout(r,180));signal.throwIfAborted();if(!this.paused){this.microphone.enable(true);this.engine.listening(options.source);}}};
-  },pauseInput:language=>{if(language===options.source){this.paused=true;this.microphone.enable(false);}},failed:options.path==='realtime'?this.fail:undefined},state=>{this.snapshot={...this.snapshot,...state};this.emit();},{...options,scopedPrecision:options.path==='realtime',simultaneous:options.path==='realtime'&&!options.forceControlled});
+  },pauseInput:language=>{if(language===options.source){this.paused=true;this.microphone.enable(false);}},failed:options.path==='realtime'?this.fail:undefined},state=>{this.snapshot={...this.snapshot,...state};this.emit();},{...options,scopedPrecision:options.path==='realtime',simultaneous:options.path==='realtime'&&!options.forceControlled,persistentVoice:options.path==='realtime'&&!options.forceControlled});
   if(options.path==='realtime'){
    const progress=(position:RecognitionPosition)=>{this.snapshot.recognition=position;this.emit();};
-   this.recognition=deps.continuousRecognition?.(options.source,this.engine,this.abort.signal,options.source==='en'?450:1350,this.fail,progress)??new ContinuousRecognitionDirection(options.source,this.engine,this.abort.signal,options.source==='en'?450:1350,this.fail,undefined,progress,options.protectedTerms);
+   this.recognition=deps.continuousRecognition?.(options.source,this.engine,this.abort.signal,options.source==='en'?750:1350,this.fail,progress)??new ContinuousRecognitionDirection(options.source,this.engine,this.abort.signal,options.source==='en'?750:1350,this.fail,undefined,progress,options.protectedTerms,this.diagnostics.record);
   }
   else if(options.path==='semantic')this.recognition=deps.recognition?.(options.source,this.engine,this.abort.signal,options.source==='en'?450:1350,this.fail)??new RecognitionDirection(options.source,this.engine,this.abort.signal,options.source==='en'?450:1350,this.fail);
   else this.direct=deps.direct?.(this.directAudio,this.caption,this.fail)??new RealtimeTranslationTrial(this.directAudio,this.caption,this.fail);
  }
- private emit(){if(this.options.path==='realtime'){if(this.snapshot.active&&!this.ended&&this.snapshot.lastSourceSpeechAt!==undefined&&this.snapshot.lanes[this.options.source].sourceFinished!==undefined&&!this.engine.hasActiveSource&&!(this.snapshot.recognition?.pendingFinals??0)&&this.now()-this.snapshot.lastSourceSpeechAt>=(this.options.source==='en'?450:1350))this.trailingMonitor.sourceEnded(this.snapshot.lastSourceSpeechAt);this.trailingMonitor.update(this.snapshot.lanes[this.options.source],this.snapshot.sourceOnset,this.snapshot.lastSourceSpeechAt,this.now(),this.output?.positions??{ttsCharacters:0,targetSamples:0,playbackSamples:0},this.snapshot.recognition?.pendingFinals??0);this.snapshot.trailing=this.trailingMonitor.summary;}this.snapshot.positions={sourceSamples:this.snapshot.recognition?.sourceSamples,asrObservedWords:this.snapshot.recognition?.asrObservedWords,translationSourceWords:this.snapshot.lanes[this.options.source].translatedWords,...this.output?.positions,targetSamples:(this.output?.positions?.targetSamples??0)-this.sampleBase,playbackSamples:(this.output?.positions?.playbackSamples??0)-this.playedBase};if(this.snapshot.active&&!this.ended)this.gapTimeline.update(this.snapshot.lanes[this.options.source],this.output?.positions,this.now(),this.snapshot.lastSourceSpeechAt!==undefined&&this.now()-this.snapshot.lastSourceSpeechAt<=250,this.snapshot.recognition?.pendingFinals,this.snapshot.trailing?.latest?.playbackPosition);this.snapshot.gaps=this.gapTimeline.records.map(g=>({...g,causes:[...g.causes]}));this.updateAcoustic();this.changed({...this.snapshot,events:[...this.snapshot.events]});}
+ private emit(){this.snapshot.voiceQuality=this.diagnostics?.qualitySummary;this.snapshot.latencyBreakdown=this.diagnostics?.timingSummary;this.snapshot.voiceProvenance=this.diagnostics?.provenanceSummary;if(this.options.path==='realtime'){if(this.snapshot.active&&!this.ended&&this.snapshot.lastSourceSpeechAt!==undefined&&this.snapshot.lanes[this.options.source].sourceFinished!==undefined&&!this.engine.hasActiveSource&&!(this.snapshot.recognition?.pendingFinals??0)&&this.now()-this.snapshot.lastSourceSpeechAt>=(this.options.source==='en'?450:1350))this.trailingMonitor.sourceEnded(this.snapshot.lastSourceSpeechAt);this.trailingMonitor.update(this.snapshot.lanes[this.options.source],this.snapshot.sourceOnset,this.snapshot.lastSourceSpeechAt,this.now(),this.output?.positions??{ttsCharacters:0,targetSamples:0,playbackSamples:0},this.snapshot.recognition?.pendingFinals??0);this.snapshot.trailing=this.trailingMonitor.summary;}this.snapshot.positions={sourceSamples:this.snapshot.recognition?.sourceSamples,asrObservedWords:this.snapshot.recognition?.asrObservedWords,translationSourceWords:this.snapshot.lanes[this.options.source].translatedWords,...this.output?.positions,targetSamples:(this.output?.positions?.targetSamples??0)-this.sampleBase,playbackSamples:(this.output?.positions?.playbackSamples??0)-this.playedBase};if(this.snapshot.active&&!this.ended)this.gapTimeline.update(this.snapshot.lanes[this.options.source],this.output?.positions,this.now(),this.snapshot.lastSourceSpeechAt!==undefined&&this.now()-this.snapshot.lastSourceSpeechAt<=250,this.snapshot.recognition?.pendingFinals,this.snapshot.trailing?.latest?.playbackPosition);this.snapshot.gaps=this.gapTimeline.records.map(g=>({...g,causes:[...g.causes]}));this.updateAcoustic();this.diagnostics.capture(this.snapshot);this.snapshot.voiceQuality=this.diagnostics.qualitySummary;this.snapshot.latencyBreakdown=this.diagnostics.timingSummary;this.changed({...this.snapshot,events:[...this.snapshot.events]});}
  private updateAcoustic(){const sourceFinalized=!this.engine?.hasActiveSource&&!(this.snapshot.recognition?.pendingFinals??0);this.snapshot.acoustic=this.acoustic.snapshot(this.snapshot.lanes[this.options.source].units,sourceFinalized&&Boolean(this.engine?.idle),sourceFinalized);}
  private event(type:string,detail:string){this.snapshot.events=[...this.snapshot.events,{at:this.now(),type,detail}].slice(-200);this.emit();}
- private fail=(error:Error)=>{if(this.ended||this.abort.signal.aborted)return;this.end();this.snapshot.state='ERROR';this.snapshot.error=error.message;this.event('error',error.message);};
+ private fail=(error:Error)=>{if(this.ended||this.abort.signal.aborted)return;if(error instanceof RecognitionReviewRequired){this.failureReason='recognition.unverified_source';this.paused=true;this.microphone.enable(false);this.engine.reviewRecognition(this.options.source,error.message);this.snapshot.warning=error.message;this.event('recognition review',error.message);return;}this.failureReason=diagnosticReason(error);this.diagnostics.capture(this.snapshot);this.diagnostics.record('session.error',{classification:this.failureReason});this.end();this.snapshot.state='ERROR';this.snapshot.error=error.message;this.event('error',error.message);};
  private capture=(bytes:Uint8Array,timing?:CaptureTiming)=>{
   if(this.ended||this.paused||!this.snapshot.active||this.preparing)return;
   try{
@@ -82,7 +84,7 @@ export class LocalTestSession {
    if(bytes.length&&Math.sqrt(energy/(bytes.length/2))>=.018){this.snapshot.lastSourceSpeechAt=this.now();this.trailingMonitor.sourceAdvanced(this.snapshot.lastSourceSpeechAt);}
    if(bytes.length&&Math.sqrt(energy/(bytes.length/2))>=.018&&this.snapshot.sourceOnset===undefined){this.snapshot.sourceOnset=this.now();this.event('source onset',this.options.source);}
    // The only source-PCM destinations are recognition or the translation provider.
-   if(this.direct)this.direct.append(bytes);else this.recognition!.feed(bytes);
+   if(this.direct)this.direct.append(bytes);else this.recognition!.feed(bytes,this.now(),timing);
    this.acoustic.source(bytes,timing);
   }catch(error){this.fail(error instanceof Error?error:new Error('Microphone processing failed.'));}
  };
@@ -124,10 +126,11 @@ export class LocalTestSession {
   finally{this.finishing=false;}
  }
  end(){
-  if(this.ended)return;this.updateAcoustic();this.acoustic.stop();this.ended=true;this.snapshot.active=false;this.abort.abort();clearInterval(this.timer);
+  if(this.ended)return;this.diagnostics.capture(this.snapshot);this.diagnostics.record('session.stop_requested',{reason:this.failureReason??'STOP'});this.updateAcoustic();this.acoustic.stop();this.ended=true;this.snapshot.active=false;this.abort.abort();clearInterval(this.timer);
   if(this.options.path!=='direct')this.engine.end();
   this.microphone.cancel();this.recognition?.cancel();this.direct?.close();this.renderer?.cancel();this.output.cancel();
   this.gapTimeline.close(this.now());this.snapshot.trailingSamples=[...this.trailingMonitor.samples];this.snapshot.state='READY';this.event('stop','Microphone and target output stopped; no source replay');
+  this.diagnostics.capture(this.snapshot);this.diagnostics.finish(this.failureReason?'failed':this.snapshot.acoustic?.complete?'completed':'stopped',this.failureReason??'STOP');
  }
  get idle(){return this.engine.idle;}
 }

@@ -1,0 +1,42 @@
+
+ RUN  v4.1.11 /private/tmp/c31-timeout-profile-a5b7054
+
+stdout | tests/continuous-transcription-gateway.test.ts > forwards all 45 seconds of PCM across sequential items while earlier finals are delayed
+PROFILE_PCM_LOOP 17.097624999999994
+
+stdout | tests/stage195-replay.test.ts > replays the exact physical Stage 1.9.4 transcript through production delivery (before)
+PROFILE_REPLAY {"variant":"before","advanceWallMs":992.143709,"intervalCallbacks":{"10":14314,"50":2852,"100":2186}}
+
+stdout | tests/stage195-replay.test.ts > replays the exact physical Stage 1.9.4 transcript through production delivery (after)
+PROFILE_REPLAY {"variant":"after","advanceWallMs":965.2912500000002,"intervalCallbacks":{"10":14314,"50":2852,"100":2186}}
+
+ ✓ tests/stage195-replay.test.ts > replays the exact physical Stage 1.9.4 transcript through production delivery (before) 1021ms
+ ✓ tests/stage195-replay.test.ts > replays the exact physical Stage 1.9.4 transcript through production delivery (after) 971ms
+stdout | tests/continuous-transcription-gateway.test.ts > forwards all 45 seconds of PCM across sequential items while earlier finals are delayed
+PROFILE_PCM_FINALS 120.45041700000002
+PROFILE_PCM_EQUAL 2129.800125
+
+ ↓ tests/continuous-transcription-gateway.test.ts > keeps accepting PCM after commit with no reconnect, and correlates out-of-order finals by item ID
+ ↓ tests/continuous-transcription-gateway.test.ts > deduplicates delta, commit and completed events without appending old words to a newer buffer
+ ↓ tests/continuous-transcription-gateway.test.ts > retains ambiguous delayed text until acknowledgment establishes its generation
+ ↓ tests/continuous-transcription-gateway.test.ts > stops on bounded transport pressure without dropping a queued frame or retrying it
+ ↓ tests/continuous-transcription-gateway.test.ts > stops rather than accumulating unbounded pending committed items
+ ↓ tests/continuous-transcription-gateway.test.ts > closes stale sessions and allows a new clean connection after disconnect
+ ↓ tests/continuous-transcription-gateway.test.ts > rejects a cross-origin connection before opening another paid upstream
+ ✓ tests/continuous-transcription-gateway.test.ts > forwards all 45 seconds of PCM across sequential items while earlier finals are delayed 2313ms
+ ↓ tests/continuous-transcription-gateway.test.ts > correlates final-before-ack and late duplicates without assigning them to the next item
+ ↓ tests/continuous-transcription-gateway.test.ts > still terminates and reports a genuine provider transcription failure without inventing a final
+ ↓ tests/continuous-transcription-gateway.test.ts > retains opt-in invalid-final lifecycle metadata while preserving the original failure and provider requests
+ ↓ tests/continuous-transcription-gateway.test.ts > resolves an acknowledged silent final "" and keeps the persistent session listening
+ ↓ tests/continuous-transcription-gateway.test.ts > resolves an acknowledged silent final " \n\t " and keeps the persistent session listening
+ ↓ tests/continuous-transcription-gateway.test.ts > retains an empty final before its acknowledgment and resolves only the correct generation
+ ↓ tests/continuous-transcription-gateway.test.ts > still rejects a malformed completed transcript (0)
+ ↓ tests/continuous-transcription-gateway.test.ts > still rejects a malformed completed transcript (1)
+ ↓ tests/continuous-transcription-gateway.test.ts > still rejects a malformed completed transcript (2)
+ ↓ tests/continuous-transcription-gateway.test.ts > still rejects a malformed completed transcript (3)
+ ↓ tests/continuous-transcription-gateway.test.ts > exposes provider completion separately from delayed commit ACK without weakening ACK-before-final delivery
+
+ Test Files  2 passed (2)
+      Tests  3 passed | 18 skipped (21)
+   Start at  23:41:05
+   Duration  2.52s (transform 162ms, setup 0ms, import 239ms, tests 4.31s, environment 0ms)

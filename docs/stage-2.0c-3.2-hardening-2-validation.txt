@@ -1,0 +1,49 @@
+C-3.2 HARDENING 2 — FINAL FROZEN SOURCE VALIDATION
+NOT ACCEPTED / NOT PRODUCTION READY
+Node v25.9.0; npm 11.12.1; Darwin 27.0.0 arm64; Vitest 4.1.11.
+Vitest default workers, timeout and retries; no configuration changes.
+Test command orchestrator: node --import tsx scripts/stage20c32-hardening2-validate.ts
+Exact source copied to isolated local tree; ignored private/env files excluded; mock servers use loopback only.
+All source/test/config/package hashes checked after each run and again after final reports.
+
+Required consecutive measurements (test count / files / wall ms / maximum resident set bytes):
+focused: PASS 513 / 4 / 1992.402 / 160464896  maximum resident set size
+c31: PASS 139 / 5 / 1661.296 / 176799744  maximum resident set size
+all-prior-consent: PASS 496 / 13 / 1787.190 / 216662016  maximum resident set size
+replay-1: PASS 2 / 1 / 2323.526 / 136806400  maximum resident set size
+pcm-1: PASS 1 / 1 / 612.863 / 113246208  maximum resident set size
+replay-2: PASS 2 / 1 / 2342.301 / 136380416  maximum resident set size
+pcm-2: PASS 1 / 1 / 579.480 / 112328704  maximum resident set size
+replay-3: PASS 2 / 1 / 2333.701 / 136511488  maximum resident set size
+pcm-3: PASS 1 / 1 / 600.428 / 113311744  maximum resident set size
+replay-4: PASS 2 / 1 / 2328.994 / 135839744  maximum resident set size
+pcm-4: PASS 1 / 1 / 580.864 / 112508928  maximum resident set size
+replay-5: PASS 2 / 1 / 2389.930 / 136232960  maximum resident set size
+pcm-5: PASS 1 / 1 / 586.673 / 112427008  maximum resident set size
+full-1: PASS 1627 / 81 / 9214.426 / 279199744  maximum resident set size
+full-2: PASS 1627 / 81 / 7797.938 / 263897088  maximum resident set size
+full-3: PASS 1627 / 81 / 6948.342 / 281772032  maximum resident set size
+
+Other executed commands, each exit 0:
+npm run lint
+npm run typecheck
+npm run build
+npx vite build --config src/consent/stage32/vite.config.ts --outDir /tmp/c32h2-verified-workbench
+node --import tsx scripts/verify-stage20c31.ts
+node --import tsx scripts/verify-stage20c32.ts
+node --import tsx scripts/verify-stage20c32-hardening2.ts
+node --import tsx scripts/stage20c32-hardening2-reports.ts
+git diff --check
+Explicit git diff --no-index --check /dev/null on every untracked text file (diagnostics inspected, diff exit 1 alone is not failure).
+Changed/new text whitespace and secret scan; historical originals hashed; no env/recording additions.
+
+Reports: 66/66 email; 46/46 original + 32/32 expanded scenarios; 29-case consent matrix, false positives 0.
+QA: all 286 per-file technical rows; 49 protected bound assets PASS; 237 anonymous rows; 12 indefinite headers UNKNOWN.
+Gain QA: zero clipping, 4 existing peak-protection events retained.
+Artifacts: docs/stage-2.0c-3.2-hardening-2-validation-logs.tar.gz; docs/stage-2.0c-3.2-hardening-2-validation.json; docs/stage-2.0c-3.2-hardening-2-source-proof-final.json
+
+Synthetic/mock providers and local loopback sockets only; no live ASR/TTS.
+Standard Vite build retains >500 kB main-chunk warning (677.40 kB minified); not a build failure.
+Standalone outDir outside project emitted Vite nonempty/outside-root warning; no deletion/emptyOutDir requested.
+No timeout/assertion weakening or flaky-test retries. Repeated required runs are separate measurements; no failing test was rerun to manufacture green.
+Earlier typecheck errors and preservation archive maxBuffer ENOBUFS were corrected before final source freeze. Prior 1623/1625 prechecks are not final validation evidence.

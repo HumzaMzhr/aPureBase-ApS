@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "beforeFilesChecked": 874,
+  "exactAuthorizedChanges": [
+    "scripts/stage20c32-handoff/HUMAN-REVIEW-GUIDE.txt",
+    "scripts/stage20c32-handoff/REVIEW-EXPORT-SCHEMA.json",
+    "scripts/stage20c32-handoff/START-HERE.txt",
+    "scripts/stage20c32-handoff/verify.mjs",
+    "scripts/stage20c32-package.ts",
+    "src/consent/stage32/feedback/adversarial.ts",
+    "src/consent/stage32/handoff/App.tsx",
+    "src/consent/stage32/handoff/contract.ts",
+    "src/consent/stage32/handoff/live.ts",
+    "src/consent/stage32/handoff/presentation.ts",
+    "src/consent/stage32/Workbench.tsx",
+    "src/consent/stage32/duration.ts",
+    "src/consent/stage32/email/danishEmailLexicon.ts",
+    "src/consent/stage32/email/databaseResolver.ts",
+    "src/consent/stage32/email/flow.ts",
+    "src/consent/stage32/email/types.ts",
+    "src/consent/stage32/hardening/corpus.ts",
+    "src/consent/stage32/hardening/resolution.ts",
+    "src/consent/stage32/session.ts",
+    "tests/consent-stage20c32-hardening.test.ts"
+  ],
+  "Stage196Unchanged": true,
+  "originalRecordings": 37,
+  "C31Recordings": 12,
+  "C32Recordings": 3,
+  "historicalEvidencePreserved": true,
+  "credentialsTracked": false,
+  "providerRequests": 0
+}

@@ -1,0 +1,56 @@
+{
+  "phraseId": "email-readback-intro",
+  "wordingVersion": "stage-2.0c1-approved-1",
+  "text": "a, en, en, a, tre, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+  "textHash": "390cf31229a800c0a839e0d9c6ca42b18b50834d3d0126abdf1741fa25f52a16",
+  "assetHash": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+  "path": "http://127.0.0.1:5180/cache/094bbd3b24c4536bb36460a12a11cd6283912e82b297ec141ea83c1389ee2c76.wav",
+  "voice": {
+    "provider": "ElevenLabs",
+    "name": "Isabella",
+    "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+    "modelId": "eleven_flash_v2_5",
+    "speed": 0.95
+  },
+  "requestedSpeed": 0.95,
+  "generatedAt": "2026-10-18T12:32:12.015Z",
+  "duration": 18.715291666666666,
+  "samples": 449167,
+  "sampleRate": 24000,
+  "mediaFormat": "wav-pcm-s16le-mono",
+  "provenance": {
+    "verified": true,
+    "method": "authenticated-provider-response-and-content-hash",
+    "providerRequestId": "4pRfmaNfVIP8cU9VXH49",
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+    "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+  },
+  "verification": {
+    "mediaValid": true,
+    "nonSilent": true,
+    "clippingEvents": 0,
+    "rawPeak": 0.2896728515625,
+    "gainApplied": 3.3831268436578172,
+    "peakProtectionEvents": 1,
+    "outputPeak": 0.9800000190734863
+  },
+  "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+  "businessWordingApproved": true,
+  "productionApproved": false,
+  "binding": {
+    "slot": {
+      "kind": "EMAIL",
+      "phraseId": "email-readback-intro",
+      "candidate": "anna3.test-7@clinic.dk",
+      "sourceTurnId": "synthetic-email-fixture",
+      "recipientRevision": 1,
+      "normalizationReviewed": true
+    },
+    "renderedValue": "a, en, en, a, tre, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+    "renderedText": "a, en, en, a, tre, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+    "textHash": "390cf31229a800c0a839e0d9c6ca42b18b50834d3d0126abdf1741fa25f52a16",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "rendererVersion": "stage-2.0c2-deterministic-1",
+    "cacheKey": "094bbd3b24c4536bb36460a12a11cd6283912e82b297ec141ea83c1389ee2c76"
+  }
+}

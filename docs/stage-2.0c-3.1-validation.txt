@@ -1,0 +1,226 @@
+Stage 2.0C-3.1 automated/local validation — 2026-10-20
+Status: NOT_ACCEPTED; no human acceptance inferred.
+Branch: codex/stage-2.0c3-human-acceptance
+HEAD unchanged: a5b70549484e560351dcb2f8e2513c26ac9b2eaf
+Environment: Node v25.9.0, npm 11.12.1, Vitest 4.1.11, Vite 7.3.7.
+Paid activity was limited to the separately authorized 12 ElevenLabs generations; all test commands below use mocks/local sockets only. No live ASR/microphone/telephone tests.
+
+========================================================================
+Focused C-3/C-3.1 tests — exit 0, 139/139 across 5 files
+========================================================================
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run tests/consent-stage20c3.test.ts tests/consent-stage20c3-view.test.tsx tests/consent-stage20c31.test.ts tests/consent-stage20c31-gateway.test.ts tests/consent-stage20c31-view.test.tsx
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  5 passed (5)
+      Tests  139 passed (139)
+   Start at  22:48:18
+   Duration  1.12s (transform 2.08s, setup 0ms, import 3.09s, tests 515ms, environment 1ms)
+
+
+========================================================================
+Initial concurrent full-suite run — exit 1, TWO LEGACY TIMEOUTS, 1111 passed / 2 failed. Preserved honestly; no tests altered to suppress failure.
+========================================================================
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+ ❯ tests/stage195-replay.test.ts (2 tests | 1 failed) 6324ms
+   × replays the exact physical Stage 1.9.4 transcript through production delivery (after) 5005ms
+ ❯ tests/continuous-transcription-gateway.test.ts (19 tests | 1 failed) 12041ms
+   × forwards all 45 seconds of PCM across sequential items while earlier finals are delayed 7050ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/continuous-transcription-gateway.test.ts > forwards all 45 seconds of PCM across sequential items while earlier finals are delayed
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/continuous-transcription-gateway.test.ts:57:1
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/stage195-replay.test.ts > replays the exact physical Stage 1.9.4 transcript through production delivery (after)
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/stage195-replay.test.ts:33:27
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  2 failed | 75 passed (77)
+      Tests  2 failed | 1111 passed (1113)
+   Start at  22:44:55
+   Duration  12.45s (transform 2.92s, setup 0ms, import 8.50s, tests 49.90s, environment 7ms)
+
+
+========================================================================
+Unchanged full-suite rerun alone before storage guard — exit 0, 1113/1113
+========================================================================
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  77 passed (77)
+      Tests  1113 passed (1113)
+   Start at  22:45:44
+   Duration  9.35s (transform 2.83s, setup 0ms, import 7.80s, tests 35.10s, environment 8ms)
+
+
+========================================================================
+Final complete npm test after all corrections/layout — exit 0, 1114/1114 across 77 files
+========================================================================
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  77 passed (77)
+      Tests  1114 passed (1114)
+   Start at  22:52:03
+   Duration  9.40s (transform 2.39s, setup 0ms, import 6.82s, tests 35.58s, environment 7ms)
+
+
+========================================================================
+npm run lint — exit 0
+========================================================================
+
+> apurebase-stage1-translator@0.9.0 lint
+> eslint .
+
+
+========================================================================
+npm run typecheck — exit 0
+========================================================================
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+
+========================================================================
+npm run build — exit 0; existing >500 kB chunk warning retained
+========================================================================
+
+> apurebase-stage1-translator@0.9.0 build
+> npm run typecheck && vite build
+
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 125 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                      0.37 kB │ gzip:   0.27 kB
+dist/assets/index-j0eZ6Glf.css      17.21 kB │ gzip:   4.35 kB
+dist/assets/Workspace-DMXMx32Q.js  190.38 kB │ gzip:  30.69 kB
+dist/assets/index-CloNzLRu.js      677.40 kB │ gzip: 192.43 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 837ms
+
+========================================================================
+git diff --check — exit 0; no output
+========================================================================
+
+========================================================================
+Explicit whitespace audit for new/untracked text files — PASS
+========================================================================
+PASS: all new text files have a final newline and no trailing whitespace or extra final blank line.
+
+========================================================================
+Complete authoritative human evidence equality + SHA — PASS
+========================================================================
+PASS: complete parsed human export equals preserved originalEvidence; SHA-256 matches; 241381 bytes. All comments retained verbatim as JSON string values.
+
+========================================================================
+node --import tsx scripts/verify-stage20c31.ts — exit 0; no network/provider
+========================================================================
+{
+  "status": "PASS",
+  "baselineFiles": 433,
+  "candidateFiles": 44,
+  "originalRecordings": 37,
+  "newRecordings": 12,
+  "retainedCurrentApprovals": 24,
+  "humanRetestRequired": 13,
+  "providerRequests": 0,
+  "physicalASR": "NOT_TESTED",
+  "stage": "NOT_ACCEPTED",
+  "telephoneVerified": false,
+  "productionEnabled": false
+}
+
+Actual browser local-only QA
+{
+  "scope": "LOCAL_WEB_AUDIO_TECHNICAL_ONLY",
+  "capturedAt": "2026-10-20T17:50:19.900Z",
+  "origin": "http://127.0.0.1:5173/consent-call?stage=2.0c31",
+  "humanApprovalsAdded": 0,
+  "microphoneStarted": false,
+  "liveASRRequests": 0,
+  "uniqueCompletedAudioHashes": [
+    "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+    "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+    "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+    "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+    "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+    "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+    "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+    "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+    "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+    "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+    "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+    "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c"
+  ],
+  "completedCount": 12,
+  "clippingEvents": 0,
+  "peakProtectionCompletions": 1,
+  "acceptance": "NOT_ACCEPTED",
+  "telephoneVerified": false,
+  "productionEnabled": false
+}
+
+Sanitized actual local health (not authorization proof)
+{
+  "observedAt": "2026-10-20T17:51:40.082Z",
+  "source": "actual local UI health request",
+  "stage": "2.0c31",
+  "gateway": true,
+  "configured": true,
+  "model": "gpt-live-transcribe",
+  "language": "da",
+  "sampleRate": 24000,
+  "providerAuthorization": "NOT_TESTED_UNTIL_EXPLICIT_MICROPHONE_START",
+  "allowedOrigins": [
+    "http://127.0.0.1:5173",
+    "http://localhost:5173"
+  ],
+  "providerRequestsOnHealth": 0,
+  "diagnostics": {},
+  "agentStartedRecognition": false
+}
+
+Physical pronunciation/ASR/A–R: NOT_TESTED by agent. Human approvals added: zero. Telephone: NOT_TESTED. Production: disabled.
+Original source PCM: never saved. Original 37 WAVs + all 164 protected non-consent implementation records: unchanged.
+No commit, push, PR update, merge, deploy, telephone integration or Stage 2.0D.

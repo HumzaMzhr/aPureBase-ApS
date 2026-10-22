@@ -1,0 +1,3638 @@
+{
+  "stage": "2.0C-3.2",
+  "status": "NOT_ACCEPTED",
+  "paidGenerationAuthorized": false,
+  "providerCapabilities": {
+    "model": "eleven_flash_v2_5",
+    "danishDictionaryPhonemes": false,
+    "aliases": true,
+    "ssmlPhonemes": false,
+    "requestTextContext": true,
+    "checkedOn": "2026-10-21",
+    "source": "https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/pronunciation-dictionaries",
+    "note": "Non-English phonemes require a different model; changing model is not authorized. Alias support does not prove Danish pronunciation."
+  },
+  "pronunciationRegressions": [
+    {
+      "id": "why-calling:sende-dig",
+      "phraseId": "why-calling",
+      "canonicalSpan": "sende dig",
+      "reportedBy": "Asem Raza Shareef",
+      "reportedPerception": "sente dej",
+      "intendedApproximatePerception": "sene dej",
+      "renderingInstruction": false,
+      "mandatory": true,
+      "status": "HUMAN_RETEST_REQUIRED",
+      "source": "Current C-3.2 user request; not a new physical run"
+    }
+  ],
+  "inventory": [
+    {
+      "canonical": {
+        "phraseId": "opening",
+        "canonicalText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+        "canonicalTextHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "historicalDurationSeconds": 7.198166666666666,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "opening",
+            "canonicalText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+            "canonicalTextHash": "7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+          "segments": [
+            {
+              "text": "Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 7.198166666666666,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "cd4192d7cecb8fe55e8a3653574c1dd56bf67b632f12c1f22eb873094fc402a5"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase",
+        "sundhedsperson",
+        "faglig",
+        "information"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "purpose",
+        "canonicalText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+        "canonicalTextHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "historicalDurationSeconds": 7.476833333333333,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "purpose",
+            "canonicalText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+            "canonicalTextHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+          "segments": [
+            {
+              "text": "Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 7.476833333333333,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "24f48e6676dd76aedd1fd75aad6760e38b88ba7da5d4ac08d604eebe0f09a71c"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "faglig",
+        "information",
+        "relevant",
+        "produkter",
+        "sygdomsområder"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "consent-question",
+        "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "canonicalTextHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": "apurebase-professional-information-by-email-v1",
+        "recipientTypes": [
+          "TARGET_HCP"
+        ],
+        "consentCritical": true,
+        "template": false
+      },
+      "historicalAssetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "historicalDurationSeconds": 3.947375,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "consent-question",
+            "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+            "canonicalTextHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": "apurebase-professional-information-by-email-v1",
+            "recipientTypes": [
+              "TARGET_HCP"
+            ],
+            "consentCritical": true,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+          "segments": [
+            {
+              "text": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [
+            {
+              "source": "aPureBase",
+              "rendered": "a Pure Base",
+              "mechanism": "ALIAS",
+              "authorization": "EXISTING_C31_ORGANIZATION_RENDERING"
+            }
+          ],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "QUESTION",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 3.947375,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "4d270fcd39c0374b4914867663b7f01b6faef03e5d01e76ed6d65c32e32c2c5c"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase",
+        "e-mail",
+        "faglig",
+        "information",
+        "relevant"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "email-request",
+        "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+        "canonicalTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "historicalDurationSeconds": 3.390125,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "email-request",
+            "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+            "canonicalTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "segments": [
+            {
+              "text": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 3.390125,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "50b52eea81934ab75226a8c612f6170c17897333a55f1f7b4a597ab681ada6d1"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "e-mail",
+        "information"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "email-readback-intro",
+        "canonicalText": "Jeg gentager lige e-mailadressen for at være sikker.",
+        "canonicalTextHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+      "historicalDurationSeconds": 2.925708333333333,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "email-readback-intro",
+            "canonicalText": "Jeg gentager lige e-mailadressen for at være sikker.",
+            "canonicalTextHash": "7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Jeg gentager lige e-mailadressen for at være sikker.",
+          "segments": [
+            {
+              "text": "Jeg gentager lige e-mailadressen for at være sikker.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 2.925708333333333,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "cfb1f9eabd76f0ad336ce298f1b65c0370ede636ca110335977388a03179e6ac"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "e-mail"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "email-readback-intro",
+        "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "canonicalTextHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+      "historicalDurationSeconds": 18.715291666666666,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "email-readback-intro",
+            "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+            "canonicalTextHash": "ccafb87a4b9af651dfa1c19eb38fa0dcef04d671bee2014c391edef538dad28a",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+          "segments": [
+            {
+              "text": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 18.715291666666666,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "43d55a1a6823c48cf6c4de99c61a0f7c1a14339a70c815e51e6cde7d710f7f83"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "email-readback-intro",
+        "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "canonicalTextHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+      "historicalDurationSeconds": 15.65025,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "email-readback-intro",
+            "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+            "canonicalTextHash": "892440e085e16d1aee02c637b5844958e015effc2273fc6fc777212a564caa11",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+          "segments": [
+            {
+              "text": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 15.65025,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "6d4b52717b8a4d7b84649b97f79d020d40959d2b5372d740f57811af73ad1e6b"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "email-readback-intro",
+        "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+        "canonicalTextHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+      "historicalDurationSeconds": 19.319,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "email-readback-intro",
+            "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+            "canonicalTextHash": "6d8b7ec730db536027c1ee7f846e70c3ec1d8b904029455ed3eb3b9369f9f78b",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+          "segments": [
+            {
+              "text": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 19.319,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "0463ee599f7935bf09736f40b3ca8cbbecf47ea98ca446127418da15ded8c354"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "email-readback-intro",
+        "canonicalText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+        "canonicalTextHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+      "historicalDurationSeconds": 10.866958333333333,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "email-readback-intro",
+            "canonicalText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+            "canonicalTextHash": "77ffa33d5f2afa52156f1fc9552cb8fbb3b14fa5928d4981b386cce351bb6185",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+          "segments": [
+            {
+              "text": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 10.866958333333333,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "f038ad33a8d465f31ec35cf329904b1caf891c34d007683ea2f687f6021901e9"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "email-confirmation-question",
+        "canonicalText": "Er det korrekt?",
+        "canonicalTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "historicalDurationSeconds": 0.97525,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "email-confirmation-question",
+            "canonicalText": "Er det korrekt?",
+            "canonicalTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Er det korrekt?",
+          "segments": [
+            {
+              "text": "Er det korrekt?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "QUESTION",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 0.97525,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "f1d7090976d72bbdcf1fafbf9c714007fb34fee6953c54a42be8d82b2b6654c0"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "success-close",
+        "canonicalText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+        "canonicalTextHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+      "historicalDurationSeconds": 4.783291666666667,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "success-close",
+            "canonicalText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+            "canonicalTextHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+          "segments": [
+            {
+              "text": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 4.783291666666667,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "34298c4e83f1e6a6ab8f13b7c05e0699cc2d4377479525147dcb468a51c91a27"
+        },
+        {
+          "canonical": {
+            "phraseId": "success-close",
+            "canonicalText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+            "canonicalTextHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+          "synthesisText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+          "segments": [
+            {
+              "text": "Perfekt, mange tak for din tid.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            },
+            {
+              "text": "Du kan altid framelde dig igen.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            },
+            {
+              "text": "Hav en god dag.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "SEGMENTATION",
+            "ATOMIC_UNITS",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "bd9f2f44f394533c6c1e24b194386eb300c3b18c2abea870469e1751cf003ece"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "framelde"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "refusal-close",
+        "canonicalText": "Det er helt i orden. Tak for din tid. God dag.",
+        "canonicalTextHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+      "historicalDurationSeconds": 2.5542083333333334,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "refusal-close",
+            "canonicalText": "Det er helt i orden. Tak for din tid. God dag.",
+            "canonicalTextHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Det er helt i orden. Tak for din tid. God dag.",
+          "segments": [
+            {
+              "text": "Det er helt i orden. Tak for din tid. God dag.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 2.5542083333333334,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "08fed7ff52bd6602fc643eb467eeb773e1337c55f9079245e809e6e91480dbc5"
+        },
+        {
+          "canonical": {
+            "phraseId": "refusal-close",
+            "canonicalText": "Det er helt i orden. Tak for din tid. God dag.",
+            "canonicalTextHash": "f836ca5a66894e1ff8f7b4a6b283c3bc7968e387e101d8e6ae8e6a672e5cb792",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+          "synthesisText": "Det er helt i orden. Tak for din tid. God dag.",
+          "segments": [
+            {
+              "text": "Det er helt i orden.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            },
+            {
+              "text": "Tak for din tid.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            },
+            {
+              "text": "God dag.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "SEGMENTATION",
+            "ATOMIC_UNITS",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "fa547532a7fabe54385262941e7e5f519a5839103cfdfe9c828b94e0d5df72a7"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "receptionist-target-request",
+        "canonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+        "canonicalTextHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+      "historicalDurationSeconds": 5.0155,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "receptionist-target-request",
+            "canonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+            "canonicalTextHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+          "segments": [
+            {
+              "text": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 5.0155,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "d80e5798bcbbb5946cf3e8d9410e0d4e48311b855e9ffbf607a98bbe644d6319"
+        },
+        {
+          "canonical": {
+            "phraseId": "receptionist-target-request",
+            "canonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+            "canonicalTextHash": "bb0a09164613c5913252096fafb328b7b92aa3421ba9604d6ae94eff7db2eaf3",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+          "synthesisText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+          "segments": [
+            {
+              "text": "Jeg ringer vedrørende faglig information til Jens Hansen.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            },
+            {
+              "text": "Kan jeg blive stillet videre?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "SEGMENTATION",
+            "ATOMIC_UNITS",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "a70201602eac1e24b7a36692dcdf11791e84eb02b6aa006a9ba57d624f310ede"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "faglig",
+        "information"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "receptionist-target-request",
+        "canonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+        "canonicalTextHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+      "historicalDurationSeconds": 4.8762083333333335,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "receptionist-target-request",
+            "canonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+            "canonicalTextHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+          "segments": [
+            {
+              "text": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 4.8762083333333335,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "14b58cfc2742387a7180447a89b7ecbebf6f11b2eded6e6027cdf811fcff7ec1"
+        },
+        {
+          "canonical": {
+            "phraseId": "receptionist-target-request",
+            "canonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+            "canonicalTextHash": "ebded74db972d154e27b7690662d35482a80ec34193585c3cdda4f5d4f52cec2",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+          "synthesisText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+          "segments": [
+            {
+              "text": "Jeg ringer vedrørende faglig information til Anna Jensen.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            },
+            {
+              "text": "Kan jeg blive stillet videre?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "SEGMENTATION",
+            "ATOMIC_UNITS",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "615280ff7cff97cbed55617f94e2fb15a2a414cf4225f5c63a662446747551d5"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "faglig",
+        "information"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "receptionist-target-request",
+        "canonicalText": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+        "canonicalTextHash": "dc7aae708cf57a21430de1a52f55f3e0c10e67a7b07d7f30542ee60fe553c687",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": true
+      },
+      "historicalAssetHash": null,
+      "historicalDurationSeconds": null,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "receptionist-target-request",
+            "canonicalText": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+            "canonicalTextHash": "dc7aae708cf57a21430de1a52f55f3e0c10e67a7b07d7f30542ee60fe553c687",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": true
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+          "segments": [
+            {
+              "text": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "6b4f6e5b598eac186cc82e4ba296ec5487d5aec4b8ade32b57ecf1f8754623d3"
+        },
+        {
+          "canonical": {
+            "phraseId": "receptionist-target-request",
+            "canonicalText": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+            "canonicalTextHash": "dc7aae708cf57a21430de1a52f55f3e0c10e67a7b07d7f30542ee60fe553c687",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": true
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+          "synthesisText": "Jeg ringer vedrørende faglig information til [NAVN]. Kan jeg blive stillet videre?",
+          "segments": [
+            {
+              "text": "Jeg ringer vedrørende faglig information til [NAVN].",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            },
+            {
+              "text": "Kan jeg blive stillet videre?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "SEGMENTATION",
+            "ATOMIC_UNITS",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "64fe013920eb289eb0f8fef08b773d99000447e6166ecf8827353326f8d9cbdb"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "faglig",
+        "information"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "authority-ask",
+        "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+        "canonicalTextHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+      "historicalDurationSeconds": 4.922625,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "authority-ask",
+            "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+            "canonicalTextHash": "13bc1d0df0ae77bb18fec12f431262f6056fa2bdc6c9967dbcd10a89a66968bd",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+          "segments": [
+            {
+              "text": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "QUESTION",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "8001fa92ce955d8aa28c602c88ab396ef1fa189e9fd52767a48f5b5b47287deb",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 4.922625,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "099629d9dfef3a4ee3325a89ecfd88a14eba6cc66396f9170bfa897e36cb8fb1"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "authority-ask",
+        "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+        "canonicalTextHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+      "historicalDurationSeconds": 4.551125,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "authority-ask",
+            "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+            "canonicalTextHash": "bfea9fcc9b142382bbea10364d3dbfd6061e6fcee7cd66c78b9966d82114ad9b",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+          "segments": [
+            {
+              "text": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "QUESTION",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "6f1d62ef73a355a81211be1ddbd439fddd238f4720cf28a9226561fbd490c01b",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 4.551125,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "e1d54f1ec7b3d5233ffdbe0b1495e7cad8c34d109583a604de1dd9225250cc5a"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "authority-ask",
+        "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af [NAVN]?",
+        "canonicalTextHash": "622d1159959b850e21fd1ab57959ae16e591e6ff6d8d575f3cfe7134cd6c8ce7",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": true
+      },
+      "historicalAssetHash": null,
+      "historicalDurationSeconds": null,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "authority-ask",
+            "canonicalText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af [NAVN]?",
+            "canonicalTextHash": "622d1159959b850e21fd1ab57959ae16e591e6ff6d8d575f3cfe7134cd6c8ce7",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": true
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af [NAVN]?",
+          "segments": [
+            {
+              "text": "Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af [NAVN]?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "QUESTION",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "ab8d0d536dabe8d685a80f8ddd661a1033fef6bb4194239567ac196d00d4d1ca"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "intermediary-consent-question",
+        "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+        "canonicalTextHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": "apurebase-professional-information-by-email-v1",
+        "recipientTypes": [
+          "INTERMEDIARY"
+        ],
+        "consentCritical": true,
+        "template": false
+      },
+      "historicalAssetHash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+      "historicalDurationSeconds": 5.108375,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "intermediary-consent-question",
+            "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+            "canonicalTextHash": "89023a0e1a676f4b03915c6865b3d772ddc00fa59149dc02db7e23b31a1eb67e",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": "apurebase-professional-information-by-email-v1",
+            "recipientTypes": [
+              "INTERMEDIARY"
+            ],
+            "consentCritical": true,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+          "segments": [
+            {
+              "text": "Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 5.108375,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "28f12c80d0fae6f8d06e048dfb170f1912e3d5767b17889ec86d1664dac0961f"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase",
+        "e-mail",
+        "faglig",
+        "information",
+        "relevant"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "intermediary-consent-question",
+        "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+        "canonicalTextHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": "apurebase-professional-information-by-email-v1",
+        "recipientTypes": [
+          "INTERMEDIARY"
+        ],
+        "consentCritical": true,
+        "template": false
+      },
+      "historicalAssetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+      "historicalDurationSeconds": 5.0155,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "intermediary-consent-question",
+            "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+            "canonicalTextHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": "apurebase-professional-information-by-email-v1",
+            "recipientTypes": [
+              "INTERMEDIARY"
+            ],
+            "consentCritical": true,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+          "segments": [
+            {
+              "text": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 5.0155,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "ac0f0420e33afea794bc8e3d7124d3588efefd1c217a62167b8c8e7d625cee8a"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase",
+        "e-mail",
+        "faglig",
+        "information",
+        "relevant"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "intermediary-consent-question",
+        "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til [NAVN]?",
+        "canonicalTextHash": "3db29af81fbba5f83f4d002c095b2d9f7e9d72ee40de1114e8d8bbd1135391b1",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": "apurebase-professional-information-by-email-v1",
+        "recipientTypes": [
+          "INTERMEDIARY"
+        ],
+        "consentCritical": true,
+        "template": true
+      },
+      "historicalAssetHash": null,
+      "historicalDurationSeconds": null,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "intermediary-consent-question",
+            "canonicalText": "Tak. Må aPureBase sende relevant faglig information via e-mail til [NAVN]?",
+            "canonicalTextHash": "3db29af81fbba5f83f4d002c095b2d9f7e9d72ee40de1114e8d8bbd1135391b1",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": "apurebase-professional-information-by-email-v1",
+            "recipientTypes": [
+              "INTERMEDIARY"
+            ],
+            "consentCritical": true,
+            "template": true
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Tak. Må a Pure Base sende relevant faglig information via e-mail til [NAVN]?",
+          "segments": [
+            {
+              "text": "Tak. Må a Pure Base sende relevant faglig information via e-mail til [NAVN]?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [
+            {
+              "source": "aPureBase",
+              "rendered": "a Pure Base",
+              "mechanism": "ALIAS",
+              "authorization": "EXISTING_C31_ORGANIZATION_RENDERING"
+            }
+          ],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "67807011ea5f0bb5d4384ed4fd8bfc1c9bc5c8ad448a0f590cd637225e68934d"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase",
+        "e-mail",
+        "faglig",
+        "information",
+        "relevant"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "identity",
+        "canonicalText": "Jeg hedder Isabella og ringer fra aPureBase.",
+        "canonicalTextHash": "d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+      "historicalDurationSeconds": 2.786375,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "identity",
+            "canonicalText": "Jeg hedder Isabella og ringer fra aPureBase.",
+            "canonicalTextHash": "d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Jeg hedder Isabella og ringer fra aPureBase.",
+          "segments": [
+            {
+              "text": "Jeg hedder Isabella og ringer fra aPureBase.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 2.786375,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "7d0e5a06ebebba5a16490f03d3b74618e41697175c202f6e8ab06721b2f38d89"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "about-apurebase",
+        "canonicalText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+        "canonicalTextHash": "6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+      "historicalDurationSeconds": 4.040291666666667,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "about-apurebase",
+            "canonicalText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+            "canonicalTextHash": "6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+          "segments": [
+            {
+              "text": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 4.040291666666667,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "603fb21472401f2e91f6fce336bff8c037a2c798e4db4dc103a478a10e86414b"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase",
+        "sundhedsperson",
+        "faglig",
+        "information",
+        "relevant"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "explanation",
+        "canonicalText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+        "canonicalTextHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+      "historicalDurationSeconds": 7.476833333333333,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "explanation",
+            "canonicalText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+            "canonicalTextHash": "f2d79aa0c0d76c1cb19e094467bfe7f181461850ab5591fee5e2dd85878bd1a1",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+          "segments": [
+            {
+              "text": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 7.476833333333333,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "0e7d2b30d5ba5fe4cd0bdb421cb94981155bee6655a03a577a52c9892d8d2293"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "faglig",
+        "information",
+        "relevant",
+        "produkter",
+        "sygdomsområder"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "why-calling",
+        "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+        "canonicalTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+      "historicalDurationSeconds": 5.805,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "why-calling",
+            "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+            "canonicalTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Jeg ringer kun for at spørge, om a Pure Base må sende dig relevant faglig information via e-mail.",
+          "segments": [
+            {
+              "text": "Jeg ringer kun for at spørge, om a Pure Base må sende dig relevant faglig information via e-mail.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [
+            {
+              "source": "aPureBase",
+              "rendered": "a Pure Base",
+              "mechanism": "ALIAS",
+              "authorization": "EXISTING_C31_ORGANIZATION_RENDERING"
+            }
+          ],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 5.805,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [
+            "why-calling:sende-dig"
+          ],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "3ab88df72b408a15844318f0cd2f0227d9a9860fea2f94caf10260b9797d4cb9"
+        },
+        {
+          "canonical": {
+            "phraseId": "why-calling",
+            "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+            "canonicalTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:PUNCTUATION",
+          "synthesisText": "Jeg ringer kun for at spørge om a Pure Base må sende dig relevant faglig information via e-mail.",
+          "segments": [
+            {
+              "text": "Jeg ringer kun for at spørge om a Pure Base må sende dig relevant faglig information via e-mail.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [
+            {
+              "source": "aPureBase",
+              "rendered": "a Pure Base",
+              "mechanism": "ALIAS",
+              "authorization": "EXISTING_C31_ORGANIZATION_RENDERING"
+            }
+          ],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "PUNCTUATION",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [
+            "why-calling:sende-dig"
+          ],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "d6880824de25942e20d6f986287de12c7232a6629d1627f92d3f10bc1a194e51"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase",
+        "e-mail",
+        "faglig",
+        "information",
+        "relevant"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "unsubscribe",
+        "canonicalText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+        "canonicalTextHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+      "historicalDurationSeconds": 4.8762083333333335,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "unsubscribe",
+            "canonicalText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+            "canonicalTextHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+          "segments": [
+            {
+              "text": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 4.8762083333333335,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "f3ea298798b9c86add257410265e578aad1f114a61340892753f50c4ccaa007d"
+        },
+        {
+          "canonical": {
+            "phraseId": "unsubscribe",
+            "canonicalText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+            "canonicalTextHash": "b09131e1ddf7bf9c7f4276920dc23aae48204dc26a9a88e75168c408ae3a1990",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+          "synthesisText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+          "segments": [
+            {
+              "text": "Ja.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            },
+            {
+              "text": "Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "SEGMENTATION",
+            "ATOMIC_UNITS",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "fc2c7698a870215bece5b18492f9cbb36a2b56fc5d00fdf797b7528e9486d294"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "information"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "repeat-prefix",
+        "canonicalText": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+        "canonicalTextHash": "124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+      "historicalDurationSeconds": 2.322,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "repeat-prefix",
+            "canonicalText": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+            "canonicalTextHash": "124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+          "segments": [
+            {
+              "text": "Selvfølgelig. Jeg gentager lige spørgsmålet.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 2.322,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "5d39987edf1eb35b7cc41250a58d7d25cd3d821f5f8ec7d51f945633c32794a5"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "clarify",
+        "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "canonicalTextHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": "apurebase-professional-information-by-email-v1",
+        "recipientTypes": [
+          "TARGET_HCP"
+        ],
+        "consentCritical": true,
+        "template": false
+      },
+      "historicalAssetHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+      "historicalDurationSeconds": 5.154833333333333,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "clarify",
+            "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+            "canonicalTextHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": "apurebase-professional-information-by-email-v1",
+            "recipientTypes": [
+              "TARGET_HCP"
+            ],
+            "consentCritical": true,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "segments": [
+            {
+              "text": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 5.154833333333333,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "7524c98cf2024eb199e96f45532f02caff6c35b3dc6a23a3af67a8756a69d92a"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase",
+        "e-mail",
+        "faglig",
+        "information",
+        "relevant"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "callback",
+        "canonicalText": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+        "canonicalTextHash": "855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+      "historicalDurationSeconds": 3.29725,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "callback",
+            "canonicalText": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+            "canonicalTextHash": "855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+          "segments": [
+            {
+              "text": "Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 3.29725,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "97b07ba8c52608de5b352bb05758f49c471fdaebe3c741c40c04e7429b388f46"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "callback-close",
+        "canonicalText": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+        "canonicalTextHash": "1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+      "historicalDurationSeconds": 4.133166666666667,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "callback-close",
+            "canonicalText": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+            "canonicalTextHash": "1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+          "segments": [
+            {
+              "text": "Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 4.133166666666667,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "d5907eb95414ec2c7b87b1b147fb466a1676769e7329662acd482b1793ce1f89"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "wrong-person-close",
+        "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+        "canonicalTextHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+      "historicalDurationSeconds": 3.761625,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "wrong-person-close",
+            "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+            "canonicalTextHash": "6fee826152271352a991de6a98c55f80d45007c312181ba1be38c3c12b97f536",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+          "segments": [
+            {
+              "text": "Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "8059a8e716422e153f67cd5fa6b33d8a5e028416624c6faeff084b4f8b4c5667",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 3.761625,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "ca2c1a38bb7738608bfa621a27e5b5c8b1f871d64ebad4879a0b2209b030f3ef"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "wrong-person-close",
+        "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+        "canonicalTextHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+      "historicalDurationSeconds": 3.9938333333333333,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "wrong-person-close",
+            "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+            "canonicalTextHash": "7a9308e5a723cbc5b74d138c5c0bb83984b6ee17924017a9b813d2f75555dc5d",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+          "segments": [
+            {
+              "text": "Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "71c8572bfe9aa2f008ddc93605906e664a6279fc4361356210fe0d1c1c0de46a",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 3.9938333333333333,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "ac2748aabbf5e7c70b3bd81a2c27672e31ecfde172c77f5dccd8bfe2abfec51f"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "wrong-person-close",
+        "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med [NAVN]?",
+        "canonicalTextHash": "b44fbffef0b57525a0d215f59cc6abf1aabbc96bfe4f9d0d6247f8f56d194aa0",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": true
+      },
+      "historicalAssetHash": null,
+      "historicalDurationSeconds": null,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "wrong-person-close",
+            "canonicalText": "Beklager. Kan du hjælpe mig med at komme i kontakt med [NAVN]?",
+            "canonicalTextHash": "b44fbffef0b57525a0d215f59cc6abf1aabbc96bfe4f9d0d6247f8f56d194aa0",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": true
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Beklager. Kan du hjælpe mig med at komme i kontakt med [NAVN]?",
+          "segments": [
+            {
+              "text": "Beklager. Kan du hjælpe mig med at komme i kontakt med [NAVN]?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "90b61ecf2a9817cf6f5b5dea992d648af2b864e1a37395df76d047c7b0dc1f33"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "target-unavailable",
+        "canonicalText": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+        "canonicalTextHash": "43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+      "historicalDurationSeconds": 3.390125,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "target-unavailable",
+            "canonicalText": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+            "canonicalTextHash": "43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+          "segments": [
+            {
+              "text": "Det er helt i orden. Hvornår vil det være bedst at ringe igen?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 3.390125,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "e2cbd3a8fa87c514f39511d06d7b561d96c98b7f351958ababe45510bf428d27"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "send-first",
+        "canonicalText": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+        "canonicalTextHash": "d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+      "historicalDurationSeconds": 4.365333333333333,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "send-first",
+            "canonicalText": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+            "canonicalTextHash": "d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+          "segments": [
+            {
+              "text": "Vi skal først have din tilladelse, før vi sender informationen via e-mail.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 4.365333333333333,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "bd4d2245a3ae76efbefc03baa5e42a9b822d3f89ade4807766342b6f573c4072"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "e-mail",
+        "information"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "uncertain-consent",
+        "canonicalText": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+        "canonicalTextHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": "apurebase-professional-information-by-email-v1",
+        "recipientTypes": [
+          "TARGET_HCP"
+        ],
+        "consentCritical": true,
+        "template": false
+      },
+      "historicalAssetHash": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+      "historicalDurationSeconds": 8.68425,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "uncertain-consent",
+            "canonicalText": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+            "canonicalTextHash": "15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": "apurebase-professional-information-by-email-v1",
+            "recipientTypes": [
+              "TARGET_HCP"
+            ],
+            "consentCritical": true,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "segments": [
+            {
+              "text": "Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 8.68425,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "4a5bebbed65d02ad33c9635ecea47e9400bebe6341065cb6a4bcf4e67179b1fa"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase",
+        "e-mail",
+        "faglig",
+        "information",
+        "relevant"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "already-receiving",
+        "canonicalText": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+        "canonicalTextHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": "apurebase-professional-information-by-email-v1",
+        "recipientTypes": [
+          "TARGET_HCP"
+        ],
+        "consentCritical": true,
+        "template": false
+      },
+      "historicalAssetHash": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+      "historicalDurationSeconds": 7.430375,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "already-receiving",
+            "canonicalText": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+            "canonicalTextHash": "7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": "apurebase-professional-information-by-email-v1",
+            "recipientTypes": [
+              "TARGET_HCP"
+            ],
+            "consentCritical": true,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+          "segments": [
+            {
+              "text": "Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "MIXED",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 7.430375,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "0a94269659d053b70edd3920929e595158fb3a8dd2107223d2e47860999f06e9"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase",
+        "e-mail",
+        "faglig",
+        "information",
+        "relevant"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "email-correction-prefix",
+        "canonicalText": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+        "canonicalTextHash": "5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "948e1a3f03f5ea0285a1516fa0da69ea1ff90bcaca73c416a0546c2e19c64b24",
+      "historicalDurationSeconds": 3.9009583333333335,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "email-correction-prefix",
+            "canonicalText": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+            "canonicalTextHash": "5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+          "segments": [
+            {
+              "text": "Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "948e1a3f03f5ea0285a1516fa0da69ea1ff90bcaca73c416a0546c2e19c64b24",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 3.9009583333333335,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "53dcaac6f28021ab92641f887c92d2284e218f0d9e575b4e81860541a2d58907"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "e-mail"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "email-correction-confirm",
+        "canonicalText": "Er det korrekt?",
+        "canonicalTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "historicalDurationSeconds": 0.97525,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "email-correction-confirm",
+            "canonicalText": "Er det korrekt?",
+            "canonicalTextHash": "fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Er det korrekt?",
+          "segments": [
+            {
+              "text": "Er det korrekt?",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "QUESTION",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 0.97525,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "3b4ff571f65801d036b3b8026edb8235b3e1453ba19c8bbe13cdd131a25b44fd"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "more-explanation",
+        "canonicalText": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+        "canonicalTextHash": "93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+      "historicalDurationSeconds": 9.380875,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "more-explanation",
+            "canonicalText": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+            "canonicalTextHash": "93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+          "segments": [
+            {
+              "text": "aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 9.380875,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "13b5d4e1ccc9506184990d9d85761f07ba18e111ec4e27078e1337f2845e7ef8"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required",
+        "aPureBase",
+        "sundhedsperson",
+        "faglig",
+        "information",
+        "framelde",
+        "relevant"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "stop-contact-close",
+        "canonicalText": "Det forstår jeg. Tak for din tid. God dag.",
+        "canonicalTextHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+        "wordingVersion": "stage-2.0c31-candidate-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+      "historicalDurationSeconds": 2.229125,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "stop-contact-close",
+            "canonicalText": "Det forstår jeg. Tak for din tid. God dag.",
+            "canonicalTextHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Det forstår jeg. Tak for din tid. God dag.",
+          "segments": [
+            {
+              "text": "Det forstår jeg. Tak for din tid. God dag.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 2.229125,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "d583050192a0db996822d3c52579f9c8e460c1dc5512a6b75286d5482131d89e"
+        },
+        {
+          "canonical": {
+            "phraseId": "stop-contact-close",
+            "canonicalText": "Det forstår jeg. Tak for din tid. God dag.",
+            "canonicalTextHash": "e19dee1d7ab676e2257c29f2a36c482414c022fb9bd7fcf7ea0dcb6fff9b77c1",
+            "wordingVersion": "stage-2.0c31-candidate-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:SEGMENTATION",
+          "synthesisText": "Det forstår jeg. Tak for din tid. God dag.",
+          "segments": [
+            {
+              "text": "Det forstår jeg.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            },
+            {
+              "text": "Tak for din tid.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            },
+            {
+              "text": "God dag.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Existing sentence boundary; pause not yet measured"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "SEGMENTATION",
+            "ATOMIC_UNITS",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": null,
+          "assetOrigin": "UNGENERATED",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": null,
+          "durationEvidence": "UNKNOWN_UNGENERATED",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "c4d5fcef6b25eae47368a660d8a92b5bc7b82175493e4653cd34a331de7f5afa"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    },
+    {
+      "canonical": {
+        "phraseId": "thank-you",
+        "canonicalText": "Perfekt, tak.",
+        "canonicalTextHash": "ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7",
+        "wordingVersion": "stage-2.0c1-approved-1",
+        "consentScope": null,
+        "recipientTypes": [],
+        "consentCritical": false,
+        "template": false
+      },
+      "historicalAssetHash": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+      "historicalDurationSeconds": 1.1145416666666668,
+      "plans": [
+        {
+          "canonical": {
+            "phraseId": "thank-you",
+            "canonicalText": "Perfekt, tak.",
+            "canonicalTextHash": "ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7",
+            "wordingVersion": "stage-2.0c1-approved-1",
+            "consentScope": null,
+            "recipientTypes": [],
+            "consentCritical": false,
+            "template": false
+          },
+          "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+          "synthesisText": "Perfekt, tak.",
+          "segments": [
+            {
+              "text": "Perfekt, tak.",
+              "pauseAfterMs": null,
+              "boundaryReason": "Continuous unit; provider-controlled natural pause"
+            }
+          ],
+          "overrides": [],
+          "prosody": {
+            "connectedSpeech": "Review function-word joins and sende dig where present; metadata only",
+            "reduction": "Review unstressed endings and function words; no forced phonetic substitutions",
+            "weakConsonants": "Review silent/weak consonants with native listener",
+            "softD": "Review Danish soft-d where present; no unsupported phoneme tags",
+            "stress": "Review faglig, relevant, information, sundhedsperson and compound stress where present",
+            "rhythm": "Conversational, hesitation-free; inspect joins, no artificial buffering",
+            "tempo": "Keep requested speed 0.95",
+            "intonation": "STATEMENT",
+            "sentenceFinal": "Native listener assesses falling statement or appropriate question ending"
+          },
+          "voice": {
+            "provider": "ElevenLabs",
+            "name": "Isabella",
+            "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+            "modelId": "eleven_flash_v2_5",
+            "speed": 0.95
+          },
+          "strategy": [
+            "NO_CHANGE",
+            "HUMAN_REVIEW"
+          ],
+          "generatedAssetHash": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+          "assetOrigin": "RETAINED_HISTORICAL_REFERENCE",
+          "humanListeningStatus": "NOT_REVIEWED",
+          "expectedDurationSeconds": 1.1145416666666668,
+          "durationEvidence": "HISTORICAL_FILE_CONTENT",
+          "regressionIds": [],
+          "risk": "Naturalness unproven; changed plan requires new authorized audio and fresh listening, joins may sound worse. Retained reference association is a review binding, not a new generation receipt.",
+          "synthesisHash": "20dfcda4caed23ccba8e1caa2a0ded0cc60173757f65bb07ba6809d19e2460fb"
+        }
+      ],
+      "likelyConcerns": [
+        "Native Danish review required"
+      ]
+    }
+  ],
+  "acceptanceGate": {
+    "status": "NOT_ACCEPTED",
+    "reviewedAccepted": 0,
+    "total": 42,
+    "acceptedPercent": 0,
+    "criticalTotal": 7,
+    "criticalAccepted": 0,
+    "mandatoryTotal": 1,
+    "mandatoryPassed": 0,
+    "eligibleForHumanAcceptanceReview": false,
+    "linguisticCorrectnessProvenByAutomation": false
+  }
+}

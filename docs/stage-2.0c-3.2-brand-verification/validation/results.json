@@ -1,0 +1,179 @@
+[
+  {
+    "label": "c32-focused",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-brand-source/validation-final/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/consent-stage20c32-candidates.test.ts",
+      "tests/consent-stage20c32-email.test.ts",
+      "tests/consent-stage20c32-feedback-closure.test.ts",
+      "tests/consent-stage20c32-hardening.test.ts",
+      "tests/consent-stage20c32-package-brand.test.tsx",
+      "tests/consent-stage20c32-package-ui.test.tsx",
+      "tests/consent-stage20c32-package.test.ts",
+      "tests/consent-stage20c32-remediation.test.ts",
+      "tests/consent-stage20c32-speech.test.tsx"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 2.753,
+    "testsPassed": 610,
+    "testFiles": 9
+  },
+  {
+    "label": "c31",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-brand-source/validation-final/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/consent-stage20c3.test.ts",
+      "tests/consent-stage20c3-view.test.tsx",
+      "tests/consent-stage20c31.test.ts",
+      "tests/consent-stage20c31-view.test.tsx",
+      "tests/consent-stage20c31-gateway.test.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 1.756,
+    "testsPassed": 139,
+    "testFiles": 5
+  },
+  {
+    "label": "prior-consent",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-brand-source/validation-final/tree/node_modules/vitest/vitest.mjs",
+      "run",
+      "tests/consent-foundation.test.ts",
+      "tests/consent-stage20b.test.tsx",
+      "tests/consent-stage20b2.test.tsx",
+      "tests/consent-stage20c1.test.ts",
+      "tests/consent-stage20c2.test.ts",
+      "tests/consent-stage20c3-view.test.tsx",
+      "tests/consent-stage20c3.test.ts",
+      "tests/consent-stage20c31-gateway.test.ts",
+      "tests/consent-stage20c31-view.test.tsx",
+      "tests/consent-stage20c31.test.ts",
+      "tests/consent-transcription.test.ts",
+      "tests/consent-view.test.tsx",
+      "tests/stage196-short-consent.test.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 1.505,
+    "testsPassed": 496,
+    "testFiles": 13
+  },
+  {
+    "label": "full",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 8.922,
+    "testsPassed": 1730,
+    "testFiles": 87
+  },
+  {
+    "label": "lint",
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 3.25,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "typecheck",
+    "command": [
+      "npm",
+      "run",
+      "typecheck"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 4.373,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "build",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 5.883,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "c32-build",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-brand-source/validation-final/tree/node_modules/vite/bin/vite.js",
+      "build",
+      "--config",
+      "src/consent/stage32/vite.config.ts",
+      "--outDir",
+      "/private/tmp/c32-brand-source/validation-final/c32-build"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.867,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "handoff-build",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "/private/tmp/c32-brand-source/validation-final/tree/node_modules/vite/bin/vite.js",
+      "build",
+      "--config",
+      "scripts/stage20c32-handoff.vite.ts",
+      "--outDir",
+      "/private/tmp/c32-brand-source/validation-final/handoff-build"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.863,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "preservation-c31",
+    "command": [
+      "/opt/homebrew/bin/node",
+      "--import",
+      "tsx",
+      "scripts/verify-stage20c31.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.25,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "preservation-c32",
+    "command": [
+      "python3",
+      "scripts/verify-stage20c32-feedback-closure.py"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.379,
+    "testsPassed": null,
+    "testFiles": null
+  },
+  {
+    "label": "package-hashes",
+    "command": [
+      "/private/tmp/c32-brand-source/clean-extracted/aPureBase-C32-Asem-Branded-Retest/runtime/arm64/node",
+      "/private/tmp/c32-brand-source/clean-extracted/aPureBase-C32-Asem-Branded-Retest/verify.mjs"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.51,
+    "testsPassed": null,
+    "testFiles": null
+  }
+]

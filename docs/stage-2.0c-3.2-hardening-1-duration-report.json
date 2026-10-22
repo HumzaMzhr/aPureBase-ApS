@@ -1,0 +1,685 @@
+{
+  "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+  "mediaSource": "Immutable existing WAV manifest seconds",
+  "recipientAssumptions": "1.2 s thinking per answer; 1 s short answer, 3.5 s email, 4 s long authority claim; not measurements",
+  "transitionAssumptionSeconds": 0.15,
+  "operatorAssumptions": "1.5 s identity, 1.5 s separate consent review, 1.5 s email review",
+  "providerNetwork": null,
+  "physicalDelays": null,
+  "rows": [
+    {
+      "id": "A",
+      "flow": "direct HCP",
+      "result": "PASS",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "modeledElapsedSeconds": 42.27104166666666,
+      "mediaSeconds": 27.77104166666667,
+      "recipientSpeech": 5.5,
+      "recipientThinking": 3.6,
+      "transitions": 0.8999999999999999,
+      "operator": 4.499999999999993,
+      "providerNetwork": null,
+      "unknownPhysical": null,
+      "clips": [
+        {
+          "phraseId": "opening",
+          "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "start": 150,
+          "end": 7348.166666666666,
+          "seconds": 7.198166666666666
+        },
+        {
+          "phraseId": "purpose",
+          "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+          "start": 8998.166666666666,
+          "end": 16475,
+          "seconds": 7.476833333333333
+        },
+        {
+          "phraseId": "consent-question",
+          "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+          "start": 16625,
+          "end": 20572.375,
+          "seconds": 3.947375
+        },
+        {
+          "phraseId": "email-request",
+          "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+          "start": 24422.375,
+          "end": 27812.5,
+          "seconds": 3.390125
+        },
+        {
+          "phraseId": "email-confirmation-question",
+          "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "start": 32662.5,
+          "end": 33637.75,
+          "seconds": 0.97525
+        },
+        {
+          "phraseId": "success-close",
+          "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+          "start": 37487.75,
+          "end": 42271.041666666664,
+          "seconds": 4.783291666666667
+        }
+      ],
+      "consent": {
+        "turnId": "mic:SIMULATED:1",
+        "classification": "YES",
+        "at": 24272.375,
+        "recordedAt": "2026-10-20T22:30:30.891Z",
+        "recipientRevision": 1,
+        "questionInstanceId": "synthetic:A:playback-3"
+      },
+      "localEmail": {
+        "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+        "email": "anna@clinic.example",
+        "recipientRevision": 1,
+        "consentTurnId": "mic:SIMULATED:1",
+        "sourceTurnId": "mic:SIMULATED:2",
+        "confirmationTurnId": "mic:SIMULATED:3",
+        "candidateRevision": 1,
+        "storedAt": 42271.041666666664,
+        "reviewer": "synthetic:operator",
+        "reviewReason": "Exact candidate visually reviewed in simulation",
+        "productionConsent": false
+      }
+    },
+    {
+      "id": "Q",
+      "flow": "clarification",
+      "result": "PASS",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "modeledElapsedSeconds": 49.77587499999999,
+      "mediaSeconds": 32.925875000000005,
+      "recipientSpeech": 6.5,
+      "recipientThinking": 4.8,
+      "transitions": 1.05,
+      "operator": 4.499999999999988,
+      "providerNetwork": null,
+      "unknownPhysical": null,
+      "clips": [
+        {
+          "phraseId": "opening",
+          "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "start": 150,
+          "end": 7348.166666666666,
+          "seconds": 7.198166666666666
+        },
+        {
+          "phraseId": "purpose",
+          "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+          "start": 8998.166666666666,
+          "end": 16475,
+          "seconds": 7.476833333333333
+        },
+        {
+          "phraseId": "consent-question",
+          "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+          "start": 16625,
+          "end": 20572.375,
+          "seconds": 3.947375
+        },
+        {
+          "phraseId": "clarify",
+          "hash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+          "start": 22922.375,
+          "end": 28077.208333333332,
+          "seconds": 5.154833333333333
+        },
+        {
+          "phraseId": "email-request",
+          "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+          "start": 31927.208333333332,
+          "end": 35317.33333333333,
+          "seconds": 3.390125
+        },
+        {
+          "phraseId": "email-confirmation-question",
+          "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "start": 40167.33333333333,
+          "end": 41142.58333333333,
+          "seconds": 0.97525
+        },
+        {
+          "phraseId": "success-close",
+          "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+          "start": 44992.58333333333,
+          "end": 49775.87499999999,
+          "seconds": 4.783291666666667
+        }
+      ],
+      "consent": {
+        "turnId": "mic:SIMULATED:2",
+        "classification": "YES",
+        "at": 31777.208333333332,
+        "recordedAt": "2026-10-20T22:30:30.922Z",
+        "recipientRevision": 1,
+        "questionInstanceId": "synthetic:Q:playback-4"
+      },
+      "localEmail": {
+        "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+        "email": "anna@clinic.example",
+        "recipientRevision": 1,
+        "consentTurnId": "mic:SIMULATED:2",
+        "sourceTurnId": "mic:SIMULATED:3",
+        "confirmationTurnId": "mic:SIMULATED:4",
+        "candidateRevision": 1,
+        "storedAt": 49775.87499999999,
+        "reviewer": "synthetic:operator",
+        "reviewReason": "Exact candidate visually reviewed in simulation",
+        "productionConsent": false
+      }
+    },
+    {
+      "id": "B",
+      "flow": "database assisted",
+      "result": "PASS",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "modeledElapsedSeconds": 42.27104166666666,
+      "mediaSeconds": 27.77104166666667,
+      "recipientSpeech": 5.5,
+      "recipientThinking": 3.6,
+      "transitions": 0.8999999999999999,
+      "operator": 4.499999999999993,
+      "providerNetwork": null,
+      "unknownPhysical": null,
+      "clips": [
+        {
+          "phraseId": "opening",
+          "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "start": 150,
+          "end": 7348.166666666666,
+          "seconds": 7.198166666666666
+        },
+        {
+          "phraseId": "purpose",
+          "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+          "start": 8998.166666666666,
+          "end": 16475,
+          "seconds": 7.476833333333333
+        },
+        {
+          "phraseId": "consent-question",
+          "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+          "start": 16625,
+          "end": 20572.375,
+          "seconds": 3.947375
+        },
+        {
+          "phraseId": "email-request",
+          "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+          "start": 24422.375,
+          "end": 27812.5,
+          "seconds": 3.390125
+        },
+        {
+          "phraseId": "email-confirmation-question",
+          "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "start": 32662.5,
+          "end": 33637.75,
+          "seconds": 0.97525
+        },
+        {
+          "phraseId": "success-close",
+          "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+          "start": 37487.75,
+          "end": 42271.041666666664,
+          "seconds": 4.783291666666667
+        }
+      ],
+      "consent": {
+        "turnId": "mic:SIMULATED:1",
+        "classification": "YES",
+        "at": 24272.375,
+        "recordedAt": "2026-10-20T22:30:30.895Z",
+        "recipientRevision": 1,
+        "questionInstanceId": "synthetic:B:playback-3"
+      },
+      "localEmail": {
+        "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+        "email": "anna@clinic.example",
+        "recipientRevision": 1,
+        "consentTurnId": "mic:SIMULATED:1",
+        "sourceTurnId": "mic:SIMULATED:2",
+        "confirmationTurnId": "mic:SIMULATED:3",
+        "candidateRevision": 1,
+        "storedAt": 42271.041666666664,
+        "reviewer": "synthetic:operator",
+        "reviewReason": "Exact candidate visually reviewed in simulation",
+        "productionConsent": false
+      }
+    },
+    {
+      "id": "AT",
+      "flow": "email correction",
+      "result": "PASS",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "modeledElapsedSeconds": 48.096291666666666,
+      "mediaSeconds": 28.746291666666668,
+      "recipientSpeech": 9,
+      "recipientThinking": 4.8,
+      "transitions": 1.05,
+      "operator": 4.499999999999998,
+      "providerNetwork": null,
+      "unknownPhysical": null,
+      "clips": [
+        {
+          "phraseId": "opening",
+          "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "start": 150,
+          "end": 7348.166666666666,
+          "seconds": 7.198166666666666
+        },
+        {
+          "phraseId": "purpose",
+          "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+          "start": 8998.166666666666,
+          "end": 16475,
+          "seconds": 7.476833333333333
+        },
+        {
+          "phraseId": "consent-question",
+          "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+          "start": 16625,
+          "end": 20572.375,
+          "seconds": 3.947375
+        },
+        {
+          "phraseId": "email-request",
+          "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+          "start": 24422.375,
+          "end": 27812.5,
+          "seconds": 3.390125
+        },
+        {
+          "phraseId": "email-confirmation-question",
+          "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "start": 32662.5,
+          "end": 33637.75,
+          "seconds": 0.97525
+        },
+        {
+          "phraseId": "email-confirmation-question",
+          "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "start": 38487.75,
+          "end": 39463,
+          "seconds": 0.97525
+        },
+        {
+          "phraseId": "success-close",
+          "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+          "start": 43313,
+          "end": 48096.291666666664,
+          "seconds": 4.783291666666667
+        }
+      ],
+      "consent": {
+        "turnId": "mic:SIMULATED:1",
+        "classification": "YES",
+        "at": 24272.375,
+        "recordedAt": "2026-10-20T22:30:30.957Z",
+        "recipientRevision": 1,
+        "questionInstanceId": "synthetic:AT:playback-3"
+      },
+      "localEmail": {
+        "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+        "email": "anne@clinic.example",
+        "recipientRevision": 1,
+        "consentTurnId": "mic:SIMULATED:1",
+        "sourceTurnId": "mic:SIMULATED:3",
+        "confirmationTurnId": "mic:SIMULATED:4",
+        "candidateRevision": 2,
+        "storedAt": 48096.291666666664,
+        "reviewer": "synthetic:operator",
+        "reviewReason": "Exact candidate visually reviewed in simulation",
+        "productionConsent": false
+      }
+    },
+    {
+      "id": "L",
+      "flow": "receptionist transfer",
+      "result": "PASS",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "modeledElapsedSeconds": 45.971041666666665,
+      "mediaSeconds": 27.77104166666667,
+      "recipientSpeech": 6.5,
+      "recipientThinking": 4.8,
+      "transitions": 0.8999999999999999,
+      "operator": 5.9999999999999964,
+      "providerNetwork": null,
+      "unknownPhysical": null,
+      "clips": [
+        {
+          "phraseId": "opening",
+          "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "start": 150,
+          "end": 7348.166666666666,
+          "seconds": 7.198166666666666
+        },
+        {
+          "phraseId": "purpose",
+          "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+          "start": 12698.166666666666,
+          "end": 20175,
+          "seconds": 7.476833333333333
+        },
+        {
+          "phraseId": "consent-question",
+          "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+          "start": 20325,
+          "end": 24272.375,
+          "seconds": 3.947375
+        },
+        {
+          "phraseId": "email-request",
+          "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+          "start": 28122.375,
+          "end": 31512.5,
+          "seconds": 3.390125
+        },
+        {
+          "phraseId": "email-confirmation-question",
+          "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "start": 36362.5,
+          "end": 37337.75,
+          "seconds": 0.97525
+        },
+        {
+          "phraseId": "success-close",
+          "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+          "start": 41187.75,
+          "end": 45971.041666666664,
+          "seconds": 4.783291666666667
+        }
+      ],
+      "state": "EMAIL_REQUEST",
+      "emailState": "END_SUCCESS",
+      "consent": {
+        "turnId": "mic:SIMULATED:2",
+        "classification": "YES",
+        "at": 27972.375,
+        "recordedAt": "2026-10-20T22:30:30.911Z",
+        "recipientRevision": 3,
+        "questionInstanceId": "synthetic:L:playback-3"
+      }
+    },
+    {
+      "id": "M",
+      "flow": "authorized intermediary",
+      "result": "PASS",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "modeledElapsedSeconds": 48.632041666666666,
+      "mediaSeconds": 28.932041666666667,
+      "recipientSpeech": 9.5,
+      "recipientThinking": 4.8,
+      "transitions": 0.8999999999999999,
+      "operator": 4.5,
+      "providerNetwork": null,
+      "unknownPhysical": null,
+      "clips": [
+        {
+          "phraseId": "opening",
+          "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "start": 150,
+          "end": 7348.166666666666,
+          "seconds": 7.198166666666666
+        },
+        {
+          "phraseId": "purpose",
+          "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+          "start": 14198.166666666666,
+          "end": 21675,
+          "seconds": 7.476833333333333
+        },
+        {
+          "phraseId": "intermediary-consent-question",
+          "hash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+          "start": 21825,
+          "end": 26933.375,
+          "seconds": 5.108375
+        },
+        {
+          "phraseId": "email-request",
+          "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+          "start": 30783.375,
+          "end": 34173.5,
+          "seconds": 3.390125
+        },
+        {
+          "phraseId": "email-confirmation-question",
+          "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+          "start": 39023.5,
+          "end": 39998.75,
+          "seconds": 0.97525
+        },
+        {
+          "phraseId": "success-close",
+          "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+          "start": 43848.75,
+          "end": 48632.041666666664,
+          "seconds": 4.783291666666667
+        }
+      ],
+      "state": "EMAIL_REQUEST",
+      "emailState": "END_SUCCESS",
+      "consent": {
+        "turnId": "mic:SIMULATED:2",
+        "classification": "YES",
+        "at": 30633.375,
+        "recordedAt": "2026-10-20T22:30:30.915Z",
+        "recipientRevision": 2,
+        "questionInstanceId": "synthetic:M:playback-3"
+      }
+    },
+    {
+      "id": "AQ",
+      "flow": "refusal",
+      "result": "PASS",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "modeledElapsedSeconds": 25.47658333333333,
+      "mediaSeconds": 21.176583333333333,
+      "recipientSpeech": 1,
+      "recipientThinking": 1.2,
+      "transitions": 0.6,
+      "operator": 1.499999999999997,
+      "providerNetwork": null,
+      "unknownPhysical": null,
+      "clips": [
+        {
+          "phraseId": "opening",
+          "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "start": 150,
+          "end": 7348.166666666666,
+          "seconds": 7.198166666666666
+        },
+        {
+          "phraseId": "purpose",
+          "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+          "start": 8998.166666666666,
+          "end": 16475,
+          "seconds": 7.476833333333333
+        },
+        {
+          "phraseId": "consent-question",
+          "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+          "start": 16625,
+          "end": 20572.375,
+          "seconds": 3.947375
+        },
+        {
+          "phraseId": "refusal-close",
+          "hash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+          "start": 22922.375,
+          "end": 25476.583333333332,
+          "seconds": 2.5542083333333334
+        }
+      ],
+      "state": "END_REFUSED",
+      "emailState": "IDLE",
+      "consent": {
+        "turnId": "mic:SIMULATED:1",
+        "classification": "NO",
+        "at": 22772.375,
+        "recordedAt": "2026-10-20T22:30:30.954Z",
+        "recipientRevision": 1,
+        "questionInstanceId": "synthetic:AQ:playback-3"
+      }
+    },
+    {
+      "id": "AR",
+      "flow": "busy",
+      "result": "PASS",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "modeledElapsedSeconds": 17.278583333333334,
+      "mediaSeconds": 14.628583333333335,
+      "recipientSpeech": 1,
+      "recipientThinking": 1.2,
+      "transitions": 0.44999999999999996,
+      "operator": -1.3322676295501878e-15,
+      "providerNetwork": null,
+      "unknownPhysical": null,
+      "clips": [
+        {
+          "phraseId": "opening",
+          "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+          "start": 150,
+          "end": 7348.166666666666,
+          "seconds": 7.198166666666666
+        },
+        {
+          "phraseId": "callback",
+          "hash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+          "start": 9698.166666666666,
+          "end": 12995.416666666666,
+          "seconds": 3.29725
+        },
+        {
+          "phraseId": "callback-close",
+          "hash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+          "start": 13145.416666666666,
+          "end": 17278.583333333332,
+          "seconds": 4.133166666666667
+        }
+      ],
+      "state": "END_OTHER",
+      "emailState": "IDLE",
+      "consent": null
+    }
+  ],
+  "ordinaryOutside30to90": [],
+  "refusalBusyNotPadded": true,
+  "baselineDurationModel": {
+    "kind": "OFFLINE_CONTENT_AND_ASSUMPTION_MODEL_NOT_PHYSICAL_TELEPHONE_TIMING",
+    "targetOrdinarySuccessSeconds": [
+      30,
+      90
+    ],
+    "preferredSeconds": [
+      30,
+      60
+    ],
+    "path": "Verified target HCP, reviewed scoped consent, exact spoken email + unique exact scoped record, concise owned confirmation",
+    "staticUnits": [
+      {
+        "phraseId": "opening",
+        "audioHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+        "seconds": 7.198166666666666
+      },
+      {
+        "phraseId": "purpose",
+        "audioHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+        "seconds": 7.476833333333333
+      },
+      {
+        "phraseId": "consent-question",
+        "audioHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+        "seconds": 3.947375
+      },
+      {
+        "phraseId": "email-request",
+        "audioHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+        "seconds": 3.390125
+      },
+      {
+        "phraseId": "email-confirmation-question",
+        "audioHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+        "seconds": 0.97525
+      },
+      {
+        "phraseId": "success-close",
+        "audioHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+        "seconds": 4.783291666666667
+      }
+    ],
+    "staticAudioSeconds": 27.77104166666667,
+    "dynamicAudioSeconds": 0,
+    "assumptions": {
+      "recipientResponseSeconds": [
+        12,
+        25
+      ],
+      "transitionSeconds": [
+        1,
+        4
+      ],
+      "operatorReviewSeconds": [
+        2,
+        6
+      ],
+      "resolverBudgetSeconds": [
+        0,
+        0.25
+      ]
+    },
+    "providerNetworkSeconds": null,
+    "unknownUnmodeled": [
+      "Live ASR availability/endpoint latency",
+      "Real CRM lookup/network latency (adapter absent)",
+      "Human decision/delivery overlap",
+      "Physical output gaps and barge-in",
+      "Arbitrary-name units",
+      "New pronunciation variants and joins"
+    ],
+    "subtotalExcludingUnknownSeconds": [
+      42.77104166666667,
+      63.02104166666667
+    ],
+    "legacyCharacterReadbackComparisons": [
+      {
+        "audioHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+        "legacyDynamicSeconds": 18.715291666666666,
+        "legacyPrefixSeconds": 2.925708333333333,
+        "modeledAudioSecondsRemoved": 21.641,
+        "measuredPhysicalSavingSeconds": null
+      },
+      {
+        "audioHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+        "legacyDynamicSeconds": 15.65025,
+        "legacyPrefixSeconds": 2.925708333333333,
+        "modeledAudioSecondsRemoved": 18.575958333333332,
+        "measuredPhysicalSavingSeconds": null
+      },
+      {
+        "audioHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+        "legacyDynamicSeconds": 19.319,
+        "legacyPrefixSeconds": 2.925708333333333,
+        "modeledAudioSecondsRemoved": 22.24470833333333,
+        "measuredPhysicalSavingSeconds": null
+      },
+      {
+        "audioHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+        "legacyDynamicSeconds": 10.866958333333333,
+        "legacyPrefixSeconds": 2.925708333333333,
+        "modeledAudioSecondsRemoved": 13.792666666666666,
+        "measuredPhysicalSavingSeconds": null
+      }
+    ],
+    "highConfidencePath": "Explicit address disambiguation or operator review: no duration bound claimed",
+    "refusalBusyPaths": "Existing short exits preserved; no padding or minimum-duration constraint applied",
+    "newSynthesisVariantDurations": null,
+    "physicalVerified": false
+  },
+  "comparisonCaveat": "Earlier range and current nominal scenario assumptions differ. No physical improvement is established. Removed spelling audio content is reported separately."
+}

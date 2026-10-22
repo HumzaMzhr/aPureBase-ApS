@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-21T21:42:12.566133+00:00",
+  "browser": "Codex in-app browser (real AudioContext)",
+  "servedBuiltCandidate": "http://127.0.0.1:5186/stage20c32.html",
+  "media": [
+    {
+      "phraseId": "why-calling",
+      "hash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+      "observedStatus": "Local WebAudio source-ended for b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+      "proofFile": "why-calling-browser.txt"
+    },
+    {
+      "phraseId": "success-close",
+      "hash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "observedStatus": "Local WebAudio source-ended for e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "proofFile": "success-close-browser.txt"
+    }
+  ],
+  "humanRatingsEntered": false,
+  "humanAttestationEntered": false,
+  "retainedHumanObservations": 0,
+  "microphoneStarted": false,
+  "providerRequests": 0,
+  "acousticHeadphoneOrTelephoneProof": false
+}

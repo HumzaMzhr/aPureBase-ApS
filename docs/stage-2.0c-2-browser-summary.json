@@ -1,0 +1,87 @@
+{
+  "evidence": "ACTUAL LOCAL WEB AUDIO OUTPUT; MANUAL SYNTHETIC RECIPIENT TRANSCRIPTS/ONSETS; NOT TELEPHONE ACCEPTANCE",
+  "rows": [
+    {
+      "scenario": "direct",
+      "callId": "dbbb155b-7cab-4c77-9e87-4e106fed92d7",
+      "state": "END_SUCCESS",
+      "completeOutputs": 8,
+      "interruptedOutputs": 0,
+      "dynamicSlots": 1,
+      "actualLocalRenderProofs": 8,
+      "syntheticOutputProofs": 0,
+      "reviewedConsent": "YES",
+      "emailConfirmed": true,
+      "ownedEmailConfirmations": 1,
+      "clippingEvents": 0,
+      "peakProtectionEvents": 1,
+      "actualBrowserWallSeconds": 119.63260000000056,
+      "renderedAudioSeconds": 39.845416666666665,
+      "rawReview": "stage-2.0c-2-browser-direct.json"
+    },
+    {
+      "scenario": "correction",
+      "callId": "316b7c45-022f-4b75-8114-0595e450fa40",
+      "state": "END_SUCCESS",
+      "completeOutputs": 10,
+      "interruptedOutputs": 0,
+      "dynamicSlots": 2,
+      "actualLocalRenderProofs": 10,
+      "syntheticOutputProofs": 0,
+      "reviewedConsent": "YES",
+      "emailConfirmed": true,
+      "ownedEmailConfirmations": 1,
+      "clippingEvents": 0,
+      "peakProtectionEvents": 1,
+      "actualBrowserWallSeconds": 280.05119999999926,
+      "renderedAudioSeconds": 56.42454166666667,
+      "rawReview": "stage-2.0c-2-browser-correction.json"
+    },
+    {
+      "scenario": "intermediary",
+      "callId": "d4154d14-40b9-4569-8310-622bc2c918e2",
+      "state": "END_SUCCESS",
+      "completeOutputs": 8,
+      "interruptedOutputs": 0,
+      "dynamicSlots": 3,
+      "actualLocalRenderProofs": 8,
+      "syntheticOutputProofs": 0,
+      "reviewedConsent": "YES",
+      "emailConfirmed": true,
+      "ownedEmailConfirmations": 1,
+      "clippingEvents": 0,
+      "peakProtectionEvents": 0,
+      "actualBrowserWallSeconds": 180.5495,
+      "renderedAudioSeconds": 34.96925,
+      "rawReview": "stage-2.0c-2-browser-intermediary.json"
+    },
+    {
+      "scenario": "interruption",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "state": "CONSENT_UNCLEAR",
+      "completeOutputs": 1,
+      "interruptedOutputs": 1,
+      "dynamicSlots": 1,
+      "actualLocalRenderProofs": 1,
+      "syntheticOutputProofs": 0,
+      "reviewedConsent": null,
+      "emailConfirmed": false,
+      "ownedEmailConfirmations": 0,
+      "clippingEvents": 0,
+      "peakProtectionEvents": 0,
+      "actualBrowserWallSeconds": 19.447299999999814,
+      "renderedAudioSeconds": 7.476833333333333,
+      "rawReview": "stage-2.0c-2-browser-interruption.json"
+    }
+  ],
+  "initialBrowserFailure": {
+    "file": "stage-2.0c-2-browser-initial-failure.json",
+    "reason": "Unbound native fetch invocation",
+    "preservedYesAndLiteralEmail": true
+  },
+  "limits": [
+    "Browser wall time includes tool/operator pauses, not a representative natural-call measurement.",
+    "Human Danish pronunciation review remains pending.",
+    "Interrupted intermediary remains waiting for operator takeover; no autonomous retry."
+  ]
+}

@@ -1,0 +1,132 @@
+STRICT C32 AUDIT RERUNS — NO IMPLEMENTATION CHANGES
+Source tree matches321validated source hashes; isolated identical copy protects legacy benchmark reports.
+Node v25.9.0; npm 11.12.1
+
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/consent-stage20c32-email.test.ts tests/consent-stage20c32-hardening.test.ts tests/consent-stage20c32-speech.test.tsx
+{"label": "focused", "exitCode": 0, "elapsedMs": 1020.595041, "log": "/tmp/c32h1-validation-QSa2mE/focused.txt", "testsPassed": 254, "testFiles": 3, "maxResidentSetSize": "142000128  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/consent-stage20c3.test.ts tests/consent-stage20c3-view.test.tsx tests/consent-stage20c31.test.ts tests/consent-stage20c31-view.test.tsx tests/consent-stage20c31-gateway.test.ts
+{"label": "c31", "exitCode": 0, "elapsedMs": 1753.546958, "log": "/tmp/c32h1-validation-QSa2mE/c31.txt", "testsPassed": 139, "testFiles": 5, "maxResidentSetSize": "184664064  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/consent-foundation.test.ts tests/consent-stage20b.test.tsx tests/consent-stage20b2.test.tsx tests/consent-stage20c1.test.ts tests/consent-stage20c2.test.ts tests/consent-stage20c3-view.test.tsx tests/consent-stage20c3.test.ts tests/consent-stage20c31-gateway.test.ts tests/consent-stage20c31-view.test.tsx tests/consent-stage20c31.test.ts tests/consent-transcription.test.ts tests/consent-view.test.tsx tests/stage196-short-consent.test.ts
+{"label": "all-prior-consent", "exitCode": 0, "elapsedMs": 1482.905167, "log": "/tmp/c32h1-validation-QSa2mE/all-prior-consent.txt", "testsPassed": 496, "testFiles": 13, "maxResidentSetSize": "189333504  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/stage195-replay.test.ts
+{"label": "replay-1", "exitCode": 0, "elapsedMs": 2516.6953329999997, "log": "/tmp/c32h1-validation-QSa2mE/replay-1.txt", "testsPassed": 2, "testFiles": 1, "maxResidentSetSize": "136658944  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/continuous-transcription-gateway.test.ts -t forwards all 45 seconds
+{"label": "pcm-1", "exitCode": 0, "elapsedMs": 616.4070840000004, "log": "/tmp/c32h1-validation-QSa2mE/pcm-1.txt", "testsPassed": 1, "testFiles": 1, "maxResidentSetSize": "112656384  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/stage195-replay.test.ts
+{"label": "replay-2", "exitCode": 0, "elapsedMs": 2472.9047500000006, "log": "/tmp/c32h1-validation-QSa2mE/replay-2.txt", "testsPassed": 2, "testFiles": 1, "maxResidentSetSize": "137134080  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/continuous-transcription-gateway.test.ts -t forwards all 45 seconds
+{"label": "pcm-2", "exitCode": 0, "elapsedMs": 608.3250829999997, "log": "/tmp/c32h1-validation-QSa2mE/pcm-2.txt", "testsPassed": 1, "testFiles": 1, "maxResidentSetSize": "111575040  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/stage195-replay.test.ts
+{"label": "replay-3", "exitCode": 0, "elapsedMs": 2450.245665999999, "log": "/tmp/c32h1-validation-QSa2mE/replay-3.txt", "testsPassed": 2, "testFiles": 1, "maxResidentSetSize": "140836864  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/continuous-transcription-gateway.test.ts -t forwards all 45 seconds
+{"label": "pcm-3", "exitCode": 0, "elapsedMs": 624.2791250000009, "log": "/tmp/c32h1-validation-QSa2mE/pcm-3.txt", "testsPassed": 1, "testFiles": 1, "maxResidentSetSize": "111263744  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/stage195-replay.test.ts
+{"label": "replay-4", "exitCode": 0, "elapsedMs": 2552.4707910000016, "log": "/tmp/c32h1-validation-QSa2mE/replay-4.txt", "testsPassed": 2, "testFiles": 1, "maxResidentSetSize": "136724480  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/continuous-transcription-gateway.test.ts -t forwards all 45 seconds
+{"label": "pcm-4", "exitCode": 0, "elapsedMs": 623.7635000000009, "log": "/tmp/c32h1-validation-QSa2mE/pcm-4.txt", "testsPassed": 1, "testFiles": 1, "maxResidentSetSize": "112836608  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/stage195-replay.test.ts
+{"label": "replay-5", "exitCode": 0, "elapsedMs": 2483.528374999998, "log": "/tmp/c32h1-validation-QSa2mE/replay-5.txt", "testsPassed": 2, "testFiles": 1, "maxResidentSetSize": "137330688  maximum resident set size"}
+$ /opt/homebrew/Cellar/node/25.9.0/bin/node /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS/node_modules/vitest/vitest.mjs run tests/continuous-transcription-gateway.test.ts -t forwards all 45 seconds
+{"label": "pcm-5", "exitCode": 0, "elapsedMs": 637.1913329999988, "log": "/tmp/c32h1-validation-QSa2mE/pcm-5.txt", "testsPassed": 1, "testFiles": 1, "maxResidentSetSize": "109903872  maximum resident set size"}
+$ npm test
+{"label": "full-1", "exitCode": 0, "elapsedMs": 9355.569542000001, "log": "/tmp/c32h1-validation-QSa2mE/full-1.txt", "testsPassed": 1368, "testFiles": 80, "maxResidentSetSize": "273907712  maximum resident set size"}
+$ npm test
+{"label": "full-2", "exitCode": 0, "elapsedMs": 7727.224333999995, "log": "/tmp/c32h1-validation-QSa2mE/full-2.txt", "testsPassed": 1368, "testFiles": 80, "maxResidentSetSize": "288276480  maximum resident set size"}
+$ npm test
+{"label": "full-3", "exitCode": 0, "elapsedMs": 7763.870999999999, "log": "/tmp/c32h1-validation-QSa2mE/full-3.txt", "testsPassed": 1368, "testFiles": 80, "maxResidentSetSize": "276004864  maximum resident set size"}
+$ npm run lint
+> apurebase-stage1-translator@0.9.0 lint
+> eslint .
+$ npm run typecheck
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+$ npm run build
+> apurebase-stage1-translator@0.9.0 build
+> npm run typecheck && vite build
+
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 125 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                      0.37 kB │ gzip:   0.27 kB
+dist/assets/index-j0eZ6Glf.css      17.21 kB │ gzip:   4.35 kB
+dist/assets/Workspace-DMXMx32Q.js  190.38 kB │ gzip:  30.69 kB
+dist/assets/index-CloNzLRu.js      677.40 kB │ gzip: 192.43 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 841ms
+$ npx vite build --config src/consent/stage32/vite.config.ts --outDir /tmp/c32-audit-workbench-build
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 80 modules transformed.
+
+(!) outDir /tmp/c32-audit-workbench-build is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../../../../../tmp/c32-audit-workbench-build/stage20c32.html                   0.31 kB │ gzip:  0.24 kB
+../../../../../tmp/c32-audit-workbench-build/assets/SpeechPanel-CXCVykEB.js    1.57 kB │ gzip:  0.81 kB
+../../../../../tmp/c32-audit-workbench-build/assets/ReviewPanel-z1cp8Pt5.js   10.36 kB │ gzip:  4.09 kB
+../../../../../tmp/c32-audit-workbench-build/assets/stage20c32-DcF7_e1K.js   240.99 kB │ gzip: 76.88 kB
+../../../../../tmp/c32-audit-workbench-build/assets/speech-DCcoDsDF.js       285.76 kB │ gzip: 49.46 kB
+✓ built in 561ms
+$ node --import tsx scripts/verify-stage20c31.ts
+{
+  "status": "PASS",
+  "baselineFiles": 433,
+  "candidateFiles": 44,
+  "harnessCorrectionFiles": [
+    "tests/continuous-transcription-gateway.test.ts",
+    "scripts/verify-stage20c31.ts"
+  ],
+  "originalRecordings": 37,
+  "newRecordings": 12,
+  "retainedCurrentApprovals": 24,
+  "humanRetestRequired": 13,
+  "providerRequests": 0,
+  "physicalASR": "NOT_TESTED",
+  "stage": "NOT_ACCEPTED",
+  "telephoneVerified": false,
+  "productionEnabled": false
+}
+$ node --import tsx scripts/verify-stage20c32.ts
+PASS: 515 historical files; Stage 1.9.6 and all prior stages; original 37 + C-3.1 12 recordings byte-identical; no exceptions.
+$ node --import tsx scripts/verify-stage20c32-hardening.ts
+{
+  "status": "PASS",
+  "baselineHead": "34285a8d6f4f94c6e8036c375b8a3244c316c176",
+  "currentHead": "34285a8d6f4f94c6e8036c375b8a3244c316c176",
+  "branch": "codex/stage-2.0c3-human-acceptance",
+  "beforeFiles": 552,
+  "trackedPreserved": 515,
+  "stage196Preserved": true,
+  "allPreexistingTestsPreserved": true,
+  "allPreexistingReportsPreserved": true,
+  "dirtyBeforeFilesRecoverable": 37,
+  "backupFailures": [],
+  "modifiedExistingFiles": [
+    "src/consent/stage32/Workbench.tsx",
+    "src/consent/stage32/email/danishEmailLexicon.ts",
+    "src/consent/stage32/email/flow.ts",
+    "src/consent/stage32/email/reconciliation.ts",
+    "src/consent/stage32/email/reconstruct.ts",
+    "src/consent/stage32/email/tokenizer.ts",
+    "src/consent/stage32/session.ts"
+  ],
+  "unexpectedHistoricalChanges": [],
+  "deletedFiles": []
+}
+Additional focused verbose run: node node_modules/vitest/vitest.mjs run tests/consent-stage20c32-hardening.test.ts tests/consent-stage20c32-email.test.ts tests/consent-stage20c32-speech.test.tsx --reporter=verbose
+PASS254/254; per-case names in raw audit log archive.
+Independent corpus/scenario/guard/QA/verifier rerun: audit-evidence.json.independent
+Independent counterexample probes: audit-evidence.json.probes; defect demonstrations, not production regressions silently repaired.
+Full required audit gate is NOT satisfied: implementation gaps remain despite all existing tests passing.

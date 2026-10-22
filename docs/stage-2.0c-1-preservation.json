@@ -1,0 +1,1205 @@
+{
+  "stage": "2.0c1",
+  "baselineCapturedBeforeEdits": true,
+  "baselineFileCount": 202,
+  "protectedFileCount": 181,
+  "protectedChanges": [],
+  "unexpectedTrackedNonConsentPatchChanges": [],
+  "changedExistingFiles": [
+    "src/consent/definition.ts",
+    "src/consent/consentGuard.ts",
+    "src/consent/types.ts",
+    "src/consent/ConsentWorkspace.tsx",
+    "src/consent/session.ts",
+    "src/consent/handoff.ts"
+  ],
+  "addedSourcePublicTestFiles": [
+    "public/audio/consent-stage20c1/01044caa100080167e93c67441edb46fd399f232a008844185dd8f7c51570f25.wav",
+    "public/audio/consent-stage20c1/124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290.wav",
+    "public/audio/consent-stage20c1/15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c.wav",
+    "public/audio/consent-stage20c1/1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4.wav",
+    "public/audio/consent-stage20c1/2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f.wav",
+    "public/audio/consent-stage20c1/2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051.wav",
+    "public/audio/consent-stage20c1/43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405.wav",
+    "public/audio/consent-stage20c1/4d4bd86e384a4a918b1852c49827a6e9b9122d096d83b2b9fe385124546a088a.wav",
+    "public/audio/consent-stage20c1/50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8.wav",
+    "public/audio/consent-stage20c1/5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70.wav",
+    "public/audio/consent-stage20c1/6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6.wav",
+    "public/audio/consent-stage20c1/7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627.wav",
+    "public/audio/consent-stage20c1/7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3.wav",
+    "public/audio/consent-stage20c1/73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49.wav",
+    "public/audio/consent-stage20c1/7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2.wav",
+    "public/audio/consent-stage20c1/855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6.wav",
+    "public/audio/consent-stage20c1/93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f.wav",
+    "public/audio/consent-stage20c1/b5cb3098fef60f1cbd4563cf14808c3cd3085ce730c08eb01a459a2dfb1f0acd.wav",
+    "public/audio/consent-stage20c1/c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6.wav",
+    "public/audio/consent-stage20c1/d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11.wav",
+    "public/audio/consent-stage20c1/d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1.wav",
+    "public/audio/consent-stage20c1/e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15.wav",
+    "public/audio/consent-stage20c1/e95d7a401fa4856920ed7602799c144527a8065e4d32506a5f142dcd783ccf4a.wav",
+    "public/audio/consent-stage20c1/ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7.wav",
+    "public/audio/consent-stage20c1/fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f.wav",
+    "src/consent/approved/AssetPanel.tsx",
+    "src/consent/approved/assetPack.ts",
+    "src/consent/approved/assets.ts",
+    "src/consent/approved/definition.ts",
+    "src/consent/approved/inventory.ts",
+    "src/consent/approved/localPlayback.ts",
+    "src/consent/approved/selector.ts",
+    "tests/consent-stage20c1.test.ts"
+  ],
+  "exactStageFiles": [
+    "docs/stage-2.0c-1-audio-manifest.json",
+    "docs/stage-2.0c-1-browser-rehearsal.json",
+    "docs/stage-2.0c-1-duration-report.json",
+    "docs/stage-2.0c-1-flow-a.jpg",
+    "docs/stage-2.0c-1-local-playback-qa.json",
+    "docs/stage-2.0c-1-local-question.jpg",
+    "docs/stage-2.0c-1-preservation.json",
+    "docs/stage-2.0c-1-validation.txt",
+    "docs/stage-2.0c-1-workspace.jpg",
+    "docs/stage-2.0c-1.md",
+    "public/audio/consent-stage20c1/01044caa100080167e93c67441edb46fd399f232a008844185dd8f7c51570f25.wav",
+    "public/audio/consent-stage20c1/124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290.wav",
+    "public/audio/consent-stage20c1/15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c.wav",
+    "public/audio/consent-stage20c1/1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4.wav",
+    "public/audio/consent-stage20c1/2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f.wav",
+    "public/audio/consent-stage20c1/2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051.wav",
+    "public/audio/consent-stage20c1/43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405.wav",
+    "public/audio/consent-stage20c1/4d4bd86e384a4a918b1852c49827a6e9b9122d096d83b2b9fe385124546a088a.wav",
+    "public/audio/consent-stage20c1/50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8.wav",
+    "public/audio/consent-stage20c1/5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70.wav",
+    "public/audio/consent-stage20c1/6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6.wav",
+    "public/audio/consent-stage20c1/7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627.wav",
+    "public/audio/consent-stage20c1/7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3.wav",
+    "public/audio/consent-stage20c1/73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49.wav",
+    "public/audio/consent-stage20c1/7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2.wav",
+    "public/audio/consent-stage20c1/855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6.wav",
+    "public/audio/consent-stage20c1/93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f.wav",
+    "public/audio/consent-stage20c1/b5cb3098fef60f1cbd4563cf14808c3cd3085ce730c08eb01a459a2dfb1f0acd.wav",
+    "public/audio/consent-stage20c1/c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6.wav",
+    "public/audio/consent-stage20c1/d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11.wav",
+    "public/audio/consent-stage20c1/d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1.wav",
+    "public/audio/consent-stage20c1/e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15.wav",
+    "public/audio/consent-stage20c1/e95d7a401fa4856920ed7602799c144527a8065e4d32506a5f142dcd783ccf4a.wav",
+    "public/audio/consent-stage20c1/ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7.wav",
+    "public/audio/consent-stage20c1/fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f.wav",
+    "scripts/stage20c1-finalize.ts",
+    "scripts/stage20c1-generate.ts",
+    "src/consent/ConsentWorkspace.tsx",
+    "src/consent/approved/AssetPanel.tsx",
+    "src/consent/approved/assetPack.ts",
+    "src/consent/approved/assets.ts",
+    "src/consent/approved/definition.ts",
+    "src/consent/approved/inventory.ts",
+    "src/consent/approved/localPlayback.ts",
+    "src/consent/approved/selector.ts",
+    "src/consent/consentGuard.ts",
+    "src/consent/definition.ts",
+    "src/consent/handoff.ts",
+    "src/consent/session.ts",
+    "src/consent/types.ts",
+    "tests/consent-stage20c1.test.ts"
+  ],
+  "files": {
+    "src/main.tsx": {
+      "before": "bf387c2dddc3abb5877858f101ca6cd7289a2616a72e40f64f06e5e1e5c92342",
+      "after": "bf387c2dddc3abb5877858f101ca6cd7289a2616a72e40f64f06e5e1e5c92342",
+      "unchanged": true
+    },
+    "src/liveTranscription.ts": {
+      "before": "fdc83820e388d686d8d1d0d03cbd5ec3fe6871f488762c18873a7d4fd93f733e",
+      "after": "fdc83820e388d686d8d1d0d03cbd5ec3fe6871f488762c18873a7d4fd93f733e",
+      "unchanged": true
+    },
+    "src/email.ts": {
+      "before": "f52144da8e47aaaf27af4b8a5da31e06f37da8d455fdbffc5a922c95de2526ae",
+      "after": "f52144da8e47aaaf27af4b8a5da31e06f37da8d455fdbffc5a922c95de2526ae",
+      "unchanged": true
+    },
+    "src/sse.ts": {
+      "before": "52cb0da4a91a94ac54fcf94b57e1af22de5119beb112eb7d31f8d58d79d7d349",
+      "after": "52cb0da4a91a94ac54fcf94b57e1af22de5119beb112eb7d31f8d58d79d7d349",
+      "unchanged": true
+    },
+    "src/types.ts": {
+      "before": "f038a5c12e84c9e82cbe988b07378e60dafb0c20a7cda1fd0b4a9045fa75466d",
+      "after": "f038a5c12e84c9e82cbe988b07378e60dafb0c20a7cda1fd0b4a9045fa75466d",
+      "unchanged": true
+    },
+    "src/decision.ts": {
+      "before": "14594933a738a4984b2db07d3ec6a208f61993774938fe3389739af8052b7559",
+      "after": "14594933a738a4984b2db07d3ec6a208f61993774938fe3389739af8052b7559",
+      "unchanged": true
+    },
+    "src/style.css": {
+      "before": "bead1bf531ab04107285669e087609cba3ceabf3a92c7b38ae341558e523e83f",
+      "after": "bead1bf531ab04107285669e087609cba3ceabf3a92c7b38ae341558e523e83f",
+      "unchanged": true
+    },
+    "src/browserAudio.ts": {
+      "before": "d81cc997c11d7fcc82391ad9201a3fc26ce0bc495728dd1186b789034d90619b",
+      "after": "d81cc997c11d7fcc82391ad9201a3fc26ce0bc495728dd1186b789034d90619b",
+      "unchanged": true
+    },
+    "src/controller.ts": {
+      "before": "0ba67cc2bbdcc8245b777a306a74da40d1b69f9e807d4845df8a5199fa5afca8",
+      "after": "0ba67cc2bbdcc8245b777a306a74da40d1b69f9e807d4845df8a5199fa5afca8",
+      "unchanged": true
+    },
+    "src/pcmPlayback.ts": {
+      "before": "fa71963b7a99ed81c424fefc393bb6a68e12797a88ef5fbac07061a4a5fdf4f0",
+      "after": "fa71963b7a99ed81c424fefc393bb6a68e12797a88ef5fbac07061a4a5fdf4f0",
+      "unchanged": true
+    },
+    "src/latency.ts": {
+      "before": "49068b509a0949f0bb76dfa2559205b757bf0764fbe69a98aab4584456c35319",
+      "after": "49068b509a0949f0bb76dfa2559205b757bf0764fbe69a98aab4584456c35319",
+      "unchanged": true
+    },
+    "src/config/campaignGlossary.ts": {
+      "before": "5abe0ea95fa8b6b17b2982f508f728607bc6372ee90291e2c43e64a3338e6e94",
+      "after": "5abe0ea95fa8b6b17b2982f508f728607bc6372ee90291e2c43e64a3338e6e94",
+      "unchanged": true
+    },
+    "src/config/campaignSpeech.ts": {
+      "before": "04f91b038dfbc1870e7751195eccbae528a455a579b0d9d0faabf2fca6472258",
+      "after": "04f91b038dfbc1870e7751195eccbae528a455a579b0d9d0faabf2fca6472258",
+      "unchanged": true
+    },
+    "src/config/realtimeDelivery.ts": {
+      "before": "838690c0a3a9355b0e4e5b557dae62431ad5961aaf28305405bf093ed8756ded",
+      "after": "838690c0a3a9355b0e4e5b557dae62431ad5961aaf28305405bf093ed8756ded",
+      "unchanged": true
+    },
+    "src/config/phrases.ts": {
+      "before": "be1fb87ce102a36ddd2dd03301263be253fe8ee834f475f73d992889071f746a",
+      "after": "be1fb87ce102a36ddd2dd03301263be253fe8ee834f475f73d992889071f746a",
+      "unchanged": true
+    },
+    "src/config/scenarios.ts": {
+      "before": "7838d7effcade7674a6562290f92839945112af727c9e9fcdc9df5c63c95f8c6",
+      "after": "7838d7effcade7674a6562290f92839945112af727c9e9fcdc9df5c63c95f8c6",
+      "unchanged": true
+    },
+    "src/streaming/sessionDiagnostics.ts": {
+      "before": "c895fc9036e1cf15f2ab8900dfd3a688ee64c8d750c9aad924221a67e1b57faf",
+      "after": "c895fc9036e1cf15f2ab8900dfd3a688ee64c8d750c9aad924221a67e1b57faf",
+      "unchanged": true
+    },
+    "src/streaming/trailing.ts": {
+      "before": "fe611c129e577946b7ced5658d9d6fe61e2082ab757b6e2bf7eb097e02676e11",
+      "after": "fe611c129e577946b7ced5658d9d6fe61e2082ab757b6e2bf7eb097e02676e11",
+      "unchanged": true
+    },
+    "src/streaming/output.ts": {
+      "before": "bfa47e1470a20848e4980c84896bf52b5c09ac3125a550ae49463042d0042f23",
+      "after": "bfa47e1470a20848e4980c84896bf52b5c09ac3125a550ae49463042d0042f23",
+      "unchanged": true
+    },
+    "src/streaming/localOutput.ts": {
+      "before": "55ee33db9966fa352e85fb6b00a1f752bf00446b40677c7fea3f9dd12fadee71",
+      "after": "55ee33db9966fa352e85fb6b00a1f752bf00446b40677c7fea3f9dd12fadee71",
+      "unchanged": true
+    },
+    "src/streaming/identity.ts": {
+      "before": "0b474a06601977b66cc4aec942b82b17373abee723977fb7b5654ede079d99b8",
+      "after": "0b474a06601977b66cc4aec942b82b17373abee723977fb7b5654ede079d99b8",
+      "unchanged": true
+    },
+    "src/streaming/voiceClient.ts": {
+      "before": "d65beb3745068ee2e49caaaad82a0c08cc4759837ac784d8b08e900069f88a14",
+      "after": "d65beb3745068ee2e49caaaad82a0c08cc4759837ac784d8b08e900069f88a14",
+      "unchanged": true
+    },
+    "src/streaming/scheduler.ts": {
+      "before": "a47d30a4b004b6031b03f9988bf73a5500840ab5ca665b02c9ffa19168e35869",
+      "after": "a47d30a4b004b6031b03f9988bf73a5500840ab5ca665b02c9ffa19168e35869",
+      "unchanged": true
+    },
+    "src/streaming/calibrationTrace.ts": {
+      "before": "d9926f2631b22060a298bcaa25bbea02c72ba477c38912ad0bf8c31bb61f02e1",
+      "after": "d9926f2631b22060a298bcaa25bbea02c72ba477c38912ad0bf8c31bb61f02e1",
+      "unchanged": true
+    },
+    "src/streaming/continuousRecognition.ts": {
+      "before": "0bf4894dc3275216cc86fa864fab1b87a509e4d30a80b5168ec58e82e9af4f01",
+      "after": "0bf4894dc3275216cc86fa864fab1b87a509e4d30a80b5168ec58e82e9af4f01",
+      "unchanged": true
+    },
+    "src/streaming/voiceDemand.ts": {
+      "before": "2c8c8a20d1d068d33d48d056d8549707f97ea10166c2ac61e0095605841b64ec",
+      "after": "2c8c8a20d1d068d33d48d056d8549707f97ea10166c2ac61e0095605841b64ec",
+      "unchanged": true
+    },
+    "src/streaming/completeGreeting.ts": {
+      "before": "50015abb880bbea635a6c7d5575c0feff32176691a85c3b7f48d2fcb753d104f",
+      "after": "50015abb880bbea635a6c7d5575c0feff32176691a85c3b7f48d2fcb753d104f",
+      "unchanged": true
+    },
+    "src/streaming/sessionBreakdown.ts": {
+      "before": "479c1d9f179513269f7f28912cdaa2ae9f3889b7a16e5fbfaf7a71c0197d9eb0",
+      "after": "479c1d9f179513269f7f28912cdaa2ae9f3889b7a16e5fbfaf7a71c0197d9eb0",
+      "unchanged": true
+    },
+    "src/streaming/input.ts": {
+      "before": "c3f08f258c2499a2400b055cf8be6fa2eda84345f75438d581e332e880f357f3",
+      "after": "c3f08f258c2499a2400b055cf8be6fa2eda84345f75438d581e332e880f357f3",
+      "unchanged": true
+    },
+    "src/streaming/routing.ts": {
+      "before": "0b377448b2837474133f782c4e42ee9ef76b657b27d87a56041108360404add3",
+      "after": "0b377448b2837474133f782c4e42ee9ef76b657b27d87a56041108360404add3",
+      "unchanged": true
+    },
+    "src/streaming/LocalTestView.tsx": {
+      "before": "76bb8b1084b0cf6bdfd35ef8e18001fbac69b7e0d11acdcd26ee5b233a064e64",
+      "after": "76bb8b1084b0cf6bdfd35ef8e18001fbac69b7e0d11acdcd26ee5b233a064e64",
+      "unchanged": true
+    },
+    "src/streaming/engine.ts": {
+      "before": "fe6e74afa76a4df9f634523aa9a35f11dde85585f2b4b0ec8cea4a0ef25e1656",
+      "after": "fe6e74afa76a4df9f634523aa9a35f11dde85585f2b4b0ec8cea4a0ef25e1656",
+      "unchanged": true
+    },
+    "src/streaming/recognitionAudit.ts": {
+      "before": "114938d168b253f00e9e276264d15733d319857904b152fab42434fb78dd40ee",
+      "after": "114938d168b253f00e9e276264d15733d319857904b152fab42434fb78dd40ee",
+      "unchanged": true
+    },
+    "src/streaming/audioDiagnostics.ts": {
+      "before": "e660c0b3e994997e7a2affd9db7403d272578d0b00a9e13e0ba6d9e8ee48b1e4",
+      "after": "e660c0b3e994997e7a2affd9db7403d272578d0b00a9e13e0ba6d9e8ee48b1e4",
+      "unchanged": true
+    },
+    "src/streaming/peer.ts": {
+      "before": "02d880b8d0de735f567698fda07a597e79ff7f75cc49a0cb4554060b63f10e0a",
+      "after": "02d880b8d0de735f567698fda07a597e79ff7f75cc49a0cb4554060b63f10e0a",
+      "unchanged": true
+    },
+    "src/streaming/deliveryGain.ts": {
+      "before": "a50907fd12459fae2110bc80ad3a0fa1e6219ed26f41b0bc030609c2fb998c25",
+      "after": "a50907fd12459fae2110bc80ad3a0fa1e6219ed26f41b0bc030609c2fb998c25",
+      "unchanged": true
+    },
+    "src/streaming/uncertainty.ts": {
+      "before": "7dee36d8130ffe1173ae754c1a1180294af78331abc38b35c9d64a085589d22e",
+      "after": "7dee36d8130ffe1173ae754c1a1180294af78331abc38b35c9d64a085589d22e",
+      "unchanged": true
+    },
+    "src/streaming/validatedGreeting.ts": {
+      "before": "56da979a5513bf5b4445eb1153745738086698b36ac62148fdd80078ff81cd2e",
+      "after": "56da979a5513bf5b4445eb1153745738086698b36ac62148fdd80078ff81cd2e",
+      "unchanged": true
+    },
+    "src/streaming/View.tsx": {
+      "before": "9c5202d9ac0a261db4dd433872ffbfa4cbccf8b7752ef7920709af15a6d47f2d",
+      "after": "9c5202d9ac0a261db4dd433872ffbfa4cbccf8b7752ef7920709af15a6d47f2d",
+      "unchanged": true
+    },
+    "src/streaming/realtimeTranslationClient.ts": {
+      "before": "06805b5acaac9550c0905ccbcf8a207fcf2d22b2752c198f48856099624b8a91",
+      "after": "06805b5acaac9550c0905ccbcf8a207fcf2d22b2752c198f48856099624b8a91",
+      "unchanged": true
+    },
+    "src/streaming/types.ts": {
+      "before": "31da152a1e453a9b55519bc3057aa2c2721d08a865d4dd561ae196e8008b87bf",
+      "after": "31da152a1e453a9b55519bc3057aa2c2721d08a865d4dd561ae196e8008b87bf",
+      "unchanged": true
+    },
+    "src/streaming/controlledOutput.ts": {
+      "before": "80ede98a4b307305bc85e7f86303188986e640143e6686aa82d6cbaa72923cac",
+      "after": "80ede98a4b307305bc85e7f86303188986e640143e6686aa82d6cbaa72923cac",
+      "unchanged": true
+    },
+    "src/streaming/clinic.ts": {
+      "before": "50214842eed32ded997474e0e9034dd1726db5476276fa4332c47a266ef0c44a",
+      "after": "50214842eed32ded997474e0e9034dd1726db5476276fa4332c47a266ef0c44a",
+      "unchanged": true
+    },
+    "src/streaming/acousticTiming.ts": {
+      "before": "fdba791900829f95df97e983587245f84b810f042a2a5928959a0f61d6be8fe9",
+      "after": "fdba791900829f95df97e983587245f84b810f042a2a5928959a0f61d6be8fe9",
+      "unchanged": true
+    },
+    "src/streaming/audioInterfaces.ts": {
+      "before": "a57ae0e043c39872a16c78b51164749c062e99127d7340d46c95695351611067",
+      "after": "a57ae0e043c39872a16c78b51164749c062e99127d7340d46c95695351611067",
+      "unchanged": true
+    },
+    "src/streaming/host.ts": {
+      "before": "fd4fce5a11f8c93cc4bb7acfa5fb58a090453a6dca41f82eabab39080f6e79db",
+      "after": "fd4fce5a11f8c93cc4bb7acfa5fb58a090453a6dca41f82eabab39080f6e79db",
+      "unchanged": true
+    },
+    "src/streaming/pcmWav.ts": {
+      "before": "625d6333ab283f38c1106433f2033b06deaca64dce626243c2402f0592ba32dd",
+      "after": "625d6333ab283f38c1106433f2033b06deaca64dce626243c2402f0592ba32dd",
+      "unchanged": true
+    },
+    "src/streaming/alignment.ts": {
+      "before": "3232ff7a71f9286ec11d54a886cbf40a9151b83a05a7ca265a953a119969c22b",
+      "after": "3232ff7a71f9286ec11d54a886cbf40a9151b83a05a7ca265a953a119969c22b",
+      "unchanged": true
+    },
+    "src/streaming/voiceIdentity.ts": {
+      "before": "45336e078d769774149066d6acf78bbda4c9de238edb60e28871f8a26cf9635f",
+      "after": "45336e078d769774149066d6acf78bbda4c9de238edb60e28871f8a26cf9635f",
+      "unchanged": true
+    },
+    "src/streaming/pcmProvenance.ts": {
+      "before": "0019677547dec2bee493c4b7782e50e5a0d139e57a9dd610e0a084aca677f71b",
+      "after": "0019677547dec2bee493c4b7782e50e5a0d139e57a9dd610e0a084aca677f71b",
+      "unchanged": true
+    },
+    "src/streaming/continuousTranscriptionClient.ts": {
+      "before": "de40ceb5dbd55c1f09eb7226c082a6bc19c6a21240d92e9ba74d954e786c7bdd",
+      "after": "de40ceb5dbd55c1f09eb7226c082a6bc19c6a21240d92e9ba74d954e786c7bdd",
+      "unchanged": true
+    },
+    "src/streaming/semantic.ts": {
+      "before": "252996bd8b5b658f7efc42c5da9b49c370d61c59c8b265f831d2f15e045b93f1",
+      "after": "252996bd8b5b658f7efc42c5da9b49c370d61c59c8b265f831d2f15e045b93f1",
+      "unchanged": true
+    },
+    "src/streaming/translationClient.ts": {
+      "before": "f62db4d399a111b3ccdea2e0d2d9c6b8801bdc2307713fac7fc70352f16db7d2",
+      "after": "f62db4d399a111b3ccdea2e0d2d9c6b8801bdc2307713fac7fc70352f16db7d2",
+      "unchanged": true
+    },
+    "src/streaming/localSession.ts": {
+      "before": "9c41e63ae146267d714621a466f35567119df6eaecfe53dfebca2cb71a6be3e5",
+      "after": "9c41e63ae146267d714621a466f35567119df6eaecfe53dfebca2cb71a6be3e5",
+      "unchanged": true
+    },
+    "src/streaming/recognition.ts": {
+      "before": "6101a8d7fb4be2d87152fe42a98d1f34768e76f93e110abc2c8f46ffdeb8eaa9",
+      "after": "6101a8d7fb4be2d87152fe42a98d1f34768e76f93e110abc2c8f46ffdeb8eaa9",
+      "unchanged": true
+    },
+    "src/consent/stateMachine.ts": {
+      "before": "642b25b9c3a66daa9112fa8a331f272dcd3e5f27d32ce3149b71a85c588360f3",
+      "after": "642b25b9c3a66daa9112fa8a331f272dcd3e5f27d32ce3149b71a85c588360f3",
+      "unchanged": true
+    },
+    "src/consent/TakeoverPanel.tsx": {
+      "before": "121ba32f29fd352bab61cbaa09db5904cefeab4556a6e9ea06d1258e3c0a3fd2",
+      "after": "121ba32f29fd352bab61cbaa09db5904cefeab4556a6e9ea06d1258e3c0a3fd2",
+      "unchanged": true
+    },
+    "src/consent/authority.ts": {
+      "before": "a9e7de934b09c39eb6d81048c4bd171c8b83fe9bef8b0ffb48cc1ec03a782a40",
+      "after": "a9e7de934b09c39eb6d81048c4bd171c8b83fe9bef8b0ffb48cc1ec03a782a40",
+      "unchanged": true
+    },
+    "src/consent/definition.ts": {
+      "before": "6c56ba9314e9ecd5a7d61c9cb3d97bef8e66ee8f3000eed5f40b8817858648d4",
+      "after": "a08caa2330ad8e7731a41a4bfbee6b116286f342d9a388d82c5674393f8e1fee",
+      "unchanged": false
+    },
+    "src/consent/email.ts": {
+      "before": "e85305b65a1667b0ec92a93eefa72fb2b2ef22c50930b36d7608cfcf3fbc8b1c",
+      "after": "e85305b65a1667b0ec92a93eefa72fb2b2ef22c50930b36d7608cfcf3fbc8b1c",
+      "unchanged": true
+    },
+    "src/consent/consentGuard.ts": {
+      "before": "b947d0ec03c8c9f1c96a84f6c35f0b3b051775ad975556bfc1bfee5e11300c17",
+      "after": "ccfba4c44e0bc05bc9526998073e2202681439ca75670a3f11f144a315f40209",
+      "unchanged": false
+    },
+    "src/consent/types.ts": {
+      "before": "77271d8b473ebc3c4dfb95e2ca85fc2644153dda74a4cf2bd751ee6efe912e3a",
+      "after": "fa15e13600dd83b89136efd9d2c470ccc33df711e71068ae2d3e69d562e5ec7e",
+      "unchanged": false
+    },
+    "src/consent/ConsentWorkspace.tsx": {
+      "before": "01e437fae6ebf54bcbd132be1102ca0e20802f89559579bc7802280cd8012bb5",
+      "after": "f8c4f74fb6fd6c710fb3f6e60eb547cc36b505d388b01d8091ee3cc6eaafea5e",
+      "unchanged": false
+    },
+    "src/consent/session.ts": {
+      "before": "b908fcba2a53df6a4cb718dc9d3d9db6f3589fb9593cc54fd43ab3feafaf9f2c",
+      "after": "6896637020e7ddfc20492728a002c44ddbe347da30fe929628b4e817112341ea",
+      "unchanged": false
+    },
+    "src/consent/handoff.ts": {
+      "before": "0dc740a3aa678e1712b4712077a8e4b782e8c640303bd73ca78920037fa84cb0",
+      "after": "ea18434d05af9a10ef8715aa3bc40df8df495de069fedd7a41194c7a30266d09",
+      "unchanged": false
+    },
+    "src/consent/wording.ts": {
+      "before": "2ca95b987f154449322e52388dbc81b0286638283f497a299d01b18a8fff82b3",
+      "after": "2ca95b987f154449322e52388dbc81b0286638283f497a299d01b18a8fff82b3",
+      "unchanged": true
+    },
+    "src/consent/classifier.ts": {
+      "before": "1a13049bb826cabac03bdcb5c5d9b3a5ba080cfd693f380c8ba98c7977564ce1",
+      "after": "1a13049bb826cabac03bdcb5c5d9b3a5ba080cfd693f380c8ba98c7977564ce1",
+      "unchanged": true
+    },
+    "src/consent/playback.ts": {
+      "before": "cc3d7daa20ffb959ed5bce17d64d7bce19aa25906c8554161b22aa79b3605821",
+      "after": "cc3d7daa20ffb959ed5bce17d64d7bce19aa25906c8554161b22aa79b3605821",
+      "unchanged": true
+    },
+    "src/consent/mockPlayback.ts": {
+      "before": "f52287e80373900769e2ad063d1cd2c3233c921766374c5723ec4e1e2ddd2559",
+      "after": "f52287e80373900769e2ad063d1cd2c3233c921766374c5723ec4e1e2ddd2559",
+      "unchanged": true
+    },
+    "src/consent/consent.css": {
+      "before": "dda1de19e5b91549aaadfd1eb001ea207c7317d3fc4361f9a42c6bb27aaec2bf",
+      "after": "dda1de19e5b91549aaadfd1eb001ea207c7317d3fc4361f9a42c6bb27aaec2bf",
+      "unchanged": true
+    },
+    "src/consent/transcription.ts": {
+      "before": "7955b04931720b6870ee1540132a6e9114271a6f6972a3a26dbd89eb47cf8a6f",
+      "after": "7955b04931720b6870ee1540132a6e9114271a6f6972a3a26dbd89eb47cf8a6f",
+      "unchanged": true
+    },
+    "server/audioAssets.ts": {
+      "before": "070bf3fdc6d71f6d92db49c2704913d8405af8bcc1e53eb1b0646f1ca2e9c48f",
+      "after": "070bf3fdc6d71f6d92db49c2704913d8405af8bcc1e53eb1b0646f1ca2e9c48f",
+      "unchanged": true
+    },
+    "server/translation.ts": {
+      "before": "1aa53dd4591e188780ea3437dbd816d05fcd7222695d3beaeb11d0156f9520ef",
+      "after": "1aa53dd4591e188780ea3437dbd816d05fcd7222695d3beaeb11d0156f9520ef",
+      "unchanged": true
+    },
+    "server/liveTranscription.ts": {
+      "before": "7e38d97d15e9fcca482002ded3769e7bcad688877637ca762c3c14c5320f7d89",
+      "after": "7e38d97d15e9fcca482002ded3769e7bcad688877637ca762c3c14c5320f7d89",
+      "unchanged": true
+    },
+    "server/openai.ts": {
+      "before": "1f8167c399c9793f196f8899bea4893f2a8d72eb34e4c5e98e206b7ae372fd8e",
+      "after": "1f8167c399c9793f196f8899bea4893f2a8d72eb34e4c5e98e206b7ae372fd8e",
+      "unchanged": true
+    },
+    "server/participant.ts": {
+      "before": "fc4cd77d6f8b6efdd6dad325ffba6789f868229ced099098b4b296d5ece63a3d",
+      "after": "fc4cd77d6f8b6efdd6dad325ffba6789f868229ced099098b4b296d5ece63a3d",
+      "unchanged": true
+    },
+    "server/api.ts": {
+      "before": "9232207786891c808d161762985d784b54dcb5d971785418350fffc7f4bfcadd",
+      "after": "9232207786891c808d161762985d784b54dcb5d971785418350fffc7f4bfcadd",
+      "unchanged": true
+    },
+    "server/voice.ts": {
+      "before": "dfcb76dae84730c94f205e367733f31e19765b0eb1237fc8d30d558a11648dde",
+      "after": "dfcb76dae84730c94f205e367733f31e19765b0eb1237fc8d30d558a11648dde",
+      "unchanged": true
+    },
+    "server/intelligence.ts": {
+      "before": "e71875b50848a697aca41b3286211111a64475b04b6ed8f94d9cd5260977df81",
+      "after": "e71875b50848a697aca41b3286211111a64475b04b6ed8f94d9cd5260977df81",
+      "unchanged": true
+    },
+    "server/continuousVoice.ts": {
+      "before": "54b4defa5d88ec2504b5daf01ff4f26f36b5f836df5a3e66c6695dc17f7882fd",
+      "after": "54b4defa5d88ec2504b5daf01ff4f26f36b5f836df5a3e66c6695dc17f7882fd",
+      "unchanged": true
+    },
+    "server/incrementalTranslation.ts": {
+      "before": "fda308d274732de8be01c543dfdff7bf1c164b0480167138ee1334dfde7d3d9f",
+      "after": "fda308d274732de8be01c543dfdff7bf1c164b0480167138ee1334dfde7d3d9f",
+      "unchanged": true
+    },
+    "server/index.ts": {
+      "before": "10d8e8dc508b4cafd66e9a20748ceba3aeecafb6b8fd2cb17c36e6e216b5ad52",
+      "after": "10d8e8dc508b4cafd66e9a20748ceba3aeecafb6b8fd2cb17c36e6e216b5ad52",
+      "unchanged": true
+    },
+    "server/models.ts": {
+      "before": "5ebaf8abefd62022c39dfd712c69403f6dc30d0dd6a5796b795ffecae17929c7",
+      "after": "5ebaf8abefd62022c39dfd712c69403f6dc30d0dd6a5796b795ffecae17929c7",
+      "unchanged": true
+    },
+    "server/benchmarkArtifacts.ts": {
+      "before": "d2a4f702d9a26fbd5c468631b385eadd0c794d3f7ffe95f71300f54d1bca4ba1",
+      "after": "d2a4f702d9a26fbd5c468631b385eadd0c794d3f7ffe95f71300f54d1bca4ba1",
+      "unchanged": true
+    },
+    "server/continuousTranscription.ts": {
+      "before": "7998b10ce7a7f6ad035db02cd8fae29f490988024173e3bb3525d8853693c5e1",
+      "after": "7998b10ce7a7f6ad035db02cd8fae29f490988024173e3bb3525d8853693c5e1",
+      "unchanged": true
+    },
+    "server/realtimeTranslation.ts": {
+      "before": "a863492df4a77667cda09a97db152426e7178997541c67cf9aa69de27ed1760f",
+      "after": "a863492df4a77667cda09a97db152426e7178997541c67cf9aa69de27ed1760f",
+      "unchanged": true
+    },
+    "server/transcriptionContext.ts": {
+      "before": "aa150963a6a52819e5316958f95701855341180d3145ac07f862f882e33b3aa9",
+      "after": "aa150963a6a52819e5316958f95701855341180d3145ac07f862f882e33b3aa9",
+      "unchanged": true
+    },
+    "public/apurebase-logo.jpg": {
+      "before": "54049e9513e608407635aa6effe7c7afd19ee140795b80a70d8edb951ab8232e",
+      "after": "54049e9513e608407635aa6effe7c7afd19ee140795b80a70d8edb951ab8232e",
+      "unchanged": true
+    },
+    "public/open-sans-latin.woff2": {
+      "before": "3c4d6a1421c7ddb7e404521fe8c4cd5be5af446d7689cd880be26612eaad3cfa",
+      "after": "3c4d6a1421c7ddb7e404521fe8c4cd5be5af446d7689cd880be26612eaad3cfa",
+      "unchanged": true
+    },
+    "public/pcm-capture.js": {
+      "before": "a3c01b2104097bc4c66559202dd302b156845855a5364282ee05fac1b7f87c08",
+      "after": "a3c01b2104097bc4c66559202dd302b156845855a5364282ee05fac1b7f87c08",
+      "unchanged": true
+    },
+    "public/audio/clinic-callback.wav": {
+      "before": "ccbe4212fcd95dea5ee6d95508f522e7cecfa56c5b51099f0a2eb18786471a66",
+      "after": "ccbe4212fcd95dea5ee6d95508f522e7cecfa56c5b51099f0a2eb18786471a66",
+      "unchanged": true
+    },
+    "public/audio/thank-you.wav": {
+      "before": "b4895f02346b2d45fbb810be41d258a58a69c3980afc169ff6e26746db1466d1",
+      "after": "b4895f02346b2d45fbb810be41d258a58a69c3980afc169ff6e26746db1466d1",
+      "unchanged": true
+    },
+    "public/audio/clinic-greeting.wav": {
+      "before": "dae8b6d8415b8329fb2939343bca9522fb624fc3ba7c00c05913cdad60391894",
+      "after": "dae8b6d8415b8329fb2939343bca9522fb624fc3ba7c00c05913cdad60391894",
+      "unchanged": true
+    },
+    "public/audio/request-email.wav": {
+      "before": "83ef9befdf59f2f4b425fd7119ebc38f61f3f1294cdfb20bf63205477535d400",
+      "after": "83ef9befdf59f2f4b425fd7119ebc38f61f3f1294cdfb20bf63205477535d400",
+      "unchanged": true
+    },
+    "public/audio/information.wav": {
+      "before": "1e6906f3b74582031517b33553a1c752fff5c4d2b7fde17a5b38db01aef64652",
+      "after": "1e6906f3b74582031517b33553a1c752fff5c4d2b7fde17a5b38db01aef64652",
+      "unchanged": true
+    },
+    "public/audio/agent-purpose.wav": {
+      "before": "80dba61e7b62c81156b521a2a15e06bac41cd89c67c3b87192032d3f9ebe4bc9",
+      "after": "80dba61e7b62c81156b521a2a15e06bac41cd89c67c3b87192032d3f9ebe4bc9",
+      "unchanged": true
+    },
+    "public/audio/clinic-connect.wav": {
+      "before": "770282478f8b911fb18437e2b7106d660641130b0a57e8cabfb2ec080678abf8",
+      "after": "770282478f8b911fb18437e2b7106d660641130b0a57e8cabfb2ec080678abf8",
+      "unchanged": true
+    },
+    "public/audio/agent-callback.wav": {
+      "before": "35339229a37e37949655ffaef375b86688b8e9418f4f12cc43ccecea4d939a37",
+      "after": "35339229a37e37949655ffaef375b86688b8e9418f4f12cc43ccecea4d939a37",
+      "unchanged": true
+    },
+    "public/audio/unsubscribe.wav": {
+      "before": "108bc8c1294cb9f9714a17dc095245a92db476ebc2417adb645f15c1cecb9b15",
+      "after": "108bc8c1294cb9f9714a17dc095245a92db476ebc2417adb645f15c1cecb9b15",
+      "unchanged": true
+    },
+    "public/audio/clinic-request.wav": {
+      "before": "05586f3a3057cb3fb009d9aa7703acc2a4eec7b51bb6089d2803380c093d3976",
+      "after": "05586f3a3057cb3fb009d9aa7703acc2a4eec7b51bb6089d2803380c093d3976",
+      "unchanged": true
+    },
+    "public/audio/agent-information.wav": {
+      "before": "0934b4e7f7fa77b9c74cf75855a00e6bdc41df001d8ab96d10b1d1146992be1e",
+      "after": "0934b4e7f7fa77b9c74cf75855a00e6bdc41df001d8ab96d10b1d1146992be1e",
+      "unchanged": true
+    },
+    "public/audio/hcp-information.wav": {
+      "before": "32e5df7029b0c7b9989ee3cdd3b6d5356bb5f422c571b72f823e81ca788f8c81",
+      "after": "32e5df7029b0c7b9989ee3cdd3b6d5356bb5f422c571b72f823e81ca788f8c81",
+      "unchanged": true
+    },
+    "public/audio/callback.wav": {
+      "before": "001278eef8375dc46d65c8b3f346d97b4e0cc4313a3a100e15710e7770272942",
+      "after": "001278eef8375dc46d65c8b3f346d97b4e0cc4313a3a100e15710e7770272942",
+      "unchanged": true
+    },
+    "public/audio/manifest.json": {
+      "before": "98ec9ed6afa80db126a4de83ee18d073d62d96f9a5eefe344900e5cc63d341b5",
+      "after": "98ec9ed6afa80db126a4de83ee18d073d62d96f9a5eefe344900e5cc63d341b5",
+      "unchanged": true
+    },
+    "public/audio/clinic-ask-doctor.wav": {
+      "before": "a841706762c7ab721533ce5730021f2d891cd1a8016b32bbb60186a7203cfe4f",
+      "after": "a841706762c7ab721533ce5730021f2d891cd1a8016b32bbb60186a7203cfe4f",
+      "unchanged": true
+    },
+    "public/audio/opening.wav": {
+      "before": "4c99247911a8d382ae77214c287dce5254c1f228c6753f0a13a6e42749ddb355",
+      "after": "4c99247911a8d382ae77214c287dce5254c1f228c6753f0a13a6e42749ddb355",
+      "unchanged": true
+    },
+    "public/audio/clinic-information.wav": {
+      "before": "44428b465eaf03284d7279f629299c798e59e22531a8fa4d168d581a6a97a2de",
+      "after": "44428b465eaf03284d7279f629299c798e59e22531a8fa4d168d581a6a97a2de",
+      "unchanged": true
+    },
+    "public/audio/hcp-agreement.wav": {
+      "before": "5bac79d7836d71ef18de0ec85505c353232913b385bc9326f7a2113b284b9319",
+      "after": "5bac79d7836d71ef18de0ec85505c353232913b385bc9326f7a2113b284b9319",
+      "unchanged": true
+    },
+    "public/audio/agent-permission.wav": {
+      "before": "a39c1980060bab21ea2cd2a325104f5d7546e37bc34148e11d6bea3d3fea27bb",
+      "after": "a39c1980060bab21ea2cd2a325104f5d7546e37bc34148e11d6bea3d3fea27bb",
+      "unchanged": true
+    },
+    "public/audio/purpose.wav": {
+      "before": "bdd8a2895f4666bb234fc4277badb4bda4008a33fec82aaf98f30c6b3343f51c",
+      "after": "bdd8a2895f4666bb234fc4277badb4bda4008a33fec82aaf98f30c6b3343f51c",
+      "unchanged": true
+    },
+    "tests/consent-stage20b.test.tsx": {
+      "before": "accfa6ff2dbdbc2e2268239ba8687ae0fb2f71fe2451ca98cf691094288c3a9c",
+      "after": "accfa6ff2dbdbc2e2268239ba8687ae0fb2f71fe2451ca98cf691094288c3a9c",
+      "unchanged": true
+    },
+    "tests/stage194-starvation.test.ts": {
+      "before": "72f3de401b6ef9a1a9e0ef4e8d2f575c947d0ad0b52c5cb7ad997e302ef41270",
+      "after": "72f3de401b6ef9a1a9e0ef4e8d2f575c947d0ad0b52c5cb7ad997e302ef41270",
+      "unchanged": true
+    },
+    "tests/simultaneous.test.ts": {
+      "before": "b1d227e3c67dce8c8a4d06529445623cd042802dd7b2fd3921aa8e00792f7d58",
+      "after": "b1d227e3c67dce8c8a4d06529445623cd042802dd7b2fd3921aa8e00792f7d58",
+      "unchanged": true
+    },
+    "tests/realtime-translation.test.ts": {
+      "before": "0cc736b48c57d48d946471c2baca1fdba815007d091e326484c71e185f86dfdc",
+      "after": "0cc736b48c57d48d946471c2baca1fdba815007d091e326484c71e185f86dfdc",
+      "unchanged": true
+    },
+    "tests/browser-audio.test.ts": {
+      "before": "64102d3e89f327854b99bdfa2ac69fe9cd1458e55f5a85bcda153deef18d3a62",
+      "after": "64102d3e89f327854b99bdfa2ac69fe9cd1458e55f5a85bcda153deef18d3a62",
+      "unchanged": true
+    },
+    "tests/uncertainty-routing.test.ts": {
+      "before": "8dd7684e8c8f7cf07cf8b5428e6275fb28bbb5547ced8ba461bdbf926cc22a33",
+      "after": "8dd7684e8c8f7cf07cf8b5428e6275fb28bbb5547ced8ba461bdbf926cc22a33",
+      "unchanged": true
+    },
+    "tests/session-diagnostics.test.ts": {
+      "before": "a6ce9f9884720d3aae61b0a9a1c3e300a772645eafa4b6891ea6e11051ff362c",
+      "after": "a6ce9f9884720d3aae61b0a9a1c3e300a772645eafa4b6891ea6e11051ff362c",
+      "unchanged": true
+    },
+    "tests/sse-translation.test.ts": {
+      "before": "42a14ebac431a3d6700e610035f29efbe197b51889f107814eed20d131dbd136",
+      "after": "42a14ebac431a3d6700e610035f29efbe197b51889f107814eed20d131dbd136",
+      "unchanged": true
+    },
+    "tests/stage196-forensic.test.ts": {
+      "before": "b46f95ce37f535a833bd43fac29b22097aa5e98d9b17a8d05c19bb1599a6f354",
+      "after": "b46f95ce37f535a833bd43fac29b22097aa5e98d9b17a8d05c19bb1599a6f354",
+      "unchanged": true
+    },
+    "tests/peer-provenance.test.ts": {
+      "before": "d00905153125cc6170737fca158f00ed77f50df0ead704a8d43a33a31de4617d",
+      "after": "d00905153125cc6170737fca158f00ed77f50df0ead704a8d43a33a31de4617d",
+      "unchanged": true
+    },
+    "tests/stage193-physical.test.ts": {
+      "before": "88c1859b0d777929a2f5f3f2370dc1a65630f511992b374d165445b9fb369057",
+      "after": "88c1859b0d777929a2f5f3f2370dc1a65630f511992b374d165445b9fb369057",
+      "unchanged": true
+    },
+    "tests/streaming-scheduler.test.ts": {
+      "before": "275358bff98988f96055fb743f51264b60331fd5de0e5bf06387d5736d5d732c",
+      "after": "275358bff98988f96055fb743f51264b60331fd5de0e5bf06387d5736d5d732c",
+      "unchanged": true
+    },
+    "tests/translation-dispatch.test.ts": {
+      "before": "a4a0de48ac752d22fbec345c8d3a1e6b3d8c4e8eacae3046222a18189558959d",
+      "after": "a4a0de48ac752d22fbec345c8d3a1e6b3d8c4e8eacae3046222a18189558959d",
+      "unchanged": true
+    },
+    "tests/streaming-engine.test.ts": {
+      "before": "5c1d4afb2b38d37bce53bfd5ef0e7c5b380aaab87f280b11991fd9e3917e3735",
+      "after": "5c1d4afb2b38d37bce53bfd5ef0e7c5b380aaab87f280b11991fd9e3917e3735",
+      "unchanged": true
+    },
+    "tests/stage196-sustained-stress.test.ts": {
+      "before": "e70eb597fa99d135dc973ffc982ce3c6cb9bf22b380682f45c0afe555d7d1797",
+      "after": "e70eb597fa99d135dc973ffc982ce3c6cb9bf22b380682f45c0afe555d7d1797",
+      "unchanged": true
+    },
+    "tests/streaming-recognition.test.ts": {
+      "before": "0389e22551a04cff85473b5b866e4674409d171b2bc59f00ab624c0fa314c305",
+      "after": "0389e22551a04cff85473b5b866e4674409d171b2bc59f00ab624c0fa314c305",
+      "unchanged": true
+    },
+    "tests/stage195-replay.test.ts": {
+      "before": "b5a5a9ad3aa017feeba60b7192d7d29a21ab95c9662b76c832af51994ca3922b",
+      "after": "b5a5a9ad3aa017feeba60b7192d7d29a21ab95c9662b76c832af51994ca3922b",
+      "unchanged": true
+    },
+    "tests/local-output.test.ts": {
+      "before": "95ce1072c1b0a280f18fc3c4b9947fe224fedaf516710eebf02ac721e25b005b",
+      "after": "95ce1072c1b0a280f18fc3c4b9947fe224fedaf516710eebf02ac721e25b005b",
+      "unchanged": true
+    },
+    "tests/audio-diagnostics.test.ts": {
+      "before": "b64d61823bec24268fad69c8b9f5e166e29a8db88a1d565ec9de3e7f47a52393",
+      "after": "b64d61823bec24268fad69c8b9f5e166e29a8db88a1d565ec9de3e7f47a52393",
+      "unchanged": true
+    },
+    "tests/paired-controlled.test.ts": {
+      "before": "1a3cc5a1eac8fe770f71a84fdb490f17accac2f8a222163b0e1b3cfd8c92b3f7",
+      "after": "1a3cc5a1eac8fe770f71a84fdb490f17accac2f8a222163b0e1b3cfd8c92b3f7",
+      "unchanged": true
+    },
+    "tests/continuous-transcription-client.test.ts": {
+      "before": "8cea4b7d3d0546918d057c1f502488cc0f282adf76539a582fba8f30a1d3c3ae",
+      "after": "8cea4b7d3d0546918d057c1f502488cc0f282adf76539a582fba8f30a1d3c3ae",
+      "unchanged": true
+    },
+    "tests/stage195-recognition.test.ts": {
+      "before": "231d2411f38baffd0710a035aa347a9f3d99d02653353d0e6bdc0685fb32da31",
+      "after": "231d2411f38baffd0710a035aa347a9f3d99d02653353d0e6bdc0685fb32da31",
+      "unchanged": true
+    },
+    "tests/stage192-provenance.test.ts": {
+      "before": "a7ec86726abdfd6086f2ba9347bd0bb6d9e58838230a758f7f83e6bc3316e1f1",
+      "after": "a7ec86726abdfd6086f2ba9347bd0bb6d9e58838230a758f7f83e6bc3316e1f1",
+      "unchanged": true
+    },
+    "tests/streaming-semantic.test.ts": {
+      "before": "7101d5b9b8892f424b6436f807207c9dc74f3d783dcb43eb7404c76dc0a66473",
+      "after": "7101d5b9b8892f424b6436f807207c9dc74f3d783dcb43eb7404c76dc0a66473",
+      "unchanged": true
+    },
+    "tests/pcm-capture.test.ts": {
+      "before": "7eab8d514808e85eae278bfa2d877f1b47160677b7bfc2fb50942ca793e352e7",
+      "after": "7eab8d514808e85eae278bfa2d877f1b47160677b7bfc2fb50942ca793e352e7",
+      "unchanged": true
+    },
+    "tests/streaming-routing.test.ts": {
+      "before": "051f8afe97147bd9bb327d3aede4a3117809e90c1581f5aa0e3b8126e98cf12c",
+      "after": "051f8afe97147bd9bb327d3aede4a3117809e90c1581f5aa0e3b8126e98cf12c",
+      "unchanged": true
+    },
+    "tests/stage196-semantic.test.ts": {
+      "before": "44fce7ed73d4806de0c7e3b753ea046ebd766d3b8f45a51c5b226015f263a6d2",
+      "after": "44fce7ed73d4806de0c7e3b753ea046ebd766d3b8f45a51c5b226015f263a6d2",
+      "unchanged": true
+    },
+    "tests/stage196-short-consent.test.ts": {
+      "before": "4cb002a477f93a8555953e52321c1bf01b1ad7a982a52d3ed67b82afa06b5d94",
+      "after": "4cb002a477f93a8555953e52321c1bf01b1ad7a982a52d3ed67b82afa06b5d94",
+      "unchanged": true
+    },
+    "tests/stage194-replay.test.ts": {
+      "before": "d1db5e34070e34cb55c3429ac3f72ce7e5e9cfa0ade44315753d76cc7914df87",
+      "after": "d1db5e34070e34cb55c3429ac3f72ce7e5e9cfa0ade44315753d76cc7914df87",
+      "unchanged": true
+    },
+    "tests/controller.test.ts": {
+      "before": "8693de2748fdeed112fb331fa8b23dde08ce3005493c808e423c26d7c06ce49f",
+      "after": "8693de2748fdeed112fb331fa8b23dde08ce3005493c808e423c26d7c06ce49f",
+      "unchanged": true
+    },
+    "tests/continuous-voice-client.test.ts": {
+      "before": "90e03e25cb9de732d9d8ed26656c10db4135cce3c5aa09de0970274db6939cec",
+      "after": "90e03e25cb9de732d9d8ed26656c10db4135cce3c5aa09de0970274db6939cec",
+      "unchanged": true
+    },
+    "tests/stage193-quality.test.ts": {
+      "before": "36b347c5066cb69a20e7027f093af0036a7bd3fb2adff6ac2c612bde85391c39",
+      "after": "36b347c5066cb69a20e7027f093af0036a7bd3fb2adff6ac2c612bde85391c39",
+      "unchanged": true
+    },
+    "tests/stage196-recognition.test.ts": {
+      "before": "8e060feda4ab0bf7388afe64a9199762beaee8dc5d0af8949b260f7c2c5bb357",
+      "after": "8e060feda4ab0bf7388afe64a9199762beaee8dc5d0af8949b260f7c2c5bb357",
+      "unchanged": true
+    },
+    "tests/streaming-input.test.ts": {
+      "before": "e823743200996e255f6e8dc6f70efeef66b70dc9360562bf0c6179df75da49c6",
+      "after": "e823743200996e255f6e8dc6f70efeef66b70dc9360562bf0c6179df75da49c6",
+      "unchanged": true
+    },
+    "tests/consent-foundation.test.ts": {
+      "before": "ceb1a85ce4c4cd90e18ff29601acb5267ac078429f03398230096a8410f4f197",
+      "after": "ceb1a85ce4c4cd90e18ff29601acb5267ac078429f03398230096a8410f4f197",
+      "unchanged": true
+    },
+    "tests/consent-transcription.test.ts": {
+      "before": "cfb7e11473be92d6997ebc4b39817d830194cff8b4625297a76639d6c4341492",
+      "after": "cfb7e11473be92d6997ebc4b39817d830194cff8b4625297a76639d6c4341492",
+      "unchanged": true
+    },
+    "tests/stage195-diagnostics.test.ts": {
+      "before": "298332cf529c5099fabcb12cb29273525156814334c3eb89cc1cc9f4531b1cce",
+      "after": "298332cf529c5099fabcb12cb29273525156814334c3eb89cc1cc9f4531b1cce",
+      "unchanged": true
+    },
+    "tests/stage196-translation.test.ts": {
+      "before": "eab2dffe813fbab59d2c20696b29e25115b864b9461ac97d9fc2a475b0cc8654",
+      "after": "eab2dffe813fbab59d2c20696b29e25115b864b9461ac97d9fc2a475b0cc8654",
+      "unchanged": true
+    },
+    "tests/stage196-diagnostics.test.ts": {
+      "before": "afa8b30a54181a3814f6d5f397b4efe4d92c08a21d5e2ea98559393bf033966b",
+      "after": "afa8b30a54181a3814f6d5f397b4efe4d92c08a21d5e2ea98559393bf033966b",
+      "unchanged": true
+    },
+    "tests/campaign-speech.test.ts": {
+      "before": "107511b572ecd3fb6ecf54c350be6d376f4d395ecee218db4e1da39ec58331f8",
+      "after": "107511b572ecd3fb6ecf54c350be6d376f4d395ecee218db4e1da39ec58331f8",
+      "unchanged": true
+    },
+    "tests/realtime-translation-client.test.ts": {
+      "before": "22cde5369a37d1fa52da966dbef1829e3cb02d517411f26be7fe54736c4e37d8",
+      "after": "22cde5369a37d1fa52da966dbef1829e3cb02d517411f26be7fe54736c4e37d8",
+      "unchanged": true
+    },
+    "tests/streaming-translation.test.ts": {
+      "before": "a4ac7b612c64d41b907c4a07bc715d1ac13dd3876307c285fb0c64f688d351a6",
+      "after": "a4ac7b612c64d41b907c4a07bc715d1ac13dd3876307c285fb0c64f688d351a6",
+      "unchanged": true
+    },
+    "tests/streaming-alignment.test.ts": {
+      "before": "f8ab2d30f81e8d48dc109af983c2bb2fb95b2d31063657a48bb7f861537c51bc",
+      "after": "f8ab2d30f81e8d48dc109af983c2bb2fb95b2d31063657a48bb7f861537c51bc",
+      "unchanged": true
+    },
+    "tests/pcm-timing.test.ts": {
+      "before": "89d67b018b86e8ed1ae444a7654f5e4d31480aad74ba385b84a2c7f0f7ab053a",
+      "after": "89d67b018b86e8ed1ae444a7654f5e4d31480aad74ba385b84a2c7f0f7ab053a",
+      "unchanged": true
+    },
+    "tests/live-transcription.test.ts": {
+      "before": "af33a06e203502b1c89ae9ddf7eb4bb8d1882a67111b6d80ee11b492dc20fc59",
+      "after": "af33a06e203502b1c89ae9ddf7eb4bb8d1882a67111b6d80ee11b492dc20fc59",
+      "unchanged": true
+    },
+    "tests/transcription-gateway.test.ts": {
+      "before": "7a94a0aeec067997ba9d0ec37c7e9e2017bb3640a332bff86139d0c61f49dee1",
+      "after": "7a94a0aeec067997ba9d0ec37c7e9e2017bb3640a332bff86139d0c61f49dee1",
+      "unchanged": true
+    },
+    "tests/stage192-engine.test.ts": {
+      "before": "0c3bc5b598c036d62e0c8091cc0805336569fa7508547b2cf2a9cb22349a0920",
+      "after": "0c3bc5b598c036d62e0c8091cc0805336569fa7508547b2cf2a9cb22349a0920",
+      "unchanged": true
+    },
+    "tests/pcm-playback.test.ts": {
+      "before": "860f3d25087da18a2e2f56793074b0c6c0a16f85bb00d0dcae7e36ecc774d9b0",
+      "after": "860f3d25087da18a2e2f56793074b0c6c0a16f85bb00d0dcae7e36ecc774d9b0",
+      "unchanged": true
+    },
+    "tests/stream-server.test.ts": {
+      "before": "f95f3dbe17f9317ad2e8b522e094555983896d1bcf4ca70fd71a6023cdcd8b63",
+      "after": "f95f3dbe17f9317ad2e8b522e094555983896d1bcf4ca70fd71a6023cdcd8b63",
+      "unchanged": true
+    },
+    "tests/local-pipeline.test.ts": {
+      "before": "52918e043d4ebe6bfbd852c527cd61558e3addb2dd0f84bcc5378329506f56a3",
+      "after": "52918e043d4ebe6bfbd852c527cd61558e3addb2dd0f84bcc5378329506f56a3",
+      "unchanged": true
+    },
+    "tests/streaming-session.test.ts": {
+      "before": "d3a89dfb6d809bedd51fc3d45e598b65a43cd709bd2efed96f87dcb6c82afa97",
+      "after": "d3a89dfb6d809bedd51fc3d45e598b65a43cd709bd2efed96f87dcb6c82afa97",
+      "unchanged": true
+    },
+    "tests/latency.test.ts": {
+      "before": "11a4d6f2b7f4a5afd61e0d9126e2bed121c211e92b220253edeb35800bdbd385",
+      "after": "11a4d6f2b7f4a5afd61e0d9126e2bed121c211e92b220253edeb35800bdbd385",
+      "unchanged": true
+    },
+    "tests/continuous-recognition.test.ts": {
+      "before": "9c4dc30640cfc768763e0ad2fbc0b0648d650d90fb716abc58414cc365e57efe",
+      "after": "9c4dc30640cfc768763e0ad2fbc0b0648d650d90fb716abc58414cc365e57efe",
+      "unchanged": true
+    },
+    "tests/voice.test.ts": {
+      "before": "0c09ab7435b73ef4cf739a6e567af99c3c0f016b97fcc0361dcfc4b9355f95a2",
+      "after": "0c09ab7435b73ef4cf739a6e567af99c3c0f016b97fcc0361dcfc4b9355f95a2",
+      "unchanged": true
+    },
+    "tests/acoustic-timing.test.ts": {
+      "before": "4fa5c2d199d4cdc012a34ceea44626c9a6e3ab503bc93a49f16960907e007b7d",
+      "after": "4fa5c2d199d4cdc012a34ceea44626c9a6e3ab503bc93a49f16960907e007b7d",
+      "unchanged": true
+    },
+    "tests/stage192-analysis.test.ts": {
+      "before": "abe84afb977b90a8d11b8d402a1f2536ba5e6aae23431bebe68d614292c39499",
+      "after": "abe84afb977b90a8d11b8d402a1f2536ba5e6aae23431bebe68d614292c39499",
+      "unchanged": true
+    },
+    "tests/local-view.test.tsx": {
+      "before": "f75c78944134cc20be00f0b2164c9a71132fd5e96881cdc2efb14e25879fac04",
+      "after": "f75c78944134cc20be00f0b2164c9a71132fd5e96881cdc2efb14e25879fac04",
+      "unchanged": true
+    },
+    "tests/capture-realtime.test.ts": {
+      "before": "7817892a34cd7c3dc46d5d272f8098e5e49aa327bd33ce6d480857d4a07efa54",
+      "after": "7817892a34cd7c3dc46d5d272f8098e5e49aa327bd33ce6d480857d4a07efa54",
+      "unchanged": true
+    },
+    "tests/continuous-transcription-gateway.test.ts": {
+      "before": "c15731e6de9f18197b911eeb42f5b52d587d4eff9b1cf6880f9e58899016357c",
+      "after": "c15731e6de9f18197b911eeb42f5b52d587d4eff9b1cf6880f9e58899016357c",
+      "unchanged": true
+    },
+    "tests/streaming-voice.test.ts": {
+      "before": "93957e427a4eb32160961c53ca205d01722a60af27b17a9718a9a3a27f37ef89",
+      "after": "93957e427a4eb32160961c53ca205d01722a60af27b17a9718a9a3a27f37ef89",
+      "unchanged": true
+    },
+    "tests/email-vad.test.ts": {
+      "before": "725b2922d138fc59adb78db4c9806d3dc03f6210af04695e9618397546ba2c28",
+      "after": "725b2922d138fc59adb78db4c9806d3dc03f6210af04695e9618397546ba2c28",
+      "unchanged": true
+    },
+    "tests/stage192-performance.test.ts": {
+      "before": "d53bd17caa9a9d27d3c38912fd51debf80300dbadaa86cafb383f7632fa0aaba",
+      "after": "d53bd17caa9a9d27d3c38912fd51debf80300dbadaa86cafb383f7632fa0aaba",
+      "unchanged": true
+    },
+    "tests/server.test.ts": {
+      "before": "011dad0e456e52e603457bf50c0ec184d4facfe89d1ef489fece2b67fcac1779",
+      "after": "011dad0e456e52e603457bf50c0ec184d4facfe89d1ef489fece2b67fcac1779",
+      "unchanged": true
+    },
+    "tests/stage193-performance.test.ts": {
+      "before": "0ee6d44cd1a7bca9b0ebb16923bb4266a62f62d11f55586d51cc8e90c2e054a9",
+      "after": "0ee6d44cd1a7bca9b0ebb16923bb4266a62f62d11f55586d51cc8e90c2e054a9",
+      "unchanged": true
+    },
+    "tests/consent-stage20b2.test.tsx": {
+      "before": "62d06a5e75ac69590f88228b058f40d62aa6d99c2427d7db784603f3a2262370",
+      "after": "62d06a5e75ac69590f88228b058f40d62aa6d99c2427d7db784603f3a2262370",
+      "unchanged": true
+    },
+    "tests/local-session.test.ts": {
+      "before": "516ccca634ab28f84a3b262da7cf1ad04fa2048d92edd173ef05075a25ccb78a",
+      "after": "516ccca634ab28f84a3b262da7cf1ad04fa2048d92edd173ef05075a25ccb78a",
+      "unchanged": true
+    },
+    "tests/decision.test.ts": {
+      "before": "20da2be049adf3fad7be33ef29dd54b0f5269571e3755bf78d5895928e2a0340",
+      "after": "20da2be049adf3fad7be33ef29dd54b0f5269571e3755bf78d5895928e2a0340",
+      "unchanged": true
+    },
+    "tests/pcm-provenance.test.ts": {
+      "before": "3318205872925865d0421030739f28ac1d65b2be3f4bf41932b4693291e457f6",
+      "after": "3318205872925865d0421030739f28ac1d65b2be3f4bf41932b4693291e457f6",
+      "unchanged": true
+    },
+    "tests/backpressure.test.ts": {
+      "before": "9d0efb90b412bce46afae8de6a6ec3b036c064372e932f7d2c326728f05978b7",
+      "after": "9d0efb90b412bce46afae8de6a6ec3b036c064372e932f7d2c326728f05978b7",
+      "unchanged": true
+    },
+    "tests/consent-view.test.tsx": {
+      "before": "d14a72f5a5fb4580f42b7ab7e9b533a37f6dc43fcc249694fbdaedb4300a2594",
+      "after": "d14a72f5a5fb4580f42b7ab7e9b533a37f6dc43fcc249694fbdaedb4300a2594",
+      "unchanged": true
+    },
+    "tests/fixtures/stage196-short-consent-physical.json": {
+      "before": "845229a3d014dd84115384a40227514aa131a67bc0078fd195148ab1798be83a",
+      "after": "845229a3d014dd84115384a40227514aa131a67bc0078fd195148ab1798be83a",
+      "unchanged": true
+    },
+    "tests/fixtures/stage195-semantic.ts": {
+      "before": "aa23d7fc13f82a0ef32e9153897d7d2a60797ff29b5afa869b232d703bde341e",
+      "after": "aa23d7fc13f82a0ef32e9153897d7d2a60797ff29b5afa869b232d703bde341e",
+      "unchanged": true
+    },
+    "tests/fixtures/acousticCalibration.ts": {
+      "before": "2c21d0e9cd6366961a454a08688aca999ea91e88013ab7f6cfc1c39bc1e921ec",
+      "after": "2c21d0e9cd6366961a454a08688aca999ea91e88013ab7f6cfc1c39bc1e921ec",
+      "unchanged": true
+    },
+    "tests/fixtures/stage194-physical-metadata.json": {
+      "before": "79f9b5891966f2ccfe791138ad9fdfcb9698a6c4b315a455c92fdcef45c33de5",
+      "after": "79f9b5891966f2ccfe791138ad9fdfcb9698a6c4b315a455c92fdcef45c33de5",
+      "unchanged": true
+    },
+    "tests/fixtures/stage193-physical-metadata.json": {
+      "before": "e1a0731a1c5bf8d4e5ffa1cce64fca04f15d96b01e5de37e386e4f0ed7ab4f88",
+      "after": "e1a0731a1c5bf8d4e5ffa1cce64fca04f15d96b01e5de37e386e4f0ed7ab4f88",
+      "unchanged": true
+    },
+    "tests/fixtures/stage192-engine.ts": {
+      "before": "81a3356f4afadb8bdff74c69735de29f743c4f8eaacc38636c287dfe4cc40060",
+      "after": "81a3356f4afadb8bdff74c69735de29f743c4f8eaacc38636c287dfe4cc40060",
+      "unchanged": true
+    },
+    "tests/fixtures/voice.ts": {
+      "before": "dd44e4a82ab77179bd41e5618946a4e0cf52e6ff59490cfdcbedf96996c33d88",
+      "after": "dd44e4a82ab77179bd41e5618946a4e0cf52e6ff59490cfdcbedf96996c33d88",
+      "unchanged": true
+    },
+    "tests/fixtures/stage195-reference.json": {
+      "before": "972a9bd098875117bdf842225830ffa14d56542e7dd662eadac2e813bd183628",
+      "after": "972a9bd098875117bdf842225830ffa14d56542e7dd662eadac2e813bd183628",
+      "unchanged": true
+    },
+    "tests/fixtures/stage195-physical-session.json": {
+      "before": "212fda51633b6803622e32adcc41a759c9708897cab974143e2f387ac7023d8e",
+      "after": "212fda51633b6803622e32adcc41a759c9708897cab974143e2f387ac7023d8e",
+      "unchanged": true
+    },
+    "tests/fixtures/stage194-continuousRecognition.ts": {
+      "before": "30d896267ae9758f933e24a28374b0b68aaa0e6b35b42bd3c5407a17f0b89f3a",
+      "after": "30d896267ae9758f933e24a28374b0b68aaa0e6b35b42bd3c5407a17f0b89f3a",
+      "unchanged": true
+    },
+    "tests/fixtures/stage191-semantic.ts": {
+      "before": "665a14a34b6bffbbb2bd8c085b7f15b7410ea06fd408557af56f917d8d774dfe",
+      "after": "665a14a34b6bffbbb2bd8c085b7f15b7410ea06fd408557af56f917d8d774dfe",
+      "unchanged": true
+    },
+    "tests/fixtures/stage191-engine.ts": {
+      "before": "fdb177011fe6127fc8883d3d871f26f8da02fbd24dc9ddb192c690bf1db67a67",
+      "after": "fdb177011fe6127fc8883d3d871f26f8da02fbd24dc9ddb192c690bf1db67a67",
+      "unchanged": true
+    },
+    "tests/fixtures/stage196-short-consent-reference.json": {
+      "before": "dc2eb29d8112d027a3c52fb97291f8532cb47473282e920b0730cf43b06bc73b",
+      "after": "dc2eb29d8112d027a3c52fb97291f8532cb47473282e920b0730cf43b06bc73b",
+      "unchanged": true
+    },
+    "tests/fixtures/stage196-physical-session.json": {
+      "before": "0dc1164cbc91d1a621413135736d7eed3655143f1e84e1ac0f7a8f5c66a2d371",
+      "after": "0dc1164cbc91d1a621413135736d7eed3655143f1e84e1ac0f7a8f5c66a2d371",
+      "unchanged": true
+    },
+    "tests/fixtures/stage20b-scenarios.ts": {
+      "before": "b67d75f5291e9eb334eabf6a5f61494fd6455402539c18f9825d5a6789e3a6e3",
+      "after": "b67d75f5291e9eb334eabf6a5f61494fd6455402539c18f9825d5a6789e3a6e3",
+      "unchanged": true
+    },
+    "tests/fixtures/stage193-voiceClient.ts": {
+      "before": "b02a9413ab69f12787755f6cab0322a06ec10e5165927ad656b24c29474a4f9f",
+      "after": "b02a9413ab69f12787755f6cab0322a06ec10e5165927ad656b24c29474a4f9f",
+      "unchanged": true
+    },
+    "tests/fixtures/stage194-greeting.ts": {
+      "before": "61f1700438cdfb9809ef4fd84c253f85adaac1d2ac6935c5357ec9d006dffcb2",
+      "after": "61f1700438cdfb9809ef4fd84c253f85adaac1d2ac6935c5357ec9d006dffcb2",
+      "unchanged": true
+    },
+    "tests/fixtures/stage195-voiceClient.ts": {
+      "before": "0f971e149fc91b56662241e486e891f1a2b10f8235f5480987ba7ed720a341e4",
+      "after": "0f971e149fc91b56662241e486e891f1a2b10f8235f5480987ba7ed720a341e4",
+      "unchanged": true
+    },
+    "tests/fixtures/stage192-semantic.ts": {
+      "before": "4faff0ddee4df8497ad655ac51c4d87de79ed4a91bb06a2a08e47a59eac3a052",
+      "after": "4faff0ddee4df8497ad655ac51c4d87de79ed4a91bb06a2a08e47a59eac3a052",
+      "unchanged": true
+    },
+    "tests/fixtures/stage195-locked-files.json": {
+      "before": "c99a97174985ff8f419652680b221df491ccdbda227a8a29b8a298f498c6cb6f",
+      "after": "c99a97174985ff8f419652680b221df491ccdbda227a8a29b8a298f498c6cb6f",
+      "unchanged": true
+    },
+    "tests/fixtures/stage195-continuousRecognition.ts": {
+      "before": "6c2385464e60384f6d08c8b79589a74cfa8455fc4187235a0d78108a51c1857a",
+      "after": "6c2385464e60384f6d08c8b79589a74cfa8455fc4187235a0d78108a51c1857a",
+      "unchanged": true
+    },
+    "tests/fixtures/stage196-before-short-voiceClient.ts": {
+      "before": "17690ead07754b5d188cf7e340e0090c89aee82998524140f319b1aebfa1efeb",
+      "after": "17690ead07754b5d188cf7e340e0090c89aee82998524140f319b1aebfa1efeb",
+      "unchanged": true
+    }
+  },
+  "addedFileHashes": {
+    "src/consent/approved/inventory.ts": "9e6718cd5ee3473ada855a16041de326d0b56ff57d8fb923c3834f34405d13c9",
+    "src/consent/approved/definition.ts": "42ad60b2a2cfed16e36e8f0dfe4c3d09fa928520d593a7be3268b7c6da773a4c",
+    "src/consent/approved/assets.ts": "9a47b089952b07d58bbef0090f0019a7989eb56b4e069d43c0bda6621a76d33c",
+    "src/consent/approved/AssetPanel.tsx": "0eaefc348bf56ccbbf4729ffe60a78fe64b51d5e806b343778248aabf9ecd34a",
+    "src/consent/approved/selector.ts": "fb8caa09c10a49dc98a0919620202490d80daa2a824c004ec328cc66be034210",
+    "src/consent/approved/assetPack.ts": "e24abcb8ac3e72f51a9b4c3d84b66d4f6f8adc63b1485f7a034ec5e6f7248436",
+    "src/consent/approved/localPlayback.ts": "e092cde223ad46cac2b139d239331da0e0f16bead178adfe481801c2d6926e2e",
+    "public/audio/consent-stage20c1/d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1.wav": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+    "public/audio/consent-stage20c1/2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051.wav": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+    "public/audio/consent-stage20c1/e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15.wav": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+    "public/audio/consent-stage20c1/50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8.wav": "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6",
+    "public/audio/consent-stage20c1/ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7.wav": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+    "public/audio/consent-stage20c1/93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f.wav": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+    "public/audio/consent-stage20c1/e95d7a401fa4856920ed7602799c144527a8065e4d32506a5f142dcd783ccf4a.wav": "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6",
+    "public/audio/consent-stage20c1/73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49.wav": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+    "public/audio/consent-stage20c1/4d4bd86e384a4a918b1852c49827a6e9b9122d096d83b2b9fe385124546a088a.wav": "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142",
+    "public/audio/consent-stage20c1/7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2.wav": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+    "public/audio/consent-stage20c1/855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6.wav": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+    "public/audio/consent-stage20c1/1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4.wav": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+    "public/audio/consent-stage20c1/6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6.wav": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+    "public/audio/consent-stage20c1/fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f.wav": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+    "public/audio/consent-stage20c1/7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627.wav": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+    "public/audio/consent-stage20c1/2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f.wav": "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+    "public/audio/consent-stage20c1/c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6.wav": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+    "public/audio/consent-stage20c1/7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3.wav": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+    "public/audio/consent-stage20c1/d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11.wav": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+    "public/audio/consent-stage20c1/43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405.wav": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+    "public/audio/consent-stage20c1/5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70.wav": "948e1a3f03f5ea0285a1516fa0da69ea1ff90bcaca73c416a0546c2e19c64b24",
+    "public/audio/consent-stage20c1/124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290.wav": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+    "public/audio/consent-stage20c1/01044caa100080167e93c67441edb46fd399f232a008844185dd8f7c51570f25.wav": "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e",
+    "public/audio/consent-stage20c1/15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c.wav": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+    "public/audio/consent-stage20c1/b5cb3098fef60f1cbd4563cf14808c3cd3085ce730c08eb01a459a2dfb1f0acd.wav": "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72",
+    "tests/consent-stage20c1.test.ts": "36045ed92f4a80ac8cf24daf33bea435646b715ddbb259cc15bdcb3942798ea3",
+    "scripts/stage20c1-generate.ts": "bbb8d589cf15311d9ded73f0f7718dce0e3bb7bf8b966eff3e8997078d077995",
+    "scripts/stage20c1-finalize.ts": "337a92418aef65f70c7ee5cdd323b551ffb911457023d6857e6f90cb7a653498"
+  },
+  "artifactHashes": {
+    "docs/stage-2.0c-1-audio-manifest.json": "a347fc57ca372bd9342e8f8494d4f90095ed745d6ed9d39f321d9c58b1b08002",
+    "docs/stage-2.0c-1-browser-rehearsal.json": "0d1658a3552437b5df24ad04c067c18043bedde282fadadc166e8c740f7bac5b",
+    "docs/stage-2.0c-1-duration-report.json": "2571d9c041b8b0ddd5b818d43ffd2701f18405bfd612f3e2ad133323f0fec1a9",
+    "docs/stage-2.0c-1-flow-a.jpg": "bc46afee70d134c9777af0118faffa681456d27f4340b3aa1da1724e4a4bb790",
+    "docs/stage-2.0c-1-local-playback-qa.json": "91479f821e65ad97884a6d036ccc6312c24363a335b3c50d7eb65676095c1b9d",
+    "docs/stage-2.0c-1-local-question.jpg": "bf08eb5d859fa2c65643f7e7f349fa1046777de798a762104a7b71720b57f9bf",
+    "docs/stage-2.0c-1-validation.txt": "45c3eba1988dbce350280e97f598039ac7e8500f177904f4d2af37a85d5ee3f1",
+    "docs/stage-2.0c-1-workspace.jpg": "6a8f4dbb6ab795803af6923eb3c06217228e202bf3a25185f52eac580abbd35a",
+    "docs/stage-2.0c-1.md": "0de3e0845de6f4232ef80842d4c7d118d84d6d850a407fcbcc4f2c61f28cc5dd",
+    "public/audio/consent-stage20c1/01044caa100080167e93c67441edb46fd399f232a008844185dd8f7c51570f25.wav": "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e",
+    "public/audio/consent-stage20c1/124f126bad7b7cfaa5cebab84b515e6ff9612e835baec291715e393622105290.wav": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+    "public/audio/consent-stage20c1/15a7f3253fe183406bc8142ef366ac8c1a43f45defe0095a617994ae3257146c.wav": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+    "public/audio/consent-stage20c1/1ad580fbd61e302a5d227d85e002cb01a09ab391a868895b33f38ab51a7cb3f4.wav": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+    "public/audio/consent-stage20c1/2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f.wav": "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+    "public/audio/consent-stage20c1/2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051.wav": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+    "public/audio/consent-stage20c1/43344c5931f5e4f099c9825bbddf0cdcc413fb8f3b8cd8f0dbd8c05661b78405.wav": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+    "public/audio/consent-stage20c1/4d4bd86e384a4a918b1852c49827a6e9b9122d096d83b2b9fe385124546a088a.wav": "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142",
+    "public/audio/consent-stage20c1/50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8.wav": "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6",
+    "public/audio/consent-stage20c1/5967884e0df2ae2350b7274c2242c532df13838d087445924e69204cb2fd5f70.wav": "948e1a3f03f5ea0285a1516fa0da69ea1ff90bcaca73c416a0546c2e19c64b24",
+    "public/audio/consent-stage20c1/6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6.wav": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+    "public/audio/consent-stage20c1/7033d48f0f96673a5bc8641da796b6e3aa3a3dae033898ac96eb83c6dd15b627.wav": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+    "public/audio/consent-stage20c1/7374e7e34df81c8cec5f8c4fb0d15e7b48159a7f77a5892f7303ec167e9430c3.wav": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+    "public/audio/consent-stage20c1/73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49.wav": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+    "public/audio/consent-stage20c1/7de595c630389b264bb01b0477fe989a0c8332eae66af4b5dd15252f8e91e7d2.wav": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+    "public/audio/consent-stage20c1/855be49b2eadf2f805adbaa329758ef8952f7c1b0ac4193638356ed3b7dbdad6.wav": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+    "public/audio/consent-stage20c1/93a08f778971d815c4fa2c354eb35ea14e07eb8377d73354ef62199b93502a8f.wav": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+    "public/audio/consent-stage20c1/b5cb3098fef60f1cbd4563cf14808c3cd3085ce730c08eb01a459a2dfb1f0acd.wav": "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72",
+    "public/audio/consent-stage20c1/c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6.wav": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+    "public/audio/consent-stage20c1/d04f62b9ad9d76d4724b0a90bb24b39aa8fe7ec97be81f24abbf357d4c2acb11.wav": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+    "public/audio/consent-stage20c1/d80002cdbaa1e5dbdb20258f1b5e298a23bd3f95bec867d23b434a73b7de94e1.wav": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+    "public/audio/consent-stage20c1/e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15.wav": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+    "public/audio/consent-stage20c1/e95d7a401fa4856920ed7602799c144527a8065e4d32506a5f142dcd783ccf4a.wav": "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6",
+    "public/audio/consent-stage20c1/ea686b035128b54fc70ea7d357bfa40acc0a3320b101f030634db9920bcbd2a7.wav": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+    "public/audio/consent-stage20c1/fda15e3a15daadaa533203ff8ca9f777578aa2ec75056d44298065d73948a03f.wav": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+    "scripts/stage20c1-finalize.ts": "337a92418aef65f70c7ee5cdd323b551ffb911457023d6857e6f90cb7a653498",
+    "scripts/stage20c1-generate.ts": "bbb8d589cf15311d9ded73f0f7718dce0e3bb7bf8b966eff3e8997078d077995",
+    "src/consent/ConsentWorkspace.tsx": "f8c4f74fb6fd6c710fb3f6e60eb547cc36b505d388b01d8091ee3cc6eaafea5e",
+    "src/consent/approved/AssetPanel.tsx": "0eaefc348bf56ccbbf4729ffe60a78fe64b51d5e806b343778248aabf9ecd34a",
+    "src/consent/approved/assetPack.ts": "e24abcb8ac3e72f51a9b4c3d84b66d4f6f8adc63b1485f7a034ec5e6f7248436",
+    "src/consent/approved/assets.ts": "9a47b089952b07d58bbef0090f0019a7989eb56b4e069d43c0bda6621a76d33c",
+    "src/consent/approved/definition.ts": "42ad60b2a2cfed16e36e8f0dfe4c3d09fa928520d593a7be3268b7c6da773a4c",
+    "src/consent/approved/inventory.ts": "9e6718cd5ee3473ada855a16041de326d0b56ff57d8fb923c3834f34405d13c9",
+    "src/consent/approved/localPlayback.ts": "e092cde223ad46cac2b139d239331da0e0f16bead178adfe481801c2d6926e2e",
+    "src/consent/approved/selector.ts": "fb8caa09c10a49dc98a0919620202490d80daa2a824c004ec328cc66be034210",
+    "src/consent/consentGuard.ts": "ccfba4c44e0bc05bc9526998073e2202681439ca75670a3f11f144a315f40209",
+    "src/consent/definition.ts": "a08caa2330ad8e7731a41a4bfbee6b116286f342d9a388d82c5674393f8e1fee",
+    "src/consent/handoff.ts": "ea18434d05af9a10ef8715aa3bc40df8df495de069fedd7a41194c7a30266d09",
+    "src/consent/session.ts": "6896637020e7ddfc20492728a002c44ddbe347da30fe929628b4e817112341ea",
+    "src/consent/types.ts": "fa15e13600dd83b89136efd9d2c470ccc33df711e71068ae2d3e69d562e5ec7e",
+    "tests/consent-stage20c1.test.ts": "36045ed92f4a80ac8cf24daf33bea435646b715ddbb259cc15bdcb3942798ea3"
+  }
+}

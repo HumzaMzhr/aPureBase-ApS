@@ -1,0 +1,79 @@
+{
+  "version": "stage-2.0c32-feedback-closure-1",
+  "status": "COMPLETED_NO_FURTHER_GENERATION_AUTHORIZED",
+  "remainingAuthorizedRequests": 0,
+  "requestCount": 1,
+  "totalCharacters": 82,
+  "requests": [
+    {
+      "phraseId": "clarify",
+      "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "sourceCanonicalVersion": "stage-2.0c1-approved-1",
+      "canonicalVersion": "stage-2.0c32-clarify-ab-1",
+      "canonicalTextHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+      "proposedSynthesisText": "Selvfølgelig. Må a Pure Base sende relevant faglig information til dig via e-mail?",
+      "synthesisVersion": "stage-2.0c32-plan-1:REFERENCE",
+      "synthesisTextHash": "79731682622f866b2bf9e59c5589fda254ba8c5300fe8cd81e6eb5015eb43892",
+      "planHash": "5dc18f4bae4e37f9b4fba4bac0d9de90a5806a7b1e02ae2d3af695fdc0ff9f10",
+      "reason": "Current Clarify retains original aPureBase provider spelling and has latest pronunciation 2/5. Bounded A/B applies the existing C31 organization alias to the same canonical permission question, without new words, channel or scope.",
+      "oldAssetHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+      "oldHumanRating": [
+        {
+          "stage": "C-3",
+          "source": "original-export",
+          "actionIndex": 14,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "ratings": null,
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d"
+        },
+        {
+          "stage": "C-3.2",
+          "source": "latest-export",
+          "actionIndex": 3,
+          "decision": "PASS",
+          "ratings": {
+            "naturalness": 4,
+            "pronunciation": 2,
+            "pace": 4
+          },
+          "comment": "",
+          "heardExactAsset": true,
+          "audioHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d"
+        }
+      ],
+      "voice": "Isabella",
+      "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+      "model": "eleven_flash_v2_5",
+      "speed": 0.95,
+      "characterCount": 82,
+      "expectedProviderCalls": 1,
+      "generated": true,
+      "assetHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+      "authorization": "EXACT_ONE_REQUEST_AUTHORIZED_AND_CONSUMED",
+      "payload": {
+        "text": "Selvfølgelig. Må a Pure Base sende relevant faglig information til dig via e-mail?",
+        "model_id": "eleven_flash_v2_5",
+        "language_code": "da",
+        "voice_settings": {
+          "speed": 0.95
+        }
+      },
+      "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC?output_format=pcm_24000"
+    }
+  ],
+  "alreadyGeneratedWhyCallingAndSuccessClose": "DO_NOT_REGENERATE",
+  "otherLowRatings": [
+    {
+      "phraseId": "consent-question",
+      "disposition": "D_INSUFFICIENT_PHONEME_EVIDENCE",
+      "reason": "Already uses the organization alias. A 2/5 rating alone does not justify an identical paid request or an arbitrary punctuation change."
+    },
+    {
+      "phraseId": "email-request",
+      "disposition": "D_INSUFFICIENT_PHONEME_EVIDENCE",
+      "reason": "No word-specific comment or independently justified prosody correction; retain concern and request a precise native verdict, not speculative generations."
+    }
+  ]
+}

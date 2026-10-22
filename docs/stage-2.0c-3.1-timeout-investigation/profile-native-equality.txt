@@ -1,0 +1,34 @@
+
+ RUN  v4.1.11 /private/tmp/c31-timeout-profile-a5b7054
+
+stdout | tests/continuous-transcription-gateway.test.ts > forwards all 45 seconds of PCM across sequential items while earlier finals are delayed
+PROFILE_PCM_LOOP 16.45166599999999
+
+ ↓ tests/continuous-transcription-gateway.test.ts > keeps accepting PCM after commit with no reconnect, and correlates out-of-order finals by item ID
+ ↓ tests/continuous-transcription-gateway.test.ts > deduplicates delta, commit and completed events without appending old words to a newer buffer
+ ↓ tests/continuous-transcription-gateway.test.ts > retains ambiguous delayed text until acknowledgment establishes its generation
+ ↓ tests/continuous-transcription-gateway.test.ts > stops on bounded transport pressure without dropping a queued frame or retrying it
+ ↓ tests/continuous-transcription-gateway.test.ts > stops rather than accumulating unbounded pending committed items
+ ↓ tests/continuous-transcription-gateway.test.ts > closes stale sessions and allows a new clean connection after disconnect
+ ↓ tests/continuous-transcription-gateway.test.ts > rejects a cross-origin connection before opening another paid upstream
+stdout | tests/continuous-transcription-gateway.test.ts > forwards all 45 seconds of PCM across sequential items while earlier finals are delayed
+PROFILE_PCM_FINALS 118.578
+PROFILE_PCM_EQUAL {"durationMs":5.193500000000029,"before":{"rss":87736320,"heapTotal":30392320,"heapUsed":20289896,"external":7892680,"arrayBuffers":4026823},"after":{"rss":95502336,"heapTotal":32227328,"heapUsed":20105368,"external":12566915,"arrayBuffers":8702149}}
+
+ ✓ tests/continuous-transcription-gateway.test.ts > forwards all 45 seconds of PCM across sequential items while earlier finals are delayed 186ms
+ ↓ tests/continuous-transcription-gateway.test.ts > correlates final-before-ack and late duplicates without assigning them to the next item
+ ↓ tests/continuous-transcription-gateway.test.ts > still terminates and reports a genuine provider transcription failure without inventing a final
+ ↓ tests/continuous-transcription-gateway.test.ts > retains opt-in invalid-final lifecycle metadata while preserving the original failure and provider requests
+ ↓ tests/continuous-transcription-gateway.test.ts > resolves an acknowledged silent final "" and keeps the persistent session listening
+ ↓ tests/continuous-transcription-gateway.test.ts > resolves an acknowledged silent final " \n\t " and keeps the persistent session listening
+ ↓ tests/continuous-transcription-gateway.test.ts > retains an empty final before its acknowledgment and resolves only the correct generation
+ ↓ tests/continuous-transcription-gateway.test.ts > still rejects a malformed completed transcript (0)
+ ↓ tests/continuous-transcription-gateway.test.ts > still rejects a malformed completed transcript (1)
+ ↓ tests/continuous-transcription-gateway.test.ts > still rejects a malformed completed transcript (2)
+ ↓ tests/continuous-transcription-gateway.test.ts > still rejects a malformed completed transcript (3)
+ ↓ tests/continuous-transcription-gateway.test.ts > exposes provider completion separately from delayed commit ACK without weakening ACK-before-final delivery
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 18 skipped (19)
+   Start at  23:44:27
+   Duration  376ms (transform 51ms, setup 0ms, import 88ms, tests 187ms, environment 0ms)

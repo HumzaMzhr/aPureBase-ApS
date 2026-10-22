@@ -1,0 +1,57 @@
+{
+  "input": "/Users/humzamazhar/Downloads/APureBase C32 Human Review.json",
+  "inputSha256": "03f0ce346ab57af201c29b1f743da63ffcc8a807d3a46d68fb8e303b4672e05f",
+  "status": "NOT_ACCEPTED",
+  "reviews": 5,
+  "concerns": [
+    {
+      "phraseId": "why-calling",
+      "audioHash": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+      "status": "PASS",
+      "naturalness": 4,
+      "pronunciation": 2,
+      "pace": 4,
+      "comments": ""
+    },
+    {
+      "phraseId": "consent-question",
+      "audioHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "status": "PASS",
+      "naturalness": 4,
+      "pronunciation": 2,
+      "pace": 4,
+      "comments": ""
+    },
+    {
+      "phraseId": "email-request",
+      "audioHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "status": "PASS",
+      "naturalness": 4,
+      "pronunciation": 2,
+      "pace": 4,
+      "comments": ""
+    },
+    {
+      "phraseId": "clarify",
+      "audioHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+      "status": "PASS",
+      "naturalness": 4,
+      "pronunciation": 2,
+      "pace": 4,
+      "comments": ""
+    },
+    {
+      "phraseId": "success-close",
+      "audioHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+      "status": "FAIL",
+      "naturalness": 4,
+      "pronunciation": 2,
+      "pace": 4,
+      "comments": "frameldte < it pronounced a t "
+    }
+  ],
+  "openingReviewMissing": true,
+  "microphoneTests": 0,
+  "naturalCallTimings": 0,
+  "inputUnmodified": true
+}

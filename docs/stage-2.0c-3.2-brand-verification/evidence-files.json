@@ -1,0 +1,146 @@
+[
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/BINDING-PROOFS.json",
+    "sha256": "9a10cecc83045de34d9dc50ef94291b4077e32a4ebf11750bd83c1a5ac5ca2e0"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/BUILD-IDENTITY.json",
+    "sha256": "f35382940857e3e96073359386166de5fe771718f674dc2f03eb91ed5c5a084c"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/DELIVERY.json",
+    "sha256": "bcc1f16e138ff6533d834da4da426dacfaad99213623ae0a1836b0daaba2f193"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/PACKAGE-MANIFEST.json",
+    "sha256": "6d0c742e5effdcf644a277d43704866315d5d6e24e0b5134a922397d98d675bd"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/RUNTIME-PROVENANCE.json",
+    "sha256": "96e1e7053e6dc30e75e0b95ac9a02715a1aa3012411bbb2a582073bec32856fd"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/SOURCE-RECORDS.json",
+    "sha256": "68404d6604036d5096cebf1292ca34cfcb1ea2904c11de77abd4f7045b50ba8c"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/banner-contrast.json",
+    "sha256": "36af7a9dfa942c83405f527fb180eaa84ad00395cc823112f968082b1c1e1f71"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/browser-playback-proofs.jsonl",
+    "sha256": "92f10d1308b7ed172d03bf991090a135a569abe3c43ef15d04d15ea8f851e4df"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/call-tests-desktop.jpg",
+    "sha256": "04ea281328dc930dbe768c6077393add19a3114f98bbb3897ac422f6f3ff3b5b"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/completion-report.json",
+    "sha256": "f262ce84143cc20b5139f7907db762fc3be66dbe7a8567672f8bfb15dde9a892"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/completion-report.md",
+    "sha256": "0335fcc6bc9c1436b72145c67b15d80fbbc8b98ced7f867bd0d61514268438f5"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/email-desktop.jpg",
+    "sha256": "cca5a3b38f44b6c8a3544ad083d7dec63374a2df130433ed17666590e6ab8630"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/final-hygiene.json",
+    "sha256": "e7732960e657e5b25319c14952e4afe724a3df74ce89b768dd08c0208e35eebf"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/http-verification.json",
+    "sha256": "fdf664f93ab55b86d7c0df5945b50c2bcd5a1be53962a7d5ee6a823daa95487d"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/microphone-desktop.jpg",
+    "sha256": "ee42d790e2843d9d650fdacb8d2d0c02c439d2d17afde450414e37ad56f19d6f"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/normal-launch-verification.json",
+    "sha256": "f39dc7d55a12502e5bfd233f2875a9a0f5b08850a264d5284d1e8b8eb489fd39"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/pre-brand-logic-proof.json",
+    "sha256": "1fd5007787f28da0062d2fce8e44d1abc7dfb570f0399c6aa1524fc1ca66acf4"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/presentation-tests.txt",
+    "sha256": "a66e1b71b2ff5cb2dc044f4726fc01485d2c94897eeccce2c44dc12c67dbcb14"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/restart-resume.txt",
+    "sha256": "29c31e9b23ad2292eb8c54ea027eb0dbcf9c1781b3597bd2e3292b8a5b21493e"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/results-desktop.jpg",
+    "sha256": "8854a29c94722c8670493a9d36d1ac968d19bce45bb4585a1e423c54635abcf5"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/technical-INCOMPLETE.json",
+    "sha256": "d55955f4be757403e3ed0a66d525e9b6e6f9b38305652c8a6db70974350dc4c8"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/build.txt",
+    "sha256": "1a44a9c6cb63a2a33ea4cb0c14dbb48ac1c500d6b310aba5f3ea5328076cb6b0"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/c31.txt",
+    "sha256": "7f74c2aa62d022e5c3a5f6b145db9a250eff1fd1180f08805ee522dad88fbdaa"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/c32-build.txt",
+    "sha256": "39977eb98c40d0c0499164196aad87da5e2839bc3a3a9f53ebe13c0f43b8e7d3"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/c32-focused.txt",
+    "sha256": "e1c3bb8329780a24368791d26643f46119c1abdb4fad02ccbca0db0fc4135e01"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/full.txt",
+    "sha256": "9242a31dc69c101b4365d97d13f6f47e76ec1629f9c38a428f02e8afb64bbecb"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/handoff-build.txt",
+    "sha256": "23625fb574b12094d3edec16c5d14bc2423d79190c8e74c662512b5bed9f4e64"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/lint.txt",
+    "sha256": "30f2bbb806dce4b9111110f4a817c889c3baa69737842714c5e62dc1406432ef"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/package-hashes.txt",
+    "sha256": "1b9f64edf4d8deba902bd3c4e9f6d895e33cf5f9d34ff1fa472fbff8d8919e67"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/preservation-c31.txt",
+    "sha256": "8553ed6a482da1428bf3aafafeeeda265436308a97896a71cbe987d7d00a2123"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/preservation-c32.txt",
+    "sha256": "4a9ea9f77d2020c3e30e12bec0ee73bc68c0e1a4fe6354db7acbdebf87c9d584"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/prior-consent.txt",
+    "sha256": "0947f4f11244460da0363faa147eecaa1c2ddaf51a51d26b76f7e6ef824fba09"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/results.json",
+    "sha256": "0c29578e26f530bb77e3c31233124ed1f810c374400659e1c384a9dd526cab4a"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/source-proof.json",
+    "sha256": "b947c5d0d1c7f4a2f59cd270d4e9b66f5167a12b0142cdf3d3d0fd94b22e93cb"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/validation/typecheck.txt",
+    "sha256": "6036e6439d0a74693c7dd58f4881022033fa6fb2285d34ceb59ee88d1b11f75e"
+  },
+  {
+    "path": "docs/stage-2.0c-3.2-brand-verification/voice-review-desktop.jpg",
+    "sha256": "acc402bc9f18271f330032feb074b888deaed3553e11241e762b77ebc947a379"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "sourceDrift": [],
+  "historicalDocsChangedOutsideAuthorizedCurrentRegeneration": [],
+  "mainCleanUnchanged": true,
+  "currentSourceMatchesValidatedTree": true,
+  "currentReportsMatchValidatedSnapshot": true,
+  "rawInputsVerified": 26,
+  "humanEvidencePreserved": true,
+  "previous51AudioUnchanged": true,
+  "paidRequestsThisTask": 1,
+  "submittedCharacters": 82,
+  "otherProviders": 0,
+  "noFinalZipCommitPushPRMergeDeployOrStage2D": true
+}

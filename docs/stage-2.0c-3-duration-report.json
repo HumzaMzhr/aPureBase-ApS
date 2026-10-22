@@ -1,0 +1,462 @@
+{
+  "stage": "2.0c3",
+  "status": "NOT_TESTED",
+  "physical": {
+    "allAttempts": 0,
+    "allAttemptsRetained": true,
+    "ordinarySuccessful": {
+      "attempts": 0,
+      "completed": 0,
+      "missingOpening": 0,
+      "wallClockSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      },
+      "mediaSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "ordinarySuccessfulMicrophoneOnly": {
+      "attempts": 0,
+      "completed": 0,
+      "missingOpening": 0,
+      "wallClockSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      },
+      "mediaSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "categories": [
+      {
+        "category": "ordinary",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "refusal",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "busy",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "takeover",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "interrupted",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "correction",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "intermediary",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "other",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      }
+    ],
+    "outcomes": [],
+    "excludedAfterObservation": 0,
+    "notes": "Raw wall time is start-of-opening to terminal. Media is actual Isabella frames/observed interrupted interval plus microphone VAD speech intervals. Manual/mixed source has no physical speech-duration total. Debug pauses stay in raw wall statistics."
+  },
+  "localOrMixedRehearsals": {
+    "allAttempts": 1,
+    "allAttemptsRetained": true,
+    "ordinarySuccessful": {
+      "attempts": 0,
+      "completed": 0,
+      "missingOpening": 0,
+      "wallClockSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      },
+      "mediaSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "ordinarySuccessfulMicrophoneOnly": {
+      "attempts": 0,
+      "completed": 0,
+      "missingOpening": 0,
+      "wallClockSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      },
+      "mediaSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "categories": [
+      {
+        "category": "ordinary",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "refusal",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "busy",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "takeover",
+        "attempts": 1,
+        "completed": 1,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 1,
+          "median": 57.897700000000185,
+          "p95": 57.897700000000185,
+          "min": 57.897700000000185,
+          "max": 57.897700000000185
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "interrupted",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "correction",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "intermediary",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "other",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "state": "HUMAN_TAKEOVER",
+        "attempts": 1,
+        "completed": 1,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 1,
+          "median": 57.897700000000185,
+          "p95": 57.897700000000185,
+          "min": 57.897700000000185,
+          "max": 57.897700000000185
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      }
+    ],
+    "excludedAfterObservation": 0,
+    "notes": "Raw wall time is start-of-opening to terminal. Media is actual Isabella frames/observed interrupted interval plus microphone VAD speech intervals. Manual/mixed source has no physical speech-duration total. Debug pauses stay in raw wall statistics."
+  },
+  "runs": [
+    {
+      "callId": "aba04a9a-a1d6-4d7e-8189-4c69b92c1c7d",
+      "scenario": "O",
+      "category": "takeover",
+      "state": "HUMAN_TAKEOVER",
+      "microphoneCaptureObserved": false,
+      "mixedManualAndMicrophone": false,
+      "wallClockSeconds": 57.897700000000185,
+      "openingMissing": false,
+      "debugPauseSeconds": 0,
+      "wallLessExplicitDebugPausesSeconds": 57.897700000000185,
+      "isabellaMediaSeconds": 7.198166666666666,
+      "recipientSpeechSeconds": null,
+      "mediaSumSeconds": null,
+      "observedMediaUnionSeconds": null,
+      "recipientEvidence": "MANUAL_SIMULATION",
+      "natural30to90Proven": false,
+      "notes": "Raw wall clock is never reduced for target assessment. Interrupted output duration uses observed start/cancel boundaries, not a fabricated completion."
+    }
+  ],
+  "target": "Ordinary successful physical rehearsals naturally 30–90 seconds; raw wall clock required.",
+  "acceptanceClaim": false
+}

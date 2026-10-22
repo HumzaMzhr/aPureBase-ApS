@@ -1,3 +1,6 @@
+import {transcriptionContext} from './transcriptionContext';
+import {randomUUID} from 'node:crypto';
+import {diagnosticMetadata,diagnosticText} from '../src/streaming/sessionDiagnostics';
 import type {Server} from 'node:http';
 import WebSocket,{WebSocketServer} from 'ws';
 import {transcriptionSession} from './liveTranscription';
@@ -12,6 +15,7 @@ export function attachContinuousTranscription(server:Server,connect=()=>new WebS
   const origins=new Set(['http://localhost:5173','http://127.0.0.1:5173']),language=url.searchParams.get('language');
   if(!origins.has(req.headers.origin??'')||!origins.has(`http://${req.headers.host}`)||!['en','da'].includes(language??'')||!process.env.OPENAI_API_KEY||active>=2){socket.write('HTTP/1.1 403 Forbidden\r\nConnection: close\r\n\r\n');socket.destroy();return;}
   gateway.handleUpgrade(req,socket,head,client=>{
+   const diagnostics=url.searchParams.get('diagnostics')==='1',connectionId=randomUUID();
    active++;let closed=false,ready=false,generation=0,totalBytes=0;
    const items=new Map<number,Item>(),byId=new Map<string,Item>(),commits:Item[]=[];
    const unknown=new Map<string,{text:string;final?:string;events:Set<string>}>();
@@ -20,14 +24,16 @@ export function attachContinuousTranscription(server:Server,connect=()=>new WebS
    const make=(n:number):Item=>({generation:n,bytes:0,committed:false,acknowledged:false,text:'',events:new Set()});items.set(0,make(0));
    let upstream:WebSocket;
    const send=(event:unknown)=>{if(!closed&&client.readyState===WebSocket.OPEN)client.send(JSON.stringify(event));};
-   const close=()=>{if(closed)return;closed=true;active--;clearTimeout(lifetime);for(const timer of timers.values())clearTimeout(timer);timers.clear();upstream?.terminate();client.close();};
-   const fail=(code:string)=>{send({type:'error',code});close();};
-   const lifetime=setTimeout(()=>fail('session_limit'),600000);
+   const trace=(event:string,data:Record<string,unknown>={})=>{try{if(diagnostics&&client.bufferedAmount<65536)send({type:'diagnostic',event,data:diagnosticMetadata({connectionId,providerAt:performance.now(),clock:'server-performance.now',currentGeneration:generation,pendingFinals:[...items.values()].filter(item=>item.committed&&item.final===undefined).length,...data})});}catch{/* Diagnostic transport is best effort only. */}};
+   const close=()=>{if(closed)return;trace('recognition.gateway_closed');closed=true;active--;clearTimeout(lifetime);for(const timer of timers.values())clearTimeout(timer);timers.clear();upstream?.terminate();client.close();};
+   const fail=(code:string)=>{trace('recognition.gateway_failed',{classification:code});send({type:'error',code});close();};
+   const lifetime=setTimeout(()=>{trace('recognition.session_timeout_expired',{timeoutMs:600000});fail('session_limit');},600000);
+   trace('recognition.session_timeout_started',{timeoutMs:600000});
    try{upstream=connect();}catch{fail('connection_failed');return;}
    const deliver=(item:Item)=>{
     if(item.text)send({type:'partial',generation:item.generation,text:item.text,itemId:item.itemId});
     if(item.final!==undefined&&item.committed&&item.acknowledged&&item.itemId){
-     send({type:'final',generation:item.generation,text:item.final,itemId:item.itemId});
+     trace('recognition.final_delivered',{generation:item.generation,itemId:item.itemId,committed:item.committed,acknowledged:item.acknowledged,alreadyFinal:true,finalCharacters:item.final.length});send({type:'final',generation:item.generation,text:item.final,itemId:item.itemId});
      clearTimeout(timers.get(item.generation));timers.delete(item.generation);items.delete(item.generation);byId.delete(item.itemId);
      completedIds.add(item.itemId);if(completedIds.size>200)fail('session_limit');
     }
@@ -40,11 +46,13 @@ export function attachContinuousTranscription(server:Server,connect=()=>new WebS
     const current=items.get(generation)!;if(current.itemId)return;
     current.itemId=id;byId.set(id,current);const retained=unknown.get(id);if(retained){current.text=retained.text;current.final=retained.final;current.events=retained.events;unknown.delete(id);}return current;
    };
-   upstream.on('open',()=>{if(!closed)upstream.send(JSON.stringify(transcriptionSession(language as 'en'|'da')));});
+   upstream.on('open',()=>{if(!closed){upstream.send(JSON.stringify(transcriptionSession(language as 'en'|'da')));trace('recognition.context_hints',{contextHintId:transcriptionContext.contextHintId,keywordCount:transcriptionContext.keywords.length,model:modelConfig().liveTranscription});}});
    upstream.on('message',raw=>{
     if(closed)return;
     try{
      const event=JSON.parse(raw.toString());
+     const observed=byId.get(event.item_id)??(event.type==='input_audio_buffer.committed'?commits[0]:undefined);
+     trace('recognition.provider_event',{providerEvent:event.type,itemId:event.item_id,eventId:event.event_id,generation:observed?.generation,turnExists:Boolean(observed),committed:observed?.committed,acknowledged:observed?.acknowledged,alreadyFinal:completedIds.has(event.item_id)||observed?.final!==undefined,...diagnosticText(event.transcript??event.delta)});
      if(event.type==='session.updated'){if(ready)return;ready=true;send({type:'ready',model:modelConfig().liveTranscription,delay:process.env.OPENAI_TRANSCRIBE_DELAY||'low',sampleRate:24000});return;}
      if(event.type==='input_audio_buffer.committed'){
       if(acknowledgedIds.has(event.item_id))return;
@@ -53,7 +61,7 @@ export function attachContinuousTranscription(server:Server,connect=()=>new WebS
       const id=event.item_id as string;item.itemId=id;item.acknowledged=true;byId.set(id,item);
       acknowledgedIds.add(id);
       const retained=unknown.get(id);if(retained){item.text=retained.text;item.final=retained.final;item.events=retained.events;unknown.delete(id);}
-      send({type:'committed',generation:item.generation,itemId:item.itemId});deliver(item);return;
+      trace('recognition.commit_acknowledged',{generation:item.generation,itemId:item.itemId,committed:item.committed,acknowledged:true});send({type:'committed',generation:item.generation,itemId:item.itemId});deliver(item);return;
      }
      if(['conversation.item.input_audio_transcription.delta','conversation.item.input_audio_transcription.completed'].includes(event.type)){
       if(typeof event.item_id!=='string')return fail('invalid_item');
@@ -62,8 +70,10 @@ export function attachContinuousTranscription(server:Server,connect=()=>new WebS
       let text=item??unknown.get(event.item_id);
       if(!text){if(unknown.size>=4)return fail('transcript_backpressure');text={text:'',events:new Set()};unknown.set(event.item_id,text);}
       if(typeof event.event_id==='string'){if(text.events.has(event.event_id))return;text.events.add(event.event_id);if(text.events.size>2000)return fail('transcript_limit');}
+      trace('recognition.item_state',{providerEvent:event.type,itemId:event.item_id,eventId:event.event_id,generation:item?.generation,turnExists:Boolean(item),committed:item?.committed,acknowledged:item?.acknowledged,alreadyFinal:text.final!==undefined,partialCharacters:text.text.length,...diagnosticText(event.transcript??event.delta)});
+      if(text.final!==undefined)return; // Terminal even when acknowledgment/delivery is still pending.
       if(event.type.endsWith('.delta')){if(typeof event.delta!=='string')return fail('invalid_delta');text.text+=event.delta;if(text.text.length>12000)return fail('transcript_limit');if(item)send({type:'partial',generation:item.generation,text:item.text,itemId:item.itemId});}
-      else{if(typeof event.transcript!=='string'||!event.transcript.trim()||event.transcript.length>4000)return fail('invalid_final');text.final=event.transcript;if(item){if(!item.committed)return fail('uncommitted_final');deliver(item);}}
+      else{if(typeof event.transcript!=='string'||event.transcript.length>4000){trace('recognition.invalid_final',{itemId:event.item_id,eventId:event.event_id,generation:item?.generation,classification:typeof event.transcript!=='string'?'not_string':'oversized_final',...diagnosticText(event.transcript)});return fail('invalid_final');}if(!event.transcript.trim()&&text.text.trim()){trace('recognition.invalid_final',{itemId:event.item_id,eventId:event.event_id,generation:item?.generation,classification:'empty_final_conflict',partialCharacters:text.text.length});return fail('invalid_final');}text.final=event.transcript.trim()?event.transcript:'';trace('recognition.provider_completed',{generation:item?.generation,itemId:event.item_id,committed:item?.committed,acknowledged:item?.acknowledged,finalCharacters:(text.final??'').length});if(!text.final)trace('recognition.empty_final_resolved',{itemId:event.item_id,generation:item?.generation,committed:item?.committed,acknowledged:item?.acknowledged});if(item){if(!item.committed)return fail('uncommitted_final');deliver(item);}}
       return;
      }
      if(event.type==='error'||event.type==='conversation.item.input_audio_transcription.failed'){
@@ -87,8 +97,9 @@ export function attachContinuousTranscription(server:Server,connect=()=>new WebS
      }else{
       const command=JSON.parse(raw.toString());if(command.type!=='commit'||command.generation!==generation||item.bytes<4800)return fail('invalid_commit');
       if(items.size>=4)return fail('finalization_backpressure');
-      item.committed=true;commits.push(item);timers.set(generation,setTimeout(()=>fail('finalization_timeout'),30000));
-      upstream.send(JSON.stringify({type:'input_audio_buffer.commit'}));
+      item.committed=true;commits.push(item);timers.set(generation,setTimeout(()=>{trace('recognition.finalization_timeout_expired',{generation:item.generation,timeoutMs:30000});fail('finalization_timeout');},30000));
+      trace('recognition.finalization_timeout_started',{generation,committed:item.committed,itemId:item.itemId,timeoutMs:30000,deadlineAt:performance.now()+30000});
+      upstream.send(JSON.stringify({type:'input_audio_buffer.commit'}));trace('recognition.commit_sent',{generation,itemId:item.itemId,committed:item.committed,receivedSamples:item.bytes/2,totalReceivedSamples:totalBytes/2});
       generation++;items.set(generation,make(generation));
      }
     }catch{fail('invalid_client_event');}

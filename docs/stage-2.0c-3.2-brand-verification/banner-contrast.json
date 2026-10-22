@@ -1,0 +1,7 @@
+{
+  "sourceAlpha": 0.90196,
+  "foreground": "#333333",
+  "method": "WCAG contrast across every Image53 RGB pixel after the original normal alpha lime overlay",
+  "minimumContrast": 6.438,
+  "status": "PASS"
+}

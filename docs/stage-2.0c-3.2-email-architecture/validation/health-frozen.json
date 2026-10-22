@@ -1,0 +1,23 @@
+{
+  "health": {
+    "stage": "2.0c31",
+    "gateway": true,
+    "configured": false,
+    "model": "gpt-live-transcribe",
+    "language": "da",
+    "sampleRate": 24000,
+    "packageVersion": "stage-2.0c32-email-architecture-1",
+    "candidateSourceHash": "7ddc6a19759dd00559b880497b7b3b4dd0834c3ae53ded93edb77bd282422a1d",
+    "bootId": "34cf372e-971d-49e5-998c-40a8261b8db8",
+    "processId": 88145,
+    "providerAuthorization": "NOT_TESTED_UNTIL_MANUAL_START",
+    "providerRequestsOnHealth": 0,
+    "verificationOnly": true
+  },
+  "requiredNormalAudio": 12,
+  "optionalDiagnosticAudio": 4,
+  "ASRArmStatus": 403,
+  "providerRequests": 0,
+  "actualPlaybackPerformed": false,
+  "serverStoppedAfterCheck": true
+}

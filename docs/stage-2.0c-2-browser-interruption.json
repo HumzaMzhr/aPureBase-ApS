@@ -1,0 +1,761 @@
+{
+  "version": 2,
+  "definitionId": "apurebase-consent-stage20c2",
+  "definitionVersion": "stage-2.0c1-approved-1",
+  "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+  "state": "CONSENT_UNCLEAR",
+  "respondent": "receptionist",
+  "recipientType": "INTERMEDIARY",
+  "targetVerified": false,
+  "authorityStatus": "AGENT_CONFIRMED",
+  "authorityPolicyVersion": "apurebase-authority-2.0b2-1",
+  "recipientRevision": 2,
+  "playbacks": [
+    {
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "playbackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-1",
+      "phraseId": "purpose",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetId": "purpose",
+      "assetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "state": "COMPLETED",
+      "queuedAt": 75129.5,
+      "startedAt": 75158.70000000019,
+      "completedAt": 82655.79999999981,
+      "interruptedAt": null,
+      "failedAt": null,
+      "completionSource": "VERIFIED_OUTPUT_ADAPTER",
+      "recipientRevision": 2,
+      "answerConsumed": false,
+      "mode": "local-prerecorded",
+      "textHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+      "outputProof": "web-audio-source-ended:0023409b-5202-4270-88ea-3693c1a4ec28:playback-1:frames=358888:rate=48000:context=7.482666666666667",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 358888,
+        "preGainPeak": 0.19152209162712097,
+        "preGainRms": 0.03159842223338366,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.681313157081604,
+        "postGainRms": 0.1124069815054799,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "playbackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-2",
+      "phraseId": "intermediary-consent-question",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "assetId": "intermediary-consent-question",
+      "assetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+      "state": "INTERRUPTED",
+      "queuedAt": 94304.29999999981,
+      "startedAt": 94315.79999999981,
+      "completedAt": null,
+      "interruptedAt": 94576.79999999981,
+      "failedAt": null,
+      "completionSource": null,
+      "recipientRevision": 2,
+      "answerConsumed": true,
+      "mode": "local-prerecorded",
+      "textHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 240744,
+        "preGainPeak": 0.15904152393341064,
+        "preGainRms": 0.024985357889953694,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5657680630683899,
+        "postGainRms": 0.08888192714659585,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    }
+  ],
+  "emailStatus": "NOT_REQUESTED",
+  "partial": "",
+  "turns": [
+    {
+      "id": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "timestamp": "2026-10-18T12:58:46.193Z",
+      "transcript": {
+        "id": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+        "text": "Jeg har fuldmagt til at oplyse lægens e-mailadresse.",
+        "final": true,
+        "source": "manual-rehearsal",
+        "observedAt": 74325.09999999963,
+        "speechStartedAt": 63946.59999999963
+      },
+      "classification": {
+        "intent": "AUTHORITY_CLAIMED",
+        "confidence": 1,
+        "basis": "Conservative complete-utterance rule; score is not a probability or authority determination.",
+        "classifierVersion": "da-rules-2.0b1-1"
+      },
+      "stateBefore": "RECEPTIONIST",
+      "stateAfter": "AUTHORITY_CHECK",
+      "recommendedResponseId": "authority-claimed",
+      "selections": [
+        {
+          "responseId": "purpose",
+          "at": 75129.59999999963,
+          "acceptedRecommendation": true,
+          "action": "rehearse"
+        },
+        {
+          "responseId": "intermediary-consent-question",
+          "at": 94304.29999999981,
+          "acceptedRecommendation": true,
+          "action": "rehearse"
+        }
+      ],
+      "consent": {
+        "respondent": "receptionist",
+        "recipient": {
+          "recipientType": "INTERMEDIARY",
+          "targetVerified": false,
+          "recipientRevision": 2,
+          "authorityPolicyVersion": "apurebase-authority-2.0b2-1",
+          "authorityEvidenceTurnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+          "authorityEvidenceText": "Jeg har fuldmagt til at oplyse lægens e-mailadresse.",
+          "authorityStatus": "CLAIMED",
+          "authorityEvidence": {
+            "transcriptTurnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+            "transcriptText": "Jeg har fuldmagt til at oplyse lægens e-mailadresse.",
+            "classifiedIntent": "AUTHORITY_CLAIMED",
+            "recordedAt": "2026-10-18T12:58:46.193Z",
+            "recipientRevision": 2
+          }
+        },
+        "classification": "UNCLEAR",
+        "eligibleYes": false,
+        "reason": "No explicit scoped affirmative from a verified recipient with speech onset after completed question delivery."
+      },
+      "latency": {
+        "classificationMs": 1,
+        "observationToRecommendationMs": 1,
+        "agentDecisionMs": 19979.200000000186
+      }
+    },
+    {
+      "id": "68b22efe-7c5c-4fd8-91a9-b353db4e1ecb",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "timestamp": "2026-10-18T12:59:29.643Z",
+      "transcript": {
+        "id": "68b22efe-7c5c-4fd8-91a9-b353db4e1ecb",
+        "text": "Ja.",
+        "final": true,
+        "source": "manual-rehearsal",
+        "observedAt": 117775.59999999963,
+        "speechStartedAt": 94576.59999999963
+      },
+      "classification": {
+        "intent": "AFFIRMATIVE",
+        "confidence": 1,
+        "basis": "Conservative complete-utterance rule; score is not a probability or authority determination.",
+        "classifierVersion": "da-rules-2.0b1-1"
+      },
+      "stateBefore": "CONSENT_ASK",
+      "stateAfter": "CONSENT_UNCLEAR",
+      "recommendedResponseId": "clarify",
+      "selections": [],
+      "consent": {
+        "respondent": "receptionist",
+        "recipient": {
+          "recipientType": "INTERMEDIARY",
+          "targetVerified": false,
+          "recipientRevision": 2,
+          "authorityPolicyVersion": "apurebase-authority-2.0b2-1",
+          "authorityEvidenceTurnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+          "authorityEvidenceText": "Jeg har fuldmagt til at oplyse lægens e-mailadresse.",
+          "authorityAttestedBy": "local-operator",
+          "authorityAttestedAt": "2026-10-18T12:58:46.463Z",
+          "authorityStatus": "AGENT_CONFIRMED",
+          "authorityEvidence": {
+            "transcriptTurnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+            "transcriptText": "Jeg har fuldmagt til at oplyse lægens e-mailadresse.",
+            "classifiedIntent": "AUTHORITY_CLAIMED",
+            "recordedAt": "2026-10-18T12:58:46.193Z",
+            "recipientRevision": 2
+          },
+          "authorityAttestation": {
+            "evidenceTurnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+            "reason": "SYNTHETIC interruption rehearsal: explicit claim separately attested",
+            "recordedAt": "2026-10-18T12:58:46.463Z",
+            "recipientRevision": 2,
+            "attestedBy": "local-operator"
+          }
+        },
+        "classification": "UNCLEAR",
+        "eligibleYes": false,
+        "reason": "No explicit scoped affirmative from a verified recipient with speech onset after completed question delivery."
+      },
+      "latency": {
+        "classificationMs": 0.5,
+        "observationToRecommendationMs": 0.5
+      }
+    }
+  ],
+  "playing": false,
+  "mode": "offline-rehearsal",
+  "recommendedResponseId": "clarify",
+  "authorityEvidence": {
+    "transcriptTurnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+    "transcriptText": "Jeg har fuldmagt til at oplyse lægens e-mailadresse.",
+    "classifiedIntent": "AUTHORITY_CLAIMED",
+    "recordedAt": "2026-10-18T12:58:46.193Z",
+    "recipientRevision": 2
+  },
+  "authorityEvidenceTurnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+  "authorityEvidenceText": "Jeg har fuldmagt til at oplyse lægens e-mailadresse.",
+  "authorityAttestedBy": "local-operator",
+  "authorityAttestedAt": "2026-10-18T12:58:46.463Z",
+  "authorityAttestation": {
+    "evidenceTurnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+    "reason": "SYNTHETIC interruption rehearsal: explicit claim separately attested",
+    "recordedAt": "2026-10-18T12:58:46.463Z",
+    "recipientRevision": 2,
+    "attestedBy": "local-operator"
+  },
+  "activePlaybackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-2",
+  "dynamicName": {
+    "original": "Anna Jensen",
+    "source": "contact-data",
+    "evidenceId": "synthetic-contact-fixture",
+    "evidenceText": "synthetic-contact-fixture\nSYNTHETIC rehearsal target: Anna Jensen",
+    "reviewedBy": "local-operator",
+    "reviewedAt": "2026-10-18T12:58:46.728Z",
+    "pronunciationConfirmed": true,
+    "recipientRevision": 2
+  },
+  "dynamicBindings": {
+    "0023409b-5202-4270-88ea-3693c1a4ec28:playback-2": {
+      "slot": {
+        "kind": "NAME",
+        "phraseId": "intermediary-consent-question",
+        "name": {
+          "original": "Anna Jensen",
+          "source": "contact-data",
+          "evidenceId": "synthetic-contact-fixture",
+          "evidenceText": "synthetic-contact-fixture\nSYNTHETIC rehearsal target: Anna Jensen",
+          "reviewedBy": "local-operator",
+          "reviewedAt": "2026-10-18T12:58:46.728Z",
+          "pronunciationConfirmed": true,
+          "recipientRevision": 2
+        }
+      },
+      "renderedValue": "Anna Jensen",
+      "renderedText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+      "textHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+      "phraseVersion": "stage-2.0c1-approved-1",
+      "rendererVersion": "stage-2.0c2-deterministic-1",
+      "cacheKey": "eac711239c016d763cf4fb27f3ca80f2bdb8e6248fe6aac79944f5aeb52d632b"
+    }
+  },
+  "events": [
+    {
+      "sequence": 1,
+      "at": 49.89999999944121,
+      "timestamp": "2026-10-18T12:57:31.917Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "session.started",
+      "data": {
+        "definitionId": "apurebase-consent-stage20c2",
+        "definitionVersion": "stage-2.0c1-approved-1",
+        "mode": "offline-rehearsal"
+      }
+    },
+    {
+      "sequence": 2,
+      "at": 63378.89999999944,
+      "timestamp": "2026-10-18T12:58:35.246Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "state.changed",
+      "data": {
+        "before": "ANSWERED",
+        "after": "RECEPTIONIST",
+        "trigger": "RECEPTIONIST"
+      }
+    },
+    {
+      "sequence": 3,
+      "at": 63379,
+      "timestamp": "2026-10-18T12:58:35.246Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "recipient.agent_selected",
+      "data": {
+        "value": "INTERMEDIARY",
+        "targetVerified": false,
+        "reason": "SYNTHETIC interruption rehearsal: explicit claim separately attested",
+        "recipientRevision": 1
+      }
+    },
+    {
+      "sequence": 4,
+      "at": 63946.700000000186,
+      "timestamp": "2026-10-18T12:58:35.814Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "recognition.partial_observed",
+      "data": {
+        "id": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+        "text": "",
+        "final": false,
+        "source": "manual-rehearsal",
+        "observedAt": 63946.59999999963,
+        "speechStartedAt": 63946.59999999963
+      }
+    },
+    {
+      "sequence": 5,
+      "at": 74325.89999999944,
+      "timestamp": "2026-10-18T12:58:46.193Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "authority.evidence_recorded",
+      "data": {
+        "status": "CLAIMED",
+        "evidence": {
+          "transcriptTurnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+          "transcriptText": "Jeg har fuldmagt til at oplyse lægens e-mailadresse.",
+          "classifiedIntent": "AUTHORITY_CLAIMED",
+          "recordedAt": "2026-10-18T12:58:46.193Z",
+          "recipientRevision": 2
+        }
+      }
+    },
+    {
+      "sequence": 6,
+      "at": 74326.09999999963,
+      "timestamp": "2026-10-18T12:58:46.193Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "state.changed",
+      "data": {
+        "before": "RECEPTIONIST",
+        "after": "AUTHORITY_CHECK",
+        "trigger": "AUTHORITY_CLAIMED"
+      }
+    },
+    {
+      "sequence": 7,
+      "at": 74326.20000000019,
+      "timestamp": "2026-10-18T12:58:46.193Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "turn.recommended",
+      "data": {
+        "turnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+        "intent": "AUTHORITY_CLAIMED",
+        "consent": "UNCLEAR",
+        "responseId": "authority-claimed"
+      }
+    },
+    {
+      "sequence": 8,
+      "at": 74596.09999999963,
+      "timestamp": "2026-10-18T12:58:46.463Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "state.changed",
+      "data": {
+        "before": "AUTHORITY_CHECK",
+        "after": "RIGHT_PERSON",
+        "trigger": "authority_confirmed"
+      }
+    },
+    {
+      "sequence": 9,
+      "at": 74596.29999999981,
+      "timestamp": "2026-10-18T12:58:46.464Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "authority.agent_attested",
+      "data": {
+        "evidence": {
+          "transcriptTurnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+          "transcriptText": "Jeg har fuldmagt til at oplyse lægens e-mailadresse.",
+          "classifiedIntent": "AUTHORITY_CLAIMED",
+          "recordedAt": "2026-10-18T12:58:46.193Z",
+          "recipientRevision": 2
+        },
+        "attestation": {
+          "evidenceTurnId": "4c230d1b-3283-4c39-82e6-dda88e11863a",
+          "reason": "SYNTHETIC interruption rehearsal: explicit claim separately attested",
+          "recordedAt": "2026-10-18T12:58:46.463Z",
+          "recipientRevision": 2,
+          "attestedBy": "local-operator"
+        },
+        "legalAuthorityDetermined": false
+      }
+    },
+    {
+      "sequence": 10,
+      "at": 74861.20000000019,
+      "timestamp": "2026-10-18T12:58:46.729Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "dynamic.name_bound",
+      "data": {
+        "original": "Anna Jensen",
+        "source": "contact-data",
+        "evidenceId": "synthetic-contact-fixture",
+        "evidenceText": "synthetic-contact-fixture\nSYNTHETIC rehearsal target: Anna Jensen",
+        "reviewedBy": "local-operator",
+        "reviewedAt": "2026-10-18T12:58:46.728Z",
+        "pronunciationConfirmed": true,
+        "recipientRevision": 2
+      }
+    },
+    {
+      "sequence": 11,
+      "at": 75129.59999999963,
+      "timestamp": "2026-10-18T12:58:46.997Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "mock.playback_queued",
+      "data": {
+        "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+        "playbackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-1",
+        "phraseId": "purpose",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "assetId": "purpose",
+        "assetHash": null,
+        "state": "QUEUED",
+        "queuedAt": 75129.5,
+        "startedAt": null,
+        "completedAt": null,
+        "interruptedAt": null,
+        "failedAt": null,
+        "completionSource": null,
+        "recipientRevision": 2,
+        "answerConsumed": false,
+        "mode": "mock",
+        "textHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+        "repeat": false
+      }
+    },
+    {
+      "sequence": 12,
+      "at": 75129.70000000019,
+      "timestamp": "2026-10-18T12:58:46.997Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "local.playback_requested",
+      "data": {
+        "playbackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-1",
+        "responseId": "purpose"
+      }
+    },
+    {
+      "sequence": 13,
+      "at": 75158.70000000019,
+      "timestamp": "2026-10-18T12:58:47.026Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "local.playback_start",
+      "data": {
+        "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+        "playbackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-1",
+        "phraseId": "purpose",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "assetId": "purpose",
+        "assetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+        "state": "PLAYING",
+        "queuedAt": 75129.5,
+        "startedAt": 75158.70000000019,
+        "completedAt": null,
+        "interruptedAt": null,
+        "failedAt": null,
+        "completionSource": null,
+        "recipientRevision": 2,
+        "answerConsumed": false,
+        "mode": "local-prerecorded",
+        "textHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 358888,
+          "preGainPeak": 0.19152209162712097,
+          "preGainRms": 0.03159842223338366,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.681313157081604,
+          "postGainRms": 0.1124069815054799,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      }
+    },
+    {
+      "sequence": 14,
+      "at": 82655.79999999981,
+      "timestamp": "2026-10-18T12:58:54.523Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "local.playback_complete",
+      "data": {
+        "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+        "playbackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-1",
+        "phraseId": "purpose",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "assetId": "purpose",
+        "assetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+        "state": "COMPLETED",
+        "queuedAt": 75129.5,
+        "startedAt": 75158.70000000019,
+        "completedAt": 82655.79999999981,
+        "interruptedAt": null,
+        "failedAt": null,
+        "completionSource": "VERIFIED_OUTPUT_ADAPTER",
+        "recipientRevision": 2,
+        "answerConsumed": false,
+        "mode": "local-prerecorded",
+        "textHash": "e9013110ccd2dc639b7d638cd38563b65b4a5bf4a4ed41086072890e88c96e15",
+        "outputProof": "web-audio-source-ended:0023409b-5202-4270-88ea-3693c1a4ec28:playback-1:frames=358888:rate=48000:context=7.482666666666667",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 358888,
+          "preGainPeak": 0.19152209162712097,
+          "preGainRms": 0.03159842223338366,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.681313157081604,
+          "postGainRms": 0.1124069815054799,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      }
+    },
+    {
+      "sequence": 15,
+      "at": 82656,
+      "timestamp": "2026-10-18T12:58:54.523Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "state.changed",
+      "data": {
+        "before": "RIGHT_PERSON",
+        "after": "CONSENT_ASK",
+        "trigger": "explained"
+      }
+    },
+    {
+      "sequence": 16,
+      "at": 94290.39999999944,
+      "timestamp": "2026-10-18T12:59:06.158Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "dynamic.prepare_requested",
+      "data": {
+        "slot": {
+          "kind": "NAME",
+          "phraseId": "intermediary-consent-question",
+          "name": {
+            "original": "Anna Jensen",
+            "source": "contact-data",
+            "evidenceId": "synthetic-contact-fixture",
+            "evidenceText": "synthetic-contact-fixture\nSYNTHETIC rehearsal target: Anna Jensen",
+            "reviewedBy": "local-operator",
+            "reviewedAt": "2026-10-18T12:58:46.728Z",
+            "pronunciationConfirmed": true,
+            "recipientRevision": 2
+          }
+        }
+      }
+    },
+    {
+      "sequence": 17,
+      "at": 94304.29999999981,
+      "timestamp": "2026-10-18T12:59:06.172Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "mock.playback_queued",
+      "data": {
+        "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+        "playbackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-2",
+        "phraseId": "intermediary-consent-question",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "assetId": "intermediary-consent-question",
+        "assetHash": null,
+        "state": "QUEUED",
+        "queuedAt": 94304.29999999981,
+        "startedAt": null,
+        "completedAt": null,
+        "interruptedAt": null,
+        "failedAt": null,
+        "completionSource": null,
+        "recipientRevision": 2,
+        "answerConsumed": false,
+        "mode": "mock",
+        "textHash": "3db29af81fbba5f83f4d002c095b2d9f7e9d72ee40de1114e8d8bbd1135391b1",
+        "repeat": false
+      }
+    },
+    {
+      "sequence": 18,
+      "at": 94304.39999999944,
+      "timestamp": "2026-10-18T12:59:06.172Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "local.playback_requested",
+      "data": {
+        "playbackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-2",
+        "responseId": "intermediary-consent-question",
+        "binding": {
+          "slot": {
+            "kind": "NAME",
+            "phraseId": "intermediary-consent-question",
+            "name": {
+              "original": "Anna Jensen",
+              "source": "contact-data",
+              "evidenceId": "synthetic-contact-fixture",
+              "evidenceText": "synthetic-contact-fixture\nSYNTHETIC rehearsal target: Anna Jensen",
+              "reviewedBy": "local-operator",
+              "reviewedAt": "2026-10-18T12:58:46.728Z",
+              "pronunciationConfirmed": true,
+              "recipientRevision": 2
+            }
+          },
+          "renderedValue": "Anna Jensen",
+          "renderedText": "Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?",
+          "textHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+          "phraseVersion": "stage-2.0c1-approved-1",
+          "rendererVersion": "stage-2.0c2-deterministic-1",
+          "cacheKey": "eac711239c016d763cf4fb27f3ca80f2bdb8e6248fe6aac79944f5aeb52d632b"
+        },
+        "assetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4"
+      }
+    },
+    {
+      "sequence": 19,
+      "at": 94315.79999999981,
+      "timestamp": "2026-10-18T12:59:06.183Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "local.playback_start",
+      "data": {
+        "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+        "playbackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-2",
+        "phraseId": "intermediary-consent-question",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "assetId": "intermediary-consent-question",
+        "assetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+        "state": "PLAYING",
+        "queuedAt": 94304.29999999981,
+        "startedAt": 94315.79999999981,
+        "completedAt": null,
+        "interruptedAt": null,
+        "failedAt": null,
+        "completionSource": null,
+        "recipientRevision": 2,
+        "answerConsumed": false,
+        "mode": "local-prerecorded",
+        "textHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 240744,
+          "preGainPeak": 0.15904152393341064,
+          "preGainRms": 0.024985357889953694,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.5657680630683899,
+          "postGainRms": 0.08888192714659585,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      }
+    },
+    {
+      "sequence": 20,
+      "at": 94576.70000000019,
+      "timestamp": "2026-10-18T12:59:06.444Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "recognition.partial_observed",
+      "data": {
+        "id": "68b22efe-7c5c-4fd8-91a9-b353db4e1ecb",
+        "text": "",
+        "final": false,
+        "source": "manual-rehearsal",
+        "observedAt": 94576.59999999963,
+        "speechStartedAt": 94576.59999999963
+      }
+    },
+    {
+      "sequence": 21,
+      "at": 94576.89999999944,
+      "timestamp": "2026-10-18T12:59:06.444Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "mock.playback_interrupted",
+      "data": {
+        "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+        "playbackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-2",
+        "phraseId": "intermediary-consent-question",
+        "phraseVersion": "stage-2.0c1-approved-1",
+        "assetId": "intermediary-consent-question",
+        "assetHash": "80d93ed36b0ca3ebaa17cc69b49f11184a3e2a0e707ee763eac14a8d9e4028c4",
+        "state": "INTERRUPTED",
+        "queuedAt": 94304.29999999981,
+        "startedAt": 94315.79999999981,
+        "completedAt": null,
+        "interruptedAt": 94576.79999999981,
+        "failedAt": null,
+        "completionSource": null,
+        "recipientRevision": 2,
+        "answerConsumed": true,
+        "mode": "local-prerecorded",
+        "textHash": "447793ab03fee6e30707b35fc402d591a22300f499b12d281fad456f5c5d0e35",
+        "gain": {
+          "gainPolicy": "isabella-calibrated-headroom-v2",
+          "samples": 240744,
+          "preGainPeak": 0.15904152393341064,
+          "preGainRms": 0.024985357889953694,
+          "requestedGain": 3.5573605757216837,
+          "effectiveGain": 3.5573605757216837,
+          "gainApplied": 3.5573605757216837,
+          "postGainPeak": 0.5657680630683899,
+          "postGainRms": 0.08888192714659585,
+          "clippingEvents": 0,
+          "peakProtectionEvents": 0
+        }
+      }
+    },
+    {
+      "sequence": 22,
+      "at": 94577.5,
+      "timestamp": "2026-10-18T12:59:06.445Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "answer.barge_in",
+      "data": {
+        "turnId": "68b22efe-7c5c-4fd8-91a9-b353db4e1ecb",
+        "playbackId": "0023409b-5202-4270-88ea-3693c1a4ec28:playback-2",
+        "speechStartedAt": 94576.59999999963,
+        "eligible": false,
+        "recommendation": "clarify/repeat"
+      }
+    },
+    {
+      "sequence": 23,
+      "at": 117776.09999999963,
+      "timestamp": "2026-10-18T12:59:29.643Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "state.changed",
+      "data": {
+        "before": "CONSENT_ASK",
+        "after": "CONSENT_UNCLEAR",
+        "trigger": "AFFIRMATIVE"
+      }
+    },
+    {
+      "sequence": 24,
+      "at": 117776.09999999963,
+      "timestamp": "2026-10-18T12:59:29.643Z",
+      "callId": "0023409b-5202-4270-88ea-3693c1a4ec28",
+      "event": "turn.recommended",
+      "data": {
+        "turnId": "68b22efe-7c5c-4fd8-91a9-b353db4e1ecb",
+        "intent": "AFFIRMATIVE",
+        "consent": "UNCLEAR",
+        "responseId": "clarify"
+      }
+    }
+  ],
+  "sourceAudioStored": false,
+  "phoneTransport": false,
+  "productionAudio": false,
+  "downstreamConfirmationEmailSent": false,
+  "downstreamBounceMonitoring": false,
+  "note": "Offline rehearsal only. No physical timing, legal authority determination or production consent evidence. Exported text may contain personal data."
+}

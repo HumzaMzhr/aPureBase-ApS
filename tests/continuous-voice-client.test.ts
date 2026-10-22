@@ -8,10 +8,22 @@ class Socket {
  static OPEN=1;static last:Socket;readyState=1;bufferedAmount=0;binaryType='';
  onmessage:((e:{data:string|ArrayBuffer})=>void)|null=null;onerror:(()=>void)|null=null;onclose:(()=>void)|null=null;
  send=vi.fn();close=vi.fn();constructor(){Socket.last=this;}
- event(data:unknown){this.onmessage?.({data:data instanceof ArrayBuffer?data:JSON.stringify(data)});}
+ private identity?:typeof fixtureVoice;private alignment?:Record<string,unknown>;private sequence=0;private samples=0;
+ event(data:unknown){
+  if(data instanceof ArrayBuffer){if(this.identity){const end=this.samples+data.byteLength/2;this.onmessage?.({data:JSON.stringify({type:'alignment',voice:this.identity,...this.alignment,requestId:this.identity.requestId,sequence:this.sequence++,samples:data.byteLength/2,sampleStart:this.samples,sampleEnd:end})});this.samples=end;this.alignment=undefined;}this.onmessage?.({data});return;}
+  const event=data as Record<string,unknown>;if(event.type==='ready')this.identity=event.voice as typeof fixtureVoice;if(event.type==='alignment'){this.alignment=event;return;}this.onmessage?.({data:JSON.stringify(event)});
+ }
+
 }
 beforeEach(()=>{vi.useFakeTimers();vi.stubGlobal('WebSocket',Socket);vi.stubGlobal('location',{protocol:'http:',host:'localhost:5173'});});
 afterEach(()=>{vi.useRealTimers();vi.unstubAllGlobals();});
+it('observes finish watchdog start/expiry, PCM totals and provider metadata without changing the timeout or STOP cleanup',async()=>{
+ const trace=vi.fn(),failure=vi.fn(),audio=vi.fn(),voice=new ContinuousVoice(audio,true,true,failure,{trace});const opening=voice.open('da',new AbortController().signal);Socket.last.event({type:'ready',voice:fixtureVoice});await opening;
+ voice.send('Hej, jeg ringer til dig.');Socket.last.event(new Uint8Array(4800).buffer);Socket.last.event(new Uint8Array(2400).buffer);Socket.last.event({type:'diagnostic',event:'voice.provider_eos_sent',data:{requestId:'provider-generation',providerAt:123,clock:'server-performance.now',audio:'forbidden',authorization:'hidden'}});
+ const finished=voice.finish();const rejected=expect(finished).rejects.toThrow('Voice finalization timed out.');await vi.advanceTimersByTimeAsync(29999);expect(failure).not.toHaveBeenCalled();await vi.advanceTimersByTimeAsync(1);await rejected;
+ expect(trace.mock.calls.map(c=>c[0])).toEqual(expect.arrayContaining(['voice.pcm_received','voice.finish_requested','voice.finalization_timeout_started','voice.finalization_timeout_expired','voice.provider_eos_sent','voice.cleanup']));expect(trace.mock.calls.filter(c=>c[0]==='voice.pcm_received').at(-1)?.[1].totalSamples).toBe(3600);
+ expect(JSON.stringify(trace.mock.calls)).not.toContain('forbidden');expect(JSON.stringify(trace.mock.calls)).not.toContain('hidden');expect(audio).toHaveBeenCalledTimes(2);expect(failure).toHaveBeenCalledOnce();expect(vi.getTimerCount()).toBe(0);
+});
 async function opened(){const audio=vi.fn(),abort=new AbortController(),voice=new ContinuousVoice(audio,true,true);const pending=voice.open('da',abort.signal);Socket.last.event({type:'ready',voice:fixtureVoice});await pending;return{voice,audio,abort,socket:Socket.last};}
 it('joins an immediately following stable phrase to a greeting within 250ms in the same voice socket',async()=>{
  const s=await opened();s.voice.send('Hej.');expect(s.socket.send).not.toHaveBeenCalled();await vi.advanceTimersByTimeAsync(100);s.voice.send('Mit navn er Humza,');expect(s.socket.send).toHaveBeenCalledOnce();expect(JSON.parse(s.socket.send.mock.calls[0][0]).text).toBe('Hej. Mit navn er Humza,');await vi.advanceTimersByTimeAsync(300);expect(s.socket.send).toHaveBeenCalledOnce();s.voice.close();expect(vi.getTimerCount()).toBe(0);
@@ -64,4 +76,34 @@ it('does not create the four-second provider-threshold gap when N+1 content is r
  const deliver=(text:string)=>{const pcm=new Uint8Array(48000);new Int16Array(pcm.buffer).fill(6000);socket.event({type:'alignment',voice:fixtureVoice,alignment:{chars:[...text],charStartTimesMs:[...text].map((_,n)=>n*1000/text.length),charDurationsMs:[...text].map(()=>1000/text.length)}});socket.event(pcm.buffer);};
  let pending='';socket.send.mockImplementation(raw=>{const command=JSON.parse(raw);if(command.type==='text'){if(command.text==='Hej, godmorgen.')setTimeout(()=>deliver(command.text+' '),20);else pending=command.text;}if(command.type==='flush'&&pending){const text=pending;pending='';setTimeout(()=>deliver(text+' '),550);}});
  ledger.register(make('n','Hej, godmorgen.'));voice.send('Hej, godmorgen.');await vi.advanceTimersByTimeAsync(400);expect(hooks.started).toHaveBeenCalledWith('n',expect.any(Number));ledger.register(make('n+1','Jeg hedder Humza.'));voice.send('Jeg hedder Humza.');await vi.advanceTimersByTimeAsync(1600);expect(socket.send.mock.calls.some(c=>JSON.parse(c[0]).type==='flush')).toBe(true);expect(scheduler.schedule).toHaveLength(2);expect(scheduler.schedule[1].start).toBe(scheduler.schedule[0].end);expect(scheduler.gaps).toEqual([]);expect(hooks.started.mock.calls.map(c=>c[0])).toEqual(['n','n+1']);voice.close();scheduler.cancel();expect(vi.getTimerCount()).toBe(0);
+});
+it('requires the matching gateway envelope for every binary block, even after a configured Isabella ready event',async()=>{
+ const s=await opened();s.socket.onmessage?.({data:new Uint8Array(4800).buffer});expect(s.audio).not.toHaveBeenCalled();expect(s.socket.close).toHaveBeenCalledOnce();expect(vi.getTimerCount()).toBe(0);
+});
+it('reproduces the physical failure when a pre-Part-A gateway sends the genuine Isabella identity without a PCM envelope',async()=>{
+ const audio=vi.fn(),failure=vi.fn(),trace=vi.fn(),voice=new ContinuousVoice(audio,true,true,failure,{simultaneous:true,expectedVoice:fixtureVoice,trace});
+ const pending=voice.open('da',new AbortController().signal);Socket.last.event({type:'ready',voice:fixtureVoice});await pending;
+ voice.send('Hej, godmorgen');voice.send('Jeg hedder Humza.');await vi.advanceTimersByTimeAsync(250);
+ // Exact alignment shape from the module loaded by the Oct 16 server process.
+ // Calling onmessage directly avoids the fixture's automatic envelope upgrade.
+ const saved=Socket.last.onmessage!;saved({data:JSON.stringify({type:'alignment',voice:fixtureVoice,alignment:{chars:['H'],charStartTimesMs:[0],charDurationsMs:[10]},samples:2400})});saved({data:new Uint8Array(4800).buffer});
+ expect(failure).toHaveBeenCalledOnce();expect(failure.mock.calls[0][0].message).toBe('ElevenLabs voice unavailable or identity rejected. No fallback audio.');
+ expect(audio).not.toHaveBeenCalled();expect(trace.mock.calls.some(c=>c[0]==='VOICE_READY')).toBe(true);expect(trace.mock.calls.some(c=>c[0]==='voice.pcm_received')).toBe(false);expect(trace.mock.calls.some(c=>c[0]==='VOICE_PROVENANCE_VERIFIED')).toBe(false);
+ expect(Socket.last.close).toHaveBeenCalledOnce();expect(()=>voice.send('No fallback')).toThrow('ElevenLabs');expect(vi.getTimerCount()).toBe(0);
+});
+it('rejects a distinct request identity injected into an existing verified physical connection instead of trusting the connection globally',async()=>{
+ const s=await opened();const changed={...fixtureVoice,requestId:'different-request-on-same-socket'};
+ s.socket.onmessage?.({data:JSON.stringify({type:'alignment',voice:changed,requestId:changed.requestId,sequence:0,sampleStart:0,sampleEnd:2400,samples:2400})});
+ s.socket.onmessage?.({data:new Uint8Array(4800).buffer});expect(s.audio).not.toHaveBeenCalled();expect(s.socket.close).toHaveBeenCalledOnce();expect(vi.getTimerCount()).toBe(0);
+});
+it('marks an unpunctuated complete Danish greeting for initial generation without waiting for a second semantic unit',async()=>{
+ const s=await opened();s.voice.send('Hej, godmorgen');expect(s.socket.send).toHaveBeenCalledOnce();expect(JSON.parse(s.socket.send.mock.calls[0][0])).toMatchObject({text:'Hej, godmorgen',initialSentence:true});s.voice.close();expect(vi.getTimerCount()).toBe(0);
+});
+it('rejects a stale request, a repeated sequence and a mismatched sample range before delivering tail PCM',async()=>{
+ for(const wrong of [{requestId:'old-request'},{sequence:9},{sampleEnd:2401}]){
+  const s=await opened();s.socket.onmessage?.({data:JSON.stringify({type:'alignment',voice:fixtureVoice,requestId:fixtureVoice.requestId,sequence:0,sampleStart:0,sampleEnd:2400,samples:2400,...wrong})});s.socket.onmessage?.({data:new Uint8Array(4800).buffer});expect(s.audio).not.toHaveBeenCalled();expect(s.socket.close).toHaveBeenCalledOnce();
+ }
+});
+it('normal EOS seals the final Tak receipts, ignores stale saved callbacks and never creates cleanup audio',async()=>{
+ const s=await opened();s.voice.send('Tak.');const done=s.voice.finish(),saved=s.socket.onmessage!;s.socket.event(new Uint8Array(1318).buffer);expect(s.audio).toHaveBeenCalledOnce();s.socket.event({type:'done'});await done;saved({data:new Uint8Array(4800).buffer});expect(s.audio).toHaveBeenCalledOnce();expect(vi.getTimerCount()).toBe(0);
 });

@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "aPureBase consolidated C32 local human retest export",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "kind",
+    "candidate",
+    "reviewerName",
+    "reviewTimestamp",
+    "machineBrowserMetadata",
+    "listeningReviews",
+    "microphoneObservations",
+    "emailRecoveryEvidence",
+    "naturalCallObservations",
+    "safetyObservations",
+    "safetyComment",
+    "gates",
+    "overallHumanResult",
+    "stageAccepted",
+    "productionReady",
+    "telephoneVerified",
+    "sourceAudioStored",
+    "authenticatedReviewer",
+    "evidenceOrigin",
+    "businessPending"
+  ],
+  "properties": {
+    "schema": {
+      "const": "stage-2.0c32-email-architecture-1"
+    },
+    "kind": {
+      "const": "CONSOLIDATED_LOCAL_HUMAN_RETEST_NOT_PRODUCTION_CONSENT"
+    },
+    "candidate": {
+      "type": "object",
+      "required": [
+        "baseCommit",
+        "coreSourceHash",
+        "handoffSourceHash",
+        "candidateSourceHash",
+        "uncommitted",
+        "packageVersion"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "coreSourceHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "handoffSourceHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "candidateSourceHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "baseCommit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "uncommitted": {
+          "const": true
+        },
+        "packageVersion": {
+          "const": "stage-2.0c32-email-architecture-1"
+        }
+      }
+    },
+    "reviewerName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "reviewTimestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "machineBrowserMetadata": {},
+    "listeningReviews": {
+      "type": "array"
+    },
+    "microphoneObservations": {
+      "type": "array"
+    },
+    "emailRecoveryEvidence": {
+      "type": "array"
+    },
+    "naturalCallObservations": {
+      "type": "array"
+    },
+    "safetyObservations": {},
+    "safetyComment": {},
+    "gates": {},
+    "overallHumanResult": {
+      "enum": [
+        "HUMAN_RETEST_PASS",
+        "HUMAN_RETEST_FAIL",
+        "HUMAN_RETEST_INCOMPLETE"
+      ]
+    },
+    "stageAccepted": {
+      "const": false
+    },
+    "productionReady": {
+      "const": false
+    },
+    "telephoneVerified": {
+      "const": false
+    },
+    "sourceAudioStored": {
+      "const": false
+    },
+    "authenticatedReviewer": {
+      "const": false
+    },
+    "evidenceOrigin": {},
+    "businessPending": {}
+  },
+  "$comment": "The bundled verify-review.mjs additionally enforces exact candidate identities, hearing/hash/score/comment bindings, genuine-final lifecycle, correction links, recomputed gates, safety and non-production flags."
+}

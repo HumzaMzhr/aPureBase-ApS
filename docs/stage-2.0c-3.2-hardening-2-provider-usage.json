@@ -1,0 +1,30 @@
+{
+  "thisRemediation": {
+    "status": "AUDIT_RUN_VERIFIED",
+    "ElevenLabsRequests": 0,
+    "OpenAIRequests": 0,
+    "telephoneCalls": 0,
+    "newAudioGenerations": 0,
+    "liveMicrophoneSessions": 0,
+    "paidCharacters": 0,
+    "basis": "Executed local command log, injected transport/output factories, no microphone/audio playback UI start, receipt journal empty. GitHub reads are not provider inference."
+  },
+  "repositoryEvidence": {
+    "status": "REPOSITORY_EVIDENCE",
+    "oldReportsDeclaredC32": {
+      "ElevenLabs": 0,
+      "OpenAI": 0,
+      "audio": 0
+    },
+    "oldAssetHashesPreserved": true,
+    "limitation": "Repository declarations/hashes cannot prove complete external account activity."
+  },
+  "historicalTotals": {
+    "status": "EXTERNAL_LEDGER_UNKNOWN",
+    "ElevenLabsRequests": "UNKNOWN",
+    "OpenAIRequests": "UNKNOWN",
+    "telephoneCalls": "UNKNOWN",
+    "audioGenerations": "UNKNOWN"
+  },
+  "future": "RequestJournal + journalRequest: metadata/hash-only, explicit work invocation; no provider transport installed; no request performed to populate journal."
+}

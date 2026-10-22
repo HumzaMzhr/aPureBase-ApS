@@ -1,0 +1,9 @@
+
+ RUN  v4.1.11 /private/tmp/c32-email-freeze/validation-frozen/tree
+
+
+ Test Files  13 passed (13)
+      Tests  496 passed (496)
+   Start at  05:47:08
+   Duration  974ms (transform 1.36s, setup 0ms, import 2.72s, tests 1.72s, environment 1ms)
+

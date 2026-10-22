@@ -1,0 +1,3 @@
+PASS: exact candidate export contract; human judgments are not authenticated or automatically accepted.
+Command: ./runtime/arm64/node ./verify-review.mjs sealed-technical-export-INCOMPLETE.json
+Result: HUMAN_RETEST_INCOMPLETE; no human review/microphone/email/natural-call rows.

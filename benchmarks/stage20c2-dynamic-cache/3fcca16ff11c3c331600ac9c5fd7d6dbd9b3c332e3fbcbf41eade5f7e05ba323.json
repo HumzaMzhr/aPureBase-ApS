@@ -1,0 +1,62 @@
+{
+  "phraseId": "receptionist-target-request",
+  "wordingVersion": "stage-2.0c1-approved-1",
+  "text": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende?",
+  "textHash": "1a6ca327138d6703af73d7b47ded31b0d27d15adac42d63e5bfd939ce614c2ec",
+  "assetHash": "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8",
+  "path": "http://127.0.0.1:5180/cache/3fcca16ff11c3c331600ac9c5fd7d6dbd9b3c332e3fbcbf41eade5f7e05ba323.wav",
+  "voice": {
+    "provider": "ElevenLabs",
+    "name": "Isabella",
+    "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+    "modelId": "eleven_flash_v2_5",
+    "speed": 0.95
+  },
+  "requestedSpeed": 0.95,
+  "generatedAt": "2026-10-18T12:32:08.074Z",
+  "duration": 5.2941666666666665,
+  "samples": 127060,
+  "sampleRate": 24000,
+  "mediaFormat": "wav-pcm-s16le-mono",
+  "provenance": {
+    "verified": true,
+    "method": "authenticated-provider-response-and-content-hash",
+    "providerRequestId": "6UQm54j8wpNNJkSnuCBQ",
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+    "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+  },
+  "verification": {
+    "mediaValid": true,
+    "nonSilent": true,
+    "clippingEvents": 0,
+    "rawPeak": 0.158721923828125,
+    "gainApplied": 3.5573605757216837,
+    "peakProtectionEvents": 0,
+    "outputPeak": 0.5646311044692993
+  },
+  "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+  "businessWordingApproved": true,
+  "productionApproved": false,
+  "binding": {
+    "slot": {
+      "kind": "NAME",
+      "phraseId": "receptionist-target-request",
+      "name": {
+        "original": "Jens Hansen",
+        "source": "contact-data",
+        "evidenceId": "synthetic-contact-fixture",
+        "evidenceText": "SYNTHETIC rehearsal target: Jens Hansen",
+        "reviewedBy": "local-rehearsal-fixture",
+        "reviewedAt": "2026-10-18T00:00:00.000Z",
+        "pronunciationConfirmed": true,
+        "recipientRevision": 1
+      }
+    },
+    "renderedValue": "Jens Hansen",
+    "renderedText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende?",
+    "textHash": "1a6ca327138d6703af73d7b47ded31b0d27d15adac42d63e5bfd939ce614c2ec",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "rendererVersion": "stage-2.0c2-deterministic-1",
+    "cacheKey": "3fcca16ff11c3c331600ac9c5fd7d6dbd9b3c332e3fbcbf41eade5f7e05ba323"
+  }
+}

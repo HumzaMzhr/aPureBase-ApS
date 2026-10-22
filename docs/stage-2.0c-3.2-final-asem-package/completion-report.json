@@ -1,0 +1,1356 @@
+{
+  "status": "FINAL ASEM RETEST PACKAGE READY",
+  "stageStatus": "NOT ACCEPTED / NOT PRODUCTION READY",
+  "delivery": {
+    "zipPath": "/Users/humzamazhar/Downloads/aPureBase-C32-Final-Consolidated-Asem-Human-Retest.zip",
+    "sha256": "c25637fe96861c172901f23fee8bb39e274b27e0d7b7b76905d72a14f500b088",
+    "bytes": 91812065,
+    "candidate": {
+      "baseCommit": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+      "coreSourceHash": "cda13e62d921062f0a734589e992b460d643ef2c912c5d5436eb08fed6c82eea",
+      "handoffSourceHash": "cf88b228269297d9bb0ef10653e8dd832a3330f8ff3462cee9e2aab9b4bd7fff",
+      "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+      "uncommitted": true,
+      "packageVersion": "stage-2.0c32-consolidated-human-retest-1"
+    },
+    "sourceZIP": "/private/tmp/c32-final-asem-package/aPureBase-C32-Final-Consolidated-Asem-Human-Retest.zip"
+  },
+  "packageVerification": {
+    "status": "PASS",
+    "zipSHA256": "c25637fe96861c172901f23fee8bb39e274b27e0d7b7b76905d72a14f500b088",
+    "zipBytes": 91812065,
+    "sourceRecordsUnchanged": {
+      "validatedCore": 347,
+      "handoff": 18
+    },
+    "manifestFiles": 64,
+    "exactCurrentBindings": 38,
+    "uniqueCurrentAudio": 37,
+    "listeningActualSourceEnded": 16,
+    "humanReviewsFabricated": 0,
+    "packagedCredentialsOrForbiddenPrivateFiles": 0,
+    "secretPatternFindings": 0,
+    "whitespace": "PASS",
+    "mainCheckoutClean": true,
+    "mainHEAD": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+    "providerRequestsDuringConstruction": 0,
+    "audioGenerationDuringConstruction": 0,
+    "stageAccepted": false,
+    "productionReady": false,
+    "technicalExportResult": "HUMAN_RETEST_INCOMPLETE"
+  },
+  "regressions": [
+    {
+      "label": "c32-focused",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "/private/tmp/c32-final-asem-package/validation-sealed/tree/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-stage20c32-candidates.test.ts",
+        "tests/consent-stage20c32-email.test.ts",
+        "tests/consent-stage20c32-feedback-closure.test.ts",
+        "tests/consent-stage20c32-hardening.test.ts",
+        "tests/consent-stage20c32-package.test.ts",
+        "tests/consent-stage20c32-remediation.test.ts",
+        "tests/consent-stage20c32-speech.test.tsx"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 3.884,
+      "testsPassed": 581,
+      "testFiles": 7
+    },
+    {
+      "label": "c31",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "/private/tmp/c32-final-asem-package/validation-sealed/tree/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-stage20c3.test.ts",
+        "tests/consent-stage20c3-view.test.tsx",
+        "tests/consent-stage20c31.test.ts",
+        "tests/consent-stage20c31-view.test.tsx",
+        "tests/consent-stage20c31-gateway.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.852,
+      "testsPassed": 139,
+      "testFiles": 5
+    },
+    {
+      "label": "prior-consent",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "/private/tmp/c32-final-asem-package/validation-sealed/tree/node_modules/vitest/vitest.mjs",
+        "run",
+        "tests/consent-foundation.test.ts",
+        "tests/consent-stage20b.test.tsx",
+        "tests/consent-stage20b2.test.tsx",
+        "tests/consent-stage20c1.test.ts",
+        "tests/consent-stage20c2.test.ts",
+        "tests/consent-stage20c3-view.test.tsx",
+        "tests/consent-stage20c3.test.ts",
+        "tests/consent-stage20c31-gateway.test.ts",
+        "tests/consent-stage20c31-view.test.tsx",
+        "tests/consent-stage20c31.test.ts",
+        "tests/consent-transcription.test.ts",
+        "tests/consent-view.test.tsx",
+        "tests/stage196-short-consent.test.ts"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 1.982,
+      "testsPassed": 496,
+      "testFiles": 13
+    },
+    {
+      "label": "full",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 10.097,
+      "testsPassed": 1701,
+      "testFiles": 85
+    },
+    {
+      "label": "lint",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 3.287,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "typecheck",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 5.017,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 6.165,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "c32-build",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "/private/tmp/c32-final-asem-package/validation-sealed/tree/node_modules/vite/bin/vite.js",
+        "build",
+        "--config",
+        "src/consent/stage32/vite.config.ts",
+        "--outDir",
+        "/private/tmp/c32-final-asem-package/validation-sealed/c32-build"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.848,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "handoff-build",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "/private/tmp/c32-final-asem-package/validation-sealed/tree/node_modules/vite/bin/vite.js",
+        "build",
+        "--config",
+        "scripts/stage20c32-handoff.vite.ts",
+        "--outDir",
+        "/private/tmp/c32-final-asem-package/validation-sealed/handoff-build"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.83,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "preservation-c31",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "--import",
+        "tsx",
+        "scripts/verify-stage20c31.ts"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.344,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "preservation-c32",
+      "command": [
+        "python3",
+        "scripts/verify-stage20c32-feedback-closure.py"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.572,
+      "testsPassed": null,
+      "testFiles": null
+    },
+    {
+      "label": "package-hashes",
+      "command": [
+        "/private/tmp/c32-final-asem-package/sealed-extracted/aPureBase-C32-Final-Asem-Retest/runtime/arm64/node",
+        "/private/tmp/c32-final-asem-package/sealed-extracted/aPureBase-C32-Final-Asem-Retest/verify.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.272,
+      "testsPassed": null,
+      "testFiles": null
+    }
+  ],
+  "listeningInventory": [
+    {
+      "phraseId": "consent-question",
+      "reviewKey": "consent-question:055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "name": "Consent Question",
+      "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Må a Pure Base sende relevant faglig information til dig via e-mail?",
+      "currentAssetHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "assetPath": "/audio/consent-stage20c31/055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af.wav",
+      "actualLoadURL": "/audio/consent-stage20c31/055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [
+        "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [
+            {
+              "stage": "C-3.2",
+              "source": "latest-export",
+              "actionIndex": 1,
+              "decision": "PASS",
+              "ratings": {
+                "naturalness": 4,
+                "pronunciation": 2,
+                "pace": 4
+              },
+              "comment": "",
+              "heardExactAsset": true,
+              "audioHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af"
+            }
+          ],
+          "id": "C-3:listening:3",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[3]",
+          "sourceActionIndex": 3,
+          "phraseId": "consent-question",
+          "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "canonicalTextHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+          "audioHashHeard": "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "verbatimComment": "aPureBase sounds strange - ",
+          "businessMechanismPending": false,
+          "identifiedProblem": "aPureBase sounds strange - ",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": true
+          },
+          "replacementChain": [
+            "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af"
+          ],
+          "status": "UNRESOLVED"
+        },
+        {
+          "canonicalVersion": "stage-2.0c31-candidate-1",
+          "synthesisVersion": "stage-2.0c31-candidate-1:provider-input",
+          "subsequentlyChanged": false,
+          "replacementPhrase": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": null,
+          "replacementActuallyGenerated": false,
+          "replacementWiredIntoC32": false,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3.2:listening:1",
+          "stage": "C-3.2",
+          "source": "APureBase C32 Human Review.json:phraseReviews[1]",
+          "sourceActionIndex": 1,
+          "phraseId": "consent-question",
+          "canonicalText": "Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "canonicalTextHash": "50d04c73e833ffaff11406beb5ecf32c271c9d2b4e2265c89d27cd5d2b6723d8",
+          "audioHashHeard": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+          "ratings": {
+            "naturalness": 4,
+            "pronunciation": 2,
+            "pace": 4
+          },
+          "decision": "PASS",
+          "verbatimComment": "",
+          "businessMechanismPending": false,
+          "identifiedProblem": "Weak human quality rating; exact phoneme unspecified unless separately reported",
+          "flags": {
+            "weakPronunciation": true,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": false,
+            "conflictingPass": true
+          },
+          "replacementChain": [],
+          "status": "UNRESOLVED"
+        }
+      ],
+      "context": "Existing current exact asset remains pronunciation 2/5 despite PASS. It has NOT been automatically fixed; another native verdict is required.",
+      "replacement": true
+    },
+    {
+      "phraseId": "email-request",
+      "reviewKey": "email-request:296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "name": "Email Request",
+      "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+      "synthesisText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+      "currentAssetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "canonicalVersion": "stage-2.0c1-approved-1",
+      "assetPath": "/audio/consent-stage20c1/c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6.wav",
+      "actualLoadURL": "/audio/consent-stage20c1/c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": false,
+          "replacementPhrase": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "replacementVersion": "stage-2.0c1-approved-1",
+          "replacementAudioHash": null,
+          "replacementActuallyGenerated": false,
+          "replacementWiredIntoC32": false,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:4",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[4]",
+          "sourceActionIndex": 4,
+          "phraseId": "email-request",
+          "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "canonicalTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+          "audioHashHeard": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "verbatimComment": "",
+          "businessMechanismPending": false,
+          "identifiedProblem": null,
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": false,
+            "conflictingPass": false
+          },
+          "replacementChain": [],
+          "status": "UNRESOLVED"
+        },
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": false,
+          "replacementPhrase": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "replacementVersion": "stage-2.0c1-approved-1",
+          "replacementAudioHash": null,
+          "replacementActuallyGenerated": false,
+          "replacementWiredIntoC32": false,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3.2:listening:2",
+          "stage": "C-3.2",
+          "source": "APureBase C32 Human Review.json:phraseReviews[2]",
+          "sourceActionIndex": 2,
+          "phraseId": "email-request",
+          "canonicalText": "Tak. Hvilken e-mailadresse må vi sende informationen til?",
+          "canonicalTextHash": "c76f6b07f9ee7c4fee1498fcd350d0a0ff9d62449736e163af3a4de83d1398a6",
+          "audioHashHeard": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+          "ratings": {
+            "naturalness": 4,
+            "pronunciation": 2,
+            "pace": 4
+          },
+          "decision": "PASS",
+          "verbatimComment": "",
+          "businessMechanismPending": false,
+          "identifiedProblem": "Weak human quality rating; exact phoneme unspecified unless separately reported",
+          "flags": {
+            "weakPronunciation": true,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": false,
+            "conflictingPass": true
+          },
+          "replacementChain": [],
+          "status": "UNRESOLVED"
+        }
+      ],
+      "context": "Existing current exact asset remains pronunciation 2/5 despite PASS. It has NOT been automatically fixed; another native verdict is required.",
+      "replacement": false
+    },
+    {
+      "phraseId": "success-close",
+      "reviewKey": "success-close:e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "name": "Success Close",
+      "canonicalText": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+      "synthesisText": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+      "currentAssetHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+      "canonicalVersion": "stage-2.0c32-candidate-1",
+      "assetPath": "/audio/consent-stage20c32/e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908.wav",
+      "actualLoadURL": "/audio/consent-stage20c32/e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [
+        "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+          "replacementVersion": "stage-2.0c32-candidate-1",
+          "replacementAudioHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:6",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[6]",
+          "sourceActionIndex": 6,
+          "phraseId": "success-close",
+          "canonicalText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+          "canonicalTextHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+          "audioHashHeard": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "verbatimComment": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag. <- doesnt explain how you can unsubsribe again",
+          "businessMechanismPending": true,
+          "identifiedProblem": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag. <- doesnt explain how you can unsubsribe again",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": true
+          },
+          "replacementChain": [
+            "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908"
+          ],
+          "status": "UNRESOLVED"
+        },
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.",
+          "replacementVersion": "stage-2.0c32-candidate-1",
+          "replacementAudioHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3.2:listening:4",
+          "stage": "C-3.2",
+          "source": "APureBase C32 Human Review.json:phraseReviews[4]",
+          "sourceActionIndex": 4,
+          "phraseId": "success-close",
+          "canonicalText": "Perfekt, mange tak for din tid. Du kan altid framelde dig igen. Hav en god dag.",
+          "canonicalTextHash": "73d1b08bcda88782c346088d8f1675df6404378d84505c431dedcc07bc166e49",
+          "audioHashHeard": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+          "ratings": {
+            "naturalness": 4,
+            "pronunciation": 2,
+            "pace": 4
+          },
+          "decision": "FAIL",
+          "verbatimComment": "frameldte < it pronounced a t ",
+          "businessMechanismPending": false,
+          "identifiedProblem": "Weak human quality rating; exact phoneme unspecified unless separately reported",
+          "flags": {
+            "weakPronunciation": true,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "Previous framelde pronunciation concern. The authorized wording now uses sige fra. New C32 bytes are unreviewed.",
+      "replacement": true
+    },
+    {
+      "phraseId": "refusal-close",
+      "reviewKey": "refusal-close:b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+      "name": "Refusal Close",
+      "canonicalText": "Det er helt i orden. Tak for din tid. God dag.",
+      "synthesisText": "Det er helt i orden. Tak for din tid. God dag.",
+      "currentAssetHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "assetPath": "/audio/consent-stage20c31/b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a.wav",
+      "actualLoadURL": "/audio/consent-stage20c31/b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [
+        "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Det er helt i orden. Tak for din tid. God dag.",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:8",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[8]",
+          "sourceActionIndex": 8,
+          "phraseId": "refusal-close",
+          "canonicalText": "Det er helt i orden. Tak for din tid, og hav en god dag.",
+          "canonicalTextHash": "b5cb3098fef60f1cbd4563cf14808c3cd3085ce730c08eb01a459a2dfb1f0acd",
+          "audioHashHeard": "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "verbatimComment": " hav <- sounds strange in danish the V would be silent ",
+          "businessMechanismPending": false,
+          "identifiedProblem": " hav <- sounds strange in danish the V would be silent ",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "This exact replacement/asset has no native approval. Compare the preserved historical context below.",
+      "replacement": true
+    },
+    {
+      "phraseId": "about-apurebase",
+      "reviewKey": "about-apurebase:b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+      "name": "About aPureBase",
+      "canonicalText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+      "synthesisText": "aPureBase formidler relevant faglig information til sundhedspersoner.",
+      "currentAssetHash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+      "canonicalVersion": "stage-2.0c1-approved-1",
+      "assetPath": "/audio/consent-stage20c1/6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6.wav",
+      "actualLoadURL": "/audio/consent-stage20c1/6ada746b87baba47d28edf1b40ce48e0a6e3cc0b9ee6f1ca3f2f5042642804b6.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [],
+      "history": [],
+      "context": "This exact replacement/asset has no native approval. Compare the preserved historical context below.",
+      "replacement": false
+    },
+    {
+      "phraseId": "explanation",
+      "reviewKey": "explanation:ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+      "name": "Explanation",
+      "canonicalText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+      "synthesisText": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+      "currentAssetHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "assetPath": "/audio/consent-stage20c31/ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665.wav",
+      "actualLoadURL": "/audio/consent-stage20c31/ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [
+        "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:10",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[10]",
+          "sourceActionIndex": 10,
+          "phraseId": "explanation",
+          "canonicalText": "Det kan blandt andet være information om sygdomsområder, produkter og medicinske opdateringer.",
+          "canonicalTextHash": "4d4bd86e384a4a918b1852c49827a6e9b9122d096d83b2b9fe385124546a088a",
+          "audioHashHeard": "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "verbatimComment": "sygdomsområder, produkter og medicinske opdateringer. <. not correct danish I think (medicinske opdateringer)",
+          "businessMechanismPending": false,
+          "identifiedProblem": "sygdomsområder, produkter og medicinske opdateringer. <. not correct danish I think (medicinske opdateringer)",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "This exact replacement/asset has no native approval. Compare the preserved historical context below.",
+      "replacement": true
+    },
+    {
+      "phraseId": "why-calling",
+      "reviewKey": "why-calling:b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+      "name": "Why Calling",
+      "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+      "synthesisText": "Jeg ringer kun for at spørge om a Pure Base må sende dig relevant faglig information via e-mail.",
+      "currentAssetHash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+      "canonicalVersion": "stage-2.0c32-candidate-1",
+      "assetPath": "/audio/consent-stage20c32/b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff.wav",
+      "actualLoadURL": "/audio/consent-stage20c32/b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [
+        "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+        "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+          "replacementVersion": "stage-2.0c32-candidate-1",
+          "replacementAudioHash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:11",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[11]",
+          "sourceActionIndex": 11,
+          "phraseId": "why-calling",
+          "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+          "canonicalTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+          "audioHashHeard": "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "verbatimComment": "it stops after jeg - and starts again . not fluent",
+          "businessMechanismPending": false,
+          "identifiedProblem": "it stops after jeg - and starts again . not fluent",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+            "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        },
+        {
+          "canonicalVersion": "stage-2.0c31-candidate-1",
+          "synthesisVersion": "stage-2.0c31-candidate-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+          "replacementVersion": "stage-2.0c32-candidate-1",
+          "replacementAudioHash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3.2:listening:0",
+          "stage": "C-3.2",
+          "source": "APureBase C32 Human Review.json:phraseReviews[0]",
+          "sourceActionIndex": 0,
+          "phraseId": "why-calling",
+          "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+          "canonicalTextHash": "2a1e8e2bf80cc6ef9d9eddf3d14c6683ef8e89da244ff4be0ceb65a590c06f6f",
+          "audioHashHeard": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+          "ratings": {
+            "naturalness": 4,
+            "pronunciation": 2,
+            "pace": 4
+          },
+          "decision": "PASS",
+          "verbatimComment": "",
+          "businessMechanismPending": false,
+          "identifiedProblem": "Weak human quality rating; exact phoneme unspecified unless separately reported",
+          "flags": {
+            "weakPronunciation": true,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": false,
+            "conflictingPass": true
+          },
+          "replacementChain": [
+            "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        },
+        {
+          "canonicalVersion": null,
+          "synthesisVersion": null,
+          "subsequentlyChanged": false,
+          "replacementPhrase": null,
+          "replacementVersion": null,
+          "replacementAudioHash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "REFER_TO_FINAL_VALIDATION_AND_EXACT_ASSET_TABLE",
+          "humanRetest": [],
+          "id": "relayed:sende-dig",
+          "stage": "C-3.2 user-relayed",
+          "phraseId": "why-calling",
+          "canonicalText": "Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.",
+          "audioHashHeard": "147ff7168b2e900239d6f6f5723de61c55c175f56d1793d25da972ad9ca609bb",
+          "ratings": null,
+          "decision": null,
+          "verbatimComment": null,
+          "relayedDescription": "Written sende dig; reported sente dej; expected approximately sene dej. This is a user-relayed description, not a verbatim Asem review comment.",
+          "source": "dcd48e56-2c7d-40f2-b9e5-59102640016f/Pasted text.txt:84-110 (relayed description, not a recorded verbatim Asem quote)",
+          "identifiedProblem": "Connected-speech consonant, not canonical spelling",
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "Previous unnatural pause/flow and sende dig connected-speech concern. New C32 bytes require a native verdict; no silence or pronunciation improvement is assumed.",
+      "replacement": true
+    },
+    {
+      "phraseId": "unsubscribe",
+      "reviewKey": "unsubscribe:5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+      "name": "Unsubscribe",
+      "canonicalText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+      "synthesisText": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+      "currentAssetHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "assetPath": "/audio/consent-stage20c31/5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483.wav",
+      "actualLoadURL": "/audio/consent-stage20c31/5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [
+        "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:12",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[12]",
+          "sourceActionIndex": 12,
+          "phraseId": "unsubscribe",
+          "canonicalText": "Ja. Du kan altid framelde dig igen, hvis du ikke længere ønsker at modtage informationen.",
+          "canonicalTextHash": "e95d7a401fa4856920ed7602799c144527a8065e4d32506a5f142dcd783ccf4a",
+          "audioHashHeard": "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "verbatimComment": "framelde <- the D her is silent in danish ",
+          "businessMechanismPending": false,
+          "identifiedProblem": "framelde <- the D her is silent in danish ",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "This exact replacement/asset has no native approval. Compare the preserved historical context below.",
+      "replacement": true
+    },
+    {
+      "phraseId": "clarify",
+      "reviewKey": "clarify:55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+      "name": "Clarify",
+      "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+      "synthesisText": "Selvfølgelig. Må a Pure Base sende relevant faglig information til dig via e-mail?",
+      "currentAssetHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+      "canonicalVersion": "stage-2.0c32-clarify-ab-1",
+      "assetPath": "/audio/consent-stage20c32/55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420.wav",
+      "actualLoadURL": "/audio/consent-stage20c32/55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [
+        "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "replacementVersion": "stage-2.0c32-clarify-ab-1",
+          "replacementAudioHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:14",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[14]",
+          "sourceActionIndex": 14,
+          "phraseId": "clarify",
+          "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "canonicalTextHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+          "audioHashHeard": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "verbatimComment": "",
+          "businessMechanismPending": false,
+          "identifiedProblem": null,
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": false,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        },
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "replacementVersion": "stage-2.0c32-clarify-ab-1",
+          "replacementAudioHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3.2:listening:3",
+          "stage": "C-3.2",
+          "source": "APureBase C32 Human Review.json:phraseReviews[3]",
+          "sourceActionIndex": 3,
+          "phraseId": "clarify",
+          "canonicalText": "Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?",
+          "canonicalTextHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+          "audioHashHeard": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+          "ratings": {
+            "naturalness": 4,
+            "pronunciation": 2,
+            "pace": 4
+          },
+          "decision": "PASS",
+          "verbatimComment": "",
+          "businessMechanismPending": false,
+          "identifiedProblem": "Weak human quality rating; exact phoneme unspecified unless separately reported",
+          "flags": {
+            "weakPronunciation": true,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": false,
+            "conflictingPass": true
+          },
+          "replacementChain": [
+            "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "Previous pronunciation 2/5 despite PASS. New synthesis-only a Pure Base alias; canonical consent question unchanged.",
+      "replacement": true
+    },
+    {
+      "phraseId": "stop-contact-close",
+      "reviewKey": "stop-contact-close:8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+      "name": "Stop Contact Close",
+      "canonicalText": "Det forstår jeg. Tak for din tid. God dag.",
+      "synthesisText": "Det forstår jeg. Tak for din tid. God dag.",
+      "currentAssetHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "assetPath": "/audio/consent-stage20c31/8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955.wav",
+      "actualLoadURL": "/audio/consent-stage20c31/8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [
+        "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Det forstår jeg. Tak for din tid. God dag.",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:23",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[23]",
+          "sourceActionIndex": 23,
+          "phraseId": "stop-contact-close",
+          "canonicalText": "Det forstår jeg. Tak for din tid, og hav en god dag.",
+          "canonicalTextHash": "01044caa100080167e93c67441edb46fd399f232a008844185dd8f7c51570f25",
+          "audioHashHeard": "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "verbatimComment": "hav V is silent in danish ",
+          "businessMechanismPending": false,
+          "identifiedProblem": "hav V is silent in danish ",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "This exact replacement/asset has no native approval. Compare the preserved historical context below.",
+      "replacement": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "reviewKey": "email-readback-intro:042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+      "name": "Corrected Diagnostic Email Readback — anna3.test-7@clinic.dk",
+      "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "synthesisText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "currentAssetHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "assetPath": "/audio/consent-stage20c31/042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9.wav",
+      "actualLoadURL": "/audio/consent-stage20c31/042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9.wav",
+      "diagnosticOnly": true,
+      "historicalAssetHashes": [
+        "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:25",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[25]",
+          "sourceActionIndex": 25,
+          "phraseId": "email-readback-intro",
+          "canonicalText": "a, en, en, a, tre, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+          "canonicalTextHash": "390cf31229a800c0a839e0d9c6ca42b18b50834d3d0126abdf1741fa25f52a16",
+          "audioHashHeard": "b556f09dddd1d9309f8dff3fc1df049c0e1bb3efbf80d961ef4e3df341301e86",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "verbatimComment": "N she says EN but the danish pronunciation is ÆN or AEN",
+          "businessMechanismPending": false,
+          "identifiedProblem": "N she says EN but the danish pronunciation is ÆN or AEN",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "This exact replacement/asset has no native approval. Compare the preserved historical context below.",
+      "replacement": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "reviewKey": "email-readback-intro:21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+      "name": "Corrected Diagnostic Email Readback — anna@clinic.dk",
+      "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "synthesisText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "currentAssetHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "assetPath": "/audio/consent-stage20c31/21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53.wav",
+      "actualLoadURL": "/audio/consent-stage20c31/21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53.wav",
+      "diagnosticOnly": true,
+      "historicalAssetHashes": [
+        "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:27",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[27]",
+          "sourceActionIndex": 27,
+          "phraseId": "email-readback-intro",
+          "canonicalText": "a, en, en, a, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+          "canonicalTextHash": "5b56476b0b1b1102554d705206545a005959b59180afe6e624fa71b79061793f",
+          "audioHashHeard": "dcaacb22b34ff576464a49bff4f08dc0e12557b2b4bd98f90f437f65eceed3d8",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "verbatimComment": "totally fucked",
+          "businessMechanismPending": false,
+          "identifiedProblem": "totally fucked",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "This exact replacement/asset has no native approval. Compare the preserved historical context below.",
+      "replacement": true
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "reviewKey": "receptionist-target-request:fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+      "name": "Corrected Receptionist Target Request — Jens Hansen",
+      "canonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+      "synthesisText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+      "currentAssetHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "assetPath": "/audio/consent-stage20c31/fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc.wav",
+      "actualLoadURL": "/audio/consent-stage20c31/fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [
+        "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:28",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[28]",
+          "sourceActionIndex": 28,
+          "phraseId": "receptionist-target-request",
+          "canonicalText": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende?",
+          "canonicalTextHash": "1a6ca327138d6703af73d7b47ded31b0d27d15adac42d63e5bfd939ce614c2ec",
+          "audioHashHeard": "9d89447cd63c577a25a5442b0d954c171c82bdd7f980cfbed0891ca73cb8caf8",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "verbatimComment": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende? < insted og vedkommende in danish it would be  - Kan jeg komme til at tale med ham?",
+          "businessMechanismPending": false,
+          "identifiedProblem": "Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg tale med vedkommende? < insted og vedkommende in danish it would be  - Kan jeg komme til at tale med ham?",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "This exact replacement/asset has no native approval. Compare the preserved historical context below.",
+      "replacement": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "reviewKey": "email-readback-intro:5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+      "name": "Corrected Diagnostic Email Readback — anna2.test-7@clinic.dk",
+      "canonicalText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "synthesisText": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+      "currentAssetHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "assetPath": "/audio/consent-stage20c31/5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445.wav",
+      "actualLoadURL": "/audio/consent-stage20c31/5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445.wav",
+      "diagnosticOnly": true,
+      "historicalAssetHashes": [
+        "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:29",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[29]",
+          "sourceActionIndex": 29,
+          "phraseId": "email-readback-intro",
+          "canonicalText": "a, en, en, a, to, punktum, te, e, es, te, bindestreg, syv, snabel-a, se, el, i, en, i, se, punktum, de, kå",
+          "canonicalTextHash": "980bc70513f1df076e0d3f0c0b60ea8583af52ceb38b170acb668995f25a7c48",
+          "audioHashHeard": "74176d4a77da33b1096da5c62453663fc60a89a4596526ad401e56f1bf4cde11",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "verbatimComment": "no ",
+          "businessMechanismPending": false,
+          "identifiedProblem": "no ",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "This exact replacement/asset has no native approval. Compare the preserved historical context below.",
+      "replacement": true
+    },
+    {
+      "phraseId": "receptionist-target-request",
+      "reviewKey": "receptionist-target-request:a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+      "name": "Corrected Receptionist Target Request — Anna Jensen",
+      "canonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+      "synthesisText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+      "currentAssetHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "assetPath": "/audio/consent-stage20c31/a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c.wav",
+      "actualLoadURL": "/audio/consent-stage20c31/a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c.wav",
+      "diagnosticOnly": false,
+      "historicalAssetHashes": [
+        "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:30",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[30]",
+          "sourceActionIndex": 30,
+          "phraseId": "receptionist-target-request",
+          "canonicalText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende?",
+          "canonicalTextHash": "e9b2f10fbad1663bc27f64706e555b6c36fdae9ef9349fbe864c90d7290ebd6b",
+          "audioHashHeard": "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_REJECTED",
+          "verbatimComment": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende? <- same as earlier\n\n",
+          "businessMechanismPending": false,
+          "identifiedProblem": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende? <- same as earlier\n\n",
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": true,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "This exact replacement/asset has no native approval. Compare the preserved historical context below.",
+      "replacement": true
+    },
+    {
+      "phraseId": "email-readback-intro",
+      "reviewKey": "email-readback-intro:71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+      "name": "Corrected Diagnostic Email Readback — a_b+2@x.dk",
+      "canonicalText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+      "synthesisText": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+      "currentAssetHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+      "canonicalVersion": "stage-2.0c31-candidate-1",
+      "assetPath": "/audio/consent-stage20c31/71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f.wav",
+      "actualLoadURL": "/audio/consent-stage20c31/71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f.wav",
+      "diagnosticOnly": true,
+      "historicalAssetHashes": [
+        "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31"
+      ],
+      "history": [
+        {
+          "canonicalVersion": "stage-2.0c1-approved-1",
+          "synthesisVersion": "stage-2.0c1-approved-1:provider-input",
+          "subsequentlyChanged": true,
+          "replacementPhrase": "Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud",
+          "replacementVersion": "stage-2.0c31-candidate-1",
+          "replacementAudioHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+          "replacementActuallyGenerated": true,
+          "replacementWiredIntoC32": true,
+          "automatedValidation": "EXACT_ASSET_SELECTION_RENDER_AND_PCM_TESTS",
+          "humanRetest": [],
+          "id": "C-3:listening:32",
+          "stage": "C-3",
+          "source": "WhatsApp Business Acceptance Data.json:listening.reviews[32]",
+          "sourceActionIndex": 32,
+          "phraseId": "email-readback-intro",
+          "canonicalText": "a, understregning, be, plus, to, snabel-a, eks, punktum, de, kå",
+          "canonicalTextHash": "2d85e82437e51f2c89fa83fa19c4cb93467f3f231a64ff1436ed6153e61359c3",
+          "audioHashHeard": "a2d4787ddba138fcfeff474ebc02d83001b5683291ed986c75a494bab4f02c31",
+          "ratings": null,
+          "decision": "HUMAN_LISTENING_APPROVED",
+          "verbatimComment": "",
+          "businessMechanismPending": false,
+          "identifiedProblem": null,
+          "flags": {
+            "weakPronunciation": false,
+            "weakNaturalness": false,
+            "weakPace": false,
+            "commentRequiresReview": false,
+            "conflictingPass": false
+          },
+          "replacementChain": [
+            "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f"
+          ],
+          "status": "NEW_CANDIDATE_HUMAN_REVIEW_PENDING"
+        }
+      ],
+      "context": "This exact replacement/asset has no native approval. Compare the preserved historical context below.",
+      "replacement": true
+    }
+  ],
+  "businessPending": [
+    "eight-day mechanism",
+    "eight-day starting event",
+    "consent effectiveness timing",
+    "suppression timing",
+    "system of record",
+    "retention",
+    "recording authorization",
+    "full-call recording",
+    "unsubscribe mechanism",
+    "stored-email shortcut",
+    "production concise confirmation",
+    "intermediary authority standard"
+  ],
+  "handoffFiles": [
+    "scripts/stage20c32-handoff.vite.ts",
+    "scripts/stage20c32-handoff/Configure-ASR.command",
+    "scripts/stage20c32-handoff/HUMAN-REVIEW-GUIDE.txt",
+    "scripts/stage20c32-handoff/REVIEW-EXPORT-SCHEMA.json",
+    "scripts/stage20c32-handoff/START-HERE.txt",
+    "scripts/stage20c32-handoff/Start.command",
+    "scripts/stage20c32-handoff/Stop.command",
+    "scripts/stage20c32-handoff/server.ts",
+    "scripts/stage20c32-handoff/stop.mjs",
+    "scripts/stage20c32-handoff/verify-review.ts",
+    "scripts/stage20c32-handoff/verify.mjs",
+    "scripts/stage20c32-package.ts",
+    "src/consent/stage32/handoff/contract.ts",
+    "src/consent/stage32/handoff/live.ts",
+    "src/consent/stage32/handoff/main.tsx",
+    "src/consent/stage32/handoff/style.css",
+    "stage20c32-retest.html",
+    "tests/consent-stage20c32-package.test.ts"
+  ],
+  "remainingHumanGates": {
+    "listening": 16,
+    "liveMicrophoneASR": 5,
+    "syntheticEmailCases": 8,
+    "requiredNaturalCalls": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "optionalNaturalCall": "E",
+    "safety": "Zero false/wrong-recipient/stale-ownership consent and zero incorrect/ambiguous automatic email acceptance; human assessment pending."
+  },
+  "limitations": [
+    "Native Intel execution not performed; official x64 runtime checksum, architecture and executable permissions checked. Apple Silicon launcher executed.",
+    "No live provider ASR, human native pronunciation approval or physical call-duration evidence acquired during construction.",
+    "Formal export JSON schema included; actual export validated by bundled runtime contract validator. External JSON-schema-library validation not performed.",
+    "Browser tool per-item source-ended results were retained into the proof file after a REPL accumulator persistence defect; no application logic changed.",
+    "Handoff bundle emits nonblocking Vite >500 kB warning."
+  ],
+  "providerRequests": 0,
+  "audioGenerated": 0,
+  "gitPublication": false,
+  "merged": false,
+  "deployed": false,
+  "stage20DStarted": false,
+  "asemContacted": false
+}

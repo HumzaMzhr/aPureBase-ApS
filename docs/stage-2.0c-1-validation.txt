@@ -1,0 +1,136 @@
+Stage 2.0C-1 validation — 2026-10-18 Asia/Karachi
+
+STATUS DISTINCTIONS
+1 Wording frozen by business authorization: YES; stage-2.0c1-approved-1.
+2 Generated static assets verified: YES; 26 phrase bindings / 25 unique new WAVs.
+3 Offline real local playback verified: YES; 25 unique media files ended normally.
+4 Mocked consent flow verified: YES; A-K logical branches + L tamper rejection.
+  A/J exact email readback and F named-template completion are MOCK ONLY.
+  Actual local dynamic email/name steps correctly require HUMAN_TAKEOVER.
+5 Physical telephone behavior: NOT YET VERIFIED.
+6 Production deployment: NOT AUTHORIZED.
+
+PROVIDER USAGE
+25 successful ElevenLabs generations; 1847 characters in acknowledged successful requests.
+26 attempted request payloads; 1957 characters including one failed 110-character
+opening network attempt (fetch failed, no provider completion/receipt retained).
+No billing inference is made for that failed network attempt. One failed retry;
+no valid asset regenerated. One identical Er det korrekt? recording serves two IDs.
+No OpenAI calls, speculative names, email values, extra TTS, stress tests or phone calls.
+Voice Isabella gIfqD5jrnhkFu8ENVbXC; eleven_flash_v2_5; requested speed .95.
+No secrets printed; no environment/configuration files changed.
+
+AUDIO / PLAYBACK
+WAV PCM16 mono 24 kHz; strict RIFF/data/format/length/duration validation.
+Exact UTF-8 text hashes + WAV-byte hashes + frozen ID/version/voice/model/speed binding.
+All generated raw PCM clipping counts zero; all 25 actual browser renders:
+clippingEvents=0, peakProtectionEvents=0, calibrated gain=3.5573605757216837,
+max post-gain PCM peak=0.9076247811317444. Actual decode output was 48 kHz.
+Source ended events retained with ownership proof; no duration timer arms consent.
+File load/start/Promise completion do not establish delivery.
+Raw provider PCM is unchanged on disk; gain affects only a verified renderer copy.
+25 unique static recordings total 114.14929166666668 seconds / 5480266 WAV bytes.
+No physical acoustic, DAC or telephone latency/pronunciation certification.
+
+FOCUSED
+npx vitest run tests/consent — PASS: 316 tests / 6 files.
+223 prior cases retained + 93 Stage 2.0C-1 cases.
+Full npm test — PASS: 945 tests / 71 files.
+npm run lint — PASS.
+npm run typecheck — PASS (also included in final build).
+npm run build — PASS; nonfatal Vite >500 kB chunk warning.
+git diff --check — PASS; added/modified untracked text also explicitly checked
+with git diff --no-index --check against /dev/null.
+
+BROWSER
+Static preview http://127.0.0.1:5175/consent-call. No provider backend started.
+Final build index-C4mKp-3S.js. No microphone, ASR provider, pairing or interpreter start.
+A mock success PASS; actual cached opening/purpose/question completed and waited,
+then later manual YES eligible; actual email readback boundary reached HUMAN_TAKEOVER.
+B mock refusal PASS; actual local question + manual NO/review + actual refusal close PASS.
+C mock barge-in PASS; actual local output interrupted at simulated onset, no YES PASS.
+D mock clarification PASS; actual full clarification ended + new manual YES PASS.
+E unverified receptionist ineligible PASS.
+F authorized intermediary named-template mock ownership PASS; actual dynamic path BLOCKED.
+G unknown/privacy/medical inputs each HUMAN_TAKEOVER PASS; no generated answers.
+H wrong-person no consent / named response HUMAN_TAKEOVER PASS.
+I mocked busy/callback closes END_OTHER PASS.
+J corrected literal email + fresh mock readback/confirmation PASS; actual dynamic unresolved.
+K onset-owned stale/delayed YES after repeat blocked PASS.
+L changed text/version/bytes rejected using real local media PASS.
+All 25 unique media files decoded and completed actual local Web Audio QA PASS.
+See browser-rehearsal.json, local-playback-qa.json and screenshots.
+Actual local browser results used manual transcript inputs, not live clinic ASR.
+
+DURATION PROJECTIONS
+A static speech 31.0682916667 s; assumed responses/transitions yield known subtotal
+43.4182916667 s. C known subtotal 51.623125 s. Dynamic email/name portions remain null;
+complete successful-call durations and 30-60 s operational compliance are NOT proven.
+No known subtotal >90 s; unresolved totals cannot be certified <=90 s.
+No wording lengthened to reach a duration target. No telephone delay invented.
+
+PRESERVATION
+202 existing source/server/public/test files hashed before edits.
+181 protected existing files unchanged, including src/main.tsx, all Stage 1.9.6 code,
+all server files, prior public audio, configs, and non-consent tests.
+Six existing consent implementation files modified; no old test modified/removed.
+33 new source/public/test files (7 approved modules, 25 WAVs, one 93-case test file).
+No unexpected tracked non-consent diff change relative to pre-existing dirty tree.
+Full SHA-256 before/after and exact file list: stage-2.0c-1-preservation.json.
+No commit, push, PR, deployment, CRM/email write, activation timer or phone integration.
+
+FINAL FULL-SUITE OUTPUT
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  71 passed (71)
+      Tests  945 passed (945)
+   Start at  17:04:04
+   Duration  8.50s (transform 1.95s, setup 0ms, import 4.40s, tests 28.68s, environment 5ms)
+
+
+FINAL FOCUSED OUTPUT
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  6 passed (6)
+      Tests  316 passed (316)
+   Start at  17:03:20
+   Duration  501ms (transform 860ms, setup 0ms, import 1.21s, tests 497ms, environment 0ms)
+
+
+FINAL LINT OUTPUT
+
+> apurebase-stage1-translator@0.9.0 lint
+> eslint .
+
+
+FINAL BUILD OUTPUT
+
+> apurebase-stage1-translator@0.9.0 build
+> npm run typecheck && vite build
+
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 100 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.37 kB │ gzip:   0.27 kB
+dist/assets/index-COnpGKWz.css   16.73 kB │ gzip:   4.22 kB
+dist/assets/index-C4mKp-3S.js   587.83 kB │ gzip: 169.07 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 646ms

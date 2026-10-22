@@ -1,4 +1,4 @@
-import {fixtureVoice,fixtureCachedVoices} from './fixtures/voice';
+import {fixtureVoice,fixtureCachedVoices,fixturePcm} from './fixtures/voice';
 import {afterEach,beforeEach,expect,it,vi} from 'vitest';
 import {LocalTestSession,type LocalOptions} from '../src/streaming/localSession';
 import type {Language} from '../src/types';
@@ -13,7 +13,7 @@ vi.mock('../src/liveTranscription',()=>({LiveTranscription:class{
 }}));
 vi.mock('../src/streaming/voiceClient',()=>({ContinuousVoice:class{
  open=vi.fn(async()=>{});close=vi.fn();
- send=vi.fn((text:string)=>{const bytes=new Uint8Array(4800);new Int16Array(bytes.buffer).fill(8192);this.audio(bytes,{chars:[...text],charStartTimesMs:[...text].map((_,i)=>i*10),charDurationsMs:[...text].map(()=>10)},fixtureVoice);});finish=vi.fn(async()=>{});
+ send=vi.fn((text:string)=>{const bytes=new Uint8Array(4800);new Int16Array(bytes.buffer).fill(8192);this.audio(fixturePcm(bytes),{chars:[...text],charStartTimesMs:[...text].map((_,i)=>i*10),charDurationsMs:[...text].map(()=>10)},fixtureVoice);});finish=vi.fn(async()=>{});
  constructor(public audio:(bytes:Uint8Array,alignment?:Alignment,voice?:import('../src/streaming/voiceIdentity').VoiceIdentity)=>void){mocks.voices.push(this);}
 }}));
 class Context {

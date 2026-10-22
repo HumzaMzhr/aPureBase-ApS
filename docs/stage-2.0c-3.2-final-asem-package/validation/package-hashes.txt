@@ -1,0 +1,1 @@
+{"status":"PASS","listeningItems":16,"displayedCatalogWAVPlaybackEquality":16,"allCurrentUnits":38,"uniqueCurrentRecordings":37,"files":63,"candidate":"8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5","providerRequests":0,"productionReady":false}

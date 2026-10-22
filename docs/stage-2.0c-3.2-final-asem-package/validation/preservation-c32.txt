@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "baseline": "c647dec9c6caae97b7b7e17d99283f9f402727c9",
+  "baselineFiles": 642,
+  "byteIdenticalBaselineFiles": 634,
+  "intentionalExactChanges": [
+    "src/consent/stage32/Workbench.tsx",
+    "src/consent/stage32/duration.ts",
+    "src/consent/stage32/email/flow.ts",
+    "src/consent/stage32/hardening/ReviewPanel.tsx",
+    "src/consent/stage32/hardening/SpeechPanel.tsx",
+    "src/consent/stage32/hardening/review.ts",
+    "src/consent/stage32/hardening/simulator.ts",
+    "src/consent/stage32/session.ts"
+  ],
+  "preAuditFiles": 674,
+  "originalAudio": 37,
+  "C31Audio": 12,
+  "C32Audio": 3,
+  "Stage196ServerStreamingUnchanged": true,
+  "historicalReportsUnchanged": true,
+  "candidateTestExactAuthorizedExtension": true,
+  "providerRequestsDuringVerification": 0,
+  "authorizedClarifyRequestsThisTask": 1
+}

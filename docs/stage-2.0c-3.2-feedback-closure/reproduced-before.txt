@@ -1,0 +1,49 @@
+
+ RUN  v4.1.11 /private/tmp/apurebase-c32-pronunciation
+
+ ❯ tests/consent-stage20c32-feedback-closure.test.ts (4 tests | 4 failed) 19ms
+     × does not hide a human concern behind PASS: {"pronunciation":3} 4ms
+     × does not hide a human concern behind PASS: {"naturalness":3} 0ms
+     × does not hide a human concern behind PASS: {"comments":"The ending sounds wrong"} 0ms
+     × the complete C32 structured call selects the same new close as the listening workspace 14ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/consent-stage20c32-feedback-closure.test.ts > feedback closure defects reproduced before correction > does not hide a human concern behind PASS: {"pronunciation":3}
+ FAIL  tests/consent-stage20c32-feedback-closure.test.ts > feedback closure defects reproduced before correction > does not hide a human concern behind PASS: {"naturalness":3}
+ FAIL  tests/consent-stage20c32-feedback-closure.test.ts > feedback closure defects reproduced before correction > does not hide a human concern behind PASS: {"comments":"The ending sounds wrong"}
+AssertionError: expected [] to have a length of 1 but got +0
+
+- Expected
++ Received
+
+- 1
++ 0
+
+ ❯ tests/consent-stage20c32-feedback-closure.test.ts:9:55
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  tests/consent-stage20c32-feedback-closure.test.ts > feedback closure defects reproduced before correction > the complete C32 structured call selects the same new close as the listening workspace
+AssertionError: expected 'b127cd49b4918351697c21d1a043441a40e17…' to be 'e72d65aabdc5ecb1223de5311c3d0fa687588…' // Object.is equality
+
+Expected: "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908"
+Received: "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26"
+
+ ❯ tests/consent-stage20c32-feedback-closure.test.ts:13:41
+     11|  it('the complete C32 structured call selects the same new close as th…
+     12|   const result=await ordinaryScenario('A');
+     13|   expect(result.intervals.at(-1)?.hash).toBe(candidates.find(a=>a.phra…
+       |                                         ^
+     14|  });
+     15| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed (4)
+   Start at  02:51:27
+   Duration  351ms (transform 178ms, setup 0ms, import 218ms, tests 19ms, environment 0ms)
+

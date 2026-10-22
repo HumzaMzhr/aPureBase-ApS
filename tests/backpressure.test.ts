@@ -3,14 +3,14 @@ import {StreamingInterpreter,type InterpreterIO,type Output} from '../src/stream
 import type {SemanticUnit} from '../src/streaming/types';
 import {words} from '../src/streaming/semantic';
 import {ContinuousPcmScheduler} from '../src/streaming/scheduler';
-import {fixtureVoice} from './fixtures/voice';
+import {fixtureVoice,fixturePcm} from './fixtures/voice';
 const options={bargeIn:false,forceControlled:false,protectedTerms:[],warningLagMs:5000,maxLagMs:15000,conversationContext:'Interpret only.',scopedPrecision:true,simultaneous:true};
 beforeEach(()=>vi.useFakeTimers());afterEach(()=>vi.useRealTimers());
 function setup(stalled=false){
- let now=0,release!:()=>void;const completeOnSend=stalled;const sent:SemanticUnit[]=[];
+ let now=0;const releases:(()=>void)[]=[];const completeOnSend=stalled;const sent:SemanticUnit[]=[];
  const output:Output={send:vi.fn(unit=>{sent.push(unit);if(completeOnSend){engine.playback(unit.id,'firstAudio',now);engine.playback(unit.id,'started',now);engine.playback(unit.id,'finished',now);}}),finish:vi.fn(async()=>{}),cancel:vi.fn()};
- const io:InterpreterIO={now:()=>now,translate:vi.fn(async input=>{if(stalled&&sent.length===0)await new Promise<void>(r=>release=r);return{translation:input.text,confidence:.99,needs_precision:false};}),output:vi.fn(async()=>output),pauseInput:vi.fn(),failed:vi.fn()};
- const engine=new StreamingInterpreter(io,()=>{},options);engine.start();return{engine,io,output,sent,at:(value:number)=>now=value,release:()=>{stalled=false;release();},clock:()=>now};
+ const io:InterpreterIO={now:()=>now,translate:vi.fn(async input=>{if(stalled&&sent.length===0)await new Promise<void>(r=>releases.push(r));return{translation:input.text,confidence:.99,needs_precision:false};}),output:vi.fn(async()=>output),pauseInput:vi.fn(),failed:vi.fn()};
+ const engine=new StreamingInterpreter(io,()=>{},options);engine.start();return{engine,io,output,sent,at:(value:number)=>now=value,release:()=>{stalled=false;for(const release of releases.splice(0))release();},clock:()=>now};
 }
 it.each([3000,6000,20000])('%i ms of lag is advisory and does not pause recognition, translation or TTS queueing',async lag=>{
  const s=setup();try{s.engine.sourceStarted('en',0);s.engine.partial('en','We are calling the clinic.');s.at(200);s.engine.partial('en','We are calling the clinic. We can explain more.');await vi.waitFor(()=>expect(s.sent).toHaveLength(1));
@@ -49,7 +49,7 @@ class Context {
 it('interprets 30 seconds continuously while Danish output trails, with real FIFO PCM scheduling and a complete natural drain',async()=>{
  const context=new Context(),sent:SemanticUnit[]=[],pending=new Set<ReturnType<typeof setTimeout>>();const states:{state:string;precision:string;pressure?:string}[]=[];let sample=0;
  const scheduler=new ContinuousPcmScheduler(context as unknown as AudioContext,'clinic','HCP_OUTPUT_DA',100,{firstAudio:(id,at)=>engine.playback(id,'firstAudio',at),scheduled:(id,at)=>engine.playback(id,'scheduled',at),started:(id,at)=>engine.playback(id,'started',at),finished:(id,at)=>engine.playback(id,'finished',at),underrun:()=>{}},undefined,fixtureVoice);
- const output:Output={get queuedMs(){return scheduler.queuedMs;},send:unit=>{sent.push(unit);const timer=setTimeout(()=>{pending.delete(timer);const samples=(unit.end-unit.start)*8000;scheduler.mark(unit.id,sample,sample+samples,true);sample+=samples;scheduler.push(new Uint8Array(samples*2),fixtureVoice);},7000);pending.add(timer);},finish:async()=>{while(pending.size)await new Promise<void>(r=>setTimeout(r,50));await scheduler.finish();},cancel:()=>{for(const timer of pending)clearTimeout(timer);pending.clear();scheduler.cancel();}};
+ const output:Output={get queuedMs(){return scheduler.queuedMs;},send:unit=>{sent.push(unit);const timer=setTimeout(()=>{pending.delete(timer);const samples=(unit.end-unit.start)*8000;scheduler.mark(unit.id,sample,sample+samples,true);sample+=samples;scheduler.push(fixturePcm(new Uint8Array(samples*2)),fixtureVoice);},7000);pending.add(timer);},finish:async()=>{while(pending.size)await new Promise<void>(r=>setTimeout(r,50));await scheduler.finish();},cancel:()=>{for(const timer of pending)clearTimeout(timer);pending.clear();scheduler.cancel();}};
  const io:InterpreterIO={now:()=>performance.now(),translate:vi.fn(async input=>({translation:input.text,confidence:.99,needs_precision:false})),output:vi.fn(async()=>output),pauseInput:vi.fn(),failed:vi.fn()};const engine=new StreamingInterpreter(io,s=>states.push({state:s.state,precision:s.lanes.en.precision,pressure:s.backpressure?.en?.state}),options);engine.start();engine.sourceStarted('en',performance.now());let source='';const tokens=Array(18).fill('We are calling the clinic.').join(' ').split(' ');
  for(const token of tokens){await vi.advanceTimersByTimeAsync(1000/3);source+=(source?' ':'')+token;engine.partial('en',source);}
  expect(engine.hasActiveSource).toBe(true);expect(states.some(s=>s.pressure==='behind')).toBe(true);expect(states.every(s=>s.state!=='PRECISION MODE'&&!s.precision)).toBe(true);expect(io.pauseInput).not.toHaveBeenCalled();expect(io.failed).not.toHaveBeenCalled();expect(sent.length).toBeGreaterThan(8);

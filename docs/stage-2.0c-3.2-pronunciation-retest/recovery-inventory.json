@@ -1,0 +1,46 @@
+[
+  {
+    "path": "docs/stage-2.0c-3.2-generation.jsonl",
+    "sha256": "9843b7d67346bc1234e36bb92db7f12236d39c5eaa03141fd0ce60fbfa7590c7"
+  },
+  {
+    "path": "public/audio/consent-stage20c32/b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff.wav",
+    "sha256": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff"
+  },
+  {
+    "path": "public/audio/consent-stage20c32/e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908.wav",
+    "sha256": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908"
+  },
+  {
+    "path": "scripts/stage20c32-generate-candidates.ts",
+    "sha256": "7e4352aac73927ee715251d6e0c33812eaf367ab66edf9c1a182e0b7543a4e89"
+  },
+  {
+    "path": "src/consent/stage32/Workbench.tsx",
+    "sha256": "d3d061efc84f18bcedafe5077595d92934ed7960ec16c6a60bcb7a9dadcdd02f"
+  },
+  {
+    "path": "src/consent/stage32/hardening/ReviewPanel.tsx",
+    "sha256": "c34d4a173efd4de299b4b3f12e863142ecc76f2837956af2e134ffd5502c1ef8"
+  },
+  {
+    "path": "src/consent/stage32/hardening/SpeechPanel.tsx",
+    "sha256": "3c41c4b0beab559a501ecdd1a2b586b11c2fbfa9f8f5ffdf437a08b814b66d37"
+  },
+  {
+    "path": "src/consent/stage32/hardening/review.ts",
+    "sha256": "a94aa56d27c585e025c583d18fbb2b82bd4bdf836f5299fe2f12c84d09764a9a"
+  },
+  {
+    "path": "src/consent/stage32/speech/candidatePack.json",
+    "sha256": "bc973ac33a1307006998ad38048e64a59dcdfaebca73bcbef600c9902826a39e"
+  },
+  {
+    "path": "src/consent/stage32/speech/candidates.ts",
+    "sha256": "0a070536cfb574f917af8316f9d25a69e8d7c6e239b9279276f7b1f40145c5a4"
+  },
+  {
+    "path": "tests/consent-stage20c32-candidates.test.ts",
+    "sha256": "e67ea0d350481923713defd2aa9e1aad4ee95a385b116168a3bd9c171504f3c7"
+  }
+]

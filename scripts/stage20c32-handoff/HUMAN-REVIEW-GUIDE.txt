@@ -1,0 +1,129 @@
+ASEM'S CONSOLIDATED HUMAN REVIEW — C-3.2
+
+1 — VOICE REVIEW
+The 16-item list comes from the completed current-assets audit. One friendly phrase is shown at a time, with its Danish sentence, NEW RECORDING
+or RECHECK REQUESTED badge and concise historical issue. Exact SHA-256, phrase
+version, synthesis alias, previous hashes and provenance remain available under
+Technical details; you do not need to work with those identifiers. The player
+verifies the bytes before real WebAudio playback. Rate the exact file heard.
+
+Required current call-path items:
+Consent Question; Email Request; new Success Close; corrected Refusal Close;
+About aPureBase; corrected Explanation; new Why Calling; corrected Unsubscribe;
+new Clarify; corrected Stop Contact Close; both corrected receptionist requests.
+The four corrected email spelling files are DIAGNOSTIC ONLY, not the normal
+clinic-spoken-email architecture. Only the 12 normal-call items are required. The four spelling items are OPTIONAL DIAGNOSTIC EMAIL SPELLING AUDIO and never block completion unless a reviewed shared defect is reported.
+
+For EACH: play completely; attest you personally heard it; rate pronunciation,
+naturalness and pace 1–5; choose PASS/NEEDS IMPROVEMENT; add comments. A comment is mandatory
+for NEEDS IMPROVEMENT or any rating <=3. Use Previous or Save & Next.
+The progress bar stays visible. Returning to an earlier step is safe; every
+step and item position and unfinished draft is saved in this browser. A low score stays a concern even beside PASS.
+
+Why Calling: previous pause/flow and sende dig connected-speech problem.
+Success Close: framelde concern; authorized wording now uses sige fra.
+Clarify: old pronunciation 2/5; new a Pure Base synthesis-only brand alias.
+Consent Question and Email Request: current bytes STILL have historical 2/5
+pronunciation. They were not automatically fixed. Give a new native verdict.
+Do not assume any new recording is better because its hash changed.
+
+2 — MICROPHONE
+After listening is completed sufficiently, acknowledge authorized paid ASR.
+Run ordinary Danish sentence, explicit YES, explicit NO, naturally spoken email,
+and correction of that email. Enter what you intend to say for OFFLINE comparison.
+It is never sent as an expected ASR script. Do not type a replacement final.
+
+Readiness and actual permission, partials/finals, local VAD onset/end, provider
+metadata, timing and errors are retained. Latency is final minus local source
+endpoint where available (unknown otherwise), not a fabricated acoustic delay.
+After speaking, allow the existing brief endpoint silence and wait until an
+final transcript is visible, then Finish Test. Do not exaggerate pauses.
+
+Choose Correct / Minor Error / Incorrect and add a comment for an error.
+Correct is unavailable without a final transcript. Connection, recognition
+readiness and the live input meter are shown without internal state names.
+Review whether meaning was preserved; for email/correction review reconstruction
+and correction ownership. The correction must link an earlier captured address.
+Any setup/transport failure stops that attempt. Retain it and export; do not mark
+a missing final PASS or quietly erase failed attempts.
+
+3 — EMAIL
+No real aPureBase database is connected. The local fixture is independently
+selected BEFORE capture, not inferred from ASR. Naturally speak:
+info@klinik.dk; kontakt@klinik.dk; anna.jensen@hospital.dk;
+laegehuset@domain.dk; info-test@klinik.dk; anna_test@hospital.dk;
+anna+test@hospital.dk; and correct the earlier info address to kontakt@klinik.dk.
+These strings are synthetic local test values even where domains look real;
+no email is sent or external database lookup made.
+
+Inspect separately RAW ASR, RECONSTRUCTED CANDIDATE, synthetic DATABASE CANDIDATES,
+FINAL RESOLUTION and CONFIRMATION STATUS. A database candidate cannot supply
+missing acoustic characters. Record mismatches verbatim. The diagnostic checkbox
+only records that you compared the address with what you spoke; it is not consent.
+The six-stage visual pipeline separates intended spoken input (self-reported),
+raw ASR, reconstruction, synthetic database candidates, final candidate and
+confirmation. Correction history shows the old address superseded only after
+a linked captured correction resolves, and the new address awaiting explicit
+comparison. Select where an error arose; include the mismatch in your comment.
+Actual consent/email ownership is exercised by the guarded natural-call session.
+
+4 — CALL TESTS
+Run A–D and optionally E (four or five local conversations):
+A target HCP -> YES -> email -> completed success;
+B target HCP -> NO -> refusal close;
+C clarification -> YES -> email -> completed success;
+D receptionist -> named transfer request -> verified target joins;
+E optional email correction during the owned confirmation window.
+
+Start a local call using real microphone ASR. Opening is played through the
+current verified player. The call view shows CALL ACTIVE, the actual elapsed timer, Isabella speaking/
+listening and the conversation. Further speech actions require your explicit
+approval of the displayed Danish phrase. End Call stops capture; Report Problem
+opens a retained comment. Technical details holds the internal states.
+Only attest a target/receptionist role after hearing it physically. For D, use
+the local Jens Hansen fixture, play the receptionist request, then attest that
+the target has actually joined. No intermediary authority is inferred.
+
+Follow the real final and recommended/available guarded actions. Separately
+review the current consent evidence (YES/NO/UNCLEAR). An invalid YES is rejected
+by the unchanged engine. After a valid YES, the local synthetic contact mapping
+is bound; play email-request, receive the naturally spoken address, then play
+the owned confirmation question. The candidate is displayed as data. A matching
+record is not silent acceptance. After the recipient's owned confirmation,
+explicitly review and complete local success. E: correct the full address in
+that confirmation window instead of saying yes, then confirm the new value.
+Unsupported/ambiguous cases must stay unresolved or enter human takeover.
+
+The displayed duration is actual start-to-stop wall elapsed time, including
+operator decisions and actual playback. Record start/end, final state, takeover,
+consent/email outcomes, major ASR and pronunciation/naturalness problems.
+The 30–90s target applies to ordinary successful calls, not refusal/busy exits.
+D may finish as a targeted transfer observation; do not invent later consent.
+No synthetic/replay timing is used as a physical result.
+
+After each call: review the actual elapsed time and outcome; answer whether
+consent, email and takeover were correct (not applicable is allowed for email
+and takeover). Rate Isabella naturalness, conversation flow, pronunciation and
+pace 1–5. Answer whether you would recognize it as an automated voice. A score
+<=3 or an incorrect outcome requires a comment and cannot be hidden by PASS.
+
+5 — RESULTS
+For each safety category enter the observed failure count, or leave unassessed.
+ZERO failures are required for a human retest PASS: consent false positives,
+wrong-recipient consent, stale ownership, incorrect/ambiguous automatic email
+acceptance. Any positive count blocks passing. Enter precise comments.
+
+Overall result is HUMAN_RETEST_PASS, HUMAN_RETEST_FAIL or HUMAN_RETEST_INCOMPLETE.
+The UI never marks the stage accepted or production ready. Diagnostic concerns,
+every failed attempt, all raw source events and self-reported judgments remain
+separate. The dashboard lists Voice Review, Microphone, Email and Call Tests progress,
+every weak/failed item, ratings and comments. Overall status is derived from
+your retained evidence; it never grants stage acceptance. Click EXPORT REVIEW
+even when incomplete or failed. You do not need to inspect or edit JSON. Review JSON contains text,
+not microphone audio or keys, and is not cryptographically authenticated.
+
+Business decisions remain pending: eight-day mechanism/starting event; consent
+effectiveness; suppression timing; system of record/retention; recording
+policy/full-call recording; unsubscribe mechanism; stored-email shortcut;
+intermediary authority. C32 normal calls are now frozen to concise confirmation only: no full-address speech or spelling, including corrections.
+Local retest success does not approve these or telephone/CRM integration.

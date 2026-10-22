@@ -1,0 +1,9 @@
+
+ RUN  v4.1.11 /private/tmp/c32-feedback-closure/validation/tree
+
+
+ Test Files  13 passed (13)
+      Tests  496 passed (496)
+   Start at  03:17:28
+   Duration  1.06s (transform 1.49s, setup 0ms, import 2.92s, tests 1.81s, environment 2ms)
+

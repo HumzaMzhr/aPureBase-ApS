@@ -1,0 +1,93 @@
+Stage 2.0B-2 validation — 2026-10-18 Asia/Karachi
+Offline deterministic candidate only. Zero native/business/legal wording approvals.
+No paid/live provider requests, real audio, microphone sessions, telephone calls,
+Twilio, production playback, external handoff, deployment, commit, push or PR.
+
+Counts: 30 logical units; 25 SPOKEN_CLIP; 2 SYSTEM_ACTION;
+2 OPERATOR_ACTION; 1 NO_AUDIO; 43 scenario examples; 22 unchanged states.
+Canonical phrase: consent-question / 2.0b2-draft-1
+Scope: apurebase-professional-information-by-email-v1
+Danish: Må aPureBase sende faglig information via e-mail til den relevante sundhedsperson?
+SHA-256 of exact UTF-8 TEXT:
+788f1d0e7056a9410955049268505d04c40631bf1892e8d961d6d1555b5c5ad0
+Authority policy: apurebase-authority-2.0b2-1
+
+Focused command: npx vitest run tests/consent
+5 files passed; 223 tests passed (199 retained baseline + 24 added).
+Lint: npm run lint — PASS (no diagnostics).
+Typecheck: npm run typecheck — PASS (no diagnostics).
+Full npm test — PASS; 70 files / 852 tests.
+Initial sandbox run could not bind loopback listeners; it was stopped.
+The final full run used loopback-enabled execution; existing provider requests
+were mocked. No live-provider test script was run.
+Build: npm run build — PASS. Existing >500 kB chunk warning retained:
+522.22 kB minified / 155.44 kB gzip. No deployment.
+Diff: git diff --check — PASS. Changed/added text files also checked explicitly
+with git diff --no-index --check against /dev/null (untracked files included).
+
+Browser: static Vite preview, 127.0.0.1:5175/consent-call.
+Final build JS: index-BkVca8ht.js. All controls were operated through browser UI.
+A PASS: HCP / completed question / YES / review / email / readback / confirm / END_SUCCESS.
+B PASS: PLAYING question / YES / UNCLEAR; native YES option disabled; interrupted.
+C PASS: INTERRUPTED question / YES blocked / new playback-3 completed / new YES candidate.
+D PASS: intermediary claim blocked / named attestation of retained claim / canonical completed / YES candidate.
+E PASS: unknown question / HUMAN_TAKEOVER / existing Stage 1.9.6 panel / manual start only.
+F PASS: local success / mocked HANDOFF_FAILED / YES + confirmed email + END_SUCCESS preserved.
+Underlying full-evidence equality on handoff failure is also asserted in the deterministic tests.
+No interpreter start, pairing or device acquisition controls were activated.
+See stage-2.0b-2-browser-rehearsal.json and flow screenshots.
+
+Preservation: 198 source/server/public/test files hashed before edits.
+181 protected files unchanged; 9 existing consent source/test files changed;
+remaining 8 baseline consent files unchanged. All server/public/interpreter files,
+src/main.tsx and non-consent tests remain byte-identical to start-of-stage.
+Zero unexpected tracked non-consent patch changes relative to the dirty baseline.
+Per-file before/after SHA-256 and exact stage file list:
+docs/stage-2.0b-2-preservation.json
+No .env/configuration file was edited.
+
+Unresolved: ALL 25 spoken units require native-Danish AND business approval.
+Scope, intermediary authority standard and source-risk rows need original-source clarification.
+Eight-day effect remains unknown: immediately effective vs conditionally effective
+vs finalized after eight days; start event/day counting/timezone/consequences unknown.
+No timer, automated activation, email/bounce/reporting or CRM integration implemented.
+Stage 2.0C NOT started. Entry conditions and exact 27-file change list are in stage-2.0b-2.md.
+
+Final full-suite output:
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  70 passed (70)
+      Tests  852 passed (852)
+   Start at  16:31:39
+   Duration  8.69s (transform 1.92s, setup 0ms, import 4.72s, tests 30.51s, environment 4ms)
+
+
+Final build output:
+
+> apurebase-stage1-translator@0.9.0 build
+> npm run typecheck && vite build
+
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 93 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.37 kB │ gzip:   0.27 kB
+dist/assets/index-COnpGKWz.css   16.73 kB │ gzip:   4.22 kB
+dist/assets/index-BkVca8ht.js   522.22 kB │ gzip: 155.44 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.22s

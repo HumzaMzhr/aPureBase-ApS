@@ -1,0 +1,84 @@
+{
+  "currentTask": {
+    "provider": "ElevenLabs",
+    "requests": 1,
+    "submittedCharacters": 82,
+    "succeeded": 1,
+    "failures": 0,
+    "paidRetries": 0,
+    "receipt": "EhTO84mneZ2azEN2C9fy",
+    "canonicalTextHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+    "synthesisTextHash": "79731682622f866b2bf9e59c5589fda254ba8c5300fe8cd81e6eb5015eb43892",
+    "audioHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+    "exactPayload": {
+      "text": "Selvfølgelig. Må a Pure Base sende relevant faglig information til dig via e-mail?",
+      "model_id": "eleven_flash_v2_5",
+      "language_code": "da",
+      "voice_settings": {
+        "speed": 0.95
+      }
+    },
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC?output_format=pcm_24000",
+    "localPreflightStoppedBeforeAnyRequest": 1
+  },
+  "previousRecoveredC32": {
+    "requests": 2,
+    "submittedCharacters": 220
+  },
+  "allC32": {
+    "requests": 3,
+    "submittedCharacters": 302
+  },
+  "priorC31": {
+    "requests": 12,
+    "submittedCharacters": 1308
+  },
+  "otherProvidersThisTask": 0,
+  "liveASRRequests": 0,
+  "remainingAuthorizedRequests": 0,
+  "journal": [
+    {
+      "at": "2026-10-21T22:41:07.144Z",
+      "event": "request.started",
+      "phraseId": "clarify",
+      "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC?output_format=pcm_24000",
+      "payload": {
+        "text": "Selvfølgelig. Må a Pure Base sende relevant faglig information til dig via e-mail?",
+        "model_id": "eleven_flash_v2_5",
+        "language_code": "da",
+        "voice_settings": {
+          "speed": 0.95
+        }
+      },
+      "characters": 82,
+      "version": "stage-2.0c32-clarify-ab-1",
+      "canonicalTextHash": "2e4ca4046577fdf070b6bca20e067e3bd3538371dc5c010f51aa9b0aa75e6051",
+      "spokenTextHash": "79731682622f866b2bf9e59c5589fda254ba8c5300fe8cd81e6eb5015eb43892",
+      "planHash": "5dc18f4bae4e37f9b4fba4bac0d9de90a5806a7b1e02ae2d3af695fdc0ff9f10",
+      "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86",
+      "replacesAudioHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+      "automaticRetry": false
+    },
+    {
+      "at": "2026-10-21T22:41:08.459Z",
+      "event": "response.received",
+      "httpStatus": 200,
+      "providerRequestId": "EhTO84mneZ2azEN2C9fy",
+      "providerCharacterCost": "18",
+      "contentType": "audio/pcm"
+    },
+    {
+      "at": "2026-10-21T22:41:09.038Z",
+      "event": "request.verified",
+      "phraseId": "clarify",
+      "characters": 82,
+      "assetHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+      "providerRequestId": "EhTO84mneZ2azEN2C9fy",
+      "duration": 5.340583333333333,
+      "samples": 128174,
+      "rawClipping": 0,
+      "renderedClipping": 0,
+      "peakProtectionEvents": 0
+    }
+  ]
+}

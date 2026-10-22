@@ -1,0 +1,9 @@
+
+ RUN  v4.1.11 /private/tmp/apurebase-c32-pronunciation
+
+
+ Test Files  1 passed (1)
+      Tests  46 passed (46)
+   Start at  03:11:13
+   Duration  1.07s (transform 199ms, setup 0ms, import 244ms, tests 724ms, environment 0ms)
+

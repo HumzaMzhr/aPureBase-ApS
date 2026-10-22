@@ -1,0 +1,482 @@
+{
+  "mode": "ACTUAL_LOCAL_WEB_AUDIO_NOT_TELEPHONE",
+  "assets": [
+    {
+      "id": "opening",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-opening:frames=345512:rate=48000:context=7.2",
+      "assetHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 345512,
+        "preGainPeak": 0.18988382816314697,
+        "preGainRms": 0.023458517306749808,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6754852533340454,
+        "postGainRms": 0.08345040462523586,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "purpose",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-purpose:frames=358888:rate=48000:context=14.704",
+      "assetHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 358888,
+        "preGainPeak": 0.19152209162712097,
+        "preGainRms": 0.03159842223338366,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.681313157081604,
+        "postGainRms": 0.1124069815054799,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "consent-question",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-consent-question:frames=207308:rate=48000:context=19.045333333333332",
+      "assetHash": "2499be7f9d24f3ffe8f0ef698229615bf94ab368bb47e72cecbf0bf75508cca6",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 207308,
+        "preGainPeak": 0.1546413004398346,
+        "preGainRms": 0.02426667214498388,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5501148700714111,
+        "postGainRms": 0.08632530278099823,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "email-request",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-email-request:frames=162726:rate=48000:context=22.448",
+      "assetHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 162726,
+        "preGainPeak": 0.25513994693756104,
+        "preGainRms": 0.03480746402946378,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.9076247811317444,
+        "postGainRms": 0.12382270028992864,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "email-readback-intro",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-email-readback-intro:frames=140434:rate=48000:context=25.386666666666667",
+      "assetHash": "75a31d5e38c28352d8040ca5a77a9c6dcdc0a0498151c59547efe2e984a9b757",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 140434,
+        "preGainPeak": 0.18402336537837982,
+        "preGainRms": 0.024909783500717136,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6546374559402466,
+        "postGainRms": 0.08861308177881723,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "email-confirmation-question",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-email-confirmation-question:frames=46812:rate=48000:context=26.384",
+      "assetHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 46812,
+        "preGainPeak": 0.16304069757461548,
+        "preGainRms": 0.02708892094166528,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5799945592880249,
+        "postGainRms": 0.09636505941072789,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "success-close",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-success-close:frames=229598:rate=48000:context=31.194666666666667",
+      "assetHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 229598,
+        "preGainPeak": 0.18870839476585388,
+        "preGainRms": 0.023868185900145143,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6713038086891174,
+        "postGainRms": 0.0849077435300996,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "refusal-close",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-refusal-close:frames=162726:rate=48000:context=34.59733333333333",
+      "assetHash": "351925f2cc98204031d3ec450d68eef2038a6c5fa02dd5f1ce9defd5158d5c72",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 162726,
+        "preGainPeak": 0.1282837688922882,
+        "preGainRms": 0.01927565368911404,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.4563516080379486,
+        "postGainRms": 0.06857045050358188,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "identity",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-identity:frames=133746:rate=48000:context=37.40266666666667",
+      "assetHash": "291a7e12e50a37bb1ff2f89127af9f5021ca697d5e2af8d4336117f3537a42e6",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 133746,
+        "preGainPeak": 0.16927418112754822,
+        "preGainRms": 0.02463003841838475,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6021692752838135,
+        "postGainRms": 0.08761792765478901,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "about-apurebase",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-about-apurebase:frames=193934:rate=48000:context=41.456",
+      "assetHash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 193934,
+        "preGainPeak": 0.1700170636177063,
+        "preGainRms": 0.025833367961108387,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6048120260238647,
+        "postGainRms": 0.09189860471750225,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "explanation",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-explanation:frames=269722:rate=48000:context=47.093333333333334",
+      "assetHash": "2e30daf57536ac4854c4e0aa62db8c79eb6a724464061786d5e35f0b76556142",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 269722,
+        "preGainPeak": 0.24878394603729248,
+        "preGainRms": 0.027958445125329228,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.8850141763687134,
+        "postGainRms": 0.09945827040937537,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "why-calling",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-why-calling:frames=294244:rate=48000:context=53.23733333333333",
+      "assetHash": "ef9b9c93ab7d7f6c2f8af0a321fe87529c3ce071e4e994800fe2d80dbeafddfa",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 294244,
+        "preGainPeak": 0.11066266149282455,
+        "preGainRms": 0.023813298375545508,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.39366698265075684,
+        "postGainRms": 0.0847124888157711,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "unsubscribe",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-unsubscribe:frames=236286:rate=48000:context=58.176",
+      "assetHash": "82da76b20e70453c91ea25a21c3b21206e3aefe779e14ed7ef9c8472be239aa6",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 236286,
+        "preGainPeak": 0.1982220709323883,
+        "preGainRms": 0.025113286507803423,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.705147385597229,
+        "postGainRms": 0.08933701534521325,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "repeat-prefix",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-repeat-prefix:frames=111456:rate=48000:context=60.512",
+      "assetHash": "1f5d3e769136abb40e4b9e6fb559a00df4f0bb203d0acf372bb0f9ec9c971f14",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 111456,
+        "preGainPeak": 0.12879514694213867,
+        "preGainRms": 0.02371956676169592,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.4581707715988159,
+        "postGainRms": 0.08437905168261742,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "clarify",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-clarify:frames=247432:rate=48000:context=65.68",
+      "assetHash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 247432,
+        "preGainPeak": 0.18704789876937866,
+        "preGainRms": 0.029700835019712338,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6653968095779419,
+        "postGainRms": 0.1056565795665298,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "callback",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-callback:frames=158268:rate=48000:context=68.992",
+      "assetHash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 158268,
+        "preGainPeak": 0.16558018326759338,
+        "preGainRms": 0.024819819291881588,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5890284180641174,
+        "postGainRms": 0.08829304663936399,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "callback-close",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-callback-close:frames=198392:rate=48000:context=73.14666666666666",
+      "assetHash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 198392,
+        "preGainPeak": 0.19094422459602356,
+        "preGainRms": 0.02511886874584094,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6792574524879456,
+        "postGainRms": 0.08935687335564545,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "target-unavailable",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-target-unavailable:frames=162726:rate=48000:context=76.55466666666666",
+      "assetHash": "2af35e3ecc193adb0821adf76b52c23ed1043dde09829e0dfa818755cd3f8d58",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 162726,
+        "preGainPeak": 0.17993859946727753,
+        "preGainRms": 0.02477709182432067,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6401064991950989,
+        "postGainRms": 0.08814104963860284,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "send-first",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-send-first:frames=209536:rate=48000:context=80.93333333333334",
+      "assetHash": "19877596aa4297bddd75529560767ed1263be9ea4f49a8bf20d332f291cd5a23",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 209536,
+        "preGainPeak": 0.16708187758922577,
+        "preGainRms": 0.02570371512383901,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5943704843521118,
+        "postGainRms": 0.09143738284343889,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "uncertain-consent",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-uncertain-consent:frames=416844:rate=48000:context=89.648",
+      "assetHash": "ca9c8eb4d79560429d96f3a9e0464827bffcf1bda3d7b223df5b9d64e58f7da0",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 416844,
+        "preGainPeak": 0.16314804553985596,
+        "preGainRms": 0.023568785579885274,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5803764462471008,
+        "postGainRms": 0.0838426686383259,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "already-receiving",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-already-receiving:frames=356658:rate=48000:context=97.104",
+      "assetHash": "7057166601c2d641804a51b6f1a911c73a22b35034f099ae0d3153a59b84a1cd",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 356658,
+        "preGainPeak": 0.22702619433403015,
+        "preGainRms": 0.02779045523752666,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.8076140284538269,
+        "postGainRms": 0.09886066984100456,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "email-correction-prefix",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-email-correction-prefix:frames=187246:rate=48000:context=101.024",
+      "assetHash": "948e1a3f03f5ea0285a1516fa0da69ea1ff90bcaca73c416a0546c2e19c64b24",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 187246,
+        "preGainPeak": 0.18913553655147552,
+        "preGainRms": 0.02162619617141661,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.6728233098983765,
+        "postGainRms": 0.07693217766428609,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "more-explanation",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-more-explanation:frames=450282:rate=48000:context=110.42666666666666",
+      "assetHash": "307972ad8bda36967145fce71b55a51e774fa640444d44fd8078e773a20c0ff8",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 450282,
+        "preGainPeak": 0.22486524283885956,
+        "preGainRms": 0.02524630670884045,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.7999267578125,
+        "postGainRms": 0.08981021616515275,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "stop-contact-close",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-stop-contact-close:frames=144892:rate=48000:context=113.46133333333333",
+      "assetHash": "9ed1d21afe7af60c98e0987d89b579df28e27cadbde22e35515ae36ce4cf4c7e",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 144892,
+        "preGainPeak": 0.14229539036750793,
+        "preGainRms": 0.020421373201553763,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.5061960220336914,
+        "postGainRms": 0.07264618793755331,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    },
+    {
+      "id": "thank-you",
+      "state": "complete",
+      "proof": "web-audio-source-ended:qa-thank-you:frames=53498:rate=48000:context=114.58666666666667",
+      "assetHash": "60f854b66d216da98580481abbae72b931703754db522471ce96290eb8bb38a6",
+      "gain": {
+        "gainPolicy": "isabella-calibrated-headroom-v2",
+        "samples": 53498,
+        "preGainPeak": 0.12685208022594452,
+        "preGainRms": 0.017650965369728454,
+        "requestedGain": 3.5573605757216837,
+        "effectiveGain": 3.5573605757216837,
+        "gainApplied": 3.5573605757216837,
+        "postGainPeak": 0.4512585997581482,
+        "postGainRms": 0.06279084836028365,
+        "clippingEvents": 0,
+        "peakProtectionEvents": 0
+      }
+    }
+  ],
+  "bindingChecks": "PASS",
+  "assetAlias": "email-correction-confirm shares the identical approved Er det korrekt? media with email-confirmation-question"
+}

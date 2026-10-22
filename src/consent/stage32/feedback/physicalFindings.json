@@ -1,0 +1,681 @@
+{
+  "sourceSha256": "c741e276f8d9fcd35232a4770fbb9ec33e3a983aed658992d12a154d2301ae0e",
+  "attempts": [
+    {
+      "index": 0,
+      "scenarioId": "A",
+      "callId": "eb83dfd8-1fda-40f2-8910-1e35b7ddbc2a",
+      "completed": false,
+      "openingPresent": false,
+      "finals": 0,
+      "microphoneCaptureObserved": false,
+      "recognitionFailureMs": null,
+      "events": []
+    },
+    {
+      "index": 1,
+      "scenarioId": "A",
+      "callId": "8cb89a86-44a6-4362-8a7d-ddf95e040f8e",
+      "completed": false,
+      "openingPresent": false,
+      "finals": 0,
+      "microphoneCaptureObserved": false,
+      "recognitionFailureMs": null,
+      "events": []
+    },
+    {
+      "index": 2,
+      "scenarioId": "A",
+      "callId": "19bc8033-91e3-4939-a4eb-4955281d2ae2",
+      "completed": false,
+      "openingPresent": false,
+      "finals": 0,
+      "microphoneCaptureObserved": false,
+      "recognitionFailureMs": null,
+      "events": []
+    },
+    {
+      "index": 3,
+      "scenarioId": "A",
+      "callId": "4b533426-34d5-4894-97c9-2667a24f62c6",
+      "completed": false,
+      "openingPresent": false,
+      "finals": 0,
+      "microphoneCaptureObserved": false,
+      "recognitionFailureMs": null,
+      "events": []
+    },
+    {
+      "index": 4,
+      "scenarioId": "B",
+      "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+      "completed": true,
+      "openingPresent": true,
+      "finals": 0,
+      "microphoneCaptureObserved": true,
+      "recognitionFailureMs": 7.0,
+      "events": [
+        {
+          "event": "microphone.permission_requested",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 132608.19999999925,
+          "data": {}
+        },
+        {
+          "event": "capture.config",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 136988.90000000037,
+          "data": {
+            "sampleRate": 24000,
+            "deviceSampleRate": 48000,
+            "channelCount": 1,
+            "echoCancellation": true,
+            "noiseSuppression": true,
+            "autoGainControl": true,
+            "frameSamples": 2400
+          }
+        },
+        {
+          "event": "microphone.capture_ready",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 136989.90000000037,
+          "data": {
+            "actualGetUserMedia": true,
+            "pcmRetained": false
+          }
+        },
+        {
+          "event": "recognition.attempt",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 136990.09999999963,
+          "data": {
+            "provider": "existing Danish gateway",
+            "billing": "unknown until provider receipt"
+          }
+        },
+        {
+          "event": "recognition.setup_timeout_started",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 136990.59999999963,
+          "data": {
+            "timeoutMs": 15000
+          }
+        },
+        {
+          "event": "recognition.transport_failed",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 136997.59999999963,
+          "data": {
+            "classification": "recognition.failure"
+          }
+        },
+        {
+          "event": "recognition.transport_closed",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 136998,
+          "data": {}
+        },
+        {
+          "event": "recognition.transport_closed",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 136998.09999999963,
+          "data": {}
+        },
+        {
+          "event": "recognition.failed",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 136998.40000000037,
+          "data": {
+            "reason": "Realtime recognition connection failed. Restart the test."
+          }
+        },
+        {
+          "event": "recognition.stopped",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 136999.40000000037,
+          "data": {
+            "audioStored": false
+          }
+        },
+        {
+          "event": "recognition.stopped",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 136999.90000000037,
+          "data": {
+            "audioStored": false
+          }
+        },
+        {
+          "event": "recognition.stopped",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 145104,
+          "data": {
+            "audioStored": false
+          }
+        },
+        {
+          "event": "recognition.stopped",
+          "callId": "8711d51d-3367-415e-95bc-334e4f09afb4",
+          "at": 145104.5,
+          "data": {
+            "audioStored": false
+          }
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "scenarioId": "B",
+      "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+      "completed": true,
+      "openingPresent": true,
+      "finals": 0,
+      "microphoneCaptureObserved": true,
+      "recognitionFailureMs": 3.1,
+      "events": [
+        {
+          "event": "microphone.permission_requested",
+          "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+          "at": 155688.19999999925,
+          "data": {}
+        },
+        {
+          "event": "capture.config",
+          "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+          "at": 155857,
+          "data": {
+            "sampleRate": 24000,
+            "deviceSampleRate": 48000,
+            "channelCount": 1,
+            "echoCancellation": true,
+            "noiseSuppression": true,
+            "autoGainControl": true,
+            "frameSamples": 2400
+          }
+        },
+        {
+          "event": "microphone.capture_ready",
+          "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+          "at": 155857.40000000037,
+          "data": {
+            "actualGetUserMedia": true,
+            "pcmRetained": false
+          }
+        },
+        {
+          "event": "recognition.attempt",
+          "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+          "at": 155857.80000000075,
+          "data": {
+            "provider": "existing Danish gateway",
+            "billing": "unknown until provider receipt"
+          }
+        },
+        {
+          "event": "recognition.setup_timeout_started",
+          "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+          "at": 155858.09999999963,
+          "data": {
+            "timeoutMs": 15000
+          }
+        },
+        {
+          "event": "recognition.transport_failed",
+          "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+          "at": 155861.19999999925,
+          "data": {
+            "classification": "recognition.failure"
+          }
+        },
+        {
+          "event": "recognition.transport_closed",
+          "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+          "at": 155861.5,
+          "data": {}
+        },
+        {
+          "event": "recognition.transport_closed",
+          "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+          "at": 155861.69999999925,
+          "data": {}
+        },
+        {
+          "event": "recognition.failed",
+          "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+          "at": 155862,
+          "data": {
+            "reason": "Realtime recognition connection failed. Restart the test."
+          }
+        },
+        {
+          "event": "recognition.stopped",
+          "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+          "at": 155862.5,
+          "data": {
+            "audioStored": false
+          }
+        },
+        {
+          "event": "recognition.stopped",
+          "callId": "3d8fd19f-8d03-4e8d-bf45-1964a4b6f82a",
+          "at": 155862.80000000075,
+          "data": {
+            "audioStored": false
+          }
+        }
+      ]
+    }
+  ],
+  "facetReviews": {},
+  "scores": [],
+  "acceptanceFacets": [
+    {
+      "facet": "Static Danish listening",
+      "status": "FAIL",
+      "basis": "EXPLICIT_HUMAN_ASSET_REVIEWS",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Dynamic email listening",
+      "status": "FAIL",
+      "basis": "EXPLICIT_HUMAN_ASSET_REVIEWS",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Dynamic name listening",
+      "status": "FAIL",
+      "basis": "EXPLICIT_HUMAN_ASSET_REVIEWS",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Volume consistency",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Physical playback",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Microphone input",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "ASR accuracy",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Speech onset ownership",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Question completion",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Barge-in",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Repeat",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Stale YES",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Consent guard",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Email readback",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Email correction",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Authority",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Intermediary",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Human takeover",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Call duration",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    },
+    {
+      "facet": "Telephone adapter readiness",
+      "status": "NOT_TESTED",
+      "basis": "NO_PHYSICAL_EVIDENCE",
+      "automatedTested": false,
+      "automatedResult": "NOT_TESTED",
+      "telephoneVerified": false
+    }
+  ],
+  "durationGroups": {
+    "allAttempts": 6,
+    "allAttemptsRetained": true,
+    "ordinarySuccessful": {
+      "attempts": 0,
+      "completed": 0,
+      "missingOpening": 0,
+      "wallClockSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      },
+      "mediaSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "ordinarySuccessfulMicrophoneOnly": {
+      "attempts": 0,
+      "completed": 0,
+      "missingOpening": 0,
+      "wallClockSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      },
+      "mediaSeconds": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "categories": [
+      {
+        "category": "ordinary",
+        "attempts": 4,
+        "completed": 0,
+        "missingOpening": 4,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "refusal",
+        "attempts": 2,
+        "completed": 2,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 2,
+          "median": 14.079750000000931,
+          "p95": 19.214200000001117,
+          "min": 8.945300000000746,
+          "max": 19.214200000001117
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "busy",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "takeover",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "interrupted",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "correction",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "intermediary",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "category": "other",
+        "attempts": 0,
+        "completed": 0,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "state": "ANSWERED",
+        "attempts": 4,
+        "completed": 0,
+        "missingOpening": 4,
+        "wallClockSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "state": "HUMAN_TAKEOVER",
+        "attempts": 2,
+        "completed": 2,
+        "missingOpening": 0,
+        "wallClockSeconds": {
+          "n": 2,
+          "median": 14.079750000000931,
+          "p95": 19.214200000001117,
+          "min": 8.945300000000746,
+          "max": 19.214200000001117
+        },
+        "mediaSeconds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "min": null,
+          "max": null
+        }
+      }
+    ],
+    "excludedAfterObservation": 0,
+    "notes": "Raw wall time is start-of-opening to terminal. Media is actual Isabella frames/observed interrupted interval plus microphone VAD speech intervals. Manual/mixed source has no physical speech-duration total. Debug pauses stay in raw wall statistics."
+  }
+}

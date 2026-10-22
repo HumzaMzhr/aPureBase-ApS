@@ -1,0 +1,89 @@
+Browser tab: 5, Title: "aPureBase · Final Asem Human Retest", URL: "http://127.0.0.1:5173/".
+1 AXWebArea aPureBase · Final Asem Human Retest, URL: 127.0.0.1:5173/
+	2 container root
+		3 link Description: Skip to review, Value: 127.0.0.1:5173/#review-content
+		4 container
+			5 image aPureBase
+			6 text Human Acceptance Review Stage 2.0C-3.2 LOCAL RETEST · NOT ACCEPTED Reviewer name
+			7 text field (settable) Reviewer name, Value: TECHNICAL BRAND CHECK — NOT ASEM
+		8 container Review steps
+			9 content list
+				10 button 1 VOICE REVIEW 0 / 16 reviewed
+					11 text 1
+					12 text VOICE REVIEW
+					13 text 0 / 16 reviewed
+				14 button 2 MICROPHONE 0 / 5 passed
+					15 text 2
+					16 text MICROPHONE
+					17 text 0 / 5 passed
+				18 button 3 EMAIL 0 / 8 passed
+					19 text 3
+					20 text EMAIL
+					21 text 0 / 8 passed
+				22 button 4 CALL TESTS 0 / 4 passed
+					23 text 4
+					24 text CALL TESTS
+					25 text 0 / 4 passed
+				26 button 5 RESULTS Review & export
+					27 text 5
+					28 text RESULTS
+					29 text Review & export
+		30 container review-content
+			31 container
+				32 text ASEM’S C-3.2 HUMAN RETEST
+				33 heading Human Acceptance Review, Value: 1
+					34 text Human Acceptance Review
+				35 text Work through the five steps at your own pace. Your progress is saved in this browser. Earlier valid reviews remain preserved.
+			36 heading Results, Value: 2
+				37 text Results
+			38 text Review your observations and return one file. This local review does not grant production approval.
+			39 button Voice Review 0 / 16 reviewed
+				40 text Voice Review
+				41 container
+					42 text 0 /  16
+				43 text reviewed
+			44 button Microphone 0 / 5 passed
+				45 text Microphone
+				46 container
+					47 text 0 /  5
+				48 text passed
+			49 button Email 0 / 8 passed
+				50 text Email
+				51 container
+					52 text 0 /  8
+				53 text passed
+			54 button Call Tests 0 / 4 passed
+				55 text Call Tests
+				56 container
+					57 text 0 /  4
+				58 text passed
+			59 text OVERALL STATUS
+			60 heading HUMAN RETEST INCOMPLETE, Value: 3
+				61 text HUMAN RETEST INCOMPLETE
+			62 text Some required reviews or physical evidence are still missing. You can export your progress now.
+			63 heading Failed or weak items, Value: 3
+				64 text Failed or weak items
+			65 text No failed or weak reviews recorded. Unreviewed items are still incomplete.
+			66 container
+				67 button (expanded) Safety check · required before a passing result, Secondary Actions: Collapse
+					68 text Safety check · required before a passing result
+				69 text Enter the number you actually observed. Leave unknown items blank. Any safety problem blocks a passing result. Consent recorded when the person did not agree
+				70 stepper (settable) Consent recorded when the person did not agree
+				71 text Consent assigned to the wrong person
+				72 stepper (settable) Consent assigned to the wrong person
+				73 text An earlier person’s consent carried forward
+				74 stepper (settable) An earlier person’s consent carried forward
+				75 text A wrong email accepted automatically
+				76 stepper (settable) A wrong email accepted automatically
+				77 text An unclear email accepted automatically
+				78 stepper (settable) An unclear email accepted automatically
+				79 text Safety comments
+				80 text entry area (settable) Safety comments
+			81 button EXPORT REVIEW
+			82 text Return the downloaded review file to Humza. You do not need to open or edit it.
+			83 button (collapsed) Technical details, Secondary Actions: Expand
+				84 text Technical details
+			85 container
+				86 text Your progress is saved on this Mac as you go. Local human retest only · NOT PRODUCTION READY. Progress stays in this browser. Export before clearing storage or changing computers. Use Stop.command when finished.
+
+The focused UI element is 1 AXWebArea aPureBase · Final Asem Human Retest, URL: 127.0.0.1:5173/

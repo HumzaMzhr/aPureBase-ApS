@@ -1,0 +1,202 @@
+STAGE 2.0C-3 HUMAN ACCEPTANCE CANDIDATE FINALIZATION
+Status: NOT_ACCEPTED / NOT_PRODUCTION_READY
+Application source, Stage 1.9.6, existing tests, production configuration and audio unchanged in finalization.
+One existing file changed: .github/workflows/pr-checks.yml (Node 20 -> locally verified 25.9.0).
+New Danish human guide, read-only audit script and finalization/metadata evidence.
+37 audio files unchanged: 25 C-1 static + 12 C-2 dynamic synthetic cached WAVs.
+Historical Stage 2 reports unchanged. 426/427 finalization baseline files byte-identical.
+Provider requests: zero new OpenAI/ElevenLabs/telephone/other paid calls. New paid provider cost: zero.
+npm registry dependency installation only; no audio generators or live/microphone tests.
+No physical approval, no deployment, no Stage 2.0D, no telephone integration.
+
+initial focused: PASS
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run tests/consent-stage20c3.test.ts tests/consent-stage20c3-view.test.tsx --reporter=dot
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+······································
+
+ Test Files  2 passed (2)
+      Tests  38 passed (38)
+   Start at  19:01:29
+   Duration  493ms (transform 419ms, setup 0ms, import 588ms, tests 71ms, environment 0ms)
+
+
+initial test: PASS
+····························································································stderr | tests/server.test.ts > validates complete text, language, method and bounded request size
+[interpreter] request failed { path: '/api/translate', status: 400 }
+
+stderr | tests/server.test.ts > validates complete text, language, method and bounded request size
+[interpreter] request failed { path: '/api/translate', status: 400 }
+
+stderr | tests/server.test.ts > validates complete text, language, method and bounded request size
+[interpreter] request failed { path: '/api/translate', status: 400 }
+
+stderr | tests/server.test.ts > validates complete text, language, method and bounded request size
+[interpreter] request failed { path: '/api/translate', status: 413 }
+
+stderr | tests/server.test.ts > reports missing key and sanitized upstream errors
+[interpreter] request failed { path: '/api/translate', status: 503 }
+
+stderr | tests/server.test.ts > reports missing key and sanitized upstream errors
+[interpreter] request failed { path: '/api/translate', status: 502 }
+
+······································································································································································································································································································································································································································································································································································
+
+ Test Files  74 passed (74)
+      Tests  1013 passed (1013)
+   Start at  19:01:28
+   Duration  8.50s (transform 1.82s, setup 0ms, import 4.59s, tests 31.03s, environment 5ms)
+
+
+initial lint: PASS
+
+> apurebase-stage1-translator@0.9.0 lint
+> eslint .
+
+
+initial typecheck: PASS
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+
+initial build: PASS
+
+> apurebase-stage1-translator@0.9.0 build
+> npm run typecheck && vite build
+
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 117 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.37 kB │ gzip:   0.28 kB
+dist/assets/index-j0eZ6Glf.css   17.21 kB │ gzip:   4.35 kB
+dist/assets/index-BMTwS7Q9.js   674.23 kB │ gzip: 191.26 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 834ms
+
+initial diff: PASS
+
+final focused: PASS
+
+> apurebase-stage1-translator@0.9.0 test
+> vitest run tests/consent-stage20c3.test.ts tests/consent-stage20c3-view.test.tsx --reporter=dot
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+······································
+
+ Test Files  2 passed (2)
+      Tests  38 passed (38)
+   Start at  19:08:22
+   Duration  729ms (transform 623ms, setup 0ms, import 906ms, tests 96ms, environment 2ms)
+
+
+final test: PASS
+·····················································································stderr | tests/server.test.ts > validates complete text, language, method and bounded request size
+[interpreter] request failed { path: '/api/translate', status: 400 }
+
+stderr | tests/server.test.ts > validates complete text, language, method and bounded request size
+[interpreter] request failed { path: '/api/translate', status: 400 }
+
+stderr | tests/server.test.ts > validates complete text, language, method and bounded request size
+[interpreter] request failed { path: '/api/translate', status: 400 }
+
+stderr | tests/server.test.ts > validates complete text, language, method and bounded request size
+[interpreter] request failed { path: '/api/translate', status: 413 }
+
+stderr | tests/server.test.ts > reports missing key and sanitized upstream errors
+[interpreter] request failed { path: '/api/translate', status: 503 }
+
+stderr | tests/server.test.ts > reports missing key and sanitized upstream errors
+[interpreter] request failed { path: '/api/translate', status: 502 }
+
+·············································································································································································································································································································································································································································································································································································
+
+ Test Files  74 passed (74)
+      Tests  1013 passed (1013)
+   Start at  19:08:21
+   Duration  8.58s (transform 2.24s, setup 0ms, import 5.61s, tests 34.53s, environment 5ms)
+
+
+final lint: PASS
+
+> apurebase-stage1-translator@0.9.0 lint
+> eslint .
+
+
+final typecheck: PASS
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+
+final build: PASS
+
+> apurebase-stage1-translator@0.9.0 build
+> npm run typecheck && vite build
+
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 117 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.37 kB │ gzip:   0.28 kB
+dist/assets/index-j0eZ6Glf.css   17.21 kB │ gzip:   4.35 kB
+dist/assets/index-BMTwS7Q9.js   674.23 kB │ gzip: 191.26 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.33s
+
+final diff: PASS
+
+Fresh-checkout check: separate /tmp checkout inputs, no .env/private benchmarks, independent npm ci installation, 1013 tests / 74 files PASS.
+rors
+[interpreter] request failed { path: '/api/translate', status: 502 }
+
+··············································································································································stderr | tests/stream-server.test.ts > returns a sanitized, retryable voice error before headers for authentication/quota/payment failures
+[interpreter] Danish voice failed { reason: 'payment' }
+
+·············································································································
+
+ Test Files  74 passed (74)
+      Tests  1013 passed (1013)
+   Start at  19:09:06
+   Duration  7.97s (transform 1.94s, setup 0ms, import 3.89s, tests 28.37s, environment 4ms)
+
+
+Lockfile installation: npm ci --offline passed with local cache permission; npm ci --no-audit --no-fund also passed.
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 203 packages in 3s
+
+Cache-only configuration smoke: all 12 assets returned using LOCAL_CACHE_ONLY_NOT_A_CREDENTIAL and provider stub that throws; zero provider invocations. This used a copied cache journal, not original fixtures.
+Fresh server startup: actual server/index.ts imported with documented noncredential listening-only environment. Test-only net.listen remapped 5173 -> spare port 5193 to avoid the active user service; no source edited. Frontend HTTP 200; /api/health JSON 200, ready:false, missingAudio:[], pinned Isabella/Flash identity. Existing HMR port 24678 was occupied by the original server; that isolated concurrent smoke logged a port warning. Temporary server was stopped afterward. No microphone or provider session.
+Guide cross-check: commands derived from package.json, server/index.ts, server/consentDynamic.ts, server/voice.ts, server/models.ts, actual workspace controls, scenarios.ts, store.ts and export filename.
+Secret-pattern scan: no candidate API token/private-key matches; .env and .env.c3 excluded.
+git diff --check (working-tree tracked diff) and explicit new-file trailing whitespace: PASS.
+Full staged PR diff, git diff --cached --check: exit 2, two preserved historical warnings:
+docs/stage-2.0c-2-validation.txt:68: new blank line at EOF.
+docs/stage-2.0c-3-validation.txt:66: new blank line at EOF.
+Historical reports remain byte-identical. No attributes, exclusions or weakened whitespace rules were introduced. The complete staged PR diff is not claimed clean.

@@ -1,0 +1,4000 @@
+{
+  "contract": {
+    "version": "c32h1-scenarios-1",
+    "ids": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z",
+      "AA",
+      "AB",
+      "AC",
+      "AD",
+      "AE",
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "AK",
+      "AL",
+      "AM",
+      "AN",
+      "AO",
+      "AP",
+      "AQ",
+      "AR",
+      "AS",
+      "AT"
+    ],
+    "ordinaryEligible": [
+      "A",
+      "B",
+      "E",
+      "F",
+      "Q",
+      "AP",
+      "AS",
+      "AT"
+    ],
+    "exclusions": []
+  },
+  "rows": [
+    {
+      "id": "A",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 42.27104166666666,
+        "mediaSeconds": 27.77104166666667,
+        "recipientSpeech": 5.5,
+        "recipientThinking": 3.6,
+        "transitions": 0.8999999999999999,
+        "operator": 4.499999999999993,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 24422.375,
+            "end": 27812.5,
+            "seconds": 3.390125
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 32662.5,
+            "end": 33637.75,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "success-close",
+            "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+            "start": 37487.75,
+            "end": 42271.041666666664,
+            "seconds": 4.783291666666667
+          }
+        ],
+        "consent": {
+          "turnId": "mic:SIMULATED:1",
+          "classification": "YES",
+          "at": 24272.375,
+          "recordedAt": "2026-10-20T22:30:30.891Z",
+          "recipientRevision": 1,
+          "questionInstanceId": "synthetic:A:playback-3"
+        },
+        "localEmail": {
+          "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+          "email": "anna@clinic.example",
+          "recipientRevision": 1,
+          "consentTurnId": "mic:SIMULATED:1",
+          "sourceTurnId": "mic:SIMULATED:2",
+          "confirmationTurnId": "mic:SIMULATED:3",
+          "candidateRevision": 1,
+          "storedAt": 42271.041666666664,
+          "reviewer": "synthetic:operator",
+          "reviewReason": "Exact candidate visually reviewed in simulation",
+          "productionConsent": false
+        }
+      }
+    },
+    {
+      "id": "B",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 42.27104166666666,
+        "mediaSeconds": 27.77104166666667,
+        "recipientSpeech": 5.5,
+        "recipientThinking": 3.6,
+        "transitions": 0.8999999999999999,
+        "operator": 4.499999999999993,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 24422.375,
+            "end": 27812.5,
+            "seconds": 3.390125
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 32662.5,
+            "end": 33637.75,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "success-close",
+            "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+            "start": 37487.75,
+            "end": 42271.041666666664,
+            "seconds": 4.783291666666667
+          }
+        ],
+        "consent": {
+          "turnId": "mic:SIMULATED:1",
+          "classification": "YES",
+          "at": 24272.375,
+          "recordedAt": "2026-10-20T22:30:30.895Z",
+          "recipientRevision": 1,
+          "questionInstanceId": "synthetic:B:playback-3"
+        },
+        "localEmail": {
+          "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+          "email": "anna@clinic.example",
+          "recipientRevision": 1,
+          "consentTurnId": "mic:SIMULATED:1",
+          "sourceTurnId": "mic:SIMULATED:2",
+          "confirmationTurnId": "mic:SIMULATED:3",
+          "candidateRevision": 1,
+          "storedAt": 42271.041666666664,
+          "reviewer": "synthetic:operator",
+          "reviewReason": "Exact candidate visually reviewed in simulation",
+          "productionConsent": false
+        }
+      }
+    },
+    {
+      "id": "C",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "ambiguous-en",
+          "raw": "en snabel-a clinic punktum example",
+          "known": [
+            "1@clinic.example",
+            "n@clinic.example"
+          ],
+          "expected": null,
+          "label": "AMBIGUOUS",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "en snabel-a clinic punktum example",
+          "tokens": [
+            {
+              "raw": "en",
+              "start": 0,
+              "end": 2,
+              "kind": "digit",
+              "alternatives": [
+                "1",
+                "n"
+              ]
+            },
+            {
+              "raw": "snabel-a",
+              "start": 3,
+              "end": 11,
+              "kind": "separator",
+              "alternatives": [
+                "@"
+              ]
+            },
+            {
+              "raw": "clinic",
+              "start": 12,
+              "end": 18,
+              "kind": "literal",
+              "alternatives": [
+                "clinic"
+              ]
+            },
+            {
+              "raw": "punktum",
+              "start": 19,
+              "end": 26,
+              "kind": "separator",
+              "alternatives": [
+                "."
+              ]
+            },
+            {
+              "raw": "example",
+              "start": 27,
+              "end": 34,
+              "kind": "literal",
+              "alternatives": [
+                "example"
+              ]
+            }
+          ],
+          "candidates": [
+            "1@clinic.example",
+            "n@clinic.example"
+          ],
+          "operations": [
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "snabel-a",
+              "after": "@",
+              "tokenIndex": 1
+            },
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "punktum",
+              "after": ".",
+              "tokenIndex": 3
+            },
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "en snabel-a clinic punktum example",
+              "after": "1@clinic.example"
+            },
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "en snabel-a clinic punktum example",
+              "after": "n@clinic.example"
+            }
+          ],
+          "uncertainTokens": [
+            0
+          ],
+          "errors": [],
+          "comparisonOnly": true
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "1@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "1@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            },
+            {
+              "candidate": "n@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "n@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:1"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "1@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            },
+            {
+              "contactId": "synthetic:contact",
+              "email": "n@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:1"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": null,
+          "selectionSource": null,
+          "classification": "AMBIGUOUS_MATCH",
+          "action": "OPERATOR_REVIEW",
+          "reason": "Multiple plausible candidates or records",
+          "lookupStatus": "MULTIPLE_MATCHES",
+          "policyLabel": "AMBIGUOUS",
+          "matchType": "AMBIGUOUS",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": false,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": true,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "D",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "no-match",
+          "raw": "anna@clinic.example",
+          "known": [],
+          "expected": null,
+          "label": "INSUFFICIENT",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "anna@clinic.example",
+          "tokens": [
+            {
+              "raw": "anna@clinic.example",
+              "start": 0,
+              "end": 19,
+              "kind": "literal",
+              "alternatives": [
+                "anna@clinic.example"
+              ]
+            }
+          ],
+          "candidates": [
+            "anna@clinic.example"
+          ],
+          "operations": [],
+          "uncertainTokens": [],
+          "errors": [],
+          "comparisonOnly": false
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "anna@clinic.example",
+              "matches": [],
+              "score": 0,
+              "reason": "No exact scoped record"
+            }
+          ],
+          "databaseCandidates": [],
+          "databaseStatus": "OK",
+          "selected": null,
+          "selectionSource": null,
+          "classification": "NO_DATABASE_MATCH",
+          "action": "OPERATOR_REVIEW",
+          "reason": "No independently bound contact record",
+          "lookupStatus": "NO_MATCH",
+          "policyLabel": "INSUFFICIENT",
+          "matchType": "NO_MATCH",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": false,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": true,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "E",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 48.096291666666666,
+        "mediaSeconds": 28.746291666666668,
+        "recipientSpeech": 9,
+        "recipientThinking": 4.8,
+        "transitions": 1.05,
+        "operator": 4.499999999999998,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 24422.375,
+            "end": 27812.5,
+            "seconds": 3.390125
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 32662.5,
+            "end": 33637.75,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 38487.75,
+            "end": 39463,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "success-close",
+            "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+            "start": 43313,
+            "end": 48096.291666666664,
+            "seconds": 4.783291666666667
+          }
+        ],
+        "consent": {
+          "turnId": "mic:SIMULATED:1",
+          "classification": "YES",
+          "at": 24272.375,
+          "recordedAt": "2026-10-20T22:30:30.898Z",
+          "recipientRevision": 1,
+          "questionInstanceId": "synthetic:E:playback-3"
+        },
+        "localEmail": {
+          "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+          "email": "anne@clinic.example",
+          "recipientRevision": 1,
+          "consentTurnId": "mic:SIMULATED:1",
+          "sourceTurnId": "mic:SIMULATED:3",
+          "confirmationTurnId": "mic:SIMULATED:4",
+          "candidateRevision": 2,
+          "storedAt": 48096.291666666664,
+          "reviewer": "synthetic:operator",
+          "reviewReason": "Exact candidate visually reviewed in simulation",
+          "productionConsent": false
+        }
+      }
+    },
+    {
+      "id": "F",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 42.27104166666666,
+        "mediaSeconds": 27.77104166666667,
+        "recipientSpeech": 5.5,
+        "recipientThinking": 3.6,
+        "transitions": 0.8999999999999999,
+        "operator": 4.499999999999993,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 24422.375,
+            "end": 27812.5,
+            "seconds": 3.390125
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 32662.5,
+            "end": 33637.75,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "success-close",
+            "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+            "start": 37487.75,
+            "end": 42271.041666666664,
+            "seconds": 4.783291666666667
+          }
+        ],
+        "consent": {
+          "turnId": "mic:SIMULATED:1",
+          "classification": "YES",
+          "at": 24272.375,
+          "recordedAt": "2026-10-20T22:30:30.900Z",
+          "recipientRevision": 1,
+          "questionInstanceId": "synthetic:F:playback-3"
+        },
+        "localEmail": {
+          "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+          "email": "anna@clinic.example",
+          "recipientRevision": 1,
+          "consentTurnId": "mic:SIMULATED:1",
+          "sourceTurnId": "mic:SIMULATED:2",
+          "confirmationTurnId": "mic:SIMULATED:3",
+          "candidateRevision": 1,
+          "storedAt": 42271.041666666664,
+          "reviewer": "synthetic:operator",
+          "reviewReason": "Exact candidate visually reviewed in simulation",
+          "productionConsent": false
+        }
+      }
+    },
+    {
+      "id": "G",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "different-twice",
+          "raw": "anna@clinic.example; anne@clinic.example",
+          "known": [
+            "anna@clinic.example",
+            "anne@clinic.example"
+          ],
+          "expected": null,
+          "label": "AMBIGUOUS",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "anna@clinic.example; anne@clinic.example",
+          "tokens": [
+            {
+              "raw": "anna@clinic.example",
+              "start": 0,
+              "end": 19,
+              "kind": "literal",
+              "alternatives": [
+                "anna@clinic.example"
+              ]
+            }
+          ],
+          "candidates": [
+            "anna@clinic.example",
+            "anne@clinic.example"
+          ],
+          "operations": [
+            {
+              "operation": "CONFLICTING_REPETITIONS",
+              "before": "anna@clinic.example; anne@clinic.example",
+              "after": "NO_SELECTION"
+            }
+          ],
+          "uncertainTokens": [],
+          "errors": [
+            "CONFLICTING_OR_INCOMPLETE_REPETITIONS"
+          ],
+          "comparisonOnly": true,
+          "repetitions": [
+            {
+              "version": "stage-2.0c32-structured-email-1",
+              "raw": "anna@clinic.example",
+              "tokens": [
+                {
+                  "raw": "anna@clinic.example",
+                  "start": 0,
+                  "end": 19,
+                  "kind": "literal",
+                  "alternatives": [
+                    "anna@clinic.example"
+                  ]
+                }
+              ],
+              "candidates": [
+                "anna@clinic.example"
+              ],
+              "operations": [],
+              "uncertainTokens": [],
+              "errors": [],
+              "comparisonOnly": false
+            },
+            {
+              "version": "stage-2.0c32-structured-email-1",
+              "raw": "anne@clinic.example",
+              "tokens": [
+                {
+                  "raw": "anne@clinic.example",
+                  "start": 0,
+                  "end": 19,
+                  "kind": "literal",
+                  "alternatives": [
+                    "anne@clinic.example"
+                  ]
+                }
+              ],
+              "candidates": [
+                "anne@clinic.example"
+              ],
+              "operations": [],
+              "uncertainTokens": [],
+              "errors": [],
+              "comparisonOnly": false
+            }
+          ]
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "anna@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "anna@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            },
+            {
+              "candidate": "anne@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "anne@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:1"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "anna@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            },
+            {
+              "contactId": "synthetic:contact",
+              "email": "anne@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:1"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": null,
+          "selectionSource": null,
+          "classification": "AMBIGUOUS_MATCH",
+          "action": "OPERATOR_REVIEW",
+          "reason": "Conflicting repetitions or incomplete evidence fits multiple scoped records; no missing characters supplied",
+          "lookupStatus": "MULTIPLE_MATCHES",
+          "policyLabel": "AMBIGUOUS",
+          "matchType": "AMBIGUOUS",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": false,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": true,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "H",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "unique-en",
+          "raw": "en snabel-a clinic punktum example",
+          "known": [
+            "n@clinic.example"
+          ],
+          "expected": "n@clinic.example",
+          "label": "STRONG",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "en snabel-a clinic punktum example",
+          "tokens": [
+            {
+              "raw": "en",
+              "start": 0,
+              "end": 2,
+              "kind": "digit",
+              "alternatives": [
+                "1",
+                "n"
+              ]
+            },
+            {
+              "raw": "snabel-a",
+              "start": 3,
+              "end": 11,
+              "kind": "separator",
+              "alternatives": [
+                "@"
+              ]
+            },
+            {
+              "raw": "clinic",
+              "start": 12,
+              "end": 18,
+              "kind": "literal",
+              "alternatives": [
+                "clinic"
+              ]
+            },
+            {
+              "raw": "punktum",
+              "start": 19,
+              "end": 26,
+              "kind": "separator",
+              "alternatives": [
+                "."
+              ]
+            },
+            {
+              "raw": "example",
+              "start": 27,
+              "end": 34,
+              "kind": "literal",
+              "alternatives": [
+                "example"
+              ]
+            }
+          ],
+          "candidates": [
+            "1@clinic.example",
+            "n@clinic.example"
+          ],
+          "operations": [
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "snabel-a",
+              "after": "@",
+              "tokenIndex": 1
+            },
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "punktum",
+              "after": ".",
+              "tokenIndex": 3
+            },
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "en snabel-a clinic punktum example",
+              "after": "1@clinic.example"
+            },
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "en snabel-a clinic punktum example",
+              "after": "n@clinic.example"
+            }
+          ],
+          "uncertainTokens": [
+            0
+          ],
+          "errors": [],
+          "comparisonOnly": true
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "1@clinic.example",
+              "matches": [],
+              "score": 0,
+              "reason": "No exact scoped record"
+            },
+            {
+              "candidate": "n@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "n@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "n@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": "n@clinic.example",
+          "selectionSource": "BOUNDED_RECONCILIATION",
+          "classification": "HIGH_CONFIDENCE_MATCH",
+          "action": "OPERATOR_REVIEW",
+          "reason": "One bounded record explains explicit token alternatives; recipient must disambiguate",
+          "lookupStatus": "UNIQUE_MATCH",
+          "policyLabel": "STRONG",
+          "matchType": "UNIQUE_STRONG_MATCH",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": false,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": true,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "I",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "ambiguous-en",
+          "raw": "en snabel-a clinic punktum example",
+          "known": [
+            "1@clinic.example",
+            "n@clinic.example"
+          ],
+          "expected": null,
+          "label": "AMBIGUOUS",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "en snabel-a clinic punktum example",
+          "tokens": [
+            {
+              "raw": "en",
+              "start": 0,
+              "end": 2,
+              "kind": "digit",
+              "alternatives": [
+                "1",
+                "n"
+              ]
+            },
+            {
+              "raw": "snabel-a",
+              "start": 3,
+              "end": 11,
+              "kind": "separator",
+              "alternatives": [
+                "@"
+              ]
+            },
+            {
+              "raw": "clinic",
+              "start": 12,
+              "end": 18,
+              "kind": "literal",
+              "alternatives": [
+                "clinic"
+              ]
+            },
+            {
+              "raw": "punktum",
+              "start": 19,
+              "end": 26,
+              "kind": "separator",
+              "alternatives": [
+                "."
+              ]
+            },
+            {
+              "raw": "example",
+              "start": 27,
+              "end": 34,
+              "kind": "literal",
+              "alternatives": [
+                "example"
+              ]
+            }
+          ],
+          "candidates": [
+            "1@clinic.example",
+            "n@clinic.example"
+          ],
+          "operations": [
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "snabel-a",
+              "after": "@",
+              "tokenIndex": 1
+            },
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "punktum",
+              "after": ".",
+              "tokenIndex": 3
+            },
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "en snabel-a clinic punktum example",
+              "after": "1@clinic.example"
+            },
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "en snabel-a clinic punktum example",
+              "after": "n@clinic.example"
+            }
+          ],
+          "uncertainTokens": [
+            0
+          ],
+          "errors": [],
+          "comparisonOnly": true
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "1@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "1@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            },
+            {
+              "candidate": "n@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "n@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:1"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "1@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            },
+            {
+              "contactId": "synthetic:contact",
+              "email": "n@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:1"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": null,
+          "selectionSource": null,
+          "classification": "AMBIGUOUS_MATCH",
+          "action": "OPERATOR_REVIEW",
+          "reason": "Multiple plausible candidates or records",
+          "lookupStatus": "MULTIPLE_MATCHES",
+          "policyLabel": "AMBIGUOUS",
+          "matchType": "AMBIGUOUS",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": false,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": true,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "J",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "two-at",
+          "raw": "anna@@clinic.example",
+          "known": [
+            "anna@clinic.example"
+          ],
+          "expected": null,
+          "label": "INSUFFICIENT",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "anna@@clinic.example",
+          "tokens": [
+            {
+              "raw": "anna",
+              "start": 0,
+              "end": 4,
+              "kind": "literal",
+              "alternatives": [
+                "anna"
+              ]
+            },
+            {
+              "raw": "@",
+              "start": 4,
+              "end": 5,
+              "kind": "separator",
+              "alternatives": [
+                "@"
+              ]
+            },
+            {
+              "raw": "@",
+              "start": 5,
+              "end": 6,
+              "kind": "separator",
+              "alternatives": [
+                "@"
+              ]
+            },
+            {
+              "raw": "clinic",
+              "start": 6,
+              "end": 12,
+              "kind": "literal",
+              "alternatives": [
+                "clinic"
+              ]
+            },
+            {
+              "raw": ".",
+              "start": 12,
+              "end": 13,
+              "kind": "separator",
+              "alternatives": [
+                "."
+              ]
+            },
+            {
+              "raw": "example",
+              "start": 13,
+              "end": 20,
+              "kind": "literal",
+              "alternatives": [
+                "example"
+              ]
+            }
+          ],
+          "candidates": [],
+          "operations": [
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "anna @ @ clinic . example",
+              "after": "anna@@clinic.example"
+            }
+          ],
+          "uncertainTokens": [],
+          "errors": [
+            "NO_LITERAL_ADDRESS_STRUCTURE"
+          ],
+          "comparisonOnly": false
+        },
+        "result": {
+          "ranked": [],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "anna@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": null,
+          "selectionSource": null,
+          "classification": "UNPARSABLE",
+          "action": "HUMAN_TAKEOVER",
+          "reason": "NO_LITERAL_ADDRESS_STRUCTURE",
+          "lookupStatus": "UNIQUE_MATCH",
+          "policyLabel": "INSUFFICIENT",
+          "matchType": "NO_MATCH",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": false,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": false,
+        "takeover": true,
+        "correct": true
+      }
+    },
+    {
+      "id": "K",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Verified cached target transfer request",
+          "pass": true
+        },
+        {
+          "name": "No consent from receptionist",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 14.013666666666666,
+        "mediaSeconds": 12.213666666666667,
+        "recipientSpeech": 0,
+        "recipientThinking": 0,
+        "transitions": 0.3,
+        "operator": 1.499999999999999,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "receptionist-target-request",
+            "hash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+            "start": 8998.166666666666,
+            "end": 14013.666666666666,
+            "seconds": 5.0155
+          }
+        ],
+        "state": "RIGHT_PERSON",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "L",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "New independently verified recipient succeeds",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 45.971041666666665,
+        "mediaSeconds": 27.77104166666667,
+        "recipientSpeech": 6.5,
+        "recipientThinking": 4.8,
+        "transitions": 0.8999999999999999,
+        "operator": 5.9999999999999964,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 12698.166666666666,
+            "end": 20175,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 20325,
+            "end": 24272.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 28122.375,
+            "end": 31512.5,
+            "seconds": 3.390125
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 36362.5,
+            "end": 37337.75,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "success-close",
+            "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+            "start": 41187.75,
+            "end": 45971.041666666664,
+            "seconds": 4.783291666666667
+          }
+        ],
+        "state": "EMAIL_REQUEST",
+        "emailState": "END_SUCCESS",
+        "consent": {
+          "turnId": "mic:SIMULATED:2",
+          "classification": "YES",
+          "at": 27972.375,
+          "recordedAt": "2026-10-20T22:30:30.911Z",
+          "recipientRevision": 3,
+          "questionInstanceId": "synthetic:L:playback-3"
+        }
+      }
+    },
+    {
+      "id": "M",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Authorized intermediary preserves independent authority",
+          "pass": true
+        },
+        {
+          "name": "Authorized intermediary local completion",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 48.632041666666666,
+        "mediaSeconds": 28.932041666666667,
+        "recipientSpeech": 9.5,
+        "recipientThinking": 4.8,
+        "transitions": 0.8999999999999999,
+        "operator": 4.5,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 14198.166666666666,
+            "end": 21675,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "intermediary-consent-question",
+            "hash": "2d43ca1559a5a7183c41ee45fa85b18e05c6bf916f39d7465d71528c4a420da5",
+            "start": 21825,
+            "end": 26933.375,
+            "seconds": 5.108375
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 30783.375,
+            "end": 34173.5,
+            "seconds": 3.390125
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 39023.5,
+            "end": 39998.75,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "success-close",
+            "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+            "start": 43848.75,
+            "end": 48632.041666666664,
+            "seconds": 4.783291666666667
+          }
+        ],
+        "state": "EMAIL_REQUEST",
+        "emailState": "END_SUCCESS",
+        "consent": {
+          "turnId": "mic:SIMULATED:2",
+          "classification": "YES",
+          "at": 30633.375,
+          "recordedAt": "2026-10-20T22:30:30.915Z",
+          "recipientRevision": 2,
+          "questionInstanceId": "synthetic:M:playback-3"
+        }
+      }
+    },
+    {
+      "id": "N",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Unverified intermediary question/YES blocked",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 11.048166666666667,
+        "mediaSeconds": 7.198166666666666,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.15,
+        "operator": 1.5000000000000007,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          }
+        ],
+        "state": "CONSENT_UNCLEAR",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "O",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Refusal is terminal with no persuasion/email",
+          "pass": true
+        },
+        {
+          "name": "No re-asking consent after refusal",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 25.47658333333333,
+        "mediaSeconds": 21.176583333333333,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.6,
+        "operator": 1.499999999999997,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "refusal-close",
+            "hash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+            "start": 22922.375,
+            "end": 25476.583333333332,
+            "seconds": 2.5542083333333334
+          }
+        ],
+        "state": "END_REFUSED",
+        "emailState": "IDLE",
+        "consent": {
+          "turnId": "mic:SIMULATED:1",
+          "classification": "NO",
+          "at": 22772.375,
+          "recordedAt": "2026-10-20T22:30:30.919Z",
+          "recipientRevision": 1,
+          "questionInstanceId": "synthetic:O:playback-3"
+        }
+      }
+    },
+    {
+      "id": "P",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Uncertain final is not YES",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 22.772375,
+        "mediaSeconds": 18.622375,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.44999999999999996,
+        "operator": 1.4999999999999987,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          }
+        ],
+        "state": "CONSENT_UNCLEAR",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "Q",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 49.77587499999999,
+        "mediaSeconds": 32.925875000000005,
+        "recipientSpeech": 6.5,
+        "recipientThinking": 4.8,
+        "transitions": 1.05,
+        "operator": 4.499999999999988,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "clarify",
+            "hash": "4f7cd646ec5b46d260b2bc961e873df3dcfa4ea957baaf2691477be9a734f19d",
+            "start": 22922.375,
+            "end": 28077.208333333332,
+            "seconds": 5.154833333333333
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 31927.208333333332,
+            "end": 35317.33333333333,
+            "seconds": 3.390125
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 40167.33333333333,
+            "end": 41142.58333333333,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "success-close",
+            "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+            "start": 44992.58333333333,
+            "end": 49775.87499999999,
+            "seconds": 4.783291666666667
+          }
+        ],
+        "consent": {
+          "turnId": "mic:SIMULATED:2",
+          "classification": "YES",
+          "at": 31777.208333333332,
+          "recordedAt": "2026-10-20T22:30:30.922Z",
+          "recipientRevision": 1,
+          "questionInstanceId": "synthetic:Q:playback-4"
+        },
+        "localEmail": {
+          "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+          "email": "anna@clinic.example",
+          "recipientRevision": 1,
+          "consentTurnId": "mic:SIMULATED:2",
+          "sourceTurnId": "mic:SIMULATED:3",
+          "confirmationTurnId": "mic:SIMULATED:4",
+          "candidateRevision": 1,
+          "storedAt": 49775.87499999999,
+          "reviewer": "synthetic:operator",
+          "reviewReason": "Exact candidate visually reviewed in simulation",
+          "productionConsent": false
+        }
+      }
+    },
+    {
+      "id": "R",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Busy ends without email or minimum-duration padding",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 17.278583333333334,
+        "mediaSeconds": 14.628583333333335,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.44999999999999996,
+        "operator": -1.3322676295501878e-15,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "callback",
+            "hash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+            "start": 9698.166666666666,
+            "end": 12995.416666666666,
+            "seconds": 3.29725
+          },
+          {
+            "phraseId": "callback-close",
+            "hash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+            "start": 13145.416666666666,
+            "end": 17278.583333333332,
+            "seconds": 4.133166666666667
+          }
+        ],
+        "state": "END_OTHER",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "S",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Unsupported topics route to human without YES",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 9.548166666666667,
+        "mediaSeconds": 7.198166666666666,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.15,
+        "operator": 5.828670879282072e-16,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          }
+        ],
+        "state": "HUMAN_TAKEOVER",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "T",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Unsupported topics route to human without YES",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 9.548166666666667,
+        "mediaSeconds": 7.198166666666666,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.15,
+        "operator": 5.828670879282072e-16,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          }
+        ],
+        "state": "HUMAN_TAKEOVER",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "U",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Unsupported topics route to human without YES",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 9.548166666666667,
+        "mediaSeconds": 7.198166666666666,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.15,
+        "operator": 5.828670879282072e-16,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          }
+        ],
+        "state": "HUMAN_TAKEOVER",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "V",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Barge-in/late output cannot grant consent",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 22.772375,
+        "mediaSeconds": 18.622375,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.44999999999999996,
+        "operator": 1.4999999999999987,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 22772.375,
+            "seconds": 3.947375
+          }
+        ],
+        "state": "CONSENT_UNCLEAR",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "W",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Stale question owner fails",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 26.86975,
+        "mediaSeconds": 22.569750000000003,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.6,
+        "operator": 1.499999999999997,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 20722.375,
+            "end": 24669.75,
+            "seconds": 3.947375
+          }
+        ],
+        "state": "CONSENT_UNCLEAR",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "X",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Recipient revision invalidates reviewed YES",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 25.772375,
+        "mediaSeconds": 18.622375,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.44999999999999996,
+        "operator": 4.499999999999998,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          }
+        ],
+        "state": "RIGHT_PERSON",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "Y",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Output failure cannot deliver consent question",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 16.475,
+        "mediaSeconds": 14.675,
+        "recipientSpeech": 0,
+        "recipientThinking": 0,
+        "transitions": 0.3,
+        "operator": 1.5000000000000007,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          }
+        ],
+        "state": "HUMAN_TAKEOVER",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "Z",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Injected ASR transport failure is durable",
+          "pass": true
+        },
+        {
+          "name": "No invented final or consent",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 16.475,
+        "mediaSeconds": 14.675,
+        "recipientSpeech": 0,
+        "recipientThinking": 0,
+        "transitions": 0.3,
+        "operator": 1.5000000000000007,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          }
+        ],
+        "state": "CONSENT_ASK",
+        "emailState": "OPERATOR_REVIEW",
+        "consent": null
+      }
+    },
+    {
+      "id": "AA",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Invalid dynamic name fails closed",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 7.348166666666666,
+        "mediaSeconds": 7.198166666666666,
+        "recipientSpeech": 0,
+        "recipientThinking": 0,
+        "transitions": 0.15,
+        "operator": -5.273559366969494e-16,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          }
+        ],
+        "state": "HUMAN_TAKEOVER",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "AB",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "long-local",
+          "raw": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example",
+          "known": [
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example"
+          ],
+          "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example",
+          "label": "EXACT",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example",
+          "tokens": [
+            {
+              "raw": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example",
+              "start": 0,
+              "end": 91,
+              "kind": "literal",
+              "alternatives": [
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example"
+              ]
+            }
+          ],
+          "candidates": [
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example"
+          ],
+          "operations": [],
+          "uncertainTokens": [],
+          "errors": [],
+          "comparisonOnly": false
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@long-clinic.department.example",
+          "selectionSource": "DETERMINISTIC_EXACT",
+          "classification": "EXACT_VERIFIED_MATCH",
+          "action": "CONFIRM",
+          "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+          "lookupStatus": "UNIQUE_MATCH",
+          "policyLabel": "EXACT",
+          "matchType": "EXACT",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": true,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": false,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "AC",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "plus",
+          "raw": "anna plus test snabel-a clinic punktum example",
+          "known": [
+            "anna+test@clinic.example"
+          ],
+          "expected": "anna+test@clinic.example",
+          "label": "VERY_STRONG",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "anna plus test snabel-a clinic punktum example",
+          "tokens": [
+            {
+              "raw": "anna",
+              "start": 0,
+              "end": 4,
+              "kind": "literal",
+              "alternatives": [
+                "anna"
+              ]
+            },
+            {
+              "raw": "plus",
+              "start": 5,
+              "end": 9,
+              "kind": "separator",
+              "alternatives": [
+                "+"
+              ]
+            },
+            {
+              "raw": "test",
+              "start": 10,
+              "end": 14,
+              "kind": "literal",
+              "alternatives": [
+                "test"
+              ]
+            },
+            {
+              "raw": "snabel-a",
+              "start": 15,
+              "end": 23,
+              "kind": "separator",
+              "alternatives": [
+                "@"
+              ]
+            },
+            {
+              "raw": "clinic",
+              "start": 24,
+              "end": 30,
+              "kind": "literal",
+              "alternatives": [
+                "clinic"
+              ]
+            },
+            {
+              "raw": "punktum",
+              "start": 31,
+              "end": 38,
+              "kind": "separator",
+              "alternatives": [
+                "."
+              ]
+            },
+            {
+              "raw": "example",
+              "start": 39,
+              "end": 46,
+              "kind": "literal",
+              "alternatives": [
+                "example"
+              ]
+            }
+          ],
+          "candidates": [
+            "anna+test@clinic.example"
+          ],
+          "operations": [
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "plus",
+              "after": "+",
+              "tokenIndex": 1
+            },
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "snabel-a",
+              "after": "@",
+              "tokenIndex": 3
+            },
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "punktum",
+              "after": ".",
+              "tokenIndex": 5
+            },
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "anna plus test snabel-a clinic punktum example",
+              "after": "anna+test@clinic.example"
+            }
+          ],
+          "uncertainTokens": [],
+          "errors": [],
+          "comparisonOnly": false
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "anna+test@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "anna+test@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "anna+test@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": "anna+test@clinic.example",
+          "selectionSource": "DETERMINISTIC_EXACT",
+          "classification": "EXACT_VERIFIED_MATCH",
+          "action": "CONFIRM",
+          "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+          "lookupStatus": "UNIQUE_MATCH",
+          "policyLabel": "VERY_STRONG",
+          "matchType": "NORMALIZED_EXACT",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": true,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": false,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "AD",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "hyphen-domain",
+          "raw": "anna snabel-a long bindestreg clinic punktum example",
+          "known": [
+            "anna@long-clinic.example"
+          ],
+          "expected": "anna@long-clinic.example",
+          "label": "VERY_STRONG",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "anna snabel-a long bindestreg clinic punktum example",
+          "tokens": [
+            {
+              "raw": "anna",
+              "start": 0,
+              "end": 4,
+              "kind": "literal",
+              "alternatives": [
+                "anna"
+              ]
+            },
+            {
+              "raw": "snabel-a",
+              "start": 5,
+              "end": 13,
+              "kind": "separator",
+              "alternatives": [
+                "@"
+              ]
+            },
+            {
+              "raw": "long",
+              "start": 14,
+              "end": 18,
+              "kind": "literal",
+              "alternatives": [
+                "long"
+              ]
+            },
+            {
+              "raw": "bindestreg",
+              "start": 19,
+              "end": 29,
+              "kind": "separator",
+              "alternatives": [
+                "-"
+              ]
+            },
+            {
+              "raw": "clinic",
+              "start": 30,
+              "end": 36,
+              "kind": "literal",
+              "alternatives": [
+                "clinic"
+              ]
+            },
+            {
+              "raw": "punktum",
+              "start": 37,
+              "end": 44,
+              "kind": "separator",
+              "alternatives": [
+                "."
+              ]
+            },
+            {
+              "raw": "example",
+              "start": 45,
+              "end": 52,
+              "kind": "literal",
+              "alternatives": [
+                "example"
+              ]
+            }
+          ],
+          "candidates": [
+            "anna@long-clinic.example"
+          ],
+          "operations": [
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "snabel-a",
+              "after": "@",
+              "tokenIndex": 1
+            },
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "bindestreg",
+              "after": "-",
+              "tokenIndex": 3
+            },
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "punktum",
+              "after": ".",
+              "tokenIndex": 5
+            },
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "anna snabel-a long bindestreg clinic punktum example",
+              "after": "anna@long-clinic.example"
+            }
+          ],
+          "uncertainTokens": [],
+          "errors": [],
+          "comparisonOnly": false
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "anna@long-clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "anna@long-clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "anna@long-clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": "anna@long-clinic.example",
+          "selectionSource": "DETERMINISTIC_EXACT",
+          "classification": "EXACT_VERIFIED_MATCH",
+          "action": "CONFIRM",
+          "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+          "lookupStatus": "UNIQUE_MATCH",
+          "policyLabel": "VERY_STRONG",
+          "matchType": "NORMALIZED_EXACT",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": true,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": false,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "AE",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "underscore",
+          "raw": "anna understreg test snabel-a clinic punktum example",
+          "known": [
+            "anna_test@clinic.example"
+          ],
+          "expected": "anna_test@clinic.example",
+          "label": "VERY_STRONG",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "anna understreg test snabel-a clinic punktum example",
+          "tokens": [
+            {
+              "raw": "anna",
+              "start": 0,
+              "end": 4,
+              "kind": "literal",
+              "alternatives": [
+                "anna"
+              ]
+            },
+            {
+              "raw": "understreg",
+              "start": 5,
+              "end": 15,
+              "kind": "separator",
+              "alternatives": [
+                "_"
+              ]
+            },
+            {
+              "raw": "test",
+              "start": 16,
+              "end": 20,
+              "kind": "literal",
+              "alternatives": [
+                "test"
+              ]
+            },
+            {
+              "raw": "snabel-a",
+              "start": 21,
+              "end": 29,
+              "kind": "separator",
+              "alternatives": [
+                "@"
+              ]
+            },
+            {
+              "raw": "clinic",
+              "start": 30,
+              "end": 36,
+              "kind": "literal",
+              "alternatives": [
+                "clinic"
+              ]
+            },
+            {
+              "raw": "punktum",
+              "start": 37,
+              "end": 44,
+              "kind": "separator",
+              "alternatives": [
+                "."
+              ]
+            },
+            {
+              "raw": "example",
+              "start": 45,
+              "end": 52,
+              "kind": "literal",
+              "alternatives": [
+                "example"
+              ]
+            }
+          ],
+          "candidates": [
+            "anna_test@clinic.example"
+          ],
+          "operations": [
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "understreg",
+              "after": "_",
+              "tokenIndex": 1
+            },
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "snabel-a",
+              "after": "@",
+              "tokenIndex": 3
+            },
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "punktum",
+              "after": ".",
+              "tokenIndex": 5
+            },
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "anna understreg test snabel-a clinic punktum example",
+              "after": "anna_test@clinic.example"
+            }
+          ],
+          "uncertainTokens": [],
+          "errors": [],
+          "comparisonOnly": false
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "anna_test@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "anna_test@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "anna_test@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": "anna_test@clinic.example",
+          "selectionSource": "DETERMINISTIC_EXACT",
+          "classification": "EXACT_VERIFIED_MATCH",
+          "action": "CONFIRM",
+          "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+          "lookupStatus": "UNIQUE_MATCH",
+          "policyLabel": "VERY_STRONG",
+          "matchType": "NORMALIZED_EXACT",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": true,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": false,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "AF",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "digit-heavy",
+          "raw": "a1234567890@c123.example",
+          "known": [
+            "a1234567890@c123.example"
+          ],
+          "expected": "a1234567890@c123.example",
+          "label": "EXACT",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "a1234567890@c123.example",
+          "tokens": [
+            {
+              "raw": "a1234567890@c123.example",
+              "start": 0,
+              "end": 24,
+              "kind": "literal",
+              "alternatives": [
+                "a1234567890@c123.example"
+              ]
+            }
+          ],
+          "candidates": [
+            "a1234567890@c123.example"
+          ],
+          "operations": [],
+          "uncertainTokens": [],
+          "errors": [],
+          "comparisonOnly": false
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "a1234567890@c123.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "a1234567890@c123.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "a1234567890@c123.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": "a1234567890@c123.example",
+          "selectionSource": "DETERMINISTIC_EXACT",
+          "classification": "EXACT_VERIFIED_MATCH",
+          "action": "CONFIRM",
+          "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+          "lookupStatus": "UNIQUE_MATCH",
+          "policyLabel": "EXACT",
+          "matchType": "EXACT",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": true,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": false,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "AG",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "All phrase bindings validate",
+          "pass": true
+        },
+        {
+          "name": "Known regression is explicit",
+          "pass": true
+        },
+        {
+          "name": "No phonetic business spelling",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "units": 42,
+        "nativeListeningProven": false
+      }
+    },
+    {
+      "id": "AH",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "All phrase bindings validate",
+          "pass": true
+        },
+        {
+          "name": "Known regression is explicit",
+          "pass": true
+        },
+        {
+          "name": "No phonetic business spelling",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "units": 42,
+        "nativeListeningProven": false
+      }
+    },
+    {
+      "id": "AI",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "All phrase bindings validate",
+          "pass": true
+        },
+        {
+          "name": "Known regression is explicit",
+          "pass": true
+        },
+        {
+          "name": "No phonetic business spelling",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "units": 42,
+        "nativeListeningProven": false
+      }
+    },
+    {
+      "id": "AJ",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "wrong-local",
+          "raw": "anne@clinic.example",
+          "known": [
+            "anna@clinic.example"
+          ],
+          "expected": null,
+          "label": "CONFLICT",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "anne@clinic.example",
+          "tokens": [
+            {
+              "raw": "anne@clinic.example",
+              "start": 0,
+              "end": 19,
+              "kind": "literal",
+              "alternatives": [
+                "anne@clinic.example"
+              ]
+            }
+          ],
+          "candidates": [
+            "anne@clinic.example"
+          ],
+          "operations": [],
+          "uncertainTokens": [],
+          "errors": [],
+          "comparisonOnly": false
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "anne@clinic.example",
+              "matches": [],
+              "score": 0,
+              "reason": "No exact scoped record"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "anna@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": null,
+          "selectionSource": null,
+          "classification": "CONTRADICTORY_MATCH",
+          "action": "OPERATOR_REVIEW",
+          "reason": "Spoken characters disagree with stored addresses; speech retained",
+          "lookupStatus": "UNIQUE_MATCH",
+          "policyLabel": "CONFLICT",
+          "matchType": "NO_MATCH",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": false,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": true,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "AK",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "model-wrong",
+          "raw": "anna@clinic.example",
+          "known": [
+            "anna@clinic.example"
+          ],
+          "expected": "anna@clinic.example",
+          "label": "EXACT",
+          "source": "OWNED_FINAL",
+          "model": "WRONG"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "anna@clinic.example",
+          "tokens": [
+            {
+              "raw": "anna@clinic.example",
+              "start": 0,
+              "end": 19,
+              "kind": "literal",
+              "alternatives": [
+                "anna@clinic.example"
+              ]
+            }
+          ],
+          "candidates": [
+            "anna@clinic.example"
+          ],
+          "operations": [],
+          "uncertainTokens": [],
+          "errors": [],
+          "comparisonOnly": false
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "anna@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "anna@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "anna@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": "anna@clinic.example",
+          "selectionSource": "DETERMINISTIC_EXACT",
+          "classification": "EXACT_VERIFIED_MATCH",
+          "action": "CONFIRM",
+          "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+          "suggestion": {
+            "raw": {
+              "candidate": "invented@other.example",
+              "confidence": "EXACT_VERIFIED_MATCH",
+              "reason": "malicious",
+              "evidenceTokenIndices": [],
+              "uncertainTokens": []
+            },
+            "accepted": false,
+            "reason": "Model cannot invent, replace, select ambiguous evidence or promote confidence"
+          },
+          "lookupStatus": "UNIQUE_MATCH",
+          "policyLabel": "EXACT",
+          "matchType": "EXACT",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": true,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": false,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "AL",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "model-invalid",
+          "raw": "anna@clinic.example",
+          "known": [
+            "anna@clinic.example"
+          ],
+          "expected": "anna@clinic.example",
+          "label": "EXACT",
+          "source": "OWNED_FINAL",
+          "model": "INVALID"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "anna@clinic.example",
+          "tokens": [
+            {
+              "raw": "anna@clinic.example",
+              "start": 0,
+              "end": 19,
+              "kind": "literal",
+              "alternatives": [
+                "anna@clinic.example"
+              ]
+            }
+          ],
+          "candidates": [
+            "anna@clinic.example"
+          ],
+          "operations": [],
+          "uncertainTokens": [],
+          "errors": [],
+          "comparisonOnly": false
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "anna@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "anna@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "anna@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": "anna@clinic.example",
+          "selectionSource": "DETERMINISTIC_EXACT",
+          "classification": "EXACT_VERIFIED_MATCH",
+          "action": "CONFIRM",
+          "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+          "suggestion": {
+            "raw": "not JSON",
+            "accepted": false,
+            "reason": "Malformed suggestion"
+          },
+          "lookupStatus": "UNIQUE_MATCH",
+          "policyLabel": "EXACT",
+          "matchType": "EXACT",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": true,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": false,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "AM",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Frozen expected email policy",
+          "pass": true
+        },
+        {
+          "name": "No auto-storage",
+          "pass": true
+        },
+        {
+          "name": "Ambiguity never selected",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "case": {
+          "id": "spoken",
+          "raw": "anna snabel-a clinic punktum example",
+          "known": [
+            "anna@clinic.example"
+          ],
+          "expected": "anna@clinic.example",
+          "label": "VERY_STRONG",
+          "source": "OWNED_FINAL"
+        },
+        "parsed": {
+          "version": "stage-2.0c32-structured-email-1",
+          "raw": "anna snabel-a clinic punktum example",
+          "tokens": [
+            {
+              "raw": "anna",
+              "start": 0,
+              "end": 4,
+              "kind": "literal",
+              "alternatives": [
+                "anna"
+              ]
+            },
+            {
+              "raw": "snabel-a",
+              "start": 5,
+              "end": 13,
+              "kind": "separator",
+              "alternatives": [
+                "@"
+              ]
+            },
+            {
+              "raw": "clinic",
+              "start": 14,
+              "end": 20,
+              "kind": "literal",
+              "alternatives": [
+                "clinic"
+              ]
+            },
+            {
+              "raw": "punktum",
+              "start": 21,
+              "end": 28,
+              "kind": "separator",
+              "alternatives": [
+                "."
+              ]
+            },
+            {
+              "raw": "example",
+              "start": 29,
+              "end": 36,
+              "kind": "literal",
+              "alternatives": [
+                "example"
+              ]
+            }
+          ],
+          "candidates": [
+            "anna@clinic.example"
+          ],
+          "operations": [
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "snabel-a",
+              "after": "@",
+              "tokenIndex": 1
+            },
+            {
+              "operation": "EXPLICIT_SPOKEN_TOKEN",
+              "before": "punktum",
+              "after": ".",
+              "tokenIndex": 3
+            },
+            {
+              "operation": "JOIN_EXPLICIT_TOKEN_SEQUENCE",
+              "before": "anna snabel-a clinic punktum example",
+              "after": "anna@clinic.example"
+            }
+          ],
+          "uncertainTokens": [],
+          "errors": [],
+          "comparisonOnly": false
+        },
+        "result": {
+          "ranked": [
+            {
+              "candidate": "anna@clinic.example",
+              "matches": [
+                {
+                  "contactId": "synthetic:contact",
+                  "email": "anna@clinic.example",
+                  "recordVersion": "1",
+                  "sourceRecordId": "synthetic:row:0"
+                }
+              ],
+              "score": 1,
+              "reason": "Exact characters; scoped record agrees"
+            }
+          ],
+          "databaseCandidates": [
+            {
+              "contactId": "synthetic:contact",
+              "email": "anna@clinic.example",
+              "recordVersion": "1",
+              "sourceRecordId": "synthetic:row:0"
+            }
+          ],
+          "databaseStatus": "OK",
+          "selected": "anna@clinic.example",
+          "selectionSource": "DETERMINISTIC_EXACT",
+          "classification": "EXACT_VERIFIED_MATCH",
+          "action": "CONFIRM",
+          "reason": "Literal reconstruction equals independently scoped contact record; recipient confirmation still required",
+          "lookupStatus": "UNIQUE_MATCH",
+          "policyLabel": "VERY_STRONG",
+          "matchType": "NORMALIZED_EXACT",
+          "autoAccept": false,
+          "calibratedProbability": null,
+          "businessDecision": "EXACT_READBACK_REPLACEMENT_REQUIRES_APPROVAL"
+        },
+        "eligibleForConfirmation": true,
+        "finalStoredAddress": null,
+        "autoAccepted": false,
+        "humanReview": false,
+        "takeover": false,
+        "correct": true
+      }
+    },
+    {
+      "id": "AN",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Cancellation rejects rather than applying a result",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": null
+    },
+    {
+      "id": "AO",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Duplicate final cannot replace earlier evidence",
+          "pass": true
+        },
+        {
+          "name": "No stale result stored",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 40.752625,
+        "mediaSeconds": 25.402625000000004,
+        "recipientSpeech": 8,
+        "recipientThinking": 3.6,
+        "transitions": 0.75,
+        "operator": 2.999999999999998,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 24422.375,
+            "end": 27812.5,
+            "seconds": 3.390125
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 32662.5,
+            "end": 36052.625,
+            "seconds": 3.390125
+          }
+        ],
+        "state": "EMAIL_REQUEST",
+        "emailState": "LISTENING",
+        "consent": {
+          "turnId": "mic:SIMULATED:1",
+          "classification": "YES",
+          "at": 24272.375,
+          "recordedAt": "2026-10-20T22:30:30.950Z",
+          "recipientRevision": 1,
+          "questionInstanceId": "synthetic:AO:playback-3"
+        }
+      }
+    },
+    {
+      "id": "AP",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 42.27104166666666,
+        "mediaSeconds": 27.77104166666667,
+        "recipientSpeech": 5.5,
+        "recipientThinking": 3.6,
+        "transitions": 0.8999999999999999,
+        "operator": 4.499999999999993,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 24422.375,
+            "end": 27812.5,
+            "seconds": 3.390125
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 32662.5,
+            "end": 33637.75,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "success-close",
+            "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+            "start": 37487.75,
+            "end": 42271.041666666664,
+            "seconds": 4.783291666666667
+          }
+        ],
+        "consent": {
+          "turnId": "mic:SIMULATED:1",
+          "classification": "YES",
+          "at": 24272.375,
+          "recordedAt": "2026-10-20T22:30:30.952Z",
+          "recipientRevision": 1,
+          "questionInstanceId": "synthetic:AP:playback-3"
+        },
+        "localEmail": {
+          "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+          "email": "anna@clinic.example",
+          "recipientRevision": 1,
+          "consentTurnId": "mic:SIMULATED:1",
+          "sourceTurnId": "mic:SIMULATED:2",
+          "confirmationTurnId": "mic:SIMULATED:3",
+          "candidateRevision": 1,
+          "storedAt": 42271.041666666664,
+          "reviewer": "synthetic:operator",
+          "reviewReason": "Exact candidate visually reviewed in simulation",
+          "productionConsent": false
+        }
+      }
+    },
+    {
+      "id": "AQ",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Refusal is terminal with no persuasion/email",
+          "pass": true
+        },
+        {
+          "name": "No re-asking consent after refusal",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 25.47658333333333,
+        "mediaSeconds": 21.176583333333333,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.6,
+        "operator": 1.499999999999997,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "refusal-close",
+            "hash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+            "start": 22922.375,
+            "end": 25476.583333333332,
+            "seconds": 2.5542083333333334
+          }
+        ],
+        "state": "END_REFUSED",
+        "emailState": "IDLE",
+        "consent": {
+          "turnId": "mic:SIMULATED:1",
+          "classification": "NO",
+          "at": 22772.375,
+          "recordedAt": "2026-10-20T22:30:30.954Z",
+          "recipientRevision": 1,
+          "questionInstanceId": "synthetic:AQ:playback-3"
+        }
+      }
+    },
+    {
+      "id": "AR",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Busy ends without email or minimum-duration padding",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 17.278583333333334,
+        "mediaSeconds": 14.628583333333335,
+        "recipientSpeech": 1,
+        "recipientThinking": 1.2,
+        "transitions": 0.44999999999999996,
+        "operator": -1.3322676295501878e-15,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "callback",
+            "hash": "8566a2f49da26c619ad3c65fa7f26988fdd9ffadcb88a1b44c437be7307d4006",
+            "start": 9698.166666666666,
+            "end": 12995.416666666666,
+            "seconds": 3.29725
+          },
+          {
+            "phraseId": "callback-close",
+            "hash": "235242fd29cf5b9c10995850c3ead56b9675cc792a229213e47429522db832c6",
+            "start": 13145.416666666666,
+            "end": 17278.583333333332,
+            "seconds": 4.133166666666667
+          }
+        ],
+        "state": "END_OTHER",
+        "emailState": "IDLE",
+        "consent": null
+      }
+    },
+    {
+      "id": "AS",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 42.27104166666666,
+        "mediaSeconds": 27.77104166666667,
+        "recipientSpeech": 5.5,
+        "recipientThinking": 3.6,
+        "transitions": 0.8999999999999999,
+        "operator": 4.499999999999993,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 24422.375,
+            "end": 27812.5,
+            "seconds": 3.390125
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 32662.5,
+            "end": 33637.75,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "success-close",
+            "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+            "start": 37487.75,
+            "end": 42271.041666666664,
+            "seconds": 4.783291666666667
+          }
+        ],
+        "consent": {
+          "turnId": "mic:SIMULATED:1",
+          "classification": "YES",
+          "at": 24272.375,
+          "recordedAt": "2026-10-20T22:30:30.956Z",
+          "recipientRevision": 1,
+          "questionInstanceId": "synthetic:AS:playback-3"
+        },
+        "localEmail": {
+          "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+          "email": "anna@clinic.example",
+          "recipientRevision": 1,
+          "consentTurnId": "mic:SIMULATED:1",
+          "sourceTurnId": "mic:SIMULATED:2",
+          "confirmationTurnId": "mic:SIMULATED:3",
+          "candidateRevision": 1,
+          "storedAt": 42271.041666666664,
+          "reviewer": "synthetic:operator",
+          "reviewReason": "Exact candidate visually reviewed in simulation",
+          "productionConsent": false
+        }
+      }
+    },
+    {
+      "id": "AT",
+      "kind": "MODELED_SIMULATED_NOT_PHYSICAL",
+      "checks": [
+        {
+          "name": "Local evaluation END_SUCCESS",
+          "pass": true
+        },
+        {
+          "name": "Exact text stored locally, not production consent",
+          "pass": true
+        },
+        {
+          "name": "Guarded reviewed YES retained",
+          "pass": true
+        },
+        {
+          "name": "No arbitrary email TTS",
+          "pass": true
+        },
+        {
+          "name": "Modeled ordinary duration 30–90 seconds",
+          "pass": true
+        }
+      ],
+      "passed": true,
+      "summary": {
+        "modeledElapsedSeconds": 48.096291666666666,
+        "mediaSeconds": 28.746291666666668,
+        "recipientSpeech": 9,
+        "recipientThinking": 4.8,
+        "transitions": 1.05,
+        "operator": 4.499999999999998,
+        "providerNetwork": null,
+        "unknownPhysical": null,
+        "clips": [
+          {
+            "phraseId": "opening",
+            "hash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+            "start": 150,
+            "end": 7348.166666666666,
+            "seconds": 7.198166666666666
+          },
+          {
+            "phraseId": "purpose",
+            "hash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+            "start": 8998.166666666666,
+            "end": 16475,
+            "seconds": 7.476833333333333
+          },
+          {
+            "phraseId": "consent-question",
+            "hash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+            "start": 16625,
+            "end": 20572.375,
+            "seconds": 3.947375
+          },
+          {
+            "phraseId": "email-request",
+            "hash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+            "start": 24422.375,
+            "end": 27812.5,
+            "seconds": 3.390125
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 32662.5,
+            "end": 33637.75,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "email-confirmation-question",
+            "hash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+            "start": 38487.75,
+            "end": 39463,
+            "seconds": 0.97525
+          },
+          {
+            "phraseId": "success-close",
+            "hash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+            "start": 43313,
+            "end": 48096.291666666664,
+            "seconds": 4.783291666666667
+          }
+        ],
+        "consent": {
+          "turnId": "mic:SIMULATED:1",
+          "classification": "YES",
+          "at": 24272.375,
+          "recordedAt": "2026-10-20T22:30:30.957Z",
+          "recipientRevision": 1,
+          "questionInstanceId": "synthetic:AT:playback-3"
+        },
+        "localEmail": {
+          "kind": "LOCAL_EVALUATION_CONFIRMED_EMAIL",
+          "email": "anne@clinic.example",
+          "recipientRevision": 1,
+          "consentTurnId": "mic:SIMULATED:1",
+          "sourceTurnId": "mic:SIMULATED:3",
+          "confirmationTurnId": "mic:SIMULATED:4",
+          "candidateRevision": 2,
+          "storedAt": 48096.291666666664,
+          "reviewer": "synthetic:operator",
+          "reviewReason": "Exact candidate visually reviewed in simulation",
+          "productionConsent": false
+        }
+      }
+    }
+  ],
+  "metrics": {
+    "scenarios": 46,
+    "passed": 46,
+    "ordinaryEligible": 8,
+    "ordinaryCompleted": 8,
+    "consentFalsePositives": 0,
+    "failed": []
+  }
+}

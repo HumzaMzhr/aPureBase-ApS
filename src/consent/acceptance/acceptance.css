@@ -1,0 +1,10 @@
+.c3 .consent-card { margin: 1.25rem 0; }
+.c3 select { width: 100%; padding: .65rem; }
+.c3 code { overflow-wrap: anywhere; }
+.c3 pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 24rem; overflow-y: auto; font-size: .8rem; }
+.c3 .c3-spoken { font-size: 1.2rem; line-height: 1.65; }
+.c3 table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+.c3 th, .c3 td { text-align: left; padding: .65rem; border-bottom: 1px solid #d6dde1; }
+.c3 details { margin: .8rem 0; }
+.c3 dt { font-weight: 600; margin-top: .6rem; }
+.c3 dd { margin: .2rem 0; }

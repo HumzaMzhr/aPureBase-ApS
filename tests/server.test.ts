@@ -66,7 +66,7 @@ it('transcribes complete files with explicit source hints and glossary', async (
   expect(form.get('languages[]')).toBe('da'); expect(String(form.get('prompt'))).toContain('aPureBase'); expect(form.has('stream')).toBe(false);
 });
 it('honors browser backpressure instead of reading and buffering the remaining provider stream',async()=>{
-  vi.stubEnv('ELEVENLABS_API_KEY','private-eleven-key');vi.stubEnv('ELEVENLABS_VOICE_ID','test-voice');vi.stubEnv('ELEVENLABS_MODEL_ID','eleven_flash_v2_5');vi.stubEnv('ELEVENLABS_VOICE_SETTINGS','');
+  vi.stubEnv('ELEVENLABS_API_KEY','private-eleven-key');vi.stubEnv('ELEVENLABS_VOICE_ID','gIfqD5jrnhkFu8ENVbXC');vi.stubEnv('ELEVENLABS_MODEL_ID','eleven_flash_v2_5');vi.stubEnv('ELEVENLABS_VOICE_SETTINGS','');
   let pulls=0;upstream.mockResolvedValue(new Response(new ReadableStream<Uint8Array>({pull(c){pulls++;if(pulls===1)c.enqueue(new Uint8Array([1,2]));else if(pulls===2)c.enqueue(new Uint8Array([3,4]));else c.close();}},{highWaterMark:0})));
   const req=Object.assign(Readable.from([JSON.stringify({text:'Hej fra aPureBase.',language:'da'})]),{method:'POST',headers:{origin:'http://localhost:5173',host:'localhost:5173','content-type':'application/json'}});
   const res=Object.assign(new EventEmitter(),{headersSent:false,writableEnded:false,destroyed:false,writeHead:vi.fn(),write:vi.fn(()=>true).mockReturnValueOnce(false),end:vi.fn(),destroy:vi.fn()});

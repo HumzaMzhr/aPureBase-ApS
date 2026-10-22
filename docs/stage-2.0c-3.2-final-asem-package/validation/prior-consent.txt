@@ -1,0 +1,9 @@
+
+ RUN  v4.1.11 /private/tmp/c32-final-asem-package/validation-sealed/tree
+
+
+ Test Files  13 passed (13)
+      Tests  496 passed (496)
+   Start at  04:29:43
+   Duration  1.72s (transform 1.82s, setup 0ms, import 3.56s, tests 2.37s, environment 1ms)
+

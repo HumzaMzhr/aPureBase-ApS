@@ -1,0 +1,111 @@
+{
+  "kind": "OFFLINE_CONTENT_AND_ASSUMPTION_MODEL_NOT_PHYSICAL_TELEPHONE_TIMING",
+  "targetOrdinarySuccessSeconds": [
+    30,
+    90
+  ],
+  "preferredSeconds": [
+    30,
+    60
+  ],
+  "path": "Verified target HCP, reviewed scoped consent, exact spoken email + unique exact scoped record, concise owned confirmation",
+  "staticUnits": [
+    {
+      "phraseId": "opening",
+      "audioHash": "247f0b55738cc440dd207d76237a78fdbaf07c473c701728e32965f6de136509",
+      "seconds": 7.198166666666666
+    },
+    {
+      "phraseId": "purpose",
+      "audioHash": "bdd80e984b2df54688b27e5e2e92f5571d417649790b1386c491366ca2070a2a",
+      "seconds": 7.476833333333333
+    },
+    {
+      "phraseId": "consent-question",
+      "audioHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+      "seconds": 3.947375
+    },
+    {
+      "phraseId": "email-request",
+      "audioHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+      "seconds": 3.390125
+    },
+    {
+      "phraseId": "email-confirmation-question",
+      "audioHash": "0ff8196c2b656790e640a40fc3ead58af6579b9274d088d3876c52db70237f98",
+      "seconds": 0.97525
+    },
+    {
+      "phraseId": "success-close",
+      "audioHash": "b127cd49b4918351697c21d1a043441a40e176861ab8ec633f7677c5cab89d26",
+      "seconds": 4.783291666666667
+    }
+  ],
+  "staticAudioSeconds": 27.77104166666667,
+  "dynamicAudioSeconds": 0,
+  "assumptions": {
+    "recipientResponseSeconds": [
+      12,
+      25
+    ],
+    "transitionSeconds": [
+      1,
+      4
+    ],
+    "operatorReviewSeconds": [
+      2,
+      6
+    ],
+    "resolverBudgetSeconds": [
+      0,
+      0.25
+    ]
+  },
+  "providerNetworkSeconds": null,
+  "unknownUnmodeled": [
+    "Live ASR availability/endpoint latency",
+    "Real CRM lookup/network latency (adapter absent)",
+    "Human decision/delivery overlap",
+    "Physical output gaps and barge-in",
+    "Arbitrary-name units",
+    "New pronunciation variants and joins"
+  ],
+  "subtotalExcludingUnknownSeconds": [
+    42.77104166666667,
+    63.02104166666667
+  ],
+  "legacyCharacterReadbackComparisons": [
+    {
+      "audioHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+      "legacyDynamicSeconds": 18.715291666666666,
+      "legacyPrefixSeconds": 2.925708333333333,
+      "modeledAudioSecondsRemoved": 21.641,
+      "measuredPhysicalSavingSeconds": null
+    },
+    {
+      "audioHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+      "legacyDynamicSeconds": 15.65025,
+      "legacyPrefixSeconds": 2.925708333333333,
+      "modeledAudioSecondsRemoved": 18.575958333333332,
+      "measuredPhysicalSavingSeconds": null
+    },
+    {
+      "audioHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+      "legacyDynamicSeconds": 19.319,
+      "legacyPrefixSeconds": 2.925708333333333,
+      "modeledAudioSecondsRemoved": 22.24470833333333,
+      "measuredPhysicalSavingSeconds": null
+    },
+    {
+      "audioHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+      "legacyDynamicSeconds": 10.866958333333333,
+      "legacyPrefixSeconds": 2.925708333333333,
+      "modeledAudioSecondsRemoved": 13.792666666666666,
+      "measuredPhysicalSavingSeconds": null
+    }
+  ],
+  "highConfidencePath": "Explicit address disambiguation or operator review: no duration bound claimed",
+  "refusalBusyPaths": "Existing short exits preserved; no padding or minimum-duration constraint applied",
+  "newSynthesisVariantDurations": null,
+  "physicalVerified": false
+}

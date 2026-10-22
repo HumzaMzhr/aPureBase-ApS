@@ -1,0 +1,70 @@
+Stage 2.0A offline validation
+Generated: 2026-10-17T21:59:17.118333+00:00
+
+Baseline source/server/public files hashed: 94
+Changed existing files: ["src/main.tsx"]
+All existing Stage 1.9.6 streaming/server/public files unchanged.
+No provider generation, live/provider tests, commit, PR or deploy.
+No production audio generated; all 13 response assets are null placeholders.
+
+Commands and exit results:
+focused consent tests: 0
+npm test (local mocked transports only): 0
+npm run lint: 0
+npm run typecheck: 0
+npm run build: 0
+git diff --check: 0; new-file no-index checks: no whitespace errors (exit 1 means differing files).
+
+Browser checks (static preview, no backend/provider API):
+recipient + question + candidate YES + explicit review -> EMAIL_REQUEST
+literal email + exact readback + guarded close -> END_SUCCESS
+human takeover -> unchanged interpreter READY; no pairing/start performed
+Production Play disabled; empty workspace left ready for offline review.
+
+--- focused ---
+RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  3 passed (3)
+      Tests  58 passed (58)
+   Start at  02:57:59
+   Duration  375ms (transform 287ms, setup 0ms, import 370ms, tests 91ms, environment 0ms)
+
+--- full-tests ---
+> apurebase-stage1-translator@0.9.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/humzamazhar/Documents/ChatGPT/aPureBase ApS
+
+
+ Test Files  68 passed (68)
+      Tests  687 passed (687)
+   Start at  02:56:53
+   Duration  8.35s (transform 2.06s, setup 0ms, import 4.29s, tests 29.79s, environment 7ms)
+
+--- lint ---
+> apurebase-stage1-translator@0.9.0 lint
+> eslint .
+
+--- typecheck ---
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+--- build ---
+> apurebase-stage1-translator@0.9.0 build
+> npm run typecheck && vite build
+
+
+> apurebase-stage1-translator@0.9.0 typecheck
+> tsc --noEmit
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 88 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.37 kB │ gzip:   0.27 kB
+dist/assets/index-BnBu6Cwb.css   16.57 kB │ gzip:   4.20 kB
+dist/assets/index-BXwdnuE7.js   485.53 kB │ gzip: 146.15 kB
+✓ built in 738ms

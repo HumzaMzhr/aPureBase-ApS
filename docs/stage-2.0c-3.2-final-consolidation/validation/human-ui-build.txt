@@ -1,0 +1,20 @@
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 101 modules transformed.
+
+(!) outDir /private/tmp/c32-consolidation/validation/human-ui-build is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../../../../../private/tmp/c32-consolidation/validation/human-ui-build/stage20c32-retest.html                            0.40 kB │ gzip:   0.29 kB
+../../../../../private/tmp/c32-consolidation/validation/human-ui-build/assets/apurebase-wordmark-Ddho7gsC.jpg            4.73 kB
+../../../../../private/tmp/c32-consolidation/validation/human-ui-build/assets/apurebase-molecular-header-44XA9jj7.jpg   25.77 kB
+../../../../../private/tmp/c32-consolidation/validation/human-ui-build/assets/stage20c32-retest-D8I9FmIr.css            17.42 kB │ gzip:   4.16 kB
+../../../../../private/tmp/c32-consolidation/validation/human-ui-build/assets/stage20c32-retest-DzI6tmUZ.js            667.18 kB │ gzip: 166.44 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 640ms

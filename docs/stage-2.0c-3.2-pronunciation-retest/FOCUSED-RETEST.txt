@@ -1,0 +1,51 @@
+aPureBase C32 — TWO NEW PRONUNCIATION CANDIDATES
+stage-2.0c32-candidate-1; uncommitted recovery based on c647dec.
+HUMAN_REVIEW_PENDING. NOT ACCEPTED. NOT PRODUCTION READY.
+
+This replaces the old Mac ZIP for the focused Why Calling / Success Close
+listening review. The old ZIP still plays the older recordings for those slots.
+Do not use it for this retest. This ZIP is a local listening bundle, not a signed
+native application or a replacement for full microphone/call testing.
+
+1. Unzip the entire folder. Node.js >=22.12 is required (Intel or Apple Silicon).
+   No npm installation or API key is needed for this prebuilt listening bundle.
+2. Double-click Start.command. Keep the Terminal window open. Use your normal
+   macOS security workflow for trusted downloaded scripts; no protection bypass
+   is included. Use Chrome/Safari and headphones at a comfortable volume.
+3. Open C-3.2 human review / export. Enter your own reviewer name.
+4. Under HUMAN LISTENING EVIDENCE, choose why-calling. Confirm the selected hash
+   is b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff.
+   Click Play exact current candidate locally. Listen to the full clip, especially
+   sende dig, aPureBase and e-mail. Rate naturalness/pronunciation/pace honestly,
+   attest only after personally hearing it, and record the listening observation.
+5. Choose success-close. Confirm hash
+   e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908.
+   It says Du kan altid sige fra ... instead of framelde. Play fully, independently
+   set each rating/result/comment, attest and record this observation.
+   Previous field values can remain selected after changing phrases; explicitly
+   choose fresh ratings and comments for each phrase.
+6. Export HUMAN REVIEW EVIDENCE before closing or refreshing. Send that JSON to
+   Humza. Keep failures and uncertain pronunciation; do not copy old PASS labels.
+7. Stop with Control-C in Terminal.
+
+Voice: Isabella, eleven_flash_v2_5, speed0.95.
+Playback gain:3.5573605757216837 with existing peak/clipping safeguards.
+Direct WAV playback outside this UI does not apply that calibrated playback gain.
+The reference folder includes technical verification; that is not human approval.
+
+OTHER CONCERNS REMAIN
+All five phrases in Asem's prior export were rated 2/5 for pronunciation, including
+four labelled PASS. Consent Question, Email Request and Clarify remain unchanged
+and unresolved. Opening was not reviewed in that export. The new two must receive
+fresh listening verdicts. Overall C32 acceptance is not granted by this retest.
+
+The other inspector/injected controls are engineering tools. Do not use them as
+live microphone evidence. This static launcher rejects API/WebSocket requests;
+the preserved C31 workspace link is unavailable here. Microphone, natural-call,
+telephone, CRM and end-to-end timing verification are outside this focused bundle.
+Historical duration reports are not measurements of these new clips or calls.
+
+Generation receipts: two earlier authorized requests, 220 submitted characters,
+two successes, zero failures/retries. Recovery/packaging adds zero provider calls.
+49 original/C31 recordings are preserved unchanged. No credentials/private source
+recordings are included. No commit, push, deployment, acceptance or Stage2D.

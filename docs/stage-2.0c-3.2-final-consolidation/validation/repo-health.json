@@ -1,0 +1,15 @@
+{
+  "stage": "2.0c31",
+  "gateway": true,
+  "configured": false,
+  "model": "gpt-live-transcribe",
+  "language": "da",
+  "sampleRate": 24000,
+  "packageVersion": "stage-2.0c32-email-architecture-1",
+  "candidateSourceHash": "c91b38b0e785684314fe82a123ed4ca26a09bb61387204901924d2ccb3179f9b",
+  "bootId": "b0973a1e-5e2d-40f4-8dbf-135bc7168642",
+  "processId": 89991,
+  "providerAuthorization": "NOT_TESTED_UNTIL_MANUAL_START",
+  "providerRequestsOnHealth": 0,
+  "verificationOnly": true
+}

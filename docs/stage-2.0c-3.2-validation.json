@@ -1,0 +1,191 @@
+{
+  "stage": "2.0C-3.2",
+  "status": "HUMAN_ACCEPTANCE_CANDIDATE_NOT_ACCEPTED",
+  "branch": "codex/stage-2.0c3-human-acceptance",
+  "head": "34285a8d6f4f94c6e8036c375b8a3244c316c176",
+  "remoteBaseline": "34285a8d6f4f94c6e8036c375b8a3244c316c176",
+  "runtime": {
+    "node": "v25.9.0",
+    "npm": "11.12.1",
+    "os": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "results": {
+    "c32Focused": {
+      "passed": 91,
+      "failed": 0,
+      "files": 2
+    },
+    "priorC3C31Focused": {
+      "passed": 139,
+      "failed": 0,
+      "files": 5
+    },
+    "allPriorConsent": {
+      "passed": 496,
+      "failed": 0,
+      "files": 13
+    },
+    "fullSuite": {
+      "passed": 1205,
+      "failed": 0,
+      "files": 79
+    },
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "separateWorkbenchBuild": "PASS",
+    "diffWhitespace": "PASS",
+    "c32Preservation": "PASS",
+    "c31Preservation": "PASS"
+  },
+  "buildWarnings": [
+    "Existing standard-build JavaScript chunk exceeds 500 kB; unchanged warning policy",
+    "Separate workbench output is outside repository and was not emptied"
+  ],
+  "preservation": {
+    "historicalFilesByteIdentical": 515,
+    "originalRecordingsByteIdentical": 37,
+    "c31RecordingsByteIdentical": 12,
+    "stage196Preserved": true,
+    "exceptions": []
+  },
+  "validatedSourceFiles": [
+    {
+      "path": "scripts/stage20c32-report.ts",
+      "sha256": "c7bbf4582d9817b1329d9518db1df635cf61f58633e0fdf325c607240c0939b4"
+    },
+    {
+      "path": "scripts/verify-stage20c32.ts",
+      "sha256": "e1a66d326e247de511edd101174a259a13f0a549579c3e4974449ea29f73fd1b"
+    },
+    {
+      "path": "src/consent/stage32/Workbench.tsx",
+      "sha256": "25f1635da7672952925deed3359369ba87300c1204dde2b217abc79d52da2a17"
+    },
+    {
+      "path": "src/consent/stage32/diagnostics.ts",
+      "sha256": "6cb0d689be94a0861c56178ff6bd3932c63d1ad1364e137146067c177382e120"
+    },
+    {
+      "path": "src/consent/stage32/duration.ts",
+      "sha256": "bf1c046887a631048e0a5bb2f7faa1df956d4473654eef9a2dcddae93a186664"
+    },
+    {
+      "path": "src/consent/stage32/email/audit.ts",
+      "sha256": "dd3b63c8c38f3f75315bf893d2dde2b5d0c90c47c1bbbfc7ec660a97fae7f031"
+    },
+    {
+      "path": "src/consent/stage32/email/candidateResolver.ts",
+      "sha256": "02733018f5a89d44f4c223888b9746e7b3e643dd5bfd951d3bdbe516b1ac6e9d"
+    },
+    {
+      "path": "src/consent/stage32/email/confidence.ts",
+      "sha256": "fec6c3fcf8226caa558a66bd66ce093a756393aeb17e16d869faddaa65a8aba2"
+    },
+    {
+      "path": "src/consent/stage32/email/danishEmailLexicon.ts",
+      "sha256": "5b90dad063f761f9ae44136b5f43d753587880f442e42a497efa7e633ec4352f"
+    },
+    {
+      "path": "src/consent/stage32/email/databaseResolver.ts",
+      "sha256": "65e68bdd860d1e3823e6275dc9a43a5abac346ce77041b41d043bcdf9efed7f9"
+    },
+    {
+      "path": "src/consent/stage32/email/flow.ts",
+      "sha256": "31c827b8fbab960fc03a3d458b54c980811e7ce64f3a482cc1b8a9529981e9b8"
+    },
+    {
+      "path": "src/consent/stage32/email/normalize.ts",
+      "sha256": "6ee2736183736c452f20ff060494bc0ae1247383975399c904fc760aa452d776"
+    },
+    {
+      "path": "src/consent/stage32/email/reconciliation.ts",
+      "sha256": "0ec59523572f0dde64b52991dabd90e6f654b26eea3a7dd6150adecfc464154a"
+    },
+    {
+      "path": "src/consent/stage32/email/reconstruct.ts",
+      "sha256": "5b0f11bc71bfb81c9d98ebdac5aa617fb9c0e9b8ac273e9c898b1c8fc69f4e43"
+    },
+    {
+      "path": "src/consent/stage32/email/tokenizer.ts",
+      "sha256": "0ffe3645052c8404dac8999d4db55a9d3c1a2b70e8e7e83b909567afdbfb3316"
+    },
+    {
+      "path": "src/consent/stage32/email/types.ts",
+      "sha256": "0b1dbfb27376ca77065a549d2637474f95c496b5020f51664545766041431d67"
+    },
+    {
+      "path": "src/consent/stage32/main.tsx",
+      "sha256": "a5e5bd8fb96678e3dc843ddd662363b42f14021e63b6210e581b5f97dcf3d16a"
+    },
+    {
+      "path": "src/consent/stage32/recognition.ts",
+      "sha256": "95ef1861324b0129960533164c624914ccd2abcc24d0e61090b9ab6ae9cfc0f6"
+    },
+    {
+      "path": "src/consent/stage32/session.ts",
+      "sha256": "cc821b39862f89ff6a6952c78abe7868f49a51eb624bf8da2143930e96654ab0"
+    },
+    {
+      "path": "src/consent/stage32/speech/plans.ts",
+      "sha256": "1a5bbe744c7ff78f93114358368fb901c19ac201e8542db3c253adc5f49d8d17"
+    },
+    {
+      "path": "src/consent/stage32/vite.config.ts",
+      "sha256": "57e5eda9aecaf109f88b658a0a02daf06e8649022202d0235d6638f3e84be928"
+    },
+    {
+      "path": "stage20c32.html",
+      "sha256": "97933ec1f118226350c50211623d1d58f11bd8b5ce98da407504e798fded7630"
+    },
+    {
+      "path": "tests/consent-stage20c32-email.test.ts",
+      "sha256": "892d6f2330a7accab626f60fa9bdbaf7bf1d4fc48a518cb26ca82534f3258f47"
+    },
+    {
+      "path": "tests/consent-stage20c32-speech.test.tsx",
+      "sha256": "9bc3a01c63a309c275a7a88ee5a5c883ce53810df6e86fbedb2a98b92a1219c2"
+    }
+  ],
+  "hygiene": {
+    "newFilesWhitespaceFailures": [],
+    "newForbiddenMediaCredentialsOrDatabasePaths": [],
+    "trackedCredentialEnvironmentFiles": [],
+    "newPotentialCredentialMatches": [],
+    "secretScanScope": "all newly added files; high-signal private-key, OpenAI-key and AWS-key patterns; no secret values printed",
+    "textFilesChecked": 36,
+    "noIndexExitInterpretation": "Exit 1 without diagnostic output is the expected new-file content difference, not a whitespace failure."
+  },
+  "browserVerification": {
+    "url": "http://127.0.0.1:5173/stage20c32.html",
+    "fixture": "SYNTHETIC_RESERVED_DOMAIN",
+    "result": "EXACT_VERIFIED_MATCH",
+    "action": "CONFIRM",
+    "consentEvidence": false,
+    "savingEnabled": false,
+    "microphoneStarted": false,
+    "audioPlayed": false,
+    "screenshot": "docs/stage-2.0c-3.2-workbench.png"
+  },
+  "activity": {
+    "paidProviderRequests": 0,
+    "audioGenerations": 0,
+    "newAudioFiles": 0,
+    "sourceRecordingEnabled": false,
+    "commitPerformed": false,
+    "pushPerformed": false,
+    "prModified": false,
+    "mergePerformed": false,
+    "deploymentPerformed": false,
+    "telephoneCalls": 0,
+    "stage20DStarted": false
+  },
+  "remaining": [
+    "Native Danish listening and mandatory sende dig pronunciation regression",
+    "Authorization and generation for any selected new synthesis variants",
+    "Physical email/clarification UX and five ASR smoke tests",
+    "Real contact source/schema/verified mapping adapter",
+    "Physical ASR accuracy/boundaries and end-to-end call timing"
+  ],
+  "recommendation": "REVIEW_OFFLINE_CANDIDATE; NOT_ACCEPTED; NO_PUBLICATION_AUTHORIZED"
+}

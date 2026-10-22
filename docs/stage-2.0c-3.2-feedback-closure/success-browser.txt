@@ -1,0 +1,230 @@
+Browser tab: 2, Title: "aPureBase C-3.2 Offline Candidate", URL: "http://127.0.0.1:5186/stage20c32.html".
+0 AXWebArea aPureBase C-3.2 Offline Candidate, URL: 127.0.0.1:5186/stage20c32.html
+	1 container
+		2 text Complete Asem feedback closure audit is in progress. Do not send the earlier focused package as a complete retest. Current asset ownership and outstanding quality concerns appear in Speech plans and Human review; prior PASS labels do not transfer to new audio. LOCAL · OFFLINE · SYNTHETIC FIXTURES
+		3 heading Danish speech + email resolution, Value: 1
+			4 text Danish speech + email resolution
+		5 heading Stage 2.0C-3.2 hardening 2 · NOT ACCEPTED, Value: 2
+			6 text Stage 2.0C-3.2 hardening 2 · NOT ACCEPTED
+		7 text Engineering candidate only. Isabella · eleven_flash_v2_5 · speed 0.95 · existing calibrated gain and peak protection. Native pronunciation, “sende dig” and real ASR remain HUMAN REVIEW REQUIRED. BUSINESS DECISION REQUIRED: concise confirmation versus exact spoken readback. Real CRM and telephone integration are UNVERIFIED. Whole-call recording is disabled. No generation controls are installed.
+		8 checkbox Email inspector, Value: 0
+		9 checkbox Canonical / speech plans, Value: 0
+		10 checkbox C-3.2 human review / export, Value: 1
+		37 heading Human evidence collection · NOT PRODUCTION CONSENT DATA, Value: 2
+			38 text Human evidence collection · NOT PRODUCTION CONSENT DATA
+		39 text Complete feedback closure is under engineering review; do not start Asem’s next retest yet. Two new C-3.2 recordings remain human-review pending. Microphone/provider capture is not started here. Focus on sende dig, aPureBase, e-mail and weak consonants. Historical low ratings and comments remain concerns even when marked PASS. Manual observations remain explicitly self-reported.
+		40 container
+			41 text Reviewer name 
+			42 text field (settable) Reviewer name
+		43 button (collapsed) Historical quality concerns — previous PASS is not clearance, Secondary Actions: Expand
+			44 text Historical quality concerns — previous PASS is not clearance
+		45 container
+			46 heading AUTOMATED ENGINEERING EVIDENCE · injected preflight and complete local flow, Value: 3
+				47 text AUTOMATED ENGINEERING EVIDENCE · injected preflight and complete local flow
+			48 text Injected preflight condition 
+			49 pop up button (collapsed, settable) Injected preflight condition, Value: unknown, Secondary Actions: Expand
+				50 menu
+					51 (selected) unknown
+					52 missing
+					53 permission
+					54 denied
+					55 transport
+					56 model
+					57 ready
+			58 button Apply injected lifecycle — no provider
+			59 text Current underlying state: 
+			60 text MIC_PERMISSION_REQUIRED
+			61 text  ·  INJECTED_LOCAL  · LIVE ASR UNVERIFIED {
+  "status": "MIC_PERMISSION_REQUIRED",
+  "transportChecks": {
+    "backend": "NOT_TESTED",
+    "microphone": "NOT_TESTED",
+    "authorization": "NOT_TESTED",
+    "transport": "NOT_TESTED"
+  },
+  "scenarioEvidenceGate": false,
+  "inputs": {
+    "permission": "prompt",
+    "transport": "unknown"
+  },
+  "evidenceSource": "INJECTED_LOCAL",
+  "liveASRVerified": false
+} Injected scenario 
+			62 pop up button (collapsed, settable) Injected scenario, Value: A, Secondary Actions: Expand
+				63 menu
+					64 (selected) A
+					65 AT
+					66 Q
+					67 L
+					68 M
+					69 AQ
+					70 AR
+			71 text Reviewer decision 
+			72 pop up button (collapsed, settable) Reviewer decision, Value: PENDING, Secondary Actions: Expand
+				73 menu
+					74 (selected) PENDING
+					75 PASS
+					76 FAIL
+			77 text Recovered correctly (self-reported) 
+			78 pop up button (collapsed, settable) Recovered correctly (self-reported), Value: unknown, Secondary Actions: Expand
+				79 menu
+					80 (selected) unknown
+					81 yes
+					82 no
+			83 button Run and retain linked INJECTED_LOCAL evidence
+			84 text No live capture or provider evidence.
+			85 heading Import independently authorized transcript diagnostics · no audio, Value: 4
+				86 text Import independently authorized transcript diagnostics · no audio
+			87 text Exact EvidenceChain JSON
+			88 text entry area (settable) Exact EvidenceChain JSON
+			89 button Validate and retain imported evidence
+			90 text HUMAN LISTENING, MICROPHONE/ASR and NATURAL-CALL evidence are separate. Injected success is never human or production consent evidence.
+		91 button (collapsed) Linked observation chain (0) · provider absence is explicit, Secondary Actions: Expand
+			92 text Linked observation chain (
+			93 text 0
+			94 text ) · provider absence is explicit
+		95 heading HUMAN LISTENING EVIDENCE · complete current cached inventory, Value: 3
+			96 text HUMAN LISTENING EVIDENCE · complete current cached inventory
+		97 container
+			98 text Phrase 
+			99 pop up button (collapsed, settable) Phrase, Secondary Actions: Expand, Value: success-close · e72d65aabdc5 · Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.
+				100 menu
+					101 opening · 247f0b55738c · Hej, det er Isabella fra aPureBase. Jeg ringer ganske kort vedrørende faglig information til sundhedspersoner.
+					102 purpose · bdd80e984b2d · Vi sender relevant faglig information om blandt andet sygdomsområder, produkter og medicinske opdateringer.
+					103 consent-question · 055b74f018aa · Må aPureBase sende relevant faglig information til dig via e-mail?
+					104 email-request · 296dae9cfb01 · Tak. Hvilken e-mailadresse må vi sende informationen til?
+					105 email-readback-intro · 75a31d5e38c2 · Jeg gentager lige e-mailadressen for at være sikker.
+					106 email-confirmation-question · 0ff8196c2b65 · Er det korrekt?
+					107 (selected) success-close · e72d65aabdc5 · Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.
+					108 refusal-close · b6ba0f6cf3fa · Det er helt i orden. Tak for din tid. God dag.
+					109 identity · 291a7e12e50a · Jeg hedder Isabella og ringer fra aPureBase.
+					110 about-apurebase · b1de20bc3b5a · aPureBase formidler relevant faglig information til sundhedspersoner.
+					111 explanation · ea34f7943a86 · Det kan blandt andet være faglig information om sygdomsområder, produkter og andre relevante opdateringer.
+					112 why-calling · b2d46752a12b · Jeg ringer kun for at spørge, om aPureBase må sende dig relevant faglig information via e-mail.
+					113 unsubscribe · 5ce6b94bdcb5 · Ja. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen.
+					114 repeat-prefix · 1f5d3e769136 · Selvfølgelig. Jeg gentager lige spørgsmålet.
+					115 clarify · 4f7cd646ec5b · Selvfølgelig. Må aPureBase sende relevant faglig information til dig via e-mail?
+					116 callback · 8566a2f49da2 · Det forstår jeg. Hvornår vil det passe bedre, at vi ringer igen?
+					117 callback-close · 235242fd29cf · Selvfølgelig. Vi ringer igen på et senere tidspunkt. Tak for din tid.
+					118 target-unavailable · 2af35e3ecc19 · Det er helt i orden. Hvornår vil det være bedst at ringe igen?
+					119 send-first · 19877596aa42 · Vi skal først have din tilladelse, før vi sender informationen via e-mail.
+					120 uncertain-consent · ca9c8eb4d795 · Det er helt i orden. Jeg skal bare have et tydeligt ja eller nej. Må aPureBase sende relevant faglig information til dig via e-mail?
+					121 already-receiving · 7057166601c2 · Tak. Jeg skal stadig bekræfte din tilladelse. Må aPureBase fortsat sende relevant faglig information til dig via e-mail?
+					122 email-correction-prefix · 948e1a3f03f5 · Tak. Jeg retter den. Jeg gentager den nye e-mailadresse.
+					123 more-explanation · 307972ad8bda · aPureBase sender faglig information, som kan være relevant for dit arbejde som sundhedsperson. Det er frivilligt, og du kan altid framelde dig igen.
+					124 stop-contact-close · 8938c63491e0 · Det forstår jeg. Tak for din tid. God dag.
+					125 thank-you · 60f854b66d21 · Perfekt, tak.
+					126 email-readback-intro · 042e43febe08 · Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet tre, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud
+					127 intermediary-consent-question · 2d43ca1559a5 · Tak. Må aPureBase sende relevant faglig information via e-mail til Jens Hansen?
+					128 email-readback-intro · 21cfdc124951 · Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud
+					129 receptionist-target-request · fbf293862c07 · Jeg ringer vedrørende faglig information til Jens Hansen. Kan jeg blive stillet videre?
+					130 email-readback-intro · 5bc45c32fadc · Jeg staver adressen med staveord. Anna, Niels, Niels, Anna, tallet to, punktum, Theodor, Erik, Søren, Theodor, bindestreg, tallet syv, snabel-a. Domæne: Cecilie, Ludvig, Ida, Niels, Ida, Cecilie, punktum, Dora, Knud
+					131 receptionist-target-request · a4549b780cf7 · Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg blive stillet videre?
+					132 wrong-person-close · 8059a8e71642 · Beklager. Kan du hjælpe mig med at komme i kontakt med Jens Hansen?
+					133 email-readback-intro · 71dded509fbc · Jeg staver adressen med staveord. Anna, understregning, Børge, plus, tallet to, snabel-a. Domæne: Xenia, punktum, Dora, Knud
+					134 authority-ask · 8001fa92ce95 · Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Anna Jensen?
+					135 wrong-person-close · 71c8572bfe9a · Beklager. Kan du hjælpe mig med at komme i kontakt med Anna Jensen?
+					136 intermediary-consent-question · 80d93ed36b0c · Tak. Må aPureBase sende relevant faglig information via e-mail til Anna Jensen?
+					137 authority-ask · 6f1d62ef73a3 · Må jeg lige bekræfte, at du er bemyndiget til at håndtere dette på vegne af Jens Hansen?
+					138 email-correction-confirm · 0ff8196c2b65 · Er det korrekt?
+		139 button Play exact current candidate locally
+		140 button Stop local playback
+		141 text Why Calling and Success Close use new C-3.2 hashes only. Other references retain their historical hashes. Calibrated gain/provenance checks apply.
+		142 container
+			143 text Canonical:  Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.
+			144 text Spoken render:  Perfekt, mange tak for din tid. Du kan altid sige fra, hvis du ikke længere ønsker at modtage informationen. Hav en god dag.
+			145 text Version:  stage-2.0c32-candidate-1
+		146 container
+			147 text Selected review binding:  e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908  · canonical  050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e  · spoken  050d6dbe6965325995cee2ed03194506cf98638b7da4fabbf85a241a9d33c00e .
+		148 container
+			149 checkbox (settable, integer) Description: I personally heard the exact selected asset, Value: 0
+			150 text  I personally heard the exact selected asset
+		151 container
+			152 text Naturalness
+			153 pop up button (collapsed, settable) Naturalness, Value: Not rated, Secondary Actions: Expand
+				154 menu
+					155 (selected) Not rated
+					156 1
+					157 2
+					158 3
+					159 4
+					160 5
+		161 container
+			162 text Pronunciation
+			163 pop up button (collapsed, settable) Pronunciation, Value: Not rated, Secondary Actions: Expand
+				164 menu
+					165 (selected) Not rated
+					166 1
+					167 2
+					168 3
+					169 4
+					170 5
+		171 container
+			172 text Pace
+			173 pop up button (collapsed, settable) Pace, Value: Not rated, Secondary Actions: Expand
+				174 menu
+					175 (selected) Not rated
+					176 1
+					177 2
+					178 3
+					179 4
+					180 5
+		181 container
+			182 text Result 
+			183 pop up button (collapsed, settable) Result, Value: FAIL, Secondary Actions: Expand
+				184 menu
+					185 (selected) FAIL
+					186 PASS
+		187 container
+			188 text Comments
+			189 text entry area (settable) Comments
+		190 button Record listening observation
+		191 heading MICROPHONE/ASR EVIDENCE · five observations · live ASR UNVERIFIED, Value: 3
+			192 text MICROPHONE/ASR EVIDENCE · five observations · live ASR UNVERIFIED
+		193 container
+			194 text Test 
+			195 pop up button (collapsed, settable) Test, Value: ordinary, Secondary Actions: Expand
+				196 menu
+					197 (selected) ordinary
+					198 yes
+					199 no
+					200 email
+					201 correction
+		202 container
+			203 text Raw transcript
+			204 text entry area (settable) Raw transcript
+		205 container
+			206 text Final 
+			207 checkbox (settable, integer) Description: Final, Value: 0
+		208 container
+			209 text Material word errors 
+			210 checkbox (settable, integer) Description: Material word errors, Value: 0
+		211 container
+			212 text Latency ms (blank = unknown) 
+			213 stepper (settable) Latency ms (blank = unknown)
+		214 button Record microphone observation
+		215 heading NATURAL-CALL EVIDENCE · timing observations, Value: 3
+			216 text NATURAL-CALL EVIDENCE · timing observations
+		217 container
+			218 text Listening complete:  false  · Five linked microphone observations complete:  false . Record PASS only after both; origin/authenticity and physical behavior still need human review.
+		219 container
+			220 text Scenario 
+			221 pop up button (collapsed, settable) Scenario, Value: direct, Secondary Actions: Expand
+				222 menu
+					223 (selected) direct
+					224 new-email
+					225 correction
+					226 clarification
+					227 refusal-or-receptionist
+		228 container
+			229 text Human elapsed seconds 
+			230 stepper (settable) Human elapsed seconds
+		231 button Record call observation
+		232 container
+			233 text Retained:  0  phrase reviews ·  0  microphone observations ·  0  call timings. All manual synthetic email inspections are included separately, with correction links.
+		234 button Export HUMAN REVIEW EVIDENCE
+		235 text Local WebAudio source-ended for e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908. Technical playback only; enter your own ratings and attestation.
+		35 link Description: Preserved C-3.1 workspace, Value: 127.0.0.1:5186/consent-call?stage=2.0c31
+		36 text . The historical character renderer remains available for comparison; the C-3.2 ordinary path captures email as data.
+
+The focused UI element is 139 button Play exact current candidate locally

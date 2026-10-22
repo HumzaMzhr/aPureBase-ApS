@@ -1,0 +1,146 @@
+[
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "consent-question:055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+    "name": "Consent Question",
+    "displayedHash": "055b74f018aa753f03fea5a51701cc3a91ea0150e56e311a917fd0e9f4eb67af",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "email-request:296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+    "name": "Email Request",
+    "displayedHash": "296dae9cfb01632d59c857755dcfcdba5c4abac94af58847f47ab37fa984a961",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "success-close:e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+    "name": "Success Close",
+    "displayedHash": "e72d65aabdc5ecb1223de5311c3d0fa687588309f0191832bd328984179ad908",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "refusal-close:b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+    "name": "Refusal Close",
+    "displayedHash": "b6ba0f6cf3fab2fddd612f0261bd7b97252f721ec350daae894e4bdbed685f4a",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "about-apurebase:b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+    "name": "About aPureBase",
+    "displayedHash": "b1de20bc3b5a0b6d7ffeb10d60cdac746d096e8ed6349e48c66b5c0e9784404d",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "explanation:ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+    "name": "Explanation",
+    "displayedHash": "ea34f7943a86db20bdb8b58801c89aaf5a5483a8eeb650a96df6d2a61dd17665",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "why-calling:b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+    "name": "Why Calling",
+    "displayedHash": "b2d46752a12b82aedce1b19be0681e536eaaa26b382d1f3a28edfa4258cff2ff",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "unsubscribe:5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+    "name": "Unsubscribe",
+    "displayedHash": "5ce6b94bdcb51aff2d8c89550fc569dc35a2e9e43f418d3c779fc8efc2d8c483",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "clarify:55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+    "name": "Clarify",
+    "displayedHash": "55e255476384ad077184102aedf4dcfecdeb865974e3346ab2cadefcb292f420",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "stop-contact-close:8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+    "name": "Stop Contact Close",
+    "displayedHash": "8938c63491e0cbb30b38a7d612e2f2fa6ee78776cc82c4d6d31179a88f060955",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "email-readback-intro:042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+    "name": "Corrected Diagnostic Email Readback \u2014 anna3.test-7@clinic.dk",
+    "displayedHash": "042e43febe086fdf9166e8cb90f535c51e4a1ad4fa6342c020a72da97bc2ece9",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "email-readback-intro:21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+    "name": "Corrected Diagnostic Email Readback \u2014 anna@clinic.dk",
+    "displayedHash": "21cfdc124951706d37945c14a4acc9390d35d627ab9520a3e5c495b26fec9e53",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "receptionist-target-request:fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+    "name": "Corrected Receptionist Target Request \u2014 Jens Hansen",
+    "displayedHash": "fbf293862c077f414ba52043dc7f501d26283ec0f4dd3176afea20b14565ddfc",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "email-readback-intro:5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+    "name": "Corrected Diagnostic Email Readback \u2014 anna2.test-7@clinic.dk",
+    "displayedHash": "5bc45c32fadca206ad76af9dcd5279dc34d3fbfa82946175f3669541c4dc6445",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "receptionist-target-request:a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+    "name": "Corrected Receptionist Target Request \u2014 Anna Jensen",
+    "displayedHash": "a4549b780cf7ed418c9434593913f88d105e8bdee9ca638a099addb2217cad1c",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  },
+  {
+    "candidateSourceHash": "8a93a710548025ded0b275e83312a7939b7827c821dc02cc3b0f9106f17aaab5",
+    "key": "email-readback-intro:71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+    "name": "Corrected Diagnostic Email Readback \u2014 a_b+2@x.dk",
+    "displayedHash": "71dded509fbc9f45e07c19131c2033b9c7f025958de979991d827993e9312a2f",
+    "actualSourceEnded": true,
+    "humanReviewRecorded": false,
+    "evidence": "Observed exact displayed hash and actual source-ended UI in CUA checkAsemItem calls; retained from returned per-item tool outputs because REPL accumulator persistence failed."
+  }
+]

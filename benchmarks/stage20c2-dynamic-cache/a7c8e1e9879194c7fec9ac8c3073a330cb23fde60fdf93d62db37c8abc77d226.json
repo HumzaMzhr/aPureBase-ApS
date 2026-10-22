@@ -1,0 +1,62 @@
+{
+  "phraseId": "receptionist-target-request",
+  "wordingVersion": "stage-2.0c1-approved-1",
+  "text": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende?",
+  "textHash": "e9b2f10fbad1663bc27f64706e555b6c36fdae9ef9349fbe864c90d7290ebd6b",
+  "assetHash": "4b2606b42d616b9bb23845a2e0eb452a12c2759c0bcb30abafe2c4f39ef7e706",
+  "path": "http://127.0.0.1:5180/cache/a7c8e1e9879194c7fec9ac8c3073a330cb23fde60fdf93d62db37c8abc77d226.wav",
+  "voice": {
+    "provider": "ElevenLabs",
+    "name": "Isabella",
+    "voiceId": "gIfqD5jrnhkFu8ENVbXC",
+    "modelId": "eleven_flash_v2_5",
+    "speed": 0.95
+  },
+  "requestedSpeed": 0.95,
+  "generatedAt": "2026-10-18T12:32:06.029Z",
+  "duration": 5.20125,
+  "samples": 124830,
+  "sampleRate": 24000,
+  "mediaFormat": "wav-pcm-s16le-mono",
+  "provenance": {
+    "verified": true,
+    "method": "authenticated-provider-response-and-content-hash",
+    "providerRequestId": "en59GnJmbrDbTjMUmh2D",
+    "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/gIfqD5jrnhkFu8ENVbXC",
+    "settingsHash": "a960c68f2bda1018b759544deec3e238190c7b171ebcd23d92826424863cea86"
+  },
+  "verification": {
+    "mediaValid": true,
+    "nonSilent": true,
+    "clippingEvents": 0,
+    "rawPeak": 0.159881591796875,
+    "gainApplied": 3.5573605757216837,
+    "peakProtectionEvents": 0,
+    "outputPeak": 0.5687564611434937
+  },
+  "status": "GENERATED_VERIFIED_LOCAL_ONLY",
+  "businessWordingApproved": true,
+  "productionApproved": false,
+  "binding": {
+    "slot": {
+      "kind": "NAME",
+      "phraseId": "receptionist-target-request",
+      "name": {
+        "original": "Anna Jensen",
+        "source": "contact-data",
+        "evidenceId": "synthetic-contact-fixture",
+        "evidenceText": "SYNTHETIC rehearsal target: Anna Jensen",
+        "reviewedBy": "local-rehearsal-fixture",
+        "reviewedAt": "2026-10-18T00:00:00.000Z",
+        "pronunciationConfirmed": true,
+        "recipientRevision": 1
+      }
+    },
+    "renderedValue": "Anna Jensen",
+    "renderedText": "Jeg ringer vedrørende faglig information til Anna Jensen. Kan jeg tale med vedkommende?",
+    "textHash": "e9b2f10fbad1663bc27f64706e555b6c36fdae9ef9349fbe864c90d7290ebd6b",
+    "phraseVersion": "stage-2.0c1-approved-1",
+    "rendererVersion": "stage-2.0c2-deterministic-1",
+    "cacheKey": "a7c8e1e9879194c7fec9ac8c3073a330cb23fde60fdf93d62db37c8abc77d226"
+  }
+}
